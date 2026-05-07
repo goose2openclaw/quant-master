@@ -1,0 +1,20 @@
+{
+  "hybrid_installer": {
+    "installed_at": "2026-02-28T02:30:18+08:00",
+    "network_status": "GOOD",
+    "strategy": "multi_source"
+  },
+  "skills": {
+    "directory": "/home/goose/.openclaw/workspace/skills",
+    "auto_enable": true,
+    "scan_interval": 300
+  },
+  "telegram": {
+    "bot_token": "8405295378:AAG3bvttAQkw00tjuTo1ypw02TLSKAFLT0o",
+    "enabled": true
+  },
+  "cron": {
+    "enabled": true,
+    "tasks": []
+  }
+}

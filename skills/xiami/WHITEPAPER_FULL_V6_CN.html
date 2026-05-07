@@ -1,0 +1,1582 @@
+<h1 id="xiami-智能量化交易系统白皮书">XIAMI 智能量化交易系统白皮书</h1>
+<p><strong>项目名称</strong>：XIAMI（XIAOMI AI Intelligent Trading
+System） <strong>版本</strong>：6.0 完整版
+<strong>更新日期</strong>：2026年3月12日 <strong>状态</strong>：生产就绪
+| 微私募Ready</p>
+<hr />
+<h2 id="目-录">目 录</h2>
+<ol type="1">
+<li>项目背景与市场机遇</li>
+<li>项目概述与核心理念</li>
+<li>技术架构详解</li>
+<li>核心策略模块</li>
+<li>风险管理体系</li>
+<li>盈利模型与收益分配</li>
+<li>投资池设计</li>
+<li>智能合约机制</li>
+<li>运营体系</li>
+<li>合规与安全</li>
+<li>团队介绍</li>
+<li>发展路线图</li>
+<li>风险提示</li>
+<li>附录</li>
+</ol>
+<hr />
+<h2 id="第一章-项目背景与市场机遇">第一章 项目背景与市场机遇</h2>
+<h3 id="加密货币市场现状">1.1 加密货币市场现状</h3>
+<p>截至2026年第一季度，全球加密货币市场规模已突破
+<strong>4.5万亿美元</strong>，日均交易量超过
+<strong>3000亿美元</strong>。区块链技术的快速发展和去中心化金融（DeFi）的兴起，使得加密资产已成为全球投资者资产配置的重要组成部分。</p>
+<p><strong>市场特征分析：</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>特征</th>
+<th>描述</th>
+<th>机遇</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>7×24小时交易</td>
+<td>全球市场连续运转</td>
+<td>程序化交易优势明显</td>
+</tr>
+<tr class="even">
+<td>高波动性</td>
+<td>日均波动5%-20%常见</td>
+<td>量化策略利润空间大</td>
+</tr>
+<tr class="odd">
+<td>信息不对称</td>
+<td>个人投资者处于劣势</td>
+<td>AI分析可弥补差距</td>
+</tr>
+<tr class="even">
+<td>情绪驱动</td>
+<td>FOMO/FUD影响价格</td>
+<td>量化模型可规避情绪</td>
+</tr>
+<tr class="odd">
+<td>交易所割裂</td>
+<td>百余家交易所数据孤岛</td>
+<td>跨平台套利机会</td>
+</tr>
+</tbody>
+</table>
+<h3 id="量化交易行业痛点">1.2 量化交易行业痛点</h3>
+<p>当前量化交易行业存在以下核心痛点：</p>
+<p><strong>1. 门槛过高</strong> - 专业量化团队年薪百万+ -
+硬件投入动辄数十万 - 数据服务费用高昂 - 普通投资者难以参与</p>
+<p><strong>2. 信息不对称</strong> - 机构拥有先进技术和数据 -
+个人投资者处于信息劣势 - 老鼠仓和内幕交易泛滥</p>
+<p><strong>3. 风险失控</strong> - 主观交易情绪化严重 - 缺乏系统化风控 -
+合约/杠杆爆仓频发</p>
+<p><strong>4. 透明度缺失</strong> - 策略不公开，信任度低 -
+收益数据可造假 - 跑路风险高</p>
+<h3 id="xiami的解决方案">1.3 XIAMI的解决方案</h3>
+<p>XIAMI通过以下方式解决上述痛点：</p>
+<ul>
+<li><strong>降低门槛</strong>：AI驱动的自动化策略，无需专业交易员，最小投资额$100起</li>
+<li><strong>信息透明</strong>：智能合约托管，资金安全可验证，所有交易记录上链可查</li>
+<li><strong>风险控制</strong>：多层风控体系（事前/事中/事后），智能熔断机制</li>
+<li><strong>收益保障</strong>：10+成熟策略模型，多交易所跨平台执行</li>
+</ul>
+<hr />
+<h2 id="第二章-项目概述与核心理念">第二章 项目概述与核心理念</h2>
+<h3 id="xiami是什么">2.1 XIAMI是什么？</h3>
+<p>XIAMI是一个<strong>AI驱动的去中心化智能量化交易生态系统</strong>，旨在让普通投资者也能享受专业级量化交易的收益。系统集成了多策略量化交易、极速趋势识别、实时预警、预言机系统、流动性做市、社区管理、预测市场分析以及新币空投猎手等核心功能。</p>
+<p><strong>XIAMI = AI + 量化 + DeFi + 社区</strong></p>
+<h3 id="核心理念">2.2 核心理念</h3>
+<table>
+<thead>
+<tr class="header">
+<th>理念</th>
+<th>阐述</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>民主化</strong></td>
+<td>让每个人都能参与专业量化交易</td>
+</tr>
+<tr class="even">
+<td><strong>透明化</strong></td>
+<td>智能合约保证每笔交易可追溯</td>
+</tr>
+<tr class="odd">
+<td><strong>智能化</strong></td>
+<td>AI技术持续优化策略表现</td>
+</tr>
+<tr class="even">
+<td><strong>社区化</strong></td>
+<td>投资者共同参与治理和发展</td>
+</tr>
+</tbody>
+</table>
+<h3 id="商业模式">2.3 商业模式</h3>
+<p>XIAMI采用<strong>管理费 + 绩效费</strong>的双重收费模式：</p>
+<ul>
+<li><strong>投资者收益</strong>：75%（净利润）</li>
+<li><strong>平台管理费</strong>：5%/年</li>
+<li><strong>平台绩效费</strong>：20%（从净利润中提取）</li>
+</ul>
+<h3 id="核心优势">2.4 核心优势</h3>
+<table>
+<thead>
+<tr class="header">
+<th>优势</th>
+<th>详细说明</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>AI驱动</strong></td>
+<td>10+趋势模型，机器学习持续优化</td>
+</tr>
+<tr class="even">
+<td><strong>多交易所</strong></td>
+<td>Binance/Bybit/OKX/Polymarket全覆盖</td>
+</tr>
+<tr class="odd">
+<td><strong>多策略</strong></td>
+<td>主流币/套利/高频/空投全覆盖</td>
+</tr>
+<tr class="even">
+<td><strong>安全透明</strong></td>
+<td>智能合约托管，链上可验证</td>
+</tr>
+<tr class="odd">
+<td><strong>极速执行</strong></td>
+<td>信号检测&lt;100ms，交易执行&lt;500ms</td>
+</tr>
+<tr class="even">
+<td><strong>稳健收益</strong></td>
+<td>目标年化15%-100%，分级风险</td>
+</tr>
+<tr class="odd">
+<td><strong>低门槛</strong></td>
+<td>最低$100起，类公募模式</td>
+</tr>
+<tr class="even">
+<td><strong>社区治理</strong></td>
+<td>代币持有者参与决策</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="第三章-技术架构详解">第三章 技术架构详解</h2>
+<h3 id="系统架构概览">3.1 系统架构概览</h3>
+<p>XIAMI技术架构分为四层：</p>
+<ol type="1">
+<li><strong>用户交互层</strong>：Telegram Bot、Web Dashboard、Mobile
+App、API Service</li>
+<li><strong>智能合约层</strong>：Vault Contract、Strategy
+Registry、Distribution Contract、Governance Token</li>
+<li><strong>核心引擎层</strong>：数据层、AI层、执行层</li>
+<li><strong>数据源层</strong>：Binance、Bybit、OKX、Polymarket、DexScreener、Chainlink</li>
+</ol>
+<h3 id="核心技术组件">3.2 核心技术组件</h3>
+<h4 id="数据聚合引擎">3.2.1 数据聚合引擎</h4>
+<p><strong>功能</strong>：整合多家交易所行情数据，进行清洗、标准化和存储</p>
+<p><strong>技术实现</strong>： - 使用CCXT库统一API接口 -
+WebSocket实时数据流推送 - Redis缓存热门交易对数据 -
+Kafka消息队列处理数据流</p>
+<p><strong>性能指标</strong>：</p>
+<table>
+<thead>
+<tr class="header">
+<th>指标</th>
+<th>数值</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>支持交易所</td>
+<td>8+</td>
+</tr>
+<tr class="even">
+<td>数据延迟</td>
+<td>&lt;50ms</td>
+</tr>
+<tr class="odd">
+<td>可用性</td>
+<td>99.9%</td>
+</tr>
+<tr class="even">
+<td>并发处理</td>
+<td>10,000+</td>
+</tr>
+</tbody>
+</table>
+<h4 id="ai信号引擎">3.2.2 AI信号引擎</h4>
+<p><strong>功能</strong>：基于多因子模型生成交易信号</p>
+<p><strong>核心算法</strong>： - 价格特征提取 - 成交量特征分析 -
+技术指标计算（RSI、MACD、KDJ、布林带） - 市场情绪分析 - 链上数据整合 -
+多模型融合预测</p>
+<p><strong>模型性能</strong>：</p>
+<table>
+<thead>
+<tr class="header">
+<th>模型</th>
+<th>准确率</th>
+<th>盈亏比</th>
+<th>夏普比率</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>趋势跟踪</td>
+<td>68%</td>
+<td>2.1</td>
+<td>1.8</td>
+</tr>
+<tr class="even">
+<td>均值回归</td>
+<td>72%</td>
+<td>1.9</td>
+<td>1.5</td>
+</tr>
+<tr class="odd">
+<td>套利</td>
+<td>85%</td>
+<td>3.2</td>
+<td>2.5</td>
+</tr>
+<tr class="even">
+<td>动量</td>
+<td>65%</td>
+<td>1.8</td>
+<td>1.4</td>
+</tr>
+<tr class="odd">
+<td>情绪</td>
+<td>70%</td>
+<td>2.0</td>
+<td>1.6</td>
+</tr>
+</tbody>
+</table>
+<h4 id="交易执行引擎">3.2.3 交易执行引擎</h4>
+<p><strong>功能</strong>：安全、快速地执行交易指令</p>
+<p><strong>核心特性</strong>：</p>
+<table>
+<thead>
+<tr class="header">
+<th>特性</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>智能订单分割</td>
+<td>大单拆分，减少滑点</td>
+</tr>
+<tr class="even">
+<td>价格优化</td>
+<td>限价单为主，市价单备用</td>
+</tr>
+<tr class="odd">
+<td>重试机制</td>
+<td>失败自动重试3次</td>
+</tr>
+<tr class="even">
+<td>熔断保护</td>
+<td>异常立即暂停</td>
+</tr>
+<tr class="odd">
+<td>费用优化</td>
+<td>选择最低Gas时机</td>
+</tr>
+</tbody>
+</table>
+<h3 id="支持的交易所">3.3 支持的交易所</h3>
+<table>
+<thead>
+<tr class="header">
+<th>交易所</th>
+<th>状态</th>
+<th>支持功能</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Binance</td>
+<td>已集成</td>
+<td>现货、合约、杠杆</td>
+</tr>
+<tr class="even">
+<td>Bybit</td>
+<td>已集成</td>
+<td>现货、合约、杠杆</td>
+</tr>
+<tr class="odd">
+<td>OKX</td>
+<td>已集成</td>
+<td>现货、合约、杠杆</td>
+</tr>
+<tr class="even">
+<td>Polymarket</td>
+<td>已集成</td>
+<td>预测市场</td>
+</tr>
+<tr class="odd">
+<td>DexScreener</td>
+<td>已集成</td>
+<td>新币监控</td>
+</tr>
+<tr class="even">
+<td>Uniswap</td>
+<td>已集成</td>
+<td>DEX流动性</td>
+</tr>
+<tr class="odd">
+<td>Raydium</td>
+<td>已集成</td>
+<td>Solana DEX</td>
+</tr>
+<tr class="even">
+<td>PancakeSwap</td>
+<td>已集成</td>
+<td>BSC DEX</td>
+</tr>
+</tbody>
+</table>
+<h3 id="技术栈详情">3.4 技术栈详情</h3>
+<table>
+<thead>
+<tr class="header">
+<th>层级</th>
+<th>技术选型</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>智能合约</td>
+<td>Solidity 0.8.x</td>
+</tr>
+<tr class="even">
+<td>合约平台</td>
+<td>Polygon/BSC</td>
+</tr>
+<tr class="odd">
+<td>量化策略</td>
+<td>Python 3.10+</td>
+</tr>
+<tr class="even">
+<td>交易所API</td>
+<td>CCXT 4.x</td>
+</tr>
+<tr class="odd">
+<td>数据存储</td>
+<td>PostgreSQL + Redis</td>
+</tr>
+<tr class="even">
+<td>消息队列</td>
+<td>Kafka</td>
+</tr>
+<tr class="odd">
+<td>前端</td>
+<td>React + TypeScript</td>
+</tr>
+<tr class="even">
+<td>后端API</td>
+<td>Node.js + NestJS</td>
+</tr>
+<tr class="odd">
+<td>容器化</td>
+<td>Docker + K8s</td>
+</tr>
+<tr class="even">
+<td>监控</td>
+<td>Prometheus + Grafana</td>
+</tr>
+<tr class="odd">
+<td>预言机</td>
+<td>Chainlink</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="第四章-核心策略模块">第四章 核心策略模块</h2>
+<h3 id="策略体系总览">4.1 策略体系总览</h3>
+<p>XIAMI量化引擎包含以下核心策略模块：</p>
+<table>
+<thead>
+<tr class="header">
+<th>策略</th>
+<th>定位</th>
+<th>目标年化</th>
+<th>风险</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>主流币策略</td>
+<td>稳健型长线</td>
+<td>36-60%</td>
+<td>低</td>
+</tr>
+<tr class="even">
+<td>打地鼠策略</td>
+<td>短线套利+空投</td>
+<td>60-120%</td>
+<td>中</td>
+</tr>
+<tr class="odd">
+<td>分层交易策略</td>
+<td>渐进式建仓</td>
+<td>24-48%</td>
+<td>低</td>
+</tr>
+<tr class="even">
+<td>声纳Pro V3</td>
+<td>多模式智能交易</td>
+<td>96-180%</td>
+<td>中高</td>
+</tr>
+<tr class="odd">
+<td>统一策略</td>
+<td>多策略融合</td>
+<td>48-96%</td>
+<td>中</td>
+</tr>
+</tbody>
+</table>
+<h3 id="主流币策略mainstream-strategy">4.2 主流币策略（Mainstream
+Strategy）</h3>
+<h4 id="策略定位">4.2.1 策略定位</h4>
+<ul>
+<li><strong>目标</strong>：在主流币市场获取稳健收益</li>
+<li><strong>适合人群</strong>：风险厌恶型投资者</li>
+<li><strong>投资周期</strong>：中长期（1-6个月）</li>
+</ul>
+<h4 id="交易标的">4.2.2 交易标的</h4>
+<table>
+<thead>
+<tr class="header">
+<th>币种</th>
+<th>权重</th>
+<th>止损线</th>
+<th>止盈线</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>BTC/USDT</td>
+<td>30%</td>
+<td>3%</td>
+<td>10%</td>
+</tr>
+<tr class="even">
+<td>ETH/USDT</td>
+<td>25%</td>
+<td>3%</td>
+<td>10%</td>
+</tr>
+<tr class="odd">
+<td>SOL/USDT</td>
+<td>15%</td>
+<td>4%</td>
+<td>12%</td>
+</tr>
+<tr class="even">
+<td>BNB/USDT</td>
+<td>10%</td>
+<td>3%</td>
+<td>8%</td>
+</tr>
+<tr class="odd">
+<td>XRP/USDT</td>
+<td>8%</td>
+<td>4%</td>
+<td>10%</td>
+</tr>
+<tr class="even">
+<td>其他</td>
+<td>12%</td>
+<td>5%</td>
+<td>15%</td>
+</tr>
+</tbody>
+</table>
+<h4 id="技术指标组合">4.2.3 技术指标组合</h4>
+<p><strong>买入信号（需满足≥3项）</strong>： - RSI(14) &lt; 35 且回升中
+- MACD 金叉且 DIF &gt; DEA - 收盘价站上 20日均线 - 布林带下轨支撑 -
+成交量放大 &gt; 1.5倍</p>
+<p><strong>卖出信号（满足≥2项）</strong>： - RSI(14) &gt; 70 - MACD 死叉
+- 收盘价跌破 20日均线 - 成交量萎缩 &lt; 0.5倍</p>
+<h4 id="性能指标">4.2.4 性能指标</h4>
+<table>
+<thead>
+<tr class="header">
+<th>指标</th>
+<th>数值</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>历史胜率</td>
+<td>68%</td>
+</tr>
+<tr class="even">
+<td>平均持仓周期</td>
+<td>5-15天</td>
+</tr>
+<tr class="odd">
+<td>最大回撤</td>
+<td>12%</td>
+</tr>
+<tr class="even">
+<td>夏普比率</td>
+<td>1.8</td>
+</tr>
+<tr class="odd">
+<td>月均交易次数</td>
+<td>15-25</td>
+</tr>
+</tbody>
+</table>
+<h3 id="打地鼠策略mole-strategy">4.3 打地鼠策略（Mole Strategy）</h3>
+<h4 id="策略定位-1">4.3.1 策略定位</h4>
+<ul>
+<li><strong>目标</strong>：捕捉短期套利机会和新币空投</li>
+<li><strong>适合人群</strong>：追求高收益投资者</li>
+<li><strong>投资周期</strong>：短线（1-7天）</li>
+</ul>
+<h4 id="核心功能模块">4.3.2 核心功能模块</h4>
+<table>
+<thead>
+<tr class="header">
+<th>模块</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>跨交易所套利</td>
+<td>检测Binance/Bybit/OKX价格差，锁定无风险利润</td>
+</tr>
+<tr class="even">
+<td>快速交易信号</td>
+<td>5-15分钟短线操作，积少成多</td>
+</tr>
+<tr class="odd">
+<td>成交量异动</td>
+<td>检测大单入场，提前布局</td>
+</tr>
+<tr class="even">
+<td>新币空投猎手</td>
+<td>监控新上币种，捕捉早期红利</td>
+</tr>
+</tbody>
+</table>
+<h4 id="套利模型">4.3.3 套利模型</h4>
+<p><strong>步骤1：价格监控</strong> -
+同时监控Binance、Bybit、OKX价格</p>
+<p><strong>步骤2：利润计算</strong> - 利润 = 价差 - 手续费 - 滑点 -
+最小价差阈值：$20</p>
+<p><strong>步骤3：执行策略</strong> - 低价交易所买入 → 高价交易所卖出 -
+同时挂单，对冲价格波动</p>
+<h4 id="性能指标-1">4.3.4 性能指标</h4>
+<table>
+<thead>
+<tr class="header">
+<th>指标</th>
+<th>数值</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>历史胜率</td>
+<td>85%</td>
+</tr>
+<tr class="even">
+<td>平均持仓周期</td>
+<td>30分钟-2小时</td>
+</tr>
+<tr class="odd">
+<td>最大回撤</td>
+<td>8%</td>
+</tr>
+<tr class="even">
+<td>夏普比率</td>
+<td>2.5</td>
+</tr>
+<tr class="odd">
+<td>日均交易次数</td>
+<td>20-50</td>
+</tr>
+</tbody>
+</table>
+<h3 id="分层交易策略tiered-trading">4.4 分层交易策略（Tiered
+Trading）</h3>
+<h4 id="策略定位-2">4.4.1 策略定位</h4>
+<ul>
+<li><strong>目标</strong>：通过渐进式建仓降低持仓成本</li>
+<li><strong>适合人群</strong>：震荡市投资者</li>
+<li><strong>投资周期</strong>：中期（2-8周）</li>
+</ul>
+<h4 id="建仓模型">4.4.2 建仓模型</h4>
+<p>假设：目标币种 BTC/USDT，预计总仓位 1 BTC</p>
+<table>
+<thead>
+<tr class="header">
+<th>层数</th>
+<th>价格区间</th>
+<th>买入比例</th>
+<th>累计持仓</th>
+<th>平均成本</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>第1层</td>
+<td>$50,000-50,500</td>
+<td>20%</td>
+<td>0.2 BTC</td>
+<td>$50,250</td>
+</tr>
+<tr class="even">
+<td>第2层</td>
+<td>$49,500-50,000</td>
+<td>25%</td>
+<td>0.45 BTC</td>
+<td>$50,056</td>
+</tr>
+<tr class="odd">
+<td>第3层</td>
+<td>$49,000-49,500</td>
+<td>25%</td>
+<td>0.70 BTC</td>
+<td>$49,844</td>
+</tr>
+<tr class="even">
+<td>第4层</td>
+<td>$48,500-49,000</td>
+<td>20%</td>
+<td>0.90 BTC</td>
+<td>$49,611</td>
+</tr>
+<tr class="odd">
+<td>第5层</td>
+<td>$48,000-48,500</td>
+<td>10%</td>
+<td>1.00 BTC</td>
+<td>$49,500</td>
+</tr>
+</tbody>
+</table>
+<p><strong>策略优势</strong>： - 均价低于单笔买入 2-5% -
+下跌空间有限，最大亏损可控制 - 适合震荡筑底行情</p>
+<h3 id="声纳-pro-v3sonar-pro">4.5 声纳 Pro V3（Sonar Pro）</h3>
+<h4 id="策略定位-3">4.5.1 策略定位</h4>
+<ul>
+<li><strong>目标</strong>：多模式智能交易，追求超额收益</li>
+<li><strong>适合人群</strong>：激进型投资者</li>
+<li><strong>投资周期</strong>：中短线（3-30天）</li>
+</ul>
+<h4 id="核心特性">4.5.2 核心特性</h4>
+<table>
+<thead>
+<tr class="header">
+<th>特性</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>多数据源聚合</td>
+<td>Binance + Bybit + OKX 实时数据</td>
+</tr>
+<tr class="even">
+<td>10+趋势形态识别</td>
+<td>头肩顶/底、双顶/底、三角整理、突破回踩等</td>
+</tr>
+<tr class="odd">
+<td>多因子评分</td>
+<td>趋势、动量、成交量、波动率四维评估</td>
+</tr>
+<tr class="even">
+<td>智能仓位</td>
+<td>置信度5-10分对应3%-20%仓位</td>
+</tr>
+<tr class="odd">
+<td>动态止盈止损</td>
+<td>根据波动率自动调整</td>
+</tr>
+</tbody>
+</table>
+<h4 id="信号评分模型0-10分">4.5.3 信号评分模型（0-10分）</h4>
+<p><strong>评分维度及权重</strong>：</p>
+<ol type="1">
+<li><strong>趋势强度因子 (30%)</strong>
+<ul>
+<li>均线多头排列：+2分</li>
+<li>价格站上均线：+1分</li>
+<li>趋势斜率 &gt; 45°：+1分</li>
+</ul></li>
+<li><strong>动量因子 (25%)</strong>
+<ul>
+<li>RSI 30-70 区间：+1分</li>
+<li>RSI &lt; 30 超卖：+2分</li>
+<li>MACD 金叉：+2分</li>
+<li>MACD 能量柱放大：+1分</li>
+</ul></li>
+<li><strong>成交量因子 (25%)</strong>
+<ul>
+<li>成交量 &gt; 5日均量 1.5倍：+2分</li>
+<li>成交量 &gt; 20日均量 2倍：+2分</li>
+<li>主力资金净流入：+1分</li>
+</ul></li>
+<li><strong>波动率因子 (20%)</strong>
+<ul>
+<li>波动率适中 (2-5%)：+2分</li>
+<li>布林带收口：+1分</li>
+<li>突破布林上轨：+1分</li>
+</ul></li>
+</ol>
+<p><strong>执行规则</strong>： - 评分 ≥ 5分：可执行建仓 - 评分 ≥
+8分：重仓执行 (15-20%) - 评分 &lt; 3分：禁止开仓 - 信号衰减 &gt;
+30%：自动平仓</p>
+<h3 id="统一策略unified-strategy">4.6 统一策略（Unified Strategy）</h3>
+<h4 id="策略定位-4">4.6.1 策略定位</h4>
+<ul>
+<li><strong>目标</strong>：融合多策略优势，综合决策</li>
+<li><strong>适合人群</strong>：平衡型投资者</li>
+<li><strong>投资周期</strong>：全天候</li>
+</ul>
+<h4 id="融合机制">4.6.2 融合机制</h4>
+<ul>
+<li>融合主流币、打地鼠、声纳Pro三路信号</li>
+<li>根据市场状态动态调整权重</li>
+<li>牛市：40/30/30（主流/打地鼠/声纳）</li>
+<li>震荡市：20/40/40</li>
+<li>熊市：30/20/50</li>
+</ul>
+<h3 id="策略性能对比">4.7 策略性能对比</h3>
+<table>
+<thead>
+<tr class="header">
+<th>策略</th>
+<th>风险</th>
+<th>月化</th>
+<th>年化</th>
+<th>胜率</th>
+<th>最大回撤</th>
+<th>适合行情</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>主流币</td>
+<td>低</td>
+<td>3-5%</td>
+<td>36-60%</td>
+<td>68%</td>
+<td>12%</td>
+<td>牛市/长线</td>
+</tr>
+<tr class="even">
+<td>打地鼠</td>
+<td>中</td>
+<td>5-10%</td>
+<td>60-120%</td>
+<td>85%</td>
+<td>8%</td>
+<td>震荡/短线</td>
+</tr>
+<tr class="odd">
+<td>分层交易</td>
+<td>低</td>
+<td>2-4%</td>
+<td>24-48%</td>
+<td>72%</td>
+<td>10%</td>
+<td>震荡市</td>
+</tr>
+<tr class="even">
+<td>声纳Pro</td>
+<td>中高</td>
+<td>8-15%</td>
+<td>96-180%</td>
+<td>70%</td>
+<td>20%</td>
+<td>趋势行情</td>
+</tr>
+<tr class="odd">
+<td>统一策略</td>
+<td>中</td>
+<td>4-8%</td>
+<td>48-96%</td>
+<td>75%</td>
+<td>15%</td>
+<td>全行情</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="第五章-风险管理体系">第五章 风险管理体系</h2>
+<h3 id="风控架构">5.1 风控架构</h3>
+<p>XIAMI采用<strong>三层九维</strong>风控体系：</p>
+<p><strong>事前风控</strong>： - 策略准入审核：新策略回测合格后方可上线
+- 仓位限制检查：单币种 ≤20%仓位 - 风险评级匹配：按风险等级分配策略</p>
+<p><strong>事中风控</strong>： - 实时监控：7×24h价格/仓位/盈亏监控 -
+动态止损：触及止损线自动平仓 - 熔断机制：异常波动立即暂停</p>
+<p><strong>事后风控</strong>： - 复盘分析：每笔交易记录分析 -
+策略优化：持续迭代优化 - 绩效评估：定期业绩评估与报告</p>
+<h3 id="风险控制参数">5.2 风险控制参数</h3>
+<table>
+<thead>
+<tr class="header">
+<th>参数</th>
+<th>数值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>单日最大亏损</td>
+<td>5%</td>
+<td>触发熔断，暂停交易</td>
+</tr>
+<tr class="even">
+<td>单策略最大亏损</td>
+<td>10%</td>
+<td>自动暂停该策略</td>
+</tr>
+<tr class="odd">
+<td>最大持仓数</td>
+<td>10</td>
+<td>分散风险</td>
+</tr>
+<tr class="even">
+<td>单币种最大仓位</td>
+<td>20%</td>
+<td>防止集中风险</td>
+</tr>
+<tr class="odd">
+<td>杠杆上限</td>
+<td>3x</td>
+<td>合约交易限制</td>
+</tr>
+<tr class="even">
+<td>止损线</td>
+<td>3-5%</td>
+<td>根据策略类型</td>
+</tr>
+<tr class="odd">
+<td>止盈线</td>
+<td>8-20%</td>
+<td>根据策略类型</td>
+</tr>
+</tbody>
+</table>
+<h3 id="熔断机制">5.3 熔断机制</h3>
+<table>
+<thead>
+<tr class="header">
+<th>触发条件</th>
+<th>动作</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>日亏损 &gt; 3%</td>
+<td>警告，减小仓位</td>
+</tr>
+<tr class="even">
+<td>日亏损 &gt; 5%</td>
+<td>熔断，暂停开仓</td>
+</tr>
+<tr class="odd">
+<td>单策略亏损 &gt; 10%</td>
+<td>暂停该策略</td>
+</tr>
+<tr class="even">
+<td>连续3天亏损</td>
+<td>全面复盘</td>
+</tr>
+<tr class="odd">
+<td>交易所连接失败</td>
+<td>自动切换备用交易所</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="第六章-盈利模型与收益分配">第六章 盈利模型与收益分配</h2>
+<h3 id="收益分配机制">6.1 收益分配机制</h3>
+<pre><code>投资者投资金额
+       │
+       ├── 75% ──→ 投资者 (返还本金 + 75% 收益)
+       │
+       ├── 5%  ──→ 平台管理费 (年化)
+       │
+       └── 20% ──→ 绩效费 (从净利润中提取)</code></pre>
+<h3 id="预期收益表">6.2 预期收益表</h3>
+<p><strong>投资 $1,000 预期收益</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>投资池</th>
+<th>风险</th>
+<th>保守月化</th>
+<th>中性月化</th>
+<th>乐观月化</th>
+<th>年化收益</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>稳健型</td>
+<td>低</td>
+<td>1%</td>
+<td>2%</td>
+<td>3%</td>
+<td>12%-36%</td>
+</tr>
+<tr class="even">
+<td>平衡型</td>
+<td>中</td>
+<td>2%</td>
+<td>4%</td>
+<td>6%</td>
+<td>24%-72%</td>
+</tr>
+<tr class="odd">
+<td>激进型</td>
+<td>高</td>
+<td>4%</td>
+<td>8%</td>
+<td>12%</td>
+<td>48%-144%</td>
+</tr>
+</tbody>
+</table>
+<h3 id="平台收入预估">6.3 平台收入预估</h3>
+<table>
+<thead>
+<tr class="header">
+<th>管理规模</th>
+<th>年管理费 (5%)</th>
+<th>年绩效费 (20%)</th>
+<th>年总收入</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>$100,000</td>
+<td>$5,000</td>
+<td>$20,000</td>
+<td>$25,000</td>
+</tr>
+<tr class="even">
+<td>$500,000</td>
+<td>$25,000</td>
+<td>$100,000</td>
+<td>$125,000</td>
+</tr>
+<tr class="odd">
+<td>$1,000,000</td>
+<td>$50,000</td>
+<td>$200,000</td>
+<td>$250,000</td>
+</tr>
+<tr class="even">
+<td>$5,000,000</td>
+<td>$250,000</td>
+<td>$1,000,000</td>
+<td>$1,250,000</td>
+</tr>
+<tr class="odd">
+<td>$10,000,000</td>
+<td>$500,000</td>
+<td>$2,000,000</td>
+<td>$2,500,000</td>
+</tr>
+</tbody>
+</table>
+<h3 id="回本周期">6.4 回本周期</h3>
+<table>
+<thead>
+<tr class="header">
+<th>投资池</th>
+<th>最低投资</th>
+<th>预计回本周期</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>稳健型</td>
+<td>$100</td>
+<td>3-6 个月</td>
+</tr>
+<tr class="even">
+<td>平衡型</td>
+<td>$500</td>
+<td>2-4 个月</td>
+</tr>
+<tr class="odd">
+<td>激进型</td>
+<td>$1,000</td>
+<td>1-2 个月</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="第七章-投资池设计">第七章 投资池设计</h2>
+<h3 id="三种风险等级池">7.1 三种风险等级池</h3>
+<table>
+<thead>
+<tr class="header">
+<th>池类型</th>
+<th>风险</th>
+<th>目标年化</th>
+<th>策略组合</th>
+<th>最低投资</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>稳健型池</td>
+<td>低</td>
+<td>15-35%</td>
+<td>主流币 + 分层</td>
+<td>$100</td>
+</tr>
+<tr class="even">
+<td>平衡型池</td>
+<td>中</td>
+<td>35-60%</td>
+<td>多策略组合</td>
+<td>$500</td>
+</tr>
+<tr class="odd">
+<td>激进型池</td>
+<td>高</td>
+<td>60-100%</td>
+<td>声纳Pro + 套利</td>
+<td>$1,000</td>
+</tr>
+</tbody>
+</table>
+<h3 id="池特性对比">7.2 池特性对比</h3>
+<table>
+<thead>
+<tr class="header">
+<th>特性</th>
+<th>稳健型</th>
+<th>平衡型</th>
+<th>激进型</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>风险等级</td>
+<td>低</td>
+<td>中</td>
+<td>高</td>
+</tr>
+<tr class="even">
+<td>预期月化</td>
+<td>1-2%</td>
+<td>3-5%</td>
+<td>5-8%</td>
+</tr>
+<tr class="odd">
+<td>最大回撤</td>
+<td>10%</td>
+<td>20%</td>
+<td>30%</td>
+</tr>
+<tr class="even">
+<td>锁定期</td>
+<td>30天</td>
+<td>30天</td>
+<td>60天</td>
+</tr>
+<tr class="odd">
+<td>赎回费</td>
+<td>2%</td>
+<td>2%</td>
+<td>3%</td>
+</tr>
+<tr class="even">
+<td>策略数量</td>
+<td>2</td>
+<td>4</td>
+<td>6+</td>
+</tr>
+<tr class="odd">
+<td>杠杆使用</td>
+<td>无</td>
+<td>1-2x</td>
+<td>2-3x</td>
+</tr>
+</tbody>
+</table>
+<h3 id="投资流程">7.3 投资流程</h3>
+<ol type="1">
+<li><strong>连接钱包</strong>：MetaMask / WalletConnect</li>
+<li><strong>KYC验证</strong>：邮箱验证（小额）/ 身份验证（大额）</li>
+<li><strong>选择投资池</strong>：稳健型 / 平衡型 / 激进型</li>
+<li><strong>存入资金</strong>：支持 USDT, USDC, ETH, BNB</li>
+<li><strong>获得凭证</strong>：xftUSDT（投资凭证）</li>
+<li><strong>收益追踪</strong>：实时dashboard查看</li>
+</ol>
+<hr />
+<h2 id="第八章-智能合约机制">第八章 智能合约机制</h2>
+<h3 id="合约架构">8.1 合约架构</h3>
+<table>
+<thead>
+<tr class="header">
+<th>合约</th>
+<th>功能</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>XIAMIToken</td>
+<td>代币发行、质押机制、投票治理</td>
+</tr>
+<tr class="even">
+<td>Vault Contract</td>
+<td>资金托管、份额计算、存取管理</td>
+</tr>
+<tr class="odd">
+<td>Strategy Contract</td>
+<td>策略注册、业绩记录、绩效结算</td>
+</tr>
+<tr class="even">
+<td>Distribution Contract</td>
+<td>收益计算、自动分账、赎回处理</td>
+</tr>
+</tbody>
+</table>
+<h3 id="资金流向">8.2 资金流向</h3>
+<pre><code>用户充值 USDT/USDC
+       │
+       ▼
+┌──────────────────┐
+│  Vault Contract  │
+│  (智能合约托管)  │
+└──────────────────┘
+       │
+       ├──────────┬──────────┐
+       ▼          ▼          ▼
+  稳健型池    平衡型池    激进型池
+       │          │          │
+       └──────────┴──────────┘
+                 ▼
+        ┌─────────────┐
+        │ XIAMI 量化  │
+        │ 引擎执行    │
+        └─────────────┘
+                 │
+       ┌─────────┴─────────┐
+       ▼                   ▼
+   投资收益            投资损失
+       │                   │
+       └─────────┬─────────┘
+                 ▼
+        ┌─────────────┐
+        │  收益分配   │
+        │   (T+1)    │
+        └─────────────┘</code></pre>
+<h3 id="安全机制">8.3 安全机制</h3>
+<table>
+<thead>
+<tr class="header">
+<th>机制</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>多签钱包</td>
+<td>3/5 多签，大额操作需多方授权</td>
+</tr>
+<tr class="even">
+<td>时间锁</td>
+<td>重要参数修改需 24-48 小时生效</td>
+</tr>
+<tr class="odd">
+<td>紧急暂停</td>
+<td>异常情况可立即暂停所有操作</td>
+</tr>
+<tr class="even">
+<td>双重审计</td>
+<td>上线前通过两家审计公司审计</td>
+</tr>
+<tr class="odd">
+<td>合约可升级</td>
+<td>保留升级能力，兼顾安全与演进</td>
+</tr>
+<tr class="even">
+<td>冷钱包</td>
+<td>大额资金离线存储</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="第九章-运营体系">第九章 运营体系</h2>
+<h3 id="telegram-bot-交互">9.1 Telegram Bot 交互</h3>
+<table>
+<thead>
+<tr class="header">
+<th>命令</th>
+<th>功能</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>/start</td>
+<td>启动机器人</td>
+</tr>
+<tr class="even">
+<td>/balance</td>
+<td>查看账户余额</td>
+</tr>
+<tr class="odd">
+<td>/pool</td>
+<td>查看投资池信息</td>
+</tr>
+<tr class="even">
+<td>/收益</td>
+<td>查看当前收益</td>
+</tr>
+<tr class="odd">
+<td>/战绩</td>
+<td>查看历史业绩</td>
+</tr>
+<tr class="even">
+<td>/help</td>
+<td>帮助信息</td>
+</tr>
+</tbody>
+</table>
+<h3 id="dashboard-功能">9.2 Dashboard 功能</h3>
+<table>
+<thead>
+<tr class="header">
+<th>页面</th>
+<th>功能</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>仪表盘</td>
+<td>总览资产、收益、持仓</td>
+</tr>
+<tr class="even">
+<td>投资池</td>
+<td>存入/赎回、切换池</td>
+</tr>
+<tr class="odd">
+<td>交易记录</td>
+<td>查看所有交易明细</td>
+</tr>
+<tr class="even">
+<td>业绩报告</td>
+<td>月/季/年度报告</td>
+</tr>
+<tr class="odd">
+<td>设置</td>
+<td>通知偏好、安全设置</td>
+</tr>
+</tbody>
+</table>
+<h3 id="社区计划">9.3 社区计划</h3>
+<table>
+<thead>
+<tr class="header">
+<th>渠道</th>
+<th>目标</th>
+<th>启动时间</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Discord</td>
+<td>5000 成员</td>
+<td>Q2</td>
+</tr>
+<tr class="even">
+<td>Twitter</td>
+<td>10000 粉丝</td>
+<td>Q2</td>
+</tr>
+<tr class="odd">
+<td>Telegram</td>
+<td>3000 成员</td>
+<td>Q2</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="第十章-合规与安全">第十章 合规与安全</h2>
+<h3 id="合规措施">10.1 合规措施</h3>
+<table>
+<thead>
+<tr class="header">
+<th>项目</th>
+<th>状态</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>KYC/AML</td>
+<td>规划中</td>
+<td>大额投资需要</td>
+</tr>
+<tr class="even">
+<td>地区限制</td>
+<td>规划中</td>
+<td>禁止地区除外</td>
+</tr>
+<tr class="odd">
+<td>税务报告</td>
+<td>规划中</td>
+<td>年度收益报告</td>
+</tr>
+<tr class="even">
+<td>审计</td>
+<td>规划中</td>
+<td>定期第三方审计</td>
+</tr>
+</tbody>
+</table>
+<h3 id="安全措施">10.2 安全措施</h3>
+<ul>
+<li>多签钱包管理</li>
+<li>双重审计</li>
+<li>合约可升级</li>
+<li>紧急暂停机制</li>
+</ul>
+<hr />
+<h2 id="第十一章-团队介绍">第十一章 团队介绍</h2>
+<h3 id="团队构成">11.1 团队构成</h3>
+<table>
+<thead>
+<tr class="header">
+<th>角色</th>
+<th>人数</th>
+<th>职责</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>创始人/CEO</td>
+<td>1</td>
+<td>战略规划、融资</td>
+</tr>
+<tr class="even">
+<td>量化团队</td>
+<td>3</td>
+<td>策略开发、回测</td>
+</tr>
+<tr class="odd">
+<td>开发团队</td>
+<td>3</td>
+<td>智能合约、前后端</td>
+</tr>
+<tr class="even">
+<td>运营团队</td>
+<td>2</td>
+<td>社区、市场</td>
+</tr>
+<tr class="odd">
+<td>顾问</td>
+<td>2</td>
+<td>合规、技术咨询</td>
+</tr>
+</tbody>
+</table>
+<h3 id="激励机制">11.2 激励机制</h3>
+<table>
+<thead>
+<tr class="header">
+<th>类别</th>
+<th>奖励</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>社区大使</td>
+<td>$500-2000 + 代币</td>
+</tr>
+<tr class="even">
+<td>策略贡献</td>
+<td>收益分成 5-10%</td>
+</tr>
+<tr class="odd">
+<td>Bug 反馈</td>
+<td>$100-1000</td>
+</tr>
+<tr class="even">
+<td>内容创作</td>
+<td>代币奖励</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="第十二章-发展路线图">第十二章 发展路线图</h2>
+<h3 id="时间线">12.1 时间线</h3>
+<table>
+<thead>
+<tr class="header">
+<th>阶段</th>
+<th>时间</th>
+<th>目标</th>
+<th>状态</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>M1</td>
+<td>Q1</td>
+<td>策略开发完成</td>
+<td>已完成</td>
+</tr>
+<tr class="even">
+<td>M2</td>
+<td>Q1</td>
+<td>模拟交易达标</td>
+<td>已完成</td>
+</tr>
+<tr class="odd">
+<td>M3</td>
+<td>Q2</td>
+<td>智能合约完成</td>
+<td>进行中</td>
+</tr>
+<tr class="even">
+<td>M4</td>
+<td>Q2</td>
+<td>Beta 上线</td>
+<td>规划中</td>
+</tr>
+<tr class="odd">
+<td>M5</td>
+<td>Q3</td>
+<td>公开募资 $500K</td>
+<td>规划中</td>
+</tr>
+<tr class="even">
+<td>M6</td>
+<td>Q4</td>
+<td>资管规模 $5M</td>
+<td>规划中</td>
+</tr>
+</tbody>
+</table>
+<h3 id="里程碑">12.2 里程碑</h3>
+<pre><code>2026 Q1: 测试迭代
+- XIAMI 量化策略开发完成
+- 多交易所对接 (Binance, Bybit, OKX)
+- 模拟交易测试 (累计 1000+ 笔)
+- 声纳 Pro V3 发布
+- 新币空投猎手上线
+
+2026 Q2: Beta 测试
+- 小规模募资 ($50K-$100K)
+- 真实资金模拟盘
+- 智能合约部署 (测试网)
+- 社区建设
+- Beta 投资者招募
+
+2026 Q3: 正式上线
+- 主网上线
+- 公开募资 ($500K-$1M)
+- 多链部署 (Polygon, BSC)
+- 治理代币发行
+
+2026 Q4: 规模扩展
+- 机构合作
+- 资管规模 $5M+
+- 生态系统扩展 (开发者 API)</code></pre>
+<hr />
+<h2 id="第十三章-风险提示">第十三章 风险提示</h2>
+<p>⚠️ <strong>重要风险提示</strong></p>
+<ol type="1">
+<li><strong>市场风险</strong>：加密货币价格波动剧烈，可能导致本金损失</li>
+<li><strong>策略风险</strong>：量化策略可能失效，过往业绩不代表未来</li>
+<li><strong>技术风险</strong>：智能合约可能存在漏洞</li>
+<li><strong>监管风险</strong>：各国监管政策可能影响项目运营</li>
+<li><strong>流动性风险</strong>：极端行情下可能无法及时退出</li>
+</ol>
+<p><strong>请务必</strong>： - 仅投资可承受损失的资金 - 详细了解项目风险
+- 必要时咨询专业财务顾问</p>
+<hr />
+<h2 id="第十四章-附录">第十四章 附录</h2>
+<h3 id="附录a术语表">附录A：术语表</h3>
+<table>
+<thead>
+<tr class="header">
+<th>术语</th>
+<th>定义</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>TVL</td>
+<td>Total Value Locked，锁仓总价值</td>
+</tr>
+<tr class="even">
+<td>APY</td>
+<td>Annual Percentage Yield，年化收益率</td>
+</tr>
+<tr class="odd">
+<td>ROI</td>
+<td>Return on Investment，投资回报率</td>
+</tr>
+<tr class="even">
+<td>Drawdown</td>
+<td>回撤，最大亏损幅度</td>
+</tr>
+<tr class="odd">
+<td>Slippage</td>
+<td>滑点，交易成交价格与预期差异</td>
+</tr>
+<tr class="even">
+<td>Gas</td>
+<td>区块链交易手续费</td>
+</tr>
+</tbody>
+</table>
+<h3 id="附录b联系方式">附录B：联系方式</h3>
+<table>
+<thead>
+<tr class="header">
+<th>渠道</th>
+<th>地址</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Website</td>
+<td>xiami.ai (即将上线)</td>
+</tr>
+<tr class="even">
+<td>Email</td>
+<td>contact@xiami.ai</td>
+</tr>
+<tr class="odd">
+<td>Twitter</td>
+<td><span class="citation"
+data-cites="XIAMI_Protocol">@XIAMI_Protocol</span></td>
+</tr>
+<tr class="even">
+<td>Discord</td>
+<td>discord.gg/xiami</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>免责声明</strong>：本白皮书仅供参考，不构成投资建议。投资有风险，请谨慎决策。</p>
+<hr />
+<p><strong>文档信息</strong>： - 版本：6.0 完整版 - 更新日期：2026-03-12
+- 作者：XIAMI Team - 许可证：All Rights Reserved</p>
+<hr />
+<p><em>XIAMI - 让量化交易触手可及</em></p>

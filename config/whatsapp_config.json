@@ -1,0 +1,170 @@
+{
+  "whatsapp": {
+    "enabled": true,
+    "provider": "whatsapp-business-api",
+    "version": "v17.0",
+    
+    "authentication": {
+      "method": "access-token",
+      "phoneNumberId": null,
+      "businessAccountId": null,
+      "accessToken": null,
+      "verifyToken": null,
+      "webhookUrl": "https://your-domain.com/webhook/whatsapp"
+    },
+    
+    "messaging": {
+      "templates": {
+        "enabled": true,
+        "language": "en_US",
+        "defaultTemplate": "hello_world"
+      },
+      "media": {
+        "supportedTypes": ["image", "video", "audio", "document"],
+        "maxSizeMB": 16,
+        "autoDownload": true
+      },
+      "replies": {
+        "quickReplies": true,
+        "listMessages": true,
+        "buttons": true
+      }
+    },
+    
+    "notifications": {
+      "cryptoAlerts": true,
+      "jobAlerts": true,
+      "systemStatus": true,
+      "dailyDigest": true,
+      "urgentOnly": false,
+      "quietHours": {
+        "enabled": true,
+        "start": "22:00",
+        "end": "08:00",
+        "timezone": "Asia/Shanghai"
+      }
+    },
+    
+    "contacts": {
+      "sync": true,
+      "groups": {
+        "cryptoTraders": true,
+        "jobSeekers": true,
+        "developers": true,
+        "admins": true
+      },
+      "blacklist": [],
+      "whitelist": []
+    },
+    
+    "automation": {
+      "welcomeMessage": true,
+      "autoReply": {
+        "enabled": true,
+        "delaySeconds": 30,
+        "message": "Thanks for your message! I'll get back to you soon."
+      },
+      "broadcasts": {
+        "enabled": true,
+        "schedule": "daily",
+        "time": "09:00"
+      }
+    },
+    
+    "security": {
+      "encryption": true,
+      "verification": true,
+      "rateLimiting": {
+        "enabled": true,
+        "messagesPerMinute": 60,
+        "burstLimit": 10
+      },
+      "spamProtection": true
+    },
+    
+    "logging": {
+      "level": "info",
+      "messageLogging": true,
+      "mediaLogging": false,
+      "errorLogging": true,
+      "file": "~/opc-project/logs/whatsapp/whatsapp.log"
+    },
+    
+    "integration": {
+      "withTelegram": true,
+      "syncMessages": false,
+      "crossPlatformAlerts": true,
+      "unifiedCommands": {
+        "/start": "启动OPC助手",
+        "/crypto": "加密货币监控",
+        "/jobs": "求职助手",
+        "/status": "系统状态",
+        "/help": "帮助信息"
+      }
+    },
+    
+    "performance": {
+      "cacheEnabled": true,
+      "cacheTTL": 300,
+      "concurrentConnections": 5,
+      "timeout": 30000,
+      "retryAttempts": 3
+    },
+    
+    "webhook": {
+      "enabled": true,
+      "events": ["message", "status", "template"],
+      "verification": true,
+      "secret": null
+    },
+    
+    "templates": [
+      {
+        "name": "crypto_alert",
+        "category": "utility",
+        "language": "en_US",
+        "components": [
+          {
+            "type": "body",
+            "text": "🚨 Crypto Alert: {{1}} is at {{2}} ({{3}}% change)"
+          }
+        ]
+      },
+      {
+        "name": "job_alert",
+        "category": "utility",
+        "language": "en_US",
+        "components": [
+          {
+            "type": "body",
+            "text": "📋 New Job Alert: {{1}} at {{2}} - {{3}}"
+          }
+        ]
+      },
+      {
+        "name": "system_status",
+        "category": "utility",
+        "language": "en_US",
+        "components": [
+          {
+            "type": "body",
+            "text": "📊 System Status: {{1}} - Uptime: {{2}} - Last Check: {{3}}"
+          }
+        ]
+      }
+    ],
+    
+    "setupInstructions": {
+      "step1": "Create WhatsApp Business Account at business.facebook.com",
+      "step2": "Get Phone Number ID and Business Account ID",
+      "step3": "Generate Permanent Access Token",
+      "step4": "Set Webhook URL and Verify Token",
+      "step5": "Configure this file with your credentials",
+      "step6": "Test with /start command"
+    },
+    
+    "status": "not_configured",
+    "lastUpdated": "2026-02-28T03:05:00Z",
+    "notes": "需要配置认证信息才能启用WhatsApp功能"
+  }
+}

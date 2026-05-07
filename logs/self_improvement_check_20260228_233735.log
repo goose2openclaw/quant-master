@@ -1,0 +1,61 @@
+自我改进检查报告 - Sat Feb 28 23:37:35 CST 2026
+==================================
+OpenClaw status
+
+Overview
+┌─────────────────┬───────────────────────────────────────────────────────────────────────────────────────────────────┐
+│ Item            │ Value                                                                                             │
+├─────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────┤
+│ Dashboard       │ http://127.0.0.1:18789/                                                                           │
+│ OS              │ linux 6.6.87.2-microsoft-standard-WSL2 (x64) · node 22.22.0                                       │
+│ Tailscale       │ off                                                                                               │
+│ Channel         │ stable (default)                                                                                  │
+│ Update          │ pnpm · npm latest 2026.2.26                                                                       │
+│ Gateway         │ local · ws://127.0.0.1:18789 (local loopback) · reachable 14ms · auth token · ZenbookEric (172.   │
+│                 │ 29.153.161) app 2026.2.25 linux 6.6.87.2-microsoft-standard-WSL2                                  │
+│ Gateway service │ systemd installed · enabled · running (pid 9532, state active)                                    │
+│ Node service    │ systemd not installed                                                                             │
+│ Agents          │ 1 · no bootstrap files · sessions 2 · default main active 4m ago                                  │
+│ Memory          │ 0 files · 0 chunks · sources memory · plugin memory-core · vector unknown · fts ready · cache on  │
+│                 │ (0)                                                                                               │
+│ Probes          │ skipped (use --deep)                                                                              │
+│ Events          │ none                                                                                              │
+│ Heartbeat       │ 30m (main)                                                                                        │
+│ Sessions        │ 2 active · default deepseek-chat (64k ctx) · ~/.openclaw/agents/main/sessions/sessions.json       │
+└─────────────────┴───────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+Security audit
+Summary: 0 critical · 1 warn · 1 info
+  WARN Reverse proxy headers are not trusted
+    gateway.bind is loopback and gateway.trustedProxies is empty. If you expose the Control UI through a reverse proxy, configure trusted proxies so local-client c…
+    Fix: Set gateway.trustedProxies to your proxy IPs or keep the Control UI local-only.
+Full report: openclaw security audit
+Deep probe: openclaw security audit --deep
+
+Channels
+┌──────────┬─────────┬────────┬───────────────────────────────────────────────────────────────────────────────────────┐
+│ Channel  │ Enabled │ State  │ Detail                                                                                │
+├──────────┼─────────┼────────┼───────────────────────────────────────────────────────────────────────────────────────┤
+│ Telegram │ ON      │ OK     │ token config (8735…0njo · len 46) · accounts 1/1                                      │
+│ WhatsApp │ ON      │ OK     │ linked · +6597319708 · auth 16h ago · accounts 1                                      │
+└──────────┴─────────┴────────┴───────────────────────────────────────────────────────────────────────────────────────┘
+
+Sessions
+┌──────────────────────────────────────────────┬────────┬─────────┬───────────────┬───────────────────────────────────┐
+│ Key                                          │ Kind   │ Age     │ Model         │ Tokens                            │
+├──────────────────────────────────────────────┼────────┼─────────┼───────────────┼───────────────────────────────────┤
+│ agent:main:main                              │ direct │ 4m ago  │ deepseek-chat │ unknown/64k (?%) · 🗄️ 100% cached │
+│ telegram:slash:6270866128                    │ direct │ 14h ago │ deepseek-chat │ unknown/64k (?%)                  │
+└──────────────────────────────────────────────┴────────┴─────────┴───────────────┴───────────────────────────────────┘
+
+FAQ: https://docs.openclaw.ai/faq
+Troubleshooting: https://docs.openclaw.ai/troubleshooting
+
+Next steps:
+  Need to share?      openclaw status --all
+  Need to debug live? openclaw logs --follow
+  Need to test channels? openclaw status --deep
+
+技能数量: 33
+音频文件: 3
+语义模式: 0

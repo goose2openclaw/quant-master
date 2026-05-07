@@ -1,0 +1,83 @@
+{
+  "team_name": "OPC多智能体团队",
+  "created_at": "2026-02-28T02:43:00+08:00",
+  "version": "1.0.0",
+  
+  "agents": {
+    "crypto_monitor": {
+      "name": "加密货币监控Agent",
+      "description": "监控全网山寨币，分析市场趋势，生成交易信号",
+      "responsibilities": [
+        "实时监控加密货币价格",
+        "技术指标分析",
+        "异常波动检测",
+        "生成交易建议"
+      ],
+      "skills_required": ["opc-crypto-monitor", "telegram", "cron"],
+      "schedule": "每小时运行一次",
+      "output_channels": ["telegram", "log_file"]
+    },
+    
+    "job_assistant": {
+      "name": "求职助手Agent",
+      "description": "监控JobStreet/LinkedIn职位，匹配用户技能，发送提醒",
+      "responsibilities": [
+        "抓取职位信息",
+        "技能匹配分析",
+        "薪资水平评估",
+        "面试准备建议"
+      ],
+      "skills_required": ["opc-job-assistant", "web_fetch", "calendar"],
+      "schedule": "每日上午9点运行",
+      "output_channels": ["telegram", "email"]
+    },
+    
+    "smart_contract_dev": {
+      "name": "智能合约开发Agent",
+      "description": "协助Solidity智能合约开发、测试和部署",
+      "responsibilities": [
+        "合约代码审查",
+        "安全漏洞检测",
+        "测试用例生成",
+        "部署脚本编写"
+      ],
+      "skills_required": ["opc-smart-contract", "github", "shell"],
+      "schedule": "按需运行",
+      "output_channels": ["github", "log_file"]
+    },
+    
+    "trading_helper": {
+      "name": "交易辅助Agent",
+      "description": "提供量化交易策略，风险管理，投资组合分析",
+      "responsibilities": [
+        "策略回测",
+        "风险管理",
+        "投资组合优化",
+        "市场情绪分析"
+      ],
+      "skills_required": ["opc-trading-helper", "cron", "telegram"],
+      "schedule": "每30分钟运行一次",
+      "output_channels": ["telegram", "dashboard"]
+    }
+  },
+  
+  "coordination": {
+    "communication_protocol": "shared_memory",
+    "shared_files": [
+      "/home/goose/.openclaw/workspace/memory/team_status.json",
+      "/home/goose/.openclaw/workspace/logs/team_activity.log"
+    ],
+    "meeting_schedule": "每日08:00团队状态同步"
+  },
+  
+  "monitoring": {
+    "health_check_interval": 300,
+    "alert_channels": ["telegram"],
+    "metrics_to_track": [
+      "agent_uptime",
+      "task_completion_rate",
+      "error_rate",
+      "response_time"
+    ]
+  }
+}

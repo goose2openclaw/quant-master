@@ -1,0 +1,17 @@
+{
+  "opc-job-assistant": {
+    "enabled": true,
+    "optimized": "2026-02-28",
+    "performance": {
+      "cacheEnabled": true,
+      "cacheTTL": 600,
+      "timeout": 30000
+    },
+    "integration": {
+      "withTelegram": true,
+      "withWhatsApp": true
+    },
+    "version": "2.0.0",
+    "status": "optimized"
+  }
+}

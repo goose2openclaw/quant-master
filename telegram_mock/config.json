@@ -1,0 +1,24 @@
+{
+  "mock_bot": {
+    "name": "OPC Mock Bot",
+    "username": "@opc_mock_bot",
+    "id": "1234567890",
+    "token": "8405295378:AAG3bvttAQkw00tjuTo1ypw02TLSKAFLT0o",
+    "status": "offline_mock",
+    "created": "2026-02-28T02:00:00Z"
+  },
+  "features": {
+    "command_processing": true,
+    "message_storage": true,
+    "user_profiles": true,
+    "offline_mode": true
+  },
+  "users": [
+    {
+      "id": "1001",
+      "name": "OPC Developer",
+      "username": "@opc_dev",
+      "chat_id": "1001"
+    }
+  ]
+}

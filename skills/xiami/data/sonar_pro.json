@@ -1,0 +1,192 @@
+{
+  "version": "2.0",
+  "name": "XIAMI Sonar Pro",
+  "core_principles": {
+    "observe_first": "500ms观测周期，仅记录不执行",
+    "confirm_then_act": "趋势确认后才执行",
+    "strict_discipline": "严格止损止盈",
+    "continuous_learning": "持续学习优化"
+  },
+  "observe_config": {
+    "interval_ms": 500,
+    "symbols": {
+      "tier1": ["BTC/USDT", "ETH/USDT"],
+      "tier2": ["SOL/USDT", "BNB/USDT", "XRP/USDT", "ADA/USDT"],
+      "tier3": ["DOGE/USDT", "AVAX/USDT", "DOT/USDT", "MATIC/USDT", "LINK/USDT"],
+      "tier4": ["PEPE/WIF/BONK/SHIB/1000SHIB"]
+    }
+  },
+  "data_sources": {
+    "realtime": {
+      "binance": {"weight": 10, "latency_threshold": 500},
+      "bybit": {"weight": 9, "latency_threshold": 500},
+      "okx": {"weight": 8, "latency_threshold": 800}
+    },
+    "aggregated": ["binance", "bybit", "okx", "gate", "mexc"]
+  },
+  "indicators": {
+    "price": ["close", "open", "high", "low", "volume"],
+    "ma": ["sma5", "sma10", "sma20", "sma50", "sma200"],
+    "ema": ["ema9", "ema12", "ema21", "ema26"],
+    "momentum": ["rsi", "macd", "stochastic", "cci", "williams_r"],
+    "trend": ["adx", "plus_di", "minus_di", "atr"],
+    "volatility": ["bb_upper", "bb_lower", "bb_width", "atr_percent"],
+    "volume": ["obv", "vwap", "volume_ma", "volume_ratio"]
+  },
+  "trend_patterns": {
+    "momentum_bull": {
+      "name": "多头动量",
+      "conditions": {
+        "required": ["rsi_above_50", "price_above_sma20", "macd_bullish"],
+        "optional": ["volume_increasing", "adx_above_25"]
+      },
+      "timeframes": {
+        "1m": {"confidence": 3, "action": "observe"},
+        "5m": {"confidence": 5, "action": "execute"},
+        "15m": {"confidence": 7, "action": "execute"}
+      }
+    },
+    "momentum_bear": {
+      "name": "空头动量",
+      "conditions": {
+        "required": ["rsi_below_50", "price_below_sma20", "macd_bearish"],
+        "optional": ["volume_increasing", "adx_above_25"]
+      },
+      "timeframes": {
+        "1m": {"confidence": 3, "action": "observe"},
+        "5m": {"confidence": 5, "action": "execute"},
+        "15m": {"confidence": 7, "action": "execute"}
+      }
+    },
+    "breakout_up": {
+      "name": "突破上涨",
+      "conditions": {
+        "required": ["price_breaks_high", "volume_surge"],
+        "optional": ["rsi_above_60"]
+      }
+    },
+    "breakout_down": {
+      "name": "突破下跌",
+      "conditions": {
+        "required": ["price_breaks_low", "volume_surge"],
+        "optional": ["rsi_below_40"]
+      }
+    },
+    "reversal_bull": {
+      "name": "反转做多",
+      "conditions": {
+        "required": ["rsi_oversold", "price_bounces"],
+        "optional": ["divergence_bull"]
+      }
+    },
+    "reversal_bear": {
+      "name": "反转做空",
+      "conditions": {
+        "required": ["rsi_overbought", "price_rejects"],
+        "optional": ["divergence_bear"]
+      }
+    },
+    "accumulation": {
+      "name": "积累",
+      "conditions": {
+        "required": ["price_range_bound", "volume_stable"],
+        "optional": ["obv_rising"]
+      }
+    },
+    "distribution": {
+      "name": "分配",
+      "conditions": {
+        "required": ["price_range_bound", "volume_increasing"],
+        "optional": ["obv_falling"]
+      }
+    },
+    "volatility_squeeze": {
+      "name": "波动率挤压",
+      "conditions": {
+        "required": ["bb_squeeze", "atr_low"],
+        "optional": []
+      }
+    },
+    "liquidation_spike": {
+      "name": "清算脉冲",
+      "conditions": {
+        "required": ["large_liquidation", "price_spike"],
+        "optional": ["funding_extreme"]
+      }
+    }
+  },
+  "confidence_scoring": {
+    "base_score": 0,
+    "rsi": {
+      "oversold_30": 3,
+      "oversold_40": 2,
+      "overbought_70": -3,
+      "overbought_60": -2
+    },
+    "macd": {
+      "golden_cross": 3,
+      "death_cross": -3,
+      "histogram_increasing": 2,
+      "histogram_decreasing": -2
+    },
+    "volume": {
+      "surge_2x": 2,
+      "surge_3x": 3,
+      "declining": -1
+    },
+    "trend": {
+      "adx_above_25": 2,
+      "adx_below_20": -2,
+      "price_above_ma50": 2,
+      "price_below_ma50": -2
+    }
+  },
+  "execution_rules": {
+    "min_confidence": 5,
+    "max_confidence": 10,
+    "position_sizing": {
+      "5": 0.03,
+      "6": 0.05,
+      "7": 0.08,
+      "8": 0.1,
+      "9": 0.15,
+      "10": 0.2
+    },
+    "stop_loss": {
+      "1m": 0.01,
+      "5m": 0.02,
+      "15m": 0.03,
+      "1h": 0.05,
+      "4h": 0.08
+    },
+    "take_profit": {
+      "1m": 0.02,
+      "5m": 0.05,
+      "15m": 0.08,
+      "1h": 0.12,
+      "4h": 0.15
+    }
+  },
+  "risk_management": {
+    "max_daily_trades": 10,
+    "max_daily_loss": 0.05,
+    "max_open_positions": 5,
+    "max_position_per_trade": 0.2,
+    "correlation_check": true,
+    "news_blackout": true
+  },
+  "discipline": {
+    "no_revenge_trading": true,
+    "no_emotional_trading": true,
+    "always_use_stop_loss": true,
+    "never_ 加仓_losing": true,
+    "take_break_after_loss": true
+  },
+  "backtest": {
+    "period": "90d",
+    "commission": 0.001,
+    "slippage": 0.0005,
+    "min_trades": 100,
+    "required_metrics": ["sharpe_ratio", "max_drawdown", "win_rate", "profit_factor"]
+  }
+}

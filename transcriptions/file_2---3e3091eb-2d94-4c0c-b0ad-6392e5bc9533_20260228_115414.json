@@ -1,0 +1,16 @@
+{
+  "success": true,
+  "text": "查看一下当前的OpenCloud的状态",
+  "language": "zh",
+  "language_probability": 1,
+  "duration": 4.6535,
+  "processing_time": 2.0642223358154297,
+  "segments": [
+    {
+      "start": 0.14,
+      "end": 4.48,
+      "text": "查看一下当前的OpenCloud的状态"
+    }
+  ],
+  "model": "tiny"
+}

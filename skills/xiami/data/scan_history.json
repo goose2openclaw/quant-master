@@ -1,0 +1,187 @@
+[
+  {
+    "time": "2026-03-11T01:30:31.827079",
+    "alerts": [
+      {
+        "symbol": "FIL/USDT",
+        "exchange": "binance",
+        "price": 0.861,
+        "change": -8.307,
+        "volume": 20585307.52278,
+        "tier": "tier2",
+        "score": -21.614,
+        "time": "2026-03-11T01:30:28.349075"
+      },
+      {
+        "symbol": "FIL/USDT",
+        "exchange": "okx",
+        "price": 0.8612,
+        "change": -8.304940374787053,
+        "volume": 11785995.26206807,
+        "tier": "tier2",
+        "score": -21.609880749574106,
+        "time": "2026-03-11T01:30:31.418392"
+      },
+      {
+        "symbol": "FIL/USDT",
+        "exchange": "bybit",
+        "price": 0.862,
+        "change": -8.2,
+        "volume": 1338245.66332,
+        "tier": "tier2",
+        "score": -18.4,
+        "time": "2026-03-11T01:30:29.983726"
+      },
+      {
+        "symbol": "DOGE/USDT",
+        "exchange": "binance",
+        "price": 0.09367,
+        "change": 3.047,
+        "volume": 182027139.94466,
+        "tier": "tier1",
+        "score": 16.094,
+        "time": "2026-03-11T01:30:22.693278"
+      },
+      {
+        "symbol": "DOGE/USDT",
+        "exchange": "okx",
+        "price": 0.09367,
+        "change": 3.0246370435547734,
+        "volume": 106260773.73422113,
+        "tier": "tier1",
+        "score": 16.049274087109545,
+        "time": "2026-03-11T01:30:26.305484"
+      },
+      {
+        "symbol": "XLM/USDT",
+        "exchange": "binance",
+        "price": 0.1581,
+        "change": 4.15,
+        "volume": 13118862.9159,
+        "tier": "tier1",
+        "score": 13.3,
+        "time": "2026-03-11T01:30:23.792041"
+      },
+      {
+        "symbol": "AAVE/USDT",
+        "exchange": "binance",
+        "price": 110.93,
+        "change": 3.789,
+        "volume": 14195939.73576,
+        "tier": "tier2",
+        "score": 12.578,
+        "time": "2026-03-11T01:30:27.940227"
+      },
+      {
+        "symbol": "AAVE/USDT",
+        "exchange": "bybit",
+        "price": 110.91,
+        "change": 3.76,
+        "volume": 53103466.266004,
+        "tier": "tier2",
+        "score": 12.52,
+        "time": "2026-03-11T01:30:29.464372"
+      },
+      {
+        "symbol": "NEAR/USDT",
+        "exchange": "binance",
+        "price": 1.279,
+        "change": 3.395,
+        "volume": 30744054.8855,
+        "tier": "tier2",
+        "score": 11.79,
+        "time": "2026-03-11T01:30:28.464692"
+      },
+      {
+        "symbol": "SHIB/USDT",
+        "exchange": "binance",
+        "price": 5.64e-06,
+        "change": 3.297,
+        "volume": 17521219.90667541,
+        "tier": "tier2",
+        "score": 11.594000000000001,
+        "time": "2026-03-11T01:30:28.245164"
+      },
+      {
+        "symbol": "DOGE/USDT",
+        "exchange": "bybit",
+        "price": 0.09368,
+        "change": 3.02,
+        "volume": 38575824.26611,
+        "tier": "tier1",
+        "score": 11.04,
+        "time": "2026-03-11T01:30:24.696890"
+      },
+      {
+        "symbol": "XLM/USDT",
+        "exchange": "bybit",
+        "price": 0.1581,
+        "change": 4.15,
+        "volume": 3166986.10965,
+        "tier": "tier1",
+        "score": 10.3,
+        "time": "2026-03-11T01:30:25.316934"
+      },
+      {
+        "symbol": "XLM/USDT",
+        "exchange": "okx",
+        "price": 0.15809,
+        "change": 4.1436100131752305,
+        "volume": 4241587.327365794,
+        "tier": "tier1",
+        "score": 10.287220026350461,
+        "time": "2026-03-11T01:30:27.027979"
+      },
+      {
+        "symbol": "AAVE/USDT",
+        "exchange": "okx",
+        "price": 110.93,
+        "change": 3.7698783910196445,
+        "volume": 4667913.3349677,
+        "tier": "tier2",
+        "score": 9.539756782039289,
+        "time": "2026-03-11T01:30:30.944544"
+      },
+      {
+        "symbol": "NEAR/USDT",
+        "exchange": "bybit",
+        "price": 1.279,
+        "change": 3.48,
+        "volume": 5791697.99238,
+        "tier": "tier2",
+        "score": 8.96,
+        "time": "2026-03-11T01:30:30.132862"
+      },
+      {
+        "symbol": "NEAR/USDT",
+        "exchange": "okx",
+        "price": 1.278,
+        "change": 3.3980582524271843,
+        "volume": 4399919.144235897,
+        "tier": "tier2",
+        "score": 8.796116504854368,
+        "time": "2026-03-11T01:30:31.499960"
+      },
+      {
+        "symbol": "SHIB/USDT",
+        "exchange": "okx",
+        "price": 5.632e-06,
+        "change": 3.2447296058661776,
+        "volume": 3589551.45155681,
+        "tier": "tier2",
+        "score": 8.489459211732356,
+        "time": "2026-03-11T01:30:31.279367"
+      },
+      {
+        "symbol": "SHIB/USDT",
+        "exchange": "bybit",
+        "price": 5.63e-06,
+        "change": 3.21,
+        "volume": 2319015.6859812476,
+        "tier": "tier2",
+        "score": 8.42,
+        "time": "2026-03-11T01:30:29.796239"
+      }
+    ]
+  }
+]

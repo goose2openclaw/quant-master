@@ -1,0 +1,4 @@
+音频文件信息:
+/home/goose/.openclaw/media/inbound/file_0---da5d3e22-026b-4307-9040-7fce951a44be.ogg: Ogg data, Opus audio, version 0.1, mono, 48000 Hz (Input Sample Rate)
+
+文件大小: 72K

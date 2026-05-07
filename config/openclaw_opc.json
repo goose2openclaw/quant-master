@@ -1,0 +1,168 @@
+{
+  "name": "opc-optimized",
+  "description": "OPC项目专用OpenClaw配置 - 针对加密货币监控、求职助手、智能合约开发优化",
+  
+  "agent": {
+    "model": "custom-api-deepseek-com/deepseek-reasoner",
+    "thinking": true,
+    "maxTokens": 2048,
+    "temperature": 0.7,
+    "timeout": 30000,
+    "retryAttempts": 3,
+    "retryDelay": 1000
+  },
+  
+  "skills": {
+    "autoEnable": true,
+    "scanInterval": 300,
+    "preload": ["github", "cron", "shell", "telegram", "brave-search"],
+    "opcCore": ["opc-crypto-monitor", "opc-job-assistant", "opc-smart-contract", "opc-trading-helper"],
+    "auxiliary": ["calendar", "gmail", "obsidian", "weather", "pdf", "docx"],
+    "lazyLoad": true,
+    "cacheEnabled": true,
+    "cacheTTL": 3600
+  },
+  
+  "telegram": {
+    "enabled": true,
+    "botToken": "8405295378:AAG3bvttAQkw00tjuTo1ypw02TLSKAFLT0o",
+    "defaultChatId": null,
+    "notifications": {
+      "cryptoAlerts": true,
+      "jobAlerts": true,
+      "systemStatus": true,
+      "errorReports": true,
+      "contractDeployments": true
+    },
+    "commands": {
+      "/start": "启动OPC助手",
+      "/crypto": "加密货币监控",
+      "/jobs": "求职助手",
+      "/contract": "智能合约工具",
+      "/trade": "交易辅助",
+      "/status": "系统状态"
+    }
+  },
+  
+  "crypto": {
+    "monitoring": {
+      "enabled": true,
+      "interval": 300,
+      "coins": ["BTC", "ETH", "BNB", "SOL", "ADA", "DOT", "XRP", "DOGE"],
+      "exchanges": ["binance", "coinbase", "kraken"],
+      "alertThreshold": 5.0
+    },
+    "analysis": {
+      "technical": true,
+      "sentiment": true,
+      "volume": true,
+      "trend": true
+    }
+  },
+  
+  "jobs": {
+    "monitoring": {
+      "enabled": true,
+      "interval": 3600,
+      "platforms": ["jobstreet", "linkedin", "indeed"],
+      "keywords": ["blockchain", "crypto", "smart contract", "web3", "defi"],
+      "locations": ["Singapore", "Remote", "Malaysia"]
+    },
+    "matching": {
+      "skills": ["solidity", "rust", "python", "javascript", "react"],
+      "experience": ["junior", "mid", "senior"],
+      "salaryRange": [3000, 15000]
+    }
+  },
+  
+  "contracts": {
+    "development": {
+      "enabled": true,
+      "languages": ["solidity", "rust", "vyper"],
+      "frameworks": ["hardhat", "foundry", "anchor"],
+      "testnets": ["sepolia", "goerli", "mumbai"]
+    },
+    "security": {
+      "audit": true,
+      "testing": true,
+      "verification": true
+    }
+  },
+  
+  "trading": {
+    "assistance": {
+      "enabled": true,
+      "strategies": ["swing", "day", "scalping"],
+      "riskManagement": true,
+      "backtesting": true
+    },
+    "alerts": {
+      "price": true,
+      "volume": true,
+      "indicators": true
+    }
+  },
+  
+  "performance": {
+    "cacheEnabled": true,
+    "cacheTTL": 3600,
+    "parallelProcessing": true,
+    "maxConcurrent": 3,
+    "batchSize": 10,
+    "timeout": 30000,
+    "retry": {
+      "enabled": true,
+      "maxAttempts": 3,
+      "backoff": "exponential"
+    }
+  },
+  
+  "monitoring": {
+    "healthCheck": {
+      "enabled": true,
+      "interval": 60,
+      "endpoints": ["telegram", "crypto", "jobs", "contracts"]
+    },
+    "logging": {
+      "level": "info",
+      "file": "~/opc-project/logs/system/opc.log",
+      "maxSize": "10MB",
+      "maxFiles": 5
+    },
+    "alerts": {
+      "telegram": true,
+      "email": false,
+      "webhook": false
+    }
+  },
+  
+  "backup": {
+    "enabled": true,
+    "schedule": "0 2 * * *",
+    "retention": 7,
+    "locations": ["local", "cloud"],
+    "include": ["config", "data", "scripts"]
+  },
+  
+  "development": {
+    "debug": true,
+    "testing": true,
+    "profiling": false,
+    "documentation": true
+  },
+  
+  "security": {
+    "apiKeys": {
+      "encrypted": true,
+      "rotation": 30
+    },
+    "access": {
+      "authentication": true,
+      "authorization": true
+    },
+    "audit": {
+      "enabled": true,
+      "frequency": "weekly"
+    }
+  }
+}

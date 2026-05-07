@@ -1,0 +1,28 @@
+{
+  "cron": {
+    "enabled": true,
+    "tasks": [
+      {
+        "name": "opc_daily_check",
+        "description": "OPC项目每日检查",
+        "schedule": "0 8 * * *",
+        "command": "bash ~/opc-project/scripts/daily_check.sh",
+        "enabled": true
+      },
+      {
+        "name": "opc_hourly_monitor",
+        "description": "OPC项目每小时监控",
+        "schedule": "0 * * * *",
+        "command": "python3 ~/opc-project/scripts/monitor.py",
+        "enabled": true
+      },
+      {
+        "name": "backup_opc_project",
+        "description": "备份OPC项目",
+        "schedule": "0 2 * * *",
+        "command": "bash ~/opc-project/scripts/backup.sh",
+        "enabled": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "timestamp": "2026-02-28T03:15:22+08:00",
+  "system": "OPC OpenClaw Platform",
+  "health_score": 90,
+  "total_issues": 1,
+  "checks": {
+    "system_resources": "0",
+    "network": "1",
+    "openclaw": "0",
+    "skills": "1",
+    "data": "0",
+    "logs": "0"
+  },
+  "recommendations": []
+}

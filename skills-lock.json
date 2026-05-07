@@ -1,0 +1,146 @@
+{
+  "version": 1,
+  "skills": {
+    "agent-governance": {
+      "source": "github/awesome-copilot",
+      "sourceType": "github",
+      "computedHash": "6106aa97a33ff7ba0755fcfcdb1069ee5041dc60729e7a672924d770a60fa775"
+    },
+    "agent-reach": {
+      "source": "panniantong/agent-reach",
+      "sourceType": "github",
+      "computedHash": "241732a042bea87734ed7991bcd85c9c243d8379237e45dd70a1455f01ce170a"
+    },
+    "agentic-eval": {
+      "source": "github/awesome-copilot",
+      "sourceType": "github",
+      "computedHash": "40771d7d389c1542e6cb995d75e516893466f01c3b66bc040b158ceb793d4bed"
+    },
+    "ai-automation-workflows": {
+      "source": "inference-sh-9/skills",
+      "sourceType": "github",
+      "computedHash": "1294f003b9abc1a30e903fabb536b6f3cb30eb26d3fa5ff9ff51e4827de98e97"
+    },
+    "ai-wrapper-product": {
+      "source": "sickn33/antigravity-awesome-skills",
+      "sourceType": "github",
+      "computedHash": "591d353ce6bab0139841dd81acfe176c0dc610005731cb8cf1dbfa56884f04e6"
+    },
+    "brave-search": {
+      "source": "steipete/agent-scripts",
+      "sourceType": "github",
+      "computedHash": "2fa656478393c152ca743ec5a92178c6a5865540d91796600730c794b260e3b6"
+    },
+    "code-simplifier": {
+      "source": "simonwong/agent-skills",
+      "sourceType": "github",
+      "computedHash": "788e5d6d1b1b887c75f43a3932889592baf28b193ba8e43895d9d0002a85ea24"
+    },
+    "create-agentsmd": {
+      "source": "github/awesome-copilot",
+      "sourceType": "github",
+      "computedHash": "bfbdbb76b17cca970d1d624e36ce72b6847860d740581c8865da796c1fef8552"
+    },
+    "crypto-report": {
+      "source": "aahl/skills",
+      "sourceType": "github",
+      "computedHash": "8b6d91eb65a631f51d2b0df09bad6466d34a2a68872a432b316bacc32d3cc086"
+    },
+    "crypto-ta-analyzer": {
+      "source": "dkyazzentwatwa/chatgpt-skills",
+      "sourceType": "github",
+      "computedHash": "0b636dcb06703cc920e605d1d6798b3b0021667d7d38b9f7fa25b78b0bc2bae0"
+    },
+    "document-skills": {
+      "source": "travisjneuman/.claude",
+      "sourceType": "github",
+      "computedHash": "4862f0454c4d44fddcfa83140c3df8194dcc4c4270b992911fe1ae596ecd6724"
+    },
+    "effect-index": {
+      "source": "mepuka/effect-ontology",
+      "sourceType": "github",
+      "computedHash": "ac01c49e5a9774a163dd621637fc98152955fd9a9d596c1d1727daa947a191eb"
+    },
+    "evomap": {
+      "source": "nowloady/evomapscriptshub001",
+      "sourceType": "github",
+      "computedHash": "fb0fcc6ba88f8f084fac1aa8ddbf0c5b971187cbdca5d0dfaf5b4fdcb986c7eb"
+    },
+    "frontend-design": {
+      "source": "anthropics/skills",
+      "sourceType": "github",
+      "computedHash": "063a0e6448123cd359ad0044cc46b0e490cc7964d45ef4bb9fd842bd2ffbca67"
+    },
+    "humanize": {
+      "source": "humanizerai/agent-skills",
+      "sourceType": "github",
+      "computedHash": "d8898832c1e5648c9600d6b79b985b415d849da2cfa3b40cc4e6d51ea2d1511d"
+    },
+    "lesson": {
+      "source": "win4r/memory-lancedb-pro",
+      "sourceType": "github",
+      "computedHash": "6f491769e9dbd739232ffe74046a35c156b904d4a63c813f52512ee57296330c"
+    },
+    "mcp-deploy-manage-agents": {
+      "source": "github/awesome-copilot",
+      "sourceType": "github",
+      "computedHash": "54e29de79d6047e3be16f948afdd9b1755ea6a44038b5ffe9c8f0c97145f1d50"
+    },
+    "memory-lancedb-pro": {
+      "source": "win4r/memory-lancedb-pro-skill",
+      "sourceType": "github",
+      "computedHash": "76880f941ee882a13d23fba2dfce1c7a016cc2990fef9e6910f3b234269b8355"
+    },
+    "openclaw-config": {
+      "source": "adisinghstudent/easyclaw",
+      "sourceType": "github",
+      "computedHash": "8511022469f59d2540ba78ee7bf59b318a7a992ea2dd70caa57bd7d18ddb679c"
+    },
+    "openclaw-mission-control": {
+      "source": "0xindiebruh/openclaw-mission-control-skill",
+      "sourceType": "github",
+      "computedHash": "c8c924f367bbe660ca0718278d979d415ec1041143d7ad44e906d4f883aece67"
+    },
+    "openclaw-watchdog": {
+      "source": "abdullah4ai/openclaw-watchdog",
+      "sourceType": "github",
+      "computedHash": "216d96678c56905fd896fc1662644764011d65a6b5c1299cdc046e9a38bbbc32"
+    },
+    "playwright-dev": {
+      "source": "microsoft/playwright",
+      "sourceType": "github",
+      "computedHash": "76bd2a4e6a25617693ec824e2acb4407856ae9b7f4fd8da3db5b2bceae14199f"
+    },
+    "ralph-loop": {
+      "source": "andrelandgraf/fullstackrecipes",
+      "sourceType": "github",
+      "computedHash": "f7e1f79b58ab0b0423d716e20267a065f8c899f9e97acd5bab8e0433399a8568"
+    },
+    "secure-code-guardian": {
+      "source": "jeffallan/claude-skills",
+      "sourceType": "github",
+      "computedHash": "bfbc5a9fa4f09f0e95d5893417a6a4244ef36727fa7ca15bbddf61778503f0da"
+    },
+    "self-improving-agent": {
+      "source": "charon-fan/agent-playbook",
+      "sourceType": "github",
+      "computedHash": "3e5969b9121d131abfc31e105d38ca025fd7a0b03dcede2a0959c35e37487b4b"
+    },
+    "skillsmp-searcher": {
+      "source": "gccszs/skillsmp-searcher",
+      "sourceType": "github",
+      "computedHash": "e5ea4ecf4dac0b2ba6872765758fdad98ab02661755cbe466de1d1879366b91d"
+    },
+    "symphony-setup": {
+      "source": "odysseus0/symphony",
+      "sourceType": "github",
+      "skillPath": ".agents/skills/symphony-setup/SKILL.md",
+      "computedHash": "46a18eb8b74361c5dcd3a1b405b0add638e8fca022de64b64c548257b95321ed"
+    },
+    "winning-avg-corewars": {
+      "source": "letta-ai/skills",
+      "sourceType": "github",
+      "computedHash": "d4fe4c8a4c414346b7f12e900e4a4fca649e8548b01b0e916d9a31b4144df127"
+    }
+  }
+}

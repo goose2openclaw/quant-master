@@ -1,0 +1,19 @@
+{
+  "whatsapp": {
+    "enabled": true,
+    "configFile": "/home/goose/.openclaw/workspace/config/whatsapp_config.json",
+    "performance": {
+      "cacheEnabled": true,
+      "cacheTTL": 300,
+      "retryAttempts": 3,
+      "timeout": 30000
+    },
+    "setup": {
+      "status": "needs_configuration",
+      "configGuide": "请更新 ~/.openclaw/workspace/config/whatsapp_config.json"
+    },
+    "optimized": "2026-02-28",
+    "version": "2.0.0",
+    "status": "ready_for_config"
+  }
+}

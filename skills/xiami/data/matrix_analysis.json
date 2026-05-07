@@ -1,0 +1,33 @@
+{
+  "market_states_2025": {
+    "bull_run": {"name": "大涨趋势", "period": "2025-01~03", "change": "+25.3%", "volatility": "高", "momentum": "极强"},
+    "crash": {"name": "大跌趋势", "period": "2025-03~06", "change": "-24.0%", "volatility": "极高", "momentum": "极弱"},
+    "steady_bull": {"name": "稳步上涨", "period": "2025-06~09", "change": "+9.2%", "volatility": "中", "momentum": "稳健"},
+    "steady_bear": {"name": "稳步下跌", "period": "2025-09~12", "change": "-24.0%", "volatility": "中", "momentum": "疲弱"}
+  },
+  "trading_strategies": {
+    "extreme": {"name": "极端模式", "position": 0.3, "leverage": 3, "stop_loss": 0.05, "take_profit": 0.2, "risk": "极高"},
+    "conservative": {"name": "稳定模式", "position": 0.05, "leverage": 1, "stop_loss": 0.01, "take_profit": 0.02, "risk": "低"},
+    "balanced": {"name": "平衡模式", "position": 0.1, "leverage": 1, "stop_loss": 0.02, "take_profit": 0.05, "risk": "中"}
+  },
+  "matrix": {
+    "extreme": {
+      "bull_run": {"return": 75.9, "drawdown": -45, "win_rate": 0.65, "pf": 2.5, "sharpe": 1.8, "rec": "强力做多"},
+      "crash": {"return": -72, "drawdown": -85, "win_rate": 0.25, "pf": 0.4, "sharpe": -2.5, "rec": "禁止交易"},
+      "steady_bull": {"return": 27.6, "drawdown": -25, "win_rate": 0.55, "pf": 1.8, "sharpe": 1.2, "rec": "适度做多"},
+      "steady_bear": {"return": -48, "drawdown": -65, "win_rate": 0.30, "pf": 0.5, "sharpe": -1.8, "rec": "做空/观望"}
+    },
+    "conservative": {
+      "bull_run": {"return": 12.7, "drawdown": -8, "win_rate": 0.75, "pf": 3.2, "sharpe": 2.5, "rec": "稳健做多"},
+      "crash": {"return": -4, "drawdown": -12, "win_rate": 0.45, "pf": 0.8, "sharpe": -0.5, "rec": "减仓/观望"},
+      "steady_bull": {"return": 6, "drawdown": -5, "win_rate": 0.70, "pf": 2.8, "sharpe": 2.0, "rec": "稳定持有"},
+      "steady_bear": {"return": -3, "drawdown": -10, "win_rate": 0.40, "pf": 0.7, "sharpe": -0.8, "rec": "卖出/观望"}
+    },
+    "balanced": {
+      "bull_run": {"return": 38.0, "drawdown": -20, "win_rate": 0.68, "pf": 2.2, "sharpe": 1.6, "rec": "积极做多"},
+      "crash": {"return": -28, "drawdown": -40, "win_rate": 0.35, "pf": 0.6, "sharpe": -1.5, "rec": "减仓/做空"},
+      "steady_bull": {"return": 15.0, "drawdown": -12, "win_rate": 0.62, "pf": 2.0, "sharpe": 1.4, "rec": "适度做多"},
+      "steady_bear": {"return": -18, "drawdown": -28, "win_rate": 0.38, "pf": 0.6, "sharpe": -1.2, "rec": "减仓/做空"}
+    }
+  }
+}

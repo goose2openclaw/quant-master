@@ -1,0 +1,21 @@
+{
+  "success": true,
+  "text": "查看一下目前安装的技能有冷卸 捏出一个表来",
+  "language": "zh",
+  "language_probability": 1,
+  "duration": 6.6135,
+  "processing_time": 1.5321192741394043,
+  "segments": [
+    {
+      "start": 0.21,
+      "end": 5.17,
+      "text": "查看一下目前安装的技能有冷卸"
+    },
+    {
+      "start": 5.17,
+      "end": 6.41,
+      "text": "捏出一个表来"
+    }
+  ],
+  "model": "tiny"
+}

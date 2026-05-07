@@ -1,0 +1,3 @@
+
+# OpenClaw自动进化任务
+0 */24 * * * cd /home/goose/.openclaw/workspace && python3 openclaw_auto_evolution.py --run-cycle >> /home/goose/.openclaw/workspace/evolution.log 2>&1

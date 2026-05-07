@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "skills": {
+    "find-skills": {
+      "version": "0.1.0",
+      "installedAt": 1772211152754
+    },
+    "telegram": {
+      "version": "1.0.1",
+      "installedAt": 1772213283520
+    },
+    "gmail": {
+      "version": "1.0.6",
+      "installedAt": 1772213302243
+    },
+    "calendar": {
+      "version": "1.0.0",
+      "installedAt": 1772213311593
+    },
+    "obsidian": {
+      "version": "1.0.0",
+      "installedAt": 1772213347730
+    },
+    "frontend-design": {
+      "version": "1.0.0",
+      "installedAt": 1772213407624
+    },
+    "hermes-full": {
+      "version": "1.0.0",
+      "installedAt": 1776679682109
+    },
+    "hermes-agent": {
+      "version": "1.0.0",
+      "installedAt": 1776679707897
+    },
+    "meme-risk-radar-skill": {
+      "version": "1.0.0",
+      "installedAt": 1776695532191
+    },
+    "darwin-skill": {
+      "version": "1.0.0",
+      "installedAt": 1776695661447
+    },
+    "multi-agent": {
+      "version": "0.1.0",
+      "installedAt": 1776695893865
+    },
+    "agent-swarm": {
+      "version": "1.7.19",
+      "installedAt": 1776695962452
+    }
+  }
+}

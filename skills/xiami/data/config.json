@@ -1,0 +1,132 @@
+{
+  "data_sources": {
+    "realtime": {
+      "price": ["binance", "bybit", "okx", "coinbase", "kraken"],
+      "orderbook": ["binance", "bybit", "okx"],
+      "futures": ["binance", "bybit", "ftx", "deribit"],
+      "options": ["deribit", "cme", " CBOE"],
+      "social": ["twitter", "reddit", "telegram", "discord"]
+    },
+    "delayed": {
+      "news": ["reuters", "bloomberg", "coindesk", "cryptopanic"],
+      "onchain": ["glassnode", "chainalysis", "glassnode"],
+      "derivatives": ["cme", " CBOE", "bakkt"]
+    }
+  },
+  "execution_params": {
+    "default": {
+      "observe_interval_ms": 500,
+      "min_confidence": 4,
+      "max_slippage": 0.002,
+      "timeout_ms": 5000,
+      "retry_count": 3
+    },
+    "high_frequency": {
+      "observe_interval_ms": 200,
+      "min_confidence": 6,
+      "max_position": 0.05,
+      "auto_scale": true
+    },
+    "swing": {
+      "observe_interval_ms": 5000,
+      "min_confidence": 5,
+      "max_position": 0.2,
+      "holding_period_hours": 24
+    }
+  },
+  "risk_management": {
+    "max_daily_loss": 0.05,
+    "max_open_positions": 5,
+    "position_size_by_confidence": {
+      "4": 0.05,
+      "5": 0.1,
+      "6": 0.15,
+      "7": 0.2,
+      "8+": 0.25
+    },
+    "stop_loss": {
+      "1m": 0.01,
+      "5m": 0.02,
+      "15m": 0.03,
+      "1h": 0.05,
+      "4h": 0.08,
+      "1d": 0.1
+    },
+    "take_profit": {
+      "1m": 0.02,
+      "5m": 0.05,
+      "15m": 0.08,
+      "1h": 0.12,
+      "4h": 0.2,
+      "1d": 0.3
+    }
+  },
+  "market_filters": {
+    "min_volume_24h": 100000,
+    "min_liquidity": 50000,
+    "max_spread": 0.005,
+    "exclude_stablecoins": true,
+    "exclude_new_listings_days": 7
+  },
+  "api_priority": {
+    "tier1": ["binance", "bybit"],
+    "tier2": ["okx", "gate", "mexc"],
+    "tier3": ["kucoin", "huobi", "bitget"]
+  },
+  "trend_models": {
+    "crypto_micro": {
+      "1s": {"use_case": "scalping", "min_confidence": 7},
+      "5s": {"use_case": "scalping", "min_confidence": 6},
+      "15s": {"use_case": "micro trends", "min_confidence": 5}
+    },
+    "crypto_short": {
+      "1m": {"use_case": "momentum", "min_confidence": 5},
+      "5m": {"use_case": "momentum", "min_confidence": 4},
+      "15m": {"use_case": "swing", "min_confidence": 4}
+    },
+    "crypto_medium": {
+      "1h": {"use_case": "swing", "min_confidence": 5},
+      "4h": {"use_case": "position", "min_confidence": 5},
+      "1d": {"use_case": "position", "min_confidence": 6}
+    },
+    "crypto_long": {
+      "1w": {"use_case": "invest", "min_confidence": 6},
+      "1m": {"use_case": "invest", "min_confidence": 7}
+    }
+  },
+  "sentiment_analysis": {
+    "sources": ["twitter", "reddit", "telegram", "news"],
+    "weights": {
+      "twitter": 0.3,
+      "reddit": 0.2,
+      "telegram": 0.3,
+      "news": 0.2
+    },
+    "keywords_positive": ["bullish", "moon", "lambo", "fomo", " breakout", "pump"],
+    "keywords_negative": ["bearish", "dump", "scam", "hack", "crash", "rug"],
+    "threshold_extreme_fear": 20,
+    "threshold_extreme_greed": 80
+  },
+  "backtest_config": {
+    "period": "90d",
+    "commission": 0.001,
+    "slippage": 0.0005,
+    "initial_capital": 10000,
+    "benchmark": "BTC"
+  },
+  "alerts": {
+    "telegram": {"enabled": true, "chat_id": "", "token": ""},
+    "discord": {"enabled": true, "webhook": ""},
+    "email": {"enabled": false, "smtp": "", "to": ""},
+    "pushover": {"enabled": false, "token": ""}
+  },
+  "logging": {
+    "level": "INFO",
+    "file": "xiami.log",
+    "max_size_mb": 100,
+    "backup_count": 5,
+    "log_trades": true,
+    "log_signals": true,
+    "log_errors": true
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "name": "AntiTrumpToken",
+  "symbol": "NOTRUMP",
+  "supply": 1000000000,
+  "chain": "erc20",
+  "standard": "ERC-20",
+  "blockchain": "Ethereum",
+  "features": [
+    "mintable",
+    "burnable",
+    "pausable"
+  ],
+  "created_at": "2026-03-11T07:58:30.963664",
+  "contract_code": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.20;\n\nimport \"@openzeppelin/contracts/token/ERC20/ERC20.sol\";\nimport \"@openzeppelin/contracts/token/ERC20/extensions/ERC20Burnable.sol\";\nimport \"@openzeppelin/contracts/access/Ownable.sol\";\n\ncontract NOTRUMP is ERC20, ERC20Burnable, Ownable {\n    uint256 public constant TOTAL_SUPPLY = 1000000000 * 10**18;\n    \n    mapping(address => bool) public minters;\n    \n    constructor() ERC20(\"AntiTrumpToken\", \"NOTRUMP\") Ownable(msg.sender) {\n        _mint(msg.sender, TOTAL_SUPPLY);\n    }\n    \n    function mint(address to, uint256 amount) external onlyMinter {\n        _mint(to, amount);\n    }\n    \n    function addMinter(address account) external onlyOwner {\n        minters[account] = true;\n    }\n    \n    modifier onlyMinter() {\n        require(minters[msg.sender], \"Not a minter\");\n        _;\n    }\n}"
+}

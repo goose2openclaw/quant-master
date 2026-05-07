@@ -1,0 +1,18 @@
+{
+  "telegram_bot": {
+    "token": "8405295378:AAG3bvttAQkw00tjuTo1ypw02TLSKAFLT0o",
+    "status": "configured",
+    "configured_at": "2026-02-28T01:45:00+08:00",
+    "notes": "OPC项目Telegram Bot Token - 请保密"
+  },
+  "security": {
+    "file_permissions": "600",
+    "encryption_recommended": true,
+    "backup_location": "~/.openclaw/secure/backup/"
+  },
+  "usage_instructions": {
+    "test_when_online": "python3 scripts/test_telegram_simple.py",
+    "send_message": "python3 scripts/test_telegram_simple.py --send <chat_id>",
+    "configure_openclaw": "openclaw config set channels.telegram.botToken \"YOUR_TOKEN\""
+  }
+}

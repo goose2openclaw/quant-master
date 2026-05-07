@@ -1,0 +1,40 @@
+{
+  "telegram_bot": {
+    "token": "8405295378:AAG3bvttAQkw00tjuTo1ypw02TLSKAFLT0o",
+    "username": "@opc_bot_offline",
+    "chat_id": "unknown",
+    "configured_at": "2026-02-28T02:18:03+08:00",
+    "status": "active"
+  },
+  "notifications": {
+    "crypto_alerts": {
+      "enabled": true,
+      "threshold": 5.0,
+      "coins": ["BTC", "ETH", "SOL", "ADA"]
+    },
+    "system_status": {
+      "enabled": true,
+      "daily_report": true,
+      "error_alerts": true
+    },
+    "opc_updates": {
+      "enabled": true,
+      "project_milestones": true,
+      "code_changes": true
+    }
+  },
+  "commands": {
+    "crypto": {
+      "handler": "scripts/crypto_handler.py",
+      "description": "获取加密货币行情"
+    },
+    "status": {
+      "handler": "scripts/status_handler.sh",
+      "description": "系统状态报告"
+    },
+    "jobs": {
+      "handler": "scripts/jobs_handler.py",
+      "description": "求职助手"
+    }
+  }
+}

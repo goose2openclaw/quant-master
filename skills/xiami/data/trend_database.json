@@ -1,0 +1,143 @@
+{
+  "crypto_trends": {
+    "momentum": {"name": "动量趋势", "indicators": ["RSI", "MACD", "EMA", "BB"], "timeframes": {
+      "1m": {"observe": true, "execute": true, "min_confidence": 2},
+      "3m": {"observe": true, "execute": true, "min_confidence": 2},
+      "5m": {"execute": true, "min_confidence": 3}, 
+      "15m": {"execute": true, "min_confidence": 4}}},
+    "breakout": {"name": "突破趋势", "indicators": ["Volume", "BB", "Price_Change"], "timeframes": {
+      "1m": {"execute": true, "min_confidence": 2},
+      "3m": {"execute": true, "min_confidence": 3},
+      "5m": {"execute": true, "min_confidence": 3}, 
+      "15m": {"execute": true, "min_confidence": 5}}},
+    "reversal": {"name": "反转趋势", "indicators": ["RSI", "Divergence", "BB"], "timeframes": {
+      "1m": {"execute": true, "min_confidence": 3},
+      "3m": {"execute": true, "min_confidence": 4},
+      "5m": {"execute": true, "min_confidence": 5}, 
+      "15m": {"execute": true, "min_confidence": 6}}},
+    "whale_accumulation": {"name": "巨鲸积累", "timeframes": {"15m": {"execute": true, "min_confidence": 4}, "1h": {"execute": true, "min_confidence": 5}}},
+    "defi_tvl": {"name": "DeFi锁仓量", "timeframes": {"4h": {"execute": true, "min_confidence": 4}, "1d": {"execute": true, "min_confidence": 5}}},
+    "stablecoin_flow": {"name": "稳定币流向", "timeframes": {"1h": {"execute": true, "min_confidence": 4}, "4h": {"execute": true, "min_confidence": 5}}},
+    "nft_volume": {"name": "NFT交易量", "timeframes": {"1d": {"execute": true, "min_confidence": 4}, "1w": {"execute": true, "min_confidence": 5}}},
+    "token_unlock": {"name": "代币解锁", "timeframes": {"1d": {"execute": true, "min_confidence": 5}, "1w": {"execute": true, "min_confidence": 6}}},
+    "governance_proposal": {"name": "治理提案", "timeframes": {"1d": {"execute": true, "min_confidence": 5}, "1w": {"execute": true, "min_confidence": 6}}},
+    "network_growth": {"name": "网络增长", "timeframes": {"1w": {"execute": true, "min_confidence": 4}, "1m": {"execute": true, "min_confidence": 5}}},
+    "developer_activity": {"name": "开发者活跃度", "timeframes": {"1w": {"execute": true, "min_confidence": 4}, "1m": {"execute": true, "min_confidence": 5}}},
+    "google_trends": {"name": "Google趋势", "timeframes": {"1d": {"execute": true, "min_confidence": 5}, "1w": {"execute": true, "min_confidence": 6}}},
+    "twitter_sentiment": {"name": "Twitter情绪", "timeframes": {"5m": {"execute": true, "min_confidence": 4}, "15m": {"execute": true, "min_confidence": 5}}},
+    "reddit_sentiment": {"name": "Reddit情绪", "timeframes": {"1d": {"execute": true, "min_confidence": 4}, "1w": {"execute": true, "min_confidence": 5}}},
+    "exchange_flow": {"name": "交易所流入流出", "timeframes": {"1h": {"execute": true, "min_confidence": 4}, "4h": {"execute": true, "min_confidence": 5}}},
+    "mining_difficulty": {"name": "挖矿难度", "timeframes": {"1d": {"execute": true, "min_confidence": 4}, "1w": {"execute": true, "min_confidence": 5}}},
+    "hashrate": {"name": "算力", "timeframes": {"1d": {"execute": true, "min_confidence": 4}, "1w": {"execute": true, "min_confidence": 5}}},
+    "futures_open_interest": {"name": "期货持仓量", "timeframes": {"1h": {"execute": true, "min_confidence": 4}, "4h": {"execute": true, "min_confidence": 5}}},
+    "perp_funding": {"name": "永续资金费率", "timeframes": {"1h": {"execute": true, "min_confidence": 4}, "4h": {"execute": true, "min_confidence": 5}}},
+    "nft_mint": {"name": "NFT铸造", "timeframes": {"1d": {"execute": true, "min_confidence": 4}, "1w": {"execute": true, "min_confidence": 5}}},
+    "dao_treasury": {"name": "DAO资金库", "timeframes": {"1w": {"execute": true, "min_confidence": 5}, "1m": {"execute": true, "min_confidence": 6}}}
+  },
+  "stock_trends": {
+    "earnings": {"name": "财报", "timeframes": {"1d": {"execute": true, "min_confidence": 5}, "1w": {"execute": true, "min_confidence": 6}}},
+    "guidance": {"name": "业绩指引", "timeframes": {"1d": {"execute": true, "min_confidence": 5}, "1w": {"execute": true, "min_confidence": 6}}},
+    "analyst": {"name": "分析师评级", "timeframes": {"1d": {"execute": true, "min_confidence": 5}, "1w": {"execute": true, "min_confidence": 6}}},
+    "insider": {"name": "内部交易", "timeframes": {"1d": {"execute": true, "min_confidence": 5}, "1w": {"execute": true, "min_confidence": 6}}},
+    "institutional": {"name": "机构持仓", "timeframes": {"1w": {"execute": true, "min_confidence": 4}, "1m": {"execute": true, "min_confidence": 5}}},
+    "buyback": {"name": "回购", "timeframes": {"1d": {"execute": true, "min_confidence": 4}, "1w": {"execute": true, "min_confidence": 5}}},
+    "dividend": {"name": "分红", "timeframes": {"1w": {"execute": true, "min_confidence": 4}, "1m": {"execute": true, "min_confidence": 5}}},
+    "split": {"name": "拆股", "timeframes": {"1d": {"execute": true, "min_confidence": 4}, "1w": {"execute": true, "min_confidence": 5}}},
+    "merger": {"name": "并购", "timeframes": {"1d": {"execute": true, "min_confidence": 6}, "1w": {"execute": true, "min_confidence": 7}}},
+    "lawsuit": {"name": "诉讼", "timeframes": {"1d": {"execute": true, "min_confidence": 5}, "1w": {"execute": true, "min_confidence": 6}}},
+    "regulation": {"name": "监管", "timeframes": {"1d": {"execute": true, "min_confidence": 6}, "1w": {"execute": true, "min_confidence": 7}}},
+    "ceo_change": {"name": "CEO变更", "timeframes": {"1d": {"execute": true, "min_confidence": 5}, "1w": {"execute": true, "min_confidence": 6}}}
+  },
+  "etf_trends": {
+    "etf_flow": {"name": "ETF资金流", "timeframes": {"1h": {"execute": true, "min_confidence": 4}, "4h": {"execute": true, "min_confidence": 5}}},
+    "etf_creation": {"name": "ETF申购赎回", "timeframes": {"1h": {"execute": true, "min_confidence": 5}, "4h": {"execute": true, "min_confidence": 6}}},
+    "etf_spread": {"name": "ETF溢价", "timeframes": {"1h": {"execute": true, "min_confidence": 5}, "4h": {"execute": true, "min_confidence": 6}}},
+    "sector_etf_flow": {"name": "行业ETF资金流", "timeframes": {"1d": {"execute": true, "min_confidence": 4}, "1w": {"execute": true, "min_confidence": 5}}},
+    "index_rebalancing": {"name": "指数调整", "timeframes": {"1d": {"execute": true, "min_confidence": 6}, "1w": {"execute": true, "min_confidence": 7}}},
+    "smart_beta": {"name": "Smart Beta", "timeframes": {"1w": {"execute": true, "min_confidence": 4}, "1m": {"execute": true, "min_confidence": 5}}},
+    "leverage_flow": {"name": "杠杆ETF资金流", "timeframes": {"1d": {"execute": true, "min_confidence": 5}, "1w": {"execute": true, "min_confidence": 6}}},
+    "inverse_flow": {"name": "反向ETF资金流", "timeframes": {"1d": {"execute": true, "min_confidence": 5}, "1w": {"execute": true, "min_confidence": 6}}}
+  },
+  "crypto_mining_trends": {
+    "mining_profitability": {"name": "挖矿盈利", "timeframes": {"1d": {"execute": true, "min_confidence": 4}, "1w": {"execute": true, "min_confidence": 5}}},
+    "energy_price": {"name": "电价", "timeframes": {"1w": {"execute": true, "min_confidence": 4}, "1m": {"execute": true, "min_confidence": 5}}},
+    "hardware_cost": {"name": "矿机成本", "timeframes": {"1m": {"execute": true, "min_confidence": 4}, "3m": {"execute": true, "min_confidence": 5}}},
+    "pool_hashrate": {"name": "矿池算力", "timeframes": {"1d": {"execute": true, "min_confidence": 4}, "1w": {"execute": true, "min_confidence": 5}}},
+    "coin_profitability": {"name": "币种盈利", "timeframes": {"1d": {"execute": true, "min_confidence": 5}, "1w": {"execute": true, "min_confidence": 6}}}
+  },
+  "nft_trends": {
+    "collection_volume": {"name": "系列交易量", "timeframes": {"1d": {"execute": true, "min_confidence": 4}, "1w": {"execute": true, "min_confidence": 5}}},
+    "floor_price": {"name": "地板价", "timeframes": {"1d": {"execute": true, "min_confidence": 5}, "1w": {"execute": true, "min_confidence": 6}}},
+    "whale_movement": {"name": "巨鲸转移", "timeframes": {"1d": {"execute": true, "min_confidence": 5}, "1w": {"execute": true, "min_confidence": 6}}},
+    "minting_activity": {"name": "铸造活动", "timeframes": {"1d": {"execute": true, "min_confidence": 4}, "1w": {"execute": true, "min_confidence": 5}}},
+    "social_hype": {"name": "社交热度", "timeframes": {"1d": {"execute": true, "min_confidence": 5}, "1w": {"execute": true, "min_confidence": 6}}},
+    "airdrop": {"name": "空投", "timeframes": {"1d": {"execute": true, "min_confidence": 5}, "1w": {"execute": true, "min_confidence": 6}}},
+    "nft_funding": {"name": "NFT融资", "timeframes": {"1w": {"execute": true, "min_confidence": 5}, "1m": {"execute": true, "min_confidence": 6}}},
+    "gaming_nft": {"name": "链游NFT", "timeframes": {"1w": {"execute": true, "min_confidence": 4}, "1m": {"execute": true, "min_confidence": 5}}}
+  },
+  "defi_trends": {
+    "tvl_change": {"name": "TVL变化", "timeframes": {"4h": {"execute": true, "min_confidence": 4}, "1d": {"execute": true, "min_confidence": 5}}},
+    "yield_farming": {"name": "流动性挖矿", "timeframes": {"1d": {"execute": true, "min_confidence": 4}, "1w": {"execute": true, "min_confidence": 5}}},
+    "protocol_revenue": {"name": "协议收入", "timeframes": {"1w": {"execute": true, "min_confidence": 5}, "1m": {"execute": true, "min_confidence": 6}}},
+    "governance_token": {"name": "治理代币", "timeframes": {"1d": {"execute": true, "min_confidence": 5}, "1w": {"execute": true, "min_confidence": 6}}},
+    "flash_loan": {"name": "闪电贷", "timeframes": {"1h": {"execute": true, "min_confidence": 5}, "4h": {"execute": true, "min_confidence": 6}}},
+    "lending_rate": {"name": "借贷利率", "timeframes": {"1h": {"execute": true, "min_confidence": 4}, "4h": {"execute": true, "min_confidence": 5}}},
+    "perp_delta": {"name": "永续合约Delta", "timeframes": {"1h": {"execute": true, "min_confidence": 4}, "4h": {"execute": true, "min_confidence": 5}}},
+    "amm_volume": {"name": "AMM交易量", "timeframes": {"1d": {"execute": true, "min_confidence": 4}, "1w": {"execute": true, "min_confidence": 5}}},
+    "bridge_volume": {"name": "跨链桥流量", "timeframes": {"1d": {"execute": true, "min_confidence": 4}, "1w": {"execute": true, "min_confidence": 5}}},
+    "oracle_price": {"name": "预言机价格", "timeframes": {"15m": {"execute": true, "min_confidence": 4}, "1h": {"execute": true, "min_confidence": 5}}}
+  },
+  "prediction_trends": {
+    "polymarket_volume": {"name": "预测市场交易量", "timeframes": {"1h": {"execute": true, "min_confidence": 4}, "4h": {"execute": true, "min_confidence": 5}}},
+    "polymarket_odds": {"name": "预测概率变化", "timeframes": {"1h": {"execute": true, "min_confidence": 5}, "4h": {"execute": true, "min_confidence": 6}}},
+    "bet_smart_money": {"name": "聪明钱投注", "timeframes": {"1h": {"execute": true, "min_confidence": 5}, "4h": {"execute": true, "min_confidence": 6}}},
+    "sentiment_prediction": {"name": "情绪预测", "timeframes": {"1d": {"execute": true, "min_confidence": 5}, "1w": {"execute": true, "min_confidence": 6}}},
+    "event_outcome": {"name": "事件结果", "timeframes": {"1d": {"execute": true, "min_confidence": 6}, "1w": {"execute": true, "min_confidence": 7}}}
+  },
+  "social_trends": {
+    "twitter_followers": {"name": "Twitter粉丝", "timeframes": {"1w": {"execute": true, "min_confidence": 4}, "1m": {"execute": true, "min_confidence": 5}}},
+    "discord_members": {"name": "Discord成员", "timeframes": {"1w": {"execute": true, "min_confidence": 4}, "1m": {"execute": true, "min_confidence": 5}}},
+    "telegram_users": {"name": "Telegram用户", "timeframes": {"1w": {"execute": true, "min_confidence": 4}, "1m": {"execute": true, "min_confidence": 5}}},
+    "github_stars": {"name": "GitHub星标", "timeframes": {"1m": {"execute": true, "min_confidence": 4}, "3m": {"execute": true, "min_confidence": 5}}},
+    "youtube_subs": {"name": "YouTube订阅", "timeframes": {"1m": {"execute": true, "min_confidence": 4}, "3m": {"execute": true, "min_confidence": 5}}},
+    "reddit_subs": {"name": "Reddit订阅", "timeframes": {"1w": {"execute": true, "min_confidence": 4}, "1m": {"execute": true, "min_confidence": 5}}},
+    "influencer_mention": {"name": "KOL提及", "timeframes": {"1d": {"execute": true, "min_confidence": 5}, "1w": {"execute": true, "min_confidence": 6}}},
+    "viral_moment": {"name": "病毒式传播", "timeframes": {"1d": {"execute": true, "min_confidence": 6}, "1w": {"execute": true, "min_confidence": 7}}}
+  },
+  "real_estate_trends": {
+    "property_price": {"name": "房价", "timeframes": {"1m": {"execute": true, "min_confidence": 5}, "3m": {"execute": true, "min_confidence": 6}}},
+    "rental_yield": {"name": "租金回报", "timeframes": {"1m": {"execute": true, "min_confidence": 4}, "3m": {"execute": true, "min_confidence": 5}}},
+    "mortgage_rate": {"name": "抵押贷款利率", "timeframes": {"1m": {"execute": true, "min_confidence": 5}, "3m": {"execute": true, "min_confidence": 6}}},
+    "housing_supply": {"name": "房屋供应", "timeframes": {"1m": {"execute": true, "min_confidence": 5}, "3m": {"execute": true, "min_confidence": 6}}},
+    "commercial_reit": {"name": "商业地产REIT", "timeframes": {"1w": {"execute": true, "min_confidence": 4}, "1m": {"execute": true, "min_confidence": 5}}}
+  },
+  "sports_betting_trends": {
+    "betting_volume": {"name": "投注量", "timeframes": {"1d": {"execute": true, "min_confidence": 4}, "1w": {"execute": true, "min_confidence": 5}}},
+    "line_movement": {"name": "赔率变化", "timeframes": {"1d": {"execute": true, "min_confidence": 5}, "1w": {"execute": true, "min_confidence": 6}}},
+    "sharp_money": {"name": "专业投注", "timeframes": {"1d": {"execute": true, "min_confidence": 5}, "1w": {"execute": true, "min_confidence": 6}}},
+    "injury_news": {"name": "伤病消息", "timeframes": {"1d": {"execute": true, "min_confidence": 5}, "1w": {"execute": true, "min_confidence": 6}}},
+    "weather_impact": {"name": "天气影响", "timeframes": {"1d": {"execute": true, "min_confidence": 5}, "1w": {"execute": true, "min_confidence": 6}}}
+  },
+  "economy_trends": {
+    "gdp": {"name": "GDP", "timeframes": {"1m": {"execute": true, "min_confidence": 6}, "3m": {"execute": true, "min_confidence": 7}}},
+    "cpi": {"name": "CPI", "timeframes": {"1m": {"execute": true, "min_confidence": 6}, "3m": {"execute": true, "min_confidence": 7}}},
+    "unemployment": {"name": "失业率", "timeframes": {"1m": {"execute": true, "min_confidence": 6}, "3m": {"execute": true, "min_confidence": 7}}},
+    "retail_sales": {"name": "零售销售", "timeframes": {"1m": {"execute": true, "min_confidence": 5}, "3m": {"execute": true, "min_confidence": 6}}},
+    "housing_starts": {"name": "新屋开工", "timeframes": {"1m": {"execute": true, "min_confidence": 5}, "3m": {"execute": true, "min_confidence": 6}}},
+    "consumer_confidence": {"name": "消费者信心", "timeframes": {"1m": {"execute": true, "min_confidence": 5}, "3m": {"execute": true, "min_confidence": 6}}},
+    "pmi": {"name": "PMI", "timeframes": {"1m": {"execute": true, "min_confidence": 6}, "3m": {"execute": true, "min_confidence": 7}}},
+    "trade_balance": {"name": "贸易收支", "timeframes": {"1m": {"execute": true, "min_confidence": 5}, "3m": {"execute": true, "min_confidence": 6}}}
+  },
+  "observe_matrix": {
+    "1m": {"interval_ms": 500, "action": "仅观测"},
+    "5m": {"interval_ms": 500, "action": "观测+执行"},
+    "15m": {"interval_ms": 500, "action": "观测+执行"},
+    "1h": {"interval_ms": 500, "action": "观测+高信心执行"},
+    "4h": {"interval_ms": 500, "action": "观测+执行"},
+    "1d": {"interval_ms": 500, "action": "观测+确信执行"}
+  },
+  "execution_rules": {
+    "min_confidence_to_execute": 4,
+    "max_position_by_risk": {"低": 0.2, "中": 0.15, "高": 0.1, "极高": 0.05}
+  }
+}

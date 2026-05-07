@@ -1,0 +1,16 @@
+{
+  "success": true,
+  "text": "搜索更多特定功能的技能",
+  "language": "zh",
+  "language_probability": 1,
+  "duration": 3.4535,
+  "processing_time": 31.153126001358032,
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 3.24,
+      "text": "搜索更多特定功能的技能"
+    }
+  ],
+  "model": "tiny"
+}

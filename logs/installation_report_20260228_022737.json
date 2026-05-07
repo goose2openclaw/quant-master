@@ -1,0 +1,104 @@
+{
+  "timestamp": "2026-02-28T02:27:25.558166",
+  "network_status": {
+    "total_tested": 4,
+    "reachable": 3,
+    "reachable_urls": [
+      "https://api.telegram.org",
+      "https://raw.githubusercontent.com",
+      "https://registry.npmjs.org"
+    ],
+    "status": "GOOD"
+  },
+  "skills_downloaded": 0,
+  "skills_minimal": 3,
+  "skills_skipped": 14,
+  "details": [
+    {
+      "skill": "github",
+      "status": "skipped",
+      "reason": "already_exists"
+    },
+    {
+      "skill": "shell",
+      "status": "skipped",
+      "reason": "already_exists"
+    },
+    {
+      "skill": "telegram",
+      "status": "skipped",
+      "reason": "already_exists"
+    },
+    {
+      "skill": "brave-search",
+      "status": "skipped",
+      "reason": "already_exists"
+    },
+    {
+      "skill": "cron",
+      "status": "skipped",
+      "reason": "already_exists"
+    },
+    {
+      "skill": "docx",
+      "status": "skipped",
+      "reason": "already_exists"
+    },
+    {
+      "skill": "pdf",
+      "status": "skipped",
+      "reason": "already_exists"
+    },
+    {
+      "skill": "xlsx",
+      "status": "skipped",
+      "reason": "already_exists"
+    },
+    {
+      "skill": "pptx",
+      "status": "skipped",
+      "reason": "already_exists"
+    },
+    {
+      "skill": "agent-browser",
+      "status": "skipped",
+      "reason": "already_exists"
+    },
+    {
+      "skill": "whatsapp",
+      "status": "skipped",
+      "reason": "already_exists"
+    },
+    {
+      "skill": "web-fetch",
+      "status": "minimal",
+      "reason": "download_failed"
+    },
+    {
+      "skill": "obsidian",
+      "status": "skipped",
+      "reason": "already_exists"
+    },
+    {
+      "skill": "gmail",
+      "status": "skipped",
+      "reason": "already_exists"
+    },
+    {
+      "skill": "calendar",
+      "status": "skipped",
+      "reason": "already_exists"
+    },
+    {
+      "skill": "discord",
+      "status": "minimal",
+      "reason": "download_failed"
+    },
+    {
+      "skill": "notion",
+      "status": "minimal",
+      "reason": "download_failed"
+    }
+  ],
+  "total_skills": 17
+}

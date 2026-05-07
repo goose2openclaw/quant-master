@@ -1,0 +1,19 @@
+{
+  "github": {
+    "enabled": true,
+    "autoSync": true,
+    "repositories": [
+      {
+        "name": "opc-project",
+        "path": "~/opc-project",
+        "autoCommit": true,
+        "autoPush": false
+      }
+    ],
+    "notifications": {
+      "newCommits": true,
+      "pullRequests": true,
+      "issues": true
+    }
+  }
+}

@@ -1,0 +1,75 @@
+[2026-02-28 02:27:00] [INFO] 开始智能下载流程...
+[2026-02-28 02:27:00] [INFO] 检查网络连接状态...
+[2026-02-28 02:27:01] [INFO]   ✅ https://api.telegram.org 可达
+[2026-02-28 02:27:01] [INFO]   ✅ https://raw.githubusercontent.com 可达
+[2026-02-28 02:27:01] [INFO]   ✅ https://registry.npmjs.org 可达
+[2026-02-28 02:27:11] [ERROR]   ❌ https://cdn.openclaw.ai 不可达: HTTPSConnectionPool(host='cdn.openclaw.ai', port=4
+[2026-02-28 02:27:11] [INFO] 网络状态: GOOD (3/4 个源可达)
+[2026-02-28 02:27:11] [INFO] 检查并安装系统依赖...
+[2026-02-28 02:27:11] [INFO]   ✅ curl 已安装
+[2026-02-28 02:27:11] [INFO]   ✅ wget 已安装
+[2026-02-28 02:27:11] [INFO]   ✅ git 已安装
+[2026-02-28 02:27:11] [INFO]   ✅ python3 已安装
+[2026-02-28 02:27:11] [INFO]   ⚠ python3-pip 未安装，尝试安装...
+[2026-02-28 02:27:11] [INFO]     ✅ python3-pip 安装成功
+[2026-02-28 02:27:11] [INFO]   ⚠ jq 未安装，尝试安装...
+[2026-02-28 02:27:11] [INFO]     ✅ jq 安装成功
+[2026-02-28 02:27:11] [INFO] 开始下载 17 个技能...
+[2026-02-28 02:27:11] [INFO] 开始下载技能: github (优先级: 10)
+[2026-02-28 02:27:11] [INFO] 开始下载技能: shell (优先级: 9)
+[2026-02-28 02:27:11] [INFO]   ⚠ github 已存在，跳过下载
+[2026-02-28 02:27:11] [INFO] 开始下载技能: cron (优先级: 9)
+[2026-02-28 02:27:11] [INFO] 开始下载技能: telegram (优先级: 8)
+[2026-02-28 02:27:11] [INFO]   ⚠ shell 已存在，跳过下载
+[2026-02-28 02:27:11] [INFO]   ⚠ telegram 已存在，跳过下载
+[2026-02-28 02:27:11] [INFO] 开始下载技能: brave-search (优先级: 8)
+[2026-02-28 02:27:11] [INFO]   ⚠ brave-search 已存在，跳过下载
+[2026-02-28 02:27:11] [INFO] 开始下载技能: pdf (优先级: 7)
+[2026-02-28 02:27:11] [INFO] 开始下载技能: docx (优先级: 7)
+[2026-02-28 02:27:11] [INFO]   ⚠ cron 已存在，跳过下载
+[2026-02-28 02:27:11] [INFO]   ⚠ docx 已存在，跳过下载
+[2026-02-28 02:27:11] [INFO]   ⚠ pdf 已存在，跳过下载
+[2026-02-28 02:27:11] [INFO] 开始下载技能: xlsx (优先级: 7)
+[2026-02-28 02:27:11] [INFO] 开始下载技能: pptx (优先级: 7)
+[2026-02-28 02:27:11] [INFO] 开始下载技能: agent-browser (优先级: 7)
+[2026-02-28 02:27:11] [INFO]   ⚠ xlsx 已存在，跳过下载
+[2026-02-28 02:27:11] [INFO]   ⚠ agent-browser 已存在，跳过下载
+[2026-02-28 02:27:11] [INFO]   ⚠ pptx 已存在，跳过下载
+[2026-02-28 02:27:11] [INFO] 开始下载技能: whatsapp (优先级: 7)
+[2026-02-28 02:27:11] [INFO] 开始下载技能: web-fetch (优先级: 6)
+[2026-02-28 02:27:11] [INFO] 开始下载技能: discord (优先级: 6)
+[2026-02-28 02:27:11] [INFO]   ⚠ whatsapp 已存在，跳过下载
+[2026-02-28 02:27:11] [INFO] 开始下载技能: notion (优先级: 6)
+[2026-02-28 02:27:11] [INFO]   尝试从 GitHub Raw 下载...
+[2026-02-28 02:27:11] [INFO]   尝试从 GitHub Raw 下载...
+[2026-02-28 02:27:11] [INFO]   尝试从 GitHub Raw 下载...
+[2026-02-28 02:27:12] [INFO]     ❌ GitHub Raw 返回状态码: 404
+[2026-02-28 02:27:12] [INFO]     ❌ GitHub Raw 返回状态码: 404
+[2026-02-28 02:27:12] [INFO]     ❌ GitHub Raw 返回状态码: 404
+[2026-02-28 02:27:13] [INFO]   尝试从 OpenClaw CDN 下载...
+[2026-02-28 02:27:13] [INFO]   尝试从 OpenClaw CDN 下载...
+[2026-02-28 02:27:13] [INFO]   尝试从 OpenClaw CDN 下载...
+[2026-02-28 02:27:24] [INFO]     ❌ OpenClaw CDN 下载失败: HTTPSConnectionPool(host='cdn.openclaw.ai', port=4
+[2026-02-28 02:27:24] [INFO]     ❌ OpenClaw CDN 下载失败: HTTPSConnectionPool(host='cdn.openclaw.ai', port=4
+[2026-02-28 02:27:24] [INFO]     ❌ OpenClaw CDN 下载失败: HTTPSConnectionPool(host='cdn.openclaw.ai', port=4
+[2026-02-28 02:27:25] [WARNING]   ⚠ 所有源都失败，创建最小化 web-fetch 技能
+[2026-02-28 02:27:25] [INFO] 开始下载技能: obsidian (优先级: 6)
+[2026-02-28 02:27:25] [INFO]   ⚠ obsidian 已存在，跳过下载
+[2026-02-28 02:27:25] [INFO] 开始下载技能: gmail (优先级: 6)
+[2026-02-28 02:27:25] [INFO]   ⚠ gmail 已存在，跳过下载
+[2026-02-28 02:27:25] [INFO] 开始下载技能: calendar (优先级: 6)
+[2026-02-28 02:27:25] [WARNING]   ⚠ 所有源都失败，创建最小化 discord 技能
+[2026-02-28 02:27:25] [INFO]   ⚠ calendar 已存在，跳过下载
+[2026-02-28 02:27:25] [WARNING]   ⚠ 所有源都失败，创建最小化 notion 技能
+[2026-02-28 02:27:25] [INFO] 配置OpenClaw集成...
+[2026-02-28 02:27:25] [INFO]   ✅ OpenClaw配置文件已创建: /home/goose/.openclaw/workspace/config/openclaw_config.json
+[2026-02-28 02:27:25] [INFO] 创建技能别名...
+[2026-02-28 02:27:25] [INFO]   ⚠ 技能别名已存在于 ~/.bashrc
+[2026-02-28 02:27:25] [INFO] 生成安装报告...
+[2026-02-28 02:27:25] [INFO] 检查网络连接状态...
+[2026-02-28 02:27:26] [INFO]   ✅ https://api.telegram.org 可达
+[2026-02-28 02:27:26] [INFO]   ✅ https://raw.githubusercontent.com 可达
+[2026-02-28 02:27:27] [INFO]   ✅ https://registry.npmjs.org 可达
+[2026-02-28 02:27:37] [ERROR]   ❌ https://cdn.openclaw.ai 不可达: HTTPSConnectionPool(host='cdn.openclaw.ai', port=4
+[2026-02-28 02:27:37] [INFO] 网络状态: GOOD (3/4 个源可达)
+[2026-02-28 02:27:37] [INFO]   ✅ 安装报告已生成: /home/goose/.openclaw/workspace/logs/installation_report_20260228_022737.md

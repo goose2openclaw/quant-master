@@ -1,0 +1,44 @@
+{
+  "agent": {
+    "model": "custom-api-deepseek-com/deepseek-reasoner",
+    "thinking": true,
+    "maxTokens": 2048,
+    "temperature": 0.7
+  },
+  "skills": {
+    "autoEnable": true,
+    "scanInterval": 300,
+    "preload": ["github", "cron", "shell", "telegram"]
+  },
+  "telegram": {
+    "enabled": true,
+    "botToken": "8405295378:AAG3bvttAQkw00tjuTo1ypw02TLSKAFLT0o",
+    "defaultChatId": null,
+    "notifications": {
+      "cryptoAlerts": true,
+      "systemStatus": true,
+      "errorReports": true
+    }
+  },
+  "cron": {
+    "enabled": true,
+    "tasks": [
+      {
+        "name": "daily_crypto_check",
+        "schedule": "0 8 * * *",
+        "command": "python3 ~/opc-project/scripts/crypto_monitor.py"
+      },
+      {
+        "name": "hourly_system_check",
+        "schedule": "0 * * * *",
+        "command": "bash ~/opc-project/scripts/system_check.sh"
+      }
+    ]
+  },
+  "performance": {
+    "cacheEnabled": true,
+    "cacheTTL": 3600,
+    "parallelProcessing": true,
+    "maxConcurrent": 3
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "telegram": {
+    "enabled": true,
+    "botToken": "8405295378:AAG3bvttAQkw00tjuTo1ypw02TLSKAFLT0o",
+    "configFile": "/home/goose/.openclaw/workspace/config/openclaw_opc.json",
+    "performance": {
+      "cacheEnabled": true,
+      "cacheTTL": 300,
+      "retryAttempts": 3,
+      "timeout": 30000
+    },
+    "notifications": {
+      "cryptoAlerts": true,
+      "jobAlerts": true,
+      "systemStatus": true
+    },
+    "optimized": "2026-02-28",
+    "version": "2.0.0",
+    "status": "optimized"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "protocol": "gep-a2a",
+  "protocol_version": "1.0.0",
+  "message_type": "hello",
+  "message_id": "msg_test_placeholder",
+  "sender_id": "node_test_placeholder",
+  "timestamp": "2025-01-15T08:30:00Z",
+  "payload": {
+    "capabilities": {},
+    "gene_count": 0,
+    "capsule_count": 0,
+    "env_fingerprint": {
+      "platform": "linux",
+      "arch": "x64"
+    }
+  }
+}

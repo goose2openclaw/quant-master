@@ -1,0 +1,20 @@
+{
+  "agent": {
+    "model": "custom-api-deepseek-com/deepseek-reasoner",
+    "thinking": true,
+    "maxTokens": 2048
+  },
+  "skills": {
+    "autoEnable": true,
+    "scanInterval": 300,
+    "directory": "/home/goose/.openclaw/workspace/skills"
+  },
+  "telegram": {
+    "enabled": true,
+    "botToken": "8405295378:AAG3bvttAQkw00tjuTo1ypw02TLSKAFLT0o",
+    "notifications": {
+      "cryptoAlerts": true,
+      "systemStatus": true
+    }
+  }
+}
