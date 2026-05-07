@@ -91,6 +91,12 @@
       "sourceType": "github",
       "computedHash": "76880f941ee882a13d23fba2dfce1c7a016cc2990fef9e6910f3b234269b8355"
     },
+    "mmt-tradingview-charts": {
+      "source": "emeraldls/mmt-agent-skills",
+      "sourceType": "github",
+      "skillPath": "skills/mmt-tradingview-charts/SKILL.md",
+      "computedHash": "722ced196779af9b9fafa37f3df0327c16f1ebf6ff2206e839d4e7163cf47e47"
+    },
     "openclaw-config": {
       "source": "adisinghstudent/easyclaw",
       "sourceType": "github",
