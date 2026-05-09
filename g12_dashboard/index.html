@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G12 交易仪表板</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <style>
+        body { background: #0f172a; color: #e2e8f0; }
+        .card { background: #1e293b; border-radius: 12px; padding: 16px; }
+        .green { color: #22c55e; }
+        .red { color: #ef4444; }
+        .yellow { color: #eab308; }
+        .pulse { animation: pulse 2s infinite; }
+        @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.5; } }
+    </style>
+</head>
+<body class="min-h-screen p-4">
+    <div class="max-w-7xl mx-auto">
+        <!-- Header -->
+        <div class="flex items-center justify-between mb-6">
+            <div class="flex items-center gap-3">
+                <div class="w-3 h-3 bg-green-500 rounded-full pulse"></div>
+                <h1 class="text-2xl font-bold">🌟 G12 交易仪表板</h1>
+            </div>
+            <div class="text-sm text-slate-400">
+                <span id="lastUpdate">等待更新...</span>
+            </div>
+        </div>
+
+        <!-- 状态卡片 -->
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-6">
+            <div class="card">
+                <div class="text-slate-400 text-sm">总资产</div>
+                <div class="text-2xl font-bold green" id="totalAsset">$0.00</div>
+            </div>
+            <div class="card">
+                <div class="text-slate-400 text-sm">USDT现金</div>
+                <div class="text-2xl font-bold yellow" id="usdtBalance">$0.00</div>
+            </div>
+            <div class="card">
+                <div class="text-slate-400 text-sm">持仓数</div>
+                <div class="text-2xl font-bold" id="positionCount">0</div>
+            </div>
+            <div class="card">
+                <div class="text-slate-400 text-sm">交易信号</div>
+                <div class="text-2xl font-bold" id="signalCount">0</div>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 mb-6">
+            <!-- K线图 -->
+            <div class="card lg:col-span-2">
+                <h2 class="text-lg font-semibold mb-3">📈 K线趋势</h2>
+                <select id="coinSelect" onchange="updateChart()" class="bg-slate-700 text-white px-3 py-1 rounded mb-3">
+                    <option value="BTCUSDT">BTC</option>
+                    <option value="ETHUSDT">ETH</option>
+                    <option value="SOLUSDT">SOL</option>
+                </select>
+                <div id="chart" style="height: 300px;"></div>
+            </div>
+
+            <!-- 市场趋势 -->
+            <div class="card">
+                <h2 class="text-lg font-semibold mb-3">📊 市场趋势</h2>
+                <div id="marketTrends" class="space-y-2">
+                    <!-- 动态填充 -->
+                </div>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-6">
+            <!-- 持仓明细 -->
+            <div class="card">
+                <h2 class="text-lg font-semibold mb-3">💼 持仓明细</h2>
+                <div id="positions" class="space-y-2">
+                    <!-- 动态填充 -->
+                </div>
+            </div>
+
+            <!-- 交易记录 -->
+            <div class="card">
+                <h2 class="text-lg font-semibold mb-3">📜 交易记录</h2>
+                <div id="trades" class="space-y-2 max-h-64 overflow-y-auto">
+                    <!-- 动态填充 -->
+                </div>
+            </div>
+        </div>
+
+        <!-- 机会信号 -->
+        <div class="card">
+            <h2 class="text-lg font-semibold mb-3">⚡ 机会信号</h2>
+            <div id="opportunities" class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <!-- 动态填充 -->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // 更新数据
+        async function fetchData() {
+            try {
+                const response = await fetch('/api/status');
+                const data = await response.json();
+                updateDashboard(data);
+            } catch (e) {
+                console.log('使用模拟数据');
+            }
+        }
+
+        function updateDashboard(data) {
+            document.getElementById('totalAsset').textContent = '$' + (data.totalAsset || 0).toFixed(2);
+            document.getElementById('usdtBalance').textContent = '$' + (data.usdtBalance || 0).toFixed(2);
+            document.getElementById('positionCount').textContent = data.positions?.length || 0;
+            document.getElementById('signalCount').textContent = data.signals?.length || 0;
+            document.getElementById('lastUpdate').textContent = new Date().toLocaleTimeString();
+        }
+
+        function updateChart() {
+            const coin = document.getElementById('coinSelect').value;
+            // 实际项目中调用API获取K线数据
+            console.log('更新K线:', coin);
+        }
+
+        // 初始化
+        fetchData();
+        setInterval(fetchData, 30000); // 30秒刷新
+    </script>
+</body>
+</html>
