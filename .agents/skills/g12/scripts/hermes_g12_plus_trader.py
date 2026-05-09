@@ -4,7 +4,7 @@ G12+ 实盘交易系统 v4.0 (最终版)
 布林带收口突破 + 动能轮动
 API签名+数量修正已完善
 """
-import requests, time, json, numpy as np, hmac, hashlib, math
+import requests, time, json, numpy as np, hmac, hashlib, math, math
 from datetime import datetime
 
 PROXIES = {'http':'http://172.29.144.1:7897','https':'http://172.29.144.1:7897'}
@@ -175,6 +175,32 @@ def validate_trade(coin, price, balance):
         return qty, "OK"
     except Exception as e:
         return None, str(e)
+
+
+def validate_trade(coin, price, balance):
+    try:
+        symbol = f"{coin}USDT"
+        load_rules()
+        rules = RULES_CACHE.get(symbol, {})
+        step = float(rules.get('stepSize', 0.001))
+        min_notional = float(rules.get('minNotional', 5))
+        position_size = balance * POSITION_PCT * LEVERAGE
+        fees = position_size * 0.001 * 2
+        available = balance - (fees / LEVERAGE)
+        if available <= 0:
+            return None, "余额不足"
+        raw_qty = available * POSITION_PCT * LEVERAGE / price
+        decimals = max(0, -int(math.log10(step)) if step < 1 else 0)
+        qty = round(raw_qty, decimals)
+        notional = qty * price
+        if notional < min_notional:
+            return None, f"订单${notional:.2f}<${min_notional}"
+        if qty <= 0:
+            return None, "数量<=0"
+        return qty, "OK"
+    except Exception as e:
+        return None, str(e)
+
 
 def main():
     log("="*60)
