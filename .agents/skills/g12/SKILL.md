@@ -1,23 +1,18 @@
-# G12 Trading System v2.0
+# G12 Trading System v5.0
 
-## 最新最优参数 (2026-05-09)
-- RSI: 28/70 | BB: 20/80
-- TP: 15% | SL: 5%
-- 仓位: 35% | 杠杆: 5x
-- 回测收益: +184.68%
-- 胜率: 71.4%
+## 核心功能
+G12自适应市场状态交易系统,自动识别市场状态并切换最优配置。
+
+## 配置矩阵
+| 状态 | RSI | TP | SL | 仓位 | 收益 |
+|------|-----|-----|-----|------|------|
+| 单边趋势 | 28/70 | 15% | 5% | 35% | +121% |
+| 震荡回调 | 35/65 | 8% | 4% | 25% | +71% |
 
 ## 核心脚本
-- hermes_g12_unified.py - 统一核心
-- hermes_g12_plus_trader.py - 实盘交易(含验证函数)
-- hermes_g12_god_mode.py - 上帝视角
-- hermes_g12_autoloop_v4.py - 自主迭代
+- hermes_g12_adaptive.py - 自适应核心
+- hermes_g12_plus_trader.py - 实盘交易
 
-## 验证函数
-validate_trade() - 验证交易可行性,自动跳过余额不足订单
-
-## 使用
-```bash
-python3 hermes_g12_plus_trader.py
-```
+## 版本
+- v5.0 (2026-05-09): 自适应市场状态识别
 
