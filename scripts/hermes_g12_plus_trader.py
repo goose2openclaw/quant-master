@@ -247,7 +247,7 @@ def main():
         if sig['ratio'] < 0.20:
             if sig['position'] < 20:
                 trades.append({'type': 'LONG', 'coin': c, 'price': sig['price'], 'reason': f"收口{sig['ratio']:.2f}x+低位{sig['position']:.0f}%"})
-            elif sig['position'] >= 80:
+            elif sig['position'] >= 70:  # 放宽到70
                 trades.append({'type': 'SHORT', 'coin': c, 'price': sig['price'], 'reason': f"收口{sig['ratio']:.2f}x+高位{sig['position']:.0f}%"})
     
     if len(momenta) >= 2 and momenta[-1]['24h'] < -2 and momenta[0]['24h'] > -1.5:
