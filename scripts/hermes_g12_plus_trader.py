@@ -4,7 +4,7 @@ G12+ 实盘交易系统 v4.0 (最终版)
 布林带收口突破 + 动能轮动
 API签名+数量修正已完善
 """
-import requests, time, json, numpy as np, hmac, hashlib
+import requests, time, json, numpy as np, hmac, hashlib, math
 from datetime import datetime
 
 PROXIES = {'http':'http://172.29.144.1:7897','https':'http://172.29.144.1:7897'}
@@ -13,7 +13,7 @@ API_KEY = "QPM55JoNnHSV7C7PllgNbTAxpzy9RaBjoKprgHuIE9GJUeQoVIGu69ICPnmBXp61"
 API_SECRET = "BSOTWqsVsncRk13DMDJ2YDRQks8XvrajArQDPW2jY8sDwNtcgb5da8H3x6qF3hJk"
 
 TRADE_MODE = "AUTO"
-POSITION_PCT = 0.20  # 降至20%
+POSITION_PCT = 0.35  # 优化后35%  # 降至20%
 LEVERAGE = 5  # 提升到5x
 LOG_FILE = '/tmp/g12_plus_trades.json'
 
@@ -144,6 +144,38 @@ def analyze_momentum():
         time.sleep(0.05)
     return sorted(momenta, key=lambda x: -x['24h'])
 
+
+
+def validate_trade(coin, price, balance):
+    """验证交易可行性"""
+    try:
+        symbol = f"{coin}USDT"
+        load_rules()
+        rules = RULES_CACHE.get(symbol, {})
+        step = float(rules.get('stepSize', 0.001))
+        min_notional = float(rules.get('minNotional', 5))
+        
+        position_size = balance * POSITION_PCT * LEVERAGE
+        fees = position_size * 0.001 * 2
+        available = balance - (fees / LEVERAGE)
+        if available <= 0:
+            return None, "余额不足"
+        
+        raw_qty = available * POSITION_PCT * LEVERAGE / price
+        decimals = max(0, -int(math.log10(step)) if step < 1 else 0)
+        qty = round(raw_qty, decimals)
+        
+        notional = qty * price
+        if notional < min_notional:
+            return None, f"订单${notional:.2f}<最低${min_notional}"
+        
+        if qty <= 0:
+            return None, "数量<=0"
+        
+        return qty, "OK"
+    except Exception as e:
+        return None, str(e)
+
 def main():
     log("="*60)
     log("G12+ Trader [LIVE模式] v4.0")
@@ -189,7 +221,7 @@ def main():
         if sig['ratio'] < 0.20:
             if sig['position'] < 20:
                 trades.append({'type': 'LONG', 'coin': c, 'price': sig['price'], 'reason': f"收口{sig['ratio']:.2f}x+低位{sig['position']:.0f}%"})
-            elif sig['position'] > 80:
+            elif sig['position'] >= 80:
                 trades.append({'type': 'SHORT', 'coin': c, 'price': sig['price'], 'reason': f"收口{sig['ratio']:.2f}x+高位{sig['position']:.0f}%"})
     
     if len(momenta) >= 2 and momenta[-1]['24h'] < -2 and momenta[0]['24h'] > -1.5:
@@ -205,7 +237,13 @@ def main():
             side = "BUY" if t['type'] == 'LONG' else "SELL"
             symbol = f"{t['coin']}USDT"
             
-            result = place_order(symbol, side, amount, usdt_balance)
+            # 验证交易可行性
+            qty, status = validate_trade(t['coin'], t['price'], usdt_balance)
+            if qty is None:
+                log(f"  ⚠️ 跳过 {t['coin']}: {status}")
+                continue
+            
+            result = place_order(symbol, side, qty, usdt_balance)
             
             if result and 'orderId' in result:
                 executed.append({'type': t['type'], 'coin': t['coin'], 'result': result})
