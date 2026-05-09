@@ -6,6 +6,12 @@
       "sourceType": "github",
       "computedHash": "6106aa97a33ff7ba0755fcfcdb1069ee5041dc60729e7a672924d770a60fa775"
     },
+    "agent-harness-construction": {
+      "source": "affaan-m/everything-claude-code",
+      "sourceType": "github",
+      "skillPath": "skills/agent-harness-construction/SKILL.md",
+      "computedHash": "5601e5ab105717b62a249aa6875482d1865433dfd89e2d7fe25166df950e13ec"
+    },
     "agent-reach": {
       "source": "panniantong/agent-reach",
       "sourceType": "github",
@@ -25,6 +31,12 @@
       "source": "sickn33/antigravity-awesome-skills",
       "sourceType": "github",
       "computedHash": "591d353ce6bab0139841dd81acfe176c0dc610005731cb8cf1dbfa56884f04e6"
+    },
+    "brain-ops": {
+      "source": "garrytan/gbrain",
+      "sourceType": "github",
+      "skillPath": "skills/brain-ops/SKILL.md",
+      "computedHash": "bb712863002078426c69bedc252141026863ea4249fe24ce1cf94ab0748adce2"
     },
     "brave-search": {
       "source": "steipete/agent-scripts",
@@ -142,6 +154,12 @@
       "sourceType": "github",
       "skillPath": ".agents/skills/symphony-setup/SKILL.md",
       "computedHash": "46a18eb8b74361c5dcd3a1b405b0add638e8fca022de64b64c548257b95321ed"
+    },
+    "vibe-trading": {
+      "source": "hkuds/vibe-trading",
+      "sourceType": "github",
+      "skillPath": "agent/SKILL.md",
+      "computedHash": "585561ea713fddfb6f83542803fc116103baf460fe211bf89d97da37a98bec1a"
     },
     "winning-avg-corewars": {
       "source": "letta-ai/skills",

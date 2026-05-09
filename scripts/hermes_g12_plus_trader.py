@@ -4,7 +4,7 @@ G12+ 实盘交易系统 v4.0 (最终版)
 布林带收口突破 + 动能轮动
 API签名+数量修正已完善
 """
-import requests, time, json, numpy as np, hmac, hashlib, math, math
+import requests, time, json, numpy as np, hmac, hashlib, math, math, math
 from datetime import datetime
 
 PROXIES = {'http':'http://172.29.144.1:7897','https':'http://172.29.144.1:7897'}
@@ -13,6 +13,12 @@ API_KEY = "QPM55JoNnHSV7C7PllgNbTAxpzy9RaBjoKprgHuIE9GJUeQoVIGu69ICPnmBXp61"
 API_SECRET = "BSOTWqsVsncRk13DMDJ2YDRQks8XvrajArQDPW2jY8sDwNtcgb5da8H3x6qF3hJk"
 
 TRADE_MODE = "AUTO"
+
+# 市场状态配置
+CONFIG = {
+    '单边趋势': {'rsi_buy': 28, 'rsi_sell': 70, 'bb_buy': 20, 'bb_sell': 80, 'pos_th': 70},
+    '震荡回调': {'rsi_buy': 35, 'rsi_sell': 65, 'bb_buy': 25, 'bb_sell': 70, 'pos_th': 70},
+}
 POSITION_PCT = 0.35  # 优化后35%  # 降至20%
 LEVERAGE = 5  # 提升到5x
 LOG_FILE = '/tmp/g12_plus_trades.json'
@@ -40,7 +46,7 @@ def load_rules():
     if RULES_CACHE['loaded']:
         return
     try:
-        r = requests.get(f'{BINANCE_API}/api/v3/exchangeInfo', proxies=PROXIES, timeout=10)
+        r = requests.get('https://fapi.binance.com/fapi/v1/exchangeInfo', proxies=PROXIES, timeout=10)
         for s in r.json()['symbols']:
             RULES_CACHE[s['symbol']] = {}
             for f in s['filters']:
@@ -121,6 +127,22 @@ def place_order(symbol, side, qty, usdt_balance=999):
     except Exception as e:
         log(f"  ❌ 下单失败: {e}")
         return None
+
+
+
+def detect_market_state(coin='BTC'):
+    try:
+        klines = get_klines(f'{coin}USDT', 500)
+        closes = [k['close'] for k in klines]
+        if len(closes) < 100: return '震荡回调'
+        rsi = calc_rsi(closes)
+        mom = get_momentum(closes)
+        score = 0
+        if rsi < 35 or rsi > 65: score += 1
+        if abs(mom) > 5: score += 1
+        if mom < -2: score += 1
+        return '单边趋势' if score >= 2 else '震荡回调'
+    except: return '震荡回调'
 
 def analyze_bb(c, klines):
     if len(klines) < 50: return None
@@ -225,7 +247,7 @@ def main():
     
     log("\n📊 布林带收口检测:")
     bb_signals = {}
-    for c in ['BTC','ETH','SOL']:
+    for c in ['XRP','DOGE','ADA','SOL','ETH','BTC']:
         klines = get_klines(f'{c}USDT', 200)
         result = analyze_bb(c, klines)
         if result:
@@ -245,10 +267,13 @@ def main():
     
     for c, sig in bb_signals.items():
         if sig['ratio'] < 0.20:
-            if sig['position'] < 20:
-                trades.append({'type': 'LONG', 'coin': c, 'price': sig['price'], 'reason': f"收口{sig['ratio']:.2f}x+低位{sig['position']:.0f}%"})
-            elif sig['position'] >= 70:  # 放宽到70
-                trades.append({'type': 'SHORT', 'coin': c, 'price': sig['price'], 'reason': f"收口{sig['ratio']:.2f}x+高位{sig['position']:.0f}%"})
+            if sig['ratio'] < 0.20:
+                market = detect_market_state(c)
+                cfg = CONFIG.get(market, CONFIG['震荡回调'])
+                if sig['position'] < cfg['bb_buy']:
+                    trades.append({'type': 'LONG', 'coin': c, 'price': sig['price'], 'reason': f"收口{sig['ratio']:.2f}x+低位{sig['position']:.0f}%"})
+                elif sig['position'] >= cfg['pos_th']:
+                    trades.append({'type': 'SHORT', 'coin': c, 'price': sig['price'], 'reason': f"收口{sig['ratio']:.2f}x+高位{sig['position']:.0f}%"})
     
     if len(momenta) >= 2 and momenta[-1]['24h'] < -2 and momenta[0]['24h'] > -1.5:
         trades.append({'type': 'LONG', 'coin': momenta[0]['coin'], 'price': momenta[0]['price'], 'reason': f"轮动{momenta[-1]['coin']}→{momenta[0]['coin']}"})
