@@ -228,9 +228,9 @@ class ThermoAnalyzer:
         volatility = std(returns) if returns else 0.01
         trend = abs(mean(returns[-10:])) if len(returns) >= 10 else 0
         
-        # 温度
-        temperature = volatility / (trend + 0.001) * 10
-        temperature = max(0, min(3, temperature))
+        # 温度 (调整缩放)
+        temperature = volatility / (trend + 0.001) * 2
+        temperature = max(0.1, min(2.5, temperature))
         
         # 熵
         entropy = min(1.0, volatility * 50)
@@ -437,52 +437,51 @@ class MirofishAgent:
         
         closes = [d['close'] for d in data]
         rsi = TechnicalAnalyzer.rsi(closes)
-        macd, signal, _ = TechnicalAnalyzer.macd(closes)
+        macd_line, signal_line, histogram = TechnicalAnalyzer.macd(closes)
         upper, mid, lower = TechnicalAnalyzer.bollinger_bands(closes)
-        atr = TechnicalAnalyzer.atr(data)
         
-        signal = 'hold'
+        trade_signal = 'hold'
         
         if self.strategy == 'trend':
-            if macd > signal:
-                signal = 'buy'
-            elif macd < signal:
-                signal = 'sell'
+            if macd_line > signal_line:
+                trade_signal = 'buy'
+            elif macd_line < signal_line:
+                trade_signal = 'sell'
         elif self.strategy == 'reversion':
             if rsi < 30:
-                signal = 'buy'
+                trade_signal = 'buy'
             elif rsi > 70:
-                signal = 'sell'
+                trade_signal = 'sell'
         elif self.strategy == 'momentum':
-            if rsi < 40 and macd > 0:
-                signal = 'buy'
-            elif rsi > 60 and macd < 0:
-                signal = 'sell'
+            if rsi < 40 and macd_line > 0:
+                trade_signal = 'buy'
+            elif rsi > 60 and macd_line < 0:
+                trade_signal = 'sell'
         elif self.strategy == 'breakout':
             if upper and closes[-1] > upper:
-                signal = 'buy'
+                trade_signal = 'buy'
             elif lower and closes[-1] < lower:
-                signal = 'sell'
+                trade_signal = 'sell'
         elif self.strategy == 'ma_cross':
             ma_short = mean(closes[-10:])
             ma_long = mean(closes[-30:])
             if ma_short > ma_long:
-                signal = 'buy'
+                trade_signal = 'buy'
             elif ma_short < ma_long:
-                signal = 'sell'
+                trade_signal = 'sell'
         elif self.strategy == 'rsi':
             if rsi < 35:
-                signal = 'buy'
+                trade_signal = 'buy'
             elif rsi > 65:
-                signal = 'sell'
+                trade_signal = 'sell'
         
         # 贝叶斯更新信念
-        if signal == 'buy':
+        if trade_signal == 'buy':
             self.belief = min(0.95, self.belief + 0.1 * self.confidence)
-        elif signal == 'sell':
+        elif trade_signal == 'sell':
             self.belief = max(0.05, self.belief - 0.1 * self.confidence)
         
-        return signal
+        return trade_signal
     
     def get_vote(self):
         if self.belief > 0.6:
@@ -530,16 +529,17 @@ class MirofishConsensus:
         avg_belief = total_belief / len(self.agents)
         
         # 共识
-        if vote_ratio['buy'] > 0.5:
-            consensus, confidence = 'buy', vote_ratio['buy']
-        elif vote_ratio['sell'] > 0.5:
-            consensus, confidence = 'sell', vote_ratio['sell']
+        # 更宽松的共识阈值
+        if vote_ratio['buy'] > 0.35:
+            consensus, confidence = 'buy', max(0.4, vote_ratio['buy'])
+        elif vote_ratio['sell'] > 0.35:
+            consensus, confidence = 'sell', max(0.4, vote_ratio['sell'])
         elif vote_ratio['buy'] > vote_ratio['sell']:
-            consensus, confidence = 'buy', vote_ratio['buy'] * avg_belief
+            consensus, confidence = 'buy', max(0.35, vote_ratio['buy'] * avg_belief + 0.2)
         elif vote_ratio['sell'] > vote_ratio['buy']:
-            consensus, confidence = 'sell', vote_ratio['sell'] * (1 - avg_belief)
+            consensus, confidence = 'sell', max(0.35, vote_ratio['sell'] * (1 - avg_belief) + 0.2)
         else:
-            consensus, confidence = 'hold', vote_ratio['hold']
+            consensus, confidence = 'hold', max(0.3, vote_ratio['hold'] + 0.1)
         
         result = {
             'consensus': consensus,
@@ -613,7 +613,7 @@ class GoCore:
         lows = [d['low'] for d in data]
         
         rsi = TechnicalAnalyzer.rsi(closes)
-        macd, signal, _ = TechnicalAnalyzer.macd(closes)
+        macd_line, signal_line, histogram = TechnicalAnalyzer.macd(closes)
         atr = TechnicalAnalyzer.atr(data)
         upper, mid, lower = TechnicalAnalyzer.bollinger_bands(closes)
         adx = TechnicalAnalyzer.adx(closes)
@@ -625,7 +625,7 @@ class GoCore:
             tech_score = 0.7
         elif rsi > 70:
             tech_score = 0.3
-        if macd > signal:
+        if macd_line > signal_line:
             tech_score = min(1.0, tech_score + 0.1)
         else:
             tech_score = max(0, tech_score - 0.1)
@@ -688,7 +688,7 @@ class GoCore:
             'score': final_score,
             'reasoning': reasoning,
             'components': {
-                'technical': {'rsi': rsi, 'macd': macd, 'atr': atr, 'adx': adx, 'stoch': (stoch_k, stoch_d)},
+                'technical': {'rsi': rsi, 'macd': macd_line, 'atr': atr, 'adx': adx, 'stoch': (stoch_k, stoch_d)},
                 'quantum': quantum,
                 'thermo': thermo,
                 'contrarian': contrarian,
