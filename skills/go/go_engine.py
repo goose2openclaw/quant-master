@@ -616,3 +616,227 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+# ============================================
+# COMPREHENSIVE STRATEGY LIBRARY EXPANSION
+# ============================================
+
+# Complete Quantitative Trading Strategies
+COMPLETE_STRATEGIES = {
+    # === TREND FOLLOWING ===
+    'trend_rsi': {'name': 'RSI趋势', 'type': 'trend', 'category': 'momentum'},
+    'trend_macd': {'name': 'MACD趋势', 'type': 'trend', 'category': 'crossover'},
+    'trend_ma_cross': {'name': 'MA交叉趋势', 'type': 'trend', 'category': 'crossover'},
+    'trend_ema_slope': {'name': 'EMA斜率', 'type': 'trend', 'category': 'slope'},
+    'trend_adx': {'name': 'ADX趋势', 'type': 'trend', 'category': 'strength'},
+    'trend_supertrend': {'name': '超级趋势', 'type': 'trend', 'category': 'stop'},
+    'trend_parabolic_sar': {'name': '抛物线SAR', 'type': 'trend', 'category': 'stop'},
+    'trend_ichimoku': {'name': '一目均衡', 'type': 'trend', 'category': 'cloud'},
+    'trend_vwap_cross': {'name': 'VWAP交叉', 'type': 'trend', 'category': 'crossover'},
+    
+    # === MEAN REVERSION ===
+    'reversion_rsi': {'name': 'RSI回归', 'type': 'reversion', 'category': 'oscillator'},
+    'reversion_bollinger': {'name': '布林带回归', 'type': 'reversion', 'category': 'band'},
+    'reversion_keltner': {'name': '肯特纳回归', 'type': 'reversion', 'category': 'channel'},
+    'reversion_rci': {'name': 'RCI回归', 'type': 'reversion', 'category': 'rank'},
+    'reversion_zscore': {'name': 'Z分数回归', 'type': 'reversion', 'category': 'statistical'},
+    'reversion_bandwidth': {'name': '带宽回归', 'type': 'reversion', 'category': 'band'},
+    
+    # === MOMENTUM ===
+    'momentum_rsi': {'name': 'RSI动量', 'type': 'momentum', 'category': 'oscillator'},
+    'momentum_stochastic': {'name': '随机动量', 'type': 'momentum', 'category': 'oscillator'},
+    'momentum_cci': {'name': 'CCI动量', 'type': 'momentum', 'category': 'oscillator'},
+    'momentum_momentum': {'name': '动量指标', 'type': 'momentum', 'category': 'rate'},
+    'momentum_roc': {'name': '变化率', 'type': 'momentum', 'category': 'rate'},
+    'momentum_williams_r': {'name': '威廉R', 'type': 'momentum', 'category': 'oscillator'},
+    
+    # === VOLATILITY ===
+    'volatility_atr': {'name': 'ATR波动', 'type': 'volatility', 'category': 'range'},
+    'volatility_bollinger_width': {'name': '布林宽度', 'type': 'volatility', 'category': 'band'},
+    'volatility_keltner_width': {'name': '肯特纳宽度', 'type': 'volatility', 'category': 'channel'},
+    'volatility_donchian': {'name': '唐奇安波动', 'type': 'volatility', 'category': 'channel'},
+    'volatility_stddev': {'name': '标准差波动', 'type': 'volatility', 'category': 'statistical'},
+    
+    # === VOLUME ===
+    'volume_obv': {'name': 'OBV量能', 'type': 'volume', 'category': 'flow'},
+    'volume_vwap': {'name': 'VWAP量价', 'type': 'volume', 'category': 'average'},
+    'volume_mfi': {'name': 'MFI资金流', 'type': 'volume', 'category': 'flow'},
+    'volume_adi': {'name': 'ADI积累', 'type': 'volume', 'category': 'flow'},
+    'volume_cmvol': {'name': 'Chaikin量', 'type': 'volume', 'category': 'flow'},
+    'volume_vol_profile': {'name': '成交量分布', 'type': 'volume', 'category': 'profile'},
+    
+    # === BREAKOUT ===
+    'breakout_donchian': {'name': '唐奇安突破', 'type': 'breakout', 'category': 'channel'},
+    'breakout_vwap': {'name': 'VWAP突破', 'type': 'breakout', 'category': 'pivot'},
+    'breakout_fractal': {'name': '分形突破', 'type': 'breakout', 'category': 'pattern'},
+    'breakout_pivot': {'name': '枢轴突破', 'type': 'breakout', 'category': 'pivot'},
+    'breakout_range': {'name': '区间突破', 'type': 'breakout', 'category': 'range'},
+    
+    # === OSCILLATOR ===
+    'oscillator_rsi': {'name': 'RSI振荡', 'type': 'oscillator', 'category': 'momentum'},
+    'oscillator_stochastic': {'name': 'KDJ振荡', 'type': 'oscillator', 'category': 'momentum'},
+    'oscillator_macd': {'name': 'MACD振荡', 'type': 'oscillator', 'category': 'trend'},
+    'oscillator_cci': {'name': 'CCI振荡', 'type': 'oscillator', 'category': 'momentum'},
+    'oscillator_williams': {'name': '威廉振荡', 'type': 'oscillator', 'category': 'momentum'},
+    'oscillator_ultimate': {'name': '终极振荡', 'type': 'oscillator', 'category': 'momentum'},
+    
+    # === ARBITRAGE ===
+    'arb_spot_future': {'name': '现货期货套利', 'type': 'arbitrage', 'category': 'basis'},
+    'arb_triangular': {'name': '三角套利', 'type': 'arbitrage', 'category': 'currency'},
+    'arb_funding': {'name': '资金费率套利', 'type': 'arbitrage', 'category': 'rate'},
+    'arb_cross_exchange': {'name': '跨交易所套利', 'type': 'arbitrage', 'category': 'exchange'},
+    'arb_stat_arb': {'name': '统计套利', 'type': 'arbitrage', 'category': 'statistical'},
+    
+    # === MARKET MAKING ===
+    'mm_basic': {'name': '基础做市', 'type': 'market_making', 'category': 'passive'},
+    'mm_spread': {'name': '价差做市', 'type': 'market_making', 'category': 'spread'},
+    'mm_inventory': {'name': '库存做市', 'type': 'market_making', 'category': 'inventory'},
+    'mm_adverse': {'name': '逆向选择做市', 'type': 'market_making', 'category': 'adverse'},
+    
+    # === PAIRS TRADING ===
+    'pairs_spread': {'name': '配对价差', 'type': 'pairs', 'category': 'spread'},
+    'pairs_cointegration': {'name': '协整配对', 'type': 'pairs', 'category': 'statistical'},
+    'pairs_correlation': {'name': '相关配对', 'type': 'pairs', 'category': 'correlation'},
+    'pairs_beta_hedge': {'name': 'Beta对冲', 'type': 'pairs', 'category': 'hedge'},
+    
+    # === OPTIONS (Virtual for Crypto) ===
+    'options_delta_hedge': {'name': 'Delta对冲', 'type': 'options', 'category': 'greeks'},
+    'options_straddle': {'name': '跨式期权', 'type': 'options', 'category': 'volatility'},
+    'options_iron_condor': {'name': '铁蝶式', 'type': 'options', 'category': 'volatility'},
+    'options_covered_call': {'name': '备兑看涨', 'type': 'options', 'category': 'income'},
+    
+    # === GRID TRADING ===
+    'grid_arithmetic': {'name': '算术网格', 'type': 'grid', 'category': 'arithmetic'},
+    'grid_geometric': {'name': '几何网格', 'type': 'grid', 'category': 'geometric'},
+    'grid_fibonacci': {'name': '斐波那契网格', 'type': 'grid', 'category': 'fibonacci'},
+    'grid_directional': {'name': '定向网格', 'type': 'grid', 'category': 'directional'},
+    
+    # === DCA / SIP ===
+    'dca_fixed': {'name': '定投', 'type': 'dca', 'category': 'fixed'},
+    'dca_variable': {'name': '变额定投', 'type': 'dca', 'category': 'variable'},
+    'dca_threshold': {'name': '阈值定投', 'type': 'dca', 'category': 'conditional'},
+    'dca_double': {'name': '马丁格尔', 'type': 'dca', 'category': 'martingale'},
+    
+    # === SENTIMENT ===
+    'sentiment_fear_greed': {'name': '恐惧贪婪', 'type': 'sentiment', 'category': 'index'},
+    'sentiment_spread': {'name': '多空比', 'type': 'sentiment', 'category': 'ratio'},
+    'sentiment_funding': {'name': '资金费率情绪', 'type': 'sentiment', 'category': 'rate'},
+    'sentiment_long_short': {'name': '多空比(交易所)', 'type': 'sentiment', 'category': 'ratio'},
+    
+    # === ON-CHAIN ===
+    'onchain_exchange_flow': {'name': '交易所流向', 'type': 'onchain', 'category': 'flow'},
+    'onchain_staking': {'name': '质押率', 'type': 'onchain', 'category': 'staking'},
+    'onchain_gas': {'name': 'Gas价格', 'type': 'onchain', 'category': 'fee'},
+    'onchain_whale': {'name': '巨鲸监控', 'type': 'onchain', 'category': 'whale'},
+    'onchain_active_addr': {'name': '活跃地址', 'type': 'onchain', 'category': 'activity'},
+    
+    # === STRUCTURE ===
+    'structure_support_resist': {'name': '支撑阻力', 'type': 'structure', 'category': 'levels'},
+    'structure_fib_retracement': {'name': '斐波回撤', 'type': 'structure', 'category': 'fibonacci'},
+    'structure_fib_extension': {'name': '斐波扩展', 'type': 'structure', 'category': 'fibonacci'},
+    'structure_pivotWeekly': {'name': '周枢轴', 'type': 'structure', 'category': 'pivot'},
+    'structure_pivot_monthly': {'name': '月枢轴', 'type': 'structure', 'category': 'pivot'},
+    'structure_order_block': {'name': '订单块', 'type': 'structure', 'category': 'order'},
+    'structure_breaker': {'name': '熔断', 'type': 'structure', 'category': 'break'},
+    
+    # === PATTERN ===
+    'pattern_price_action': {'name': '价格行为', 'type': 'pattern', 'category': 'action'},
+    'pattern_candlestick': {'name': 'K线形态', 'type': 'pattern', 'category': 'candle'},
+    'pattern_harmonic': {'name': '谐波形态', 'type': 'pattern', 'category': 'harmonic'},
+    'pattern_wave': {'name': '波浪形态', 'type': 'pattern', 'category': 'elliott'},
+    
+    # === MARKET REGIME ===
+    'regime_bull': {'name': '牛市策略', 'type': 'regime', 'category': 'direction'},
+    'regime_bear': {'name': '熊市策略', 'type': 'regime', 'category': 'direction'},
+    'regime_volatile': {'name': '高波动策略', 'type': 'regime', 'category': 'volatility'},
+    'regime_range': {'name': '区间策略', 'type': 'regime', 'category': 'range'},
+    'regime_breakout': {'name': '突破策略', 'type': 'regime', 'category': 'breakout'},
+    
+    # === RISK MANAGEMENT ===
+    'risk_fixed_size': {'name': '固定仓位', 'type': 'risk', 'category': 'size'},
+    'risk_kelly': {'name': '凯利公式', 'type': 'risk', 'category': 'size'},
+    'risk_atr_size': {'name': 'ATR仓位', 'type': 'risk', 'category': 'size'},
+    'risk_vol_size': {'name': '波动率仓位', 'type': 'risk', 'category': 'size'},
+    'risk_max_dd': {'name': '最大回撤控制', 'type': 'risk', 'category': 'drawdown'},
+    'risk_correlation_hedge': {'name': '相关对冲', 'type': 'risk', 'category': 'hedge'},
+    
+    # === EXECUTION ===
+    'exec_twap': {'name': 'TWAP执行', 'type': 'execution', 'category': 'time'},
+    'exec_vwap': {'name': 'VWAP执行', 'type': 'execution', 'category': 'volume'},
+    'exec_pov': {'name': '成交量比例', 'type': 'execution', 'category': 'volume'},
+    'exec_iceberg': {'name': '冰山订单', 'type': 'execution', 'category': 'hidden'},
+    'exec_auction': {'name': '拍卖执行', 'type': 'execution', 'category': 'auction'},
+    
+    # === DEFI SPECIFIC ===
+    'defi_lending': {'name': '借贷利率', 'type': 'defi', 'category': 'lending'},
+    'defi_yield': {'name': '收益率套利', 'type': 'defi', 'category': 'yield'},
+    'defi_lp': {'name': 'LP套利', 'type': 'defi', 'category': 'liquidity'},
+    'defi_flash': {'name': '闪电贷', 'type': 'defi', 'category': 'loan'},
+    
+    # === CRYPTO SPECIFIC ===
+    'crypto_dominance': {'name': 'BTC主导', 'type': 'crypto', 'category': 'dominance'},
+    'crypto_altseason': {'name': '山寨季', 'type': 'crypto', 'category': 'season'},
+    'crypto_halving': {'name': '减产周期', 'type': 'crypto', 'category': 'cycle'},
+    'crypto_etf_flow': {'name': 'ETF资金流', 'type': 'crypto', 'category': 'institutional'},
+    'crypto_open_interest': {'name': '未平仓量', 'type': 'crypto', 'category': 'derivatives'},
+    
+    # === MYSTICAL / QUANTUM ===
+    'mystic_moon': {'name': '月相', 'type': 'mystical', 'category': 'astro'},
+    'mystic_gann': {'name': '江恩理论', 'type': 'mystical', 'category': 'gann'},
+    'mystic_fib_time': {'name': '斐波那契时间', 'type': 'mystical', 'category': 'fibonacci'},
+    'mystic_planetary': {'name': '行星相位', 'type': 'mystical', 'category': 'astro'},
+    'mystic_iching': {'name': '易经卦象', 'type': 'mystical', 'category': 'chinese'},
+    'mystic_bagua': {'name': '八卦', 'type': 'mystical', 'category': 'chinese'},
+}
+
+# Strategy Categories
+STRATEGY_CATEGORIES = {
+    'trend': {'name': '趋势策略', 'strategies': 10},
+    'reversion': {'name': '回归策略', 'strategies': 6},
+    'momentum': {'name': '动量策略', 'strategies': 6},
+    'volatility': {'name': '波动率策略', 'strategies': 5},
+    'volume': {'name': '成交量策略', 'strategies': 6},
+    'breakout': {'name': '突破策略', 'strategies': 5},
+    'oscillator': {'name': '振荡器策略', 'strategies': 6},
+    'arbitrage': {'name': '套利策略', 'strategies': 5},
+    'market_making': {'name': '做市策略', 'strategies': 4},
+    'pairs': {'name': '配对策略', 'strategies': 4},
+    'options': {'name': '期权策略', 'strategies': 4},
+    'grid': {'name': '网格策略', 'strategies': 4},
+    'dca': {'name': '定投策略', 'strategies': 4},
+    'sentiment': {'name': '情绪策略', 'strategies': 4},
+    'onchain': {'name': '链上策略', 'strategies': 5},
+    'structure': {'name': '结构策略', 'strategies': 7},
+    'pattern': {'name': '形态策略', 'strategies': 4},
+    'regime': {'name': '市场状态策略', 'strategies': 5},
+    'risk': {'name': '风险管理策略', 'strategies': 6},
+    'execution': {'name': '执行策略', 'strategies': 5},
+    'defi': {'name': 'DeFi策略', 'strategies': 4},
+    'crypto': {'name': '加密专用策略', 'strategies': 5},
+    'mystical': {'name': '玄学策略', 'strategies': 6},
+}
+
+def print_all_strategies():
+    """Print all strategies organized by category"""
+    print("\n" + "="*80)
+    print("📚 COMPLETE QUANTITATIVE TRADING STRATEGY LIBRARY")
+    print("="*80)
+    
+    total = 0
+    for cat_key, cat_info in STRATEGY_CATEGORIES.items():
+        strategies_in_cat = {k: v for k, v in COMPLETE_STRATEGIES.items() if v['category'] == cat_key}
+        if strategies_in_cat:
+            print(f"\n【{cat_info['name']}】({len(strategies_in_cat)} 策略)")
+            print("-" * 60)
+            for strat_key, strat_info in strategies_in_cat.items():
+                print(f"  • {strat_key}: {strat_info['name']}")
+                total += 1
+    
+    print(f"\n{'='*80}")
+    print(f"📊 Total: {len(COMPLETE_STRATEGIES)} strategies in {len(STRATEGY_CATEGORIES)} categories")
+    print(f"{'='*80}")
+    
+    return COMPLETE_STRATEGIES
+
+if __name__ == '__main__':
+    print_all_strategies()
