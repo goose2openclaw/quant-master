@@ -1,0 +1,35 @@
+{
+  "name": "G37 Pool Strategy",
+  "version": "3.0",
+  "created": "2026-05-13T22:56:15.809920",
+  "description": "Top6 Meme + \u649e\u7403\u5468\u671f + go-core \u5168\u81ea\u52a8\u4ea4\u6613",
+  "features": [
+    "Top6 Meme\u52a8\u6001\u4ea4\u6613 (BOME, TURBO, BONK, FLOKI, PEPE, NEIRO)",
+    "\u649e\u7403\u5468\u671f\u7b56\u7565 (\u76d8\u6574\u2192\u542f\u52a8\u2192\u52a0\u901f\u2192\u9ad8\u5cf0\u2192\u8870\u9000)",
+    "go-core v2.0\u9884\u6d4b\u878d\u5408",
+    "\u5168\u81ea\u52a8\u81ea\u4e3b\u4ea4\u6613",
+    "\u81ea\u52a8\u8d44\u4ea7\u7ba1\u7406",
+    "\u81ea\u52a8\u5e01\u79cd\u8c03\u6362"
+  ],
+  "parameters": {
+    "KELLY_BASE": 0.3,
+    "STOP_LOSS": 0.05,
+    "TAKE_PROFIT_BASE": 0.15,
+    "TOP6_TAKE_PROFIT": 0.2,
+    "SCAN_INTERVAL": 30
+  },
+  "top6_meme": {
+    "coins": [
+      "BOME",
+      "TURBO",
+      "BONK",
+      "FLOKI",
+      "PEPE",
+      "NEIRO"
+    ],
+    "enter_rsi": 35,
+    "enter_momentum": 0.02,
+    "stop_loss": 0.05,
+    "take_profit": 0.2
+  }
+}
