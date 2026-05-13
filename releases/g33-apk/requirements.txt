@@ -1,0 +1,2 @@
+# G33 Trading System Requirements
+# No external packages needed - uses Python standard library only

@@ -1,0 +1,34 @@
+{
+  "name": "G33 Optimized Trading System",
+  "version": "2.0.0",
+  "created": "2026-05-13T16:12:03.494476",
+  "description": "go-core v2.0 + \u8ba2\u5355\u7c3f + \u6e05\u7b97\u9884\u8b66 + \u8de8\u4ea4\u6613\u6240",
+  "files": [
+    "g33_live.py - G33\u4e3b\u4ea4\u6613\u811a\u672c",
+    "g32_live.py - G32\u53c2\u8003\u811a\u672c",
+    "go_core.py - go-core v2.0\u6838\u5fc3\u5f15\u64ce",
+    "go-orderbook/ - \u8ba2\u5355\u7c3f\u5206\u6790\u5f15\u64ce",
+    "go-liquidation/ - \u6e05\u7b97\u9884\u8b66\u5f15\u64ce",
+    "go-cross-exchange/ - \u8de8\u4ea4\u6613\u6240\u5957\u5229"
+  ],
+  "features": [
+    "go-core v2.0 (\u5e76\u884c\u8ba1\u7b97, \u81ea\u9002\u5e94\u6743\u91cd, \u591a\u5468\u671f\u5171\u632f)",
+    "OrderbookSignal (\u8ba2\u5355\u7c3f\u4fe1\u53f7\u7cfb\u7edf)",
+    "LiquidationWarning (\u6e05\u7b97\u9884\u8b66\u7cfb\u7edf)",
+    "ArbitrageScanner (\u5957\u5229\u626b\u63cf)",
+    "API\u667a\u80fd\u91cd\u8bd5 + \u7f13\u5b58\u4fdd\u62a4"
+  ],
+  "requirements": [
+    "Python 3.8+",
+    "Binance API\u5bc6\u94a5",
+    "\u7f51\u7edc\u8fde\u63a5 (\u4ee3\u7406: http://172.29.144.1:7897)"
+  ],
+  "config": {
+    "MIN_TRADE_USDT": 1,
+    "MAX_POSITION_PCT": 0.15,
+    "STOP_LOSS": 0.05,
+    "TAKE_PROFIT": 0.25,
+    "SCAN_INTERVAL": 20,
+    "MIN_CONFIDENCE": 0.35
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "name": "go-series",
+  "version": "2.0.0",
+  "description": "\u52a0\u5bc6\u91cf\u5316\u4ea4\u6613\u7cfb\u5217\u6280\u80fd\u5305",
+  "skills": [
+    {
+      "name": "go-core",
+      "path": "../go-core/",
+      "type": "core"
+    },
+    {
+      "name": "go-quantum",
+      "path": "../go-quantum/",
+      "type": "analysis"
+    },
+    {
+      "name": "go-thermo",
+      "path": "../go-thermo/",
+      "type": "analysis"
+    },
+    {
+      "name": "go-contrarian",
+      "path": "../go-contrarian/",
+      "type": "behavior"
+    },
+    {
+      "name": "go-detect",
+      "path": "../go-detect/",
+      "type": "institutional"
+    },
+    {
+      "name": "go-ensemble",
+      "path": "../go-ensemble/",
+      "type": "ensemble"
+    },
+    {
+      "name": "go-meta",
+      "path": "../go-meta/",
+      "type": "meta"
+    },
+    {
+      "name": "go-reverse",
+      "path": "../go-reverse/",
+      "type": "simulation"
+    },
+    {
+      "name": "go-fit",
+      "path": "../go-fit/",
+      "type": "trend"
+    },
+    {
+      "name": "go-noise",
+      "path": "../go-noise/",
+      "type": "filter"
+    },
+    {
+      "name": "go-hotspot",
+      "path": "../go-hotspot/",
+      "type": "hotspot"
+    },
+    {
+      "name": "go-fastlane",
+      "path": "../go-fastlane/",
+      "type": "execution"
+    },
+    {
+      "name": "go-orderbook",
+      "path": "../go-orderbook/",
+      "type": "orderbook"
+    },
+    {
+      "name": "go-liquidation",
+      "path": "../go-liquidation/",
+      "type": "risk"
+    },
+    {
+      "name": "go-cross-exchange",
+      "path": "../go-cross-exchange/",
+      "type": "arbitrage"
+    }
+  ],
+  "trading_params": {
+    "MIN_TRADE_USDT": 1,
+    "MAX_POSITION_PCT": 0.15,
+    "STOP_LOSS": 0.05,
+    "TAKE_PROFIT": 0.25,
+    "SCAN_INTERVAL": 20,
+    "MIN_CONFIDENCE": 0.35
+  }
+}
