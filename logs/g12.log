@@ -1,0 +1,9 @@
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+[18:27:09] ============================================================
+[18:27:09] 🌟 G12 自主迭代 v4 启动
+[18:27:09] 三原则: 收益最大化 | 胜率高位 | 资金效率高位
+[18:27:09] ============================================================
+[18:27:09] 🔍 全域扫描中...
+[18:27:15] 📊 全域扫描完成: 发现 0 个有效信号
+[18:27:15] ⚠️ 无有效信号

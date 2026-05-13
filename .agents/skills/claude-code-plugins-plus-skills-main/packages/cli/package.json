@@ -1,0 +1,65 @@
+{
+  "name": "@intentsolutionsio/ccpi",
+  "version": "2.0.3",
+  "description": "Command-line tool for installing and managing Claude Code plugins from tonsofskills.com",
+  "type": "module",
+  "main": "./dist/index.js",
+  "bin": {
+    "ccpi": "./dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "dev": "tsc --watch",
+    "build": "tsc && chmod +x dist/index.js",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint src",
+    "size": "size-limit",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "claude-code",
+    "plugins",
+    "cli",
+    "agent-ops",
+    "installation",
+    "marketplace"
+  ],
+  "author": "Intent Solutions IO <jeremy@intentsolutions.io>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jeremylongshore/claude-code-plugins.git",
+    "directory": "packages/cli"
+  },
+  "homepage": "https://tonsofskills.com",
+  "bugs": {
+    "url": "https://github.com/jeremylongshore/claude-code-plugins/issues"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "axios": "^1.7.9",
+    "chalk": "^5.3.0",
+    "commander": "^12.1.0",
+    "fs-extra": "^11.2.0",
+    "ora": "^8.1.1",
+    "yaml": "^2.7.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.2",
+    "@size-limit/file": "^12.1.0",
+    "@types/fs-extra": "^11.0.4",
+    "@types/node": "^20.19.27",
+    "eslint": "^9.39.2",
+    "size-limit": "^12.1.0",
+    "typescript": "^5.5.0",
+    "typescript-eslint": "^8.46.0",
+    "vitest": "^2.0.0"
+  }
+}

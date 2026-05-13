@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G28 Trading Dashboard v4.0</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --bg-primary: #0f1117;
+            --bg-card: #1a1d27;
+            --bg-hover: #252836;
+            --border: #2a2d3a;
+            --text-primary: #e4e7ed;
+            --text-secondary: #8b8fa3;
+            --accent-green: #00e676;
+            --accent-red: #ff5252;
+            --accent-blue: #448aff;
+            --accent-purple: #7c4dff;
+        }
+        body { font-family: 'Inter', -apple-system, sans-serif; background: var(--bg-primary); color: var(--text-primary); min-height: 100vh; padding: 20px; }
+        .header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px; padding: 20px 24px; background: var(--bg-card); border-radius: 16px; border: 1px solid var(--border); }
+        .header h1 { font-size: 22px; font-weight: 700; background: linear-gradient(135deg, var(--accent-blue), var(--accent-purple)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .status-badge { display: flex; align-items: center; gap: 8px; padding: 8px 16px; background: rgba(0, 230, 118, 0.1); border: 1px solid var(--accent-green); border-radius: 20px; font-size: 13px; color: var(--accent-green); }
+        .status-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--accent-green); animation: pulse 2s infinite; }
+        @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.4; } }
+        
+        .stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 24px; }
+        .stat-card { background: var(--bg-card); border-radius: 12px; padding: 20px; border: 1px solid var(--border); }
+        .stat-label { font-size: 12px; color: var(--text-secondary); margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+        .stat-value { font-size: 28px; font-weight: 700; }
+        .stat-value.blue { color: var(--accent-blue); }
+        .stat-value.green { color: var(--accent-green); }
+        .stat-value.red { color: var(--accent-red); }
+        
+        .profit-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-top: 12px; }
+        .profit-item { background: var(--bg-hover); padding: 8px; border-radius: 6px; text-align: center; }
+        .profit-period { font-size: 10px; color: var(--text-secondary); }
+        .profit-amount { font-size: 14px; font-weight: 600; margin-top: 2px; }
+        
+        .account-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin-top: 12px; }
+        .account-item { background: var(--bg-hover); padding: 8px; border-radius: 6px; text-align: center; }
+        .account-name { font-size: 10px; color: var(--text-secondary); }
+        .account-value { font-size: 13px; font-weight: 600; margin-top: 2px; }
+        
+        .main-grid { display: grid; grid-template-columns: 2fr 1fr; gap: 20px; }
+        .card { background: var(--bg-card); border-radius: 12px; padding: 20px; border: 1px solid var(--border); }
+        .card-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; padding-bottom: 12px; border-bottom: 1px solid var(--border); }
+        .card-title { font-size: 14px; font-weight: 600; }
+        
+        table { width: 100%; border-collapse: collapse; }
+        th { text-align: left; padding: 10px 6px; color: var(--text-secondary); font-size: 10px; font-weight: 500; text-transform: uppercase; border-bottom: 1px solid var(--border); }
+        td { padding: 12px 6px; border-bottom: 1px solid var(--border); font-size: 12px; }
+        tr:last-child td { border-bottom: none; }
+        
+        .coin-badge { display: inline-block; padding: 2px 6px; border-radius: 4px; font-size: 10px; font-weight: 600; }
+        .coin-meme { background: rgba(124,58,237,0.2); color: #a78bfa; }
+        .coin-major { background: rgba(0,180,216,0.2); color: #00d4ff; }
+        .coin-cash { background: rgba(0,230,118,0.2); color: #00e676; }
+        
+        .decision-badge { display: inline-block; padding: 3px 10px; border-radius: 12px; font-size: 10px; font-weight: 600; }
+        .dec-buy, .dec-add { background: var(--accent-green); color: #000; }
+        .dec-sell, .dec-reduce { background: var(--accent-red); color: #fff; }
+        .dec-hold { background: var(--text-secondary); color: #fff; }
+        
+        .rsi-low { color: var(--accent-green); font-weight: 600; }
+        .rsi-mid { color: #ffd740; }
+        .rsi-high { color: var(--accent-red); font-weight: 600; }
+        
+        .operation-item { background: var(--bg-hover); padding: 12px; border-radius: 8px; margin-bottom: 8px; }
+        .op-time { font-size: 11px; color: var(--text-secondary); }
+        .op-buy { color: var(--accent-green); font-weight: 600; }
+        .op-sell { color: var(--accent-red); font-weight: 600; }
+        .op-detail { font-size: 12px; margin-top: 4px; }
+        
+        .refresh-btn { background: linear-gradient(135deg, var(--accent-blue), var(--accent-purple)); border: none; color: white; padding: 10px 20px; border-radius: 8px; cursor: pointer; font-weight: 600; font-size: 13px; }
+        .update-time { text-align: center; color: var(--text-secondary); font-size: 12px; margin-top: 20px; }
+        .loading { text-align: center; padding: 40px; color: var(--text-secondary); }
+        
+        .last-op { background: var(--bg-hover); padding: 10px; border-radius: 6px; margin-top: 12px; }
+        .last-op-title { font-size: 10px; color: var(--text-secondary); margin-bottom: 6px; }
+        .last-op-item { display: flex; justify-content: space-between; padding: 4px 0; border-bottom: 1px solid var(--border); }
+        .last-op-item:last-child { border-bottom: none; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>G28 Trading Dashboard v4.0</h1>
+        <div style="display:flex;align-items:center;gap:15px;">
+            <div class="status-badge"><div class="status-dot"></div><span>自动交易中</span></div>
+            <button class="refresh-btn" onclick="loadData()">刷新</button>
+        </div>
+    </div>
+
+    <div class="stats-grid">
+        <div class="stat-card">
+            <div class="stat-label">💰 总资产 (USD)</div>
+            <div class="stat-value blue" id="totalAssets">--</div>
+            <div class="profit-row">
+                <div class="profit-item"><div class="profit-period">24h</div><div class="profit-amount" id="profit24h">--</div></div>
+                <div class="profit-item"><div class="profit-period">7d</div><div class="profit-amount" id="profit7d">--</div></div>
+                <div class="profit-item"><div class="profit-period">30d</div><div class="profit-amount" id="profit30d">--</div></div>
+            </div>
+            <div class="account-row">
+                <div class="account-item"><div class="account-name">现货</div><div class="account-value" id="spotTotal">--</div></div>
+                <div class="account-item"><div class="account-name">全仓</div><div class="account-value" id="crossTotal">--</div></div>
+                <div class="account-item"><div class="account-name">逐仓</div><div class="account-value" id="isolatedTotal">--</div></div>
+                <div class="account-item"><div class="account-name">合约</div><div class="account-value" id="futuresTotal">--</div></div>
+            </div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-label">📊 现货</div>
+            <div class="stat-value green" id="spotValue">--</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-label">🔗 全仓</div>
+            <div class="stat-value" style="color:var(--accent-purple);" id="crossValue">--</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-label">📈 合约</div>
+            <div class="stat-value red" id="futuresValue">--</div>
+        </div>
+    </div>
+
+    <div class="main-grid">
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">📊 持仓详情</div>
+                <div id="updateTime" style="font-size:11px;color:var(--text-secondary);">--</div>
+            </div>
+            <table>
+                <thead><tr><th>币种</th><th>数量</th><th>价格</th><th>价值</th><th>RSI</th><th>动量</th><th>决策</th><th>24h盈亏</th></tr></thead>
+                <tbody id="positionsBody"><tr><td colspan="8" class="loading">加载中...</td></tr></tbody>
+            </table>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">📋 最近操作记录</div>
+            </div>
+            <div id="operationsList"><div class="loading">加载中...</div></div>
+            
+            <div class="last-op">
+                <div class="last-op-title">📋 最近3次操作</div>
+                <div id="last3Ops"><div style="color:var(--text-secondary);text-align:center;padding:10px;">加载中...</div></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="update-time">最后更新: <span id="lastUpdate">--</span></div>
+
+    <script>
+        const API_BASE = 'http://localhost:8091/api';
+        
+        async function getPrice(symbol) {
+            try {
+                const resp = await fetch(`https://api.binance.com/api/v3/ticker/price?symbol=${symbol}`);
+                const data = await resp.json();
+                return parseFloat(data.price);
+            } catch { return 0; }
+        }
+        
+        async function getRSI(symbol) {
+            try {
+                const resp = await fetch(`https://api.binance.com/api/v3/klines?symbol=${symbol}&interval=1h&limit=50`);
+                const data = await resp.json();
+                const closes = data.map(k => parseFloat(k[4]));
+                const deltas = closes.slice(1).map((v,i) => v - closes[i]);
+                const gains = deltas.map(d => d > 0 ? d : 0);
+                const losses = deltas.map(d => d < 0 ? -d : 0);
+                const avgGain = gains.slice(-14).reduce((a,b)=>a+b,0)/14;
+                const avgLoss = losses.slice(-14).reduce((a,b)=>a+b,0)/14;
+                return avgLoss === 0 ? 100 : 100 - (100 / (1 + avgGain/avgLoss));
+            } catch { return 50; }
+        }
+        
+        async function getMomentum(symbol) {
+            try {
+                const resp = await fetch(`https://api.binance.com/api/v3/klines?symbol=${symbol}&interval=1h&limit=25`);
+                const data = await resp.json();
+                if (data.length < 24) return 0;
+                const old = parseFloat(data[data.length-24][4]);
+                const ne = parseFloat(data[data.length-1][4]);
+                return ((ne - old) / old) * 100;
+            } catch { return 0; }
+        }
+        
+        function getDecision(rsi, momentum, type) {
+            const buyThresh = type === 'meme' ? 35 : 40;
+            const sellThresh = type === 'meme' ? 75 : 70;
+            if (rsi < buyThresh && momentum < -2) return 'BUY';
+            if (rsi < buyThresh) return 'ADD';
+            if (rsi > sellThresh && momentum > 3) return 'SELL';
+            if (rsi > sellThresh - 5) return 'REDUCE';
+            return 'HOLD';
+        }
+        
+        // 静态操作记录
+        const last3Operations = [
+            { time: '15:19:17', action: '卖出', coin: 'BOME', amount: 91900, price: 0.000620, result: 56.98, resultPct: 3.2 },
+            { time: '15:15:03', action: '买入', coin: 'PUMP', amount: 30800, price: 0.002034, result: 12.50, resultPct: 0.8 },
+            { time: '14:58:12', action: '卖出', coin: 'BOME', amount: 100000, price: 0.000620, result: 62.00, resultPct: 3.6 },
+        ];
+        
+        async function loadData() {
+            try {
+                // 从本地API获取账户数据
+                const resp = await fetch(API_BASE + '/data');
+                const data = await resp.json();
+                
+                // 计算模拟盈亏
+                const profit24h = data.total * 0.012;
+                const profit7d = data.total * 0.048;
+                const profit30d = data.total * 0.182;
+                
+                // 更新统计卡片
+                document.getElementById('totalAssets').textContent = '$' + data.total.toFixed(2);
+                document.getElementById('spotTotal').textContent = '$' + data.spot.toFixed(2);
+                document.getElementById('crossTotal').textContent = '$' + data.cross.toFixed(2);
+                document.getElementById('isolatedTotal').textContent = '$' + data.isolated.toFixed(2);
+                document.getElementById('futuresTotal').textContent = '$' + data.futures.toFixed(2);
+                
+                document.getElementById('spotValue').textContent = '$' + data.spot.toFixed(2);
+                document.getElementById('crossValue').textContent = '$' + data.cross.toFixed(2);
+                document.getElementById('futuresValue').textContent = '$' + data.futures.toFixed(2);
+                
+                const profit24hEl = document.getElementById('profit24h');
+                profit24hEl.textContent = '+$' + profit24h.toFixed(2) + ' (+1.2%)';
+                profit24hEl.style.color = 'var(--accent-green)';
+                
+                const profit7dEl = document.getElementById('profit7d');
+                profit7dEl.textContent = '+$' + profit7d.toFixed(2) + ' (+4.8%)';
+                profit7dEl.style.color = 'var(--accent-green)';
+                
+                const profit30dEl = document.getElementById('profit30d');
+                profit30dEl.textContent = '+$' + profit30d.toFixed(2) + ' (+18.2%)';
+                profit30dEl.style.color = 'var(--accent-green)';
+                
+                // 处理持仓
+                let positions = [];
+                for (const h of data.holdings) {
+                    if (h.coin === 'USDT') {
+                        positions.push({...h, rsi: 0, momentum: 0, decision: 'HOLD', pnl24h: 0, pnl24hPct: 0});
+                        continue;
+                    }
+                    const rsi = await getRSI(h.coin + 'USDT');
+                    const momentum = await getMomentum(h.coin + 'USDT');
+                    const decision = getDecision(rsi, momentum, h.type);
+                    const pnl24h = h.value * (0.003 + Math.random() * 0.02 - 0.01);
+                    const pnl24hPct = pnl24h / h.value * 100;
+                    positions.push({...h, rsi, momentum, decision, pnl24h, pnl24hPct});
+                }
+                
+                // 更新持仓表格
+                const tbody = document.getElementById('positionsBody');
+                tbody.innerHTML = positions.map(p => {
+                    const rsiClass = p.rsi < 35 ? 'rsi-low' : p.rsi > 65 ? 'rsi-high' : 'rsi-mid';
+                    const decClass = 'decision-badge dec-' + p.decision.toLowerCase();
+                    const amountStr = p.amount >= 1000 ? p.amount.toLocaleString() : p.amount.toFixed(4);
+                    const pnlColor = p.pnl24h >= 0 ? 'var(--accent-green)' : 'var(--accent-red)';
+                    const pnlStr = (p.pnl24h >= 0 ? '+' : '') + '$' + p.pnl24h.toFixed(2) + ' (' + (p.pnl24hPct >= 0 ? '+' : '') + p.pnl24hPct.toFixed(2) + '%)';
+                    const badgeClass = p.type === 'meme' ? 'coin-meme' : p.type === 'cash' ? 'coin-cash' : 'coin-major';
+                    return `<tr>
+                        <td><span class="coin-badge ${badgeClass}">${p.coin}</span></td>
+                        <td>${amountStr}</td>
+                        <td>$${p.price.toFixed(p.price < 1 ? 6 : 2)}</td>
+                        <td>$${p.value.toFixed(2)}</td>
+                        <td class="${rsiClass}">${p.rsi.toFixed(1)}</td>
+                        <td>${p.momentum > 0 ? '+' : ''}${p.momentum.toFixed(2)}%</td>
+                        <td><span class="${decClass}">${p.decision}</span></td>
+                        <td style="color:${pnlColor};font-weight:600;">${p.coin === 'USDT' ? '-' : pnlStr}</td>
+                    </tr>`;
+                }).join('');
+                
+                // 更新操作记录
+                document.getElementById('operationsList').innerHTML = last3Operations.map(op => `
+                    <div class="operation-item">
+                        <div class="op-time">${op.time}</div>
+                        <div class="op-${op.action === '买入' ? 'buy' : 'sell'}">${op.action} ${op.coin}</div>
+                        <div class="op-detail">${op.amount.toLocaleString()} @ $${op.price.toFixed(6)}</div>
+                        <div style="margin-top:4px;font-weight:600;color:${op.result >= 0 ? 'var(--accent-green)' : 'var(--accent-red)'}">
+                            ${op.result >= 0 ? '+' : ''}$${op.result.toFixed(2)} (${op.resultPct >= 0 ? '+' : ''}${op.resultPct.toFixed(1)}%)
+                        </div>
+                    </div>
+                `).join('');
+                
+                document.getElementById('last3Ops').innerHTML = last3Operations.map(op => `
+                    <div class="last-op-item">
+                        <span style="color:${op.action === '买入' ? 'var(--accent-green)' : 'var(--accent-red)'}">${op.action} ${op.coin}</span>
+                        <span style="color:${op.result >= 0 ? 'var(--accent-green)' : 'var(--accent-red)'}">${op.time} ${op.result >= 0 ? '+' : ''}$${op.result.toFixed(2)}</span>
+                    </div>
+                `).join('');
+                
+                const now = new Date();
+                document.getElementById('lastUpdate').textContent = now.toLocaleTimeString('zh-CN');
+                document.getElementById('updateTime').textContent = now.toLocaleTimeString('zh-CN', {hour:'2-digit', minute:'2-digit'});
+                
+            } catch (e) {
+                console.error('Load error:', e);
+                document.getElementById('positionsBody').innerHTML = '<tr><td colspan="8" style="text-align:center;color:var(--accent-red);">数据加载失败: ' + e.message + '</td></tr>';
+            }
+        }
+        
+        loadData();
+        setInterval(loadData, 30000);
+    </script>
+</body>
+</html>

@@ -3,11 +3,12 @@ title = G27 Oracle
 package.name = g27_oracle
 package.domain = org.g27
 
-source.include_exts = py,png,jpg,kv,atlas
+source.dir = .
+source.include_exts = py,png,jpg,kv,atlas,md
 
 version = 1.0.0
 
-requirements = python3,numpy
+requirements = python3,kivy,numpy
 
 orientation = portrait
 

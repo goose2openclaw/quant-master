@@ -1,6 +1,12 @@
 {
   "version": 1,
   "skills": {
+    "agent-council": {
+      "source": "itsahedge/agent-council",
+      "sourceType": "github",
+      "skillPath": "SKILL.md",
+      "computedHash": "6127dd906dfae21cd9564b34736b5978db644c19fb9c8e18331864d41e3fb257"
+    },
     "agent-governance": {
       "source": "github/awesome-copilot",
       "sourceType": "github",
@@ -103,6 +109,12 @@
       "sourceType": "github",
       "computedHash": "76880f941ee882a13d23fba2dfce1c7a016cc2990fef9e6910f3b234269b8355"
     },
+    "mmt-trading-systems": {
+      "source": "emeraldls/mmt-agent-skills",
+      "sourceType": "github",
+      "skillPath": "skills/mmt-trading-systems/SKILL.md",
+      "computedHash": "1cfa198f3f5abc462cb9dc03ba4a3145666e5a47f2987e0632afe1165d9a4569"
+    },
     "mmt-tradingview-charts": {
       "source": "emeraldls/mmt-agent-skills",
       "sourceType": "github",
@@ -154,6 +166,12 @@
       "sourceType": "github",
       "skillPath": ".agents/skills/symphony-setup/SKILL.md",
       "computedHash": "46a18eb8b74361c5dcd3a1b405b0add638e8fca022de64b64c548257b95321ed"
+    },
+    "trading-system": {
+      "source": "alsk1992/cloddsbot",
+      "sourceType": "github",
+      "skillPath": "src/skills/bundled/trading-system/SKILL.md",
+      "computedHash": "9781601dc9766d6eb13575030502af5729b8402ac4895eef643b20423b238c6f"
     },
     "vibe-trading": {
       "source": "hkuds/vibe-trading",

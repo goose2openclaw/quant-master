@@ -1,0 +1,68 @@
+{
+  "timestamp": "2026-05-10T17:32:12.242215",
+  "signals": [
+    {
+      "coin": "BTC",
+      "rsi": 40.58757419309558,
+      "signal": "BUY",
+      "tp": 0.046,
+      "sl": 0.017,
+      "trend": 0.40395275201098624,
+      "trailing_stop": true
+    },
+    {
+      "coin": "ETH",
+      "rsi": 44.91185897435824,
+      "signal": "HOLD",
+      "tp": 0.027,
+      "sl": 0.021,
+      "trend": 0.5523386382645965,
+      "trailing_stop": true
+    },
+    {
+      "coin": "SOL",
+      "rsi": 68.86446886446895,
+      "signal": "HOLD",
+      "tp": 0.041,
+      "sl": 0.027,
+      "trend": 1.0171146286129786,
+      "trailing_stop": true
+    },
+    {
+      "coin": "XRP",
+      "rsi": 54.752851711026985,
+      "signal": "HOLD",
+      "tp": 0.085,
+      "sl": 0.024,
+      "trend": 0.30115460258612226,
+      "trailing_stop": true
+    },
+    {
+      "coin": "ADA",
+      "rsi": 48.91304347826098,
+      "signal": "HOLD",
+      "tp": 0.0395,
+      "sl": 0.0125,
+      "trend": -0.11568189688841189,
+      "trailing_stop": true
+    },
+    {
+      "coin": "DOGE",
+      "rsi": 36.298932384341754,
+      "signal": "BUY",
+      "tp": 0.035,
+      "sl": 0.015,
+      "trend": -0.08758689832206054,
+      "trailing_stop": true
+    },
+    {
+      "coin": "LINK",
+      "rsi": 63.63636363636368,
+      "signal": "HOLD",
+      "tp": 0.03,
+      "sl": 0.0225,
+      "trend": 0.5534698300886491,
+      "trailing_stop": true
+    }
+  ]
+}

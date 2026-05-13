@@ -1,0 +1,5334 @@
+[Sun May 10 15:07:35 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+======================================================================
+G19 Live - 实盘交易
+======================================================================
+
+📊 现货账户:
+  USDT: 19.205664 (≈$0.00)
+
+总USDT: $19.21
+
+🔍 G19信号分析:
+  🟡 BTC    RSI: 46.5 Score:    0 Signal:HOLD   持仓:0.0000
+  🟡 ETH    RSI: 51.0 Score:    0 Signal:HOLD   持仓:0.0000
+  🟡 SOL    RSI: 58.1 Score:    0 Signal:HOLD   持仓:0.0000
+  🟡 XRP    RSI: 45.6 Score:    0 Signal:HOLD   持仓:0.0000
+  🟢 ADA    RSI: 41.4 Score:   50 Signal:BUY    持仓:0.0000
+  🟢 DOGE   RSI: 31.7 Score:   50 Signal:BUY    持仓:0.0000
+  🟡 LINK   RSI: 50.0 Score:    0 Signal:HOLD   持仓:0.0000
+
+🚀 交易执行:
+  ⏸️ ADA: 无持仓,跳过
+  ⏸️ DOGE: 无持仓,跳过
+[Sun May 10 15:07:39 CST 2026] Done, sleep 300s
+[Sun May 10 15:12:39 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+======================================================================
+G19 Live - 实盘交易
+======================================================================
+
+📊 现货账户:
+  USDT: 19.205664 (≈$0.00)
+
+总USDT: $19.21
+
+🔍 G19信号分析:
+  🟡 BTC    RSI: 45.9 Score:    0 Signal:HOLD   持仓:0.0000
+  🟡 ETH    RSI: 47.7 Score:    0 Signal:HOLD   持仓:0.0000
+  🟡 SOL    RSI: 56.6 Score:    0 Signal:HOLD   持仓:0.0000
+  🟡 XRP    RSI: 42.5 Score:    0 Signal:HOLD   持仓:0.0000
+  🟢 ADA    RSI: 37.9 Score:   50 Signal:BUY    持仓:0.0000
+  🟢 DOGE   RSI: 29.7 Score:   50 Signal:BUY    持仓:0.0000
+  🟡 LINK   RSI: 47.8 Score:    0 Signal:HOLD   持仓:0.0000
+
+🚀 交易执行:
+  ⏸️ ADA: 无持仓,跳过
+  ⏸️ DOGE: 无持仓,跳过
+[Sun May 10 15:12:43 CST 2026] Done, sleep 300s
+[Sun May 10 15:17:43 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+======================================================================
+G19 Live - 实盘交易
+======================================================================
+
+📊 现货账户:
+  USDT: 19.205664 (≈$0.00)
+
+总USDT: $19.21
+
+🔍 G19信号分析:
+  🟡 BTC    RSI: 45.8 Score:    0 Signal:HOLD   持仓:0.0000
+  🟡 ETH    RSI: 49.1 Score:    0 Signal:HOLD   持仓:0.0000
+  🟡 SOL    RSI: 56.6 Score:    0 Signal:HOLD   持仓:0.0000
+  🟡 XRP    RSI: 44.0 Score:    0 Signal:HOLD   持仓:0.0000
+  🟢 ADA    RSI: 40.6 Score:   50 Signal:BUY    持仓:0.0000
+  🟢 DOGE   RSI: 29.8 Score:   50 Signal:BUY    持仓:0.0000
+  🟡 LINK   RSI: 47.8 Score:    0 Signal:HOLD   持仓:0.0000
+
+🚀 交易执行:
+  ⏸️ ADA: 无持仓,跳过
+  ⏸️ DOGE: 无持仓,跳过
+[Sun May 10 15:17:48 CST 2026] Done, sleep 300s
+[Sun May 10 15:22:48 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+======================================================================
+G19 Live - 实盘交易
+======================================================================
+
+📊 现货账户:
+  USDT: 19.205664 (≈$0.00)
+
+总USDT: $19.21
+
+🔍 G19信号分析:
+  🟡 BTC    RSI: 48.4 Score:    0 Signal:HOLD   持仓:0.0000
+  🟡 ETH    RSI: 52.5 Score:    0 Signal:HOLD   持仓:0.0000
+  🟡 SOL    RSI: 59.1 Score:    0 Signal:HOLD   持仓:0.0000
+  🟡 XRP    RSI: 48.9 Score:    0 Signal:HOLD   持仓:0.0000
+  🟡 ADA    RSI: 44.6 Score:    0 Signal:HOLD   持仓:0.0000
+  🟢 DOGE   RSI: 33.5 Score:   50 Signal:BUY    持仓:0.0000
+  🟡 LINK   RSI: 50.0 Score:    0 Signal:HOLD   持仓:0.0000
+
+🚀 交易执行:
+  ⏸️ DOGE: 无持仓,跳过
+[Sun May 10 15:22:54 CST 2026] Done, sleep 300s
+[Sun May 10 15:27:54 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+======================================================================
+G19 Live - 实盘交易
+======================================================================
+
+📊 现货账户:
+  USDT: 19.205664 (≈$0.00)
+
+总USDT: $19.21
+
+🔍 G19信号分析:
+  🟡 BTC    RSI: 47.8 Score:    0 Signal:HOLD   持仓:0.0000
+  🟡 ETH    RSI: 50.1 Score:    0 Signal:HOLD   持仓:0.0000
+  🟡 SOL    RSI: 58.1 Score:    0 Signal:HOLD   持仓:0.0000
+  🟡 XRP    RSI: 47.9 Score:    0 Signal:HOLD   持仓:0.0000
+  🟡 ADA    RSI: 45.3 Score:    0 Signal:HOLD   持仓:0.0000
+  🟢 DOGE   RSI: 33.7 Score:   50 Signal:BUY    持仓:0.0000
+  🟡 LINK   RSI: 52.0 Score:    0 Signal:HOLD   持仓:0.0000
+
+🚀 交易执行:
+  ⏸️ DOGE: 无持仓,跳过
+[Sun May 10 15:27:58 CST 2026] Done, sleep 300s
+[Sun May 10 15:32:58 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $1991.41
+
+💰 现货持仓:
+  USDT: 19.205664 (≈$19.21)
+
+🏦 全仓: 0.024415 BTC (≈$1972.21)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 47.3 HOLD
+  🟡 ETH    RSI: 48.5 HOLD
+  🟡 SOL    RSI: 57.5 HOLD
+  🟡 XRP    RSI: 46.7 HOLD
+  🟡 ADA    RSI: 43.8 HOLD
+  🟢 DOGE   RSI: 33.7 BUY
+  🟡 LINK   RSI: 53.8 HOLD
+
+🚀 买入信号: ['DOGE']
+  ⏸️ DOGE: 无现货持仓
+[Sun May 10 15:33:04 CST 2026] Done, sleep 300s
+[Sun May 10 15:38:04 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $1992.34
+
+💰 现货持仓:
+  USDT: 19.205664 (≈$19.21)
+
+🏦 全仓: 0.024426 BTC (≈$1973.14)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 47.5 HOLD
+  🟡 ETH    RSI: 51.1 HOLD
+  🟡 SOL    RSI: 59.3 HOLD
+  🟡 XRP    RSI: 47.9 HOLD
+  🟡 ADA    RSI: 46.1 HOLD
+  🟢 DOGE   RSI: 37.2 BUY
+  🟡 LINK   RSI: 55.6 HOLD
+
+🚀 买入信号: ['DOGE']
+  ⏸️ DOGE: 无现货持仓
+[Sun May 10 15:38:09 CST 2026] Done, sleep 300s
+[Sun May 10 15:43:09 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $1992.19
+
+💰 现货持仓:
+  USDT: 19.205664 (≈$19.21)
+
+🏦 全仓: 0.024427 BTC (≈$1972.99)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 46.8 HOLD
+  🟡 ETH    RSI: 47.6 HOLD
+  🟡 SOL    RSI: 56.9 HOLD
+  🟡 XRP    RSI: 45.9 HOLD
+  🟡 ADA    RSI: 43.8 HOLD
+  🟢 DOGE   RSI: 34.4 BUY
+  🟡 LINK   RSI: 55.6 HOLD
+
+🚀 买入信号: ['DOGE']
+  ⏸️ DOGE: 无现货持仓
+[Sun May 10 15:43:14 CST 2026] Done, sleep 300s
+[Sun May 10 15:48:14 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $1993.88
+
+💰 现货持仓:
+  USDT: 19.205664 (≈$19.21)
+
+🏦 全仓: 0.024441 BTC (≈$1974.67)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 48.5 HOLD
+  🟡 ETH    RSI: 50.6 HOLD
+  🟡 SOL    RSI: 58.9 HOLD
+  🟡 XRP    RSI: 49.5 HOLD
+  🟡 ADA    RSI: 46.1 HOLD
+  🟢 DOGE   RSI: 37.4 BUY
+  🟡 LINK   RSI: 57.1 HOLD
+
+🚀 买入信号: ['DOGE']
+  ⏸️ DOGE: 无现货持仓
+[Sun May 10 15:48:18 CST 2026] Done, sleep 300s
+[Sun May 10 15:53:18 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $1993.01
+
+💰 现货持仓:
+  USDT: 19.205664 (≈$19.21)
+
+🏦 全仓: 0.024442 BTC (≈$1973.80)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 45.4 HOLD
+  🟡 ETH    RSI: 47.1 HOLD
+  🟡 SOL    RSI: 57.1 HOLD
+  🟡 XRP    RSI: 48.6 HOLD
+  🟡 ADA    RSI: 43.8 HOLD
+  🟢 DOGE   RSI: 33.5 BUY
+  🟡 LINK   RSI: 55.6 HOLD
+
+🚀 买入信号: ['DOGE']
+  ⏸️ DOGE: 无现货持仓
+[Sun May 10 15:53:25 CST 2026] Done, sleep 300s
+[Sun May 10 15:58:25 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $1990.62
+
+💰 现货持仓:
+  USDT: 19.205664 (≈$19.21)
+
+🏦 全仓: 0.024419 BTC (≈$1971.41)
+
+🔍 G19信号:
+  🟢 BTC    RSI: 43.2 BUY
+  🟡 ETH    RSI: 45.7 HOLD
+  🟡 SOL    RSI: 56.4 HOLD
+  🟡 XRP    RSI: 47.4 HOLD
+  🟡 ADA    RSI: 43.1 HOLD
+  🟢 DOGE   RSI: 32.5 BUY
+  🟡 LINK   RSI: 52.0 HOLD
+
+🚀 买入信号: ['BTC', 'DOGE']
+  ⏸️ BTC: 无现货持仓
+  ⏸️ DOGE: 无现货持仓
+[Sun May 10 15:58:30 CST 2026] Done, sleep 300s
+[Sun May 10 16:03:30 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $1991.35
+
+💰 现货持仓:
+  USDT: 19.205664 (≈$19.21)
+
+🏦 全仓: 0.024431 BTC (≈$1972.14)
+
+🔍 G19信号:
+  🟢 BTC    RSI: 32.2 BUY
+  🟡 ETH    RSI: 42.7 HOLD
+  🟡 SOL    RSI: 53.8 HOLD
+  🟡 XRP    RSI: 47.4 HOLD
+  🟢 ADA    RSI: 42.3 BUY
+  🟢 DOGE   RSI: 28.4 BUY
+  🟡 LINK   RSI: 52.0 HOLD
+
+🚀 买入信号: ['BTC', 'ADA', 'DOGE']
+  ⏸️ BTC: 无现货持仓
+  ⏸️ ADA: 无现货持仓
+  ⏸️ DOGE: 无现货持仓
+[Sun May 10 16:03:36 CST 2026] Done, sleep 300s
+[Sun May 10 16:08:36 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $1993.66
+
+💰 现货持仓:
+  USDT: 19.205664 (≈$19.21)
+
+🏦 全仓: 0.024454 BTC (≈$1974.46)
+
+🔍 G19信号:
+  🟢 BTC    RSI: 33.7 BUY
+  🟡 ETH    RSI: 45.3 HOLD
+  🟡 SOL    RSI: 56.2 HOLD
+  🟡 XRP    RSI: 49.1 HOLD
+  🟡 ADA    RSI: 44.6 HOLD
+  🟢 DOGE   RSI: 32.2 BUY
+  🟡 LINK   RSI: 53.8 HOLD
+
+🚀 买入信号: ['BTC', 'DOGE']
+  ⏸️ BTC: 无现货持仓
+  ⏸️ DOGE: 无现货持仓
+[Sun May 10 16:08:41 CST 2026] Done, sleep 300s
+[Sun May 10 16:13:41 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $1995.63
+
+💰 现货持仓:
+  USDT: 19.205664 (≈$19.21)
+
+🏦 全仓: 0.024470 BTC (≈$1976.42)
+
+🔍 G19信号:
+  🟢 BTC    RSI: 37.2 BUY
+  🟡 ETH    RSI: 46.6 HOLD
+  🟡 SOL    RSI: 60.3 HOLD
+  🟡 XRP    RSI: 50.9 HOLD
+  🟡 ADA    RSI: 48.1 HOLD
+  🟢 DOGE   RSI: 34.2 BUY
+  🟡 LINK   RSI: 55.6 HOLD
+
+🚀 买入信号: ['BTC', 'DOGE']
+  ⏸️ BTC: 无现货持仓
+  ⏸️ DOGE: 无现货持仓
+[Sun May 10 16:13:46 CST 2026] Done, sleep 300s
+[Sun May 10 16:18:46 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $1995.28
+
+💰 现货持仓:
+  USDT: 19.205664 (≈$19.21)
+
+🏦 全仓: 0.024458 BTC (≈$1976.08)
+
+🔍 G19信号:
+  🟢 BTC    RSI: 39.9 BUY
+  🟡 ETH    RSI: 47.9 HOLD
+  🟡 SOL    RSI: 60.5 HOLD
+  🟡 XRP    RSI: 51.9 HOLD
+  🟡 ADA    RSI: 49.4 HOLD
+  🟢 DOGE   RSI: 30.9 BUY
+  🟡 LINK   RSI: 53.8 HOLD
+
+🚀 买入信号: ['BTC', 'DOGE']
+  ⏸️ BTC: 无现货持仓
+  ⏸️ DOGE: 无现货持仓
+[Sun May 10 16:18:52 CST 2026] Done, sleep 300s
+[Sun May 10 16:23:52 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $1996.47
+
+💰 现货持仓:
+  USDT: 19.205664 (≈$19.21)
+
+🏦 全仓: 0.024465 BTC (≈$1977.27)
+
+🔍 G19信号:
+  🟢 BTC    RSI: 42.5 BUY
+  🟡 ETH    RSI: 49.6 HOLD
+  🟡 SOL    RSI: 62.4 HOLD
+  🟡 XRP    RSI: 54.8 HOLD
+  🟡 ADA    RSI: 51.8 HOLD
+  🟢 DOGE   RSI: 33.2 BUY
+  🟡 LINK   RSI: 55.6 HOLD
+
+🚀 买入信号: ['BTC', 'DOGE']
+  ⏸️ BTC: 无现货持仓
+  ⏸️ DOGE: 无现货持仓
+[Sun May 10 16:23:58 CST 2026] Done, sleep 300s
+[Sun May 10 16:28:58 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $1998.83
+
+💰 现货持仓:
+  USDT: 19.205664 (≈$19.21)
+
+🏦 全仓: 0.024478 BTC (≈$1979.62)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 47.4 HOLD
+  🟡 ETH    RSI: 50.0 HOLD
+  🟡 SOL    RSI: 61.9 HOLD
+  🟡 XRP    RSI: 55.6 HOLD
+  🟡 ADA    RSI: 52.9 HOLD
+  🟢 DOGE   RSI: 33.7 BUY
+  🟡 LINK   RSI: 57.1 HOLD
+
+🚀 买入信号: ['DOGE']
+  ⏸️ DOGE: 无现货持仓
+[Sun May 10 16:29:03 CST 2026] Done, sleep 300s
+[Sun May 10 16:34:03 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2001.12
+
+💰 现货持仓:
+  USDT: 19.205664 (≈$19.21)
+
+🏦 全仓: 0.024512 BTC (≈$1981.91)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 45.8 HOLD
+  🟡 ETH    RSI: 49.1 HOLD
+  🟡 SOL    RSI: 61.5 HOLD
+  🟡 XRP    RSI: 55.4 HOLD
+  🟡 ADA    RSI: 53.9 HOLD
+  🟢 DOGE   RSI: 33.5 BUY
+  🟡 LINK   RSI: 60.0 HOLD
+
+🚀 买入信号: ['DOGE']
+  ⏸️ DOGE: 无现货持仓
+[Sun May 10 16:34:07 CST 2026] Done, sleep 300s
+[Sun May 10 16:39:07 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $1999.69
+
+💰 现货持仓:
+  USDT: 19.205664 (≈$19.21)
+
+🏦 全仓: 0.024494 BTC (≈$1980.48)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 45.8 HOLD
+  🟡 ETH    RSI: 49.2 HOLD
+  🟡 SOL    RSI: 62.4 HOLD
+  🟡 XRP    RSI: 55.0 HOLD
+  🟡 ADA    RSI: 53.4 HOLD
+  🟢 DOGE   RSI: 31.9 BUY
+  🟡 LINK   RSI: 58.6 HOLD
+
+🚀 买入信号: ['DOGE']
+  ⏸️ DOGE: 无现货持仓
+[Sun May 10 16:39:13 CST 2026] Done, sleep 300s
+[Sun May 10 16:44:13 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $1999.63
+
+💰 现货持仓:
+  USDT: 19.205664 (≈$19.21)
+
+🏦 全仓: 0.024499 BTC (≈$1980.43)
+
+🔍 G19信号:
+  🟢 BTC    RSI: 44.1 BUY
+  🟡 ETH    RSI: 48.1 HOLD
+  🟡 SOL    RSI: 62.1 HOLD
+  🟡 XRP    RSI: 54.8 HOLD
+  🟡 ADA    RSI: 52.3 HOLD
+  🟢 DOGE   RSI: 30.9 BUY
+  🟡 LINK   RSI: 58.6 HOLD
+
+🚀 买入信号: ['BTC', 'DOGE']
+  ⏸️ BTC: 无现货持仓
+  ⏸️ DOGE: 无现货持仓
+[Sun May 10 16:44:18 CST 2026] Done, sleep 300s
+[Sun May 10 16:49:18 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2000.41
+
+💰 现货持仓:
+  USDT: 19.205664 (≈$19.21)
+
+🏦 全仓: 0.024505 BTC (≈$1981.20)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 45.3 HOLD
+  🟡 ETH    RSI: 49.6 HOLD
+  🟡 SOL    RSI: 64.0 HOLD
+  🟡 XRP    RSI: 58.2 HOLD
+  🟡 ADA    RSI: 53.4 HOLD
+  🟢 DOGE   RSI: 31.7 BUY
+  🟡 LINK   RSI: 60.0 HOLD
+
+🚀 买入信号: ['DOGE']
+  ⏸️ DOGE: 无现货持仓
+[Sun May 10 16:49:23 CST 2026] Done, sleep 300s
+[Sun May 10 16:54:23 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2000.98
+
+💰 现货持仓:
+  USDT: 19.205664 (≈$19.21)
+
+🏦 全仓: 0.024521 BTC (≈$1981.77)
+
+🔍 G19信号:
+  🟢 BTC    RSI: 42.6 BUY
+  🟡 ETH    RSI: 49.3 HOLD
+  🟡 SOL    RSI: 63.4 HOLD
+  🟡 XRP    RSI: 56.8 HOLD
+  🟡 ADA    RSI: 55.4 HOLD
+  🟢 DOGE   RSI: 31.9 BUY
+  🟡 LINK   RSI: 60.0 HOLD
+
+🚀 买入信号: ['BTC', 'DOGE']
+  ⏸️ BTC: 无现货持仓
+  ⏸️ DOGE: 无现货持仓
+[Sun May 10 16:54:28 CST 2026] Done, sleep 300s
+[Sun May 10 16:59:28 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2000.97
+
+💰 现货持仓:
+  USDT: 19.205664 (≈$19.21)
+
+🏦 全仓: 0.024520 BTC (≈$1981.77)
+
+🔍 G19信号:
+  🟢 BTC    RSI: 42.8 BUY
+  🟡 ETH    RSI: 49.3 HOLD
+  🟡 SOL    RSI: 64.1 HOLD
+  🟡 XRP    RSI: 56.1 HOLD
+  🟡 ADA    RSI: 54.9 HOLD
+  🟢 DOGE   RSI: 32.5 BUY
+  🟡 LINK   RSI: 60.0 HOLD
+
+🚀 买入信号: ['BTC', 'DOGE']
+  ⏸️ BTC: 无现货持仓
+  ⏸️ DOGE: 无现货持仓
+[Sun May 10 16:59:33 CST 2026] Done, sleep 300s
+[Sun May 10 17:04:33 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2003.54
+
+💰 现货持仓:
+  USDT: 19.205664 (≈$19.21)
+
+🏦 全仓: 0.024529 BTC (≈$1984.33)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 46.9 HOLD
+  🟡 ETH    RSI: 51.9 HOLD
+  🟡 SOL    RSI: 70.4 HOLD
+  🟡 XRP    RSI: 57.7 HOLD
+  🟡 ADA    RSI: 54.9 HOLD
+  🟢 DOGE   RSI: 39.9 BUY
+  🟡 LINK   RSI: 60.0 HOLD
+
+🚀 买入信号: ['DOGE']
+  ⏸️ DOGE: 无现货持仓
+[Sun May 10 17:04:38 CST 2026] Done, sleep 300s
+[Sun May 10 17:09:38 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2003.79
+
+💰 现货持仓:
+  USDT: 19.205664 (≈$19.21)
+
+🏦 全仓: 0.024542 BTC (≈$1984.59)
+
+🔍 G19信号:
+  🟢 BTC    RSI: 43.7 BUY
+  🟡 ETH    RSI: 48.4 HOLD
+  🟡 SOL    RSI: 69.3 HOLD
+  🟡 XRP    RSI: 57.9 HOLD
+  🟡 ADA    RSI: 50.6 HOLD
+  🟢 DOGE   RSI: 37.0 BUY
+  🟡 LINK   RSI: 61.3 HOLD
+
+🚀 买入信号: ['BTC', 'DOGE']
+  ⏸️ BTC: 无现货持仓
+  ⏸️ DOGE: 无现货持仓
+[Sun May 10 17:09:42 CST 2026] Done, sleep 300s
+[Sun May 10 17:14:42 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2005.31
+
+💰 现货持仓:
+  USDT: 19.205664 (≈$19.21)
+
+🏦 全仓: 0.024561 BTC (≈$1986.10)
+
+🔍 G19信号:
+  🟢 BTC    RSI: 43.8 BUY
+  🟡 ETH    RSI: 47.5 HOLD
+  🟡 SOL    RSI: 68.2 HOLD
+  🟡 XRP    RSI: 56.9 HOLD
+  🟡 ADA    RSI: 49.5 HOLD
+  🟢 DOGE   RSI: 37.0 BUY
+  🟡 LINK   RSI: 62.5 HOLD
+
+🚀 买入信号: ['BTC', 'DOGE']
+  ⏸️ BTC: 无现货持仓
+  ⏸️ DOGE: 无现货持仓
+[Sun May 10 17:14:49 CST 2026] Done, sleep 300s
+[Sun May 10 17:19:49 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2006.27
+
+💰 现货持仓:
+  USDT: 19.205664 (≈$19.21)
+
+🏦 全仓: 0.024574 BTC (≈$1987.07)
+
+🔍 G19信号:
+  🟢 BTC    RSI: 43.6 BUY
+  🟡 ETH    RSI: 46.9 HOLD
+  🟡 SOL    RSI: 68.6 HOLD
+  🟡 XRP    RSI: 56.6 HOLD
+  🟡 ADA    RSI: 48.4 HOLD
+  🟢 DOGE   RSI: 36.3 BUY
+  🟡 LINK   RSI: 63.6 HOLD
+
+🚀 买入信号: ['BTC', 'DOGE']
+  ⏸️ BTC: 无现货持仓
+  ⏸️ DOGE: 无现货持仓
+[Sun May 10 17:19:54 CST 2026] Done, sleep 300s
+[Sun May 10 17:24:54 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+urllib3.exceptions.SSLError: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1007)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "/home/goose/.local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+  File "/home/goose/.local/lib/python3.10/site-packages/urllib3/util/retry.py", line 535, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.binance.com', port=443): Max retries exceeded with url: /api/v3/account?recvWindow=5000&timestamp=1778405094642&signature=85f063128e67ee75d3a81b0984a78d89aa41cefc6eb3e3eae6648ad5d47e7259 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1007)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/goose/.openclaw/workspace/scripts/hermes_g19_live.py", line 157, in <module>
+    main()
+  File "/home/goose/.openclaw/workspace/scripts/hermes_g19_live.py", line 100, in main
+    summary, total = get_account_summary()
+  File "/home/goose/.openclaw/workspace/scripts/hermes_g19_live.py", line 72, in get_account_summary
+    spot = api_get('https://api.binance.com/api/v3/account')
+  File "/home/goose/.openclaw/workspace/scripts/hermes_g19_live.py", line 33, in api_get
+    r = requests.get(url + '?' + sign(params), headers={'X-MBX-APIKEY': API_KEY}, proxies=PROXIES, timeout=10)
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 76, in get
+    return request('get', url, params=params, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 544, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 657, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 514, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='api.binance.com', port=443): Max retries exceeded with url: /api/v3/account?recvWindow=5000&timestamp=1778405094642&signature=85f063128e67ee75d3a81b0984a78d89aa41cefc6eb3e3eae6648ad5d47e7259 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1007)')))
+[Sun May 10 17:24:54 CST 2026] Done, sleep 300s
+[Sun May 10 17:29:54 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2005.22
+
+💰 现货持仓:
+  USDT: 19.205664 (≈$19.21)
+
+🏦 全仓: 0.024569 BTC (≈$1986.01)
+
+🔍 G19信号:
+  🟢 BTC    RSI: 40.8 BUY
+  🟡 ETH    RSI: 44.9 HOLD
+  🟡 SOL    RSI: 68.6 HOLD
+  🟡 XRP    RSI: 53.9 HOLD
+  🟡 ADA    RSI: 48.4 HOLD
+  🟢 DOGE   RSI: 33.5 BUY
+  🟡 LINK   RSI: 62.5 HOLD
+
+🚀 买入信号: ['BTC', 'DOGE']
+  ⏸️ BTC: 无现货持仓
+  ⏸️ DOGE: 无现货持仓
+[Sun May 10 17:29:59 CST 2026] Done, sleep 300s
+[Sun May 10 17:34:59 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2005.06
+
+💰 现货持仓:
+  USDT: 19.205664 (≈$19.21)
+
+🏦 全仓: 0.024577 BTC (≈$1985.85)
+
+🔍 G19信号:
+  🟢 BTC    RSI: 38.5 BUY
+  🟡 ETH    RSI: 43.7 HOLD
+  🟡 SOL    RSI: 68.3 HOLD
+  🟡 XRP    RSI: 53.5 HOLD
+  🟡 ADA    RSI: 47.9 HOLD
+  🟢 DOGE   RSI: 38.5 BUY
+  🟡 LINK   RSI: 63.6 HOLD
+
+🚀 买入信号: ['BTC', 'DOGE']
+  ⏸️ BTC: 无现货持仓
+  ⏸️ DOGE: 无现货持仓
+[Sun May 10 17:35:05 CST 2026] Done, sleep 300s
+[Sun May 10 17:40:05 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2005.25
+
+💰 现货持仓:
+  USDT: 19.205664 (≈$19.21)
+
+🏦 全仓: 0.024585 BTC (≈$1986.04)
+
+🔍 G19信号:
+  🟢 BTC    RSI: 37.4 BUY
+  🟡 ETH    RSI: 43.3 HOLD
+  🟡 SOL    RSI: 67.9 HOLD
+  🟡 XRP    RSI: 55.8 HOLD
+  🟡 ADA    RSI: 48.4 HOLD
+  🟢 DOGE   RSI: 32.7 BUY
+  🟡 LINK   RSI: 62.5 HOLD
+
+🚀 买入信号: ['BTC', 'DOGE']
+  ⏸️ BTC: 无现货持仓
+  ⏸️ DOGE: 无现货持仓
+[Sun May 10 17:40:10 CST 2026] Done, sleep 300s
+[Sun May 10 17:45:10 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2004.23
+
+💰 现货持仓:
+  USDT: 19.205664 (≈$19.21)
+
+🏦 全仓: 0.024579 BTC (≈$1985.03)
+
+🔍 G19信号:
+  🟢 BTC    RSI: 36.2 BUY
+  🟡 ETH    RSI: 41.8 HOLD
+  🟡 SOL    RSI: 66.0 HOLD
+  🟡 XRP    RSI: 55.6 HOLD
+  🟡 ADA    RSI: 46.9 HOLD
+  🟢 DOGE   RSI: 29.3 BUY
+  🟡 LINK   RSI: 62.5 HOLD
+
+🚀 买入信号: ['BTC', 'DOGE']
+  ⏸️ BTC: 无现货持仓
+  ⏸️ DOGE: 无现货持仓
+[Sun May 10 17:45:14 CST 2026] Done, sleep 300s
+[Sun May 10 17:50:14 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2005.87
+
+💰 现货持仓:
+  USDT: 19.205664 (≈$19.21)
+
+🏦 全仓: 0.024591 BTC (≈$1986.66)
+
+🔍 G19信号:
+  🟢 BTC    RSI: 37.8 BUY
+  🟡 ETH    RSI: 43.2 HOLD
+  🟡 SOL    RSI: 67.2 HOLD
+  🟡 XRP    RSI: 57.1 HOLD
+  🟡 ADA    RSI: 46.9 HOLD
+  🟢 DOGE   RSI: 29.1 BUY
+  🟡 LINK   RSI: 64.7 HOLD
+
+🚀 买入信号: ['BTC', 'DOGE']
+  ⏸️ BTC: 无现货持仓
+  ⏸️ DOGE: 无现货持仓
+[Sun May 10 17:50:19 CST 2026] Done, sleep 300s
+[Sun May 10 17:55:19 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2006.49
+
+💰 现货持仓:
+  USDT: 19.205664 (≈$19.21)
+
+🏦 全仓: 0.024597 BTC (≈$1987.28)
+
+🔍 G19信号:
+  🟢 BTC    RSI: 38.0 BUY
+  🟡 ETH    RSI: 42.9 HOLD
+  🟡 SOL    RSI: 66.0 HOLD
+  🟡 XRP    RSI: 57.6 HOLD
+  🟡 ADA    RSI: 47.4 HOLD
+  🟢 DOGE   RSI: 30.3 BUY
+  🟡 LINK   RSI: 63.6 HOLD
+
+🚀 买入信号: ['BTC', 'DOGE']
+  ⏸️ BTC: 无现货持仓
+  ⏸️ DOGE: 无现货持仓
+[Sun May 10 17:55:24 CST 2026] Done, sleep 300s
+[Sun May 10 18:00:24 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2006.01
+
+💰 现货持仓:
+  USDT: 19.205664 (≈$19.21)
+
+🏦 全仓: 0.024587 BTC (≈$1986.80)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 50.3 HOLD
+  🟡 ETH    RSI: 47.5 HOLD
+  🟡 SOL    RSI: 73.5 HOLD
+  🟡 XRP    RSI: 64.9 HOLD
+  🟡 ADA    RSI: 47.9 HOLD
+  🟢 DOGE   RSI: 33.2 BUY
+  🟡 LINK   RSI: 71.0 HOLD
+
+🚀 买入信号: ['DOGE']
+  ⏸️ DOGE: 无现货持仓
+[Sun May 10 18:00:30 CST 2026] Done, sleep 300s
+[Sun May 10 18:05:30 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $1998.80
+
+💰 现货持仓:
+  USDT: 19.205664 (≈$19.21)
+
+🏦 全仓: 0.024517 BTC (≈$1979.60)
+
+🔍 G19信号:
+  🟢 BTC    RSI: 44.1 BUY
+  🟡 ETH    RSI: 42.7 HOLD
+  🟡 SOL    RSI: 67.5 HOLD
+  🟡 XRP    RSI: 58.3 HOLD
+  🟡 ADA    RSI: 45.0 HOLD
+  🟢 DOGE   RSI: 27.4 BUY
+  🟡 LINK   RSI: 60.0 HOLD
+
+🚀 买入信号: ['BTC', 'DOGE']
+  ⏸️ BTC: 无现货持仓
+  ⏸️ DOGE: 无现货持仓
+[Sun May 10 18:05:34 CST 2026] Done, sleep 300s
+[Sun May 10 18:10:34 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2001.08
+
+💰 现货持仓:
+  USDT: 19.205664 (≈$19.21)
+
+🏦 全仓: 0.024521 BTC (≈$1981.88)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 51.7 HOLD
+  🟡 ETH    RSI: 44.8 HOLD
+  🟡 SOL    RSI: 64.6 HOLD
+  🟡 XRP    RSI: 65.2 HOLD
+  🟡 ADA    RSI: 46.9 HOLD
+  🟢 DOGE   RSI: 30.3 BUY
+  🟡 LINK   RSI: 61.8 HOLD
+
+🚀 买入信号: ['DOGE']
+  ⏸️ DOGE: 无现货持仓
+[Sun May 10 18:10:39 CST 2026] Done, sleep 300s
+[Sun May 10 18:15:39 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $1999.05
+
+💰 现货持仓:
+  USDT: 19.205664 (≈$19.21)
+
+🏦 全仓: 0.024528 BTC (≈$1979.85)
+
+🔍 G19信号:
+  🟢 BTC    RSI: 42.0 BUY
+  🟡 ETH    RSI: 41.6 HOLD
+  🟡 SOL    RSI: 59.9 HOLD
+  🟡 XRP    RSI: 66.3 HOLD
+  🟡 ADA    RSI: 45.9 HOLD
+  🟢 DOGE   RSI: 28.8 BUY
+  🟡 LINK   RSI: 58.3 HOLD
+
+🚀 买入信号: ['BTC', 'DOGE']
+  ⏸️ BTC: 无现货持仓
+  ⏸️ DOGE: 无现货持仓
+[Sun May 10 18:15:43 CST 2026] Done, sleep 300s
+[Sun May 10 18:20:43 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $1997.76
+
+💰 现货持仓:
+  USDT: 19.205664 (≈$19.21)
+
+🏦 全仓: 0.024497 BTC (≈$1978.55)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 46.2 HOLD
+  🟡 ETH    RSI: 42.8 HOLD
+  🟡 SOL    RSI: 58.6 HOLD
+  🟡 XRP    RSI: 60.8 HOLD
+  🟡 ADA    RSI: 45.9 HOLD
+  🟢 DOGE   RSI: 28.8 BUY
+  🟡 LINK   RSI: 60.0 HOLD
+
+🚀 买入信号: ['DOGE']
+  ⏸️ DOGE: 无现货持仓
+[Sun May 10 18:20:48 CST 2026] Done, sleep 300s
+[Sun May 10 18:25:48 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2001.43
+
+💰 现货持仓:
+  USDT: 19.205664 (≈$19.21)
+
+🏦 全仓: 0.024530 BTC (≈$1982.23)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 50.3 HOLD
+  🟡 ETH    RSI: 44.2 HOLD
+  🟡 SOL    RSI: 59.9 HOLD
+  🟡 XRP    RSI: 60.1 HOLD
+  🟡 ADA    RSI: 47.4 HOLD
+  🟢 DOGE   RSI: 30.1 BUY
+  🟡 LINK   RSI: 63.6 HOLD
+
+🚀 买入信号: ['DOGE']
+  ⏸️ DOGE: 无现货持仓
+[Sun May 10 18:25:53 CST 2026] Done, sleep 300s
+[Sun May 10 18:30:53 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2002.51
+
+💰 现货持仓:
+  USDT: 19.205664 (≈$19.21)
+
+🏦 全仓: 0.024542 BTC (≈$1983.30)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 50.9 HOLD
+  🟡 ETH    RSI: 44.4 HOLD
+  🟡 SOL    RSI: 60.5 HOLD
+  🟡 XRP    RSI: 62.5 HOLD
+  🟡 ADA    RSI: 49.0 HOLD
+  🟢 DOGE   RSI: 31.5 BUY
+  🟡 LINK   RSI: 65.6 HOLD
+
+🚀 买入信号: ['DOGE']
+  ⏸️ DOGE: 无现货持仓
+[Sun May 10 18:30:57 CST 2026] Done, sleep 300s
+[Sun May 10 18:35:57 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2001.34
+
+💰 现货持仓:
+  USDT: 19.205664 (≈$19.21)
+
+🏦 全仓: 0.024528 BTC (≈$1982.13)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 50.4 HOLD
+  🟡 ETH    RSI: 44.0 HOLD
+  🟡 SOL    RSI: 60.1 HOLD
+  🟡 XRP    RSI: 58.9 HOLD
+  🟡 ADA    RSI: 49.0 HOLD
+  🟢 DOGE   RSI: 31.1 BUY
+  🟡 LINK   RSI: 63.6 HOLD
+
+🚀 买入信号: ['DOGE']
+  ⏸️ DOGE: 无现货持仓
+[Sun May 10 18:36:02 CST 2026] Done, sleep 300s
+[Sun May 10 18:41:02 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2000.13
+
+💰 现货持仓:
+  USDT: 19.205664 (≈$19.21)
+
+🏦 全仓: 0.024517 BTC (≈$1980.92)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 49.2 HOLD
+  🟡 ETH    RSI: 41.8 HOLD
+  🟡 SOL    RSI: 60.5 HOLD
+  🟡 XRP    RSI: 59.4 HOLD
+  🟡 ADA    RSI: 50.0 HOLD
+  🟢 DOGE   RSI: 30.4 BUY
+  🟡 LINK   RSI: 60.0 HOLD
+
+🚀 买入信号: ['DOGE']
+  ⏸️ DOGE: 无现货持仓
+[Sun May 10 18:41:09 CST 2026] Done, sleep 300s
+[Sun May 10 18:46:09 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $1999.79
+
+💰 现货持仓:
+  USDT: 19.205664 (≈$19.21)
+
+🏦 全仓: 0.024513 BTC (≈$1980.59)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 49.0 HOLD
+  🟡 ETH    RSI: 40.0 HOLD
+  🟡 SOL    RSI: 60.1 HOLD
+  🟡 XRP    RSI: 57.6 HOLD
+  🟡 ADA    RSI: 51.5 HOLD
+  🟢 DOGE   RSI: 31.2 BUY
+  🟡 LINK   RSI: 60.0 HOLD
+
+🚀 买入信号: ['DOGE']
+  ⏸️ DOGE: 无现货持仓
+[Sun May 10 18:46:14 CST 2026] Done, sleep 300s
+[Sun May 10 18:51:14 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $1998.80
+
+💰 现货持仓:
+  USDT: 19.205664 (≈$19.21)
+
+🏦 全仓: 0.024499 BTC (≈$1979.59)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 49.8 HOLD
+  🟡 ETH    RSI: 40.6 HOLD
+  🟡 SOL    RSI: 58.6 HOLD
+  🟡 XRP    RSI: 58.7 HOLD
+  🟡 ADA    RSI: 51.9 HOLD
+  🟢 DOGE   RSI: 31.5 BUY
+  🟡 LINK   RSI: 60.0 HOLD
+
+🚀 买入信号: ['DOGE']
+  ⏸️ DOGE: 无现货持仓
+[Sun May 10 18:51:19 CST 2026] Done, sleep 300s
+[Sun May 10 18:56:19 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2000.85
+
+💰 现货持仓:
+  USDT: 19.205664 (≈$19.21)
+
+🏦 全仓: 0.024502 BTC (≈$1981.64)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 56.9 HOLD
+  🟡 ETH    RSI: 42.9 HOLD
+  🟡 SOL    RSI: 61.9 HOLD
+  🟡 XRP    RSI: 63.0 HOLD
+  🟡 ADA    RSI: 52.8 HOLD
+  🟢 DOGE   RSI: 34.5 BUY
+  🟡 LINK   RSI: 61.8 HOLD
+
+🚀 买入信号: ['DOGE']
+  ⏸️ DOGE: 无现货持仓
+[Sun May 10 18:56:24 CST 2026] Done, sleep 300s
+[Sun May 10 19:01:24 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2001.67
+
+💰 现货持仓:
+  USDT: 19.205664 (≈$19.21)
+
+🏦 全仓: 0.024509 BTC (≈$1982.46)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 60.4 HOLD
+  🟡 ETH    RSI: 39.3 HOLD
+  🟡 SOL    RSI: 57.8 HOLD
+  🟡 XRP    RSI: 60.1 HOLD
+  🟡 ADA    RSI: 52.5 HOLD
+  🟢 DOGE   RSI: 37.4 BUY
+  🟡 LINK   RSI: 63.6 HOLD
+
+🚀 买入信号: ['DOGE']
+  ⏸️ DOGE: 无现货持仓
+[Sun May 10 19:01:31 CST 2026] Done, sleep 300s
+[Sun May 10 19:06:31 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2000.57
+
+💰 现货持仓:
+  USDT: 19.205664 (≈$19.21)
+
+🏦 全仓: 0.024487 BTC (≈$1981.37)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 62.3 HOLD
+  🟡 ETH    RSI: 39.5 HOLD
+  🟡 SOL    RSI: 58.3 HOLD
+  🟡 XRP    RSI: 56.6 HOLD
+  🟡 ADA    RSI: 53.5 HOLD
+  🟢 DOGE   RSI: 39.9 BUY
+  🟡 LINK   RSI: 61.8 HOLD
+
+🚀 买入信号: ['DOGE']
+  ⏸️ DOGE: 无现货持仓
+[Sun May 10 19:06:36 CST 2026] Done, sleep 300s
+[Sun May 10 19:11:36 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $1998.63
+
+💰 现货持仓:
+  USDT: 19.205664 (≈$19.21)
+
+🏦 全仓: 0.024470 BTC (≈$1979.43)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 60.8 HOLD
+  🟡 ETH    RSI: 36.0 HOLD
+  🟡 SOL    RSI: 56.0 HOLD
+  🟡 XRP    RSI: 53.5 HOLD
+  🟡 ADA    RSI: 52.0 HOLD
+  🟢 DOGE   RSI: 34.8 BUY
+  🟡 LINK   RSI: 60.0 HOLD
+
+🚀 买入信号: ['DOGE']
+  ⏸️ DOGE: 无现货持仓
+[Sun May 10 19:11:41 CST 2026] Done, sleep 300s
+[Sun May 10 19:16:41 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2000.13
+
+💰 现货持仓:
+  USDT: 19.205664 (≈$19.21)
+
+🏦 全仓: 0.024477 BTC (≈$1980.92)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 63.3 HOLD
+  🟡 ETH    RSI: 38.3 HOLD
+  🟡 SOL    RSI: 57.1 HOLD
+  🟡 XRP    RSI: 55.3 HOLD
+  🟡 ADA    RSI: 52.5 HOLD
+  🟢 DOGE   RSI: 35.4 BUY
+  🟡 LINK   RSI: 61.8 HOLD
+
+🚀 买入信号: ['DOGE']
+  ⏸️ DOGE: 无现货持仓
+[Sun May 10 19:16:46 CST 2026] Done, sleep 300s
+[Sun May 10 19:21:46 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $1995.37
+
+💰 现货持仓:
+  USDT: 19.205664 (≈$19.21)
+
+🏦 全仓: 0.024456 BTC (≈$1976.16)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 52.2 HOLD
+  🟡 ETH    RSI: 33.9 HOLD
+  🟡 SOL    RSI: 49.6 HOLD
+  🟡 XRP    RSI: 48.5 HOLD
+  🟡 ADA    RSI: 49.1 HOLD
+  🟢 DOGE   RSI: 31.6 BUY
+  🟡 LINK   RSI: 56.8 HOLD
+
+🚀 买入信号: ['DOGE']
+  ⏸️ DOGE: 无现货持仓
+[Sun May 10 19:21:50 CST 2026] Done, sleep 300s
+[Sun May 10 19:26:50 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $1993.31
+
+💰 现货持仓:
+  USDT: 19.205664 (≈$19.21)
+
+🏦 全仓: 0.024430 BTC (≈$1974.10)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 52.2 HOLD
+  🟡 ETH    RSI: 34.2 HOLD
+  🟡 SOL    RSI: 46.1 HOLD
+  🟡 XRP    RSI: 45.8 HOLD
+  🟡 ADA    RSI: 48.6 HOLD
+  🟢 DOGE   RSI: 32.0 BUY
+  🟡 LINK   RSI: 55.3 HOLD
+
+🚀 买入信号: ['DOGE']
+  ⏸️ DOGE: 无现货持仓
+[Sun May 10 19:26:55 CST 2026] Done, sleep 300s
+[Sun May 10 19:31:55 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $1994.68
+
+💰 现货持仓:
+  USDT: 19.205664 (≈$19.21)
+
+🏦 全仓: 0.024445 BTC (≈$1975.48)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 52.9 HOLD
+  🟡 ETH    RSI: 34.3 HOLD
+  🟡 SOL    RSI: 47.6 HOLD
+  🟡 XRP    RSI: 50.9 HOLD
+  🟡 ADA    RSI: 49.5 HOLD
+  🟢 DOGE   RSI: 32.1 BUY
+  🟡 LINK   RSI: 56.8 HOLD
+
+🚀 买入信号: ['DOGE']
+  ⏸️ DOGE: 无现货持仓
+[Sun May 10 19:32:00 CST 2026] Done, sleep 300s
+[Sun May 10 19:37:00 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $1993.72
+
+💰 现货持仓:
+  USDT: 19.205664 (≈$19.21)
+
+🏦 全仓: 0.024431 BTC (≈$1974.51)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 53.7 HOLD
+  🟡 ETH    RSI: 33.3 HOLD
+  🟡 SOL    RSI: 47.0 HOLD
+  🟡 XRP    RSI: 50.5 HOLD
+  🟡 ADA    RSI: 50.0 HOLD
+  🟢 DOGE   RSI: 31.3 BUY
+  🟡 LINK   RSI: 53.8 HOLD
+
+🚀 买入信号: ['DOGE']
+  ⏸️ DOGE: 无现货持仓
+[Sun May 10 19:37:06 CST 2026] Done, sleep 300s
+[Sun May 10 19:42:06 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $1994.41
+
+💰 现货持仓:
+  USDT: 19.205664 (≈$19.21)
+
+🏦 全仓: 0.024444 BTC (≈$1975.21)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 52.2 HOLD
+  🟡 ETH    RSI: 32.4 HOLD
+  🟡 SOL    RSI: 46.4 HOLD
+  🟡 XRP    RSI: 50.0 HOLD
+  🟡 ADA    RSI: 51.5 HOLD
+  🟢 DOGE   RSI: 32.1 BUY
+  🟡 LINK   RSI: 56.8 HOLD
+
+🚀 买入信号: ['DOGE']
+  ⏸️ DOGE: 无现货持仓
+[Sun May 10 19:42:11 CST 2026] Done, sleep 300s
+[Sun May 10 19:47:11 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $1995.54
+
+💰 现货持仓:
+  USDT: 19.205664 (≈$19.21)
+
+🏦 全仓: 0.024448 BTC (≈$1976.33)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 55.4 HOLD
+  🟡 ETH    RSI: 34.3 HOLD
+  🟡 SOL    RSI: 48.8 HOLD
+  🟡 XRP    RSI: 52.0 HOLD
+  🟡 ADA    RSI: 53.0 HOLD
+  🟢 DOGE   RSI: 32.5 BUY
+  🟡 LINK   RSI: 56.8 HOLD
+
+🚀 买入信号: ['DOGE']
+  ⏸️ DOGE: 无现货持仓
+[Sun May 10 19:47:16 CST 2026] Done, sleep 300s
+[Sun May 10 19:52:16 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $1995.43
+
+💰 现货持仓:
+  USDT: 19.205664 (≈$19.21)
+
+🏦 全仓: 0.024450 BTC (≈$1976.22)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 54.2 HOLD
+  🟡 SOL    RSI: 49.1 HOLD
+  🟡 XRP    RSI: 50.9 HOLD
+  🟡 ADA    RSI: 53.0 HOLD
+  🟢 DOGE   RSI: 32.0 BUY
+  🟡 LINK   RSI: 58.3 HOLD
+
+🚀 买入信号: ['DOGE']
+  ⏸️ DOGE: 无现货持仓
+[Sun May 10 19:52:21 CST 2026] Done, sleep 300s
+[Sun May 10 19:57:21 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $1997.50
+
+💰 现货持仓:
+  USDT: 19.205664 (≈$19.21)
+
+🏦 全仓: 0.024472 BTC (≈$1978.29)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 55.3 HOLD
+  🟡 ETH    RSI: 34.4 HOLD
+  🟡 SOL    RSI: 50.5 HOLD
+  🟡 XRP    RSI: 52.1 HOLD
+  🟡 ADA    RSI: 53.0 HOLD
+  🟢 DOGE   RSI: 32.2 BUY
+  🟡 LINK   RSI: 60.0 HOLD
+
+🚀 买入信号: ['DOGE']
+  ⏸️ DOGE: 无现货持仓
+[Sun May 10 19:57:26 CST 2026] Done, sleep 300s
+[Sun May 10 20:02:26 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $1996.51
+
+💰 现货持仓:
+  USDT: 19.205664 (≈$19.21)
+
+🏦 全仓: 0.024463 BTC (≈$1977.30)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 54.0 HOLD
+  🟡 ETH    RSI: 36.4 HOLD
+  🟡 SOL    RSI: 53.0 HOLD
+  🟡 XRP    RSI: 50.2 HOLD
+  🟡 ADA    RSI: 52.0 HOLD
+  🟢 DOGE   RSI: 34.5 BUY
+  🟡 LINK   RSI: 60.0 HOLD
+
+🚀 买入信号: ['DOGE']
+  ⏸️ DOGE: 无现货持仓
+[Sun May 10 20:02:31 CST 2026] Done, sleep 300s
+[Sun May 10 20:07:31 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $1994.12
+
+💰 现货持仓:
+  USDT: 19.205664 (≈$19.21)
+
+🏦 全仓: 0.024443 BTC (≈$1974.92)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 51.3 HOLD
+  🟡 ETH    RSI: 34.9 HOLD
+  🟡 SOL    RSI: 51.5 HOLD
+  🟡 XRP    RSI: 47.7 HOLD
+  🟡 ADA    RSI: 50.5 HOLD
+  🟢 DOGE   RSI: 32.2 BUY
+  🟡 LINK   RSI: 58.3 HOLD
+
+🚀 买入信号: ['DOGE']
+  ⏸️ DOGE: 无现货持仓
+[Sun May 10 20:07:37 CST 2026] Done, sleep 300s
+[Sun May 10 20:12:37 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $1994.36
+
+💰 现货持仓:
+  USDT: 19.205664 (≈$19.21)
+
+🏦 全仓: 0.024431 BTC (≈$1975.15)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 55.4 HOLD
+  🟡 ETH    RSI: 35.9 HOLD
+  🟡 SOL    RSI: 52.0 HOLD
+  🟡 XRP    RSI: 47.9 HOLD
+  🟡 ADA    RSI: 50.0 HOLD
+  🟢 DOGE   RSI: 32.1 BUY
+  🟡 LINK   RSI: 58.3 HOLD
+
+🚀 买入信号: ['DOGE']
+  ⏸️ DOGE: 无现货持仓
+[Sun May 10 20:12:42 CST 2026] Done, sleep 300s
+[Sun May 10 20:17:42 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $1996.22
+
+💰 现货持仓:
+  USDT: 19.205664 (≈$19.21)
+
+🏦 全仓: 0.024444 BTC (≈$1977.02)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 58.1 HOLD
+  🟡 ETH    RSI: 39.5 HOLD
+  🟡 SOL    RSI: 53.0 HOLD
+  🟡 XRP    RSI: 49.8 HOLD
+  🟡 ADA    RSI: 50.5 HOLD
+  🟢 DOGE   RSI: 34.2 BUY
+  🟡 LINK   RSI: 60.0 HOLD
+
+🚀 买入信号: ['DOGE']
+  ⏸️ DOGE: 无现货持仓
+[Sun May 10 20:17:47 CST 2026] Done, sleep 300s
+[Sun May 10 20:22:47 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $1996.46
+
+💰 现货持仓:
+  USDT: 19.205664 (≈$19.21)
+
+🏦 全仓: 0.024452 BTC (≈$1977.25)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 56.9 HOLD
+  🟡 ETH    RSI: 38.5 HOLD
+  🟡 SOL    RSI: 50.9 HOLD
+  🟡 XRP    RSI: 49.1 HOLD
+  🟡 ADA    RSI: 49.5 HOLD
+  🟢 DOGE   RSI: 32.9 BUY
+  🟡 LINK   RSI: 60.0 HOLD
+
+🚀 买入信号: ['DOGE']
+  ⏸️ DOGE: 无现货持仓
+[Sun May 10 20:22:54 CST 2026] Done, sleep 300s
+[Sun May 10 20:27:54 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $1997.23
+
+💰 现货持仓:
+  USDT: 19.205664 (≈$19.21)
+
+🏦 全仓: 0.024451 BTC (≈$1978.02)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 59.2 HOLD
+  🟡 ETH    RSI: 39.8 HOLD
+  🟡 SOL    RSI: 51.8 HOLD
+  🟡 XRP    RSI: 49.3 HOLD
+  🟡 ADA    RSI: 50.0 HOLD
+  🟢 DOGE   RSI: 34.0 BUY
+  🟡 LINK   RSI: 61.8 HOLD
+
+🚀 买入信号: ['DOGE']
+  ⏸️ DOGE: 无现货持仓
+[Sun May 10 20:28:00 CST 2026] Done, sleep 300s
+[Sun May 10 20:33:00 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $1999.43
+
+💰 现货持仓:
+  USDT: 19.205664 (≈$19.21)
+
+🏦 全仓: 0.024467 BTC (≈$1980.22)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 61.4 HOLD
+  🟡 ETH    RSI: 41.1 HOLD
+  🟡 SOL    RSI: 51.8 HOLD
+  🟡 XRP    RSI: 49.8 HOLD
+  🟡 ADA    RSI: 51.0 HOLD
+  🟢 DOGE   RSI: 34.9 BUY
+  🟡 LINK   RSI: 63.9 HOLD
+
+🚀 买入信号: ['DOGE']
+  ⏸️ DOGE: 无现货持仓
+[Sun May 10 20:33:05 CST 2026] Done, sleep 300s
+[Sun May 10 20:38:05 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $1996.60
+
+💰 现货持仓:
+  USDT: 19.205664 (≈$19.21)
+
+🏦 全仓: 0.024442 BTC (≈$1977.40)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 59.4 HOLD
+  🟡 ETH    RSI: 37.0 HOLD
+  🟡 SOL    RSI: 49.8 HOLD
+  🟡 XRP    RSI: 47.2 HOLD
+  🟡 ADA    RSI: 49.1 HOLD
+  🟢 DOGE   RSI: 33.3 BUY
+  🟡 LINK   RSI: 60.0 HOLD
+
+🚀 买入信号: ['DOGE']
+  ⏸️ DOGE: 无现货持仓
+[Sun May 10 20:38:13 CST 2026] Done, sleep 300s
+[Sun May 10 20:43:13 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $1998.20
+
+💰 现货持仓:
+  USDT: 19.205664 (≈$19.21)
+
+🏦 全仓: 0.024455 BTC (≈$1978.99)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 60.8 HOLD
+  🟡 ETH    RSI: 38.5 HOLD
+  🟡 SOL    RSI: 50.4 HOLD
+  🟡 XRP    RSI: 48.6 HOLD
+  🟡 ADA    RSI: 51.5 HOLD
+  🟢 DOGE   RSI: 34.8 BUY
+  🟡 LINK   RSI: 62.9 HOLD
+
+🚀 买入信号: ['DOGE']
+  ⏸️ DOGE: 无现货持仓
+[Sun May 10 20:43:19 CST 2026] Done, sleep 300s
+[Sun May 10 20:48:19 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $1998.56
+
+💰 现货持仓:
+  USDT: 19.205664 (≈$19.21)
+
+🏦 全仓: 0.024462 BTC (≈$1979.36)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 60.4 HOLD
+  🟡 ETH    RSI: 37.5 HOLD
+  🟡 SOL    RSI: 51.3 HOLD
+  🟡 XRP    RSI: 49.6 HOLD
+  🟡 ADA    RSI: 52.5 HOLD
+  🟢 DOGE   RSI: 33.8 BUY
+  🟡 LINK   RSI: 62.9 HOLD
+
+🚀 买入信号: ['DOGE']
+  ⏸️ DOGE: 无现货持仓
+[Sun May 10 20:48:25 CST 2026] Done, sleep 300s
+[Sun May 10 20:53:25 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $1998.71
+
+💰 现货持仓:
+  USDT: 19.205664 (≈$19.21)
+
+🏦 全仓: 0.024463 BTC (≈$1979.50)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 60.5 HOLD
+  🟡 ETH    RSI: 39.0 HOLD
+  🟡 SOL    RSI: 50.4 HOLD
+  🟡 XRP    RSI: 50.2 HOLD
+  🟡 ADA    RSI: 53.0 HOLD
+  🟢 DOGE   RSI: 34.4 BUY
+  🟡 LINK   RSI: 61.8 HOLD
+
+🚀 买入信号: ['DOGE']
+  ⏸️ DOGE: 无现货持仓
+[Sun May 10 20:53:31 CST 2026] Done, sleep 300s
+[Sun May 10 20:58:31 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $1998.95
+
+💰 现货持仓:
+  USDT: 19.205664 (≈$19.21)
+
+🏦 全仓: 0.024470 BTC (≈$1979.75)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 59.8 HOLD
+  🟡 ETH    RSI: 37.5 HOLD
+  🟡 SOL    RSI: 48.8 HOLD
+  🟡 XRP    RSI: 50.2 HOLD
+  🟡 ADA    RSI: 53.0 HOLD
+  🟢 DOGE   RSI: 33.4 BUY
+  🟡 LINK   RSI: 63.9 HOLD
+
+🚀 买入信号: ['DOGE']
+  ⏸️ DOGE: 无现货持仓
+[Sun May 10 20:58:37 CST 2026] Done, sleep 300s
+[Sun May 10 21:03:37 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2000.74
+
+💰 现货持仓:
+  USDT: 19.205664 (≈$19.21)
+
+🏦 全仓: 0.024491 BTC (≈$1981.53)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 70.2 HOLD
+  🟡 ETH    RSI: 47.5 HOLD
+  🟡 SOL    RSI: 54.3 HOLD
+  🟡 XRP    RSI: 57.2 HOLD
+  🟡 ADA    RSI: 62.8 HOLD
+  🟢 DOGE   RSI: 38.6 BUY
+  🟡 LINK   RSI: 70.6 HOLD
+
+🚀 买入信号: ['DOGE']
+  ⏸️ DOGE: 无现货持仓
+[Sun May 10 21:03:42 CST 2026] Done, sleep 300s
+[Sun May 10 21:08:42 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2004.03
+
+💰 现货持仓:
+  USDT: 19.205664 (≈$19.21)
+
+🏦 全仓: 0.024527 BTC (≈$1984.82)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 71.9 HOLD
+  🟡 ETH    RSI: 49.4 HOLD
+  🟡 SOL    RSI: 54.6 HOLD
+  🟡 XRP    RSI: 58.5 HOLD
+  🔴 ADA    RSI: 63.2 SELL
+  🟢 DOGE   RSI: 39.7 BUY
+  🟡 LINK   RSI: 72.2 HOLD
+
+🚀 买入信号: ['DOGE']
+  ⏸️ DOGE: 无现货持仓
+[Sun May 10 21:08:49 CST 2026] Done, sleep 300s
+[Sun May 10 21:13:49 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2007.05
+
+💰 现货持仓:
+  USDT: 19.205664 (≈$19.21)
+
+🏦 全仓: 0.024566 BTC (≈$1987.85)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 71.2 HOLD
+  🟡 ETH    RSI: 51.7 HOLD
+  🟡 SOL    RSI: 55.1 HOLD
+  🟡 XRP    RSI: 60.9 HOLD
+  🔴 ADA    RSI: 64.8 SELL
+  🟢 DOGE   RSI: 42.0 BUY
+  🟡 LINK   RSI: 74.4 HOLD
+
+🚀 买入信号: ['DOGE']
+  ⏸️ DOGE: 无现货持仓
+[Sun May 10 21:13:54 CST 2026] Done, sleep 300s
+[Sun May 10 21:18:54 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2009.16
+
+💰 现货持仓:
+  USDT: 19.205664 (≈$19.21)
+
+🏦 全仓: 0.024590 BTC (≈$1989.95)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 72.3 HOLD
+  🟡 ETH    RSI: 54.6 HOLD
+  🟡 SOL    RSI: 55.8 HOLD
+  🟡 XRP    RSI: 62.1 HOLD
+  🟢 DOGE   RSI: 41.6 BUY
+  🟡 LINK   RSI: 75.0 HOLD
+
+🚀 买入信号: ['DOGE']
+  ⏸️ DOGE: 无现货持仓
+[Sun May 10 21:19:00 CST 2026] Done, sleep 300s
+[Sun May 10 21:24:00 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2012.44
+
+💰 现货持仓:
+  USDT: 19.205664 (≈$19.21)
+
+🏦 全仓: 0.024618 BTC (≈$1993.23)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 74.4 HOLD
+  🟡 ETH    RSI: 56.5 HOLD
+  🟡 SOL    RSI: 59.6 HOLD
+  🟡 XRP    RSI: 65.7 HOLD
+  🔴 ADA    RSI: 65.2 SELL
+  🟡 DOGE   RSI: 45.5 HOLD
+  🟡 LINK   RSI: 76.7 HOLD
+
+⏸️ 无买入信号
+[Sun May 10 21:24:05 CST 2026] Done, sleep 300s
+[Sun May 10 21:29:06 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2007.12
+
+💰 现货持仓:
+  USDT: 19.205664 (≈$19.21)
+
+🏦 全仓: 0.024554 BTC (≈$1987.92)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 74.1 HOLD
+  🟡 ETH    RSI: 54.1 HOLD
+  🟡 SOL    RSI: 59.1 HOLD
+  🟡 XRP    RSI: 66.2 HOLD
+  🟡 ADA    RSI: 62.8 HOLD
+  🟢 DOGE   RSI: 38.6 BUY
+  🟡 LINK   RSI: 73.0 HOLD
+
+🚀 买入信号: ['DOGE']
+  ⏸️ DOGE: 无现货持仓
+[Sun May 10 21:29:11 CST 2026] Done, sleep 300s
+[Sun May 10 21:34:11 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2011.64
+
+💰 现货持仓:
+  USDT: 19.205664 (≈$19.21)
+
+🏦 全仓: 0.024604 BTC (≈$1992.44)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 74.9 HOLD
+  🟡 ETH    RSI: 56.4 HOLD
+  🟡 SOL    RSI: 59.7 HOLD
+  🟡 XRP    RSI: 68.0 HOLD
+  🔴 ADA    RSI: 65.2 SELL
+  🟢 DOGE   RSI: 40.8 BUY
+  🟡 LINK   RSI: 75.0 HOLD
+
+🚀 买入信号: ['DOGE']
+  ⏸️ DOGE: 无现货持仓
+[Sun May 10 21:34:17 CST 2026] Done, sleep 300s
+[Sun May 10 21:39:17 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2011.84
+
+💰 现货持仓:
+  USDT: 19.205664 (≈$19.21)
+
+🏦 全仓: 0.024610 BTC (≈$1992.63)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 74.4 HOLD
+  🟡 ETH    RSI: 55.2 HOLD
+  🟡 SOL    RSI: 59.9 HOLD
+  🟡 XRP    RSI: 68.4 HOLD
+  🔴 ADA    RSI: 66.0 SELL
+  🟢 DOGE   RSI: 41.6 BUY
+  🟡 LINK   RSI: 75.6 HOLD
+
+🚀 买入信号: ['DOGE']
+  ⏸️ DOGE: 无现货持仓
+[Sun May 10 21:39:23 CST 2026] Done, sleep 300s
+[Sun May 10 21:44:23 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2011.70
+
+💰 现货持仓:
+  USDT: 19.205664 (≈$19.21)
+
+🏦 全仓: 0.024619 BTC (≈$1992.50)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 72.8 HOLD
+  🟡 ETH    RSI: 55.0 HOLD
+  🟡 SOL    RSI: 59.7 HOLD
+  🟡 XRP    RSI: 66.7 HOLD
+  🔴 ADA    RSI: 66.3 SELL
+  🟢 DOGE   RSI: 41.8 BUY
+  🟡 LINK   RSI: 75.6 HOLD
+
+🚀 买入信号: ['DOGE']
+  ⏸️ DOGE: 无现货持仓
+[Sun May 10 21:44:29 CST 2026] Done, sleep 300s
+[Sun May 10 21:49:29 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2009.67
+
+💰 现货持仓:
+  USDT: 19.205664 (≈$19.21)
+
+🏦 全仓: 0.024585 BTC (≈$1990.46)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 74.2 HOLD
+  🟡 ETH    RSI: 55.1 HOLD
+  🟡 SOL    RSI: 60.9 HOLD
+  🟡 XRP    RSI: 66.4 HOLD
+  🔴 ADA    RSI: 66.7 SELL
+  🟢 DOGE   RSI: 39.3 BUY
+  🟡 LINK   RSI: 74.4 HOLD
+
+🚀 买入信号: ['DOGE']
+  ⏸️ DOGE: 无现货持仓
+[Sun May 10 21:49:34 CST 2026] Done, sleep 300s
+[Sun May 10 21:54:34 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2011.03
+
+💰 现货持仓:
+  USDT: 19.205664 (≈$19.21)
+
+🏦 全仓: 0.024600 BTC (≈$1991.82)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 74.5 HOLD
+  🟡 ETH    RSI: 55.2 HOLD
+  🟡 SOL    RSI: 62.1 HOLD
+  🟡 XRP    RSI: 67.3 HOLD
+  🔴 ADA    RSI: 68.6 SELL
+  🟢 DOGE   RSI: 42.0 BUY
+  🟡 LINK   RSI: 75.6 HOLD
+
+🚀 买入信号: ['DOGE']
+  ⏸️ DOGE: 无现货持仓
+[Sun May 10 21:54:40 CST 2026] Done, sleep 300s
+[Sun May 10 21:59:40 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2013.30
+
+💰 现货持仓:
+  USDT: 19.205664 (≈$19.21)
+
+🏦 全仓: 0.024627 BTC (≈$1994.10)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 74.6 HOLD
+  🟡 ETH    RSI: 55.9 HOLD
+  🟡 SOL    RSI: 60.6 HOLD
+  🟡 XRP    RSI: 67.3 HOLD
+  🔴 ADA    RSI: 68.3 SELL
+  🟢 DOGE   RSI: 41.6 BUY
+
+🚀 买入信号: ['DOGE']
+  ⏸️ DOGE: 无现货持仓
+[Sun May 10 21:59:50 CST 2026] Done, sleep 300s
+[Sun May 10 22:04:50 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2011.30
+
+💰 现货持仓:
+  USDT: 19.205664 (≈$19.21)
+
+🏦 全仓: 0.024608 BTC (≈$1992.09)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 72.1 HOLD
+  🟡 ETH    RSI: 60.6 HOLD
+  🟡 SOL    RSI: 63.4 HOLD
+  🟡 XRP    RSI: 73.1 HOLD
+  🔴 ADA    RSI: 71.7 SELL
+  🟡 DOGE   RSI: 45.7 HOLD
+  🔴 LINK   RSI: 79.5 SELL
+
+⏸️ 无买入信号
+[Sun May 10 22:04:55 CST 2026] Done, sleep 300s
+[Sun May 10 22:09:55 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2010.80
+
+💰 现货持仓:
+  USDT: 19.205664 (≈$19.21)
+
+🏦 全仓: 0.024610 BTC (≈$1991.60)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 69.4 HOLD
+  🟡 ETH    RSI: 58.8 HOLD
+  🟡 SOL    RSI: 63.0 HOLD
+  🟡 XRP    RSI: 76.3 HOLD
+  🔴 ADA    RSI: 73.1 SELL
+  🟡 DOGE   RSI: 46.5 HOLD
+  🔴 LINK   RSI: 77.5 SELL
+
+⏸️ 无买入信号
+[Sun May 10 22:10:02 CST 2026] Done, sleep 300s
+[Sun May 10 22:15:02 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2011.43
+
+💰 现货持仓:
+  USDT: 19.205664 (≈$19.21)
+
+🏦 全仓: 0.024613 BTC (≈$1992.22)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 71.1 HOLD
+  🟡 ETH    RSI: 58.4 HOLD
+  🟡 SOL    RSI: 63.5 HOLD
+  🟡 XRP    RSI: 76.0 HOLD
+  🔴 ADA    RSI: 73.3 SELL
+  🟡 DOGE   RSI: 45.6 HOLD
+  🟡 LINK   RSI: 75.6 HOLD
+
+⏸️ 无买入信号
+[Sun May 10 22:15:08 CST 2026] Done, sleep 300s
+[Sun May 10 22:20:08 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2008.91
+
+💰 现货持仓:
+  USDT: 19.205664 (≈$19.21)
+
+🏦 全仓: 0.024589 BTC (≈$1989.70)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 68.5 HOLD
+  🟡 ETH    RSI: 57.2 HOLD
+  🟡 SOL    RSI: 63.8 HOLD
+  🟡 XRP    RSI: 74.5 HOLD
+  🔴 ADA    RSI: 73.6 SELL
+  🟢 DOGE   RSI: 43.4 BUY
+  🟡 LINK   RSI: 72.1 HOLD
+
+🚀 买入信号: ['DOGE']
+  ⏸️ DOGE: 无现货持仓
+[Sun May 10 22:20:15 CST 2026] Done, sleep 300s
+[Sun May 10 22:25:15 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2007.05
+
+💰 现货持仓:
+  USDT: 19.205664 (≈$19.21)
+
+🏦 全仓: 0.024566 BTC (≈$1987.85)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 68.4 HOLD
+  🟡 ETH    RSI: 58.3 HOLD
+  🟡 SOL    RSI: 62.9 HOLD
+  🟡 XRP    RSI: 73.5 HOLD
+  🔴 ADA    RSI: 72.0 SELL
+  🟢 DOGE   RSI: 43.5 BUY
+  🟡 LINK   RSI: 72.1 HOLD
+
+🚀 买入信号: ['DOGE']
+  ⏸️ DOGE: 无现货持仓
+[Sun May 10 22:25:20 CST 2026] Done, sleep 300s
+[Sun May 10 22:30:20 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2004.81
+
+💰 现货持仓:
+  USDT: 19.205664 (≈$19.21)
+
+🏦 全仓: 0.024540 BTC (≈$1985.60)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 67.9 HOLD
+  🟡 ETH    RSI: 55.9 HOLD
+  🟡 SOL    RSI: 62.4 HOLD
+  🟡 XRP    RSI: 73.3 HOLD
+  🔴 ADA    RSI: 70.1 SELL
+  🟢 DOGE   RSI: 43.7 BUY
+  🟡 LINK   RSI: 68.9 HOLD
+
+🚀 买入信号: ['DOGE']
+  ⏸️ DOGE: 无现货持仓
+[Sun May 10 22:30:25 CST 2026] Done, sleep 300s
+[Sun May 10 22:35:25 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2009.72
+
+💰 现货持仓:
+  USDT: 19.205664 (≈$19.21)
+
+🏦 全仓: 0.024586 BTC (≈$1990.51)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 73.1 HOLD
+  🟡 ETH    RSI: 60.9 HOLD
+  🟡 SOL    RSI: 65.3 HOLD
+  🔴 XRP    RSI: 78.9 SELL
+  🔴 ADA    RSI: 71.4 SELL
+  🟡 DOGE   RSI: 48.7 HOLD
+  🟡 LINK   RSI: 73.8 HOLD
+
+⏸️ 无买入信号
+[Sun May 10 22:35:31 CST 2026] Done, sleep 300s
+[Sun May 10 22:40:31 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2010.81
+
+💰 现货持仓:
+  USDT: 19.205664 (≈$19.21)
+
+🏦 全仓: 0.024604 BTC (≈$1991.60)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 71.6 HOLD
+  🟡 ETH    RSI: 61.8 HOLD
+  🟡 SOL    RSI: 65.3 HOLD
+  🔴 XRP    RSI: 78.5 SELL
+  🔴 ADA    RSI: 72.8 SELL
+  🟡 DOGE   RSI: 47.3 HOLD
+  🟡 LINK   RSI: 75.6 HOLD
+
+⏸️ 无买入信号
+[Sun May 10 22:40:36 CST 2026] Done, sleep 300s
+[Sun May 10 22:45:36 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2011.56
+
+💰 现货持仓:
+  USDT: 19.205664 (≈$19.21)
+
+🏦 全仓: 0.024627 BTC (≈$1992.35)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 66.6 HOLD
+  🟡 ETH    RSI: 62.4 HOLD
+  🟡 SOL    RSI: 64.9 HOLD
+  🔴 XRP    RSI: 78.6 SELL
+  🔴 ADA    RSI: 73.1 SELL
+  🟡 DOGE   RSI: 46.3 HOLD
+  🔴 LINK   RSI: 77.5 SELL
+
+⏸️ 无买入信号
+[Sun May 10 22:45:42 CST 2026] Done, sleep 300s
+[Sun May 10 22:50:42 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2007.73
+
+💰 现货持仓:
+  USDT: 19.205664 (≈$19.21)
+
+🏦 全仓: 0.024585 BTC (≈$1988.52)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 65.1 HOLD
+  🟡 ETH    RSI: 60.5 HOLD
+  🟡 SOL    RSI: 63.4 HOLD
+  🔴 XRP    RSI: 77.4 SELL
+  🔴 ADA    RSI: 72.5 SELL
+  🟢 DOGE   RSI: 43.9 BUY
+  🟡 LINK   RSI: 70.5 HOLD
+
+🚀 买入信号: ['DOGE']
+  ⏸️ DOGE: 无现货持仓
+[Sun May 10 22:50:48 CST 2026] Done, sleep 300s
+[Sun May 10 22:55:48 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2009.93
+
+💰 现货持仓:
+  USDT: 19.205664 (≈$19.21)
+
+🏦 全仓: 0.024586 BTC (≈$1990.72)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 74.1 HOLD
+  🟡 ETH    RSI: 62.5 HOLD
+  🟡 SOL    RSI: 65.2 HOLD
+  🔴 XRP    RSI: 78.9 SELL
+  🔴 ADA    RSI: 73.8 SELL
+  🟡 DOGE   RSI: 47.3 HOLD
+  🟡 LINK   RSI: 72.1 HOLD
+
+⏸️ 无买入信号
+[Sun May 10 22:55:53 CST 2026] Done, sleep 300s
+[Sun May 10 23:00:53 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2008.96
+
+💰 现货持仓:
+  USDT: 19.205664 (≈$19.21)
+
+🏦 全仓: 0.024571 BTC (≈$1989.76)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 73.6 HOLD
+  🟡 ETH    RSI: 62.7 HOLD
+  🟡 SOL    RSI: 65.4 HOLD
+  🔴 XRP    RSI: 83.2 SELL
+  🔴 ADA    RSI: 79.0 SELL
+  🟡 DOGE   RSI: 54.9 HOLD
+  🟡 LINK   RSI: 74.4 HOLD
+
+⏸️ 无买入信号
+[Sun May 10 23:00:59 CST 2026] Done, sleep 300s
+[Sun May 10 23:05:59 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2012.95
+
+💰 现货持仓:
+  USDT: 19.205664 (≈$19.21)
+
+🏦 全仓: 0.024595 BTC (≈$1993.74)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 77.8 HOLD
+  🟡 ETH    RSI: 69.2 HOLD
+  🟡 SOL    RSI: 67.8 HOLD
+  🔴 XRP    RSI: 83.2 SELL
+  🔴 ADA    RSI: 79.6 SELL
+  🟡 DOGE   RSI: 57.3 HOLD
+  🟡 LINK   RSI: 76.1 HOLD
+
+⏸️ 无买入信号
+[Sun May 10 23:06:04 CST 2026] Done, sleep 300s
+[Sun May 10 23:11:04 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2009.95
+
+💰 现货持仓:
+  USDT: 19.205664 (≈$19.21)
+
+🏦 全仓: 0.024587 BTC (≈$1990.74)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 72.5 HOLD
+  🟡 ETH    RSI: 66.2 HOLD
+  🟡 SOL    RSI: 67.0 HOLD
+  🔴 XRP    RSI: 82.4 SELL
+  🔴 ADA    RSI: 79.4 SELL
+  🟡 DOGE   RSI: 53.7 HOLD
+  🟡 LINK   RSI: 74.4 HOLD
+
+⏸️ 无买入信号
+[Sun May 10 23:11:09 CST 2026] Done, sleep 300s
+[Sun May 10 23:16:09 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2012.26
+
+💰 现货持仓:
+  USDT: 19.205664 (≈$19.21)
+
+🏦 全仓: 0.024600 BTC (≈$1993.06)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 76.2 HOLD
+  🟡 ETH    RSI: 67.1 HOLD
+  🟡 SOL    RSI: 68.9 HOLD
+  🔴 XRP    RSI: 83.2 SELL
+  🔴 ADA    RSI: 79.8 SELL
+  🟡 DOGE   RSI: 56.6 HOLD
+  🟡 LINK   RSI: 75.6 HOLD
+
+⏸️ 无买入信号
+[Sun May 10 23:16:13 CST 2026] Done, sleep 300s
+[Sun May 10 23:21:13 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2014.06
+
+💰 现货持仓:
+  USDT: 19.205664 (≈$19.21)
+
+🏦 全仓: 0.024627 BTC (≈$1994.86)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 75.5 HOLD
+  🟡 ETH    RSI: 66.7 HOLD
+  🟡 SOL    RSI: 68.3 HOLD
+  🔴 XRP    RSI: 83.5 SELL
+  🔴 ADA    RSI: 79.8 SELL
+  🟡 DOGE   RSI: 55.7 HOLD
+  🟡 LINK   RSI: 76.1 HOLD
+
+⏸️ 无买入信号
+[Sun May 10 23:21:17 CST 2026] Done, sleep 300s
+[Sun May 10 23:26:17 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2014.98
+
+💰 现货持仓:
+  USDT: 19.205664 (≈$19.21)
+
+🏦 全仓: 0.024640 BTC (≈$1995.77)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 75.3 HOLD
+  🟡 ETH    RSI: 67.7 HOLD
+  🟡 SOL    RSI: 70.1 HOLD
+  🔴 XRP    RSI: 83.3 SELL
+  🔴 ADA    RSI: 80.0 SELL
+  🟡 DOGE   RSI: 57.0 HOLD
+  🟡 LINK   RSI: 76.6 HOLD
+
+⏸️ 无买入信号
+[Sun May 10 23:26:25 CST 2026] Done, sleep 300s
+[Sun May 10 23:31:25 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2014.41
+
+💰 现货持仓:
+  USDT: 19.205664 (≈$19.21)
+
+🏦 全仓: 0.024642 BTC (≈$1995.21)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 72.3 HOLD
+  🟡 ETH    RSI: 67.3 HOLD
+  🟡 SOL    RSI: 70.1 HOLD
+  🔴 XRP    RSI: 83.7 SELL
+  🔴 ADA    RSI: 80.4 SELL
+  🟡 DOGE   RSI: 57.1 HOLD
+  🟡 LINK   RSI: 76.6 HOLD
+
+⏸️ 无买入信号
+[Sun May 10 23:31:30 CST 2026] Done, sleep 300s
+[Sun May 10 23:36:30 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2017.30
+
+💰 现货持仓:
+  USDT: 19.205664 (≈$19.21)
+
+🏦 全仓: 0.024639 BTC (≈$1998.10)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 78.5 HOLD
+  🟡 ETH    RSI: 72.5 HOLD
+  🟡 SOL    RSI: 71.7 HOLD
+  🔴 XRP    RSI: 85.8 SELL
+  🔴 ADA    RSI: 81.9 SELL
+  🟡 DOGE   RSI: 60.0 HOLD
+  🔴 LINK   RSI: 77.1 SELL
+
+⏸️ 无买入信号
+[Sun May 10 23:36:34 CST 2026] Done, sleep 300s
+[Sun May 10 23:41:35 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2017.47
+
+💰 现货持仓:
+  USDT: 19.205664 (≈$19.21)
+
+🏦 全仓: 0.024626 BTC (≈$1998.27)
+
+🔍 G19信号:
+  🔴 BTC    RSI: 80.1 SELL
+  🟡 ETH    RSI: 73.2 HOLD
+  🟡 SOL    RSI: 72.1 HOLD
+  🔴 XRP    RSI: 86.5 SELL
+  🔴 ADA    RSI: 82.2 SELL
+  🟡 DOGE   RSI: 60.3 HOLD
+  🔴 LINK   RSI: 77.1 SELL
+
+⏸️ 无买入信号
+[Sun May 10 23:41:39 CST 2026] Done, sleep 300s
+[Sun May 10 23:46:39 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2022.49
+
+💰 现货持仓:
+  USDT: 19.205664 (≈$19.21)
+
+🏦 全仓: 0.024662 BTC (≈$2003.28)
+
+🔍 G19信号:
+  🔴 BTC    RSI: 82.1 SELL
+  🟡 ETH    RSI: 74.6 HOLD
+  🟡 SOL    RSI: 71.5 HOLD
+  🔴 XRP    RSI: 86.2 SELL
+  🔴 ADA    RSI: 86.0 SELL
+  🟡 DOGE   RSI: 64.7 HOLD
+  🔴 LINK   RSI: 78.0 SELL
+
+⏸️ 无买入信号
+[Sun May 10 23:46:45 CST 2026] Done, sleep 300s
+[Sun May 10 23:51:45 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2022.39
+
+💰 现货持仓:
+  USDT: 19.205664 (≈$19.21)
+
+🏦 全仓: 0.024611 BTC (≈$2003.19)
+
+🔍 G19信号:
+  🔴 BTC    RSI: 85.0 SELL
+  🟡 ETH    RSI: 76.5 HOLD
+  🟡 SOL    RSI: 70.9 HOLD
+  🔴 XRP    RSI: 86.8 SELL
+  🔴 ADA    RSI: 86.2 SELL
+  🟡 DOGE   RSI: 63.8 HOLD
+  🔴 LINK   RSI: 77.1 SELL
+
+⏸️ 无买入信号
+[Sun May 10 23:51:49 CST 2026] Done, sleep 300s
+[Sun May 10 23:56:49 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2021.27
+
+💰 现货持仓:
+  USDT: 19.205664 (≈$19.21)
+
+🏦 全仓: 0.024597 BTC (≈$2002.07)
+
+🔍 G19信号:
+  🔴 BTC    RSI: 85.0 SELL
+  🟡 ETH    RSI: 76.5 HOLD
+  🟡 SOL    RSI: 71.0 HOLD
+  🔴 XRP    RSI: 87.1 SELL
+  🔴 ADA    RSI: 86.3 SELL
+  🟡 DOGE   RSI: 65.4 HOLD
+  🟡 LINK   RSI: 76.6 HOLD
+
+⏸️ 无买入信号
+[Sun May 10 23:56:53 CST 2026] Done, sleep 300s
+[Mon May 11 00:01:53 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2023.15
+
+💰 现货持仓:
+  USDT: 19.205664 (≈$19.21)
+
+🏦 全仓: 0.024602 BTC (≈$2003.94)
+
+🔍 G19信号:
+  🔴 BTC    RSI: 84.5 SELL
+  🟡 ETH    RSI: 75.5 HOLD
+  🟡 SOL    RSI: 68.4 HOLD
+  🔴 XRP    RSI: 83.8 SELL
+  🔴 ADA    RSI: 84.2 SELL
+  🟡 DOGE   RSI: 60.6 HOLD
+  🟡 LINK   RSI: 74.1 HOLD
+
+⏸️ 无买入信号
+[Mon May 11 00:01:57 CST 2026] Done, sleep 300s
+[Mon May 11 00:06:57 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2025.98
+
+💰 现货持仓:
+  USDT: 19.205664 (≈$19.21)
+
+🏦 全仓: 0.024647 BTC (≈$2006.77)
+
+🔍 G19信号:
+  🔴 BTC    RSI: 84.0 SELL
+  🟡 ETH    RSI: 73.3 HOLD
+  🟡 SOL    RSI: 68.4 HOLD
+  🔴 XRP    RSI: 86.6 SELL
+  🔴 ADA    RSI: 85.3 SELL
+  🟡 DOGE   RSI: 62.8 HOLD
+  🟡 LINK   RSI: 76.9 HOLD
+
+⏸️ 无买入信号
+[Mon May 11 00:07:01 CST 2026] Done, sleep 300s
+[Mon May 11 00:12:01 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2029.48
+
+💰 现货持仓:
+  USDT: 19.205664 (≈$19.21)
+
+🏦 全仓: 0.024667 BTC (≈$2010.27)
+
+🔍 G19信号:
+  🔴 BTC    RSI: 85.2 SELL
+  🟡 ETH    RSI: 74.0 HOLD
+  🟡 SOL    RSI: 71.0 HOLD
+  🔴 XRP    RSI: 88.0 SELL
+  🔴 ADA    RSI: 86.5 SELL
+  🟡 DOGE   RSI: 64.5 HOLD
+  🔴 LINK   RSI: 79.2 SELL
+
+⏸️ 无买入信号
+[Mon May 11 00:12:05 CST 2026] Done, sleep 300s
+[Mon May 11 00:17:05 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2025.79
+
+💰 现货持仓:
+  USDT: 19.205664 (≈$19.21)
+
+🏦 全仓: 0.024649 BTC (≈$2006.58)
+
+🔍 G19信号:
+  🔴 BTC    RSI: 83.0 SELL
+  🟡 ETH    RSI: 69.2 HOLD
+  🟡 SOL    RSI: 67.6 HOLD
+  🔴 XRP    RSI: 88.0 SELL
+  🔴 ADA    RSI: 82.6 SELL
+  🟡 DOGE   RSI: 61.1 HOLD
+  🟡 LINK   RSI: 76.9 HOLD
+
+⏸️ 无买入信号
+[Mon May 11 00:17:10 CST 2026] Done, sleep 300s
+[Mon May 11 00:22:10 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+urllib3.exceptions.SSLError: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1007)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "/home/goose/.local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+  File "/home/goose/.local/lib/python3.10/site-packages/urllib3/util/retry.py", line 535, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.binance.com', port=443): Max retries exceeded with url: /api/v3/account?recvWindow=5000&timestamp=1778430130150&signature=20da33651a480e46965a8747c636aae9693a5391f8422b09ad3d4bfa7ac46baa (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1007)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/goose/.openclaw/workspace/scripts/hermes_g19_live.py", line 157, in <module>
+    main()
+  File "/home/goose/.openclaw/workspace/scripts/hermes_g19_live.py", line 100, in main
+    summary, total = get_account_summary()
+  File "/home/goose/.openclaw/workspace/scripts/hermes_g19_live.py", line 72, in get_account_summary
+    spot = api_get('https://api.binance.com/api/v3/account')
+  File "/home/goose/.openclaw/workspace/scripts/hermes_g19_live.py", line 33, in api_get
+    r = requests.get(url + '?' + sign(params), headers={'X-MBX-APIKEY': API_KEY}, proxies=PROXIES, timeout=10)
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 76, in get
+    return request('get', url, params=params, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 544, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 657, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 514, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='api.binance.com', port=443): Max retries exceeded with url: /api/v3/account?recvWindow=5000&timestamp=1778430130150&signature=20da33651a480e46965a8747c636aae9693a5391f8422b09ad3d4bfa7ac46baa (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1007)')))
+[Mon May 11 00:22:10 CST 2026] Done, sleep 300s
+[Mon May 11 00:27:10 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2033.96
+
+💰 现货持仓:
+  USDT: 19.205664 (≈$19.21)
+
+🏦 全仓: 0.024782 BTC (≈$2014.76)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 74.6 HOLD
+  🟡 ETH    RSI: 67.9 HOLD
+  🟡 SOL    RSI: 66.9 HOLD
+  🔴 XRP    RSI: 91.6 SELL
+  🔴 ADA    RSI: 88.2 SELL
+  🟡 DOGE   RSI: 63.4 HOLD
+  🔴 LINK   RSI: 79.2 SELL
+
+⏸️ 无买入信号
+[Mon May 11 00:27:15 CST 2026] Done, sleep 300s
+[Mon May 11 00:32:15 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2039.62
+
+💰 现货持仓:
+  USDT: 19.205664 (≈$19.21)
+
+🏦 全仓: 0.024866 BTC (≈$2020.41)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 71.4 HOLD
+  🟡 ETH    RSI: 69.4 HOLD
+  🟡 SOL    RSI: 68.2 HOLD
+  🔴 XRP    RSI: 92.0 SELL
+  🔴 ADA    RSI: 88.2 SELL
+  🟡 DOGE   RSI: 64.3 HOLD
+  🔴 LINK   RSI: 80.0 SELL
+
+⏸️ 无买入信号
+[Mon May 11 00:32:19 CST 2026] Done, sleep 300s
+[Mon May 11 00:37:19 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2042.05
+
+💰 现货持仓:
+  USDT: 19.205664 (≈$19.21)
+
+🏦 全仓: 0.024901 BTC (≈$2022.85)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 70.3 HOLD
+  🟡 ETH    RSI: 70.3 HOLD
+  🟡 SOL    RSI: 69.1 HOLD
+  🔴 XRP    RSI: 92.6 SELL
+  🔴 ADA    RSI: 88.3 SELL
+  🟡 DOGE   RSI: 65.2 HOLD
+  🔴 LINK   RSI: 80.7 SELL
+
+⏸️ 无买入信号
+[Mon May 11 00:37:23 CST 2026] Done, sleep 300s
+[Mon May 11 00:42:23 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2038.89
+
+💰 现货持仓:
+  USDT: 19.205664 (≈$19.21)
+
+🏦 全仓: 0.024844 BTC (≈$2019.69)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 74.3 HOLD
+  🟡 ETH    RSI: 74.5 HOLD
+  🟡 SOL    RSI: 72.2 HOLD
+  🔴 XRP    RSI: 92.0 SELL
+  🔴 ADA    RSI: 87.9 SELL
+  🟡 DOGE   RSI: 64.7 HOLD
+  🔴 LINK   RSI: 80.0 SELL
+
+⏸️ 无买入信号
+[Mon May 11 00:42:28 CST 2026] Done, sleep 300s
+[Mon May 11 00:47:28 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2039.59
+
+💰 现货持仓:
+  BTC: 0.000200 (≈$16.25)
+  USDT: 2.949596 (≈$2.95)
+
+🏦 全仓: 0.024848 BTC (≈$2020.39)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 75.2 HOLD
+  🟡 ETH    RSI: 75.4 HOLD
+  🟡 SOL    RSI: 73.5 HOLD
+  🔴 XRP    RSI: 92.2 SELL
+  🔴 ADA    RSI: 88.2 SELL
+  🟡 DOGE   RSI: 64.9 HOLD
+  🔴 LINK   RSI: 80.7 SELL
+
+⏸️ 无买入信号
+[Mon May 11 00:47:33 CST 2026] Done, sleep 300s
+[Mon May 11 00:52:33 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2043.11
+
+💰 现货持仓:
+  BTC: 0.000200 (≈$16.25)
+  USDT: 629.138385 (≈$629.14)
+
+🏦 全仓: 0.017184 BTC (≈$1397.72)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 77.4 HOLD
+  🟡 ETH    RSI: 75.4 HOLD
+  🟡 SOL    RSI: 72.8 HOLD
+  🔴 XRP    RSI: 92.0 SELL
+  🔴 ADA    RSI: 89.0 SELL
+  🟡 DOGE   RSI: 64.9 HOLD
+  🔴 LINK   RSI: 81.4 SELL
+
+⏸️ 无买入信号
+[Mon May 11 00:52:39 CST 2026] Done, sleep 300s
+[Mon May 11 00:57:39 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2043.38
+
+💰 现货持仓:
+  BTC: 0.000200 (≈$16.25)
+  USDT: 629.138385 (≈$629.14)
+
+🏦 全仓: 0.017187 BTC (≈$1397.99)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 77.4 HOLD
+  🟡 ETH    RSI: 74.8 HOLD
+  🟡 SOL    RSI: 73.1 HOLD
+  🔴 XRP    RSI: 92.1 SELL
+  🔴 ADA    RSI: 89.1 SELL
+  🟡 DOGE   RSI: 67.8 HOLD
+  🔴 LINK   RSI: 81.4 SELL
+
+⏸️ 无买入信号
+[Mon May 11 00:57:44 CST 2026] Done, sleep 300s
+[Mon May 11 01:02:44 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2034.93
+
+💰 现货持仓:
+  USDT: 637.268072 (≈$637.27)
+
+🏦 全仓: 0.017180 BTC (≈$1397.66)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 78.6 HOLD
+  🟡 ETH    RSI: 75.5 HOLD
+  🟡 SOL    RSI: 70.1 HOLD
+  🔴 XRP    RSI: 92.4 SELL
+  🔴 ADA    RSI: 88.6 SELL
+  🟡 DOGE   RSI: 70.4 HOLD
+  🔴 LINK   RSI: 81.0 SELL
+
+⏸️ 无买入信号
+[Mon May 11 01:02:48 CST 2026] Done, sleep 300s
+[Mon May 11 01:07:48 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2035.22
+
+💰 现货持仓:
+  USDT: 637.268072 (≈$637.27)
+
+🏦 全仓: 0.017194 BTC (≈$1397.96)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 75.0 HOLD
+  🟡 ETH    RSI: 74.2 HOLD
+  🟡 SOL    RSI: 72.1 HOLD
+  🔴 XRP    RSI: 93.2 SELL
+  🔴 ADA    RSI: 90.2 SELL
+  🟡 DOGE   RSI: 68.9 HOLD
+  🔴 LINK   RSI: 81.0 SELL
+
+⏸️ 无买入信号
+[Mon May 11 01:08:03 CST 2026] Done, sleep 300s
+[Mon May 11 01:13:03 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2033.67
+
+💰 现货持仓:
+  ETH: 0.244156 (≈$573.27)
+  USDT: 63.781028 (≈$63.78)
+
+🏦 全仓: 0.017180 BTC (≈$1396.61)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 74.2 HOLD
+  🟡 ETH    RSI: 72.4 HOLD
+  🟡 SOL    RSI: 72.4 HOLD
+  🔴 XRP    RSI: 93.2 SELL
+  🔴 ADA    RSI: 90.2 SELL
+  🟡 DOGE   RSI: 70.8 HOLD
+  🔴 LINK   RSI: 79.7 SELL
+
+⏸️ 无买入信号
+[Mon May 11 01:13:13 CST 2026] Done, sleep 300s
+[Mon May 11 01:18:13 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+urllib3.exceptions.SSLError: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1007)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "/home/goose/.local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+  File "/home/goose/.local/lib/python3.10/site-packages/urllib3/util/retry.py", line 535, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.binance.com', port=443): Max retries exceeded with url: /sapi/v1/margin/account?recvWindow=5000&timestamp=1778433495090&signature=2c71340f49bdd70fe816a212613a44575918e42c508de9b17e60a4674d3ed98a (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1007)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/goose/.openclaw/workspace/scripts/hermes_g19_live.py", line 157, in <module>
+    main()
+  File "/home/goose/.openclaw/workspace/scripts/hermes_g19_live.py", line 100, in main
+    summary, total = get_account_summary()
+  File "/home/goose/.openclaw/workspace/scripts/hermes_g19_live.py", line 85, in get_account_summary
+    margin = api_get('https://api.binance.com/sapi/v1/margin/account')
+  File "/home/goose/.openclaw/workspace/scripts/hermes_g19_live.py", line 33, in api_get
+    r = requests.get(url + '?' + sign(params), headers={'X-MBX-APIKEY': API_KEY}, proxies=PROXIES, timeout=10)
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 76, in get
+    return request('get', url, params=params, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 544, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 657, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 514, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='api.binance.com', port=443): Max retries exceeded with url: /sapi/v1/margin/account?recvWindow=5000&timestamp=1778433495090&signature=2c71340f49bdd70fe816a212613a44575918e42c508de9b17e60a4674d3ed98a (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1007)')))
+[Mon May 11 01:18:15 CST 2026] Done, sleep 300s
+[Mon May 11 01:23:15 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2038.17
+
+💰 现货持仓:
+  ETH: 0.000156 (≈$0.37)
+  USDT: 636.281604 (≈$636.28)
+
+🏦 全仓: 0.017215 BTC (≈$1401.52)
+
+🔍 G19信号:
+  🔴 BTC    RSI: 81.4 SELL
+  🟡 ETH    RSI: 78.9 HOLD
+  🔴 SOL    RSI: 76.3 SELL
+  🔴 XRP    RSI: 93.6 SELL
+  🔴 ADA    RSI: 90.5 SELL
+  🟡 DOGE   RSI: 77.3 HOLD
+  🔴 LINK   RSI: 82.0 SELL
+
+⏸️ 无买入信号
+[Mon May 11 01:23:30 CST 2026] Done, sleep 300s
+[Mon May 11 01:28:30 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2038.50
+
+💰 现货持仓:
+  ETH: 0.000156 (≈$0.37)
+  USDT: 636.281604 (≈$636.28)
+
+🏦 全仓: 0.017229 BTC (≈$1401.85)
+
+🔍 G19信号:
+  🔴 BTC    RSI: 79.8 SELL
+  🟡 ETH    RSI: 77.9 HOLD
+  🔴 SOL    RSI: 76.7 SELL
+  🔴 XRP    RSI: 94.1 SELL
+  🔴 ADA    RSI: 91.1 SELL
+  🟡 DOGE   RSI: 77.3 HOLD
+  🔴 LINK   RSI: 82.3 SELL
+
+⏸️ 无买入信号
+[Mon May 11 01:28:46 CST 2026] Done, sleep 300s
+[Mon May 11 01:33:46 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2041.40
+
+💰 现货持仓:
+  ETH: 0.000156 (≈$0.37)
+  USDT: 636.281604 (≈$636.28)
+
+🏦 全仓: 0.017268 BTC (≈$1404.75)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 78.5 HOLD
+  🟡 ETH    RSI: 78.7 HOLD
+  🔴 SOL    RSI: 77.0 SELL
+  🔴 XRP    RSI: 94.3 SELL
+  🔴 ADA    RSI: 91.4 SELL
+  🟡 DOGE   RSI: 77.4 HOLD
+  🔴 LINK   RSI: 82.8 SELL
+
+⏸️ 无买入信号
+[Mon May 11 01:33:55 CST 2026] Done, sleep 300s
+[Mon May 11 01:38:55 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2039.09
+
+💰 现货持仓:
+  ETH: 0.000156 (≈$0.37)
+  USDT: 636.281604 (≈$636.28)
+
+🏦 全仓: 0.017250 BTC (≈$1402.44)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 75.0 HOLD
+  🟡 ETH    RSI: 77.4 HOLD
+  🟡 SOL    RSI: 75.9 HOLD
+  🔴 XRP    RSI: 93.8 SELL
+  🔴 ADA    RSI: 91.2 SELL
+  🟡 DOGE   RSI: 76.7 HOLD
+  🔴 LINK   RSI: 82.3 SELL
+
+⏸️ 无买入信号
+[Mon May 11 01:39:05 CST 2026] Done, sleep 300s
+[Mon May 11 01:44:05 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2038.19
+
+💰 现货持仓:
+  ETH: 0.000156 (≈$0.37)
+  USDT: 636.281604 (≈$636.28)
+
+🏦 全仓: 0.017229 BTC (≈$1401.54)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 78.3 HOLD
+  🟡 ETH    RSI: 77.7 HOLD
+  🔴 SOL    RSI: 76.5 SELL
+  🔴 XRP    RSI: 94.2 SELL
+  🔴 ADA    RSI: 91.1 SELL
+  🟡 DOGE   RSI: 77.0 HOLD
+  🔴 LINK   RSI: 82.0 SELL
+
+⏸️ 无买入信号
+[Mon May 11 01:44:13 CST 2026] Done, sleep 300s
+[Mon May 11 01:49:13 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2040.45
+
+💰 现货持仓:
+  ETH: 0.000156 (≈$0.37)
+  USDT: 636.281604 (≈$636.28)
+
+🏦 全仓: 0.017243 BTC (≈$1403.80)
+
+🔍 G19信号:
+  🔴 BTC    RSI: 81.4 SELL
+  🔴 ETH    RSI: 79.1 SELL
+  🔴 SOL    RSI: 76.4 SELL
+  🔴 XRP    RSI: 94.3 SELL
+  🔴 ADA    RSI: 90.8 SELL
+  🟡 DOGE   RSI: 76.2 HOLD
+  🔴 LINK   RSI: 82.3 SELL
+
+⏸️ 无买入信号
+[Mon May 11 01:49:20 CST 2026] Done, sleep 300s
+[Mon May 11 01:54:20 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2044.40
+
+💰 现货持仓:
+  ETH: 0.000156 (≈$0.37)
+  USDT: 636.281604 (≈$636.28)
+
+🏦 全仓: 0.017270 BTC (≈$1407.75)
+
+🔍 G19信号:
+  🔴 BTC    RSI: 83.1 SELL
+  🔴 ETH    RSI: 81.9 SELL
+  🔴 SOL    RSI: 78.5 SELL
+  🔴 XRP    RSI: 94.6 SELL
+  🔴 ADA    RSI: 91.0 SELL
+  🟡 DOGE   RSI: 76.8 HOLD
+  🔴 LINK   RSI: 83.1 SELL
+
+⏸️ 无买入信号
+[Mon May 11 01:54:28 CST 2026] Done, sleep 300s
+[Mon May 11 01:59:28 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2044.83
+
+💰 现货持仓:
+  ETH: 0.000156 (≈$0.37)
+  USDT: 636.281604 (≈$636.28)
+
+🏦 全仓: 0.017286 BTC (≈$1408.18)
+
+🔍 G19信号:
+  🔴 BTC    RSI: 82.3 SELL
+  🔴 ETH    RSI: 81.4 SELL
+  🔴 SOL    RSI: 79.4 SELL
+  🔴 XRP    RSI: 94.8 SELL
+  🔴 ADA    RSI: 91.2 SELL
+  🟡 DOGE   RSI: 78.4 HOLD
+  🔴 LINK   RSI: 83.3 SELL
+
+⏸️ 无买入信号
+[Mon May 11 01:59:37 CST 2026] Done, sleep 300s
+[Mon May 11 02:04:37 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2044.54
+
+💰 现货持仓:
+  ETH: 0.000156 (≈$0.37)
+  USDT: 636.281604 (≈$636.28)
+
+🏦 全仓: 0.017280 BTC (≈$1407.89)
+
+🔍 G19信号:
+  🔴 BTC    RSI: 83.5 SELL
+  🔴 ETH    RSI: 82.0 SELL
+  🔴 SOL    RSI: 77.1 SELL
+  🔴 XRP    RSI: 93.6 SELL
+  🔴 ADA    RSI: 91.1 SELL
+  🟡 DOGE   RSI: 79.0 HOLD
+  🔴 LINK   RSI: 83.1 SELL
+
+⏸️ 无买入信号
+[Mon May 11 02:04:41 CST 2026] Done, sleep 300s
+[Mon May 11 02:09:41 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2040.10
+
+💰 现货持仓:
+  ETH: 0.000156 (≈$0.37)
+  USDT: 636.281604 (≈$636.28)
+
+🏦 全仓: 0.017242 BTC (≈$1403.45)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 77.8 HOLD
+  🔴 ETH    RSI: 80.6 SELL
+  🔴 SOL    RSI: 76.3 SELL
+  🔴 XRP    RSI: 92.8 SELL
+  🔴 ADA    RSI: 90.7 SELL
+  🟡 DOGE   RSI: 79.4 HOLD
+  🔴 LINK   RSI: 78.3 SELL
+
+⏸️ 无买入信号
+[Mon May 11 02:09:45 CST 2026] Done, sleep 300s
+[Mon May 11 02:14:45 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2042.97
+
+💰 现货持仓:
+  ETH: 0.000156 (≈$0.37)
+  USDT: 636.281604 (≈$636.28)
+
+🏦 全仓: 0.017269 BTC (≈$1406.32)
+
+🔍 G19信号:
+  🔴 BTC    RSI: 80.8 SELL
+  🔴 ETH    RSI: 81.7 SELL
+  🔴 SOL    RSI: 81.3 SELL
+  🔴 XRP    RSI: 91.4 SELL
+  🔴 ADA    RSI: 88.9 SELL
+  🟡 DOGE   RSI: 78.8 HOLD
+  🔴 LINK   RSI: 80.6 SELL
+
+⏸️ 无买入信号
+[Mon May 11 02:14:49 CST 2026] Done, sleep 300s
+[Mon May 11 02:19:49 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2040.03
+
+💰 现货持仓:
+  ETH: 0.000156 (≈$0.37)
+  USDT: 636.281604 (≈$636.28)
+
+🏦 全仓: 0.017253 BTC (≈$1403.38)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 74.3 HOLD
+  🟡 ETH    RSI: 78.1 HOLD
+  🔴 SOL    RSI: 80.7 SELL
+  🔴 XRP    RSI: 87.5 SELL
+  🔴 ADA    RSI: 90.7 SELL
+  🟡 DOGE   RSI: 79.5 HOLD
+  🔴 LINK   RSI: 80.6 SELL
+
+⏸️ 无买入信号
+[Mon May 11 02:19:54 CST 2026] Done, sleep 300s
+[Mon May 11 02:24:54 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2045.29
+
+💰 现货持仓:
+  ETH: 0.000156 (≈$0.37)
+  USDT: 636.281604 (≈$636.28)
+
+🏦 全仓: 0.017307 BTC (≈$1408.64)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 77.4 HOLD
+  🔴 ETH    RSI: 80.5 SELL
+  🔴 SOL    RSI: 81.3 SELL
+  🔴 XRP    RSI: 90.9 SELL
+  🔴 ADA    RSI: 91.5 SELL
+  🔴 DOGE   RSI: 81.1 SELL
+  🔴 LINK   RSI: 83.3 SELL
+
+⏸️ 无买入信号
+[Mon May 11 02:24:58 CST 2026] Done, sleep 300s
+[Mon May 11 02:29:58 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2046.62
+
+💰 现货持仓:
+  ETH: 0.000156 (≈$0.37)
+  USDT: 636.281604 (≈$636.28)
+
+🏦 全仓: 0.017331 BTC (≈$1409.97)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 75.1 HOLD
+  🟡 ETH    RSI: 78.4 HOLD
+  🔴 SOL    RSI: 81.1 SELL
+  🔴 XRP    RSI: 90.4 SELL
+  🔴 ADA    RSI: 91.3 SELL
+  🔴 DOGE   RSI: 80.3 SELL
+  🔴 LINK   RSI: 83.6 SELL
+
+⏸️ 无买入信号
+[Mon May 11 02:30:03 CST 2026] Done, sleep 300s
+[Mon May 11 02:35:03 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2045.47
+
+💰 现货持仓:
+  ETH: 0.000156 (≈$0.37)
+  USDT: 636.281604 (≈$636.28)
+
+🏦 全仓: 0.017318 BTC (≈$1408.82)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 74.7 HOLD
+  🟡 ETH    RSI: 76.1 HOLD
+  🔴 SOL    RSI: 81.5 SELL
+  🔴 XRP    RSI: 88.6 SELL
+  🔴 ADA    RSI: 91.2 SELL
+  🔴 DOGE   RSI: 80.7 SELL
+  🔴 LINK   RSI: 83.1 SELL
+
+⏸️ 无买入信号
+[Mon May 11 02:35:08 CST 2026] Done, sleep 300s
+[Mon May 11 02:40:08 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2044.92
+
+💰 现货持仓:
+  ETH: 0.000156 (≈$0.37)
+  USDT: 636.281604 (≈$636.28)
+
+🏦 全仓: 0.017319 BTC (≈$1408.27)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 72.7 HOLD
+  🟡 ETH    RSI: 74.3 HOLD
+  🔴 SOL    RSI: 81.3 SELL
+  🔴 XRP    RSI: 84.8 SELL
+  🔴 ADA    RSI: 91.3 SELL
+  🔴 DOGE   RSI: 80.2 SELL
+  🔴 LINK   RSI: 83.1 SELL
+
+⏸️ 无买入信号
+[Mon May 11 02:40:12 CST 2026] Done, sleep 300s
+[Mon May 11 02:45:12 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2042.29
+
+💰 现货持仓:
+  ETH: 0.000156 (≈$0.37)
+  USDT: 636.281604 (≈$636.28)
+
+🏦 全仓: 0.017298 BTC (≈$1405.64)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 69.5 HOLD
+  🟡 ETH    RSI: 72.1 HOLD
+  🔴 SOL    RSI: 81.1 SELL
+  🔴 XRP    RSI: 80.1 SELL
+  🔴 ADA    RSI: 91.4 SELL
+  🟡 DOGE   RSI: 79.3 HOLD
+  🔴 LINK   RSI: 81.8 SELL
+
+⏸️ 无买入信号
+[Mon May 11 02:45:17 CST 2026] Done, sleep 300s
+[Mon May 11 02:50:17 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2052.08
+
+💰 现货持仓:
+  BTC: 0.003553 (≈$288.82)
+  ETH: 0.000156 (≈$0.37)
+  USDT: 354.936363 (≈$354.94)
+
+🏦 全仓: 0.017319 BTC (≈$1407.96)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 71.4 HOLD
+  🟡 ETH    RSI: 76.0 HOLD
+  🔴 SOL    RSI: 81.6 SELL
+  🔴 XRP    RSI: 81.5 SELL
+  🔴 ADA    RSI: 91.3 SELL
+  🟡 DOGE   RSI: 79.6 HOLD
+  🔴 LINK   RSI: 83.1 SELL
+
+⏸️ 无买入信号
+[Mon May 11 02:50:22 CST 2026] Done, sleep 300s
+[Mon May 11 02:55:22 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2051.59
+
+💰 现货持仓:
+  BTC: 0.003697 (≈$300.53)
+  ETH: 0.000156 (≈$0.37)
+  USDT: 342.379200 (≈$342.38)
+
+🏦 全仓: 0.017326 BTC (≈$1408.32)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 71.0 HOLD
+  🟡 ETH    RSI: 75.8 HOLD
+  🔴 SOL    RSI: 80.9 SELL
+  🔴 XRP    RSI: 80.1 SELL
+  🔴 ADA    RSI: 91.5 SELL
+  🔴 DOGE   RSI: 80.6 SELL
+  🔴 LINK   RSI: 83.6 SELL
+
+⏸️ 无买入信号
+[Mon May 11 02:55:27 CST 2026] Done, sleep 300s
+[Mon May 11 03:00:27 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2049.12
+
+💰 现货持仓:
+  BTC: 0.003753 (≈$305.03)
+  ETH: 0.000156 (≈$0.37)
+  USDT: 337.232290 (≈$337.23)
+
+🏦 全仓: 0.017307 BTC (≈$1406.48)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 73.4 HOLD
+  🟡 ETH    RSI: 73.8 HOLD
+  🔴 SOL    RSI: 77.2 SELL
+  🔴 XRP    RSI: 77.3 SELL
+  🔴 ADA    RSI: 90.7 SELL
+  🟡 DOGE   RSI: 76.8 HOLD
+  🔴 LINK   RSI: 80.3 SELL
+
+⏸️ 无买入信号
+[Mon May 11 03:00:31 CST 2026] Done, sleep 300s
+[Mon May 11 03:05:31 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2045.11
+
+💰 现货持仓:
+  BTC: 0.005480 (≈$445.12)
+  ETH: 0.031293 (≈$73.68)
+  USDT: 123.399489 (≈$123.40)
+
+🏦 全仓: 0.017271 BTC (≈$1402.91)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 71.1 HOLD
+  🟡 ETH    RSI: 70.9 HOLD
+  🟡 SOL    RSI: 74.5 HOLD
+  🟡 XRP    RSI: 73.8 HOLD
+  🔴 ADA    RSI: 86.4 SELL
+  🟡 DOGE   RSI: 74.2 HOLD
+  🔴 LINK   RSI: 77.9 SELL
+
+⏸️ 无买入信号
+[Mon May 11 03:05:36 CST 2026] Done, sleep 300s
+[Mon May 11 03:10:36 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2050.17
+
+💰 现货持仓:
+  BTC: 0.005480 (≈$445.55)
+  ETH: 0.007893 (≈$18.60)
+  USDT: 178.463849 (≈$178.46)
+
+🏦 全仓: 0.017311 BTC (≈$1407.55)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 74.4 HOLD
+  🟡 ETH    RSI: 73.2 HOLD
+  🟡 SOL    RSI: 75.5 HOLD
+  🟡 XRP    RSI: 76.5 HOLD
+  🔴 ADA    RSI: 90.2 SELL
+  🔴 DOGE   RSI: 80.8 SELL
+  🔴 LINK   RSI: 82.8 SELL
+
+⏸️ 无买入信号
+[Mon May 11 03:10:41 CST 2026] Done, sleep 300s
+[Mon May 11 03:15:41 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2049.36
+
+💰 现货持仓:
+  BTC: 0.000690 (≈$56.13)
+  ETH: 0.003993 (≈$9.42)
+  USDT: 576.965158 (≈$576.97)
+
+🏦 全仓: 0.017287 BTC (≈$1406.84)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 75.8 HOLD
+  🟡 ETH    RSI: 75.6 HOLD
+  🔴 SOL    RSI: 77.3 SELL
+  🟡 XRP    RSI: 76.3 HOLD
+  🔴 ADA    RSI: 91.6 SELL
+  🔴 DOGE   RSI: 81.0 SELL
+  🔴 LINK   RSI: 81.5 SELL
+
+⏸️ 无买入信号
+[Mon May 11 03:15:46 CST 2026] Done, sleep 300s
+[Mon May 11 03:20:46 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2051.19
+
+💰 现货持仓:
+  BTC: 0.000180 (≈$14.64)
+  ETH: 0.003993 (≈$9.43)
+  USDT: 618.448074 (≈$618.45)
+
+🏦 全仓: 0.017302 BTC (≈$1408.67)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 76.4 HOLD
+  🟡 ETH    RSI: 76.5 HOLD
+  🔴 SOL    RSI: 79.1 SELL
+  🔴 XRP    RSI: 77.1 SELL
+  🔴 ADA    RSI: 92.0 SELL
+  🔴 DOGE   RSI: 81.4 SELL
+  🔴 LINK   RSI: 83.1 SELL
+
+⏸️ 无买入信号
+[Mon May 11 03:20:50 CST 2026] Done, sleep 300s
+[Mon May 11 03:25:50 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2056.31
+
+💰 现货持仓:
+  BTC: 0.000180 (≈$14.65)
+  ETH: 0.003993 (≈$9.45)
+  USDT: 618.448074 (≈$618.45)
+
+🏦 全仓: 0.017351 BTC (≈$1413.76)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 77.5 HOLD
+  🟡 ETH    RSI: 78.0 HOLD
+  🔴 SOL    RSI: 81.2 SELL
+  🔴 XRP    RSI: 79.9 SELL
+  🔴 ADA    RSI: 93.2 SELL
+  🔴 DOGE   RSI: 82.4 SELL
+  🔴 LINK   RSI: 83.8 SELL
+
+⏸️ 无买入信号
+[Mon May 11 03:25:55 CST 2026] Done, sleep 300s
+[Mon May 11 03:30:55 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2057.01
+
+💰 现货持仓:
+  BTC: 0.000180 (≈$14.65)
+  ETH: 0.003993 (≈$9.45)
+  USDT: 618.448074 (≈$618.45)
+
+🏦 全仓: 0.017362 BTC (≈$1414.47)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 77.3 HOLD
+  🟡 ETH    RSI: 77.9 HOLD
+  🔴 SOL    RSI: 81.3 SELL
+  🔴 XRP    RSI: 79.9 SELL
+  🔴 ADA    RSI: 93.2 SELL
+  🔴 DOGE   RSI: 81.8 SELL
+  🔴 LINK   RSI: 84.1 SELL
+
+⏸️ 无买入信号
+[Mon May 11 03:31:00 CST 2026] Done, sleep 300s
+[Mon May 11 03:36:00 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2042.92
+
+💰 现货持仓:
+  BTC: 0.000180 (≈$0.00)
+  ETH: 0.003993 (≈$9.44)
+  USDT: 618.448074 (≈$618.45)
+
+🏦 全仓: 0.017376 BTC (≈$1415.03)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 76.7 HOLD
+  🟡 ETH    RSI: 77.7 HOLD
+  🔴 SOL    RSI: 80.8 SELL
+  🔴 XRP    RSI: 80.0 SELL
+  🔴 ADA    RSI: 93.4 SELL
+  🔴 DOGE   RSI: 81.9 SELL
+  🔴 LINK   RSI: 84.5 SELL
+
+⏸️ 无买入信号
+[Mon May 11 03:36:05 CST 2026] Done, sleep 300s
+[Mon May 11 03:41:05 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2056.29
+
+💰 现货持仓:
+  BTC: 0.000180 (≈$14.64)
+  ETH: 0.003993 (≈$9.44)
+  USDT: 618.448074 (≈$618.45)
+
+🏦 全仓: 0.017361 BTC (≈$1413.76)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 76.7 HOLD
+  🟡 ETH    RSI: 77.6 HOLD
+  🔴 SOL    RSI: 80.4 SELL
+  🔴 XRP    RSI: 80.4 SELL
+  🔴 ADA    RSI: 93.5 SELL
+  🔴 DOGE   RSI: 81.3 SELL
+  🔴 LINK   RSI: 84.1 SELL
+
+⏸️ 无买入信号
+[Mon May 11 03:41:09 CST 2026] Done, sleep 300s
+[Mon May 11 03:46:09 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2055.92
+
+💰 现货持仓:
+  BTC: 0.000180 (≈$14.64)
+  ETH: 0.003993 (≈$9.44)
+  USDT: 618.448074 (≈$618.45)
+
+🏦 全仓: 0.017359 BTC (≈$1413.39)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 76.5 HOLD
+  🟡 ETH    RSI: 77.7 HOLD
+  🔴 SOL    RSI: 80.6 SELL
+  🔴 XRP    RSI: 79.9 SELL
+  🔴 ADA    RSI: 93.3 SELL
+  🔴 DOGE   RSI: 81.4 SELL
+  🔴 LINK   RSI: 83.8 SELL
+
+⏸️ 无买入信号
+[Mon May 11 03:46:14 CST 2026] Done, sleep 300s
+[Mon May 11 03:51:14 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2055.83
+
+💰 现货持仓:
+  BTC: 0.000180 (≈$14.63)
+  ETH: 0.003993 (≈$9.43)
+  USDT: 618.448074 (≈$618.45)
+
+🏦 全仓: 0.017369 BTC (≈$1413.32)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 75.6 HOLD
+  🟡 ETH    RSI: 76.5 HOLD
+  🔴 SOL    RSI: 79.6 SELL
+  🔴 XRP    RSI: 79.9 SELL
+  🔴 ADA    RSI: 93.1 SELL
+  🟡 DOGE   RSI: 79.5 HOLD
+  🔴 LINK   RSI: 84.1 SELL
+
+⏸️ 无买入信号
+[Mon May 11 03:51:19 CST 2026] Done, sleep 300s
+[Mon May 11 03:56:19 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2055.31
+
+💰 现货持仓:
+  BTC: 0.000180 (≈$14.63)
+  ETH: 0.003993 (≈$9.44)
+  USDT: 618.448074 (≈$618.45)
+
+🏦 全仓: 0.017358 BTC (≈$1412.79)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 76.0 HOLD
+  🟡 ETH    RSI: 77.4 HOLD
+  🔴 SOL    RSI: 78.7 SELL
+  🔴 XRP    RSI: 78.1 SELL
+  🔴 ADA    RSI: 93.0 SELL
+  🟡 DOGE   RSI: 77.9 HOLD
+  🔴 LINK   RSI: 84.1 SELL
+
+⏸️ 无买入信号
+[Mon May 11 03:56:23 CST 2026] Done, sleep 300s
+[Mon May 11 04:01:23 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2056.13
+
+💰 现货持仓:
+  BTC: 0.000180 (≈$14.64)
+  ETH: 0.003993 (≈$9.45)
+  USDT: 618.448074 (≈$618.45)
+
+🏦 全仓: 0.017359 BTC (≈$1413.58)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 75.9 HOLD
+  🟡 ETH    RSI: 78.0 HOLD
+  🔴 SOL    RSI: 80.0 SELL
+  🔴 XRP    RSI: 80.1 SELL
+  🔴 ADA    RSI: 93.6 SELL
+  🔴 DOGE   RSI: 81.5 SELL
+  🔴 LINK   RSI: 83.6 SELL
+
+⏸️ 无买入信号
+[Mon May 11 04:01:28 CST 2026] Done, sleep 300s
+[Mon May 11 04:06:28 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2055.04
+
+💰 现货持仓:
+  BTC: 0.000180 (≈$14.64)
+  ETH: 0.003993 (≈$9.45)
+  USDT: 618.448074 (≈$618.45)
+
+🏦 全仓: 0.017347 BTC (≈$1412.50)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 75.5 HOLD
+  🟡 ETH    RSI: 78.0 HOLD
+  🔴 SOL    RSI: 79.6 SELL
+  🔴 XRP    RSI: 79.8 SELL
+  🔴 ADA    RSI: 93.7 SELL
+  🔴 DOGE   RSI: 81.5 SELL
+  🔴 LINK   RSI: 83.3 SELL
+
+⏸️ 无买入信号
+[Mon May 11 04:06:33 CST 2026] Done, sleep 300s
+[Mon May 11 04:11:33 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2057.76
+
+💰 现货持仓:
+  BTC: 0.000180 (≈$14.64)
+  ETH: 0.003993 (≈$9.46)
+  USDT: 618.448074 (≈$618.45)
+
+🏦 全仓: 0.017379 BTC (≈$1415.21)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 75.9 HOLD
+  🟡 ETH    RSI: 78.0 HOLD
+  🔴 SOL    RSI: 79.9 SELL
+  🔴 XRP    RSI: 79.8 SELL
+  🔴 ADA    RSI: 93.6 SELL
+  🔴 DOGE   RSI: 82.0 SELL
+  🔴 LINK   RSI: 83.8 SELL
+
+⏸️ 无买入信号
+[Mon May 11 04:11:38 CST 2026] Done, sleep 300s
+[Mon May 11 04:16:38 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2043.04
+
+💰 现货持仓:
+  BTC: 0.002478 (≈$200.83)
+  ETH: 0.082714 (≈$194.20)
+  USDT: 246.275161 (≈$246.28)
+
+🏦 全仓: 0.017292 BTC (≈$1401.74)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 59.5 HOLD
+  🟡 ETH    RSI: 61.4 HOLD
+  🟡 SOL    RSI: 68.4 HOLD
+  🟡 XRP    RSI: 71.1 HOLD
+  🔴 ADA    RSI: 82.7 SELL
+  🟡 DOGE   RSI: 66.9 HOLD
+  🟡 LINK   RSI: 72.0 HOLD
+
+⏸️ 无买入信号
+[Mon May 11 04:16:43 CST 2026] Done, sleep 300s
+[Mon May 11 04:21:43 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2045.65
+
+💰 现货持仓:
+  BTC: 0.005275 (≈$428.11)
+  ETH: 0.070565 (≈$166.15)
+  USDT: 46.925014 (≈$46.93)
+
+🏦 全仓: 0.017304 BTC (≈$1404.46)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 63.2 HOLD
+  🟡 ETH    RSI: 66.4 HOLD
+  🟡 SOL    RSI: 71.8 HOLD
+  🟡 XRP    RSI: 74.0 HOLD
+  🔴 ADA    RSI: 85.4 SELL
+  🟡 DOGE   RSI: 70.7 HOLD
+  🟡 LINK   RSI: 76.1 HOLD
+
+⏸️ 无买入信号
+[Mon May 11 04:21:48 CST 2026] Done, sleep 300s
+[Mon May 11 04:26:48 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2043.35
+
+💰 现货持仓:
+  BTC: 0.006474 (≈$525.18)
+  ETH: 0.039543 (≈$93.06)
+  USDT: 22.429207 (≈$22.43)
+
+🏦 全仓: 0.017290 BTC (≈$1402.68)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 61.9 HOLD
+  🟡 ETH    RSI: 65.3 HOLD
+  🟡 SOL    RSI: 70.4 HOLD
+  🟡 XRP    RSI: 72.9 HOLD
+  🔴 ADA    RSI: 84.2 SELL
+  🟡 DOGE   RSI: 67.7 HOLD
+  🟡 LINK   RSI: 73.0 HOLD
+
+⏸️ 无买入信号
+[Mon May 11 04:26:52 CST 2026] Done, sleep 300s
+[Mon May 11 04:31:52 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2037.44
+
+💰 现货持仓:
+  BTC: 0.007073 (≈$573.39)
+  ETH: 0.021731 (≈$51.07)
+  USDT: 15.659595 (≈$15.66)
+
+🏦 全仓: 0.017236 BTC (≈$1397.32)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 59.8 HOLD
+  🟡 ETH    RSI: 62.6 HOLD
+  🟡 SOL    RSI: 66.8 HOLD
+  🟡 XRP    RSI: 69.5 HOLD
+  🔴 ADA    RSI: 79.9 SELL
+  🟡 DOGE   RSI: 61.9 HOLD
+  🟡 LINK   RSI: 68.4 HOLD
+
+⏸️ 无买入信号
+[Mon May 11 04:31:57 CST 2026] Done, sleep 300s
+[Mon May 11 04:36:57 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2036.53
+
+💰 现货持仓:
+  BTC: 0.007273 (≈$589.51)
+  ETH: 0.005531 (≈$12.97)
+  USDT: 37.459779 (≈$37.46)
+
+🏦 全仓: 0.017229 BTC (≈$1396.59)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 59.4 HOLD
+  🟡 ETH    RSI: 59.6 HOLD
+  🟡 SOL    RSI: 66.5 HOLD
+  🟡 XRP    RSI: 69.1 HOLD
+  🔴 ADA    RSI: 78.6 SELL
+  🟡 DOGE   RSI: 60.4 HOLD
+  🟡 LINK   RSI: 69.2 HOLD
+
+⏸️ 无买入信号
+[Mon May 11 04:37:02 CST 2026] Done, sleep 300s
+[Mon May 11 04:42:02 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2034.74
+
+💰 现货持仓:
+  BTC: 0.007472 (≈$605.44)
+  ETH: 0.004924 (≈$11.55)
+  USDT: 22.628654 (≈$22.63)
+
+🏦 全仓: 0.017219 BTC (≈$1395.12)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 58.2 HOLD
+  🟡 ETH    RSI: 60.1 HOLD
+  🟡 SOL    RSI: 66.0 HOLD
+  🟡 XRP    RSI: 68.4 HOLD
+  🔴 ADA    RSI: 78.2 SELL
+  🟡 DOGE   RSI: 58.0 HOLD
+  🟡 LINK   RSI: 68.4 HOLD
+
+⏸️ 无买入信号
+[Mon May 11 04:42:07 CST 2026] Done, sleep 300s
+[Mon May 11 04:47:07 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2017.55
+
+💰 现货持仓:
+  BTC: 0.001922 (≈$155.01)
+  ETH: 0.006120 (≈$14.26)
+  USDT: 467.193514 (≈$467.19)
+
+🏦 全仓: 0.017124 BTC (≈$1381.08)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 48.1 HOLD
+  🟡 ETH    RSI: 50.4 HOLD
+  🟡 SOL    RSI: 57.7 HOLD
+  🟡 XRP    RSI: 61.8 HOLD
+  🔴 ADA    RSI: 68.7 SELL
+  🟡 DOGE   RSI: 49.9 HOLD
+  🟡 LINK   RSI: 59.3 HOLD
+
+⏸️ 无买入信号
+[Mon May 11 04:47:11 CST 2026] Done, sleep 300s
+[Mon May 11 04:52:11 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2014.75
+
+💰 现货持仓:
+  BTC: 0.001274 (≈$102.81)
+  ETH: 0.080808 (≈$188.19)
+  USDT: 434.310479 (≈$434.31)
+
+🏦 全仓: 0.015984 BTC (≈$1289.44)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 48.5 HOLD
+  🟡 ETH    RSI: 49.6 HOLD
+  🟡 SOL    RSI: 58.2 HOLD
+  🟡 XRP    RSI: 60.8 HOLD
+  🔴 ADA    RSI: 66.3 SELL
+  🟡 DOGE   RSI: 47.3 HOLD
+  🟡 LINK   RSI: 58.7 HOLD
+
+⏸️ 无买入信号
+[Mon May 11 04:52:16 CST 2026] Done, sleep 300s
+[Mon May 11 04:57:16 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+urllib3.exceptions.SSLError: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1007)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "/home/goose/.local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+  File "/home/goose/.local/lib/python3.10/site-packages/urllib3/util/retry.py", line 535, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.binance.com', port=443): Max retries exceeded with url: /api/v3/account?recvWindow=5000&timestamp=1778446636669&signature=7de2da5158f1a7f6f50cae043bdcdb70cc3543bce414fb8f795d134fb9426007 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1007)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/goose/.openclaw/workspace/scripts/hermes_g19_live.py", line 157, in <module>
+    main()
+  File "/home/goose/.openclaw/workspace/scripts/hermes_g19_live.py", line 100, in main
+    summary, total = get_account_summary()
+  File "/home/goose/.openclaw/workspace/scripts/hermes_g19_live.py", line 72, in get_account_summary
+    spot = api_get('https://api.binance.com/api/v3/account')
+  File "/home/goose/.openclaw/workspace/scripts/hermes_g19_live.py", line 33, in api_get
+    r = requests.get(url + '?' + sign(params), headers={'X-MBX-APIKEY': API_KEY}, proxies=PROXIES, timeout=10)
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 76, in get
+    return request('get', url, params=params, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 544, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 657, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 514, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='api.binance.com', port=443): Max retries exceeded with url: /api/v3/account?recvWindow=5000&timestamp=1778446636669&signature=7de2da5158f1a7f6f50cae043bdcdb70cc3543bce414fb8f795d134fb9426007 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1007)')))
+[Mon May 11 04:57:16 CST 2026] Done, sleep 300s
+[Mon May 11 05:02:16 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2012.29
+
+💰 现货持仓:
+  BTC: 0.000164 (≈$13.28)
+  ETH: 0.257032 (≈$598.54)
+  USDT: 113.227424 (≈$113.23)
+
+🏦 全仓: 0.015930 BTC (≈$1287.24)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 51.6 HOLD
+  🟡 ETH    RSI: 50.9 HOLD
+  🟡 SOL    RSI: 58.6 HOLD
+  🟡 XRP    RSI: 60.3 HOLD
+  🔴 ADA    RSI: 63.4 SELL
+  🟡 DOGE   RSI: 47.0 HOLD
+  🟡 LINK   RSI: 56.5 HOLD
+
+⏸️ 无买入信号
+[Mon May 11 05:02:21 CST 2026] Done, sleep 300s
+[Mon May 11 05:07:21 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2014.19
+
+💰 现货持仓:
+  BTC: 0.000243 (≈$19.69)
+  ETH: 0.271018 (≈$632.48)
+  USDT: 73.945164 (≈$73.95)
+
+🏦 全仓: 0.015930 BTC (≈$1288.08)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 52.9 HOLD
+  🟡 ETH    RSI: 53.0 HOLD
+  🟡 SOL    RSI: 61.1 HOLD
+  🟡 XRP    RSI: 61.0 HOLD
+  🔴 ADA    RSI: 64.3 SELL
+  🟡 DOGE   RSI: 49.1 HOLD
+  🟡 LINK   RSI: 57.0 HOLD
+
+⏸️ 无买入信号
+[Mon May 11 05:07:26 CST 2026] Done, sleep 300s
+[Mon May 11 05:12:26 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2007.00
+
+💰 现货持仓:
+  BTC: 0.000543 (≈$43.81)
+  ETH: 0.280508 (≈$652.74)
+  USDT: 21.867941 (≈$21.87)
+  SOL: 0.058767 (≈$5.58)
+
+🏦 全仓: 0.015907 BTC (≈$1283.01)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 48.1 HOLD
+  🟡 ETH    RSI: 49.8 HOLD
+  🟡 SOL    RSI: 59.6 HOLD
+  🟡 XRP    RSI: 59.3 HOLD
+  🟡 ADA    RSI: 62.2 HOLD
+  🟡 DOGE   RSI: 46.5 HOLD
+  🟡 LINK   RSI: 54.2 HOLD
+
+⏸️ 无买入信号
+[Mon May 11 05:12:31 CST 2026] Done, sleep 300s
+[Mon May 11 05:17:31 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2009.97
+
+💰 现货持仓:
+  BTC: 0.000143 (≈$11.56)
+  ETH: 0.286103 (≈$666.11)
+  USDT: 41.071744 (≈$41.07)
+  SOL: 0.058767 (≈$5.58)
+
+🏦 全仓: 0.015927 BTC (≈$1285.65)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 49.6 HOLD
+  🟡 ETH    RSI: 50.5 HOLD
+  🟡 SOL    RSI: 60.0 HOLD
+  🟡 XRP    RSI: 60.3 HOLD
+  🔴 ADA    RSI: 63.3 SELL
+  🟡 DOGE   RSI: 48.4 HOLD
+  🟡 LINK   RSI: 55.9 HOLD
+
+⏸️ 无买入信号
+[Mon May 11 05:17:36 CST 2026] Done, sleep 300s
+[Mon May 11 05:22:36 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2009.05
+
+💰 现货持仓:
+  BTC: 0.000143 (≈$11.56)
+  ETH: 0.296293 (≈$690.04)
+  USDT: 17.308243 (≈$17.31)
+  SOL: 0.058767 (≈$5.58)
+
+🏦 全仓: 0.015914 BTC (≈$1284.57)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 49.6 HOLD
+  🟡 ETH    RSI: 50.8 HOLD
+  🟡 SOL    RSI: 59.9 HOLD
+  🟡 XRP    RSI: 60.6 HOLD
+  🔴 ADA    RSI: 63.2 SELL
+  🟡 DOGE   RSI: 47.5 HOLD
+  🟡 LINK   RSI: 55.3 HOLD
+
+⏸️ 无买入信号
+[Mon May 11 05:22:41 CST 2026] Done, sleep 300s
+[Mon May 11 05:27:41 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2011.38
+
+💰 现货持仓:
+  BTC: 0.000143 (≈$11.56)
+  ETH: 0.296293 (≈$690.94)
+  USDT: 17.308243 (≈$17.31)
+  SOL: 0.058767 (≈$5.59)
+
+🏦 全仓: 0.015923 BTC (≈$1285.98)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 50.6 HOLD
+  🟡 ETH    RSI: 52.2 HOLD
+  🟡 SOL    RSI: 61.0 HOLD
+  🟡 XRP    RSI: 61.1 HOLD
+  🔴 ADA    RSI: 63.8 SELL
+  🟡 DOGE   RSI: 49.4 HOLD
+  🟡 LINK   RSI: 55.9 HOLD
+
+⏸️ 无买入信号
+[Mon May 11 05:27:46 CST 2026] Done, sleep 300s
+[Mon May 11 05:32:46 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2019.46
+
+💰 现货持仓:
+  BTC: 0.000143 (≈$11.59)
+  ETH: 0.296293 (≈$692.26)
+  USDT: 17.308243 (≈$17.31)
+  SOL: 0.058767 (≈$5.61)
+
+🏦 全仓: 0.015977 BTC (≈$1292.69)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 53.9 HOLD
+  🟡 ETH    RSI: 54.2 HOLD
+  🟡 SOL    RSI: 62.7 HOLD
+  🟡 XRP    RSI: 62.5 HOLD
+  🔴 ADA    RSI: 65.9 SELL
+  🟡 DOGE   RSI: 51.3 HOLD
+  🟡 LINK   RSI: 58.8 HOLD
+
+⏸️ 无买入信号
+[Mon May 11 05:32:51 CST 2026] Done, sleep 300s
+[Mon May 11 05:37:51 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2020.40
+
+💰 现货持仓:
+  BTC: 0.000143 (≈$11.58)
+  ETH: 0.296293 (≈$691.94)
+  USDT: 17.308243 (≈$17.31)
+  SOL: 0.058767 (≈$5.61)
+
+🏦 全仓: 0.016005 BTC (≈$1293.97)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 52.6 HOLD
+  🟡 ETH    RSI: 53.7 HOLD
+  🟡 SOL    RSI: 62.3 HOLD
+  🟡 XRP    RSI: 62.7 HOLD
+  🔴 ADA    RSI: 65.7 SELL
+  🟡 DOGE   RSI: 51.6 HOLD
+  🟡 LINK   RSI: 59.2 HOLD
+
+⏸️ 无买入信号
+[Mon May 11 05:37:57 CST 2026] Done, sleep 300s
+[Mon May 11 05:42:57 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2020.87
+
+💰 现货持仓:
+  BTC: 0.000143 (≈$11.58)
+  ETH: 0.296293 (≈$691.62)
+  USDT: 17.308243 (≈$17.31)
+  SOL: 0.058767 (≈$5.60)
+
+🏦 全仓: 0.016016 BTC (≈$1294.77)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 52.5 HOLD
+  🟡 ETH    RSI: 53.2 HOLD
+  🟡 SOL    RSI: 61.7 HOLD
+  🟡 XRP    RSI: 62.8 HOLD
+  🔴 ADA    RSI: 66.2 SELL
+  🟡 DOGE   RSI: 51.1 HOLD
+  🟡 LINK   RSI: 59.6 HOLD
+
+⏸️ 无买入信号
+[Mon May 11 05:43:02 CST 2026] Done, sleep 300s
+[Mon May 11 05:48:02 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2022.64
+
+💰 现货持仓:
+  BTC: 0.000143 (≈$11.58)
+  ETH: 0.296293 (≈$692.14)
+  USDT: 17.308243 (≈$17.31)
+  SOL: 0.058767 (≈$5.61)
+
+🏦 全仓: 0.016026 BTC (≈$1296.01)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 53.0 HOLD
+  🟡 ETH    RSI: 54.0 HOLD
+  🟡 SOL    RSI: 62.6 HOLD
+  🟡 XRP    RSI: 63.2 HOLD
+  🔴 ADA    RSI: 66.5 SELL
+  🟡 DOGE   RSI: 50.3 HOLD
+  🟡 LINK   RSI: 60.0 HOLD
+
+⏸️ 无买入信号
+[Mon May 11 05:48:07 CST 2026] Done, sleep 300s
+[Mon May 11 05:53:07 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2019.71
+
+💰 现货持仓:
+  BTC: 0.000143 (≈$11.57)
+  ETH: 0.296293 (≈$691.48)
+  USDT: 17.308243 (≈$17.31)
+  SOL: 0.058767 (≈$5.60)
+
+🏦 全仓: 0.016014 BTC (≈$1293.75)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 51.3 HOLD
+  🟡 ETH    RSI: 52.9 HOLD
+  🟡 SOL    RSI: 61.9 HOLD
+  🟡 XRP    RSI: 62.7 HOLD
+  🔴 ADA    RSI: 65.6 SELL
+  🟡 DOGE   RSI: 48.6 HOLD
+
+⏸️ 无买入信号
+[Mon May 11 05:53:12 CST 2026] Done, sleep 300s
+[Mon May 11 06:37:15 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2043.81
+
+💰 现货持仓:
+  BTC: 0.000143 (≈$11.73)
+  ETH: 0.296293 (≈$700.55)
+  USDT: 17.308243 (≈$17.31)
+  SOL: 0.058767 (≈$5.64)
+
+🏦 全仓: 0.015971 BTC (≈$1308.58)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 67.4 HOLD
+  🟡 ETH    RSI: 62.8 HOLD
+  🟡 SOL    RSI: 62.2 HOLD
+  🟡 XRP    RSI: 63.1 HOLD
+  🔴 ADA    RSI: 65.2 SELL
+  🟡 DOGE   RSI: 60.1 HOLD
+  🟡 LINK   RSI: 60.8 HOLD
+
+⏸️ 无买入信号
+[Mon May 11 06:37:21 CST 2026] Done, sleep 300s
+[Mon May 11 06:42:21 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $736.42
+
+💰 现货持仓:
+  BTC: 0.000143 (≈$11.73)
+  ETH: 0.296293 (≈$701.75)
+  USDT: 17.308243 (≈$17.31)
+  SOL: 0.058767 (≈$5.64)
+
+🏦 全仓: 0.015982 BTC (≈$0.00)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 66.8 HOLD
+  🟡 ETH    RSI: 63.9 HOLD
+  🟡 SOL    RSI: 62.0 HOLD
+  🟡 XRP    RSI: 62.9 HOLD
+  🔴 ADA    RSI: 65.5 SELL
+  🟡 DOGE   RSI: 61.6 HOLD
+  🟡 LINK   RSI: 60.8 HOLD
+
+⏸️ 无买入信号
+[Mon May 11 06:42:25 CST 2026] Done, sleep 300s
+[Mon May 11 06:47:25 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2046.69
+
+💰 现货持仓:
+  BTC: 0.000143 (≈$11.73)
+  ETH: 0.296293 (≈$702.05)
+  USDT: 17.308243 (≈$17.31)
+  SOL: 0.058767 (≈$5.65)
+
+🏦 全仓: 0.015994 BTC (≈$1309.96)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 67.1 HOLD
+  🟡 ETH    RSI: 64.1 HOLD
+  🟡 SOL    RSI: 62.6 HOLD
+  🟡 XRP    RSI: 63.3 HOLD
+  🔴 ADA    RSI: 65.6 SELL
+  🟡 DOGE   RSI: 61.9 HOLD
+  🟡 LINK   RSI: 60.8 HOLD
+
+⏸️ 无买入信号
+[Mon May 11 06:47:30 CST 2026] Done, sleep 300s
+[Mon May 11 06:52:30 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2046.80
+
+💰 现货持仓:
+  BTC: 0.000143 (≈$11.73)
+  ETH: 0.296293 (≈$702.79)
+  USDT: 17.308243 (≈$17.31)
+  SOL: 0.058767 (≈$5.65)
+
+🏦 全仓: 0.015980 BTC (≈$1309.33)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 67.3 HOLD
+  🟡 SOL    RSI: 62.7 HOLD
+  🟡 XRP    RSI: 63.5 HOLD
+  🔴 ADA    RSI: 66.0 SELL
+  🟡 DOGE   RSI: 61.0 HOLD
+  🟡 LINK   RSI: 60.8 HOLD
+
+⏸️ 无买入信号
+[Mon May 11 06:52:35 CST 2026] Done, sleep 300s
+[Mon May 11 06:57:35 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $1344.40
+
+💰 现货持仓:
+  BTC: 0.000143 (≈$11.75)
+  ETH: 0.296293 (≈$0.00)
+  USDT: 17.308243 (≈$17.31)
+  SOL: 0.058767 (≈$5.65)
+
+🏦 全仓: 0.015961 BTC (≈$1309.69)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 68.6 HOLD
+  🟡 ETH    RSI: 65.0 HOLD
+  🟡 SOL    RSI: 63.1 HOLD
+  🟡 XRP    RSI: 63.7 HOLD
+  🔴 ADA    RSI: 65.8 SELL
+  🟡 DOGE   RSI: 61.3 HOLD
+  🟡 LINK   RSI: 61.2 HOLD
+
+⏸️ 无买入信号
+[Mon May 11 06:57:40 CST 2026] Done, sleep 300s
+[Mon May 11 07:02:40 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2052.30
+
+💰 现货持仓:
+  BTC: 0.000143 (≈$11.79)
+  ETH: 0.296293 (≈$704.85)
+  USDT: 17.308243 (≈$17.31)
+  SOL: 0.058767 (≈$5.66)
+
+🏦 全仓: 0.015945 BTC (≈$1312.69)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 71.4 HOLD
+  🟡 ETH    RSI: 67.3 HOLD
+  🟡 SOL    RSI: 62.8 HOLD
+  🟡 XRP    RSI: 64.0 HOLD
+  🔴 ADA    RSI: 68.9 SELL
+  🟡 DOGE   RSI: 64.8 HOLD
+  🟡 LINK   RSI: 60.4 HOLD
+
+⏸️ 无买入信号
+[Mon May 11 07:02:45 CST 2026] Done, sleep 300s
+[Mon May 11 07:07:45 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2046.84
+
+💰 现货持仓:
+  BTC: 0.000143 (≈$11.78)
+  ETH: 0.296293 (≈$704.10)
+  USDT: 17.308243 (≈$17.31)
+  SOL: 0.058767 (≈$5.66)
+
+🏦 全仓: 0.015906 BTC (≈$1308.00)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 70.7 HOLD
+  🟡 ETH    RSI: 66.7 HOLD
+  🟡 SOL    RSI: 62.3 HOLD
+  🟡 XRP    RSI: 63.1 HOLD
+  🔴 ADA    RSI: 67.5 SELL
+  🟡 DOGE   RSI: 64.4 HOLD
+  🟡 LINK   RSI: 58.4 HOLD
+
+⏸️ 无买入信号
+[Mon May 11 07:07:50 CST 2026] Done, sleep 300s
+[Mon May 11 07:12:50 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2050.11
+
+💰 现货持仓:
+  BTC: 0.000143 (≈$11.79)
+  ETH: 0.296293 (≈$704.97)
+  USDT: 17.308243 (≈$17.31)
+  SOL: 0.058767 (≈$5.66)
+
+🏦 全仓: 0.015922 BTC (≈$1310.39)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 71.2 HOLD
+  🟡 ETH    RSI: 67.2 HOLD
+  🟡 SOL    RSI: 62.4 HOLD
+  🟡 XRP    RSI: 63.4 HOLD
+  🔴 ADA    RSI: 68.4 SELL
+  🟡 DOGE   RSI: 66.0 HOLD
+  🟡 LINK   RSI: 60.0 HOLD
+
+⏸️ 无买入信号
+[Mon May 11 07:12:55 CST 2026] Done, sleep 300s
+[Mon May 11 07:17:55 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2044.90
+
+💰 现货持仓:
+  BTC: 0.000143 (≈$11.78)
+  ETH: 0.296293 (≈$703.67)
+  USDT: 17.308243 (≈$17.31)
+  SOL: 0.058767 (≈$5.64)
+
+🏦 全仓: 0.015875 BTC (≈$1306.49)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 71.2 HOLD
+  🟡 ETH    RSI: 66.5 HOLD
+  🟡 SOL    RSI: 60.7 HOLD
+  🟡 XRP    RSI: 62.7 HOLD
+  🔴 ADA    RSI: 66.7 SELL
+  🟡 DOGE   RSI: 64.1 HOLD
+  🟡 LINK   RSI: 57.8 HOLD
+
+⏸️ 无买入信号
+[Mon May 11 07:18:00 CST 2026] Done, sleep 300s
+[Mon May 11 07:23:00 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2044.86
+
+💰 现货持仓:
+  BTC: 0.000143 (≈$11.79)
+  ETH: 0.296293 (≈$703.25)
+  USDT: 17.308243 (≈$17.31)
+  SOL: 0.058767 (≈$5.65)
+
+🏦 全仓: 0.015876 BTC (≈$1306.87)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 71.3 HOLD
+  🟡 ETH    RSI: 66.0 HOLD
+  🟡 SOL    RSI: 61.1 HOLD
+  🟡 XRP    RSI: 62.8 HOLD
+  🔴 ADA    RSI: 66.7 SELL
+  🟡 DOGE   RSI: 65.9 HOLD
+  🟡 LINK   RSI: 57.8 HOLD
+
+⏸️ 无买入信号
+[Mon May 11 07:23:05 CST 2026] Done, sleep 300s
+[Mon May 11 07:28:05 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2048.62
+
+💰 现货持仓:
+  BTC: 0.000143 (≈$11.78)
+  ETH: 0.296293 (≈$703.99)
+  USDT: 17.308243 (≈$17.31)
+  SOL: 0.058767 (≈$5.67)
+
+🏦 全仓: 0.015916 BTC (≈$1309.86)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 71.2 HOLD
+  🟡 ETH    RSI: 66.6 HOLD
+  🟡 SOL    RSI: 63.4 HOLD
+  🟡 XRP    RSI: 63.8 HOLD
+  🔴 ADA    RSI: 68.4 SELL
+  🟡 DOGE   RSI: 65.8 HOLD
+  🟡 LINK   RSI: 59.6 HOLD
+
+⏸️ 无买入信号
+[Mon May 11 07:28:10 CST 2026] Done, sleep 300s
+[Mon May 11 07:33:10 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2048.95
+
+💰 现货持仓:
+  BTC: 0.000143 (≈$11.78)
+  ETH: 0.296293 (≈$704.32)
+  USDT: 17.308243 (≈$17.31)
+  SOL: 0.058767 (≈$5.68)
+
+🏦 全仓: 0.015919 BTC (≈$1309.87)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 71.1 HOLD
+  🟡 ETH    RSI: 66.9 HOLD
+  🟡 SOL    RSI: 63.8 HOLD
+  🟡 XRP    RSI: 63.9 HOLD
+  🔴 ADA    RSI: 68.0 SELL
+  🟡 DOGE   RSI: 66.1 HOLD
+  🟡 LINK   RSI: 59.6 HOLD
+
+⏸️ 无买入信号
+[Mon May 11 07:33:16 CST 2026] Done, sleep 300s
+[Mon May 11 07:38:16 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2048.00
+
+💰 现货持仓:
+  ETH: 0.121697 (≈$289.56)
+  USDT: 439.765260 (≈$439.77)
+  SOL: 0.058767 (≈$5.69)
+
+🏦 全仓: 0.015935 BTC (≈$1312.99)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 72.0 HOLD
+  🟡 ETH    RSI: 67.4 HOLD
+  🟡 SOL    RSI: 64.5 HOLD
+  🟡 XRP    RSI: 64.3 HOLD
+  🔴 ADA    RSI: 69.0 SELL
+  🟡 DOGE   RSI: 66.8 HOLD
+  🟡 LINK   RSI: 60.4 HOLD
+
+⏸️ 无买入信号
+[Mon May 11 07:38:21 CST 2026] Done, sleep 300s
+[Mon May 11 07:43:21 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2047.30
+
+💰 现货持仓:
+  ETH: 0.067324 (≈$160.09)
+  USDT: 568.758746 (≈$568.76)
+  SOL: 0.058767 (≈$5.68)
+
+🏦 全仓: 0.015938 BTC (≈$1312.77)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 71.7 HOLD
+  🟡 ETH    RSI: 67.0 HOLD
+  🟡 SOL    RSI: 64.3 HOLD
+  🟡 XRP    RSI: 64.1 HOLD
+  🔴 ADA    RSI: 69.2 SELL
+  🟡 DOGE   RSI: 67.9 HOLD
+  🟡 LINK   RSI: 60.8 HOLD
+
+⏸️ 无买入信号
+[Mon May 11 07:43:26 CST 2026] Done, sleep 300s
+[Mon May 11 07:48:26 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2045.04
+
+💰 现货持仓:
+  ETH: 0.098760 (≈$234.58)
+  USDT: 493.399392 (≈$493.40)
+  SOL: 0.058767 (≈$5.68)
+
+🏦 全仓: 0.015929 BTC (≈$1311.39)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 71.4 HOLD
+  🟡 ETH    RSI: 66.4 HOLD
+  🟡 SOL    RSI: 63.8 HOLD
+  🟡 XRP    RSI: 63.9 HOLD
+  🔴 ADA    RSI: 69.2 SELL
+  🟡 DOGE   RSI: 67.7 HOLD
+  🟡 LINK   RSI: 59.6 HOLD
+
+⏸️ 无买入信号
+[Mon May 11 07:48:31 CST 2026] Done, sleep 300s
+[Mon May 11 07:53:31 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2042.73
+
+💰 现货持仓:
+  ETH: 0.101806 (≈$241.65)
+  USDT: 485.418006 (≈$485.42)
+  SOL: 0.058767 (≈$5.67)
+
+🏦 全仓: 0.015930 BTC (≈$1309.98)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 70.6 HOLD
+  🟡 ETH    RSI: 66.1 HOLD
+  🟡 SOL    RSI: 63.6 HOLD
+  🟡 XRP    RSI: 63.7 HOLD
+  🔴 ADA    RSI: 68.0 SELL
+  🟡 DOGE   RSI: 67.4 HOLD
+  🟡 LINK   RSI: 59.6 HOLD
+
+⏸️ 无买入信号
+[Mon May 11 07:53:35 CST 2026] Done, sleep 300s
+[Mon May 11 07:58:35 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2042.75
+
+💰 现货持仓:
+  BTC: 0.002229 (≈$183.06)
+  ETH: 0.127529 (≈$302.09)
+  USDT: 244.109943 (≈$244.11)
+  SOL: 0.058767 (≈$5.66)
+
+🏦 全仓: 0.015923 BTC (≈$1307.82)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 69.8 HOLD
+  🟡 ETH    RSI: 63.8 HOLD
+  🟡 SOL    RSI: 63.0 HOLD
+  🟡 XRP    RSI: 63.5 HOLD
+  🔴 ADA    RSI: 66.9 SELL
+  🟡 DOGE   RSI: 67.4 HOLD
+  🟡 LINK   RSI: 58.4 HOLD
+
+⏸️ 无买入信号
+[Mon May 11 07:58:40 CST 2026] Done, sleep 300s
+[Mon May 11 08:03:40 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2047.87
+
+💰 现货持仓:
+  BTC: 0.001616 (≈$132.74)
+  ETH: 0.181375 (≈$430.37)
+  USDT: 166.299025 (≈$166.30)
+  SOL: 0.058767 (≈$5.68)
+
+🏦 全仓: 0.015978 BTC (≈$1312.79)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 68.9 HOLD
+  🟡 ETH    RSI: 66.6 HOLD
+  🟡 SOL    RSI: 67.4 HOLD
+  🟡 XRP    RSI: 64.7 HOLD
+  🔴 ADA    RSI: 66.8 SELL
+  🟡 DOGE   RSI: 67.3 HOLD
+  🟡 LINK   RSI: 62.0 HOLD
+
+⏸️ 无买入信号
+[Mon May 11 08:03:45 CST 2026] Done, sleep 300s
+[Mon May 11 08:08:45 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2041.24
+
+💰 现货持仓:
+  BTC: 0.001614 (≈$132.42)
+  ETH: 0.240116 (≈$568.96)
+  USDT: 27.097363 (≈$27.10)
+  SOL: 0.058767 (≈$5.67)
+
+🏦 全仓: 0.015931 BTC (≈$1307.09)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 66.6 HOLD
+  🟡 ETH    RSI: 65.4 HOLD
+  🟡 SOL    RSI: 66.5 HOLD
+  🟡 XRP    RSI: 64.4 HOLD
+  🔴 ADA    RSI: 65.5 SELL
+  🟡 DOGE   RSI: 65.4 HOLD
+  🟡 LINK   RSI: 60.8 HOLD
+
+⏸️ 无买入信号
+[Mon May 11 08:08:50 CST 2026] Done, sleep 300s
+[Mon May 11 08:13:50 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2039.39
+
+💰 现货持仓:
+  BTC: 0.001213 (≈$99.40)
+  ETH: 0.251804 (≈$595.92)
+  USDT: 32.129104 (≈$32.13)
+  SOL: 0.058767 (≈$5.66)
+
+🏦 全仓: 0.015945 BTC (≈$1306.28)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 64.4 HOLD
+  🟡 ETH    RSI: 64.0 HOLD
+  🟡 SOL    RSI: 64.8 HOLD
+  🟡 XRP    RSI: 63.2 HOLD
+  🔴 ADA    RSI: 64.8 SELL
+  🟡 DOGE   RSI: 62.7 HOLD
+  🟡 LINK   RSI: 59.6 HOLD
+
+⏸️ 无买入信号
+[Mon May 11 08:13:55 CST 2026] Done, sleep 300s
+[Mon May 11 08:18:55 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2027.35
+
+💰 现货持仓:
+  BTC: 0.003410 (≈$278.63)
+  ETH: 0.173956 (≈$409.53)
+  USDT: 35.173721 (≈$35.17)
+  SOL: 0.058767 (≈$5.64)
+
+🏦 全仓: 0.015893 BTC (≈$1298.37)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 60.6 HOLD
+  🟡 ETH    RSI: 59.2 HOLD
+  🟡 SOL    RSI: 63.1 HOLD
+  🟡 XRP    RSI: 60.7 HOLD
+  🟡 ADA    RSI: 61.2 HOLD
+  🟡 DOGE   RSI: 58.4 HOLD
+  🟡 LINK   RSI: 56.2 HOLD
+
+⏸️ 无买入信号
+[Mon May 11 08:19:00 CST 2026] Done, sleep 300s
+[Mon May 11 08:24:00 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2030.20
+
+💰 现货持仓:
+  BTC: 0.004709 (≈$384.91)
+  ETH: 0.087013 (≈$205.06)
+  USDT: 133.204298 (≈$133.20)
+  SOL: 0.058767 (≈$5.65)
+
+🏦 全仓: 0.015920 BTC (≈$1301.38)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 61.4 HOLD
+  🟡 ETH    RSI: 60.0 HOLD
+  🟡 SOL    RSI: 64.5 HOLD
+  🟡 XRP    RSI: 60.6 HOLD
+  🟡 ADA    RSI: 61.8 HOLD
+  🟡 DOGE   RSI: 58.7 HOLD
+  🟡 LINK   RSI: 57.3 HOLD
+
+⏸️ 无买入信号
+[Mon May 11 08:24:04 CST 2026] Done, sleep 300s
+[Mon May 11 08:29:04 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2029.23
+
+💰 现货持仓:
+  BTC: 0.006008 (≈$490.68)
+  ETH: 0.021813 (≈$51.37)
+  USDT: 180.401328 (≈$180.40)
+  SOL: 0.058767 (≈$5.65)
+
+🏦 全仓: 0.015931 BTC (≈$1301.13)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 60.3 HOLD
+  🟡 ETH    RSI: 59.4 HOLD
+  🟡 SOL    RSI: 64.4 HOLD
+  🟡 XRP    RSI: 59.6 HOLD
+  🟡 ADA    RSI: 61.4 HOLD
+  🟡 DOGE   RSI: 58.7 HOLD
+  🟡 LINK   RSI: 57.3 HOLD
+
+⏸️ 无买入信号
+[Mon May 11 08:29:09 CST 2026] Done, sleep 300s
+[Mon May 11 08:34:09 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2035.90
+
+💰 现货持仓:
+  BTC: 0.003706 (≈$303.06)
+  ETH: 0.022490 (≈$53.10)
+  USDT: 366.759604 (≈$366.76)
+  SOL: 0.058767 (≈$5.67)
+
+🏦 全仓: 0.015989 BTC (≈$1307.31)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 61.7 HOLD
+  🟡 ETH    RSI: 61.7 HOLD
+  🟡 SOL    RSI: 67.1 HOLD
+  🟡 XRP    RSI: 61.4 HOLD
+  🔴 ADA    RSI: 64.4 SELL
+  🟡 DOGE   RSI: 60.1 HOLD
+  🟡 LINK   RSI: 60.2 HOLD
+
+⏸️ 无买入信号
+[Mon May 11 08:34:15 CST 2026] Done, sleep 300s
+[Mon May 11 08:39:15 CST 2026] G19 Live
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+G19 Live - 实盘交易
+============================================================
+
+💎 总资产: $2034.09
+
+💰 现货持仓:
+  BTC: 0.001584 (≈$129.41)
+  ETH: 0.069043 (≈$162.84)
+  USDT: 429.684752 (≈$429.68)
+  SOL: 0.058767 (≈$5.67)
+
+🏦 全仓: 0.015989 BTC (≈$1306.48)
+
+🔍 G19信号:
+  🟡 BTC    RSI: 60.8 HOLD
+  🟡 ETH    RSI: 60.7 HOLD
+  🟡 SOL    RSI: 66.4 HOLD
+  🟡 XRP    RSI: 61.2 HOLD
+  🔴 ADA    RSI: 64.4 SELL
+  🟡 DOGE   RSI: 59.5 HOLD
+  🟡 LINK   RSI: 60.2 HOLD
+
+⏸️ 无买入信号
+[Mon May 11 08:39:20 CST 2026] Done, sleep 300s

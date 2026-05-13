@@ -1,0 +1,12 @@
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+======================================================================
+G20 - 动态风控优化版
+======================================================================
+  🟡 BTC: RSI=68.6, TP=4.6%, SL=1.7%, 趋势=0.38%
+  🟡 ETH: RSI=57.8, TP=2.7%, SL=2.1%, 趋势=0.44%
+  🟡 SOL: RSI=63.3, TP=4.1%, SL=2.7%, 趋势=0.62%
+  🟡 XRP: RSI=74.5, TP=8.5%, SL=2.4%, 趋势=0.20%
+  🔴 ADA: RSI=72.8, TP=4.0%, SL=1.2%, 趋势=-0.26%
+  🟡 DOGE: RSI=45.0, TP=3.5%, SL=1.5%, 趋势=-0.37%
+  🟡 LINK: RSI=75.6, TP=3.0%, SL=2.2%, 趋势=0.34%

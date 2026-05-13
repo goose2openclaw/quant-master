@@ -1,0 +1,6158 @@
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+======================================================================
+G16 v2.0 智能调仓系统
+现货 ↔ 全仓 自主转移
+======================================================================
+
+📊 账户概览
+  现货: $570.52
+  全仓: $0.00
+  合约: $30.00
+
+🔍 信号分析
+  🟡 BTC    RSI: 53.0 MOM:  +0.5% BB:   65% 评分: +10 NEUTRAL
+  🟡 ETH    RSI: 63.4 MOM:  +0.7% BB:   69% 评分: -15 NEUTRAL
+  🟡 SOL    RSI: 63.2 MOM:  +0.7% BB:   32% 评分:  -5 NEUTRAL
+  🟡 XRP    RSI: 60.3 MOM:  -0.3% BB:   39% 评分:  -5 NEUTRAL
+  🟢 ADA    RSI: 53.5 MOM:  -1.7% BB:   19% 评分: +20 BUY
+  🟢 DOGE   RSI: 43.7 MOM:  -0.8% BB:   16% 评分: +35 BUY
+  🟡 LINK   RSI: 61.9 MOM:  -0.6% BB:   26% 评分: -15 NEUTRAL
+
+⚖️ 调仓决策
+  📈→ ADA: SPOT→TO→MARGIN 30.495282
+      原因: BUY RSI:53.5 MOM:-1.7%
+  📈→ DOGE: SPOT→TO→MARGIN 4.589683
+      原因: BUY RSI:43.7 MOM:-0.8%
+
+🚀 执行转移
+  ❌ ADA: 现货→全仓 30.495282
+      错误: Illegal characters found in a parameter.
+  ✅ DOGE: 现货→全仓 4.589683
+      交易ID: 370054469805
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 07:28:18] Running g16
+M:  -0.3% BB:   41% 评分:  -5 NEUTRAL
+  🟢 ADA    RSI: 53.5 MOM:  -1.7% BB:   19% 评分: +20 BUY
+  🟢 DOGE   RSI: 44.4 MOM:  -0.7% BB:   17% 评分: +35 BUY
+  🔴 LINK   RSI: 65.0 MOM:  -0.5% BB:   30% 评分: -30 SELL
+
+⚖️ 调仓决策
+  📈→ ADA: SPOT→TO→MARGIN 30.495282
+      原因: BUY RSI:53.5 MOM:-1.7%
+  📈→ DOGE: SPOT→TO→MARGIN 3.671746
+      原因: BUY RSI:44.4 MOM:-0.7%
+
+🚀 执行转移
+  ❌ ADA: 现货→全仓 30.495282
+      错误: Illegal characters found in a parameter.
+  ✅ DOGE: 现货→全仓 3.671746
+      交易ID: 370054594613
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 07:33:27] Running g16
++0.8% BB:   72% 评分: -30 SELL
+  🟡 SOL    RSI: 63.6 MOM:  +0.8% BB:   33% 评分:  -5 NEUTRAL
+  🟡 XRP    RSI: 61.2 MOM:  -0.3% BB:   41% 评分:  -5 NEUTRAL
+  🟡 ADA    RSI: 54.8 MOM:  -1.7% BB:   21% 评分:  +0 NEUTRAL
+  🟢 DOGE   RSI: 44.7 MOM:  -0.7% BB:   17% 评分: +35 BUY
+  🟡 LINK   RSI: 59.1 MOM:  -0.7% BB:   22% 评分: -15 NEUTRAL
+
+⚖️ 调仓决策
+  📈→ DOGE: SPOT→TO→MARGIN 2.349918
+      原因: BUY RSI:44.7 MOM:-0.7%
+
+🚀 执行转移
+  ❌ DOGE: 现货→全仓 2.349918
+      错误: Illegal characters found in a parameter.
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 07:38:35] Running g16
++0.8% BB:   72% 评分: -30 SELL
+  🟡 SOL    RSI: 61.6 MOM:  +0.7% BB:   29% 评分:  -5 NEUTRAL
+  🟡 XRP    RSI: 61.2 MOM:  -0.3% BB:   41% 评分:  -5 NEUTRAL
+  🟡 ADA    RSI: 54.8 MOM:  -1.7% BB:   21% 评分:  +0 NEUTRAL
+  🟢 DOGE   RSI: 45.2 MOM:  -0.7% BB:   18% 评分: +20 BUY
+  🟡 LINK   RSI: 61.9 MOM:  -0.6% BB:   26% 评分: -15 NEUTRAL
+
+⚖️ 调仓决策
+  📈→ DOGE: SPOT→TO→MARGIN 0.421105
+      原因: BUY RSI:45.2 MOM:-0.7%
+
+🚀 执行转移
+  ❌ DOGE: 现货→全仓 0.421105
+      错误: Illegal characters found in a parameter.
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 07:43:43] Running g16
+EUTRAL
+  🟢 ADA    RSI: 47.9 MOM:  -1.9% BB:   13% 评分: +20 BUY
+  🟢 DOGE   RSI: 43.5 MOM:  -0.8% BB:   15% 评分: +35 BUY
+  🟡 LINK   RSI: 61.9 MOM:  -0.6% BB:   26% 评分: -15 NEUTRAL
+
+⚖️ 调仓决策
+  📈→ ADA: SPOT→TO→MARGIN 15.613584
+      原因: BUY RSI:47.9 MOM:-1.9%
+  📈→ DOGE: SPOT→TO→MARGIN 0.336884
+      原因: BUY RSI:43.5 MOM:-0.8%
+
+🚀 执行转移
+  ❌ ADA: 现货→全仓 15.613584
+      错误: Illegal characters found in a parameter.
+  ❌ DOGE: 现货→全仓 0.336884
+      错误: Illegal characters found in a parameter.
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 07:48:52] Running g16
+EUTRAL
+  🟢 ADA    RSI: 50.0 MOM:  -1.8% BB:   15% 评分: +20 BUY
+  🟢 DOGE   RSI: 44.4 MOM:  -0.7% BB:   17% 评分: +35 BUY
+  🟡 LINK   RSI: 61.9 MOM:  -0.6% BB:   26% 评分: -15 NEUTRAL
+
+⚖️ 调仓决策
+  📈→ ADA: SPOT→TO→MARGIN 12.490867
+      原因: BUY RSI:50.0 MOM:-1.8%
+  📈→ DOGE: SPOT→TO→MARGIN 0.269507
+      原因: BUY RSI:44.4 MOM:-0.7%
+
+🚀 执行转移
+  ❌ ADA: 现货→全仓 12.490867
+      错误: Illegal characters found in a parameter.
+  ❌ DOGE: 现货→全仓 0.269507
+      错误: Illegal characters found in a parameter.
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 07:54:01] Running g16
+ NEUTRAL
+  🟢 ADA    RSI: 52.3 MOM:  -1.8% BB:   18% 评分: +20 BUY
+  🟢 DOGE   RSI: 45.5 MOM:  -0.7% BB:   18% 评分: +20 BUY
+  🟡 LINK   RSI: 61.9 MOM:  -0.6% BB:   26% 评分: -15 NEUTRAL
+
+⚖️ 调仓决策
+  📈→ ADA: SPOT→TO→MARGIN 9.992694
+      原因: BUY RSI:52.3 MOM:-1.8%
+  📈→ DOGE: SPOT→TO→MARGIN 0.215606
+      原因: BUY RSI:45.5 MOM:-0.7%
+
+🚀 执行转移
+  ❌ ADA: 现货→全仓 9.992694
+      错误: Illegal characters found in a parameter.
+  ❌ DOGE: 现货→全仓 0.215606
+      错误: Illegal characters found in a parameter.
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 07:59:10] Running g16
++0.8% BB:   72% 评分: -30 SELL
+  🟡 SOL    RSI: 62.8 MOM:  +0.7% BB:   31% 评分:  -5 NEUTRAL
+  🟡 XRP    RSI: 62.0 MOM:  -0.3% BB:   42% 评分:  -5 NEUTRAL
+  🟡 ADA    RSI: 54.8 MOM:  -1.7% BB:   21% 评分:  +0 NEUTRAL
+  🟢 DOGE   RSI: 45.5 MOM:  -0.7% BB:   18% 评分: +20 BUY
+  🟡 LINK   RSI: 61.9 MOM:  -0.6% BB:   26% 评分: -15 NEUTRAL
+
+⚖️ 调仓决策
+  📈→ DOGE: SPOT→TO→MARGIN 0.172485
+      原因: BUY RSI:45.5 MOM:-0.7%
+
+🚀 执行转移
+  ❌ DOGE: 现货→全仓 0.172485
+      错误: Illegal characters found in a parameter.
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 08:04:20] Running g16
+.7%
+  📈→ LINK: SPOT→TO→MARGIN 6.026254
+      原因: BUY RSI:25.0 MOM:-2.1%
+
+🚀 执行转移
+  ❌ ETH: 现货→全仓 0.000616
+      错误: Illegal characters found in a parameter.
+  ❌ SOL: 现货→全仓 0.011237
+      错误: Illegal characters found in a parameter.
+  ✅ XRP: 现货→全仓 15.548040
+      交易ID: 370059625942
+  ✅ ADA: 现货→全仓 7.994155
+      交易ID: 370059626043
+  ❌ DOGE: 现货→全仓 0.206982
+      错误: Illegal characters found in a parameter.
+  ❌ LINK: 现货→全仓 6.026254
+      错误: Illegal characters found in a parameter.
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 08:09:30] Running g16
+27566
+      原因: STRONG_BUY RSI:23.1 MOM:-2.2%
+
+🚀 执行转移
+  ❌ ETH: 现货→全仓 0.000493
+      错误: Illegal characters found in a parameter.
+  ❌ SOL: 现货→全仓 0.008990
+      错误: Illegal characters found in a parameter.
+  ❌ XRP: 现货→全仓 9.950746
+      错误: Illegal characters found in a parameter.
+  ✅ ADA: 现货→全仓 4.476727
+      交易ID: 370060797423
+  ❌ DOGE: 现货→全仓 17.137877
+      错误: Illegal characters found in a parameter.
+  ❌ LINK: 现货→全仓 6.327566
+      错误: Illegal characters found in a parameter.
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 08:14:40] Running g16
+ 评分: +10 NEUTRAL
+  🟡 ADA    RSI: 44.7 MOM:  -2.3% BB:   28% 评分: +15 NEUTRAL
+  🟢 DOGE   RSI: 21.3 MOM:  -1.6% BB:   19% 评分: +60 STRONG_BUY
+  🟢 LINK   RSI: 27.3 MOM:  -2.0% BB:   28% 评分: +30 BUY
+
+⚖️ 调仓决策
+  📈→ DOGE: SPOT→TO→MARGIN 11.996514
+      原因: STRONG_BUY RSI:21.3 MOM:-1.6%
+  📈→ LINK: SPOT→TO→MARGIN 3.374702
+      原因: BUY RSI:27.3 MOM:-2.0%
+
+🚀 执行转移
+  ✅ DOGE: 现货→全仓 11.996514
+      交易ID: 370061728663
+  ❌ LINK: 现货→全仓 3.374702
+      错误: Illegal characters found in a parameter.
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 08:19:49] Running g16
+6% 评分: +10 NEUTRAL
+  🟡 ADA    RSI: 46.2 MOM:  -2.2% BB:   29% 评分:  +0 NEUTRAL
+  🟢 DOGE   RSI: 21.3 MOM:  -1.6% BB:   19% 评分: +60 STRONG_BUY
+  🟢 LINK   RSI: 27.3 MOM:  -2.0% BB:   28% 评分: +30 BUY
+
+⚖️ 调仓决策
+  📈→ DOGE: SPOT→TO→MARGIN 5.878292
+      原因: STRONG_BUY RSI:21.3 MOM:-1.6%
+  📈→ LINK: SPOT→TO→MARGIN 2.699762
+      原因: BUY RSI:27.3 MOM:-2.0%
+
+🚀 执行转移
+  ❌ DOGE: 现货→全仓 5.878292
+      错误: Illegal characters found in a parameter.
+  ✅ LINK: 现货→全仓 2.699762
+      交易ID: 370062670314
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 08:24:57] Running g16
+5 BUY
+  🟡 ETH    RSI: 44.1 MOM:  +0.6% BB:   74% 评分: +15 NEUTRAL
+  🟡 SOL    RSI: 52.3 MOM:  -0.3% BB:   42% 评分: +10 NEUTRAL
+  🟡 XRP    RSI: 50.5 MOM:  -0.8% BB:   49% 评分: +10 NEUTRAL
+  🟡 ADA    RSI: 48.8 MOM:  -2.2% BB:   32% 评分:  +0 NEUTRAL
+  🟢 DOGE   RSI: 27.6 MOM:  -1.5% BB:   24% 评分: +30 BUY
+  🟡 LINK   RSI: 38.5 MOM:  -1.8% BB:   37% 评分: +15 NEUTRAL
+
+⚖️ 调仓决策
+  📈→ DOGE: SPOT→TO→MARGIN 3.135089
+      原因: BUY RSI:27.6 MOM:-1.5%
+
+🚀 执行转移
+  ❌ DOGE: 现货→全仓 3.135089
+      错误: 网络错误
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 08:30:06] Running g16
+6% BB:   71% 评分: +15 NEUTRAL
+  🟡 SOL    RSI: 47.9 MOM:  -0.4% BB:   32% 评分: +10 NEUTRAL
+  🟡 XRP    RSI: 48.5 MOM:  -0.8% BB:   46% 评分: +10 NEUTRAL
+  🟡 ADA    RSI: 47.5 MOM:  -2.2% BB:   31% 评分:  +0 NEUTRAL
+  🟢 DOGE   RSI: 26.0 MOM:  -1.5% BB:   23% 评分: +30 BUY
+  🟡 LINK   RSI: 38.5 MOM:  -1.8% BB:   37% 评分: +15 NEUTRAL
+
+⚖️ 调仓决策
+  📈→ DOGE: SPOT→TO→MARGIN 2.508071
+      原因: BUY RSI:26.0 MOM:-1.5%
+
+🚀 执行转移
+  ❌ DOGE: 现货→全仓 2.508071
+      错误: Illegal characters found in a parameter.
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 08:35:14] Running g16
+ +0.5% BB:   70% 评分: +25 BUY
+  🟡 ETH    RSI: 46.8 MOM:  +0.6% BB:   76% 评分:  +0 NEUTRAL
+  🟡 SOL    RSI: 47.0 MOM:  -0.4% BB:   30% 评分: +10 NEUTRAL
+  🟡 XRP    RSI: 51.4 MOM:  -0.8% BB:   51% 评分: +10 NEUTRAL
+  🟡 ADA    RSI: 50.0 MOM:  -2.1% BB:   33% 评分:  +0 NEUTRAL
+  🟢 DOGE   RSI: 28.1 MOM:  -1.5% BB:   24% 评分: +30 BUY
+
+⚖️ 调仓决策
+  📈→ DOGE: SPOT→TO→MARGIN 1.755650
+      原因: BUY RSI:28.1 MOM:-1.5%
+
+🚀 执行转移
+  ❌ DOGE: 现货→全仓 1.755650
+      错误: Illegal characters found in a parameter.
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 08:40:22] Running g16
+T→TO→MARGIN 9.950746
+      原因: BUY RSI:42.7 MOM:-0.9%
+  📈→ DOGE: SPOT→TO→MARGIN 2.106780
+      原因: STRONG_BUY RSI:21.6 MOM:-1.6%
+  📈→ LINK: SPOT→TO→MARGIN 1.105822
+      原因: BUY RSI:27.3 MOM:-2.0%
+
+🚀 执行转移
+  ✅ SOL: 现货→全仓 0.005754
+      交易ID: 370066381736
+  ❌ XRP: 现货→全仓 9.950746
+      错误: Illegal characters found in a parameter.
+  ❌ DOGE: 现货→全仓 2.106780
+      错误: Illegal characters found in a parameter.
+  ❌ LINK: 现货→全仓 1.105822
+      错误: Illegal characters found in a parameter.
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 08:45:31] Running g16
+RP: SPOT→TO→MARGIN 3.980596
+      原因: BUY RSI:42.3 MOM:-0.9%
+  📈→ DOGE: SPOT→TO→MARGIN 1.123616
+      原因: BUY RSI:22.4 MOM:-1.6%
+  📈→ LINK: SPOT→TO→MARGIN 0.884658
+      原因: BUY RSI:27.3 MOM:-2.0%
+
+🚀 执行转移
+  ❌ SOL: 现货→全仓 0.004603
+      错误: Illegal characters found in a parameter.
+  ✅ XRP: 现货→全仓 3.980596
+      交易ID: 370067301684
+  ❌ DOGE: 现货→全仓 1.123616
+      错误: Illegal characters found in a parameter.
+  ❌ LINK: 现货→全仓 0.884658
+      错误: Illegal characters found in a parameter.
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 08:50:41] Running g16
+GIN 0.619261
+      原因: BUY RSI:25.0 MOM:-2.1%
+
+🚀 执行转移
+  ❌ ETH: 现货→全仓 0.000394
+      错误: Illegal characters found in a parameter.
+  ❌ SOL: 现货→全仓 0.003682
+      错误: Illegal characters found in a parameter.
+  ❌ XRP: 现货→全仓 2.547582
+      错误: Illegal characters found in a parameter.
+  ❌ ADA: 现货→全仓 3.581382
+      错误: Illegal characters found in a parameter.
+  ❌ DOGE: 现货→全仓 44.036897
+      错误: Illegal characters found in a parameter.
+  ✅ LINK: 现货→全仓 0.619261
+      交易ID: 370068271990
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 08:55:52] Running g16
+ RSI:25.0 MOM:-2.1%
+
+🚀 执行转移
+  ❌ ETH: 现货→全仓 0.000315
+      错误: Illegal characters found in a parameter.
+  ❌ SOL: 现货→全仓 0.002946
+      错误: Illegal characters found in a parameter.
+  ❌ XRP: 现货→全仓 3.057098
+      错误: Illegal characters found in a parameter.
+  ❌ ADA: 现货→全仓 3.760451
+      错误: Illegal characters found in a parameter.
+  ❌ DOGE: 现货→全仓 58.697928
+      错误: Illegal characters found in a parameter.
+  ❌ LINK: 现货→全仓 0.346786
+      错误: Illegal characters found in a parameter.
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 09:01:05] Running g16
+ RSI:15.4 MOM:-2.3%
+
+🚀 执行转移
+  ❌ ETH: 现货→全仓 0.000252
+      错误: Illegal characters found in a parameter.
+  ❌ SOL: 现货→全仓 0.003535
+      错误: Illegal characters found in a parameter.
+  ❌ XRP: 现货→全仓 2.139969
+      错误: Illegal characters found in a parameter.
+  ❌ ADA: 现货→全仓 2.632315
+      错误: Illegal characters found in a parameter.
+  ❌ DOGE: 现货→全仓 41.088549
+      错误: Illegal characters found in a parameter.
+  ❌ LINK: 现货→全仓 0.364125
+      错误: Illegal characters found in a parameter.
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 09:06:15] Running g16
+64125
+      原因: STRONG_BUY RSI:14.3 MOM:-2.4%
+
+🚀 执行转移
+  ❌ ETH: 现货→全仓 0.000202
+      错误: Illegal characters found in a parameter.
+  ❌ SOL: 现货→全仓 0.002474
+      错误: Illegal characters found in a parameter.
+  ❌ XRP: 现货→全仓 1.497978
+      错误: Illegal characters found in a parameter.
+  ✅ ADA: 现货→全仓 1.842621
+      交易ID: 370071206512
+  ❌ DOGE: 现货→全仓 28.761985
+      错误: Illegal characters found in a parameter.
+  ❌ LINK: 现货→全仓 0.364125
+      错误: Illegal characters found in a parameter.
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 09:11:26] Running g16
+Y RSI:5.0 MOM:-2.1%
+  📈→ LINK: SPOT→TO→MARGIN 0.254888
+      原因: STRONG_BUY RSI:13.3 MOM:-2.5%
+
+🚀 执行转移
+  ❌ SOL: 现货→全仓 0.001732
+      错误: Illegal characters found in a parameter.
+  ❌ XRP: 现货→全仓 1.048585
+      错误: Illegal characters found in a parameter.
+  ❌ ADA: 现货→全仓 0.902884
+      错误: Illegal characters found in a parameter.
+  ❌ DOGE: 现货→全仓 20.133389
+      错误: Illegal characters found in a parameter.
+  ❌ LINK: 现货→全仓 0.254888
+      错误: Illegal characters found in a parameter.
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 09:16:36] Running g16
+093372
+      原因: STRONG_BUY RSI:4.8 MOM:-2.2%
+  📈→ LINK: SPOT→TO→MARGIN 0.178421
+      原因: STRONG_BUY RSI:11.8 MOM:-2.6%
+
+🚀 执行转移
+  ❌ SOL: 现货→全仓 0.001213
+      错误: Illegal characters found in a parameter.
+  ✅ XRP: 现货→全仓 0.734009
+      交易ID: 370073040420
+  ❌ ADA: 现货→全仓 0.632019
+      错误: Illegal characters found in a parameter.
+  ❌ DOGE: 现货→全仓 14.093372
+      错误: Illegal characters found in a parameter.
+  ❌ LINK: 现货→全仓 0.178421
+      错误: Illegal characters found in a parameter.
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 09:21:46] Running g16
+UY RSI:5.2 MOM:-2.0%
+  📈→ LINK: SPOT→TO→MARGIN 0.124895
+      原因: STRONG_BUY RSI:13.3 MOM:-2.5%
+
+🚀 执行转移
+  ❌ SOL: 现货→全仓 0.000849
+      错误: Illegal characters found in a parameter.
+  ❌ XRP: 现货→全仓 0.359665
+      错误: Illegal characters found in a parameter.
+  ❌ ADA: 现货→全仓 0.442413
+      错误: Illegal characters found in a parameter.
+  ❌ DOGE: 现货→全仓 9.865361
+      错误: Illegal characters found in a parameter.
+  ❌ LINK: 现货→全仓 0.124895
+      错误: Illegal characters found in a parameter.
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 09:26:56] Running g16
+UY RSI:4.3 MOM:-2.3%
+  📈→ LINK: SPOT→TO→MARGIN 0.087426
+      原因: STRONG_BUY RSI:11.8 MOM:-2.6%
+
+🚀 执行转移
+  ❌ SOL: 现货→全仓 0.000594
+      错误: Illegal characters found in a parameter.
+  ❌ XRP: 现货→全仓 0.251765
+      错误: Illegal characters found in a parameter.
+  ❌ ADA: 现货→全仓 0.309689
+      错误: Illegal characters found in a parameter.
+  ❌ DOGE: 现货→全仓 6.905752
+      错误: Illegal characters found in a parameter.
+  ❌ LINK: 现货→全仓 0.087426
+      错误: Illegal characters found in a parameter.
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 09:32:06] Running g16
+UY RSI:4.6 MOM:-2.2%
+  📈→ LINK: SPOT→TO→MARGIN 0.061199
+      原因: STRONG_BUY RSI:11.8 MOM:-2.6%
+
+🚀 执行转移
+  ❌ SOL: 现货→全仓 0.000416
+      错误: Illegal characters found in a parameter.
+  ❌ XRP: 现货→全仓 0.176236
+      错误: Illegal characters found in a parameter.
+  ❌ ADA: 现货→全仓 0.216782
+      错误: Illegal characters found in a parameter.
+  ❌ DOGE: 现货→全仓 4.834027
+      错误: Illegal characters found in a parameter.
+  ❌ LINK: 现货→全仓 0.061199
+      错误: Illegal characters found in a parameter.
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 09:37:16] Running g16
+UY RSI:20.0 MOM:-2.9%
+  📈→ DOGE: SPOT→TO→MARGIN 3.383819
+      原因: STRONG_BUY RSI:4.4 MOM:-2.3%
+  📈→ LINK: SPOT→TO→MARGIN 0.061199
+      原因: STRONG_BUY RSI:11.1 MOM:-2.7%
+
+🚀 执行转移
+  ❌ XRP: 现货→全仓 0.123365
+      错误: Illegal characters found in a parameter.
+  ❌ ADA: 现货→全仓 0.151748
+      错误: Illegal characters found in a parameter.
+  ❌ DOGE: 现货→全仓 3.383819
+      错误: Illegal characters found in a parameter.
+  ❌ LINK: 现货→全仓 0.061199
+      错误: Illegal characters found in a parameter.
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 09:42:26] Running g16
+UY RSI:20.0 MOM:-2.9%
+  📈→ DOGE: SPOT→TO→MARGIN 2.368673
+      原因: STRONG_BUY RSI:4.5 MOM:-2.3%
+  📈→ LINK: SPOT→TO→MARGIN 0.042839
+      原因: STRONG_BUY RSI:11.1 MOM:-2.7%
+
+🚀 执行转移
+  ❌ XRP: 现货→全仓 0.086355
+      错误: Illegal characters found in a parameter.
+  ❌ ADA: 现货→全仓 0.106223
+      错误: Illegal characters found in a parameter.
+  ❌ DOGE: 现货→全仓 2.368673
+      错误: Illegal characters found in a parameter.
+  ❌ LINK: 现货→全仓 0.042839
+      错误: Illegal characters found in a parameter.
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 09:47:36] Running g16
+UY RSI:20.0 MOM:-2.9%
+  📈→ DOGE: SPOT→TO→MARGIN 1.658071
+      原因: STRONG_BUY RSI:4.7 MOM:-2.2%
+  📈→ LINK: SPOT→TO→MARGIN 0.029987
+      原因: STRONG_BUY RSI:11.1 MOM:-2.7%
+
+🚀 执行转移
+  ❌ XRP: 现货→全仓 0.060449
+      错误: Illegal characters found in a parameter.
+  ❌ ADA: 现货→全仓 0.074356
+      错误: Illegal characters found in a parameter.
+  ❌ DOGE: 现货→全仓 1.658071
+      错误: Illegal characters found in a parameter.
+  ❌ LINK: 现货→全仓 0.029987
+      错误: Illegal characters found in a parameter.
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 09:52:46] Running g16
+UY RSI:22.5 MOM:-2.7%
+  📈→ DOGE: SPOT→TO→MARGIN 1.160650
+      原因: STRONG_BUY RSI:5.1 MOM:-2.1%
+  📈→ LINK: SPOT→TO→MARGIN 0.020991
+      原因: STRONG_BUY RSI:12.5 MOM:-2.6%
+
+🚀 执行转移
+  ❌ XRP: 现货→全仓 0.042314
+      错误: Illegal characters found in a parameter.
+  ❌ ADA: 现货→全仓 0.052049
+      错误: Illegal characters found in a parameter.
+  ❌ DOGE: 现货→全仓 1.160650
+      错误: Illegal characters found in a parameter.
+  ❌ LINK: 现货→全仓 0.020991
+      错误: Illegal characters found in a parameter.
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 09:57:55] Running g16
+UY RSI:21.4 MOM:-2.8%
+  📈→ DOGE: SPOT→TO→MARGIN 0.812455
+      原因: STRONG_BUY RSI:4.7 MOM:-2.2%
+  📈→ LINK: SPOT→TO→MARGIN 0.014694
+      原因: STRONG_BUY RSI:13.3 MOM:-2.5%
+
+🚀 执行转移
+  ❌ XRP: 现货→全仓 0.029620
+      错误: Illegal characters found in a parameter.
+  ❌ ADA: 现货→全仓 0.036435
+      错误: Illegal characters found in a parameter.
+  ❌ DOGE: 现货→全仓 0.812455
+      错误: Illegal characters found in a parameter.
+  ❌ LINK: 现货→全仓 0.014694
+      错误: Illegal characters found in a parameter.
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 10:03:06] Running g16
+_BUY RSI:5.3 MOM:-2.5%
+  📈→ DOGE: SPOT→TO→MARGIN 0.568718
+      原因: STRONG_BUY RSI:0.0 MOM:-2.1%
+  📈→ LINK: SPOT→TO→MARGIN 0.010286
+      原因: STRONG_BUY RSI:0.0 MOM:-2.2%
+
+🚀 执行转移
+  ❌ XRP: 现货→全仓 0.020734
+      错误: Illegal characters found in a parameter.
+  ❌ ADA: 现货→全仓 0.025504
+      错误: Illegal characters found in a parameter.
+  ❌ DOGE: 现货→全仓 0.568718
+      错误: Illegal characters found in a parameter.
+  ❌ LINK: 现货→全仓 0.010286
+      错误: Illegal characters found in a parameter.
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 10:08:16] Running g16
+_BUY RSI:5.7 MOM:-2.4%
+  📈→ DOGE: SPOT→TO→MARGIN 0.398103
+      原因: STRONG_BUY RSI:3.6 MOM:-2.0%
+  📈→ LINK: SPOT→TO→MARGIN 0.007200
+      原因: STRONG_BUY RSI:0.0 MOM:-2.1%
+
+🚀 执行转移
+  ❌ XRP: 现货→全仓 0.014514
+      错误: Illegal characters found in a parameter.
+  ❌ ADA: 现货→全仓 0.017853
+      错误: Illegal characters found in a parameter.
+  ❌ DOGE: 现货→全仓 0.398103
+      错误: Illegal characters found in a parameter.
+  ❌ LINK: 现货→全仓 0.007200
+      错误: Illegal characters found in a parameter.
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 10:13:26] Running g16
+_BUY RSI:5.6 MOM:-2.5%
+  📈→ DOGE: SPOT→TO→MARGIN 0.278672
+      原因: STRONG_BUY RSI:5.4 MOM:-1.9%
+  📈→ LINK: SPOT→TO→MARGIN 0.005040
+      原因: STRONG_BUY RSI:0.0 MOM:-2.0%
+
+🚀 执行转移
+  ❌ XRP: 现货→全仓 0.010160
+      错误: Illegal characters found in a parameter.
+  ❌ ADA: 现货→全仓 0.012497
+      错误: Illegal characters found in a parameter.
+  ❌ DOGE: 现货→全仓 0.278672
+      错误: Illegal characters found in a parameter.
+  ❌ LINK: 现货→全仓 0.005040
+      错误: Illegal characters found in a parameter.
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 10:18:36] Running g16
+ BB:   20% 评分: +40 BUY
+
+⚖️ 调仓决策
+  📈→ XRP: SPOT→TO→MARGIN 0.004741
+      原因: BUY RSI:25.0 MOM:-0.9%
+  📈→ ADA: SPOT→TO→MARGIN 0.008748
+      原因: STRONG_BUY RSI:8.6 MOM:-2.4%
+  📈→ DOGE: SPOT→TO→MARGIN 0.195070
+      原因: STRONG_BUY RSI:16.8 MOM:-1.7%
+
+🚀 执行转移
+  ❌ XRP: 现货→全仓 0.004741
+      错误: Illegal characters found in a parameter.
+  ❌ ADA: 现货→全仓 0.008748
+      错误: Illegal characters found in a parameter.
+  ❌ DOGE: 现货→全仓 0.195070
+      错误: Illegal characters found in a parameter.
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 10:23:47] Running g16
+========
+
+📊 账户概览
+  现货: $13.34
+  全仓: $0.00
+  合约: $29.99
+
+🔍 信号分析
+  🟢 BTC    RSI:  3.2 MOM:  +0.4% BB:   62% 评分: +50 STRONG_BUY
+  🟢 ETH    RSI: 19.9 MOM:  +0.4% BB:   61% 评分: +40 BUY
+  🟢 SOL    RSI: 25.2 MOM:  -0.7% BB:   24% 评分: +40 BUY
+  🟢 XRP    RSI: 36.9 MOM:  -0.7% BB:   43% 评分: +25 BUY
+  🟢 ADA    RSI: 22.0 MOM:  -2.1% BB:   22% 评分: +40 BUY
+  🟢 DOGE   RSI: 18.9 MOM:  -1.7% BB:   19% 评分: +60 STRONG_BUY
+  🟢 LINK   RSI: 20.0 MOM:  -1.7% BB:   29% 评分: +40 BUY
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 10:28:54] Running g16
+============
+
+📊 账户概览
+  现货: $0.21
+  全仓: $0.00
+  合约: $29.99
+
+🔍 信号分析
+  🟢 BTC    RSI: 21.8 MOM:  +0.5% BB:   69% 评分: +50 STRONG_BUY
+  🟢 ETH    RSI: 34.3 MOM:  +0.5% BB:   69% 评分: +30 BUY
+  🟢 SOL    RSI: 32.5 MOM:  -0.6% BB:   33% 评分: +40 BUY
+  🟡 XRP    RSI: 45.3 MOM:  -0.5% BB:   65% 评分: +10 NEUTRAL
+  🟢 ADA    RSI: 27.3 MOM:  -2.0% BB:   26% 评分: +30 BUY
+  🟢 DOGE   RSI: 30.9 MOM:  -1.4% BB:   32% 评分: +30 BUY
+  🟢 LINK   RSI: 20.0 MOM:  -1.7% BB:   29% 评分: +40 BUY
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 10:34:00] Running g16
+=========
+
+📊 账户概览
+  现货: $0.21
+  全仓: $0.00
+  合约: $30.00
+
+🔍 信号分析
+  🟢 BTC    RSI: 14.4 MOM:  +0.4% BB:   66% 评分: +50 STRONG_BUY
+  🟢 ETH    RSI: 21.0 MOM:  +0.4% BB:   61% 评分: +40 BUY
+  🟢 SOL    RSI: 26.0 MOM:  -0.7% BB:   25% 评分: +40 BUY
+  🟢 XRP    RSI: 28.4 MOM:  -0.8% BB:   27% 评分: +40 BUY
+  🟢 ADA    RSI: 17.9 MOM:  -2.2% BB:   19% 评分: +60 STRONG_BUY
+  🟢 DOGE   RSI: 27.1 MOM:  -1.5% BB:   27% 评分: +30 BUY
+  🟢 LINK   RSI:  7.7 MOM:  -1.9% BB:   20% 评分: +40 BUY
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 10:39:06] Running g16
+================
+
+📊 账户概览
+  现货: $0.00
+  全仓: $0.00
+  合约: $29.99
+
+🔍 信号分析
+  🟢 BTC    RSI: 20.9 MOM:  +0.5% BB:   68% 评分: +50 STRONG_BUY
+  🟢 ETH    RSI: 28.5 MOM:  +0.5% BB:   65% 评分: +30 BUY
+  🟢 SOL    RSI: 26.7 MOM:  -0.7% BB:   26% 评分: +40 BUY
+  🟢 XRP    RSI: 31.9 MOM:  -0.8% BB:   33% 评分: +40 BUY
+  🟢 ADA    RSI: 20.0 MOM:  -2.2% BB:   20% 评分: +40 BUY
+  🟢 DOGE   RSI: 32.3 MOM:  -1.3% BB:   34% 评分: +30 BUY
+  🟢 LINK   RSI:  7.7 MOM:  -1.9% BB:   20% 评分: +40 BUY
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 10:44:12] Running g16
+==
+
+📊 账户概览
+  现货: $0.00
+  全仓: $0.00
+  合约: $29.99
+
+🔍 信号分析
+  🟢 BTC    RSI: 15.9 MOM:  +0.4% BB:   66% 评分: +50 STRONG_BUY
+  🟢 ETH    RSI: 26.0 MOM:  +0.4% BB:   64% 评分: +30 BUY
+  🟢 SOL    RSI: 22.1 MOM:  -0.8% BB:   19% 评分: +70 STRONG_BUY
+  🟢 XRP    RSI: 28.4 MOM:  -0.8% BB:   27% 评分: +40 BUY
+  🟢 ADA    RSI: 15.8 MOM:  -2.2% BB:   18% 评分: +60 STRONG_BUY
+  🟢 DOGE   RSI: 22.4 MOM:  -1.6% BB:   22% 评分: +40 BUY
+  🟢 LINK   RSI: 14.3 MOM:  -1.8% BB:   25% 评分: +40 BUY
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 10:49:18] Running g16
+=========
+
+📊 账户概览
+  现货: $0.00
+  全仓: $0.00
+  合约: $29.99
+
+🔍 信号分析
+  🟢 BTC    RSI: 25.0 MOM:  +0.5% BB:   70% 评分: +50 STRONG_BUY
+  🟢 ETH    RSI: 35.0 MOM:  +0.5% BB:   70% 评分: +30 BUY
+  🟢 SOL    RSI: 28.7 MOM:  -0.6% BB:   28% 评分: +40 BUY
+  🟢 XRP    RSI: 30.6 MOM:  -0.8% BB:   31% 评分: +40 BUY
+  🟢 ADA    RSI: 17.9 MOM:  -2.2% BB:   19% 评分: +60 STRONG_BUY
+  🟢 DOGE   RSI: 25.0 MOM:  -1.5% BB:   25% 评分: +30 BUY
+  🟢 LINK   RSI:  7.7 MOM:  -1.9% BB:   20% 评分: +40 BUY
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 10:54:24] Running g16
+=========
+
+📊 账户概览
+  现货: $0.00
+  全仓: $0.00
+  合约: $29.99
+
+🔍 信号分析
+  🟢 BTC    RSI: 22.6 MOM:  +0.5% BB:   69% 评分: +50 STRONG_BUY
+  🟢 ETH    RSI: 33.7 MOM:  +0.5% BB:   69% 评分: +30 BUY
+  🟢 SOL    RSI: 24.5 MOM:  -0.7% BB:   23% 评分: +50 STRONG_BUY
+  🟢 XRP    RSI: 30.2 MOM:  -0.8% BB:   30% 评分: +40 BUY
+  🟢 ADA    RSI: 20.0 MOM:  -2.2% BB:   20% 评分: +40 BUY
+  🟢 DOGE   RSI: 25.0 MOM:  -1.5% BB:   25% 评分: +30 BUY
+  🟢 LINK   RSI: 14.3 MOM:  -1.8% BB:   25% 评分: +40 BUY
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 10:59:30] Running g16
+=========
+
+📊 账户概览
+  现货: $0.00
+  全仓: $0.00
+  合约: $30.00
+
+🔍 信号分析
+  🟢 BTC    RSI: 23.1 MOM:  +0.5% BB:   69% 评分: +50 STRONG_BUY
+  🟢 ETH    RSI: 31.7 MOM:  +0.5% BB:   68% 评分: +30 BUY
+  🟢 SOL    RSI: 26.0 MOM:  -0.7% BB:   25% 评分: +40 BUY
+  🟢 XRP    RSI: 26.5 MOM:  -0.8% BB:   24% 评分: +40 BUY
+  🟢 ADA    RSI: 17.9 MOM:  -2.2% BB:   19% 评分: +60 STRONG_BUY
+  🟢 DOGE   RSI: 21.3 MOM:  -1.6% BB:   21% 评分: +40 BUY
+  🟢 LINK   RSI:  7.7 MOM:  -1.9% BB:   20% 评分: +40 BUY
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 11:04:38] Running g16
+===========
+
+📊 账户概览
+  现货: $0.00
+  全仓: $0.00
+  合约: $29.99
+
+🔍 信号分析
+  🟡 BTC    RSI: 50.0 MOM:  +0.5% BB:   72% 评分: +10 NEUTRAL
+  🟡 ETH    RSI: 49.1 MOM:  +0.7% BB:   73% 评分:  +0 NEUTRAL
+  🟢 SOL    RSI: 44.7 MOM:  -0.1% BB:   41% 评分: +25 BUY
+  🟢 XRP    RSI: 40.6 MOM:  -0.7% BB:   40% 评分: +25 BUY
+  🟢 ADA    RSI: 29.3 MOM:  -1.6% BB:   28% 评分: +30 BUY
+  🟡 DOGE   RSI: 35.4 MOM:  -1.7% BB:   34% 评分: +15 NEUTRAL
+  🟢 LINK   RSI: 25.0 MOM:  -1.4% BB:   32% 评分: +40 BUY
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 11:09:44] Running g16
+主转移
+======================================================================
+
+📊 账户概览
+  现货: $0.00
+  全仓: $0.00
+  合约: $29.99
+
+🔍 信号分析
+  🟢 BTC    RSI: 41.8 MOM:  +0.5% BB:   68% 评分: +25 BUY
+  🟡 ETH    RSI: 46.0 MOM:  +0.7% BB:   70% 评分:  +0 NEUTRAL
+  🟢 XRP    RSI: 32.4 MOM:  -0.8% BB:   24% 评分: +40 BUY
+  🟢 ADA    RSI: 23.7 MOM:  -1.7% BB:   24% 评分: +40 BUY
+  🟢 DOGE   RSI: 28.0 MOM:  -1.8% BB:   26% 评分: +30 BUY
+  🟢 LINK   RSI: 18.2 MOM:  -1.5% BB:   28% 评分: +40 BUY
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 11:14:50] Running g16
+====
+
+📊 账户概览
+  现货: $0.00
+  全仓: $0.00
+  合约: $29.99
+
+🔍 信号分析
+  🟡 BTC    RSI: 45.6 MOM:  +0.5% BB:   70% 评分: +10 NEUTRAL
+  🟡 ETH    RSI: 47.3 MOM:  +0.7% BB:   71% 评分:  +0 NEUTRAL
+  🟡 SOL    RSI: 45.8 MOM:  -0.1% BB:   42% 评分: +10 NEUTRAL
+  🟢 XRP    RSI: 30.6 MOM:  -0.9% BB:   18% 评分: +60 STRONG_BUY
+  🟢 ADA    RSI: 21.6 MOM:  -1.8% BB:   22% 评分: +40 BUY
+  🟢 DOGE   RSI: 31.1 MOM:  -1.8% BB:   29% 评分: +30 BUY
+  🟢 LINK   RSI: 25.0 MOM:  -1.4% BB:   32% 评分: +40 BUY
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 11:19:57] Running g16
+===============
+
+📊 账户概览
+  现货: $0.00
+  全仓: $0.00
+  合约: $30.00
+
+🔍 信号分析
+  🟢 BTC    RSI: 42.9 MOM:  +0.5% BB:   69% 评分: +25 BUY
+  🟡 ETH    RSI: 43.5 MOM:  +0.7% BB:   68% 评分: +15 NEUTRAL
+  🟡 SOL    RSI: 48.5 MOM:  -0.0% BB:   47% 评分: +10 NEUTRAL
+  🟢 XRP    RSI: 39.7 MOM:  -0.7% BB:   39% 评分: +25 BUY
+  🟢 ADA    RSI: 21.1 MOM:  -1.8% BB:   21% 评分: +40 BUY
+  🟢 DOGE   RSI: 29.6 MOM:  -1.8% BB:   27% 评分: +30 BUY
+  🟢 LINK   RSI: 25.0 MOM:  -1.4% BB:   32% 评分: +40 BUY
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 11:25:04] Running g16
+============
+
+📊 账户概览
+  现货: $0.00
+  全仓: $0.00
+  合约: $30.00
+
+🔍 信号分析
+  🟢 BTC    RSI: 39.6 MOM:  +0.5% BB:   67% 评分: +25 BUY
+  🟡 ETH    RSI: 39.5 MOM:  +0.6% BB:   63% 评分: +15 NEUTRAL
+  🟢 SOL    RSI: 44.1 MOM:  -0.1% BB:   40% 评分: +25 BUY
+  🟢 XRP    RSI: 32.4 MOM:  -0.8% BB:   24% 评分: +40 BUY
+  🟢 ADA    RSI: 19.0 MOM:  -2.0% BB:   15% 评分: +60 STRONG_BUY
+  🟢 DOGE   RSI: 26.7 MOM:  -1.9% BB:   24% 评分: +30 BUY
+  🟢 LINK   RSI: 10.0 MOM:  -1.6% BB:   23% 评分: +40 BUY
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 11:30:10] Running g16
+========
+
+📊 账户概览
+  现货: $0.00
+  全仓: $0.00
+  合约: $29.99
+
+🔍 信号分析
+  🟢 BTC    RSI: 38.3 MOM:  +0.5% BB:   66% 评分: +25 BUY
+  🟡 ETH    RSI: 40.4 MOM:  +0.6% BB:   64% 评分: +15 NEUTRAL
+  🟡 SOL    RSI: 45.8 MOM:  -0.1% BB:   42% 评分: +10 NEUTRAL
+  🟢 XRP    RSI: 33.1 MOM:  -0.8% BB:   26% 评分: +40 BUY
+  🟢 ADA    RSI: 20.5 MOM:  -1.9% BB:   19% 评分: +60 STRONG_BUY
+  🟢 DOGE   RSI: 28.8 MOM:  -1.8% BB:   26% 评分: +30 BUY
+  🟢 LINK   RSI: 18.2 MOM:  -1.5% BB:   28% 评分: +40 BUY
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 11:35:17] Running g16
+========
+
+📊 账户概览
+  现货: $0.00
+  全仓: $0.00
+  合约: $30.00
+
+🔍 信号分析
+  🟢 BTC    RSI: 40.8 MOM:  +0.5% BB:   68% 评分: +25 BUY
+  🟡 ETH    RSI: 43.2 MOM:  +0.6% BB:   67% 评分: +15 NEUTRAL
+  🟡 SOL    RSI: 47.5 MOM:  -0.0% BB:   45% 评分: +10 NEUTRAL
+  🟢 XRP    RSI: 35.1 MOM:  -0.7% BB:   31% 评分: +25 BUY
+  🟢 ADA    RSI: 20.5 MOM:  -1.9% BB:   19% 评分: +60 STRONG_BUY
+  🟢 DOGE   RSI: 27.2 MOM:  -1.9% BB:   25% 评分: +30 BUY
+  🟢 LINK   RSI: 25.0 MOM:  -1.4% BB:   32% 评分: +40 BUY
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 11:40:23] Running g16
+=============
+
+📊 账户概览
+  现货: $0.00
+  全仓: $0.00
+  合约: $29.99
+
+🔍 信号分析
+  🔴 BTC    RSI: 61.9 MOM:  +0.6% BB:   81% 评分: -25 SELL
+  🔴 ETH    RSI: 59.4 MOM:  +0.9% BB:   83% 评分: -35 SELL
+  🟡 SOL    RSI: 59.4 MOM:  +0.3% BB:   73% 评分:  -5 NEUTRAL
+  🟢 XRP    RSI: 43.7 MOM:  -0.6% BB:   47% 评分: +25 BUY
+  🟢 ADA    RSI: 27.5 MOM:  -1.7% BB:   27% 评分: +30 BUY
+  🟢 DOGE   RSI: 32.3 MOM:  -1.7% BB:   30% 评分: +30 BUY
+  🟡 LINK   RSI: 40.0 MOM:  -1.1% BB:   47% 评分: +15 NEUTRAL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 11:45:30] Running g16
+====
+
+📊 账户概览
+  现货: $0.00
+  全仓: $0.00
+  合约: $29.99
+
+🔍 信号分析
+  🟡 BTC    RSI: 52.1 MOM:  +0.5% BB:   74% 评分: +10 NEUTRAL
+  🟡 ETH    RSI: 50.2 MOM:  +0.7% BB:   74% 评分:  +0 NEUTRAL
+  🟡 SOL    RSI: 55.9 MOM:  +0.2% BB:   63% 评分:  -5 NEUTRAL
+  🟢 XRP    RSI: 36.6 MOM:  -0.7% BB:   33% 评分: +25 BUY
+  🟢 ADA    RSI: 20.0 MOM:  -1.9% BB:   18% 评分: +60 STRONG_BUY
+  🟢 DOGE   RSI: 26.3 MOM:  -1.9% BB:   22% 评分: +30 BUY
+  🟢 LINK   RSI: 30.8 MOM:  -1.3% BB:   37% 评分: +30 BUY
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 11:50:36] Running g16
+===========
+
+📊 账户概览
+  现货: $0.00
+  全仓: $0.00
+  合约: $29.99
+
+🔍 信号分析
+  🟡 BTC    RSI: 52.2 MOM:  +0.5% BB:   74% 评分: +10 NEUTRAL
+  🟡 ETH    RSI: 48.0 MOM:  +0.7% BB:   72% 评分:  +0 NEUTRAL
+  🟡 SOL    RSI: 58.7 MOM:  +0.3% BB:   71% 评分:  -5 NEUTRAL
+  🟢 XRP    RSI: 37.5 MOM:  -0.7% BB:   35% 评分: +25 BUY
+  🟢 ADA    RSI: 21.1 MOM:  -1.8% BB:   21% 评分: +40 BUY
+  🟢 DOGE   RSI: 26.3 MOM:  -1.9% BB:   22% 评分: +30 BUY
+  🟢 LINK   RSI: 30.8 MOM:  -1.3% BB:   37% 评分: +30 BUY
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 11:55:42] Running g16
+======================================================================
+
+📊 账户概览
+  现货: $0.00
+  全仓: $0.00
+  合约: $29.99
+
+🔍 信号分析
+  🟡 ETH    RSI: 45.1 MOM:  +0.7% BB:   69% 评分:  +0 NEUTRAL
+  🟡 SOL    RSI: 57.7 MOM:  +0.2% BB:   68% 评分:  -5 NEUTRAL
+  🟢 XRP    RSI: 37.5 MOM:  -0.7% BB:   35% 评分: +25 BUY
+  🟢 ADA    RSI: 21.1 MOM:  -1.8% BB:   21% 评分: +40 BUY
+  🟢 DOGE   RSI: 26.1 MOM:  -1.9% BB:   22% 评分: +30 BUY
+  🟢 LINK   RSI: 25.0 MOM:  -1.4% BB:   32% 评分: +40 BUY
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 12:00:49] Running g16
+===========
+
+📊 账户概览
+  现货: $0.00
+  全仓: $0.00
+  合约: $29.99
+
+🔍 信号分析
+  🟡 BTC    RSI: 53.5 MOM:  +0.5% BB:   70% 评分: +10 NEUTRAL
+  🟡 ETH    RSI: 41.3 MOM:  +0.6% BB:   70% 评分: +15 NEUTRAL
+  🟡 SOL    RSI: 48.0 MOM:  -0.3% BB:   71% 评分: +10 NEUTRAL
+  🟢 XRP    RSI: 31.2 MOM:  -0.6% BB:   34% 评分: +40 BUY
+  🟢 ADA    RSI: 25.6 MOM:  -2.1% BB:   21% 评分: +30 BUY
+  🟢 DOGE   RSI: 28.1 MOM:  -1.9% BB:   24% 评分: +30 BUY
+  🟢 LINK   RSI: 27.3 MOM:  -1.6% BB:   35% 评分: +30 BUY
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 12:05:55] Running g16
+========
+
+📊 账户概览
+  现货: $0.00
+  全仓: $0.00
+  合约: $29.99
+
+🔍 信号分析
+  🟡 BTC    RSI: 45.9 MOM:  +0.5% BB:   66% 评分: +10 NEUTRAL
+  🟡 ETH    RSI: 36.4 MOM:  +0.6% BB:   67% 评分: +15 NEUTRAL
+  🟢 SOL    RSI: 42.5 MOM:  -0.4% BB:   59% 评分: +25 BUY
+  🟢 XRP    RSI: 26.9 MOM:  -0.7% BB:   23% 评分: +40 BUY
+  🟢 ADA    RSI: 23.7 MOM:  -2.1% BB:   19% 评分: +60 STRONG_BUY
+  🟢 DOGE   RSI: 25.4 MOM:  -2.0% BB:   20% 评分: +30 BUY
+  🟢 LINK   RSI: 20.0 MOM:  -1.7% BB:   29% 评分: +40 BUY
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 12:11:02] Running g16
+===================
+
+📊 账户概览
+  现货: $0.00
+  全仓: $0.00
+  合约: $30.00
+
+🔍 信号分析
+  🟡 BTC    RSI: 46.8 MOM:  +0.5% BB:   66% 评分: +10 NEUTRAL
+  🟢 ETH    RSI: 33.5 MOM:  +0.5% BB:   63% 评分: +30 BUY
+  🟢 SOL    RSI: 42.9 MOM:  -0.4% BB:   60% 评分: +25 BUY
+  🟢 XRP    RSI: 26.7 MOM:  -0.7% BB:   23% 评分: +40 BUY
+  🟢 ADA    RSI: 25.6 MOM:  -2.1% BB:   21% 评分: +30 BUY
+  🟢 DOGE   RSI: 25.8 MOM:  -2.0% BB:   21% 评分: +30 BUY
+  🟢 LINK   RSI: 27.3 MOM:  -1.6% BB:   35% 评分: +30 BUY
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 12:16:10] Running g16
+===============
+
+📊 账户概览
+  现货: $0.00
+  全仓: $0.00
+  合约: $30.00
+
+🔍 信号分析
+  🟡 BTC    RSI: 50.0 MOM:  +0.5% BB:   68% 评分: +10 NEUTRAL
+  🟡 ETH    RSI: 39.0 MOM:  +0.6% BB:   68% 评分: +15 NEUTRAL
+  🟢 SOL    RSI: 44.6 MOM:  -0.4% BB:   64% 评分: +25 BUY
+  🟢 XRP    RSI: 28.2 MOM:  -0.7% BB:   28% 评分: +40 BUY
+  🟢 ADA    RSI: 29.3 MOM:  -2.0% BB:   24% 评分: +30 BUY
+  🟢 DOGE   RSI: 26.5 MOM:  -2.0% BB:   23% 评分: +30 BUY
+  🟢 LINK   RSI: 33.3 MOM:  -1.5% BB:   40% 评分: +30 BUY
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 12:21:16] Running g16
+============
+
+📊 账户概览
+  现货: $0.00
+  全仓: $0.00
+  合约: $29.99
+
+🔍 信号分析
+  🟡 BTC    RSI: 47.4 MOM:  +0.5% BB:   67% 评分: +10 NEUTRAL
+  🟢 ETH    RSI: 34.1 MOM:  +0.5% BB:   64% 评分: +30 BUY
+  🟢 SOL    RSI: 40.2 MOM:  -0.5% BB:   53% 评分: +25 BUY
+  🟢 XRP    RSI: 26.1 MOM:  -0.8% BB:   20% 评分: +40 BUY
+  🟢 ADA    RSI: 21.6 MOM:  -2.2% BB:   17% 评分: +60 STRONG_BUY
+  🟢 DOGE   RSI: 25.4 MOM:  -2.0% BB:   20% 评分: +30 BUY
+  🟢 LINK   RSI: 20.0 MOM:  -1.7% BB:   29% 评分: +40 BUY
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 12:26:25] Running g16
+========
+
+📊 账户概览
+  现货: $0.00
+  全仓: $0.00
+  合约: $29.99
+
+🔍 信号分析
+  🟡 BTC    RSI: 50.6 MOM:  +0.5% BB:   68% 评分: +10 NEUTRAL
+  🟡 ETH    RSI: 40.1 MOM:  +0.6% BB:   69% 评分: +15 NEUTRAL
+  🟢 SOL    RSI: 41.3 MOM:  -0.5% BB:   56% 评分: +25 BUY
+  🟢 XRP    RSI: 27.6 MOM:  -0.7% BB:   26% 评分: +40 BUY
+  🟢 ADA    RSI: 23.7 MOM:  -2.1% BB:   19% 评分: +60 STRONG_BUY
+  🟢 DOGE   RSI: 26.0 MOM:  -2.0% BB:   22% 评分: +30 BUY
+  🟢 LINK   RSI: 20.0 MOM:  -1.7% BB:   29% 评分: +40 BUY
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 12:31:31] Running g16
+===========
+
+📊 账户概览
+  现货: $0.00
+  全仓: $0.00
+  合约: $29.99
+
+🔍 信号分析
+  🟡 BTC    RSI: 59.4 MOM:  +0.6% BB:   73% 评分:  -5 NEUTRAL
+  🟡 ETH    RSI: 48.1 MOM:  +0.7% BB:   75% 评分:  +0 NEUTRAL
+  🟡 SOL    RSI: 46.4 MOM:  -0.4% BB:   68% 评分: +10 NEUTRAL
+  🟢 XRP    RSI: 31.7 MOM:  -0.6% BB:   35% 评分: +40 BUY
+  🟢 ADA    RSI: 29.3 MOM:  -2.0% BB:   24% 评分: +30 BUY
+  🟢 DOGE   RSI: 32.1 MOM:  -1.8% BB:   29% 评分: +30 BUY
+  🟢 LINK   RSI: 33.3 MOM:  -1.5% BB:   40% 评分: +30 BUY
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 12:36:39] Running g16
+===========
+
+📊 账户概览
+  现货: $0.00
+  全仓: $0.00
+  合约: $29.99
+
+🔍 信号分析
+  🟡 BTC    RSI: 56.8 MOM:  +0.5% BB:   71% 评分:  -5 NEUTRAL
+  🟡 ETH    RSI: 46.2 MOM:  +0.6% BB:   73% 评分:  +0 NEUTRAL
+  🟡 SOL    RSI: 48.5 MOM:  -0.3% BB:   72% 评分: +10 NEUTRAL
+  🟢 XRP    RSI: 34.8 MOM:  -0.6% BB:   40% 评分: +40 BUY
+  🟢 ADA    RSI: 31.0 MOM:  -2.0% BB:   26% 评分: +30 BUY
+  🟢 DOGE   RSI: 32.1 MOM:  -1.8% BB:   29% 评分: +30 BUY
+  🟢 LINK   RSI: 33.3 MOM:  -1.5% BB:   40% 评分: +30 BUY
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 12:41:45] Running g16
+===========
+
+📊 账户概览
+  现货: $0.00
+  全仓: $0.00
+  合约: $29.99
+
+🔍 信号分析
+  🟡 BTC    RSI: 58.4 MOM:  +0.6% BB:   72% 评分:  -5 NEUTRAL
+  🟡 ETH    RSI: 46.7 MOM:  +0.7% BB:   74% 评分:  +0 NEUTRAL
+  🟡 SOL    RSI: 49.5 MOM:  -0.3% BB:   74% 评分: +10 NEUTRAL
+  🟢 XRP    RSI: 37.7 MOM:  -0.5% BB:   45% 评分: +25 BUY
+  🟢 ADA    RSI: 32.6 MOM:  -2.0% BB:   28% 评分: +30 BUY
+  🟢 DOGE   RSI: 32.5 MOM:  -1.8% BB:   29% 评分: +30 BUY
+  🟢 LINK   RSI: 33.3 MOM:  -1.5% BB:   40% 评分: +30 BUY
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 12:46:52] Running g16
+============
+
+📊 账户概览
+  现货: $0.00
+  全仓: $0.00
+  合约: $30.00
+
+🔍 信号分析
+  🟢 BTC    RSI: 41.1 MOM:  +0.4% BB:   63% 评分: +25 BUY
+  🟡 ETH    RSI: 35.3 MOM:  +0.5% BB:   66% 评分: +15 NEUTRAL
+  🟢 SOL    RSI: 42.5 MOM:  -0.4% BB:   59% 评分: +25 BUY
+  🟢 XRP    RSI: 27.8 MOM:  -0.7% BB:   27% 评分: +40 BUY
+  🟢 ADA    RSI: 23.7 MOM:  -2.1% BB:   19% 评分: +60 STRONG_BUY
+  🟢 DOGE   RSI: 25.5 MOM:  -2.0% BB:   20% 评分: +30 BUY
+  🟢 LINK   RSI: 18.2 MOM:  -1.8% BB:   24% 评分: +40 BUY
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 12:52:00] Running g16
+===========
+
+📊 账户概览
+  现货: $0.00
+  全仓: $0.00
+  合约: $30.00
+
+🔍 信号分析
+  🟡 BTC    RSI: 48.4 MOM:  +0.5% BB:   67% 评分: +10 NEUTRAL
+  🟡 ETH    RSI: 41.7 MOM:  +0.6% BB:   70% 评分: +15 NEUTRAL
+  🟡 SOL    RSI: 46.4 MOM:  -0.4% BB:   68% 评分: +10 NEUTRAL
+  🟢 XRP    RSI: 34.4 MOM:  -0.6% BB:   39% 评分: +40 BUY
+  🟢 ADA    RSI: 25.6 MOM:  -2.1% BB:   21% 评分: +30 BUY
+  🟢 DOGE   RSI: 30.4 MOM:  -1.9% BB:   27% 评分: +30 BUY
+  🟢 LINK   RSI: 20.0 MOM:  -1.7% BB:   29% 评分: +40 BUY
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 12:57:05] Running g16
+===========
+
+📊 账户概览
+  现货: $0.00
+  全仓: $0.00
+  合约: $30.00
+
+🔍 信号分析
+  🟡 BTC    RSI: 49.3 MOM:  +0.5% BB:   68% 评分: +10 NEUTRAL
+  🟡 ETH    RSI: 42.9 MOM:  +0.6% BB:   71% 评分: +15 NEUTRAL
+  🟡 SOL    RSI: 45.9 MOM:  -0.4% BB:   67% 评分: +10 NEUTRAL
+  🟢 XRP    RSI: 38.6 MOM:  -0.5% BB:   46% 评分: +25 BUY
+  🟢 ADA    RSI: 31.0 MOM:  -2.0% BB:   26% 评分: +30 BUY
+  🟢 DOGE   RSI: 30.4 MOM:  -1.9% BB:   27% 评分: +30 BUY
+  🟢 LINK   RSI: 27.3 MOM:  -1.6% BB:   35% 评分: +30 BUY
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 13:02:12] Running g16
+=====
+
+📊 账户概览
+  现货: $0.00
+  全仓: $0.00
+  合约: $30.00
+
+🔍 信号分析
+  🟢 BTC    RSI: 38.7 MOM:  +0.6% BB:   59% 评分: +25 BUY
+  🟢 ETH    RSI: 37.6 MOM:  +0.5% BB:   62% 评分: +25 BUY
+  🟡 SOL    RSI: 45.5 MOM:  -0.3% BB:   49% 评分: +10 NEUTRAL
+  🟢 XRP    RSI: 24.6 MOM:  -0.7% BB:   25% 评分: +50 STRONG_BUY
+  🟢 ADA    RSI: 19.5 MOM:  -1.9% BB:   16% 评分: +60 STRONG_BUY
+  🟢 DOGE   RSI: 29.4 MOM:  -2.1% BB:   21% 评分: +30 BUY
+  🟢 LINK   RSI: 27.3 MOM:  -1.1% BB:   31% 评分: +30 BUY
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 13:07:20] Running g16
+========
+
+📊 账户概览
+  现货: $0.00
+  全仓: $0.00
+  合约: $30.00
+
+🔍 信号分析
+  🟢 BTC    RSI: 42.1 MOM:  +0.6% BB:   62% 评分: +25 BUY
+  🟡 ETH    RSI: 42.0 MOM:  +0.6% BB:   66% 评分: +15 NEUTRAL
+  🟡 SOL    RSI: 47.9 MOM:  -0.3% BB:   55% 评分: +10 NEUTRAL
+  🟢 XRP    RSI: 26.0 MOM:  -0.6% BB:   30% 评分: +40 BUY
+  🟢 ADA    RSI: 19.0 MOM:  -1.9% BB:   14% 评分: +60 STRONG_BUY
+  🟢 DOGE   RSI: 30.0 MOM:  -2.0% BB:   22% 评分: +30 BUY
+  🟢 LINK   RSI: 25.0 MOM:  -1.1% BB:   26% 评分: +40 BUY
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 13:12:28] Running g16
+====
+
+📊 账户概览
+  现货: $0.00
+  全仓: $0.00
+  合约: $30.00
+
+🔍 信号分析
+  🟡 BTC    RSI: 45.9 MOM:  +0.6% BB:   64% 评分: +10 NEUTRAL
+  🟡 ETH    RSI: 42.5 MOM:  +0.6% BB:   67% 评分: +15 NEUTRAL
+  🟡 SOL    RSI: 48.9 MOM:  -0.2% BB:   57% 评分: +10 NEUTRAL
+  🟢 XRP    RSI: 26.4 MOM:  -0.6% BB:   32% 评分: +40 BUY
+  🟢 ADA    RSI: 18.2 MOM:  -2.0% BB:   11% 评分: +60 STRONG_BUY
+  🟢 DOGE   RSI: 29.3 MOM:  -2.1% BB:   20% 评分: +30 BUY
+  🟢 LINK   RSI: 30.0 MOM:  -1.0% BB:   36% 评分: +30 BUY
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 13:17:34] Running g16
+====
+
+📊 账户概览
+  现货: $0.00
+  全仓: $0.00
+  合约: $30.00
+
+🔍 信号分析
+  🟡 BTC    RSI: 47.7 MOM:  +0.6% BB:   65% 评分: +10 NEUTRAL
+  🟡 ETH    RSI: 43.6 MOM:  +0.6% BB:   67% 评分: +15 NEUTRAL
+  🟡 SOL    RSI: 52.2 MOM:  -0.2% BB:   63% 评分: +10 NEUTRAL
+  🟢 XRP    RSI: 27.3 MOM:  -0.6% BB:   35% 评分: +40 BUY
+  🟢 ADA    RSI: 17.8 MOM:  -2.0% BB:    9% 评分: +60 STRONG_BUY
+  🟢 DOGE   RSI: 29.6 MOM:  -2.1% BB:   21% 评分: +30 BUY
+  🟢 LINK   RSI: 27.3 MOM:  -1.1% BB:   31% 评分: +30 BUY
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 13:22:41] Running g16
+====
+
+📊 账户概览
+  现货: $0.00
+  全仓: $0.00
+  合约: $29.99
+
+🔍 信号分析
+  🟡 BTC    RSI: 51.0 MOM:  +0.7% BB:   67% 评分: +10 NEUTRAL
+  🟡 ETH    RSI: 45.6 MOM:  +0.6% BB:   69% 评分:  +0 NEUTRAL
+  🟡 SOL    RSI: 53.8 MOM:  -0.1% BB:   66% 评分: +10 NEUTRAL
+  🟢 XRP    RSI: 30.6 MOM:  -0.5% BB:   41% 评分: +40 BUY
+  🟢 ADA    RSI: 20.0 MOM:  -1.8% BB:   18% 评分: +60 STRONG_BUY
+  🟢 DOGE   RSI: 30.6 MOM:  -2.0% BB:   23% 评分: +30 BUY
+  🟢 LINK   RSI: 30.0 MOM:  -1.0% BB:   36% 评分: +30 BUY
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 13:27:47] Running g16
+=======
+
+📊 账户概览
+  现货: $0.00
+  全仓: $0.00
+  合约: $30.00
+
+🔍 信号分析
+  🟡 BTC    RSI: 55.5 MOM:  +0.7% BB:   70% 评分:  -5 NEUTRAL
+  🟡 ETH    RSI: 49.7 MOM:  +0.7% BB:   72% 评分:  +0 NEUTRAL
+  🟡 SOL    RSI: 57.8 MOM:  -0.1% BB:   75% 评分:  -5 NEUTRAL
+  🟢 XRP    RSI: 35.3 MOM:  -0.4% BB:   49% 评分: +25 BUY
+  🟢 ADA    RSI: 25.6 MOM:  -1.6% BB:   27% 评分: +30 BUY
+  🟢 DOGE   RSI: 33.3 MOM:  -1.9% BB:   27% 评分: +30 BUY
+  🟡 LINK   RSI: 36.4 MOM:  -0.9% BB:   41% 评分: +15 NEUTRAL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 13:32:55] Running g16
+===========
+
+📊 账户概览
+  现货: $0.00
+  全仓: $0.00
+  合约: $30.00
+
+🔍 信号分析
+  🟡 BTC    RSI: 47.5 MOM:  +0.6% BB:   65% 评分: +10 NEUTRAL
+  🟡 ETH    RSI: 46.3 MOM:  +0.6% BB:   69% 评分:  +0 NEUTRAL
+  🟡 SOL    RSI: 56.1 MOM:  -0.1% BB:   71% 评分:  -5 NEUTRAL
+  🟢 XRP    RSI: 32.3 MOM:  -0.5% BB:   44% 评分: +40 BUY
+  🟢 ADA    RSI: 25.6 MOM:  -1.6% BB:   27% 评分: +30 BUY
+  🟢 DOGE   RSI: 34.2 MOM:  -1.9% BB:   28% 评分: +30 BUY
+  🟢 LINK   RSI: 30.0 MOM:  -1.0% BB:   36% 评分: +30 BUY
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 13:38:01] Running g16
+===
+
+📊 账户概览
+  现货: $0.00
+  全仓: $0.00
+  合约: $29.99
+
+🔍 信号分析
+  🟡 BTC    RSI: 48.7 MOM:  +0.6% BB:   66% 评分: +10 NEUTRAL
+  🟡 ETH    RSI: 47.2 MOM:  +0.6% BB:   70% 评分:  +0 NEUTRAL
+  🟡 SOL    RSI: 55.7 MOM:  -0.1% BB:   70% 评分:  -5 NEUTRAL
+  🟢 XRP    RSI: 35.8 MOM:  -0.4% BB:   50% 评分: +25 BUY
+  🟢 ADA    RSI: 29.3 MOM:  -1.6% BB:   31% 评分: +30 BUY
+  🟡 DOGE   RSI: 36.9 MOM:  -1.9% BB:   31% 评分: +15 NEUTRAL
+  🟡 LINK   RSI: 36.4 MOM:  -0.9% BB:   41% 评分: +15 NEUTRAL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 13:43:08] Running g16
+===========
+
+📊 账户概览
+  现货: $0.00
+  全仓: $0.00
+  合约: $30.00
+
+🔍 信号分析
+  🟢 BTC    RSI: 41.8 MOM:  +0.6% BB:   62% 评分: +25 BUY
+  🟡 ETH    RSI: 43.7 MOM:  +0.6% BB:   67% 评分: +15 NEUTRAL
+  🟡 SOL    RSI: 53.8 MOM:  -0.1% BB:   66% 评分: +10 NEUTRAL
+  🟢 XRP    RSI: 30.1 MOM:  -0.5% BB:   40% 评分: +40 BUY
+  🟢 ADA    RSI: 21.6 MOM:  -1.7% BB:   23% 评分: +40 BUY
+  🟢 DOGE   RSI: 34.2 MOM:  -1.9% BB:   28% 评分: +30 BUY
+  🟡 LINK   RSI: 36.4 MOM:  -0.9% BB:   41% 评分: +15 NEUTRAL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 13:48:14] Running g16
+=======
+
+📊 账户概览
+  现货: $0.00
+  全仓: $0.00
+  合约: $30.00
+
+🔍 信号分析
+  🟢 BTC    RSI: 41.3 MOM:  +0.6% BB:   61% 评分: +25 BUY
+  🟡 ETH    RSI: 42.1 MOM:  +0.6% BB:   66% 评分: +15 NEUTRAL
+  🟡 SOL    RSI: 54.7 MOM:  -0.1% BB:   68% 评分: +10 NEUTRAL
+  🟢 XRP    RSI: 30.6 MOM:  -0.5% BB:   41% 评分: +40 BUY
+  🟢 ADA    RSI: 21.6 MOM:  -1.7% BB:   23% 评分: +40 BUY
+  🟡 DOGE   RSI: 36.5 MOM:  -1.9% BB:   31% 评分: +15 NEUTRAL
+  🟡 LINK   RSI: 41.7 MOM:  -0.8% BB:   47% 评分: +15 NEUTRAL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 13:53:20] Running g16
+============
+
+📊 账户概览
+  现货: $0.00
+  全仓: $0.00
+  合约: $30.00
+
+🔍 信号分析
+  🟢 BTC    RSI: 35.6 MOM:  +0.5% BB:   57% 评分: +25 BUY
+  🟢 ETH    RSI: 37.6 MOM:  +0.5% BB:   62% 评分: +25 BUY
+  🟡 SOL    RSI: 50.0 MOM:  -0.2% BB:   59% 评分: +10 NEUTRAL
+  🟢 XRP    RSI: 30.1 MOM:  -0.5% BB:   40% 评分: +40 BUY
+  🟢 ADA    RSI: 20.0 MOM:  -1.8% BB:   18% 评分: +60 STRONG_BUY
+  🟢 DOGE   RSI: 31.6 MOM:  -2.0% BB:   25% 评分: +30 BUY
+  🟢 LINK   RSI: 30.0 MOM:  -1.0% BB:   36% 评分: +30 BUY
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 13:58:26] Running g16
+========
+
+📊 账户概览
+  现货: $0.00
+  全仓: $0.00
+  合约: $30.00
+
+🔍 信号分析
+  🟢 BTC    RSI: 35.2 MOM:  +0.5% BB:   56% 评分: +25 BUY
+  🟡 ETH    RSI: 39.7 MOM:  +0.6% BB:   64% 评分: +15 NEUTRAL
+  🟡 SOL    RSI: 51.7 MOM:  -0.2% BB:   62% 评分: +10 NEUTRAL
+  🟢 XRP    RSI: 28.9 MOM:  -0.5% BB:   39% 评分: +40 BUY
+  🟢 ADA    RSI: 19.0 MOM:  -1.9% BB:   14% 评分: +60 STRONG_BUY
+  🟢 DOGE   RSI: 30.4 MOM:  -2.0% BB:   23% 评分: +30 BUY
+  🟢 LINK   RSI: 30.0 MOM:  -1.0% BB:   36% 评分: +30 BUY
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 14:03:34] Running g16
+======
+
+📊 账户概览
+  现货: $0.00
+  全仓: $0.00
+  合约: $29.99
+
+🔍 信号分析
+  🟡 BTC    RSI: 60.1 MOM:  +0.6% BB:   57% 评分:  -5 NEUTRAL
+  🟡 ETH    RSI: 60.6 MOM:  +0.6% BB:   66% 评分:  -5 NEUTRAL
+  🔴 SOL    RSI: 67.6 MOM:  -0.4% BB:   65% 评分: -20 SELL
+  🟢 XRP    RSI: 36.6 MOM:  -0.4% BB:   39% 评分: +25 BUY
+  🟢 ADA    RSI: 34.5 MOM:  -1.9% BB:   21% 评分: +30 BUY
+  🟡 DOGE   RSI: 38.3 MOM:  -1.6% BB:   25% 评分: +15 NEUTRAL
+  🟡 LINK   RSI: 55.6 MOM:  -0.9% BB:   48% 评分: -15 NEUTRAL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 14:08:40] Running g16
+==
+
+📊 账户概览
+  现货: $0.00
+  全仓: $0.00
+  合约: $29.99
+
+🔍 信号分析
+  🟡 BTC    RSI: 62.5 MOM:  +0.6% BB:   58% 评分:  -5 NEUTRAL
+  🟡 ETH    RSI: 61.7 MOM:  +0.6% BB:   67% 评分:  -5 NEUTRAL
+  🔴 SOL    RSI: 67.1 MOM:  -0.4% BB:   64% 评分: -20 SELL
+  🟢 XRP    RSI: 37.9 MOM:  -0.4% BB:   41% 评分: +25 BUY
+  🟡 ADA    RSI: 36.7 MOM:  -1.9% BB:   23% 评分: +15 NEUTRAL
+  🟡 DOGE   RSI: 36.4 MOM:  -1.7% BB:   22% 评分: +15 NEUTRAL
+  🟡 LINK   RSI: 44.4 MOM:  -1.1% BB:   37% 评分: +15 NEUTRAL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 14:13:47] Running g16
+账户概览
+  现货: $0.00
+  全仓: $0.00
+  合约: $29.99
+
+🔍 信号分析
+  🟡 BTC    RSI: 58.2 MOM:  +0.6% BB:   55% 评分:  -5 NEUTRAL
+  🟡 ETH    RSI: 57.9 MOM:  +0.6% BB:   64% 评分:  -5 NEUTRAL
+  🔴 SOL    RSI: 65.2 MOM:  -0.4% BB:   60% 评分: -20 SELL
+  🟢 XRP    RSI: 31.8 MOM:  -0.5% BB:   28% 评分: +40 BUY
+  🟢 ADA    RSI: 24.2 MOM:  -2.2% BB:    8% 评分: +60 STRONG_BUY
+  🟢 DOGE   RSI: 32.7 MOM:  -1.8% BB:   16% 评分: +50 STRONG_BUY
+  🟡 LINK   RSI: 44.4 MOM:  -1.1% BB:   37% 评分: +15 NEUTRAL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 14:18:54] Running g16
+账户概览
+  现货: $0.00
+  全仓: $0.00
+  合约: $29.99
+
+🔍 信号分析
+  🟡 BTC    RSI: 61.0 MOM:  +0.6% BB:   57% 评分:  -5 NEUTRAL
+  🟡 ETH    RSI: 61.8 MOM:  +0.6% BB:   67% 评分:  -5 NEUTRAL
+  🔴 SOL    RSI: 65.2 MOM:  -0.4% BB:   60% 评分: -20 SELL
+  🟢 XRP    RSI: 33.0 MOM:  -0.5% BB:   31% 评分: +40 BUY
+  🟢 ADA    RSI: 23.5 MOM:  -2.3% BB:    6% 评分: +60 STRONG_BUY
+  🟢 DOGE   RSI: 34.0 MOM:  -1.7% BB:   18% 评分: +50 STRONG_BUY
+  🟡 LINK   RSI: 44.4 MOM:  -1.1% BB:   37% 评分: +15 NEUTRAL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 14:24:00] Running g16
+账户概览
+  现货: $0.00
+  全仓: $0.00
+  合约: $30.00
+
+🔍 信号分析
+  🟡 BTC    RSI: 56.4 MOM:  +0.6% BB:   54% 评分:  -5 NEUTRAL
+  🟡 ETH    RSI: 58.0 MOM:  +0.6% BB:   64% 评分:  -5 NEUTRAL
+  🔴 SOL    RSI: 66.2 MOM:  -0.4% BB:   62% 评分: -20 SELL
+  🟢 XRP    RSI: 31.2 MOM:  -0.5% BB:   26% 评分: +40 BUY
+  🟢 ADA    RSI: 23.5 MOM:  -2.3% BB:    6% 评分: +60 STRONG_BUY
+  🟢 DOGE   RSI: 33.6 MOM:  -1.8% BB:   17% 评分: +50 STRONG_BUY
+  🟡 LINK   RSI: 36.4 MOM:  -1.2% BB:   27% 评分: +15 NEUTRAL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 14:29:09] Running g16
+览
+  现货: $0.00
+  全仓: $0.00
+  合约: $30.00
+
+🔍 信号分析
+  🟡 BTC    RSI: 48.4 MOM:  +0.6% BB:   50% 评分: +10 NEUTRAL
+  🟡 ETH    RSI: 51.9 MOM:  +0.5% BB:   60% 评分: +10 NEUTRAL
+  🟡 SOL    RSI: 61.6 MOM:  -0.5% BB:   56% 评分:  -5 NEUTRAL
+  🟢 XRP    RSI: 30.4 MOM:  -0.5% BB:   24% 评分: +40 BUY
+  🟢 ADA    RSI: 22.9 MOM:  -2.3% BB:    4% 评分: +60 STRONG_BUY
+  🟢 DOGE   RSI: 34.5 MOM:  -1.7% BB:   19% 评分: +50 STRONG_BUY
+  🟡 LINK   RSI: 36.4 MOM:  -1.2% BB:   27% 评分: +15 NEUTRAL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 14:34:18] Running g16
+览
+  现货: $0.00
+  全仓: $0.00
+  合约: $30.00
+
+🔍 信号分析
+  🟡 BTC    RSI: 46.8 MOM:  +0.5% BB:   49% 评分: +10 NEUTRAL
+  🟡 ETH    RSI: 56.6 MOM:  +0.6% BB:   63% 评分:  -5 NEUTRAL
+  🟡 SOL    RSI: 62.5 MOM:  -0.5% BB:   57% 评分:  -5 NEUTRAL
+  🟢 XRP    RSI: 31.5 MOM:  -0.5% BB:   27% 评分: +40 BUY
+  🟢 ADA    RSI: 23.5 MOM:  -2.3% BB:    6% 评分: +60 STRONG_BUY
+  🟢 DOGE   RSI: 34.8 MOM:  -1.7% BB:   20% 评分: +50 STRONG_BUY
+  🟡 LINK   RSI: 36.4 MOM:  -1.2% BB:   27% 评分: +15 NEUTRAL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 14:39:23] Running g16
+
+📊 账户概览
+  现货: $0.00
+  全仓: $0.00
+  合约: $29.99
+
+🔍 信号分析
+  🟡 BTC    RSI: 57.6 MOM:  +0.6% BB:   55% 评分:  -5 NEUTRAL
+  🟡 ETH    RSI: 63.1 MOM:  +0.6% BB:   68% 评分:  -5 NEUTRAL
+  🔴 SOL    RSI: 66.2 MOM:  -0.4% BB:   62% 评分: -20 SELL
+  🟢 XRP    RSI: 35.1 MOM:  -0.4% BB:   36% 评分: +25 BUY
+  🟢 ADA    RSI: 27.6 MOM:  -2.1% BB:   14% 评分: +50 STRONG_BUY
+  🟡 DOGE   RSI: 36.4 MOM:  -1.7% BB:   22% 评分: +15 NEUTRAL
+  🟡 LINK   RSI: 50.0 MOM:  -1.0% BB:   43% 评分:  +0 NEUTRAL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 14:44:30] Running g16
+
+📊 账户概览
+  现货: $0.00
+  全仓: $0.00
+  合约: $30.00
+
+🔍 信号分析
+  🟡 BTC    RSI: 57.1 MOM:  +0.6% BB:   55% 评分:  -5 NEUTRAL
+  🟡 ETH    RSI: 62.7 MOM:  +0.6% BB:   68% 评分:  -5 NEUTRAL
+  🔴 SOL    RSI: 67.1 MOM:  -0.4% BB:   64% 评分: -20 SELL
+  🟢 XRP    RSI: 34.7 MOM:  -0.4% BB:   35% 评分: +40 BUY
+  🟢 ADA    RSI: 27.6 MOM:  -2.1% BB:   14% 评分: +50 STRONG_BUY
+  🟡 DOGE   RSI: 35.6 MOM:  -1.7% BB:   21% 评分: +15 NEUTRAL
+  🟡 LINK   RSI: 55.6 MOM:  -0.9% BB:   48% 评分: -15 NEUTRAL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 14:49:37] Running g16
+
+📊 账户概览
+  现货: $0.00
+  全仓: $0.00
+  合约: $29.99
+
+🔍 信号分析
+  🟡 BTC    RSI: 64.9 MOM:  +0.6% BB:   60% 评分:  -5 NEUTRAL
+  🟡 ETH    RSI: 65.0 MOM:  +0.7% BB:   70% 评分:  -5 NEUTRAL
+  🔴 SOL    RSI: 68.4 MOM:  -0.4% BB:   67% 评分: -20 SELL
+  🟢 XRP    RSI: 35.8 MOM:  -0.4% BB:   38% 评分: +25 BUY
+  🟢 ADA    RSI: 32.1 MOM:  -2.0% BB:   19% 评分: +50 STRONG_BUY
+  🟡 DOGE   RSI: 35.6 MOM:  -1.7% BB:   21% 评分: +15 NEUTRAL
+  🟡 LINK   RSI: 60.0 MOM:  -0.8% BB:   54% 评分: -15 NEUTRAL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 14:54:43] Running g16
+=========
+
+📊 账户概览
+  现货: $0.00
+  全仓: $0.00
+  合约: $29.99
+
+🔍 信号分析
+  🔴 BTC    RSI: 65.9 MOM:  +0.6% BB:   61% 评分: -20 SELL
+  🟡 ETH    RSI: 64.4 MOM:  +0.6% BB:   70% 评分:  -5 NEUTRAL
+  🔴 SOL    RSI: 70.0 MOM:  -0.3% BB:   71% 评分: -20 SELL
+  🟢 XRP    RSI: 38.5 MOM:  -0.4% BB:   42% 评分: +25 BUY
+  🟢 ADA    RSI: 34.5 MOM:  -1.9% BB:   21% 评分: +30 BUY
+  🟡 DOGE   RSI: 38.3 MOM:  -1.6% BB:   25% 评分: +15 NEUTRAL
+  🟡 LINK   RSI: 63.6 MOM:  -0.7% BB:   59% 评分: -15 NEUTRAL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 14:59:49] Running g16
+
+📊 账户概览
+  现货: $0.00
+  全仓: $0.00
+  合约: $30.00
+
+🔍 信号分析
+  🟡 BTC    RSI: 63.3 MOM:  +0.6% BB:   59% 评分:  -5 NEUTRAL
+  🟡 ETH    RSI: 63.4 MOM:  +0.6% BB:   69% 评分:  -5 NEUTRAL
+  🔴 SOL    RSI: 68.0 MOM:  -0.4% BB:   66% 评分: -20 SELL
+  🟢 XRP    RSI: 39.8 MOM:  -0.4% BB:   43% 评分: +25 BUY
+  🟢 ADA    RSI: 28.6 MOM:  -2.0% BB:   16% 评分: +50 STRONG_BUY
+  🟡 DOGE   RSI: 36.9 MOM:  -1.6% BB:   23% 评分: +15 NEUTRAL
+  🟡 LINK   RSI: 63.6 MOM:  -0.7% BB:   59% 评分: -15 NEUTRAL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 15:04:55] Running g16
+==========
+
+📊 账户概览
+  现货: $0.00
+  全仓: $0.00
+  合约: $30.00
+
+🔍 信号分析
+  🔴 BTC    RSI: 65.1 MOM:  +0.4% BB:   59% 评分: -20 SELL
+  🔴 ETH    RSI: 83.8 MOM:  +0.5% BB:   68% 评分: -30 SELL
+  🔴 SOL    RSI: 81.3 MOM:  -0.2% BB:   78% 评分: -30 SELL
+  🔴 XRP    RSI: 69.2 MOM:  -0.4% BB:   50% 评分: -20 SELL
+  🟡 ADA    RSI: 44.8 MOM:  -2.1% BB:   28% 评分: +15 NEUTRAL
+  🟡 DOGE   RSI: 51.8 MOM:  -1.7% BB:   30% 评分:  +0 NEUTRAL
+  🔴 LINK   RSI: 80.0 MOM:  -0.7% BB:   68% 评分: -40 SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 15:10:03] Running g16
+===
+
+📊 账户概览
+  现货: $0.00
+  全仓: $0.00
+  合约: $30.00
+
+🔍 信号分析
+  🔴 BTC    RSI: 67.7 MOM:  +0.4% BB:   61% 评分: -20 SELL
+  🔴 ETH    RSI: 84.1 MOM:  +0.5% BB:   68% 评分: -30 SELL
+  🔴 SOL    RSI: 81.8 MOM:  -0.2% BB:   80% 评分: -50 STRONG_SELL
+  🔴 XRP    RSI: 68.7 MOM:  -0.4% BB:   49% 评分: -20 SELL
+  🟡 ADA    RSI: 48.4 MOM:  -2.0% BB:   32% 评分:  +0 NEUTRAL
+  🟡 DOGE   RSI: 50.0 MOM:  -1.7% BB:   28% 评分:  +0 NEUTRAL
+  🔴 LINK   RSI: 77.8 MOM:  -0.8% BB:   62% 评分: -40 SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 15:15:09] Running g16
+====
+
+📊 账户概览
+  现货: $0.00
+  全仓: $0.00
+  合约: $30.00
+
+🔍 信号分析
+  🟡 BTC    RSI: 63.0 MOM:  +0.4% BB:   57% 评分:  -5 NEUTRAL
+  🔴 ETH    RSI: 69.3 MOM:  +0.5% BB:   61% 评分: -20 SELL
+  🔴 SOL    RSI: 76.5 MOM:  -0.4% BB:   67% 评分: -30 SELL
+  🟡 XRP    RSI: 56.9 MOM:  -0.5% BB:   37% 评分:  -5 NEUTRAL
+  🟡 ADA    RSI: 42.9 MOM:  -2.1% BB:   26% 评分: +15 NEUTRAL
+  🟡 DOGE   RSI: 44.3 MOM:  -1.8% BB:   22% 评分: +15 NEUTRAL
+  🔴 LINK   RSI: 77.8 MOM:  -0.8% BB:   62% 评分: -40 SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 15:20:15] Running g16
+==========
+
+📊 账户概览
+  现货: $0.00
+  全仓: $0.00
+  合约: $29.99
+
+🔍 信号分析
+  🔴 BTC    RSI: 67.9 MOM:  +0.4% BB:   61% 评分: -20 SELL
+  🔴 ETH    RSI: 79.7 MOM:  +0.5% BB:   65% 评分: -30 SELL
+  🔴 SOL    RSI: 80.6 MOM:  -0.3% BB:   75% 评分: -30 SELL
+  🔴 XRP    RSI: 67.2 MOM:  -0.4% BB:   47% 评分: -20 SELL
+  🟡 ADA    RSI: 51.5 MOM:  -1.9% BB:   36% 评分:  +0 NEUTRAL
+  🟡 DOGE   RSI: 47.2 MOM:  -1.8% BB:   25% 评分:  +0 NEUTRAL
+  🔴 LINK   RSI: 80.0 MOM:  -0.7% BB:   68% 评分: -40 SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 15:25:21] Running g16
+===
+
+📊 账户概览
+  现货: $0.00
+  全仓: $0.00
+  合约: $29.99
+
+🔍 信号分析
+  🔴 BTC    RSI: 69.3 MOM:  +0.5% BB:   63% 评分: -20 SELL
+  🔴 ETH    RSI: 84.2 MOM:  +0.5% BB:   69% 评分: -30 SELL
+  🔴 SOL    RSI: 82.9 MOM:  -0.2% BB:   85% 评分: -50 STRONG_SELL
+  🔴 XRP    RSI: 74.7 MOM:  -0.3% BB:   62% 评分: -20 SELL
+  🟡 ADA    RSI: 56.8 MOM:  -1.8% BB:   45% 评分: -15 NEUTRAL
+  🟡 DOGE   RSI: 54.7 MOM:  -1.6% BB:   33% 评分:  +0 NEUTRAL
+  🔴 LINK   RSI: 83.3 MOM:  -0.5% BB:   80% 评分: -40 SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 15:30:27] Running g16
+===
+
+📊 账户概览
+  现货: $0.00
+  全仓: $0.00
+  合约: $29.99
+
+🔍 信号分析
+  🔴 BTC    RSI: 69.8 MOM:  +0.5% BB:   63% 评分: -20 SELL
+  🔴 ETH    RSI: 83.3 MOM:  +0.5% BB:   67% 评分: -30 SELL
+  🔴 SOL    RSI: 81.6 MOM:  -0.2% BB:   79% 评分: -30 SELL
+  🔴 XRP    RSI: 71.8 MOM:  -0.3% BB:   55% 评分: -20 SELL
+  🟡 ADA    RSI: 55.6 MOM:  -1.8% BB:   43% 评分: -15 NEUTRAL
+  🟡 DOGE   RSI: 54.3 MOM:  -1.6% BB:   33% 评分:  +0 NEUTRAL
+  🔴 LINK   RSI: 84.6 MOM:  -0.4% BB:   85% 评分: -60 STRONG_SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 15:35:34] Running g16
+账户概览
+  现货: $0.00
+  全仓: $0.00
+  合约: $30.00
+
+🔍 信号分析
+  🔴 BTC    RSI: 68.5 MOM:  +0.5% BB:   62% 评分: -20 SELL
+  🔴 ETH    RSI: 76.6 MOM:  +0.5% BB:   64% 评分: -30 SELL
+  🔴 SOL    RSI: 82.3 MOM:  -0.2% BB:   82% 评分: -50 STRONG_SELL
+  🔴 XRP    RSI: 72.6 MOM:  -0.3% BB:   57% 评分: -20 SELL
+  🟡 ADA    RSI: 56.8 MOM:  -1.8% BB:   45% 评分: -15 NEUTRAL
+  🟡 DOGE   RSI: 56.9 MOM:  -1.6% BB:   36% 评分: -15 NEUTRAL
+  🔴 LINK   RSI: 84.6 MOM:  -0.4% BB:   85% 评分: -60 STRONG_SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 15:40:41] Running g16
+账户概览
+  现货: $0.00
+  全仓: $0.00
+  合约: $29.99
+
+🔍 信号分析
+  🔴 BTC    RSI: 69.8 MOM:  +0.5% BB:   64% 评分: -20 SELL
+  🔴 ETH    RSI: 79.6 MOM:  +0.5% BB:   65% 评分: -30 SELL
+  🔴 SOL    RSI: 82.7 MOM:  -0.2% BB:   84% 评分: -50 STRONG_SELL
+  🔴 XRP    RSI: 71.8 MOM:  -0.3% BB:   55% 评分: -20 SELL
+  🟡 ADA    RSI: 55.6 MOM:  -1.8% BB:   43% 评分: -15 NEUTRAL
+  🟡 DOGE   RSI: 56.9 MOM:  -1.6% BB:   36% 评分: -15 NEUTRAL
+  🔴 LINK   RSI: 85.7 MOM:  -0.3% BB:   90% 评分: -60 STRONG_SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 15:45:49] Running g16
+账户概览
+  现货: $0.00
+  全仓: $0.00
+  合约: $29.99
+
+🔍 信号分析
+  🔴 BTC    RSI: 69.2 MOM:  +0.5% BB:   63% 评分: -20 SELL
+  🔴 ETH    RSI: 83.5 MOM:  +0.5% BB:   67% 评分: -30 SELL
+  🔴 SOL    RSI: 82.7 MOM:  -0.2% BB:   84% 评分: -50 STRONG_SELL
+  🔴 XRP    RSI: 75.3 MOM:  -0.3% BB:   64% 评分: -30 SELL
+  🟡 ADA    RSI: 59.0 MOM:  -1.7% BB:   49% 评分: -15 NEUTRAL
+  🟡 DOGE   RSI: 60.2 MOM:  -1.5% BB:   41% 评分: -15 NEUTRAL
+  🔴 LINK   RSI: 86.7 MOM:  -0.2% BB:   95% 评分: -60 STRONG_SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 15:50:55] Running g16
+账户概览
+  现货: $0.00
+  全仓: $0.00
+  合约: $29.99
+
+🔍 信号分析
+  🔴 BTC    RSI: 68.7 MOM:  +0.5% BB:   62% 评分: -20 SELL
+  🔴 ETH    RSI: 76.2 MOM:  +0.5% BB:   64% 评分: -30 SELL
+  🔴 SOL    RSI: 82.1 MOM:  -0.2% BB:   81% 评分: -50 STRONG_SELL
+  🔴 XRP    RSI: 77.3 MOM:  -0.2% BB:   70% 评分: -30 SELL
+  🟡 ADA    RSI: 57.9 MOM:  -1.7% BB:   47% 评分: -15 NEUTRAL
+  🟡 DOGE   RSI: 57.3 MOM:  -1.6% BB:   37% 评分: -15 NEUTRAL
+  🔴 LINK   RSI: 86.7 MOM:  -0.2% BB:   95% 评分: -60 STRONG_SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 15:56:01] Running g16
+==========
+
+📊 账户概览
+  现货: $0.00
+  全仓: $0.00
+  合约: $29.99
+
+🔍 信号分析
+  🔴 BTC    RSI: 65.7 MOM:  +0.4% BB:   59% 评分: -20 SELL
+  🔴 ETH    RSI: 71.8 MOM:  +0.5% BB:   62% 评分: -20 SELL
+  🔴 SOL    RSI: 81.1 MOM:  -0.2% BB:   77% 评分: -30 SELL
+  🔴 XRP    RSI: 75.3 MOM:  -0.3% BB:   64% 评分: -30 SELL
+  🟡 ADA    RSI: 55.6 MOM:  -1.8% BB:   43% 评分: -15 NEUTRAL
+  🟡 DOGE   RSI: 55.1 MOM:  -1.6% BB:   34% 评分: -15 NEUTRAL
+  🔴 LINK   RSI: 83.3 MOM:  -0.5% BB:   80% 评分: -40 SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 16:01:09] Running g16
+==========
+
+📊 账户概览
+  现货: $0.00
+  全仓: $0.00
+  合约: $29.99
+
+🔍 信号分析
+  🟡 BTC    RSI: 60.7 MOM:  +0.6% BB:   54% 评分:  -5 NEUTRAL
+  🔴 ETH    RSI: 66.3 MOM:  +0.6% BB:   56% 评分: -20 SELL
+  🔴 SOL    RSI: 85.1 MOM:  +0.2% BB:   72% 评分: -30 SELL
+  🔴 XRP    RSI: 91.8 MOM:  +0.0% BB:   56% 评分: -30 SELL
+  🟡 ADA    RSI: 63.3 MOM:  -1.0% BB:   38% 评分: -15 NEUTRAL
+  🔴 DOGE   RSI: 72.9 MOM:  -1.3% BB:   33% 评分: -30 SELL
+  🔴 LINK   RSI: 90.0 MOM:  -0.1% BB:   69% 评分: -40 SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 16:06:15] Running g16
+==========
+
+📊 账户概览
+  现货: $0.00
+  全仓: $0.00
+  合约: $30.00
+
+🔍 信号分析
+  🟡 BTC    RSI: 56.7 MOM:  +0.6% BB:   51% 评分:  -5 NEUTRAL
+  🟡 ETH    RSI: 64.3 MOM:  +0.6% BB:   55% 评分:  -5 NEUTRAL
+  🔴 SOL    RSI: 88.6 MOM:  +0.2% BB:   79% 评分: -30 SELL
+  🔴 XRP    RSI: 98.2 MOM:  +0.1% BB:   60% 评分: -30 SELL
+  🔴 ADA    RSI: 71.0 MOM:  -0.8% BB:   50% 评分: -30 SELL
+  🔴 DOGE   RSI: 76.2 MOM:  -1.3% BB:   35% 评分: -40 SELL
+  🔴 LINK   RSI: 50.0 MOM:  +0.2% BB:   86% 评分: -20 SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 16:11:22] Running g16
+==
+
+📊 账户概览
+  现货: $0.00
+  全仓: $0.00
+  合约: $29.99
+
+🔍 信号分析
+  🔴 BTC    RSI: 70.2 MOM:  +0.7% BB:   63% 评分: -20 SELL
+  🔴 ETH    RSI: 74.5 MOM:  +0.7% BB:   66% 评分: -20 SELL
+  🔴 SOL    RSI: 92.7 MOM:  +0.7% BB:  111% 评分: -50 STRONG_SELL
+  🔴 XRP    RSI: 98.9 MOM:  +0.3% BB:   87% 评分: -50 STRONG_SELL
+  🔴 ADA    RSI: 78.0 MOM:  -0.4% BB:   73% 评分: -40 SELL
+  🔴 DOGE   RSI: 82.3 MOM:  -1.0% BB:   50% 评分: -40 SELL
+  🔴 LINK   RSI: 50.0 MOM:  +0.5% BB:  100% 评分: -20 SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 16:16:28] Running g16
+=========
+
+📊 账户概览
+  现货: $0.00
+  全仓: $0.00
+  合约: $30.00
+
+🔍 信号分析
+  🔴 BTC    RSI: 66.2 MOM:  +0.6% BB:   58% 评分: -20 SELL
+  🔴 ETH    RSI: 71.5 MOM:  +0.7% BB:   62% 评分: -20 SELL
+  🔴 SOL    RSI: 91.6 MOM:  +0.5% BB:  101% 评分: -50 STRONG_SELL
+  🔴 XRP    RSI: 98.7 MOM:  +0.2% BB:   76% 评分: -30 SELL
+  🔴 ADA    RSI: 76.3 MOM:  -0.5% BB:   66% 评分: -40 SELL
+  🔴 DOGE   RSI: 78.5 MOM:  -1.2% BB:   40% 评分: -40 SELL
+  🔴 LINK   RSI: 50.0 MOM:  +0.4% BB:   95% 评分: -20 SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 16:21:35] Running g16
+==
+
+📊 账户概览
+  现货: $0.00
+  全仓: $0.00
+  合约: $29.99
+
+🔍 信号分析
+  🔴 BTC    RSI: 71.3 MOM:  +0.7% BB:   65% 评分: -20 SELL
+  🔴 ETH    RSI: 73.8 MOM:  +0.7% BB:   65% 评分: -20 SELL
+  🔴 SOL    RSI: 92.1 MOM:  +0.6% BB:  106% 评分: -50 STRONG_SELL
+  🔴 XRP    RSI: 98.9 MOM:  +0.3% BB:   87% 评分: -50 STRONG_SELL
+  🔴 ADA    RSI: 78.0 MOM:  -0.4% BB:   73% 评分: -40 SELL
+  🔴 DOGE   RSI: 78.7 MOM:  -1.2% BB:   40% 评分: -40 SELL
+  🔴 LINK   RSI: 50.0 MOM:  +0.4% BB:   95% 评分: -20 SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 16:26:42] Running g16
+户概览
+  现货: $0.00
+  全仓: $0.00
+  合约: $29.99
+
+🔍 信号分析
+  🔴 BTC    RSI: 77.8 MOM:  +0.8% BB:   77% 评分: -30 SELL
+  🔴 ETH    RSI: 77.5 MOM:  +0.8% BB:   73% 评分: -30 SELL
+  🔴 SOL    RSI: 92.9 MOM:  +0.7% BB:  113% 评分: -50 STRONG_SELL
+  🔴 XRP    RSI: 99.0 MOM:  +0.4% BB:   97% 评分: -50 STRONG_SELL
+  🔴 ADA    RSI: 80.9 MOM:  -0.2% BB:   86% 评分: -60 STRONG_SELL
+  🔴 DOGE   RSI: 81.5 MOM:  -1.0% BB:   48% 评分: -40 SELL
+  🔴 LINK   RSI: 50.0 MOM:  +0.6% BB:  104% 评分: -20 SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 16:31:48] Running g16
+户概览
+  现货: $0.00
+  全仓: $0.00
+  合约: $29.99
+
+🔍 信号分析
+  🔴 BTC    RSI: 78.6 MOM:  +0.8% BB:   79% 评分: -30 SELL
+  🔴 ETH    RSI: 77.5 MOM:  +0.8% BB:   73% 评分: -30 SELL
+  🔴 SOL    RSI: 93.2 MOM:  +0.7% BB:  116% 评分: -50 STRONG_SELL
+  🔴 XRP    RSI: 99.2 MOM:  +0.5% BB:  105% 评分: -50 STRONG_SELL
+  🔴 ADA    RSI: 83.0 MOM:  +0.0% BB:   97% 评分: -60 STRONG_SELL
+  🔴 DOGE   RSI: 82.3 MOM:  -1.0% BB:   50% 评分: -40 SELL
+  🔴 LINK   RSI: 50.0 MOM:  +0.7% BB:  108% 评分: -20 SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 16:36:56] Running g16
+户概览
+  现货: $0.00
+  全仓: $0.00
+  合约: $30.00
+
+🔍 信号分析
+  🔴 BTC    RSI: 76.4 MOM:  +0.8% BB:   74% 评分: -30 SELL
+  🔴 ETH    RSI: 75.1 MOM:  +0.7% BB:   68% 评分: -30 SELL
+  🔴 SOL    RSI: 92.7 MOM:  +0.7% BB:  112% 评分: -50 STRONG_SELL
+  🔴 XRP    RSI: 99.1 MOM:  +0.4% BB:   98% 评分: -50 STRONG_SELL
+  🔴 ADA    RSI: 82.4 MOM:  -0.0% BB:   93% 评分: -60 STRONG_SELL
+  🔴 DOGE   RSI: 80.0 MOM:  -1.1% BB:   44% 评分: -40 SELL
+  🔴 LINK   RSI: 50.0 MOM:  +0.7% BB:  108% 评分: -20 SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 16:42:03] Running g16
+户概览
+  现货: $0.00
+  全仓: $0.00
+  合约: $29.99
+
+🔍 信号分析
+  🔴 BTC    RSI: 73.5 MOM:  +0.7% BB:   68% 评分: -20 SELL
+  🔴 ETH    RSI: 73.4 MOM:  +0.7% BB:   65% 评分: -20 SELL
+  🔴 SOL    RSI: 92.7 MOM:  +0.7% BB:  112% 评分: -50 STRONG_SELL
+  🔴 XRP    RSI: 99.0 MOM:  +0.4% BB:   94% 评分: -50 STRONG_SELL
+  🔴 ADA    RSI: 80.4 MOM:  -0.2% BB:   84% 评分: -60 STRONG_SELL
+  🔴 DOGE   RSI: 78.5 MOM:  -1.2% BB:   40% 评分: -40 SELL
+  🔴 LINK   RSI: 50.0 MOM:  +0.7% BB:  108% 评分: -20 SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 16:47:09] Running g16
+户概览
+  现货: $0.00
+  全仓: $0.00
+  合约: $29.99
+
+🔍 信号分析
+  🔴 BTC    RSI: 73.7 MOM:  +0.7% BB:   69% 评分: -20 SELL
+  🔴 ETH    RSI: 72.9 MOM:  +0.7% BB:   64% 评分: -20 SELL
+  🔴 SOL    RSI: 92.7 MOM:  +0.7% BB:  112% 评分: -50 STRONG_SELL
+  🔴 XRP    RSI: 99.1 MOM:  +0.4% BB:   99% 评分: -50 STRONG_SELL
+  🔴 ADA    RSI: 80.4 MOM:  -0.2% BB:   84% 评分: -60 STRONG_SELL
+  🔴 DOGE   RSI: 77.3 MOM:  -1.2% BB:   37% 评分: -40 SELL
+  🔴 LINK   RSI: 50.0 MOM:  +0.6% BB:  104% 评分: -20 SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 16:52:16] Running g16
+户概览
+  现货: $0.00
+  全仓: $0.00
+  合约: $29.99
+
+🔍 信号分析
+  🔴 BTC    RSI: 75.0 MOM:  +0.7% BB:   71% 评分: -20 SELL
+  🔴 ETH    RSI: 75.0 MOM:  +0.7% BB:   67% 评分: -20 SELL
+  🔴 SOL    RSI: 93.3 MOM:  +0.8% BB:  117% 评分: -50 STRONG_SELL
+  🔴 XRP    RSI: 99.1 MOM:  +0.5% BB:  102% 评分: -50 STRONG_SELL
+  🔴 ADA    RSI: 81.6 MOM:  -0.1% BB:   89% 评分: -60 STRONG_SELL
+  🔴 DOGE   RSI: 79.6 MOM:  -1.1% BB:   42% 评分: -40 SELL
+  🔴 LINK   RSI: 50.0 MOM:  +0.7% BB:  108% 评分: -20 SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 16:57:23] Running g16
+户概览
+  现货: $0.00
+  全仓: $0.00
+  合约: $29.99
+
+🔍 信号分析
+  🔴 BTC    RSI: 73.6 MOM:  +0.7% BB:   69% 评分: -20 SELL
+  🔴 ETH    RSI: 75.0 MOM:  +0.7% BB:   67% 评分: -20 SELL
+  🔴 SOL    RSI: 93.4 MOM:  +0.8% BB:  118% 评分: -50 STRONG_SELL
+  🔴 XRP    RSI: 99.1 MOM:  +0.4% BB:   99% 评分: -50 STRONG_SELL
+  🔴 ADA    RSI: 82.4 MOM:  -0.0% BB:   93% 评分: -60 STRONG_SELL
+  🔴 DOGE   RSI: 78.7 MOM:  -1.2% BB:   40% 评分: -40 SELL
+  🔴 LINK   RSI: 50.0 MOM:  +0.8% BB:  112% 评分: -20 SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 17:02:31] Running g16
+户概览
+  现货: $0.00
+  全仓: $0.00
+  合约: $29.99
+
+🔍 信号分析
+  🔴 BTC    RSI: 69.5 MOM:  +0.8% BB:   76% 评分: -20 SELL
+  🔴 ETH    RSI: 68.3 MOM:  +0.8% BB:   72% 评分: -20 SELL
+  🔴 SOL    RSI: 95.2 MOM:  +1.3% BB:  128% 评分: -60 STRONG_SELL
+  🔴 XRP    RSI: 99.1 MOM:  +0.5% BB:  104% 评分: -50 STRONG_SELL
+  🔴 ADA    RSI: 81.3 MOM:  +0.1% BB:   96% 评分: -60 STRONG_SELL
+  🔴 DOGE   RSI: 74.7 MOM:  -0.6% BB:   59% 评分: -30 SELL
+  🔴 LINK   RSI: 50.0 MOM:  +0.8% BB:  105% 评分: -20 SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 17:07:37] Running g16
+户概览
+  现货: $0.00
+  全仓: $0.00
+  合约: $29.99
+
+🔍 信号分析
+  🔴 BTC    RSI: 66.3 MOM:  +0.7% BB:   72% 评分: -20 SELL
+  🔴 ETH    RSI: 68.2 MOM:  +0.8% BB:   72% 评分: -20 SELL
+  🔴 SOL    RSI: 95.2 MOM:  +1.3% BB:  128% 评分: -60 STRONG_SELL
+  🔴 XRP    RSI: 99.1 MOM:  +0.5% BB:  103% 评分: -50 STRONG_SELL
+  🔴 ADA    RSI: 78.7 MOM:  -0.0% BB:   91% 评分: -60 STRONG_SELL
+  🔴 DOGE   RSI: 74.7 MOM:  -0.6% BB:   59% 评分: -30 SELL
+  🔴 LINK   RSI: 50.0 MOM:  +0.8% BB:  105% 评分: -20 SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 17:12:43] Running g16
+户概览
+  现货: $0.00
+  全仓: $0.00
+  合约: $29.99
+
+🔍 信号分析
+  🔴 BTC    RSI: 68.0 MOM:  +0.7% BB:   74% 评分: -20 SELL
+  🔴 ETH    RSI: 65.8 MOM:  +0.8% BB:   69% 评分: -20 SELL
+  🔴 SOL    RSI: 95.1 MOM:  +1.2% BB:  126% 评分: -60 STRONG_SELL
+  🔴 XRP    RSI: 99.1 MOM:  +0.5% BB:  104% 评分: -50 STRONG_SELL
+  🔴 ADA    RSI: 74.0 MOM:  -0.1% BB:   85% 评分: -50 STRONG_SELL
+  🔴 DOGE   RSI: 74.4 MOM:  -0.7% BB:   58% 评分: -30 SELL
+  🔴 LINK   RSI: 50.0 MOM:  +0.8% BB:  105% 评分: -20 SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 17:17:51] Running g16
+账户概览
+  现货: $0.00
+  全仓: $0.00
+  合约: $29.99
+
+🔍 信号分析
+  🟡 BTC    RSI: 64.8 MOM:  +0.7% BB:   70% 评分:  -5 NEUTRAL
+  🟡 ETH    RSI: 60.8 MOM:  +0.7% BB:   65% 评分:  -5 NEUTRAL
+  🔴 SOL    RSI: 94.7 MOM:  +1.1% BB:  122% 评分: -60 STRONG_SELL
+  🔴 XRP    RSI: 95.2 MOM:  +0.4% BB:   98% 评分: -50 STRONG_SELL
+  🔴 ADA    RSI: 69.8 MOM:  -0.3% BB:   79% 评分: -30 SELL
+  🔴 DOGE   RSI: 73.0 MOM:  -0.7% BB:   56% 评分: -30 SELL
+  🔴 LINK   RSI: 50.0 MOM:  +1.0% BB:  111% 评分: -20 SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 17:22:57] Running g16
+========================================================
+
+📊 账户概览
+  现货: $0.00
+  全仓: $0.00
+  合约: $29.99
+
+🔍 信号分析
+  🟡 BTC    RSI: 63.6 MOM:  +0.7% BB:   69% 评分:  -5 NEUTRAL
+  🟡 ETH    RSI: 60.4 MOM:  +0.7% BB:   65% 评分:  -5 NEUTRAL
+  🔴 SOL    RSI: 94.7 MOM:  +1.1% BB:  123% 评分: -60 STRONG_SELL
+  🔴 ADA    RSI: 66.1 MOM:  -0.4% BB:   73% 评分: -30 SELL
+  🟡 DOGE   RSI: 59.3 MOM:  -0.9% BB:   44% 评分: -15 NEUTRAL
+  🔴 LINK   RSI: 50.0 MOM:  +1.0% BB:  111% 评分: -20 SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 17:28:04] Running g16
+账户概览
+  现货: $0.00
+  全仓: $0.00
+  合约: $29.99
+
+🔍 信号分析
+  🟡 BTC    RSI: 63.4 MOM:  +0.7% BB:   69% 评分:  -5 NEUTRAL
+  🟡 ETH    RSI: 59.9 MOM:  +0.7% BB:   65% 评分:  -5 NEUTRAL
+  🔴 SOL    RSI: 95.1 MOM:  +1.2% BB:  126% 评分: -60 STRONG_SELL
+  🔴 XRP    RSI: 91.7 MOM:  +0.4% BB:   96% 评分: -50 STRONG_SELL
+  🔴 ADA    RSI: 69.8 MOM:  -0.3% BB:   79% 评分: -30 SELL
+  🔴 DOGE   RSI: 67.2 MOM:  -0.8% BB:   49% 评分: -30 SELL
+  🔴 LINK   RSI: 50.0 MOM:  +1.1% BB:  114% 评分: -20 SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 17:33:11] Running g16
+现货: $0.00
+  全仓: $0.00
+  合约: $29.99
+
+🔍 信号分析
+  🟡 BTC    RSI: 63.0 MOM:  +0.7% BB:   69% 评分:  -5 NEUTRAL
+  🟡 ETH    RSI: 58.4 MOM:  +0.7% BB:   64% 评分:  -5 NEUTRAL
+  🔴 SOL    RSI: 95.1 MOM:  +1.2% BB:  126% 评分: -60 STRONG_SELL
+  🔴 XRP    RSI: 93.5 MOM:  +0.4% BB:   97% 评分: -50 STRONG_SELL
+  🔴 ADA    RSI: 71.2 MOM:  -0.2% BB:   81% 评分: -50 STRONG_SELL
+  🔴 DOGE   RSI: 74.0 MOM:  -0.7% BB:   58% 评分: -30 SELL
+  🔴 LINK   RSI: 50.0 MOM:  +1.0% BB:  111% 评分: -20 SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 17:38:17] Running g16
+览
+  现货: $0.00
+  全仓: $0.00
+  合约: $29.99
+
+🔍 信号分析
+  🟡 BTC    RSI: 47.4 MOM:  +0.6% BB:   56% 评分: +10 NEUTRAL
+  🟡 ETH    RSI: 49.0 MOM:  +0.7% BB:   56% 评分: +10 NEUTRAL
+  🔴 SOL    RSI: 94.6 MOM:  +1.0% BB:  121% 评分: -60 STRONG_SELL
+  🔴 XRP    RSI: 75.2 MOM:  +0.2% BB:   82% 评分: -50 STRONG_SELL
+  🔴 ADA    RSI: 67.3 MOM:  -0.3% BB:   75% 评分: -30 SELL
+  🟡 DOGE   RSI: 64.3 MOM:  -0.9% BB:   46% 评分: -15 NEUTRAL
+  🔴 LINK   RSI: 50.0 MOM:  +1.0% BB:  111% 评分: -20 SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 17:43:25] Running g16
+ 现货: $0.00
+  全仓: $0.00
+  合约: $29.99
+
+🔍 信号分析
+  🟡 BTC    RSI: 49.5 MOM:  +0.6% BB:   58% 评分: +10 NEUTRAL
+  🟡 ETH    RSI: 47.8 MOM:  +0.6% BB:   55% 评分: +10 NEUTRAL
+  🔴 SOL    RSI: 94.7 MOM:  +1.1% BB:  123% 评分: -60 STRONG_SELL
+  🔴 XRP    RSI: 95.2 MOM:  +0.4% BB:   98% 评分: -50 STRONG_SELL
+  🟡 ADA    RSI: 64.9 MOM:  -0.4% BB:   71% 评分: -15 NEUTRAL
+  🟡 DOGE   RSI: 55.6 MOM:  -0.9% BB:   42% 评分: -15 NEUTRAL
+  🔴 LINK   RSI: 50.0 MOM:  +0.9% BB:  109% 评分: -20 SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 17:48:30] Running g16
+览
+  现货: $0.00
+  全仓: $0.00
+  合约: $29.99
+
+🔍 信号分析
+  🟡 BTC    RSI: 54.7 MOM:  +0.7% BB:   63% 评分: +10 NEUTRAL
+  🟡 ETH    RSI: 52.5 MOM:  +0.7% BB:   59% 评分: +10 NEUTRAL
+  🔴 SOL    RSI: 94.9 MOM:  +1.2% BB:  125% 评分: -60 STRONG_SELL
+  🔴 XRP    RSI: 99.1 MOM:  +0.5% BB:  104% 评分: -50 STRONG_SELL
+  🔴 ADA    RSI: 67.3 MOM:  -0.3% BB:   75% 评分: -30 SELL
+  🟡 DOGE   RSI: 50.7 MOM:  -1.0% BB:   38% 评分:  +0 NEUTRAL
+  🔴 LINK   RSI: 50.0 MOM:  +1.2% BB:  117% 评分: -20 SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 17:53:37] Running g16
+览
+  现货: $0.00
+  全仓: $0.00
+  合约: $30.00
+
+🔍 信号分析
+  🟡 BTC    RSI: 49.1 MOM:  +0.6% BB:   58% 评分: +10 NEUTRAL
+  🟡 ETH    RSI: 45.7 MOM:  +0.6% BB:   53% 评分: +10 NEUTRAL
+  🔴 SOL    RSI: 94.4 MOM:  +1.0% BB:  119% 评分: -60 STRONG_SELL
+  🔴 XRP    RSI: 99.1 MOM:  +0.5% BB:  103% 评分: -50 STRONG_SELL
+  🔴 ADA    RSI: 66.1 MOM:  -0.4% BB:   73% 评分: -30 SELL
+  🟡 DOGE   RSI: 47.3 MOM:  -1.0% BB:   36% 评分:  +0 NEUTRAL
+  🔴 LINK   RSI: 50.0 MOM:  +1.1% BB:  114% 评分: -20 SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 17:58:44] Running g16
+ 现货: $0.00
+  全仓: $0.00
+  合约: $29.99
+
+🔍 信号分析
+  🟡 BTC    RSI: 56.7 MOM:  +0.7% BB:   64% 评分:  -5 NEUTRAL
+  🟡 ETH    RSI: 52.4 MOM:  +0.7% BB:   59% 评分: +10 NEUTRAL
+  🔴 SOL    RSI: 94.6 MOM:  +1.0% BB:  121% 评分: -60 STRONG_SELL
+  🔴 XRP    RSI: 99.1 MOM:  +0.5% BB:  107% 评分: -50 STRONG_SELL
+  🟡 ADA    RSI: 63.8 MOM:  -0.4% BB:   69% 评分: -15 NEUTRAL
+  🟡 DOGE   RSI: 50.0 MOM:  -1.0% BB:   38% 评分:  +0 NEUTRAL
+  🔴 LINK   RSI: 50.0 MOM:  +1.2% BB:  117% 评分: -20 SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 18:03:51] Running g16
+  现货: $0.00
+  全仓: $0.00
+  合约: $30.00
+
+🔍 信号分析
+  🟡 BTC    RSI: 53.2 MOM:  +0.6% BB:   59% 评分: +10 NEUTRAL
+  🟢 ETH    RSI: 44.5 MOM:  +0.5% BB:   44% 评分: +25 BUY
+  🔴 SOL    RSI: 85.0 MOM:  +0.6% BB:  103% 评分: -60 STRONG_SELL
+  🔴 XRP    RSI: 89.5 MOM:  +0.4% BB:   92% 评分: -50 STRONG_SELL
+  🟡 ADA    RSI: 64.9 MOM:  -0.7% BB:   64% 评分: -15 NEUTRAL
+  🟢 DOGE   RSI: 35.7 MOM:  -1.3% BB:   18% 评分: +35 BUY
+  🔴 LINK   RSI: 90.5 MOM:  +0.5% BB:   98% 评分: -60 STRONG_SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 18:08:57] Running g16
+货: $0.00
+  全仓: $0.00
+  合约: $29.99
+
+🔍 信号分析
+  🟢 BTC    RSI: 42.0 MOM:  +0.5% BB:   42% 评分: +25 BUY
+  🟢 ETH    RSI: 41.5 MOM:  +0.5% BB:   38% 评分: +25 BUY
+  🔴 SOL    RSI: 72.2 MOM:  +0.4% BB:   93% 评分: -50 STRONG_SELL
+  🔴 XRP    RSI: 85.4 MOM:  +0.3% BB:   88% 评分: -50 STRONG_SELL
+  🟡 ADA    RSI: 62.7 MOM:  -0.8% BB:   59% 评分: -15 NEUTRAL
+  🟢 DOGE   RSI: 29.2 MOM:  -1.5% BB:    8% 评分: +50 STRONG_BUY
+  🔴 LINK   RSI: 76.0 MOM:  +0.1% BB:   84% 评分: -60 STRONG_SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 18:14:03] Running g16
+户概览
+  现货: $0.00
+  全仓: $0.00
+  合约: $30.00
+
+🔍 信号分析
+  🟡 BTC    RSI: 45.1 MOM:  +0.5% BB:   48% 评分: +10 NEUTRAL
+  🟢 ETH    RSI: 38.9 MOM:  +0.4% BB:   33% 评分: +25 BUY
+  🔴 SOL    RSI: 63.6 MOM:  +0.2% BB:   82% 评分: -35 SELL
+  🟡 XRP    RSI: 50.0 MOM:  +0.5% BB:  104% 评分: -10 NEUTRAL
+  🟡 ADA    RSI: 64.9 MOM:  -0.7% BB:   64% 评分: -15 NEUTRAL
+  🟢 DOGE   RSI: 32.7 MOM:  -1.3% BB:   14% 评分: +50 STRONG_BUY
+  🔴 LINK   RSI: 79.2 MOM:  +0.2% BB:   88% 评分: -60 STRONG_SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 18:19:09] Running g16
+
+  现货: $0.00
+  全仓: $0.00
+  合约: $29.99
+
+🔍 信号分析
+  🟢 BTC    RSI: 44.8 MOM:  +0.5% BB:   47% 评分: +25 BUY
+  🟢 ETH    RSI: 37.5 MOM:  +0.4% BB:   29% 评分: +25 BUY
+  🟡 SOL    RSI: 58.5 MOM:  +0.1% BB:   74% 评分: -15 NEUTRAL
+  🔴 XRP    RSI: 92.5 MOM:  +0.4% BB:   94% 评分: -50 STRONG_SELL
+  🟡 ADA    RSI: 61.7 MOM:  -0.8% BB:   57% 评分: -15 NEUTRAL
+  🟢 DOGE   RSI: 32.7 MOM:  -1.3% BB:   14% 评分: +50 STRONG_BUY
+  🔴 LINK   RSI: 76.0 MOM:  +0.1% BB:   84% 评分: -60 STRONG_SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 18:24:16] Running g16
+  现货: $0.00
+  全仓: $0.00
+  合约: $29.99
+
+🔍 信号分析
+  🟡 BTC    RSI: 54.3 MOM:  +0.6% BB:   61% 评分: +10 NEUTRAL
+  🟢 ETH    RSI: 42.3 MOM:  +0.5% BB:   40% 评分: +25 BUY
+  🟡 SOL    RSI: 61.5 MOM:  +0.2% BB:   79% 评分: -15 NEUTRAL
+  🔴 XRP    RSI: 86.7 MOM:  +0.3% BB:   89% 评分: -50 STRONG_SELL
+  🟡 ADA    RSI: 64.9 MOM:  -0.7% BB:   64% 评分: -15 NEUTRAL
+  🟡 DOGE   RSI: 37.6 MOM:  -1.2% BB:   20% 评分: +15 NEUTRAL
+  🔴 LINK   RSI: 82.6 MOM:  +0.3% BB:   91% 评分: -60 STRONG_SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 18:29:23] Running g16
+ 账户概览
+  现货: $0.00
+  全仓: $0.00
+  合约: $30.00
+
+🔍 信号分析
+  🟡 BTC    RSI: 58.3 MOM:  +0.6% BB:   65% 评分:  -5 NEUTRAL
+  🟢 ETH    RSI: 44.1 MOM:  +0.5% BB:   43% 评分: +25 BUY
+  🔴 SOL    RSI: 62.3 MOM:  +0.2% BB:   81% 评分: -35 SELL
+  🔴 XRP    RSI: 93.3 MOM:  +0.4% BB:   94% 评分: -50 STRONG_SELL
+  🔴 ADA    RSI: 69.5 MOM:  -0.5% BB:   76% 评分: -30 SELL
+  🟡 DOGE   RSI: 45.5 MOM:  -1.1% BB:   28% 评分:  +0 NEUTRAL
+  🔴 LINK   RSI: 86.4 MOM:  +0.4% BB:   95% 评分: -60 STRONG_SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 18:34:29] Running g16
+ $0.00
+  全仓: $0.00
+  合约: $29.99
+
+🔍 信号分析
+  🟡 BTC    RSI: 61.6 MOM:  +0.6% BB:   70% 评分:  -5 NEUTRAL
+  🟡 ETH    RSI: 46.2 MOM:  +0.5% BB:   47% 评分: +10 NEUTRAL
+  🔴 SOL    RSI: 65.8 MOM:  +0.3% BB:   85% 评分: -50 STRONG_SELL
+  🔴 XRP    RSI: 89.5 MOM:  +0.4% BB:   92% 评分: -50 STRONG_SELL
+  🔴 ADA    RSI: 70.0 MOM:  -0.4% BB:   78% 评分: -30 SELL
+  🟡 DOGE   RSI: 45.5 MOM:  -1.1% BB:   28% 评分:  +0 NEUTRAL
+  🔴 LINK   RSI: 82.6 MOM:  +0.3% BB:   91% 评分: -60 STRONG_SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 18:39:35] Running g16
+概览
+  现货: $0.00
+  全仓: $0.00
+  合约: $29.99
+
+🔍 信号分析
+  🟡 BTC    RSI: 56.7 MOM:  +0.6% BB:   63% 评分:  -5 NEUTRAL
+  🟢 ETH    RSI: 40.7 MOM:  +0.5% BB:   37% 评分: +25 BUY
+  🟡 SOL    RSI: 61.9 MOM:  +0.2% BB:   80% 评分: -15 NEUTRAL
+  🔴 XRP    RSI: 83.5 MOM:  +0.3% BB:   87% 评分: -50 STRONG_SELL
+  🔴 ADA    RSI: 69.5 MOM:  -0.5% BB:   76% 评分: -30 SELL
+  🟡 DOGE   RSI: 41.2 MOM:  -1.1% BB:   24% 评分: +15 NEUTRAL
+  🔴 LINK   RSI: 79.2 MOM:  +0.2% BB:   88% 评分: -60 STRONG_SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 18:44:42] Running g16
+ 现货: $0.00
+  全仓: $0.00
+  合约: $30.00
+
+🔍 信号分析
+  🟡 BTC    RSI: 55.8 MOM:  +0.6% BB:   62% 评分:  -5 NEUTRAL
+  🟢 ETH    RSI: 37.2 MOM:  +0.4% BB:   29% 评分: +25 BUY
+  🔴 SOL    RSI: 62.3 MOM:  +0.2% BB:   81% 评分: -35 SELL
+  🔴 XRP    RSI: 77.1 MOM:  +0.2% BB:   81% 评分: -50 STRONG_SELL
+  🔴 ADA    RSI: 71.4 MOM:  -0.3% BB:   84% 评分: -50 STRONG_SELL
+  🟡 DOGE   RSI: 42.7 MOM:  -1.1% BB:   26% 评分: +15 NEUTRAL
+  🔴 LINK   RSI: 79.2 MOM:  +0.2% BB:   88% 评分: -60 STRONG_SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 18:49:48] Running g16
+: $0.00
+  全仓: $0.00
+  合约: $29.99
+
+🔍 信号分析
+  🟡 BTC    RSI: 56.1 MOM:  +0.6% BB:   63% 评分:  -5 NEUTRAL
+  🟢 ETH    RSI: 36.6 MOM:  +0.4% BB:   27% 评分: +25 BUY
+  🟡 SOL    RSI: 58.9 MOM:  +0.1% BB:   75% 评分: -15 NEUTRAL
+  🔴 XRP    RSI: 79.9 MOM:  +0.2% BB:   83% 评分: -50 STRONG_SELL
+  🔴 ADA    RSI: 71.0 MOM:  -0.4% BB:   82% 评分: -50 STRONG_SELL
+  🟡 DOGE   RSI: 44.3 MOM:  -1.1% BB:   27% 评分: +15 NEUTRAL
+  🔴 LINK   RSI: 76.0 MOM:  +0.1% BB:   84% 评分: -60 STRONG_SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 18:54:54] Running g16
+ $0.00
+  全仓: $0.00
+  合约: $29.99
+
+🔍 信号分析
+  🔴 BTC    RSI: 67.4 MOM:  +0.7% BB:   81% 评分: -40 SELL
+  🟢 ETH    RSI: 41.7 MOM:  +0.5% BB:   39% 评分: +25 BUY
+  🔴 SOL    RSI: 65.3 MOM:  +0.3% BB:   85% 评分: -50 STRONG_SELL
+  🔴 XRP    RSI: 93.3 MOM:  +0.4% BB:   94% 评分: -50 STRONG_SELL
+  🔴 ADA    RSI: 72.3 MOM:  -0.3% BB:   88% 评分: -50 STRONG_SELL
+  🟡 DOGE   RSI: 54.7 MOM:  -0.9% BB:   35% 评分:  +0 NEUTRAL
+  🔴 LINK   RSI: 82.6 MOM:  +0.3% BB:   91% 评分: -60 STRONG_SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 19:00:00] Running g16
+账户概览
+  现货: $0.00
+  全仓: $0.00
+  合约: $29.99
+
+🔍 信号分析
+  🔴 BTC    RSI: 70.6 MOM:  +0.6% BB:   80% 评分: -20 SELL
+  🟢 ETH    RSI: 38.6 MOM:  +0.4% BB:   30% 评分: +25 BUY
+  🔴 SOL    RSI: 68.1 MOM:  +0.4% BB:   81% 评分: -50 STRONG_SELL
+  🔴 XRP    RSI: 92.0 MOM:  +0.5% BB:   89% 评分: -50 STRONG_SELL
+  🔴 ADA    RSI: 70.0 MOM:  -0.2% BB:   79% 评分: -30 SELL
+  🔴 DOGE   RSI: 65.4 MOM:  -0.6% BB:   45% 评分: -30 SELL
+  🔴 LINK   RSI: 85.7 MOM:  +0.8% BB:   90% 评分: -60 STRONG_SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 19:05:08] Running g16
+现货: $0.00
+  全仓: $0.00
+  合约: $30.00
+
+🔍 信号分析
+  🔴 BTC    RSI: 75.7 MOM:  +0.7% BB:   95% 评分: -50 STRONG_SELL
+  🟢 ETH    RSI: 40.4 MOM:  +0.4% BB:   34% 评分: +25 BUY
+  🔴 SOL    RSI: 69.2 MOM:  +0.5% BB:   83% 评分: -50 STRONG_SELL
+  🔴 XRP    RSI: 79.4 MOM:  +0.4% BB:   80% 评分: -30 SELL
+  🔴 ADA    RSI: 71.0 MOM:  -0.1% BB:   83% 评分: -50 STRONG_SELL
+  🔴 DOGE   RSI: 67.4 MOM:  -0.6% BB:   48% 评分: -30 SELL
+  🔴 LINK   RSI: 81.8 MOM:  +0.7% BB:   86% 评分: -60 STRONG_SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 19:10:14] Running g16
+====
+
+📊 账户概览
+  现货: $0.00
+  全仓: $0.00
+  合约: $30.00
+
+🔍 信号分析
+  🔴 BTC    RSI: 70.3 MOM:  +0.6% BB:   80% 评分: -20 SELL
+  🟢 ETH    RSI: 34.0 MOM:  +0.3% BB:   17% 评分: +60 STRONG_BUY
+  🟡 SOL    RSI: 64.0 MOM:  +0.3% BB:   75% 评分: -15 NEUTRAL
+  🔴 XRP    RSI: 70.7 MOM:  +0.2% BB:   70% 评分: -20 SELL
+  🔴 ADA    RSI: 67.7 MOM:  -0.3% BB:   75% 评分: -30 SELL
+  🟡 DOGE   RSI: 46.5 MOM:  -0.9% BB:   28% 评分:  +0 NEUTRAL
+  🔴 LINK   RSI: 75.0 MOM:  +0.5% BB:   79% 评分: -40 SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 19:15:20] Running g16
+=======
+
+📊 账户概览
+  现货: $0.00
+  全仓: $0.00
+  合约: $29.99
+
+🔍 信号分析
+  🔴 BTC    RSI: 74.3 MOM:  +0.6% BB:   90% 评分: -40 SELL
+  🟢 ETH    RSI: 36.1 MOM:  +0.3% BB:   23% 评分: +25 BUY
+  🔴 SOL    RSI: 66.7 MOM:  +0.4% BB:   79% 评分: -30 SELL
+  🔴 XRP    RSI: 74.8 MOM:  +0.3% BB:   75% 评分: -20 SELL
+  🔴 ADA    RSI: 70.0 MOM:  -0.2% BB:   79% 评分: -30 SELL
+  🟡 DOGE   RSI: 52.0 MOM:  -0.8% BB:   34% 评分:  +0 NEUTRAL
+  🔴 LINK   RSI: 78.3 MOM:  +0.6% BB:   83% 评分: -60 STRONG_SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 19:20:27] Running g16
+====
+
+📊 账户概览
+  现货: $0.00
+  全仓: $0.00
+  合约: $29.99
+
+🔍 信号分析
+  🔴 BTC    RSI: 67.4 MOM:  +0.6% BB:   76% 评分: -20 SELL
+  🟢 ETH    RSI: 32.3 MOM:  +0.3% BB:   12% 评分: +60 STRONG_BUY
+  🟡 SOL    RSI: 57.1 MOM:  +0.1% BB:   64% 评分: -15 NEUTRAL
+  🔴 XRP    RSI: 65.0 MOM:  +0.1% BB:   62% 评分: -20 SELL
+  🔴 ADA    RSI: 65.6 MOM:  -0.4% BB:   71% 评分: -30 SELL
+  🟡 DOGE   RSI: 42.4 MOM:  -1.0% BB:   22% 评分: +15 NEUTRAL
+  🔴 LINK   RSI: 72.0 MOM:  +0.4% BB:   76% 评分: -30 SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 19:25:35] Running g16
+
+📊 账户概览
+  现货: $0.00
+  全仓: $0.00
+  合约: $29.99
+
+🔍 信号分析
+  🟡 BTC    RSI: 56.6 MOM:  +0.5% BB:   60% 评分:  -5 NEUTRAL
+  🟢 ETH    RSI: 29.0 MOM:  +0.2% BB:    0% 评分: +60 STRONG_BUY
+  🟡 SOL    RSI: 47.8 MOM:  -0.2% BB:   42% 评分:  +0 NEUTRAL
+  🟡 XRP    RSI: 53.6 MOM:  -0.1% BB:   40% 评分: +10 NEUTRAL
+  🟡 ADA    RSI: 61.8 MOM:  -0.5% BB:   63% 评分: -15 NEUTRAL
+  🟢 DOGE   RSI: 37.9 MOM:  -1.2% BB:   15% 评分: +35 BUY
+  🔴 LINK   RSI: 66.7 MOM:  +0.2% BB:   68% 评分: -30 SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 19:30:41] Running g16
+==
+
+📊 账户概览
+  现货: $0.00
+  全仓: $0.00
+  合约: $29.99
+
+🔍 信号分析
+  🟡 BTC    RSI: 57.8 MOM:  +0.5% BB:   62% 评分:  -5 NEUTRAL
+  🟢 ETH    RSI: 30.3 MOM:  +0.2% BB:    5% 评分: +60 STRONG_BUY
+  🟡 SOL    RSI: 50.3 MOM:  -0.1% BB:   48% 评分:  +0 NEUTRAL
+  🔴 XRP    RSI: 65.0 MOM:  +0.1% BB:   62% 评分: -20 SELL
+  🟡 ADA    RSI: 62.7 MOM:  -0.5% BB:   65% 评分: -15 NEUTRAL
+  🟢 DOGE   RSI: 39.6 MOM:  -1.1% BB:   18% 评分: +35 BUY
+  🔴 LINK   RSI: 66.7 MOM:  +0.2% BB:   68% 评分: -30 SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 19:35:48] Running g16
+=====
+
+📊 账户概览
+  现货: $0.00
+  全仓: $0.00
+  合约: $29.99
+
+🔍 信号分析
+  🟡 BTC    RSI: 59.3 MOM:  +0.5% BB:   65% 评分:  -5 NEUTRAL
+  🟢 ETH    RSI: 29.7 MOM:  +0.2% BB:    3% 评分: +60 STRONG_BUY
+  🟡 SOL    RSI: 49.7 MOM:  -0.1% BB:   47% 评分:  +0 NEUTRAL
+  🔴 XRP    RSI: 67.1 MOM:  +0.2% BB:   65% 评分: -20 SELL
+  🔴 ADA    RSI: 66.7 MOM:  -0.3% BB:   73% 评分: -30 SELL
+  🟢 DOGE   RSI: 39.3 MOM:  -1.1% BB:   18% 评分: +35 BUY
+  🔴 LINK   RSI: 69.2 MOM:  +0.3% BB:   72% 评分: -30 SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 19:40:54] Running g16
+==
+
+📊 账户概览
+  现货: $0.00
+  全仓: $0.00
+  合约: $29.99
+
+🔍 信号分析
+  🟡 BTC    RSI: 57.8 MOM:  +0.5% BB:   62% 评分:  -5 NEUTRAL
+  🟢 ETH    RSI: 28.3 MOM:  +0.2% BB:   -2% 评分: +60 STRONG_BUY
+  🟡 SOL    RSI: 48.2 MOM:  -0.2% BB:   43% 评分:  +0 NEUTRAL
+  🟡 XRP    RSI: 63.8 MOM:  +0.1% BB:   60% 评分:  -5 NEUTRAL
+  🔴 ADA    RSI: 65.6 MOM:  -0.4% BB:   71% 评分: -30 SELL
+  🟢 DOGE   RSI: 39.6 MOM:  -1.1% BB:   18% 评分: +35 BUY
+  🔴 LINK   RSI: 69.2 MOM:  +0.3% BB:   72% 评分: -30 SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 19:46:02] Running g16
+=====
+
+📊 账户概览
+  现货: $0.00
+  全仓: $0.00
+  合约: $30.00
+
+🔍 信号分析
+  🟡 BTC    RSI: 61.6 MOM:  +0.5% BB:   68% 评分:  -5 NEUTRAL
+  🟢 ETH    RSI: 29.3 MOM:  +0.2% BB:    2% 评分: +60 STRONG_BUY
+  🟡 SOL    RSI: 50.3 MOM:  -0.1% BB:   48% 评分:  +0 NEUTRAL
+  🔴 XRP    RSI: 65.0 MOM:  +0.1% BB:   62% 评分: -20 SELL
+  🔴 ADA    RSI: 70.0 MOM:  -0.2% BB:   79% 评分: -30 SELL
+  🟢 DOGE   RSI: 40.5 MOM:  -1.1% BB:   20% 评分: +35 BUY
+  🔴 LINK   RSI: 66.7 MOM:  +0.2% BB:   68% 评分: -30 SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 19:51:08] Running g16
+==
+
+📊 账户概览
+  现货: $0.00
+  全仓: $0.00
+  合约: $30.00
+
+🔍 信号分析
+  🟡 BTC    RSI: 57.0 MOM:  +0.5% BB:   61% 评分:  -5 NEUTRAL
+  🟢 ETH    RSI: 29.0 MOM:  +0.2% BB:    1% 评分: +60 STRONG_BUY
+  🟡 SOL    RSI: 51.3 MOM:  -0.1% BB:   51% 评分:  +0 NEUTRAL
+  🟡 XRP    RSI: 63.4 MOM:  +0.1% BB:   59% 评分:  -5 NEUTRAL
+  🔴 ADA    RSI: 70.0 MOM:  -0.2% BB:   79% 评分: -30 SELL
+  🟢 DOGE   RSI: 39.0 MOM:  -1.1% BB:   17% 评分: +35 BUY
+  🔴 LINK   RSI: 69.2 MOM:  +0.3% BB:   72% 评分: -30 SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 19:56:16] Running g16
+📊 账户概览
+  现货: $0.00
+  全仓: $0.00
+  合约: $29.99
+
+🔍 信号分析
+  🟡 BTC    RSI: 61.5 MOM:  +0.5% BB:   68% 评分:  -5 NEUTRAL
+  🟢 ETH    RSI: 30.9 MOM:  +0.3% BB:    7% 评分: +60 STRONG_BUY
+  🟡 SOL    RSI: 52.5 MOM:  -0.0% BB:   54% 评分:  +0 NEUTRAL
+  🔴 XRP    RSI: 68.4 MOM:  +0.2% BB:   67% 评分: -20 SELL
+  🔴 ADA    RSI: 71.0 MOM:  -0.1% BB:   83% 评分: -50 STRONG_SELL
+  🟢 DOGE   RSI: 40.2 MOM:  -1.1% BB:   19% 评分: +35 BUY
+  🔴 LINK   RSI: 72.0 MOM:  +0.4% BB:   76% 评分: -30 SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 20:01:23] Running g16
+===========
+
+📊 账户概览
+  现货: $0.00
+  全仓: $0.00
+  合约: $29.99
+
+🔍 信号分析
+  🔴 BTC    RSI: 73.4 MOM:  +0.5% BB:   66% 评分: -20 SELL
+  🟢 ETH    RSI: 35.1 MOM:  +0.4% BB:    6% 评分: +45 BUY
+  🟡 SOL    RSI: 55.5 MOM:  +0.1% BB:   58% 评分: -15 NEUTRAL
+  🔴 XRP    RSI: 67.7 MOM:  +0.3% BB:   66% 评分: -20 SELL
+  🔴 ADA    RSI: 77.2 MOM:  +0.1% BB:   80% 评分: -40 SELL
+  🟡 DOGE   RSI: 42.1 MOM:  -0.9% BB:   21% 评分: +15 NEUTRAL
+  🔴 LINK   RSI: 68.0 MOM:  +0.6% BB:   69% 评分: -30 SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 20:06:30] Running g16
+=====
+
+📊 账户概览
+  现货: $0.00
+  全仓: $0.00
+  合约: $29.99
+
+🔍 信号分析
+  🔴 BTC    RSI: 66.4 MOM:  +0.5% BB:   55% 评分: -20 SELL
+  🟢 ETH    RSI: 31.3 MOM:  +0.3% BB:   -4% 评分: +60 STRONG_BUY
+  🟡 SOL    RSI: 52.2 MOM:  -0.1% BB:   50% 评分:  +0 NEUTRAL
+  🟡 XRP    RSI: 61.3 MOM:  +0.1% BB:   54% 评分:  -5 NEUTRAL
+  🔴 ADA    RSI: 72.1 MOM:  -0.0% BB:   72% 评分: -30 SELL
+  🟢 DOGE   RSI: 36.1 MOM:  -1.1% BB:   11% 评分: +35 BUY
+  🔴 LINK   RSI: 68.0 MOM:  +0.6% BB:   69% 评分: -30 SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 20:11:37] Running g16
+=====
+
+📊 账户概览
+  现货: $0.00
+  全仓: $0.00
+  合约: $30.00
+
+🔍 信号分析
+  🔴 BTC    RSI: 73.4 MOM:  +0.5% BB:   66% 评分: -20 SELL
+  🟢 ETH    RSI: 32.4 MOM:  +0.3% BB:   -0% 评分: +60 STRONG_BUY
+  🟡 SOL    RSI: 52.7 MOM:  -0.0% BB:   51% 评分:  +0 NEUTRAL
+  🟡 XRP    RSI: 63.2 MOM:  +0.2% BB:   58% 评分:  -5 NEUTRAL
+  🔴 ADA    RSI: 71.0 MOM:  -0.1% BB:   70% 评分: -30 SELL
+  🟢 DOGE   RSI: 36.3 MOM:  -1.1% BB:   12% 评分: +35 BUY
+  🔴 LINK   RSI: 68.0 MOM:  +0.6% BB:   69% 评分: -30 SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 20:16:47] Running g16
+========
+
+📊 账户概览
+  现货: $0.00
+  全仓: $0.00
+  合约: $29.99
+
+🔍 信号分析
+  🔴 BTC    RSI: 77.1 MOM:  +0.6% BB:   81% 评分: -50 STRONG_SELL
+  🟢 ETH    RSI: 39.8 MOM:  +0.4% BB:   15% 评分: +45 BUY
+  🟡 SOL    RSI: 54.2 MOM:  +0.0% BB:   55% 评分:  +0 NEUTRAL
+  🔴 XRP    RSI: 66.5 MOM:  +0.2% BB:   63% 评分: -20 SELL
+  🔴 ADA    RSI: 73.3 MOM:  +0.0% BB:   74% 评分: -30 SELL
+  🟢 DOGE   RSI: 39.3 MOM:  -1.0% BB:   17% 评分: +35 BUY
+  🔴 LINK   RSI: 68.0 MOM:  +0.6% BB:   69% 评分: -30 SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 20:21:55] Running g16
+===============
+
+📊 账户概览
+  现货: $0.00
+  全仓: $0.00
+  合约: $30.00
+
+🔍 信号分析
+  🔴 BTC    RSI: 76.1 MOM:  +0.6% BB:   77% 评分: -30 SELL
+  🟢 ETH    RSI: 38.2 MOM:  +0.4% BB:   11% 评分: +45 BUY
+  🟡 SOL    RSI: 51.6 MOM:  -0.1% BB:   48% 评分:  +0 NEUTRAL
+  🔴 XRP    RSI: 65.2 MOM:  +0.2% BB:   61% 评分: -20 SELL
+  🔴 ADA    RSI: 71.0 MOM:  -0.1% BB:   70% 评分: -30 SELL
+  🟢 DOGE   RSI: 37.3 MOM:  -1.1% BB:   13% 评分: +35 BUY
+  🔴 LINK   RSI: 73.9 MOM:  +0.8% BB:   77% 评分: -30 SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 20:27:03] Running g16
+=====
+
+📊 账户概览
+  现货: $0.00
+  全仓: $0.00
+  合约: $29.99
+
+🔍 信号分析
+  🔴 BTC    RSI: 76.9 MOM:  +0.6% BB:   80% 评分: -50 STRONG_SELL
+  🟢 ETH    RSI: 36.6 MOM:  +0.4% BB:    8% 评分: +45 BUY
+  🟡 SOL    RSI: 49.5 MOM:  -0.2% BB:   42% 评分:  +0 NEUTRAL
+  🟡 XRP    RSI: 63.2 MOM:  +0.2% BB:   58% 评分:  -5 NEUTRAL
+  🔴 ADA    RSI: 68.8 MOM:  -0.1% BB:   66% 评分: -30 SELL
+  🟢 DOGE   RSI: 37.6 MOM:  -1.1% BB:   14% 评分: +35 BUY
+  🔴 LINK   RSI: 73.9 MOM:  +0.8% BB:   77% 评分: -30 SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 20:32:11] Running g16
+====
+
+📊 账户概览
+  现货: $0.00
+  全仓: $0.00
+  合约: $29.99
+
+🔍 信号分析
+  🔴 BTC    RSI: 80.4 MOM:  +0.7% BB:   96% 评分: -50 STRONG_SELL
+  🟢 ETH    RSI: 44.3 MOM:  +0.5% BB:   26% 评分: +25 BUY
+  🟡 SOL    RSI: 51.6 MOM:  -0.1% BB:   48% 评分:  +0 NEUTRAL
+  🔴 XRP    RSI: 67.1 MOM:  +0.2% BB:   64% 评分: -20 SELL
+  🔴 ADA    RSI: 73.3 MOM:  +0.0% BB:   74% 评分: -30 SELL
+  🟡 DOGE   RSI: 41.7 MOM:  -0.9% BB:   20% 评分: +15 NEUTRAL
+  🔴 LINK   RSI: 73.9 MOM:  +0.8% BB:   77% 评分: -30 SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 20:37:19] Running g16
+=====
+
+📊 账户概览
+  现货: $0.00
+  全仓: $0.00
+  合约: $30.00
+
+🔍 信号分析
+  🔴 BTC    RSI: 78.6 MOM:  +0.6% BB:   88% 评分: -50 STRONG_SELL
+  🟢 ETH    RSI: 37.1 MOM:  +0.4% BB:    9% 评分: +45 BUY
+  🟡 SOL    RSI: 50.0 MOM:  -0.1% BB:   44% 评分:  +0 NEUTRAL
+  🟡 XRP    RSI: 60.6 MOM:  +0.1% BB:   53% 评分:  -5 NEUTRAL
+  🔴 ADA    RSI: 67.7 MOM:  -0.2% BB:   64% 评分: -30 SELL
+  🟢 DOGE   RSI: 38.4 MOM:  -1.0% BB:   15% 评分: +35 BUY
+  🔴 LINK   RSI: 73.9 MOM:  +0.8% BB:   77% 评分: -30 SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 20:42:27] Running g16
+📊 账户概览
+  现货: $0.00
+  全仓: $0.00
+  合约: $30.00
+
+🔍 信号分析
+  🔴 BTC    RSI: 79.8 MOM:  +0.7% BB:   93% 评分: -50 STRONG_SELL
+  🟢 ETH    RSI: 37.8 MOM:  +0.4% BB:   10% 评分: +45 BUY
+  🟡 SOL    RSI: 50.0 MOM:  -0.1% BB:   44% 评分:  +0 NEUTRAL
+  🟡 XRP    RSI: 63.2 MOM:  +0.2% BB:   58% 评分:  -5 NEUTRAL
+  🔴 ADA    RSI: 73.3 MOM:  +0.0% BB:   74% 评分: -30 SELL
+  🟢 DOGE   RSI: 41.4 MOM:  -0.9% BB:   20% 评分: +35 BUY
+  🔴 LINK   RSI: 75.0 MOM:  +0.9% BB:   80% 评分: -60 STRONG_SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 20:47:35] Running g16
+概览
+  现货: $0.00
+  全仓: $0.00
+  合约: $30.00
+
+🔍 信号分析
+  🔴 BTC    RSI: 80.2 MOM:  +0.7% BB:   95% 评分: -50 STRONG_SELL
+  🟢 ETH    RSI: 38.4 MOM:  +0.4% BB:   12% 评分: +45 BUY
+  🟡 SOL    RSI: 52.7 MOM:  -0.0% BB:   51% 评分:  +0 NEUTRAL
+  🔴 XRP    RSI: 66.9 MOM:  +0.2% BB:   63% 评分: -20 SELL
+  🔴 ADA    RSI: 77.6 MOM:  +0.1% BB:   81% 评分: -60 STRONG_SELL
+  🟢 DOGE   RSI: 40.5 MOM:  -1.0% BB:   18% 评分: +35 BUY
+  🔴 LINK   RSI: 75.0 MOM:  +0.9% BB:   80% 评分: -60 STRONG_SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 20:52:45] Running g16
+概览
+  现货: $0.00
+  全仓: $0.00
+  合约: $30.00
+
+🔍 信号分析
+  🔴 BTC    RSI: 79.6 MOM:  +0.7% BB:   92% 评分: -50 STRONG_SELL
+  🟢 ETH    RSI: 38.7 MOM:  +0.4% BB:   12% 评分: +45 BUY
+  🟡 SOL    RSI: 50.8 MOM:  -0.1% BB:   46% 评分:  +0 NEUTRAL
+  🔴 XRP    RSI: 66.5 MOM:  +0.2% BB:   63% 评分: -20 SELL
+  🔴 ADA    RSI: 77.6 MOM:  +0.1% BB:   81% 评分: -60 STRONG_SELL
+  🟢 DOGE   RSI: 40.8 MOM:  -1.0% BB:   19% 评分: +35 BUY
+  🔴 LINK   RSI: 75.0 MOM:  +0.9% BB:   80% 评分: -60 STRONG_SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 20:57:52] Running g16
+=
+
+📊 账户概览
+  现货: $0.00
+  全仓: $0.00
+  合约: $30.00
+
+🔍 信号分析
+  🔴 BTC    RSI: 78.9 MOM:  +0.6% BB:   89% 评分: -50 STRONG_SELL
+  🟢 ETH    RSI: 36.2 MOM:  +0.4% BB:    8% 评分: +45 BUY
+  🟡 SOL    RSI: 49.0 MOM:  -0.2% BB:   41% 评分:  +0 NEUTRAL
+  🔴 XRP    RSI: 67.3 MOM:  +0.2% BB:   65% 评分: -20 SELL
+  🔴 ADA    RSI: 77.2 MOM:  +0.1% BB:   80% 评分: -40 SELL
+  🟢 DOGE   RSI: 38.7 MOM:  -1.0% BB:   16% 评分: +35 BUY
+  🔴 LINK   RSI: 75.0 MOM:  +0.9% BB:   80% 评分: -60 STRONG_SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 21:03:00] Running g16
+ 现货: $0.00
+  全仓: $0.00
+  合约: $29.99
+
+🔍 信号分析
+  🔴 BTC    RSI: 75.2 MOM:  +0.7% BB:   86% 评分: -50 STRONG_SELL
+  🟢 ETH    RSI: 35.2 MOM:  +0.7% BB:   26% 评分: +25 BUY
+  🟡 SOL    RSI: 48.4 MOM:  +0.5% BB:   44% 评分:  +0 NEUTRAL
+  🔴 XRP    RSI: 66.3 MOM:  +0.6% BB:   67% 评分: -20 SELL
+  🔴 ADA    RSI: 79.3 MOM:  +0.7% BB:   81% 评分: -60 STRONG_SELL
+  🟡 DOGE   RSI: 39.3 MOM:  -0.3% BB:   21% 评分: +15 NEUTRAL
+  🔴 LINK   RSI: 73.9 MOM:  +1.8% BB:   84% 评分: -50 STRONG_SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 21:08:08] Running g16
+====
+
+📊 账户概览
+  现货: $0.00
+  全仓: $0.00
+  合约: $30.00
+
+🔍 信号分析
+  🔴 BTC    RSI: 69.9 MOM:  +0.7% BB:   79% 评分: -20 SELL
+  🟢 ETH    RSI: 34.4 MOM:  +0.7% BB:   24% 评分: +40 BUY
+  🟡 SOL    RSI: 46.6 MOM:  +0.4% BB:   39% 评分:  +0 NEUTRAL
+  🔴 XRP    RSI: 66.3 MOM:  +0.6% BB:   67% 评分: -20 SELL
+  🔴 ADA    RSI: 78.0 MOM:  +0.6% BB:   79% 评分: -40 SELL
+  🟡 DOGE   RSI: 38.8 MOM:  -0.3% BB:   20% 评分: +15 NEUTRAL
+  🔴 LINK   RSI: 76.0 MOM:  +2.0% BB:   91% 评分: -60 STRONG_SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 21:13:19] Running g16
+ 账户概览
+  现货: $0.00
+  全仓: $0.00
+  合约: $30.00
+
+🔍 信号分析
+  🔴 BTC    RSI: 73.8 MOM:  +0.7% BB:   85% 评分: -40 SELL
+  🟢 ETH    RSI: 43.8 MOM:  +0.8% BB:   46% 评分: +25 BUY
+  🟡 SOL    RSI: 49.5 MOM:  +0.5% BB:   47% 评分:  +0 NEUTRAL
+  🔴 XRP    RSI: 71.3 MOM:  +0.8% BB:   81% 评分: -40 SELL
+  🔴 ADA    RSI: 81.0 MOM:  +0.8% BB:   89% 评分: -60 STRONG_SELL
+  🟡 DOGE   RSI: 44.2 MOM:  -0.2% BB:   27% 评分: +15 NEUTRAL
+  🔴 LINK   RSI: 77.8 MOM:  +2.2% BB:   97% 评分: -60 STRONG_SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 21:18:28] Running g16
+ $0.00
+  全仓: $0.00
+  合约: $30.00
+
+🔍 信号分析
+  🔴 BTC    RSI: 76.9 MOM:  +0.7% BB:   89% 评分: -50 STRONG_SELL
+  🟡 ETH    RSI: 48.3 MOM:  +0.9% BB:   60% 评分: +10 NEUTRAL
+  🟡 SOL    RSI: 51.0 MOM:  +0.6% BB:   51% 评分:  +0 NEUTRAL
+  🔴 XRP    RSI: 73.2 MOM:  +0.8% BB:   87% 评分: -40 SELL
+  🔴 ADA    RSI: 80.0 MOM:  +0.7% BB:   84% 评分: -60 STRONG_SELL
+  🟡 DOGE   RSI: 45.3 MOM:  -0.2% BB:   28% 评分:  +0 NEUTRAL
+  🔴 LINK   RSI: 78.6 MOM:  +2.3% BB:  100% 评分: -60 STRONG_SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 21:23:36] Running g16
+==========================================
+
+📊 账户概览
+  现货: $0.00
+  全仓: $0.00
+  合约: $29.99
+
+🔍 信号分析
+  🟡 ETH    RSI: 53.1 MOM:  +1.0% BB:   77% 评分: +10 NEUTRAL
+  🟡 SOL    RSI: 55.7 MOM:  +0.8% BB:   67% 评分: -15 NEUTRAL
+  🔴 XRP    RSI: 76.8 MOM:  +1.1% BB:  102% 评分: -50 STRONG_SELL
+  🔴 ADA    RSI: 80.6 MOM:  +0.8% BB:   87% 评分: -60 STRONG_SELL
+  🟡 DOGE   RSI: 49.4 MOM:  -0.1% BB:   34% 评分:  +0 NEUTRAL
+  🔴 LINK   RSI: 81.3 MOM:  +2.7% BB:  110% 评分: -60 STRONG_SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 21:28:44] Running g16
+  全仓: $0.00
+  合约: $30.00
+
+🔍 信号分析
+  🔴 BTC    RSI: 80.3 MOM:  +0.8% BB:   99% 评分: -50 STRONG_SELL
+  🟡 ETH    RSI: 49.4 MOM:  +0.9% BB:   64% 评分: +10 NEUTRAL
+  🟡 SOL    RSI: 56.2 MOM:  +0.9% BB:   69% 评分: -15 NEUTRAL
+  🔴 XRP    RSI: 77.6 MOM:  +1.1% BB:  105% 评分: -60 STRONG_SELL
+  🔴 ADA    RSI: 79.7 MOM:  +0.7% BB:   82% 评分: -60 STRONG_SELL
+  🟡 DOGE   RSI: 40.6 MOM:  -0.3% BB:   22% 评分: +15 NEUTRAL
+  🔴 LINK   RSI: 77.8 MOM:  +2.2% BB:   97% 评分: -60 STRONG_SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 21:33:53] Running g16
+  全仓: $0.00
+  合约: $29.99
+
+🔍 信号分析
+  🔴 BTC    RSI: 80.9 MOM:  +0.8% BB:  101% 评分: -50 STRONG_SELL
+  🟡 ETH    RSI: 52.3 MOM:  +1.0% BB:   74% 评分: +10 NEUTRAL
+  🟡 SOL    RSI: 56.8 MOM:  +0.9% BB:   71% 评分: -15 NEUTRAL
+  🔴 XRP    RSI: 78.8 MOM:  +1.2% BB:  110% 评分: -60 STRONG_SELL
+  🔴 ADA    RSI: 81.0 MOM:  +0.8% BB:   89% 评分: -60 STRONG_SELL
+  🟡 DOGE   RSI: 43.1 MOM:  -0.2% BB:   25% 评分: +15 NEUTRAL
+  🔴 LINK   RSI: 79.3 MOM:  +2.4% BB:  102% 评分: -60 STRONG_SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 21:38:59] Running g16
+  全仓: $0.00
+  合约: $30.00
+
+🔍 信号分析
+  🔴 BTC    RSI: 80.5 MOM:  +0.8% BB:  100% 评分: -50 STRONG_SELL
+  🟡 ETH    RSI: 50.7 MOM:  +0.9% BB:   68% 评分: +10 NEUTRAL
+  🟡 SOL    RSI: 56.8 MOM:  +0.9% BB:   71% 评分: -15 NEUTRAL
+  🔴 XRP    RSI: 79.7 MOM:  +1.3% BB:  114% 评分: -60 STRONG_SELL
+  🔴 ADA    RSI: 81.5 MOM:  +0.9% BB:   92% 评分: -60 STRONG_SELL
+  🟡 DOGE   RSI: 44.6 MOM:  -0.2% BB:   27% 评分: +15 NEUTRAL
+  🔴 LINK   RSI: 80.0 MOM:  +2.5% BB:  105% 评分: -60 STRONG_SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 21:44:06] Running g16
+  全仓: $0.00
+  合约: $29.99
+
+🔍 信号分析
+  🔴 BTC    RSI: 78.6 MOM:  +0.7% BB:   91% 评分: -50 STRONG_SELL
+  🟡 ETH    RSI: 50.3 MOM:  +0.9% BB:   67% 评分: +10 NEUTRAL
+  🟡 SOL    RSI: 56.6 MOM:  +0.9% BB:   70% 评分: -15 NEUTRAL
+  🔴 XRP    RSI: 77.8 MOM:  +1.1% BB:  106% 评分: -60 STRONG_SELL
+  🔴 ADA    RSI: 82.1 MOM:  +1.0% BB:   95% 评分: -60 STRONG_SELL
+  🟡 DOGE   RSI: 45.0 MOM:  -0.2% BB:   28% 评分: +15 NEUTRAL
+  🔴 LINK   RSI: 80.0 MOM:  +2.5% BB:  105% 评分: -60 STRONG_SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 21:49:17] Running g16
+  全仓: $0.00
+  合约: $29.99
+
+🔍 信号分析
+  🔴 BTC    RSI: 80.6 MOM:  +0.8% BB:  100% 评分: -50 STRONG_SELL
+  🟡 ETH    RSI: 50.4 MOM:  +0.9% BB:   67% 评分: +10 NEUTRAL
+  🟡 SOL    RSI: 58.6 MOM:  +1.0% BB:   78% 评分: -15 NEUTRAL
+  🔴 XRP    RSI: 77.9 MOM:  +1.1% BB:  106% 评分: -60 STRONG_SELL
+  🔴 ADA    RSI: 82.4 MOM:  +1.0% BB:   97% 评分: -60 STRONG_SELL
+  🟡 DOGE   RSI: 40.1 MOM:  -0.3% BB:   22% 评分: +15 NEUTRAL
+  🔴 LINK   RSI: 79.3 MOM:  +2.4% BB:  102% 评分: -60 STRONG_SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 21:54:24] Running g16
+00
+  全仓: $0.00
+  合约: $30.00
+
+🔍 信号分析
+  🔴 BTC    RSI: 80.6 MOM:  +0.8% BB:  100% 评分: -50 STRONG_SELL
+  🟡 ETH    RSI: 50.6 MOM:  +0.9% BB:   68% 评分: +10 NEUTRAL
+  🔴 SOL    RSI: 60.3 MOM:  +1.1% BB:   84% 评分: -35 SELL
+  🔴 XRP    RSI: 78.3 MOM:  +1.2% BB:  108% 评分: -60 STRONG_SELL
+  🔴 ADA    RSI: 83.8 MOM:  +1.3% BB:  105% 评分: -60 STRONG_SELL
+  🟡 DOGE   RSI: 45.3 MOM:  -0.2% BB:   28% 评分:  +0 NEUTRAL
+  🔴 LINK   RSI: 80.0 MOM:  +2.5% BB:  105% 评分: -60 STRONG_SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 21:59:34] Running g16
+  全仓: $0.00
+  合约: $29.99
+
+🔍 信号分析
+  🔴 BTC    RSI: 80.7 MOM:  +0.8% BB:  100% 评分: -50 STRONG_SELL
+  🟡 ETH    RSI: 51.9 MOM:  +0.9% BB:   73% 评分: +10 NEUTRAL
+  🟡 SOL    RSI: 58.3 MOM:  +1.0% BB:   76% 评分: -15 NEUTRAL
+  🔴 XRP    RSI: 78.5 MOM:  +1.2% BB:  109% 评分: -60 STRONG_SELL
+  🔴 ADA    RSI: 83.6 MOM:  +1.2% BB:  104% 评分: -60 STRONG_SELL
+  🟡 DOGE   RSI: 45.7 MOM:  -0.2% BB:   29% 评分:  +0 NEUTRAL
+  🔴 LINK   RSI: 80.0 MOM:  +2.5% BB:  105% 评分: -60 STRONG_SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 22:04:42] Running g16
+  全仓: $0.00
+  合约: $29.99
+
+🔍 信号分析
+  🔴 BTC    RSI: 76.6 MOM:  +0.5% BB:   92% 评分: -50 STRONG_SELL
+  🟡 ETH    RSI: 56.8 MOM:  +0.5% BB:   70% 评分:  -5 NEUTRAL
+  🟡 SOL    RSI: 58.3 MOM:  +0.9% BB:   78% 评分: -15 NEUTRAL
+  🔴 XRP    RSI: 72.6 MOM:  +1.2% BB:   95% 评分: -50 STRONG_SELL
+  🔴 ADA    RSI: 81.5 MOM:  +1.6% BB:  101% 评分: -60 STRONG_SELL
+  🟡 DOGE   RSI: 39.2 MOM:  -0.4% BB:   27% 评分: +15 NEUTRAL
+  🔴 LINK   RSI: 78.6 MOM:  +2.3% BB:   97% 评分: -60 STRONG_SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 22:09:51] Running g16
+ $0.00
+  全仓: $0.00
+  合约: $30.00
+
+🔍 信号分析
+  🔴 BTC    RSI: 72.4 MOM:  +0.5% BB:   87% 评分: -40 SELL
+  🟡 ETH    RSI: 54.3 MOM:  +0.5% BB:   63% 评分: +10 NEUTRAL
+  🟡 SOL    RSI: 57.8 MOM:  +0.9% BB:   76% 评分: -15 NEUTRAL
+  🔴 XRP    RSI: 77.1 MOM:  +1.3% BB:  100% 评分: -60 STRONG_SELL
+  🔴 ADA    RSI: 82.9 MOM:  +1.8% BB:  106% 评分: -60 STRONG_SELL
+  🟡 DOGE   RSI: 39.2 MOM:  -0.4% BB:   27% 评分: +15 NEUTRAL
+  🔴 LINK   RSI: 75.9 MOM:  +2.2% BB:   95% 评分: -60 STRONG_SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 22:14:58] Running g16
+  全仓: $0.00
+  合约: $30.00
+
+🔍 信号分析
+  🔴 BTC    RSI: 75.3 MOM:  +0.5% BB:   91% 评分: -50 STRONG_SELL
+  🟡 ETH    RSI: 53.6 MOM:  +0.5% BB:   61% 评分: +10 NEUTRAL
+  🟡 SOL    RSI: 58.5 MOM:  +0.9% BB:   78% 评分: -15 NEUTRAL
+  🔴 XRP    RSI: 76.8 MOM:  +1.3% BB:  100% 评分: -60 STRONG_SELL
+  🔴 ADA    RSI: 82.9 MOM:  +1.8% BB:  106% 评分: -60 STRONG_SELL
+  🟡 DOGE   RSI: 39.2 MOM:  -0.4% BB:   27% 评分: +15 NEUTRAL
+  🔴 LINK   RSI: 73.3 MOM:  +2.1% BB:   92% 评分: -50 STRONG_SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 22:20:06] Running g16
+ 现货: $0.00
+  全仓: $0.00
+  合约: $30.00
+
+🔍 信号分析
+  🔴 BTC    RSI: 71.0 MOM:  +0.5% BB:   85% 评分: -40 SELL
+  🟡 ETH    RSI: 51.9 MOM:  +0.5% BB:   55% 评分: +10 NEUTRAL
+  🟡 SOL    RSI: 58.8 MOM:  +0.9% BB:   80% 评分: -15 NEUTRAL
+  🔴 XRP    RSI: 74.8 MOM:  +1.2% BB:   97% 评分: -50 STRONG_SELL
+  🔴 ADA    RSI: 83.1 MOM:  +1.8% BB:  107% 评分: -60 STRONG_SELL
+  🟢 DOGE   RSI: 35.7 MOM:  -0.5% BB:   19% 评分: +35 BUY
+  🔴 LINK   RSI: 71.0 MOM:  +2.0% BB:   89% 评分: -50 STRONG_SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 22:25:15] Running g16
+ 现货: $0.00
+  全仓: $0.00
+  合约: $30.00
+
+🔍 信号分析
+  🔴 BTC    RSI: 70.8 MOM:  +0.5% BB:   84% 评分: -40 SELL
+  🟡 ETH    RSI: 53.6 MOM:  +0.5% BB:   60% 评分: +10 NEUTRAL
+  🟡 SOL    RSI: 57.6 MOM:  +0.9% BB:   75% 评分: -15 NEUTRAL
+  🔴 XRP    RSI: 73.5 MOM:  +1.2% BB:   96% 评分: -50 STRONG_SELL
+  🔴 ADA    RSI: 81.5 MOM:  +1.6% BB:  101% 评分: -60 STRONG_SELL
+  🟢 DOGE   RSI: 35.9 MOM:  -0.5% BB:   20% 评分: +35 BUY
+  🔴 LINK   RSI: 66.7 MOM:  +1.8% BB:   84% 评分: -50 STRONG_SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 22:30:22] Running g16
+览
+  现货: $0.00
+  全仓: $0.00
+  合约: $30.00
+
+🔍 信号分析
+  🔴 BTC    RSI: 70.0 MOM:  +0.5% BB:   83% 评分: -40 SELL
+  🟡 ETH    RSI: 50.1 MOM:  +0.4% BB:   48% 评分: +10 NEUTRAL
+  🟡 SOL    RSI: 57.0 MOM:  +0.8% BB:   73% 评分: -15 NEUTRAL
+  🔴 XRP    RSI: 73.2 MOM:  +1.2% BB:   95% 评分: -50 STRONG_SELL
+  🔴 ADA    RSI: 79.0 MOM:  +1.4% BB:   94% 评分: -60 STRONG_SELL
+  🟡 DOGE   RSI: 36.1 MOM:  -0.5% BB:   20% 评分: +15 NEUTRAL
+  🔴 LINK   RSI: 64.7 MOM:  +1.7% BB:   81% 评分: -35 SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 22:35:30] Running g16
+00
+  全仓: $0.00
+  合约: $30.00
+
+🔍 信号分析
+  🔴 BTC    RSI: 78.2 MOM:  +0.5% BB:   94% 评分: -50 STRONG_SELL
+  🟡 ETH    RSI: 57.4 MOM:  +0.5% BB:   72% 评分:  -5 NEUTRAL
+  🔴 SOL    RSI: 61.3 MOM:  +1.1% BB:   89% 评分: -35 SELL
+  🔴 XRP    RSI: 80.9 MOM:  +1.6% BB:  114% 评分: -60 STRONG_SELL
+  🔴 ADA    RSI: 81.0 MOM:  +1.6% BB:   98% 评分: -60 STRONG_SELL
+  🟡 DOGE   RSI: 44.2 MOM:  -0.2% BB:   34% 评分: +15 NEUTRAL
+  🔴 LINK   RSI: 73.3 MOM:  +2.1% BB:   92% 评分: -50 STRONG_SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 22:40:36] Running g16
+00
+  全仓: $0.00
+  合约: $30.00
+
+🔍 信号分析
+  🔴 BTC    RSI: 77.1 MOM:  +0.5% BB:   93% 评分: -50 STRONG_SELL
+  🟡 ETH    RSI: 58.8 MOM:  +0.6% BB:   78% 评分:  -5 NEUTRAL
+  🔴 SOL    RSI: 61.3 MOM:  +1.1% BB:   89% 评分: -35 SELL
+  🔴 XRP    RSI: 80.5 MOM:  +1.5% BB:  113% 评分: -60 STRONG_SELL
+  🔴 ADA    RSI: 83.1 MOM:  +1.8% BB:  107% 评分: -60 STRONG_SELL
+  🟡 DOGE   RSI: 45.7 MOM:  -0.2% BB:   36% 评分:  +0 NEUTRAL
+  🔴 LINK   RSI: 75.9 MOM:  +2.2% BB:   95% 评分: -60 STRONG_SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 22:45:45] Running g16
+
+  现货: $0.00
+  全仓: $0.00
+  合约: $30.00
+
+🔍 信号分析
+  🔴 BTC    RSI: 68.0 MOM:  +0.5% BB:   80% 评分: -20 SELL
+  🔴 ETH    RSI: 59.9 MOM:  +0.6% BB:   82% 评分: -25 SELL
+  🔴 SOL    RSI: 60.5 MOM:  +1.0% BB:   86% 评分: -35 SELL
+  🔴 XRP    RSI: 80.2 MOM:  +1.5% BB:  112% 评分: -60 STRONG_SELL
+  🔴 ADA    RSI: 82.9 MOM:  +1.8% BB:  106% 评分: -60 STRONG_SELL
+  🟡 DOGE   RSI: 40.0 MOM:  -0.3% BB:   28% 评分: +15 NEUTRAL
+  🔴 LINK   RSI: 75.9 MOM:  +2.2% BB:   95% 评分: -60 STRONG_SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 22:50:51] Running g16
+现货: $0.00
+  全仓: $0.00
+  合约: $30.00
+
+🔍 信号分析
+  🔴 BTC    RSI: 71.2 MOM:  +0.5% BB:   85% 评分: -40 SELL
+  🟡 ETH    RSI: 59.4 MOM:  +0.6% BB:   80% 评分:  -5 NEUTRAL
+  🔴 SOL    RSI: 59.0 MOM:  +0.9% BB:   80% 评分: -35 SELL
+  🔴 XRP    RSI: 78.9 MOM:  +1.4% BB:  107% 评分: -60 STRONG_SELL
+  🔴 ADA    RSI: 82.6 MOM:  +1.8% BB:  105% 评分: -60 STRONG_SELL
+  🟡 DOGE   RSI: 37.1 MOM:  -0.4% BB:   22% 评分: +15 NEUTRAL
+  🔴 LINK   RSI: 66.7 MOM:  +1.8% BB:   84% 评分: -50 STRONG_SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 22:55:59] Running g16
+$0.00
+  全仓: $0.00
+  合约: $30.00
+
+🔍 信号分析
+  🔴 BTC    RSI: 79.8 MOM:  +0.5% BB:   96% 评分: -50 STRONG_SELL
+  🔴 ETH    RSI: 60.1 MOM:  +0.6% BB:   82% 评分: -25 SELL
+  🔴 SOL    RSI: 60.6 MOM:  +1.1% BB:   87% 评分: -35 SELL
+  🔴 XRP    RSI: 80.2 MOM:  +1.5% BB:  112% 评分: -60 STRONG_SELL
+  🔴 ADA    RSI: 83.1 MOM:  +1.8% BB:  107% 评分: -60 STRONG_SELL
+  🟡 DOGE   RSI: 40.6 MOM:  -0.3% BB:   29% 评分: +15 NEUTRAL
+  🔴 LINK   RSI: 68.7 MOM:  +1.9% BB:   87% 评分: -50 STRONG_SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 23:01:06] Running g16
+ 账户概览
+  现货: $0.00
+  全仓: $0.00
+  合约: $30.00
+
+🔍 信号分析
+  🔴 BTC    RSI: 73.0 MOM:  +0.4% BB:   95% 评分: -40 SELL
+  🟡 ETH    RSI: 53.1 MOM:  +0.5% BB:   84% 评分: -10 NEUTRAL
+  🟡 SOL    RSI: 45.9 MOM:  +1.2% BB:   79% 评分:  +0 NEUTRAL
+  🔴 XRP    RSI: 72.0 MOM:  +1.3% BB:  101% 评分: -50 STRONG_SELL
+  🔴 ADA    RSI: 75.0 MOM:  +1.8% BB:  100% 评分: -50 STRONG_SELL
+  🟢 DOGE   RSI: 33.9 MOM:  -0.5% BB:   34% 评分: +30 BUY
+  🔴 LINK   RSI: 56.0 MOM:  +2.0% BB:   81% 评分: -35 SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 23:06:13] Running g16
+
+  现货: $0.00
+  全仓: $0.00
+  合约: $29.99
+
+🔍 信号分析
+  🔴 BTC    RSI: 80.7 MOM:  +0.5% BB:  111% 评分: -50 STRONG_SELL
+  🔴 ETH    RSI: 65.3 MOM:  +0.7% BB:  120% 评分: -40 SELL
+  🔴 SOL    RSI: 52.2 MOM:  +1.5% BB:   93% 评分: -20 SELL
+  🔴 XRP    RSI: 72.1 MOM:  +1.3% BB:  101% 评分: -50 STRONG_SELL
+  🔴 ADA    RSI: 76.9 MOM:  +2.0% BB:  104% 评分: -60 STRONG_SELL
+  🟡 DOGE   RSI: 40.1 MOM:  -0.4% BB:   43% 评分: +15 NEUTRAL
+  🔴 LINK   RSI: 62.1 MOM:  +2.4% BB:   92% 评分: -35 SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 23:11:19] Running g16
+===
+
+📊 账户概览
+  现货: $0.00
+  全仓: $0.00
+  合约: $30.00
+
+🔍 信号分析
+  🔴 BTC    RSI: 71.1 MOM:  +0.4% BB:   93% 评分: -40 SELL
+  🔴 ETH    RSI: 59.9 MOM:  +0.6% BB:  104% 评分: -25 SELL
+  🔴 SOL    RSI: 49.5 MOM:  +1.4% BB:   87% 评分: -20 SELL
+  🔴 XRP    RSI: 70.1 MOM:  +1.2% BB:   99% 评分: -50 STRONG_SELL
+  🔴 ADA    RSI: 75.5 MOM:  +1.8% BB:  101% 评分: -60 STRONG_SELL
+  🟢 DOGE   RSI: 32.0 MOM:  -0.6% BB:   30% 评分: +30 BUY
+  🔴 LINK   RSI: 59.3 MOM:  +2.2% BB:   87% 评分: -35 SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 23:16:27] Running g16
+
+  现货: $0.00
+  全仓: $0.00
+  合约: $30.00
+
+🔍 信号分析
+  🔴 BTC    RSI: 77.4 MOM:  +0.5% BB:  102% 评分: -50 STRONG_SELL
+  🔴 ETH    RSI: 60.7 MOM:  +0.6% BB:  107% 评分: -25 SELL
+  🔴 SOL    RSI: 54.0 MOM:  +1.6% BB:   97% 评分: -20 SELL
+  🔴 XRP    RSI: 71.6 MOM:  +1.3% BB:  101% 评分: -50 STRONG_SELL
+  🔴 ADA    RSI: 76.5 MOM:  +1.9% BB:  103% 评分: -60 STRONG_SELL
+  🟡 DOGE   RSI: 37.4 MOM:  -0.5% BB:   38% 评分: +15 NEUTRAL
+  🔴 LINK   RSI: 62.1 MOM:  +2.4% BB:   92% 评分: -35 SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 23:21:33] Running g16
+
+  现货: $0.00
+  全仓: $0.00
+  合约: $30.00
+
+🔍 信号分析
+  🔴 BTC    RSI: 76.7 MOM:  +0.5% BB:  100% 评分: -50 STRONG_SELL
+  🔴 ETH    RSI: 62.0 MOM:  +0.6% BB:  111% 评分: -25 SELL
+  🔴 SOL    RSI: 55.3 MOM:  +1.6% BB:  100% 评分: -35 SELL
+  🔴 XRP    RSI: 72.9 MOM:  +1.3% BB:  103% 评分: -50 STRONG_SELL
+  🔴 ADA    RSI: 77.8 MOM:  +2.0% BB:  106% 评分: -60 STRONG_SELL
+  🟡 DOGE   RSI: 38.3 MOM:  -0.4% BB:   40% 评分: +15 NEUTRAL
+  🔴 LINK   RSI: 63.3 MOM:  +2.5% BB:   94% 评分: -35 SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 23:26:39] Running g16
+
+📊 账户概览
+  现货: $0.00
+  全仓: $0.00
+  合约: $30.00
+
+🔍 信号分析
+  🔴 BTC    RSI: 74.0 MOM:  +0.4% BB:   96% 评分: -40 SELL
+  🔴 ETH    RSI: 61.1 MOM:  +0.6% BB:  108% 评分: -25 SELL
+  🔴 SOL    RSI: 55.7 MOM:  +1.7% BB:  101% 评分: -35 SELL
+  🔴 XRP    RSI: 71.6 MOM:  +1.3% BB:  101% 评分: -50 STRONG_SELL
+  🔴 ADA    RSI: 76.9 MOM:  +2.0% BB:  104% 评分: -60 STRONG_SELL
+  🟡 DOGE   RSI: 35.9 MOM:  -0.5% BB:   36% 评分: +15 NEUTRAL
+  🔴 LINK   RSI: 63.3 MOM:  +2.5% BB:   94% 评分: -35 SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 23:31:46] Running g16
+
+📊 账户概览
+  现货: $0.00
+  全仓: $0.00
+  合约: $30.00
+
+🔍 信号分析
+  🔴 BTC    RSI: 72.8 MOM:  +0.4% BB:   95% 评分: -40 SELL
+  🔴 ETH    RSI: 64.3 MOM:  +0.7% BB:  117% 评分: -25 SELL
+  🔴 SOL    RSI: 58.8 MOM:  +1.9% BB:  109% 评分: -35 SELL
+  🔴 XRP    RSI: 74.0 MOM:  +1.4% BB:  105% 评分: -50 STRONG_SELL
+  🔴 ADA    RSI: 78.6 MOM:  +2.1% BB:  108% 评分: -60 STRONG_SELL
+  🟡 DOGE   RSI: 41.0 MOM:  -0.4% BB:   44% 评分: +15 NEUTRAL
+  🔴 LINK   RSI: 63.3 MOM:  +2.5% BB:   94% 评分: -35 SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 23:36:52] Running g16
+
+  现货: $0.00
+  全仓: $0.00
+  合约: $30.00
+
+🔍 信号分析
+  🔴 BTC    RSI: 81.2 MOM:  +0.6% BB:  113% 评分: -50 STRONG_SELL
+  🔴 ETH    RSI: 69.5 MOM:  +0.9% BB:  131% 评分: -40 SELL
+  🔴 SOL    RSI: 60.3 MOM:  +2.0% BB:  112% 评分: -35 SELL
+  🔴 XRP    RSI: 78.8 MOM:  +1.7% BB:  116% 评分: -60 STRONG_SELL
+  🔴 ADA    RSI: 81.2 MOM:  +2.4% BB:  115% 评分: -60 STRONG_SELL
+  🟡 DOGE   RSI: 45.3 MOM:  -0.3% BB:   52% 评分:  +0 NEUTRAL
+  🔴 LINK   RSI: 64.5 MOM:  +2.6% BB:   97% 评分: -35 SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 23:41:58] Running g16
+
+  现货: $0.00
+  全仓: $0.00
+  合约: $29.99
+
+🔍 信号分析
+  🔴 BTC    RSI: 81.4 MOM:  +0.6% BB:  114% 评分: -50 STRONG_SELL
+  🔴 ETH    RSI: 71.4 MOM:  +0.9% BB:  135% 评分: -40 SELL
+  🔴 SOL    RSI: 60.2 MOM:  +1.9% BB:  112% 评分: -35 SELL
+  🔴 XRP    RSI: 78.9 MOM:  +1.7% BB:  117% 评分: -60 STRONG_SELL
+  🔴 ADA    RSI: 81.0 MOM:  +2.4% BB:  114% 评分: -60 STRONG_SELL
+  🟡 DOGE   RSI: 43.4 MOM:  -0.3% BB:   48% 评分: +15 NEUTRAL
+  🔴 LINK   RSI: 62.1 MOM:  +2.4% BB:   92% 评分: -35 SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 23:47:04] Running g16
+ 全仓: $0.00
+  合约: $30.00
+
+🔍 信号分析
+  🔴 BTC    RSI: 89.0 MOM:  +0.9% BB:  139% 评分: -50 STRONG_SELL
+  🔴 ETH    RSI: 78.5 MOM:  +1.3% BB:  148% 评分: -50 STRONG_SELL
+  🔴 SOL    RSI: 62.5 MOM:  +2.1% BB:  117% 评分: -35 SELL
+  🔴 XRP    RSI: 80.2 MOM:  +1.8% BB:  120% 评分: -60 STRONG_SELL
+  🔴 ADA    RSI: 88.0 MOM:  +3.7% BB:  135% 评分: -70 STRONG_SELL
+  🟡 DOGE   RSI: 55.7 MOM:  +0.0% BB:   75% 评分: -15 NEUTRAL
+  🔴 LINK   RSI: 65.6 MOM:  +2.7% BB:   99% 评分: -50 STRONG_SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 23:52:10] Running g16
+$0.00
+  全仓: $0.00
+  合约: $30.00
+
+🔍 信号分析
+  🔴 BTC    RSI: 89.2 MOM:  +0.9% BB:  140% 评分: -50 STRONG_SELL
+  🔴 ETH    RSI: 76.0 MOM:  +1.1% BB:  144% 评分: -50 STRONG_SELL
+  🔴 SOL    RSI: 58.8 MOM:  +1.9% BB:  109% 评分: -35 SELL
+  🔴 XRP    RSI: 81.0 MOM:  +1.9% BB:  122% 评分: -60 STRONG_SELL
+  🔴 ADA    RSI: 88.1 MOM:  +3.8% BB:  135% 评分: -70 STRONG_SELL
+  🟡 DOGE   RSI: 54.2 MOM:  -0.0% BB:   71% 评分:  +0 NEUTRAL
+  🔴 LINK   RSI: 64.5 MOM:  +2.6% BB:   97% 评分: -35 SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-10 23:57:15] Running g16
+0
+  全仓: $0.00
+  合约: $29.99
+
+🔍 信号分析
+  🔴 BTC    RSI: 89.8 MOM:  +1.0% BB:  142% 评分: -50 STRONG_SELL
+  🔴 ETH    RSI: 77.1 MOM:  +1.2% BB:  146% 评分: -50 STRONG_SELL
+  🔴 SOL    RSI: 59.3 MOM:  +1.9% BB:  110% 评分: -35 SELL
+  🔴 XRP    RSI: 81.3 MOM:  +1.9% BB:  123% 评分: -60 STRONG_SELL
+  🔴 ADA    RSI: 88.0 MOM:  +3.7% BB:  135% 评分: -70 STRONG_SELL
+  🔴 DOGE   RSI: 57.7 MOM:  +0.1% BB:   81% 评分: -35 SELL
+  🔴 LINK   RSI: 65.6 MOM:  +2.7% BB:   99% 评分: -50 STRONG_SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-11 00:02:22] Running g16
+0
+  全仓: $0.00
+  合约: $29.99
+
+🔍 信号分析
+  🔴 BTC    RSI: 93.1 MOM:  +0.8% BB:  121% 评分: -50 STRONG_SELL
+  🔴 ETH    RSI: 82.8 MOM:  +0.9% BB:  124% 评分: -50 STRONG_SELL
+  🔴 SOL    RSI: 53.5 MOM:  +1.3% BB:   98% 评分: -20 SELL
+  🔴 XRP    RSI: 80.7 MOM:  +1.6% BB:  109% 评分: -60 STRONG_SELL
+  🔴 ADA    RSI: 96.0 MOM:  +3.5% BB:  114% 评分: -70 STRONG_SELL
+  🔴 DOGE   RSI: 66.8 MOM:  -0.2% BB:   93% 评分: -50 STRONG_SELL
+  🔴 LINK   RSI: 60.6 MOM:  +1.8% BB:   93% 评分: -45 SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-11 00:07:27] Running g16
+0
+  全仓: $0.00
+  合约: $30.00
+
+🔍 信号分析
+  🔴 BTC    RSI: 90.7 MOM:  +0.7% BB:  117% 评分: -50 STRONG_SELL
+  🔴 ETH    RSI: 77.5 MOM:  +0.7% BB:  116% 评分: -50 STRONG_SELL
+  🔴 SOL    RSI: 51.1 MOM:  +1.2% BB:   93% 评分: -20 SELL
+  🔴 XRP    RSI: 81.0 MOM:  +1.7% BB:  110% 评分: -60 STRONG_SELL
+  🔴 ADA    RSI: 98.0 MOM:  +3.5% BB:  115% 评分: -70 STRONG_SELL
+  🔴 DOGE   RSI: 67.7 MOM:  -0.2% BB:   96% 评分: -50 STRONG_SELL
+  🔴 LINK   RSI: 62.5 MOM:  +1.9% BB:   95% 评分: -45 SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-11 00:12:32] Running g16
+0
+  全仓: $0.00
+  合约: $30.00
+
+🔍 信号分析
+  🔴 BTC    RSI: 93.4 MOM:  +0.8% BB:  123% 评分: -50 STRONG_SELL
+  🔴 ETH    RSI: 80.6 MOM:  +0.8% BB:  119% 评分: -50 STRONG_SELL
+  🔴 SOL    RSI: 55.3 MOM:  +1.4% BB:  101% 评分: -35 SELL
+  🔴 XRP    RSI: 84.0 MOM:  +2.0% BB:  119% 评分: -60 STRONG_SELL
+  🔴 ADA    RSI: 50.0 MOM:  +3.6% BB:  116% 评分: -30 SELL
+  🔴 DOGE   RSI: 70.7 MOM:  +0.0% BB:  106% 评分: -50 STRONG_SELL
+  🔴 LINK   RSI: 65.6 MOM:  +2.1% BB:   99% 评分: -60 STRONG_SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-11 00:17:38] Running g16
+
+  现货: $0.00
+  全仓: $0.00
+  合约: $30.00
+
+🔍 信号分析
+  🔴 BTC    RSI: 85.9 MOM:  +0.7% BB:  114% 评分: -50 STRONG_SELL
+  🔴 ETH    RSI: 72.6 MOM:  +0.6% BB:  110% 评分: -40 SELL
+  🔴 SOL    RSI: 50.0 MOM:  +1.2% BB:   91% 评分: -20 SELL
+  🔴 XRP    RSI: 83.5 MOM:  +2.0% BB:  117% 评分: -60 STRONG_SELL
+  🔴 ADA    RSI: 91.4 MOM:  +3.3% BB:  112% 评分: -70 STRONG_SELL
+  🟡 DOGE   RSI: 59.9 MOM:  -0.4% BB:   78% 评分: -15 NEUTRAL
+  🔴 LINK   RSI: 60.6 MOM:  +1.8% BB:   93% 评分: -45 SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-11 00:22:43] Running g16
+户概览
+  现货: $0.00
+  全仓: $0.00
+  合约: $30.00
+
+🔍 信号分析
+  🔴 BTC    RSI: 84.6 MOM:  +0.7% BB:  113% 评分: -50 STRONG_SELL
+  🔴 ETH    RSI: 70.2 MOM:  +0.6% BB:  107% 评分: -40 SELL
+  🔴 SOL    RSI: 50.4 MOM:  +1.2% BB:   92% 评分: -20 SELL
+  🔴 XRP    RSI: 83.7 MOM:  +2.0% BB:  118% 评分: -60 STRONG_SELL
+  🔴 ADA    RSI: 50.0 MOM:  +3.9% BB:  119% 评分: -30 SELL
+  🔴 DOGE   RSI: 65.4 MOM:  -0.3% BB:   89% 评分: -50 STRONG_SELL
+  🔴 LINK   RSI: 64.5 MOM:  +2.0% BB:   97% 评分: -45 SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-11 00:27:49] Running g16
+货: $0.00
+  全仓: $0.00
+  合约: $29.99
+
+🔍 信号分析
+  🔴 BTC    RSI: 79.5 MOM:  +0.6% BB:  109% 评分: -50 STRONG_SELL
+  🔴 ETH    RSI: 72.6 MOM:  +0.6% BB:  110% 评分: -40 SELL
+  🔴 SOL    RSI: 51.1 MOM:  +1.2% BB:   93% 评分: -20 SELL
+  🔴 XRP    RSI: 89.8 MOM:  +3.3% BB:  138% 评分: -70 STRONG_SELL
+  🔴 ADA    RSI: 50.0 MOM:  +4.5% BB:  125% 评分: -30 SELL
+  🔴 DOGE   RSI: 70.0 MOM:  -0.0% BB:  104% 评分: -50 STRONG_SELL
+  🔴 LINK   RSI: 67.6 MOM:  +2.3% BB:  103% 评分: -60 STRONG_SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-11 00:32:54] Running g16
+货: $0.00
+  全仓: $0.00
+  合约: $29.99
+
+🔍 信号分析
+  🔴 BTC    RSI: 72.6 MOM:  +0.5% BB:  101% 评分: -40 SELL
+  🔴 ETH    RSI: 75.7 MOM:  +0.7% BB:  114% 评分: -50 STRONG_SELL
+  🔴 SOL    RSI: 51.9 MOM:  +1.3% BB:   95% 评分: -20 SELL
+  🔴 XRP    RSI: 90.8 MOM:  +3.7% BB:  141% 评分: -70 STRONG_SELL
+  🔴 ADA    RSI: 50.0 MOM:  +4.6% BB:  126% 评分: -30 SELL
+  🔴 DOGE   RSI: 70.7 MOM:  +0.0% BB:  106% 评分: -50 STRONG_SELL
+  🔴 LINK   RSI: 68.6 MOM:  +2.4% BB:  105% 评分: -60 STRONG_SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-11 00:37:59] Running g16
+货: $0.00
+  全仓: $0.00
+  合约: $30.00
+
+🔍 信号分析
+  🔴 BTC    RSI: 74.9 MOM:  +0.5% BB:  104% 评分: -40 SELL
+  🔴 ETH    RSI: 78.5 MOM:  +0.7% BB:  117% 评分: -50 STRONG_SELL
+  🔴 SOL    RSI: 54.0 MOM:  +1.4% BB:   99% 评分: -20 SELL
+  🔴 XRP    RSI: 91.6 MOM:  +4.0% BB:  144% 评分: -70 STRONG_SELL
+  🔴 ADA    RSI: 50.0 MOM:  +4.6% BB:  126% 评分: -30 SELL
+  🔴 DOGE   RSI: 71.6 MOM:  +0.1% BB:  109% 评分: -50 STRONG_SELL
+  🔴 LINK   RSI: 70.3 MOM:  +2.6% BB:  108% 评分: -60 STRONG_SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-11 00:43:04] Running g16
+00
+  全仓: $0.00
+  合约: $0.00
+
+🔍 信号分析
+  🔴 BTC    RSI: 79.0 MOM:  +0.6% BB:  108% 评分: -50 STRONG_SELL
+  🔴 ETH    RSI: 81.8 MOM:  +0.8% BB:  121% 评分: -50 STRONG_SELL
+  🔴 SOL    RSI: 59.2 MOM:  +1.6% BB:  109% 评分: -35 SELL
+  🔴 XRP    RSI: 90.7 MOM:  +3.6% BB:  141% 评分: -70 STRONG_SELL
+  🔴 ADA    RSI: 50.0 MOM:  +4.3% BB:  123% 评分: -30 SELL
+  🔴 DOGE   RSI: 70.0 MOM:  -0.0% BB:  104% 评分: -50 STRONG_SELL
+  🔴 LINK   RSI: 68.6 MOM:  +2.4% BB:  105% 评分: -60 STRONG_SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-11 00:48:10] Running g16
+4
+  全仓: $0.00
+  合约: $30.00
+
+🔍 信号分析
+  🔴 BTC    RSI: 79.3 MOM:  +0.6% BB:  108% 评分: -50 STRONG_SELL
+  🔴 ETH    RSI: 82.8 MOM:  +0.9% BB:  124% 评分: -50 STRONG_SELL
+  🔴 SOL    RSI: 62.2 MOM:  +1.8% BB:  115% 评分: -35 SELL
+  🔴 XRP    RSI: 90.8 MOM:  +3.7% BB:  141% 评分: -70 STRONG_SELL
+  🔴 ADA    RSI: 50.0 MOM:  +4.6% BB:  126% 评分: -30 SELL
+  🔴 DOGE   RSI: 70.3 MOM:  -0.0% BB:  105% 评分: -50 STRONG_SELL
+  🔴 LINK   RSI: 70.3 MOM:  +2.6% BB:  108% 评分: -60 STRONG_SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-11 00:53:16] Running g16
+5
+  全仓: $0.00
+  合约: $30.00
+
+🔍 信号分析
+  🔴 BTC    RSI: 84.3 MOM:  +0.7% BB:  113% 评分: -50 STRONG_SELL
+  🔴 ETH    RSI: 82.9 MOM:  +0.9% BB:  125% 评分: -50 STRONG_SELL
+  🔴 SOL    RSI: 60.5 MOM:  +1.7% BB:  112% 评分: -35 SELL
+  🔴 XRP    RSI: 90.4 MOM:  +3.5% BB:  140% 评分: -70 STRONG_SELL
+  🔴 ADA    RSI: 50.0 MOM:  +4.9% BB:  129% 评分: -30 SELL
+  🔴 DOGE   RSI: 71.1 MOM:  +0.0% BB:  108% 评分: -50 STRONG_SELL
+  🔴 LINK   RSI: 71.8 MOM:  +2.8% BB:  112% 评分: -60 STRONG_SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-11 00:58:25] Running g16
+5
+  全仓: $0.00
+  合约: $30.00
+
+🔍 信号分析
+  🔴 BTC    RSI: 82.2 MOM:  +0.6% BB:  111% 评分: -50 STRONG_SELL
+  🔴 ETH    RSI: 82.0 MOM:  +0.8% BB:  121% 评分: -50 STRONG_SELL
+  🔴 SOL    RSI: 60.8 MOM:  +1.7% BB:  112% 评分: -35 SELL
+  🔴 XRP    RSI: 90.6 MOM:  +3.6% BB:  141% 评分: -70 STRONG_SELL
+  🔴 ADA    RSI: 50.0 MOM:  +4.8% BB:  128% 评分: -30 SELL
+  🔴 DOGE   RSI: 73.0 MOM:  +0.2% BB:  114% 评分: -50 STRONG_SELL
+  🔴 LINK   RSI: 72.5 MOM:  +2.9% BB:  113% 评分: -60 STRONG_SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-11 01:03:30] Running g16
+  合约: $30.00
+
+🔍 信号分析
+  🔴 BTC    RSI: 85.7 MOM:  +0.6% BB:  103% 评分: -50 STRONG_SELL
+  🔴 ETH    RSI: 90.5 MOM:  +0.8% BB:  110% 评分: -60 STRONG_SELL
+  🔴 SOL    RSI: 74.4 MOM:  +1.7% BB:  104% 评分: -50 STRONG_SELL
+  🔴 XRP    RSI: 92.7 MOM:  +3.8% BB:  121% 评分: -70 STRONG_SELL
+  🔴 ADA    RSI: 95.2 MOM:  +4.4% BB:  109% 评分: -70 STRONG_SELL
+  🔴 DOGE   RSI: 72.0 MOM:  +0.1% BB:  112% 评分: -50 STRONG_SELL
+  🔴 LINK   RSI: 77.8 MOM:  +2.7% BB:  101% 评分: -70 STRONG_SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-11 01:08:54] Running g16
+1
+  全仓: $0.00
+  合约: $30.00
+
+🔍 信号分析
+  🔴 BTC    RSI: 74.6 MOM:  +0.4% BB:   94% 评分: -40 SELL
+  🔴 ETH    RSI: 83.6 MOM:  +0.7% BB:  104% 评分: -60 STRONG_SELL
+  🔴 SOL    RSI: 76.1 MOM:  +1.8% BB:  109% 评分: -60 STRONG_SELL
+  🔴 XRP    RSI: 93.3 MOM:  +4.2% BB:  125% 评分: -70 STRONG_SELL
+  🔴 ADA    RSI: 50.0 MOM:  +4.8% BB:  113% 评分: -30 SELL
+  🔴 DOGE   RSI: 70.3 MOM:  +0.0% BB:  108% 评分: -50 STRONG_SELL
+  🔴 LINK   RSI: 73.7 MOM:  +2.5% BB:   98% 评分: -60 STRONG_SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-11 01:14:13] Running g16
+ $0.00
+  合约: $30.00
+
+🔍 信号分析
+  🔴 BTC    RSI: 81.4 MOM:  +0.5% BB:  100% 评分: -50 STRONG_SELL
+  🔴 ETH    RSI: 84.9 MOM:  +0.8% BB:  105% 评分: -60 STRONG_SELL
+  🔴 SOL    RSI: 77.8 MOM:  +2.0% BB:  114% 评分: -60 STRONG_SELL
+  🔴 XRP    RSI: 93.4 MOM:  +4.3% BB:  126% 评分: -70 STRONG_SELL
+  🔴 ADA    RSI: 50.0 MOM:  +5.0% BB:  114% 评分: -30 SELL
+  🔴 DOGE   RSI: 73.9 MOM:  +0.2% BB:  118% 评分: -50 STRONG_SELL
+  🔴 LINK   RSI: 77.8 MOM:  +2.7% BB:  101% 评分: -70 STRONG_SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-11 01:19:28] Running g16
+ $0.00
+  合约: $30.00
+
+🔍 信号分析
+  🔴 BTC    RSI: 82.1 MOM:  +0.5% BB:  101% 评分: -50 STRONG_SELL
+  🔴 ETH    RSI: 90.6 MOM:  +0.9% BB:  110% 评分: -60 STRONG_SELL
+  🔴 SOL    RSI: 79.0 MOM:  +2.2% BB:  117% 评分: -60 STRONG_SELL
+  🔴 XRP    RSI: 93.8 MOM:  +4.6% BB:  129% 评分: -70 STRONG_SELL
+  🔴 ADA    RSI: 50.0 MOM:  +5.1% BB:  116% 评分: -20 SELL
+  🔴 DOGE   RSI: 78.4 MOM:  +0.7% BB:  131% 评分: -60 STRONG_SELL
+  🔴 LINK   RSI: 79.5 MOM:  +3.0% BB:  106% 评分: -70 STRONG_SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-11 01:24:40] Running g16
+ $0.00
+  合约: $29.99
+
+🔍 信号分析
+  🔴 BTC    RSI: 87.0 MOM:  +0.6% BB:  105% 评分: -50 STRONG_SELL
+  🔴 ETH    RSI: 92.2 MOM:  +1.1% BB:  121% 评分: -60 STRONG_SELL
+  🔴 SOL    RSI: 81.8 MOM:  +2.6% BB:  126% 评分: -60 STRONG_SELL
+  🔴 XRP    RSI: 93.9 MOM:  +4.6% BB:  129% 评分: -70 STRONG_SELL
+  🔴 ADA    RSI: 50.0 MOM:  +5.1% BB:  115% 评分: -20 SELL
+  🔴 DOGE   RSI: 78.8 MOM:  +0.7% BB:  132% 评分: -60 STRONG_SELL
+  🔴 LINK   RSI: 78.9 MOM:  +2.9% BB:  104% 评分: -70 STRONG_SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-11 01:29:52] Running g16
+ $0.00
+  合约: $29.99
+
+🔍 信号分析
+  🔴 BTC    RSI: 86.8 MOM:  +0.6% BB:  105% 评分: -50 STRONG_SELL
+  🔴 ETH    RSI: 92.0 MOM:  +1.1% BB:  120% 评分: -60 STRONG_SELL
+  🔴 SOL    RSI: 82.6 MOM:  +2.7% BB:  128% 评分: -60 STRONG_SELL
+  🔴 XRP    RSI: 94.6 MOM:  +5.3% BB:  134% 评分: -60 STRONG_SELL
+  🔴 ADA    RSI: 50.0 MOM:  +5.6% BB:  119% 评分: -20 SELL
+  🔴 DOGE   RSI: 81.7 MOM:  +1.2% BB:  139% 评分: -60 STRONG_SELL
+  🔴 LINK   RSI: 80.5 MOM:  +3.2% BB:  109% 评分: -70 STRONG_SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-11 01:35:02] Running g16
+ $0.00
+  合约: $30.00
+
+🔍 信号分析
+  🔴 BTC    RSI: 79.9 MOM:  +0.5% BB:   99% 评分: -50 STRONG_SELL
+  🔴 ETH    RSI: 91.9 MOM:  +1.1% BB:  119% 评分: -60 STRONG_SELL
+  🔴 SOL    RSI: 81.8 MOM:  +2.6% BB:  126% 评分: -60 STRONG_SELL
+  🔴 XRP    RSI: 94.5 MOM:  +5.1% BB:  133% 评分: -60 STRONG_SELL
+  🔴 ADA    RSI: 50.0 MOM:  +5.7% BB:  120% 评分: -20 SELL
+  🔴 DOGE   RSI: 79.2 MOM:  +0.8% BB:  133% 评分: -60 STRONG_SELL
+  🔴 LINK   RSI: 80.5 MOM:  +3.2% BB:  109% 评分: -70 STRONG_SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-11 01:40:20] Running g16
+ $0.00
+  合约: $30.00
+
+🔍 信号分析
+  🔴 BTC    RSI: 78.1 MOM:  +0.5% BB:   97% 评分: -50 STRONG_SELL
+  🔴 ETH    RSI: 91.4 MOM:  +1.0% BB:  115% 评分: -60 STRONG_SELL
+  🔴 SOL    RSI: 81.7 MOM:  +2.6% BB:  125% 评分: -60 STRONG_SELL
+  🔴 XRP    RSI: 94.1 MOM:  +4.7% BB:  130% 评分: -70 STRONG_SELL
+  🔴 ADA    RSI: 50.0 MOM:  +5.5% BB:  119% 评分: -20 SELL
+  🔴 DOGE   RSI: 79.9 MOM:  +0.9% BB:  135% 评分: -60 STRONG_SELL
+  🔴 LINK   RSI: 80.0 MOM:  +3.1% BB:  107% 评分: -70 STRONG_SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-11 01:45:30] Running g16
+ $0.00
+  合约: $30.00
+
+🔍 信号分析
+  🔴 BTC    RSI: 86.7 MOM:  +0.6% BB:  104% 评分: -50 STRONG_SELL
+  🔴 ETH    RSI: 91.9 MOM:  +1.1% BB:  119% 评分: -60 STRONG_SELL
+  🔴 SOL    RSI: 81.7 MOM:  +2.6% BB:  125% 评分: -60 STRONG_SELL
+  🔴 XRP    RSI: 94.2 MOM:  +4.9% BB:  131% 评分: -70 STRONG_SELL
+  🔴 ADA    RSI: 50.0 MOM:  +5.0% BB:  114% 评分: -30 SELL
+  🔴 DOGE   RSI: 78.5 MOM:  +0.7% BB:  131% 评分: -60 STRONG_SELL
+  🔴 LINK   RSI: 78.4 MOM:  +2.8% BB:  103% 评分: -70 STRONG_SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-11 01:50:43] Running g16
+ $0.00
+  合约: $29.99
+
+🔍 信号分析
+  🔴 BTC    RSI: 86.7 MOM:  +0.6% BB:  104% 评分: -50 STRONG_SELL
+  🔴 ETH    RSI: 92.4 MOM:  +1.2% BB:  123% 评分: -60 STRONG_SELL
+  🔴 SOL    RSI: 82.4 MOM:  +2.7% BB:  127% 评分: -60 STRONG_SELL
+  🔴 XRP    RSI: 94.6 MOM:  +5.3% BB:  134% 评分: -60 STRONG_SELL
+  🔴 ADA    RSI: 50.0 MOM:  +5.1% BB:  115% 评分: -20 SELL
+  🔴 DOGE   RSI: 79.9 MOM:  +0.9% BB:  135% 评分: -60 STRONG_SELL
+  🔴 LINK   RSI: 80.5 MOM:  +3.2% BB:  109% 评分: -70 STRONG_SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-11 01:55:51] Running g16
+ $0.00
+  合约: $29.99
+
+🔍 信号分析
+  🔴 BTC    RSI: 88.4 MOM:  +0.7% BB:  111% 评分: -50 STRONG_SELL
+  🔴 ETH    RSI: 93.4 MOM:  +1.4% BB:  130% 评分: -60 STRONG_SELL
+  🔴 SOL    RSI: 85.1 MOM:  +3.3% BB:  135% 评分: -70 STRONG_SELL
+  🔴 XRP    RSI: 95.3 MOM:  +6.0% BB:  139% 评分: -60 STRONG_SELL
+  🔴 ADA    RSI: 50.0 MOM:  +5.7% BB:  120% 评分: -20 SELL
+  🔴 DOGE   RSI: 80.2 MOM:  +0.9% BB:  135% 评分: -60 STRONG_SELL
+  🔴 LINK   RSI: 81.8 MOM:  +3.5% BB:  113% 评分: -70 STRONG_SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-11 02:00:58] Running g16
+ $0.00
+  合约: $30.00
+
+🔍 信号分析
+  🔴 BTC    RSI: 89.5 MOM:  +0.6% BB:   98% 评分: -60 STRONG_SELL
+  🔴 ETH    RSI: 99.3 MOM:  +1.4% BB:  112% 评分: -60 STRONG_SELL
+  🔴 SOL    RSI: 89.3 MOM:  +3.0% BB:  113% 评分: -70 STRONG_SELL
+  🔴 XRP    RSI: 96.3 MOM:  +5.4% BB:  114% 评分: -60 STRONG_SELL
+  🔴 ADA    RSI: 50.0 MOM:  +5.2% BB:  106% 评分: -20 SELL
+  🔴 DOGE   RSI: 93.4 MOM:  +1.0% BB:  116% 评分: -60 STRONG_SELL
+  🔴 LINK   RSI: 87.8 MOM:  +3.3% BB:  102% 评分: -70 STRONG_SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-11 02:06:10] Running g16
+ $0.00
+  合约: $29.99
+
+🔍 信号分析
+  🔴 BTC    RSI: 92.0 MOM:  +0.6% BB:   99% 评分: -60 STRONG_SELL
+  🔴 ETH    RSI: 50.0 MOM:  +1.4% BB:  114% 评分: -20 SELL
+  🔴 SOL    RSI: 85.7 MOM:  +2.9% BB:  110% 评分: -70 STRONG_SELL
+  🔴 XRP    RSI: 97.5 MOM:  +5.5% BB:  115% 评分: -60 STRONG_SELL
+  🔴 ADA    RSI: 98.6 MOM:  +5.1% BB:  105% 评分: -60 STRONG_SELL
+  🔴 DOGE   RSI: 96.8 MOM:  +1.3% BB:  121% 评分: -60 STRONG_SELL
+  🔴 LINK   RSI: 83.7 MOM:  +3.1% BB:  100% 评分: -70 STRONG_SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-11 02:11:16] Running g16
+ $0.00
+  合约: $30.00
+
+🔍 信号分析
+  🔴 BTC    RSI: 87.7 MOM:  +0.6% BB:   97% 评分: -60 STRONG_SELL
+  🔴 ETH    RSI: 99.4 MOM:  +1.4% BB:  112% 评分: -60 STRONG_SELL
+  🔴 SOL    RSI: 88.1 MOM:  +3.0% BB:  112% 评分: -70 STRONG_SELL
+  🔴 XRP    RSI: 95.9 MOM:  +5.4% BB:  114% 评分: -60 STRONG_SELL
+  🔴 ADA    RSI: 50.0 MOM:  +5.2% BB:  106% 评分: -20 SELL
+  🔴 DOGE   RSI: 96.7 MOM:  +1.2% BB:  119% 评分: -60 STRONG_SELL
+  🔴 LINK   RSI: 80.0 MOM:  +2.9% BB:   97% 评分: -70 STRONG_SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-11 02:16:22] Running g16
+  合约: $30.00
+
+🔍 信号分析
+  🔴 BTC    RSI: 87.7 MOM:  +0.6% BB:   97% 评分: -60 STRONG_SELL
+  🔴 ETH    RSI: 99.8 MOM:  +1.4% BB:  113% 评分: -60 STRONG_SELL
+  🔴 SOL    RSI: 93.4 MOM:  +3.3% BB:  116% 评分: -70 STRONG_SELL
+  🔴 XRP    RSI: 93.8 MOM:  +5.3% BB:  113% 评分: -60 STRONG_SELL
+  🔴 ADA    RSI: 95.9 MOM:  +5.0% BB:  104% 评分: -70 STRONG_SELL
+  🔴 DOGE   RSI: 96.7 MOM:  +1.2% BB:  120% 评分: -60 STRONG_SELL
+  🔴 LINK   RSI: 81.8 MOM:  +3.0% BB:   98% 评分: -70 STRONG_SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-11 02:21:28] Running g16
+ $0.00
+  合约: $30.00
+
+🔍 信号分析
+  🔴 BTC    RSI: 85.3 MOM:  +0.6% BB:   95% 评分: -60 STRONG_SELL
+  🔴 ETH    RSI: 98.1 MOM:  +1.3% BB:  112% 评分: -60 STRONG_SELL
+  🔴 SOL    RSI: 93.8 MOM:  +3.5% BB:  119% 评分: -70 STRONG_SELL
+  🔴 XRP    RSI: 93.7 MOM:  +5.3% BB:  113% 评分: -60 STRONG_SELL
+  🔴 ADA    RSI: 50.0 MOM:  +5.4% BB:  107% 评分: -20 SELL
+  🔴 DOGE   RSI: 97.1 MOM:  +1.5% BB:  125% 评分: -60 STRONG_SELL
+  🔴 LINK   RSI: 85.7 MOM:  +3.2% BB:  101% 评分: -70 STRONG_SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-11 02:26:33] Running g16
+ $0.00
+  合约: $30.00
+
+🔍 信号分析
+  🔴 BTC    RSI: 84.4 MOM:  +0.6% BB:   94% 评分: -60 STRONG_SELL
+  🔴 ETH    RSI: 97.9 MOM:  +1.3% BB:  111% 评分: -60 STRONG_SELL
+  🔴 SOL    RSI: 93.7 MOM:  +3.4% BB:  119% 评分: -70 STRONG_SELL
+  🔴 XRP    RSI: 95.5 MOM:  +5.4% BB:  114% 评分: -60 STRONG_SELL
+  🔴 ADA    RSI: 50.0 MOM:  +5.4% BB:  108% 评分: -20 SELL
+  🔴 DOGE   RSI: 97.0 MOM:  +1.5% BB:  125% 评分: -60 STRONG_SELL
+  🔴 LINK   RSI: 88.4 MOM:  +3.4% BB:  105% 评分: -70 STRONG_SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-11 02:31:39] Running g16
+=====================================
+
+📊 账户概览
+  现货: $8.49
+  全仓: $0.00
+  合约: $29.99
+
+🔍 信号分析
+  🔴 BTC    RSI: 86.8 MOM:  +0.6% BB:   96% 评分: -60 STRONG_SELL
+  🔴 SOL    RSI: 93.9 MOM:  +3.6% BB:  121% 评分: -70 STRONG_SELL
+  🔴 XRP    RSI: 94.6 MOM:  +5.3% BB:  113% 评分: -60 STRONG_SELL
+  🔴 ADA    RSI: 50.0 MOM:  +5.4% BB:  107% 评分: -20 SELL
+  🔴 DOGE   RSI: 97.1 MOM:  +1.6% BB:  126% 评分: -60 STRONG_SELL
+  🔴 LINK   RSI: 88.4 MOM:  +3.4% BB:  105% 评分: -70 STRONG_SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-11 02:36:45] Running g16
+ $0.00
+  合约: $30.00
+
+🔍 信号分析
+  🔴 BTC    RSI: 78.9 MOM:  +0.5% BB:   90% 评分: -60 STRONG_SELL
+  🔴 ETH    RSI: 88.9 MOM:  +1.2% BB:  106% 评分: -60 STRONG_SELL
+  🔴 SOL    RSI: 93.4 MOM:  +3.3% BB:  117% 评分: -70 STRONG_SELL
+  🔴 XRP    RSI: 90.0 MOM:  +5.0% BB:  111% 评分: -60 STRONG_SELL
+  🔴 ADA    RSI: 50.0 MOM:  +5.3% BB:  106% 评分: -20 SELL
+  🔴 DOGE   RSI: 96.7 MOM:  +1.2% BB:  120% 评分: -60 STRONG_SELL
+  🔴 LINK   RSI: 88.1 MOM:  +3.3% BB:  103% 评分: -70 STRONG_SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-11 02:41:50] Running g16
+ $0.00
+  合约: $30.00
+
+🔍 信号分析
+  🔴 BTC    RSI: 76.8 MOM:  +0.5% BB:   88% 评分: -60 STRONG_SELL
+  🔴 ETH    RSI: 88.6 MOM:  +1.1% BB:  105% 评分: -60 STRONG_SELL
+  🔴 SOL    RSI: 93.7 MOM:  +3.4% BB:  119% 评分: -70 STRONG_SELL
+  🔴 XRP    RSI: 86.7 MOM:  +4.8% BB:  108% 评分: -70 STRONG_SELL
+  🔴 ADA    RSI: 50.0 MOM:  +5.7% BB:  110% 评分: -20 SELL
+  🔴 DOGE   RSI: 97.1 MOM:  +1.6% BB:  126% 评分: -60 STRONG_SELL
+  🔴 LINK   RSI: 88.1 MOM:  +3.3% BB:  103% 评分: -70 STRONG_SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-11 02:46:56] Running g16
+ $0.00
+  合约: $30.00
+
+🔍 信号分析
+  🔴 BTC    RSI: 72.9 MOM:  +0.4% BB:   84% 评分: -50 STRONG_SELL
+  🔴 ETH    RSI: 85.5 MOM:  +1.1% BB:  103% 评分: -60 STRONG_SELL
+  🔴 SOL    RSI: 93.6 MOM:  +3.4% BB:  118% 评分: -70 STRONG_SELL
+  🔴 XRP    RSI: 82.3 MOM:  +4.4% BB:  105% 评分: -70 STRONG_SELL
+  🔴 ADA    RSI: 50.0 MOM:  +5.2% BB:  106% 评分: -20 SELL
+  🔴 DOGE   RSI: 96.6 MOM:  +1.2% BB:  119% 评分: -60 STRONG_SELL
+  🔴 LINK   RSI: 83.7 MOM:  +3.1% BB:  100% 评分: -70 STRONG_SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-11 02:52:03] Running g16
+ $0.00
+  合约: $30.00
+
+🔍 信号分析
+  🔴 BTC    RSI: 70.9 MOM:  +0.4% BB:   82% 评分: -50 STRONG_SELL
+  🔴 ETH    RSI: 87.0 MOM:  +1.1% BB:  104% 评分: -60 STRONG_SELL
+  🔴 SOL    RSI: 93.4 MOM:  +3.3% BB:  116% 评分: -70 STRONG_SELL
+  🔴 XRP    RSI: 82.2 MOM:  +4.4% BB:  105% 评分: -70 STRONG_SELL
+  🔴 ADA    RSI: 50.0 MOM:  +5.3% BB:  107% 评分: -20 SELL
+  🔴 DOGE   RSI: 96.7 MOM:  +1.2% BB:  120% 评分: -60 STRONG_SELL
+  🔴 LINK   RSI: 83.7 MOM:  +3.1% BB:  100% 评分: -70 STRONG_SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-11 02:57:09] Running g16
+ $0.00
+  合约: $30.00
+
+🔍 信号分析
+  🔴 BTC    RSI: 73.3 MOM:  +0.4% BB:   84% 评分: -50 STRONG_SELL
+  🔴 ETH    RSI: 88.2 MOM:  +1.1% BB:  105% 评分: -60 STRONG_SELL
+  🔴 SOL    RSI: 91.4 MOM:  +3.1% BB:  114% 评分: -70 STRONG_SELL
+  🔴 XRP    RSI: 81.4 MOM:  +4.3% BB:  104% 评分: -70 STRONG_SELL
+  🔴 ADA    RSI: 50.0 MOM:  +5.3% BB:  106% 评分: -20 SELL
+  🔴 DOGE   RSI: 96.8 MOM:  +1.3% BB:  121% 评分: -60 STRONG_SELL
+  🔴 LINK   RSI: 87.8 MOM:  +3.3% BB:  102% 评分: -70 STRONG_SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-11 03:02:14] Running g16
+.00
+  合约: $30.00
+
+🔍 信号分析
+  🟡 BTC    RSI: 61.8 MOM:  +0.4% BB:   71% 评分: -15 NEUTRAL
+  🔴 ETH    RSI: 76.8 MOM:  +1.0% BB:   86% 评分: -60 STRONG_SELL
+  🔴 SOL    RSI: 81.1 MOM:  +2.7% BB:   91% 评分: -70 STRONG_SELL
+  🔴 XRP    RSI: 75.2 MOM:  +4.0% BB:   90% 评分: -70 STRONG_SELL
+  🔴 ADA    RSI: 91.4 MOM:  +4.8% BB:   93% 评分: -70 STRONG_SELL
+  🔴 DOGE   RSI: 84.6 MOM:  +1.0% BB:   96% 评分: -70 STRONG_SELL
+  🔴 LINK   RSI: 73.9 MOM:  +2.9% BB:   86% 评分: -60 STRONG_SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-11 03:07:20] Running g16
+ $0.00
+  合约: $29.99
+
+🔍 信号分析
+  🔴 BTC    RSI: 67.9 MOM:  +0.5% BB:   79% 评分: -30 SELL
+  🔴 ETH    RSI: 80.9 MOM:  +1.1% BB:   91% 评分: -60 STRONG_SELL
+  🔴 SOL    RSI: 87.8 MOM:  +3.0% BB:   97% 评分: -70 STRONG_SELL
+  🔴 XRP    RSI: 74.6 MOM:  +3.9% BB:   89% 评分: -60 STRONG_SELL
+  🔴 ADA    RSI: 91.4 MOM:  +4.8% BB:   93% 评分: -70 STRONG_SELL
+  🔴 DOGE   RSI: 90.1 MOM:  +1.2% BB:  100% 评分: -70 STRONG_SELL
+  🔴 LINK   RSI: 81.0 MOM:  +3.3% BB:   91% 评分: -70 STRONG_SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-11 03:12:26] Running g16
+ $0.00
+  合约: $29.99
+
+🔍 信号分析
+  🔴 BTC    RSI: 73.4 MOM:  +0.7% BB:   89% 评分: -50 STRONG_SELL
+  🔴 ETH    RSI: 86.2 MOM:  +1.2% BB:   96% 评分: -60 STRONG_SELL
+  🔴 SOL    RSI: 94.1 MOM:  +3.2% BB:  101% 评分: -70 STRONG_SELL
+  🔴 XRP    RSI: 79.4 MOM:  +4.4% BB:   94% 评分: -70 STRONG_SELL
+  🔴 ADA    RSI: 96.5 MOM:  +5.1% BB:   96% 评分: -60 STRONG_SELL
+  🔴 DOGE   RSI: 50.0 MOM:  +1.7% BB:  110% 评分: -30 SELL
+  🔴 LINK   RSI: 87.8 MOM:  +3.7% BB:   98% 评分: -70 STRONG_SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-11 03:17:32] Running g16
+ $0.00
+  合约: $29.99
+
+🔍 信号分析
+  🔴 BTC    RSI: 75.2 MOM:  +0.8% BB:   94% 评分: -60 STRONG_SELL
+  🔴 ETH    RSI: 88.5 MOM:  +1.4% BB:  101% 评分: -60 STRONG_SELL
+  🔴 SOL    RSI: 96.9 MOM:  +3.4% BB:  102% 评分: -70 STRONG_SELL
+  🔴 XRP    RSI: 78.0 MOM:  +4.2% BB:   93% 评分: -70 STRONG_SELL
+  🔴 ADA    RSI: 97.9 MOM:  +5.2% BB:   97% 评分: -60 STRONG_SELL
+  🔴 DOGE   RSI: 50.0 MOM:  +1.7% BB:  110% 评分: -30 SELL
+  🔴 LINK   RSI: 87.5 MOM:  +3.6% BB:   96% 评分: -70 STRONG_SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-11 03:22:38] Running g16
+ $0.00
+  合约: $29.99
+
+🔍 信号分析
+  🔴 BTC    RSI: 75.4 MOM:  +0.8% BB:   94% 评分: -60 STRONG_SELL
+  🔴 ETH    RSI: 88.7 MOM:  +1.4% BB:  102% 评分: -60 STRONG_SELL
+  🔴 SOL    RSI: 97.8 MOM:  +3.4% BB:  103% 评分: -70 STRONG_SELL
+  🔴 XRP    RSI: 79.7 MOM:  +4.4% BB:   95% 评分: -70 STRONG_SELL
+  🔴 ADA    RSI: 99.3 MOM:  +5.4% BB:   98% 评分: -60 STRONG_SELL
+  🔴 DOGE   RSI: 50.0 MOM:  +1.7% BB:  110% 评分: -30 SELL
+  🔴 LINK   RSI: 87.8 MOM:  +3.7% BB:   98% 评分: -70 STRONG_SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-11 03:27:44] Running g16
+ $0.00
+  合约: $29.99
+
+🔍 信号分析
+  🔴 BTC    RSI: 76.4 MOM:  +0.8% BB:   97% 评分: -60 STRONG_SELL
+  🔴 ETH    RSI: 89.4 MOM:  +1.6% BB:  107% 评分: -60 STRONG_SELL
+  🔴 SOL    RSI: 98.6 MOM:  +3.7% BB:  107% 评分: -70 STRONG_SELL
+  🔴 XRP    RSI: 81.6 MOM:  +4.6% BB:   97% 评分: -70 STRONG_SELL
+  🔴 ADA    RSI: 99.3 MOM:  +5.6% BB:  100% 评分: -60 STRONG_SELL
+  🔴 DOGE   RSI: 50.0 MOM:  +1.9% BB:  114% 评分: -30 SELL
+  🔴 LINK   RSI: 88.6 MOM:  +4.0% BB:  101% 评分: -70 STRONG_SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-11 03:32:50] Running g16
+ $0.00
+  合约: $29.99
+
+🔍 信号分析
+  🔴 BTC    RSI: 75.5 MOM:  +0.8% BB:   95% 评分: -60 STRONG_SELL
+  🔴 ETH    RSI: 89.5 MOM:  +1.6% BB:  107% 评分: -60 STRONG_SELL
+  🔴 SOL    RSI: 98.6 MOM:  +3.8% BB:  110% 评分: -70 STRONG_SELL
+  🔴 XRP    RSI: 81.8 MOM:  +4.7% BB:   97% 评分: -70 STRONG_SELL
+  🔴 ADA    RSI: 99.3 MOM:  +5.8% BB:  101% 评分: -60 STRONG_SELL
+  🔴 DOGE   RSI: 50.0 MOM:  +1.8% BB:  112% 评分: -30 SELL
+  🔴 LINK   RSI: 89.4 MOM:  +4.3% BB:  105% 评分: -70 STRONG_SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-11 03:37:55] Running g16
+ $0.00
+  合约: $29.99
+
+🔍 信号分析
+  🔴 BTC    RSI: 75.5 MOM:  +0.8% BB:   95% 评分: -60 STRONG_SELL
+  🔴 ETH    RSI: 89.2 MOM:  +1.5% BB:  105% 评分: -60 STRONG_SELL
+  🔴 SOL    RSI: 98.5 MOM:  +3.5% BB:  105% 评分: -70 STRONG_SELL
+  🔴 XRP    RSI: 82.3 MOM:  +4.9% BB:   99% 评分: -70 STRONG_SELL
+  🔴 ADA    RSI: 99.4 MOM:  +5.8% BB:  102% 评分: -60 STRONG_SELL
+  🔴 DOGE   RSI: 50.0 MOM:  +1.7% BB:  111% 评分: -30 SELL
+  🔴 LINK   RSI: 88.9 MOM:  +4.1% BB:  102% 评分: -70 STRONG_SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-11 03:43:01] Running g16
+ $0.00
+  合约: $29.99
+
+🔍 信号分析
+  🔴 BTC    RSI: 75.5 MOM:  +0.8% BB:   95% 评分: -60 STRONG_SELL
+  🔴 ETH    RSI: 89.3 MOM:  +1.5% BB:  106% 评分: -60 STRONG_SELL
+  🔴 SOL    RSI: 98.5 MOM:  +3.5% BB:  105% 评分: -70 STRONG_SELL
+  🔴 XRP    RSI: 82.2 MOM:  +4.8% BB:   99% 评分: -70 STRONG_SELL
+  🔴 ADA    RSI: 99.4 MOM:  +5.9% BB:  102% 评分: -60 STRONG_SELL
+  🔴 DOGE   RSI: 50.0 MOM:  +1.6% BB:  109% 评分: -30 SELL
+  🔴 LINK   RSI: 88.9 MOM:  +4.1% BB:  102% 评分: -70 STRONG_SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-11 03:48:07] Running g16
+ $0.00
+  合约: $29.99
+
+🔍 信号分析
+  🔴 BTC    RSI: 75.2 MOM:  +0.8% BB:   94% 评分: -60 STRONG_SELL
+  🔴 ETH    RSI: 89.2 MOM:  +1.5% BB:  105% 评分: -60 STRONG_SELL
+  🔴 SOL    RSI: 98.5 MOM:  +3.5% BB:  105% 评分: -70 STRONG_SELL
+  🔴 XRP    RSI: 82.0 MOM:  +4.7% BB:   98% 评分: -70 STRONG_SELL
+  🔴 ADA    RSI: 99.3 MOM:  +5.7% BB:  101% 评分: -60 STRONG_SELL
+  🔴 DOGE   RSI: 50.0 MOM:  +1.6% BB:  109% 评分: -30 SELL
+  🔴 LINK   RSI: 88.9 MOM:  +4.1% BB:  102% 评分: -70 STRONG_SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-11 03:53:13] Running g16
+  合约: $29.99
+
+🔍 信号分析
+  🔴 BTC    RSI: 72.8 MOM:  +0.7% BB:   87% 评分: -50 STRONG_SELL
+  🔴 ETH    RSI: 88.4 MOM:  +1.4% BB:  100% 评分: -60 STRONG_SELL
+  🔴 SOL    RSI: 94.9 MOM:  +3.3% BB:  101% 评分: -70 STRONG_SELL
+  🔴 XRP    RSI: 78.2 MOM:  +4.3% BB:   93% 评分: -70 STRONG_SELL
+  🔴 ADA    RSI: 97.9 MOM:  +5.2% BB:   97% 评分: -60 STRONG_SELL
+  🔴 DOGE   RSI: 93.0 MOM:  +1.3% BB:  102% 评分: -70 STRONG_SELL
+  🔴 LINK   RSI: 88.4 MOM:  +3.9% BB:  100% 评分: -70 STRONG_SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-11 03:58:18] Running g16
+  合约: $30.00
+
+🔍 信号分析
+  🔴 BTC    RSI: 75.4 MOM:  +0.8% BB:   94% 评分: -60 STRONG_SELL
+  🔴 ETH    RSI: 89.3 MOM:  +1.5% BB:  106% 评分: -60 STRONG_SELL
+  🔴 SOL    RSI: 98.5 MOM:  +3.4% BB:  104% 评分: -70 STRONG_SELL
+  🔴 XRP    RSI: 80.9 MOM:  +4.5% BB:   96% 评分: -70 STRONG_SELL
+  🔴 ADA    RSI: 99.3 MOM:  +5.4% BB:   98% 评分: -60 STRONG_SELL
+  🔴 DOGE   RSI: 99.3 MOM:  +1.5% BB:  106% 评分: -70 STRONG_SELL
+  🔴 LINK   RSI: 88.6 MOM:  +4.0% BB:  101% 评分: -70 STRONG_SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-11 04:03:24] Running g16
+ $0.00
+  合约: $29.99
+
+🔍 信号分析
+  🔴 BTC    RSI: 74.2 MOM:  +0.8% BB:   89% 评分: -50 STRONG_SELL
+  🔴 ETH    RSI: 88.9 MOM:  +1.6% BB:  102% 评分: -60 STRONG_SELL
+  🔴 SOL    RSI: 97.2 MOM:  +3.2% BB:   96% 评分: -70 STRONG_SELL
+  🔴 XRP    RSI: 79.6 MOM:  +4.5% BB:   91% 评分: -70 STRONG_SELL
+  🔴 ADA    RSI: 99.2 MOM:  +5.5% BB:   92% 评分: -60 STRONG_SELL
+  🔴 DOGE   RSI: 50.0 MOM:  +1.7% BB:  101% 评分: -30 SELL
+  🔴 LINK   RSI: 85.7 MOM:  +4.0% BB:   94% 评分: -70 STRONG_SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-11 04:08:30] Running g16
+ $0.00
+  合约: $30.00
+
+🔍 信号分析
+  🔴 BTC    RSI: 74.3 MOM:  +0.8% BB:   89% 评分: -50 STRONG_SELL
+  🔴 ETH    RSI: 88.5 MOM:  +1.6% BB:  100% 评分: -60 STRONG_SELL
+  🔴 SOL    RSI: 98.2 MOM:  +3.2% BB:   97% 评分: -70 STRONG_SELL
+  🔴 XRP    RSI: 80.3 MOM:  +4.6% BB:   92% 评分: -70 STRONG_SELL
+  🔴 ADA    RSI: 99.3 MOM:  +5.8% BB:   94% 评分: -60 STRONG_SELL
+  🔴 DOGE   RSI: 50.0 MOM:  +1.9% BB:  104% 评分: -30 SELL
+  🔴 LINK   RSI: 86.8 MOM:  +4.3% BB:   97% 评分: -70 STRONG_SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-11 04:13:36] Running g16
+.00
+  合约: $30.00
+
+🔍 信号分析
+  🟡 BTC    RSI: 61.6 MOM:  +0.6% BB:   74% 评分: -15 NEUTRAL
+  🔴 ETH    RSI: 76.8 MOM:  +1.2% BB:   89% 评分: -60 STRONG_SELL
+  🔴 SOL    RSI: 87.3 MOM:  +2.8% BB:   90% 评分: -70 STRONG_SELL
+  🔴 XRP    RSI: 75.9 MOM:  +4.2% BB:   87% 评分: -70 STRONG_SELL
+  🔴 ADA    RSI: 93.4 MOM:  +5.2% BB:   89% 评分: -60 STRONG_SELL
+  🔴 DOGE   RSI: 95.3 MOM:  +1.5% BB:   96% 评分: -70 STRONG_SELL
+  🔴 LINK   RSI: 78.9 MOM:  +3.7% BB:   90% 评分: -70 STRONG_SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-11 04:18:41] Running g16
+ 全仓: $0.00
+  合约: $29.99
+
+🔍 信号分析
+  🟡 BTC    RSI: 53.5 MOM:  +0.4% BB:   59% 评分:  +0 NEUTRAL
+  🔴 ETH    RSI: 67.5 MOM:  +0.9% BB:   77% 评分: -30 SELL
+  🔴 SOL    RSI: 76.8 MOM:  +2.4% BB:   83% 评分: -70 STRONG_SELL
+  🔴 XRP    RSI: 69.7 MOM:  +3.6% BB:   81% 评分: -60 STRONG_SELL
+  🔴 ADA    RSI: 82.5 MOM:  +4.5% BB:   83% 评分: -70 STRONG_SELL
+  🔴 DOGE   RSI: 78.1 MOM:  +0.9% BB:   83% 评分: -70 STRONG_SELL
+  🔴 LINK   RSI: 66.7 MOM:  +3.1% BB:   81% 评分: -60 STRONG_SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-11 04:23:47] Running g16
+ 全仓: $0.00
+  合约: $29.99
+
+🔍 信号分析
+  🟡 BTC    RSI: 55.4 MOM:  +0.4% BB:   63% 评分: -15 NEUTRAL
+  🔴 ETH    RSI: 68.8 MOM:  +0.9% BB:   79% 评分: -30 SELL
+  🔴 SOL    RSI: 77.7 MOM:  +2.4% BB:   83% 评分: -70 STRONG_SELL
+  🔴 XRP    RSI: 71.8 MOM:  +3.8% BB:   83% 评分: -60 STRONG_SELL
+  🔴 ADA    RSI: 83.6 MOM:  +4.6% BB:   84% 评分: -70 STRONG_SELL
+  🔴 DOGE   RSI: 78.7 MOM:  +0.9% BB:   83% 评分: -70 STRONG_SELL
+  🔴 LINK   RSI: 71.4 MOM:  +3.4% BB:   85% 评分: -60 STRONG_SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-11 04:28:53] Running g16
+.00
+  合约: $29.99
+
+🔍 信号分析
+  🟡 BTC    RSI: 57.3 MOM:  +0.5% BB:   66% 评分: -15 NEUTRAL
+  🔴 ETH    RSI: 70.6 MOM:  +1.0% BB:   82% 评分: -50 STRONG_SELL
+  🔴 SOL    RSI: 79.7 MOM:  +2.5% BB:   85% 评分: -70 STRONG_SELL
+  🔴 XRP    RSI: 72.0 MOM:  +3.8% BB:   83% 评分: -60 STRONG_SELL
+  🔴 ADA    RSI: 85.2 MOM:  +4.7% BB:   85% 评分: -70 STRONG_SELL
+  🔴 DOGE   RSI: 76.6 MOM:  +0.8% BB:   81% 评分: -70 STRONG_SELL
+  🔴 LINK   RSI: 69.8 MOM:  +3.3% BB:   83% 评分: -60 STRONG_SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-11 04:33:58] Running g16
+=
+
+📊 账户概览
+  现货: $598.35
+  全仓: $0.00
+  合约: $29.99
+
+🔍 信号分析
+  🟡 BTC    RSI: 50.0 MOM:  +0.2% BB:   50% 评分:  +0 NEUTRAL
+  🟡 ETH    RSI: 62.9 MOM:  +0.7% BB:   70% 评分: -15 NEUTRAL
+  🔴 SOL    RSI: 69.6 MOM:  +2.0% BB:   75% 评分: -40 SELL
+  🔴 XRP    RSI: 65.8 MOM:  +3.1% BB:   76% 评分: -40 SELL
+  🔴 ADA    RSI: 75.1 MOM:  +4.0% BB:   78% 评分: -50 STRONG_SELL
+  🔴 DOGE   RSI: 62.4 MOM:  +0.1% BB:   62% 评分: -25 SELL
+  🔴 LINK   RSI: 60.0 MOM:  +2.6% BB:   74% 评分: -25 SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-11 04:39:04] Running g16
+=
+
+📊 账户概览
+  现货: $628.80
+  全仓: $0.00
+  合约: $29.99
+
+🔍 信号分析
+  🟡 BTC    RSI: 54.7 MOM:  +0.4% BB:   61% 评分:  +0 NEUTRAL
+  🟡 ETH    RSI: 64.1 MOM:  +0.7% BB:   72% 评分: -15 NEUTRAL
+  🔴 SOL    RSI: 72.6 MOM:  +2.1% BB:   78% 评分: -40 SELL
+  🔴 XRP    RSI: 67.9 MOM:  +3.4% BB:   78% 评分: -40 SELL
+  🔴 ADA    RSI: 77.4 MOM:  +4.2% BB:   80% 评分: -70 STRONG_SELL
+  🔴 DOGE   RSI: 66.3 MOM:  +0.3% BB:   68% 评分: -40 SELL
+  🔴 LINK   RSI: 62.5 MOM:  +2.8% BB:   77% 评分: -25 SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-11 04:44:10] Running g16
+========
+
+📊 账户概览
+  现货: $635.10
+  全仓: $0.00
+  合约: $29.99
+
+🔍 信号分析
+  🟡 BTC    RSI: 47.9 MOM:  +0.2% BB:   45% 评分:  +0 NEUTRAL
+  🟡 ETH    RSI: 57.9 MOM:  +0.4% BB:   60% 评分: -15 NEUTRAL
+  🔴 SOL    RSI: 67.1 MOM:  +1.8% BB:   72% 评分: -40 SELL
+  🔴 XRP    RSI: 64.6 MOM:  +3.0% BB:   74% 评分: -25 SELL
+  🔴 ADA    RSI: 73.4 MOM:  +3.8% BB:   77% 评分: -40 SELL
+  🔴 DOGE   RSI: 59.9 MOM:  -0.1% BB:   57% 评分: -25 SELL
+  🔴 LINK   RSI: 57.7 MOM:  +2.4% BB:   71% 评分: -25 SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-11 04:49:16] Running g16
+0.5% BB:   22% 评分: +15 NEUTRAL
+  🟡 SOL    RSI: 52.1 MOM:  +0.5% BB:   47% 评分: -10 NEUTRAL
+  🟡 XRP    RSI: 54.1 MOM:  +1.5% BB:   55% 评分: -10 NEUTRAL
+  🟡 ADA    RSI: 54.5 MOM:  +1.6% BB:   55% 评分: -10 NEUTRAL
+  🟢 DOGE   RSI: 41.3 MOM:  -2.1% BB:    7% 评分: +25 BUY
+  🟡 LINK   RSI: 42.9 MOM:  +0.7% BB:   43% 评分:  +5 NEUTRAL
+
+⚖️ 调仓决策
+  📈→ BTC: SPOT→TO→MARGIN 0.000384
+      原因: BUY RSI:36.3 MOM:-0.4%
+
+🚀 执行转移
+  ❌ BTC: 现货→全仓 0.000384
+      错误: Illegal characters found in a parameter.
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-11 04:54:22] Running g16
+OM:  -0.3% BB:   31% 评分:  +0 NEUTRAL
+  🟡 SOL    RSI: 54.8 MOM:  +0.8% BB:   53% 评分: -10 NEUTRAL
+  🔴 XRP    RSI: 56.3 MOM:  +1.8% BB:   60% 评分: -25 SELL
+  🔴 ADA    RSI: 57.0 MOM:  +2.0% BB:   59% 评分: -25 SELL
+  🟢 DOGE   RSI: 44.7 MOM:  -1.6% BB:   18% 评分: +25 BUY
+  🟡 LINK   RSI: 46.2 MOM:  +1.2% BB:   51% 评分: -10 NEUTRAL
+
+⚖️ 调仓决策
+  📈→ BTC: SPOT→TO→MARGIN 0.000255
+      原因: BUY RSI:39.2 MOM:-0.2%
+
+🚀 执行转移
+  ❌ BTC: 现货→全仓 0.000255
+      错误: Illegal characters found in a parameter.
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-11 04:59:28] Running g16
+==
+
+📊 账户概览
+  现货: $624.62
+  全仓: $0.00
+  合约: $29.99
+
+🔍 信号分析
+  🟡 BTC    RSI: 42.3 MOM:  -0.1% BB:   28% 评分: +15 NEUTRAL
+  🟡 ETH    RSI: 49.1 MOM:  -0.1% BB:   38% 评分:  +0 NEUTRAL
+  🔴 SOL    RSI: 57.3 MOM:  +1.0% BB:   57% 评分: -25 SELL
+  🔴 XRP    RSI: 57.0 MOM:  +2.0% BB:   61% 评分: -25 SELL
+  🔴 ADA    RSI: 57.5 MOM:  +2.1% BB:   59% 评分: -25 SELL
+  🟡 DOGE   RSI: 46.9 MOM:  -1.3% BB:   25% 评分: -10 NEUTRAL
+  🟡 LINK   RSI: 46.9 MOM:  +1.2% BB:   52% 评分: -10 NEUTRAL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-11 05:04:34] Running g16
+==
+
+📊 账户概览
+  现货: $709.24
+  全仓: $0.00
+  合约: $30.00
+
+🔍 信号分析
+  🟡 BTC    RSI: 44.4 MOM:  +0.0% BB:   35% 评分: +15 NEUTRAL
+  🟡 ETH    RSI: 49.3 MOM:  -0.0% BB:   40% 评分:  +0 NEUTRAL
+  🔴 SOL    RSI: 59.5 MOM:  +1.6% BB:   64% 评分: -25 SELL
+  🔴 XRP    RSI: 56.8 MOM:  +2.1% BB:   62% 评分: -25 SELL
+  🔴 ADA    RSI: 57.3 MOM:  +2.4% BB:   62% 评分: -25 SELL
+  🟡 DOGE   RSI: 49.5 MOM:  -0.7% BB:   33% 评分: -10 NEUTRAL
+  🟡 LINK   RSI: 50.8 MOM:  +1.3% BB:   51% 评分: -10 NEUTRAL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-11 05:09:40] Running g16
+==
+
+📊 账户概览
+  现货: $720.57
+  全仓: $0.00
+  合约: $30.00
+
+🔍 信号分析
+  🟡 BTC    RSI: 45.7 MOM:  +0.1% BB:   38% 评分:  +0 NEUTRAL
+  🟡 ETH    RSI: 51.3 MOM:  +0.1% BB:   46% 评分:  +0 NEUTRAL
+  🔴 SOL    RSI: 61.9 MOM:  +1.9% BB:   70% 评分: -25 SELL
+  🔴 XRP    RSI: 57.8 MOM:  +2.3% BB:   65% 评分: -25 SELL
+  🔴 ADA    RSI: 57.9 MOM:  +2.5% BB:   63% 评分: -25 SELL
+  🟡 DOGE   RSI: 50.7 MOM:  -0.6% BB:   37% 评分: -10 NEUTRAL
+  🟡 LINK   RSI: 51.7 MOM:  +1.4% BB:   52% 评分: -10 NEUTRAL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-11 05:14:46] Running g16
+
+📊 账户概览
+  现货: $714.83
+  全仓: $0.00
+  合约: $30.00
+
+🔍 信号分析
+  🟡 BTC    RSI: 40.5 MOM:  -0.1% BB:   23% 评分: +15 NEUTRAL
+  🟡 ETH    RSI: 47.1 MOM:  -0.2% BB:   33% 评分:  +0 NEUTRAL
+  🔴 SOL    RSI: 58.3 MOM:  +1.5% BB:   61% 评分: -25 SELL
+  🔴 XRP    RSI: 55.0 MOM:  +1.7% BB:   58% 评分: -25 SELL
+  🟡 ADA    RSI: 54.2 MOM:  +1.8% BB:   56% 评分: -10 NEUTRAL
+  🟡 DOGE   RSI: 46.6 MOM:  -1.1% BB:   25% 评分: -10 NEUTRAL
+  🟡 LINK   RSI: 48.4 MOM:  +1.1% BB:   46% 评分: -10 NEUTRAL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-11 05:19:52] Running g16
+==
+
+📊 账户概览
+  现货: $708.18
+  全仓: $0.00
+  合约: $30.00
+
+🔍 信号分析
+  🟡 BTC    RSI: 46.9 MOM:  +0.1% BB:   42% 评分:  +0 NEUTRAL
+  🟡 ETH    RSI: 50.8 MOM:  +0.1% BB:   44% 评分:  +0 NEUTRAL
+  🔴 SOL    RSI: 61.4 MOM:  +1.9% BB:   69% 评分: -25 SELL
+  🔴 XRP    RSI: 57.5 MOM:  +2.2% BB:   64% 评分: -25 SELL
+  🔴 ADA    RSI: 57.7 MOM:  +2.4% BB:   62% 评分: -25 SELL
+  🟡 DOGE   RSI: 51.5 MOM:  -0.5% BB:   40% 评分: -10 NEUTRAL
+  🟡 LINK   RSI: 52.5 MOM:  +1.5% BB:   54% 评分: -10 NEUTRAL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-11 05:24:59] Running g16
+==
+
+📊 账户概览
+  现货: $708.23
+  全仓: $0.00
+  合约: $30.00
+
+🔍 信号分析
+  🟡 BTC    RSI: 42.2 MOM:  -0.1% BB:   29% 评分: +15 NEUTRAL
+  🟡 ETH    RSI: 50.5 MOM:  +0.1% BB:   43% 评分:  +0 NEUTRAL
+  🔴 SOL    RSI: 61.3 MOM:  +1.9% BB:   69% 评分: -25 SELL
+  🔴 XRP    RSI: 57.5 MOM:  +2.2% BB:   64% 评分: -25 SELL
+  🔴 ADA    RSI: 57.5 MOM:  +2.4% BB:   62% 评分: -25 SELL
+  🟡 DOGE   RSI: 50.9 MOM:  -0.6% BB:   38% 评分: -10 NEUTRAL
+  🟡 LINK   RSI: 50.0 MOM:  +1.2% BB:   49% 评分: -10 NEUTRAL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-11 05:30:05] Running g16
+==
+
+📊 账户概览
+  现货: $709.03
+  全仓: $0.00
+  合约: $29.99
+
+🔍 信号分析
+  🟡 BTC    RSI: 45.9 MOM:  +0.1% BB:   39% 评分:  +0 NEUTRAL
+  🟡 ETH    RSI: 52.3 MOM:  +0.2% BB:   49% 评分:  +0 NEUTRAL
+  🔴 SOL    RSI: 63.8 MOM:  +2.2% BB:   76% 评分: -25 SELL
+  🔴 XRP    RSI: 58.9 MOM:  +2.5% BB:   68% 评分: -25 SELL
+  🔴 ADA    RSI: 59.0 MOM:  +2.7% BB:   65% 评分: -25 SELL
+  🟡 DOGE   RSI: 52.6 MOM:  -0.4% BB:   44% 评分: -10 NEUTRAL
+  🟡 LINK   RSI: 53.2 MOM:  +1.6% BB:   56% 评分: -10 NEUTRAL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-11 05:35:11] Running g16
+=====
+
+📊 账户概览
+  现货: $709.51
+  全仓: $0.00
+  合约: $29.99
+
+🔍 信号分析
+  🟡 BTC    RSI: 46.4 MOM:  +0.1% BB:   40% 评分:  +0 NEUTRAL
+  🟡 ETH    RSI: 53.2 MOM:  +0.3% BB:   52% 评分:  +0 NEUTRAL
+  🔴 SOL    RSI: 64.1 MOM:  +2.3% BB:   77% 评分: -25 SELL
+  🔴 XRP    RSI: 60.1 MOM:  +2.8% BB:   71% 评分: -25 SELL
+  🔴 ADA    RSI: 59.9 MOM:  +2.9% BB:   67% 评分: -25 SELL
+  🟡 DOGE   RSI: 53.6 MOM:  -0.2% BB:   47% 评分: -10 NEUTRAL
+  🔴 LINK   RSI: 56.1 MOM:  +2.0% BB:   62% 评分: -25 SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-11 05:40:17] Running g16
+==
+
+📊 账户概览
+  现货: $708.22
+  全仓: $0.00
+  合约: $30.00
+
+🔍 信号分析
+  🟡 BTC    RSI: 45.0 MOM:  +0.0% BB:   36% 评分: +15 NEUTRAL
+  🟡 ETH    RSI: 50.8 MOM:  +0.1% BB:   44% 评分:  +0 NEUTRAL
+  🔴 SOL    RSI: 62.1 MOM:  +2.0% BB:   71% 评分: -25 SELL
+  🔴 XRP    RSI: 58.9 MOM:  +2.5% BB:   67% 评分: -25 SELL
+  🔴 ADA    RSI: 59.9 MOM:  +2.9% BB:   67% 评分: -25 SELL
+  🟡 DOGE   RSI: 52.1 MOM:  -0.4% BB:   42% 评分: -10 NEUTRAL
+  🟡 LINK   RSI: 54.0 MOM:  +1.7% BB:   57% 评分: -10 NEUTRAL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-11 05:45:23] Running g16
+=====
+
+📊 账户概览
+  现货: $709.34
+  全仓: $0.00
+  合约: $29.99
+
+🔍 信号分析
+  🟡 BTC    RSI: 46.7 MOM:  +0.1% BB:   41% 评分:  +0 NEUTRAL
+  🟡 ETH    RSI: 52.9 MOM:  +0.3% BB:   51% 评分:  +0 NEUTRAL
+  🔴 SOL    RSI: 64.4 MOM:  +2.3% BB:   78% 评分: -25 SELL
+  🔴 XRP    RSI: 59.8 MOM:  +2.7% BB:   70% 评分: -25 SELL
+  🔴 ADA    RSI: 61.6 MOM:  +3.2% BB:   71% 评分: -25 SELL
+  🟡 DOGE   RSI: 52.1 MOM:  -0.4% BB:   42% 评分: -10 NEUTRAL
+  🔴 LINK   RSI: 56.1 MOM:  +2.0% BB:   62% 评分: -25 SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-11 05:50:29] Running g16
+=====
+
+📊 账户概览
+  现货: $709.24
+  全仓: $0.00
+  合约: $29.99
+
+🔍 信号分析
+  🟡 BTC    RSI: 46.7 MOM:  +0.1% BB:   41% 评分:  +0 NEUTRAL
+  🟡 ETH    RSI: 52.7 MOM:  +0.3% BB:   50% 评分:  +0 NEUTRAL
+  🔴 SOL    RSI: 63.7 MOM:  +2.2% BB:   76% 评分: -25 SELL
+  🔴 XRP    RSI: 60.2 MOM:  +2.8% BB:   71% 评分: -25 SELL
+  🔴 ADA    RSI: 61.2 MOM:  +3.2% BB:   70% 评分: -25 SELL
+  🟡 DOGE   RSI: 52.1 MOM:  -0.4% BB:   42% 评分: -10 NEUTRAL
+  🔴 LINK   RSI: 57.4 MOM:  +2.2% BB:   65% 评分: -25 SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-11 05:55:36] Running g16
+==
+
+📊 账户概览
+  现货: $708.02
+  全仓: $0.00
+  合约: $29.99
+
+🔍 信号分析
+  🟡 BTC    RSI: 42.5 MOM:  -0.0% BB:   30% 评分: +15 NEUTRAL
+  🟡 ETH    RSI: 50.5 MOM:  +0.1% BB:   43% 评分:  +0 NEUTRAL
+  🔴 SOL    RSI: 62.3 MOM:  +2.0% BB:   72% 评分: -25 SELL
+  🔴 XRP    RSI: 58.5 MOM:  +2.4% BB:   66% 评分: -25 SELL
+  🔴 ADA    RSI: 58.7 MOM:  +2.6% BB:   64% 评分: -25 SELL
+  🟡 DOGE   RSI: 49.7 MOM:  -0.7% BB:   34% 评分: -10 NEUTRAL
+  🟡 LINK   RSI: 54.0 MOM:  +1.7% BB:   57% 评分: -10 NEUTRAL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-11 06:39:45] Running g16
+===========
+
+📊 账户概览
+  现货: $717.75
+  全仓: $0.00
+  合约: $30.00
+
+🔍 信号分析
+  🔴 BTC    RSI: 60.4 MOM:  +1.5% BB:  118% 评分: -35 SELL
+  🔴 ETH    RSI: 58.1 MOM:  +1.6% BB:   96% 评分: -35 SELL
+  🔴 SOL    RSI: 62.7 MOM:  +3.0% BB:   84% 评分: -45 SELL
+  🔴 XRP    RSI: 59.0 MOM:  +3.4% BB:   74% 评分: -25 SELL
+  🟡 ADA    RSI: 51.3 MOM:  +4.1% BB:   73% 评分: -10 NEUTRAL
+  🔴 DOGE   RSI: 59.3 MOM:  +1.7% BB:   88% 评分: -45 SELL
+  🔴 LINK   RSI: 55.4 MOM:  +3.2% BB:   75% 评分: -25 SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-11 06:44:52] Running g16
+===========
+
+📊 账户概览
+  现货: $718.38
+  全仓: $0.00
+  合约: $30.00
+
+🔍 信号分析
+  🔴 BTC    RSI: 59.8 MOM:  +1.5% BB:  116% 评分: -35 SELL
+  🔴 ETH    RSI: 59.1 MOM:  +1.7% BB:   99% 评分: -35 SELL
+  🔴 SOL    RSI: 63.1 MOM:  +3.0% BB:   85% 评分: -45 SELL
+  🔴 XRP    RSI: 59.4 MOM:  +3.5% BB:   75% 评分: -25 SELL
+  🟡 ADA    RSI: 52.3 MOM:  +4.3% BB:   74% 评分: -10 NEUTRAL
+  🔴 DOGE   RSI: 61.4 MOM:  +2.1% BB:   96% 评分: -45 SELL
+  🔴 LINK   RSI: 56.7 MOM:  +3.4% BB:   78% 评分: -25 SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-11 06:49:58] Running g16
+===========
+
+📊 账户概览
+  现货: $720.42
+  全仓: $0.00
+  合约: $30.00
+
+🔍 信号分析
+  🔴 BTC    RSI: 61.5 MOM:  +1.6% BB:  120% 评分: -35 SELL
+  🔴 ETH    RSI: 61.4 MOM:  +2.0% BB:  107% 评分: -35 SELL
+  🔴 SOL    RSI: 64.2 MOM:  +3.2% BB:   89% 评分: -45 SELL
+  🔴 XRP    RSI: 60.4 MOM:  +3.7% BB:   78% 评分: -25 SELL
+  🟡 ADA    RSI: 54.4 MOM:  +4.6% BB:   77% 评分: -10 NEUTRAL
+  🔴 DOGE   RSI: 62.7 MOM:  +2.3% BB:  102% 评分: -45 SELL
+  🔴 LINK   RSI: 58.6 MOM:  +3.7% BB:   83% 评分: -45 SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-11 06:55:05] Running g16
+===========
+
+📊 账户概览
+  现货: $720.08
+  全仓: $0.00
+  合约: $30.00
+
+🔍 信号分析
+  🔴 BTC    RSI: 62.2 MOM:  +1.7% BB:  122% 评分: -35 SELL
+  🔴 ETH    RSI: 61.0 MOM:  +1.9% BB:  106% 评分: -35 SELL
+  🔴 SOL    RSI: 64.3 MOM:  +3.2% BB:   89% 评分: -45 SELL
+  🔴 XRP    RSI: 60.1 MOM:  +3.6% BB:   77% 评分: -25 SELL
+  🟡 ADA    RSI: 53.3 MOM:  +4.4% BB:   76% 评分: -10 NEUTRAL
+  🔴 DOGE   RSI: 61.4 MOM:  +2.1% BB:   96% 评分: -45 SELL
+  🔴 LINK   RSI: 57.4 MOM:  +3.5% BB:   80% 评分: -25 SELL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-11 07:00:11] Running g16
+📊 账户概览
+  现货: $722.41
+  全仓: $0.00
+  合约: $30.00
+
+🔍 信号分析
+  🔴 BTC    RSI: 66.4 MOM:  +2.0% BB:  117% 评分: -50 STRONG_SELL
+  🔴 ETH    RSI: 63.1 MOM:  +2.4% BB:  106% 评分: -35 SELL
+  🔴 SOL    RSI: 64.2 MOM:  +3.6% BB:   90% 评分: -45 SELL
+  🟡 XRP    RSI: 51.4 MOM:  +4.1% BB:   77% 评分: -10 NEUTRAL
+  🟡 ADA    RSI: 45.9 MOM:  +4.7% BB:   74% 评分: -10 NEUTRAL
+  🔴 DOGE   RSI: 63.6 MOM:  +3.3% BB:  103% 评分: -45 SELL
+  🟡 LINK   RSI: 52.5 MOM:  +3.8% BB:   79% 评分: -10 NEUTRAL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-11 07:05:17] Running g16
+📊 账户概览
+  现货: $721.51
+  全仓: $0.00
+  合约: $29.99
+
+🔍 信号分析
+  🔴 BTC    RSI: 66.6 MOM:  +2.0% BB:  117% 评分: -50 STRONG_SELL
+  🔴 ETH    RSI: 61.9 MOM:  +2.3% BB:  102% 评分: -35 SELL
+  🔴 SOL    RSI: 63.6 MOM:  +3.5% BB:   88% 评分: -45 SELL
+  🟡 XRP    RSI: 50.5 MOM:  +4.0% BB:   76% 评分: -10 NEUTRAL
+  🟡 ADA    RSI: 45.1 MOM:  +4.6% BB:   73% 评分: -10 NEUTRAL
+  🔴 DOGE   RSI: 62.7 MOM:  +3.1% BB:  100% 评分: -45 SELL
+  🟡 LINK   RSI: 51.7 MOM:  +3.7% BB:   77% 评分: -10 NEUTRAL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-11 07:10:23] Running g16
+📊 账户概览
+  现货: $722.53
+  全仓: $0.00
+  合约: $29.99
+
+🔍 信号分析
+  🔴 BTC    RSI: 67.5 MOM:  +2.1% BB:  120% 评分: -50 STRONG_SELL
+  🔴 ETH    RSI: 63.1 MOM:  +2.4% BB:  106% 评分: -35 SELL
+  🔴 SOL    RSI: 64.1 MOM:  +3.6% BB:   89% 评分: -45 SELL
+  🟡 XRP    RSI: 50.9 MOM:  +4.1% BB:   76% 评分: -10 NEUTRAL
+  🟡 ADA    RSI: 45.4 MOM:  +4.7% BB:   74% 评分: -10 NEUTRAL
+  🔴 DOGE   RSI: 63.0 MOM:  +3.2% BB:  101% 评分: -45 SELL
+  🟡 LINK   RSI: 52.5 MOM:  +3.8% BB:   79% 评分: -10 NEUTRAL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-11 07:15:29] Running g16
+📊 账户概览
+  现货: $722.66
+  全仓: $0.00
+  合约: $30.00
+
+🔍 信号分析
+  🔴 BTC    RSI: 68.3 MOM:  +2.2% BB:  122% 评分: -50 STRONG_SELL
+  🔴 ETH    RSI: 63.1 MOM:  +2.4% BB:  106% 评分: -35 SELL
+  🔴 SOL    RSI: 63.3 MOM:  +3.5% BB:   87% 评分: -45 SELL
+  🟡 XRP    RSI: 50.9 MOM:  +4.1% BB:   76% 评分: -10 NEUTRAL
+  🟡 ADA    RSI: 45.9 MOM:  +4.7% BB:   74% 评分: -10 NEUTRAL
+  🔴 DOGE   RSI: 64.0 MOM:  +3.3% BB:  104% 评分: -45 SELL
+  🟡 LINK   RSI: 52.5 MOM:  +3.8% BB:   79% 评分: -10 NEUTRAL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-11 07:20:35] Running g16
+📊 账户概览
+  现货: $720.89
+  全仓: $0.00
+  合约: $29.99
+
+🔍 信号分析
+  🔴 BTC    RSI: 66.2 MOM:  +2.0% BB:  116% 评分: -50 STRONG_SELL
+  🔴 ETH    RSI: 61.1 MOM:  +2.2% BB:  100% 评分: -35 SELL
+  🔴 SOL    RSI: 60.3 MOM:  +3.2% BB:   82% 评分: -45 SELL
+  🟡 XRP    RSI: 49.1 MOM:  +3.8% BB:   73% 评分: -10 NEUTRAL
+  🟡 ADA    RSI: 43.2 MOM:  +4.3% BB:   70% 评分:  +5 NEUTRAL
+  🔴 DOGE   RSI: 60.7 MOM:  +2.8% BB:   96% 评分: -45 SELL
+  🟡 LINK   RSI: 49.2 MOM:  +3.4% BB:   73% 评分: -10 NEUTRAL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-11 07:25:41] Running g16
+📊 账户概览
+  现货: $720.61
+  全仓: $0.00
+  合约: $29.99
+
+🔍 信号分析
+  🔴 BTC    RSI: 66.8 MOM:  +2.0% BB:  118% 评分: -50 STRONG_SELL
+  🔴 ETH    RSI: 60.6 MOM:  +2.1% BB:   98% 评分: -35 SELL
+  🔴 SOL    RSI: 63.3 MOM:  +3.5% BB:   87% 评分: -45 SELL
+  🟡 XRP    RSI: 49.9 MOM:  +3.9% BB:   74% 评分: -10 NEUTRAL
+  🟡 ADA    RSI: 44.1 MOM:  +4.5% BB:   72% 评分:  +5 NEUTRAL
+  🔴 DOGE   RSI: 63.6 MOM:  +3.3% BB:  103% 评分: -45 SELL
+  🟡 LINK   RSI: 50.0 MOM:  +3.5% BB:   74% 评分: -10 NEUTRAL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-11 07:30:48] Running g16
+📊 账户概览
+  现货: $721.28
+  全仓: $0.00
+  合约: $29.99
+
+🔍 信号分析
+  🔴 BTC    RSI: 66.2 MOM:  +2.0% BB:  116% 评分: -50 STRONG_SELL
+  🔴 ETH    RSI: 61.6 MOM:  +2.2% BB:  101% 评分: -35 SELL
+  🔴 SOL    RSI: 64.0 MOM:  +3.6% BB:   89% 评分: -45 SELL
+  🟡 XRP    RSI: 50.8 MOM:  +4.0% BB:   76% 评分: -10 NEUTRAL
+  🟡 ADA    RSI: 44.9 MOM:  +4.6% BB:   73% 评分:  +5 NEUTRAL
+  🔴 DOGE   RSI: 63.7 MOM:  +3.3% BB:  103% 评分: -45 SELL
+  🟡 LINK   RSI: 51.7 MOM:  +3.7% BB:   77% 评分: -10 NEUTRAL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-11 07:35:54] Running g16
+  现货: $361.63
+  全仓: $0.00
+  合约: $29.99
+
+🔍 信号分析
+  🔴 BTC    RSI: 66.2 MOM:  +2.0% BB:  116% 评分: -50 STRONG_SELL
+  🔴 ETH    RSI: 62.4 MOM:  +2.3% BB:  104% 评分: -35 SELL
+  🔴 SOL    RSI: 65.2 MOM:  +3.8% BB:   92% 评分: -60 STRONG_SELL
+  🟡 XRP    RSI: 51.1 MOM:  +4.1% BB:   77% 评分: -10 NEUTRAL
+  🟡 ADA    RSI: 45.9 MOM:  +4.7% BB:   74% 评分: -10 NEUTRAL
+  🔴 DOGE   RSI: 64.9 MOM:  +3.6% BB:  107% 评分: -45 SELL
+  🟡 LINK   RSI: 52.5 MOM:  +3.8% BB:   79% 评分: -10 NEUTRAL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-11 07:41:00] Running g16
+154.02
+  全仓: $0.00
+  合约: $30.00
+
+🔍 信号分析
+  🔴 BTC    RSI: 67.2 MOM:  +2.1% BB:  119% 评分: -50 STRONG_SELL
+  🔴 ETH    RSI: 62.3 MOM:  +2.3% BB:  103% 评分: -35 SELL
+  🔴 SOL    RSI: 65.4 MOM:  +3.9% BB:   93% 评分: -60 STRONG_SELL
+  🟡 XRP    RSI: 51.1 MOM:  +4.1% BB:   77% 评分: -10 NEUTRAL
+  🟡 ADA    RSI: 45.9 MOM:  +4.7% BB:   74% 评分: -10 NEUTRAL
+  🔴 DOGE   RSI: 65.1 MOM:  +3.6% BB:  108% 评分: -60 STRONG_SELL
+  🟡 LINK   RSI: 52.5 MOM:  +3.8% BB:   79% 评分: -10 NEUTRAL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-11 07:46:06] Running g16
+
+  现货: $89.39
+  全仓: $0.00
+  合约: $29.99
+
+🔍 信号分析
+  🔴 BTC    RSI: 67.1 MOM:  +2.1% BB:  119% 评分: -50 STRONG_SELL
+  🔴 ETH    RSI: 61.8 MOM:  +2.3% BB:  102% 评分: -35 SELL
+  🔴 SOL    RSI: 65.0 MOM:  +3.8% BB:   92% 评分: -45 SELL
+  🟡 XRP    RSI: 51.2 MOM:  +4.1% BB:   77% 评分: -10 NEUTRAL
+  🟡 ADA    RSI: 46.6 MOM:  +4.8% BB:   75% 评分: -10 NEUTRAL
+  🔴 DOGE   RSI: 66.1 MOM:  +3.8% BB:  111% 评分: -60 STRONG_SELL
+  🟡 LINK   RSI: 52.5 MOM:  +3.8% BB:   79% 评分: -10 NEUTRAL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-11 07:51:12] Running g16
+126.67
+  全仓: $0.00
+  合约: $29.99
+
+🔍 信号分析
+  🔴 BTC    RSI: 66.3 MOM:  +2.0% BB:  117% 评分: -50 STRONG_SELL
+  🔴 ETH    RSI: 61.2 MOM:  +2.2% BB:  100% 评分: -35 SELL
+  🔴 SOL    RSI: 65.0 MOM:  +3.8% BB:   92% 评分: -60 STRONG_SELL
+  🟡 XRP    RSI: 50.9 MOM:  +4.1% BB:   76% 评分: -10 NEUTRAL
+  🟡 ADA    RSI: 46.2 MOM:  +4.8% BB:   75% 评分: -10 NEUTRAL
+  🔴 DOGE   RSI: 66.6 MOM:  +4.0% BB:  112% 评分: -60 STRONG_SELL
+  🟡 LINK   RSI: 52.5 MOM:  +3.8% BB:   79% 评分: -10 NEUTRAL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-11 07:56:18] Running g16
+📊 账户概览
+  现货: $129.79
+  全仓: $0.00
+  合约: $30.00
+
+🔍 信号分析
+  🔴 BTC    RSI: 64.0 MOM:  +1.8% BB:  110% 评分: -35 SELL
+  🔴 ETH    RSI: 58.2 MOM:  +1.9% BB:   93% 评分: -35 SELL
+  🔴 SOL    RSI: 63.6 MOM:  +3.6% BB:   88% 评分: -45 SELL
+  🟡 XRP    RSI: 50.4 MOM:  +4.0% BB:   75% 评分: -10 NEUTRAL
+  🟡 ADA    RSI: 43.6 MOM:  +4.4% BB:   71% 评分:  +5 NEUTRAL
+  🔴 DOGE   RSI: 65.8 MOM:  +3.8% BB:  110% 评分: -60 STRONG_SELL
+  🟡 LINK   RSI: 50.0 MOM:  +3.5% BB:   74% 评分: -10 NEUTRAL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-11 08:01:24] Running g16
+==
+
+📊 账户概览
+  现货: $309.83
+  全仓: $0.00
+  合约: $30.00
+
+🔍 信号分析
+  🔴 BTC    RSI: 65.3 MOM:  +2.0% BB:  106% 评分: -50 STRONG_SELL
+  🔴 ETH    RSI: 54.5 MOM:  +2.1% BB:   92% 评分: -20 SELL
+  🔴 SOL    RSI: 51.0 MOM:  +3.9% BB:   88% 评分: -30 SELL
+  🟢 XRP    RSI: 31.7 MOM:  +4.3% BB:   75% 评分: +20 BUY
+  🟡 ADA    RSI: 35.7 MOM:  +4.7% BB:   69% 评分:  +5 NEUTRAL
+  🔴 DOGE   RSI: 59.9 MOM:  +4.0% BB:  100% 评分: -45 SELL
+  🟡 LINK   RSI: 45.5 MOM:  +4.0% BB:   77% 评分: -10 NEUTRAL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-11 08:06:30] Running g16
+=============
+
+📊 账户概览
+  现货: $502.30
+  全仓: $0.00
+  合约: $30.00
+
+🔍 信号分析
+  🔴 BTC    RSI: 60.1 MOM:  +1.7% BB:   96% 评分: -35 SELL
+  🔴 ETH    RSI: 52.5 MOM:  +2.0% BB:   88% 评分: -20 SELL
+  🔴 SOL    RSI: 48.5 MOM:  +3.7% BB:   84% 评分: -30 SELL
+  🟢 XRP    RSI: 31.3 MOM:  +4.2% BB:   74% 评分: +20 BUY
+  🟢 ADA    RSI: 34.1 MOM:  +4.4% BB:   67% 评分: +20 BUY
+  🔴 DOGE   RSI: 58.1 MOM:  +3.8% BB:   96% 评分: -45 SELL
+  🟡 LINK   RSI: 42.6 MOM:  +3.7% BB:   72% 评分:  +5 NEUTRAL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-11 08:11:37] Running g16
+=============
+
+📊 账户概览
+  现货: $641.33
+  全仓: $0.00
+  合约: $30.00
+
+🔍 信号分析
+  🔴 BTC    RSI: 60.0 MOM:  +1.7% BB:   96% 评分: -35 SELL
+  🔴 ETH    RSI: 52.6 MOM:  +2.0% BB:   88% 评分: -20 SELL
+  🔴 SOL    RSI: 48.1 MOM:  +3.6% BB:   84% 评分: -30 SELL
+  🟢 XRP    RSI: 30.2 MOM:  +4.1% BB:   73% 评分: +20 BUY
+  🟢 ADA    RSI: 34.6 MOM:  +4.5% BB:   67% 评分: +20 BUY
+  🔴 DOGE   RSI: 56.1 MOM:  +3.5% BB:   93% 评分: -45 SELL
+  🟡 LINK   RSI: 42.6 MOM:  +3.7% BB:   72% 评分:  +5 NEUTRAL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-11 08:16:43] Running g16
+====
+
+📊 账户概览
+  现货: $648.19
+  全仓: $0.00
+  合约: $30.00
+
+🔍 信号分析
+  🔴 BTC    RSI: 55.4 MOM:  +1.4% BB:   86% 评分: -35 SELL
+  🟡 ETH    RSI: 45.0 MOM:  +1.2% BB:   67% 评分:  +0 NEUTRAL
+  🟡 SOL    RSI: 44.4 MOM:  +3.2% BB:   77% 评分:  +5 NEUTRAL
+  🟢 XRP    RSI: 27.6 MOM:  +3.6% BB:   67% 评分: +20 BUY
+  🟢 ADA    RSI: 30.8 MOM:  +3.8% BB:   60% 评分: +20 BUY
+  🟡 DOGE   RSI: 50.2 MOM:  +2.6% BB:   78% 评分: -10 NEUTRAL
+  🟡 LINK   RSI: 37.7 MOM:  +3.0% BB:   60% 评分:  +5 NEUTRAL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-11 08:21:49] Running g16
+====
+
+📊 账户概览
+  现货: $489.33
+  全仓: $0.00
+  合约: $29.99
+
+🔍 信号分析
+  🟡 BTC    RSI: 52.4 MOM:  +1.2% BB:   78% 评分:  +0 NEUTRAL
+  🟡 ETH    RSI: 47.5 MOM:  +1.5% BB:   75% 评分:  +0 NEUTRAL
+  🔴 SOL    RSI: 46.4 MOM:  +3.5% BB:   81% 评分: -30 SELL
+  🟢 XRP    RSI: 27.3 MOM:  +3.5% BB:   66% 评分: +20 BUY
+  🟢 ADA    RSI: 31.3 MOM:  +3.9% BB:   61% 评分: +20 BUY
+  🟡 DOGE   RSI: 50.7 MOM:  +2.7% BB:   79% 评分: -10 NEUTRAL
+  🟡 LINK   RSI: 39.0 MOM:  +3.2% BB:   63% 评分:  +5 NEUTRAL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-11 08:26:55] Running g16
+==========
+
+📊 账户概览
+  现货: $599.47
+  全仓: $0.00
+  合约: $30.00
+
+🔍 信号分析
+  🔴 BTC    RSI: 54.8 MOM:  +1.3% BB:   85% 评分: -20 SELL
+  🟡 ETH    RSI: 47.3 MOM:  +1.5% BB:   74% 评分:  +0 NEUTRAL
+  🔴 SOL    RSI: 49.6 MOM:  +3.8% BB:   86% 评分: -30 SELL
+  🟢 XRP    RSI: 27.6 MOM:  +3.6% BB:   66% 评分: +20 BUY
+  🟢 ADA    RSI: 32.0 MOM:  +4.0% BB:   62% 评分: +20 BUY
+  🔴 DOGE   RSI: 51.6 MOM:  +2.9% BB:   82% 评分: -30 SELL
+  🟡 LINK   RSI: 39.7 MOM:  +3.3% BB:   65% 评分:  +5 NEUTRAL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-11 08:32:02] Running g16
+==========
+
+📊 账户概览
+  现货: $664.65
+  全仓: $0.00
+  合约: $29.99
+
+🔍 信号分析
+  🔴 BTC    RSI: 55.5 MOM:  +1.4% BB:   86% 评分: -35 SELL
+  🟡 ETH    RSI: 49.0 MOM:  +1.6% BB:   79% 评分:  +0 NEUTRAL
+  🔴 SOL    RSI: 50.5 MOM:  +3.8% BB:   87% 评分: -30 SELL
+  🟢 XRP    RSI: 28.3 MOM:  +3.7% BB:   68% 评分: +20 BUY
+  🟢 ADA    RSI: 33.1 MOM:  +4.3% BB:   65% 评分: +20 BUY
+  🔴 DOGE   RSI: 53.9 MOM:  +3.2% BB:   88% 评分: -30 SELL
+  🟡 LINK   RSI: 42.6 MOM:  +3.7% BB:   72% 评分:  +5 NEUTRAL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-11 08:37:09] Running g16
+==========
+
+📊 账户概览
+  现货: $426.76
+  全仓: $0.00
+  合约: $30.00
+
+🔍 信号分析
+  🔴 BTC    RSI: 55.5 MOM:  +1.4% BB:   87% 评分: -35 SELL
+  🟡 ETH    RSI: 49.1 MOM:  +1.7% BB:   80% 评分:  +0 NEUTRAL
+  🔴 SOL    RSI: 50.0 MOM:  +3.8% BB:   86% 评分: -30 SELL
+  🟢 XRP    RSI: 28.0 MOM:  +3.7% BB:   68% 评分: +20 BUY
+  🟢 ADA    RSI: 33.9 MOM:  +4.4% BB:   66% 评分: +20 BUY
+  🔴 DOGE   RSI: 51.3 MOM:  +2.8% BB:   81% 评分: -30 SELL
+  🟡 LINK   RSI: 42.6 MOM:  +3.7% BB:   72% 评分:  +5 NEUTRAL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+[2026-05-11 08:42:15] Running g16
+=
+
+📊 账户概览
+  现货: $540.80
+  全仓: $0.00
+  合约: $29.99
+
+🔍 信号分析
+  🟡 BTC    RSI: 50.4 MOM:  +1.0% BB:   72% 评分:  +0 NEUTRAL
+  🟡 ETH    RSI: 44.5 MOM:  +1.2% BB:   65% 评分: +15 NEUTRAL
+  🟡 SOL    RSI: 43.6 MOM:  +3.2% BB:   76% 评分:  +5 NEUTRAL
+  🟢 XRP    RSI: 25.4 MOM:  +3.1% BB:   60% 评分: +20 BUY
+  🟢 ADA    RSI: 31.3 MOM:  +3.9% BB:   61% 评分: +20 BUY
+  🟡 DOGE   RSI: 47.9 MOM:  +2.2% BB:   71% 评分: -10 NEUTRAL
+  🟡 LINK   RSI: 38.3 MOM:  +3.1% BB:   61% 评分:  +5 NEUTRAL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓
+
+📈 合约信号
+  ⏸️ 无合约持仓

@@ -1,0 +1,74 @@
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+Hermes G12 统一核心 07:26:27
+============================================================
+
+[任务5] 系统状态 ✅
+  版本: G12-Unified-v2.0
+  G12配置: RSI:28/70 BB:20/80
+  止盈: 15% 止损: 5.0%
+  仓位: 35% 杠杆: 5x
+  API状态: Binance✅ Polymarket✅
+
+[任务1] 资产监控 ✅
+  SPOT USDT: $25.23
+  ETH: 0.0031 ($7.16)
+  SOL: 0.0562 ($5.23)
+  XRP: 77.7402 ($110.40)
+  ADA: 152.4764 ($41.31)
+  DOGE: 22.9484 ($2.49)
+  LINK: 37.6641 ($390.58)
+  总资产: $582.41
+
+[任务2] 波动率监控 ✅
+  正常
+
+[任务3] Polymarket预测 ✅
+  活跃市场: 10个
+  🟡 NCAAB: Arizona State Sun Devils vs. Nevada Wo... 50%
+  🟡 NCAAB: Tennessee Volunteers vs. Duke Blue Dev... 50%
+  🟡 NBA: LA Clippers vs. Orlando Magic 2023-03-18... 50%
+
+[任务4] G12核心交易 ✅
+
+============================================================
+✅ 执行完成
+============================================================
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+============================================================
+Hermes G12 统一核心 08:07:04
+============================================================
+
+[任务5] 系统状态 ✅
+  版本: G12-Unified-v2.0
+  G12配置: RSI:28/70 BB:20/80
+  止盈: 15% 止损: 5.0%
+  仓位: 35% 杠杆: 5x
+  API状态: Binance✅ Polymarket✅
+
+[任务1] 资产监控 ✅
+  SPOT USDT: $16.44
+  ETH: 0.0031 ($7.16)
+  SOL: 0.0562 ($5.22)
+  XRP: 62.1922 ($88.27)
+  ADA: 31.9766 ($8.65)
+  DOGE: 81.6089 ($8.86)
+  LINK: 30.1313 ($311.56)
+  总资产: $446.15
+
+[任务2] 波动率监控 ✅
+  正常
+
+[任务3] Polymarket预测 ✅
+  活跃市场: 10个
+  🟡 NCAAB: Arizona State Sun Devils vs. Nevada Wo... 50%
+  🟡 NCAAB: Tennessee Volunteers vs. Duke Blue Dev... 50%
+  🟡 NBA: LA Clippers vs. Orlando Magic 2023-03-18... 50%
+
+[任务4] G12核心交易 ✅
+
+============================================================
+✅ 执行完成
+============================================================

@@ -1,0 +1,36 @@
+{
+  "iteration": 1,
+  "best_score": 0,
+  "best_params": {
+    "rsi_buy": 30,
+    "rsi_sell": 65,
+    "bb_buy": 25,
+    "bb_sell": 75,
+    "ema_fast": 12,
+    "ema_slow": 26,
+    "position": 0.3,
+    "momentum_weight": 0.2,
+    "rsi_weight": 0.35,
+    "bb_weight": 0.25,
+    "ema_weight": 0.2
+  },
+  "history": [
+    {
+      "params": {
+        "rsi_buy": 30,
+        "rsi_sell": 59,
+        "bb_buy": 36,
+        "bb_sell": 75,
+        "ema_fast": 19,
+        "ema_slow": 26,
+        "position": 0.3,
+        "momentum_weight": 0.2,
+        "rsi_weight": 0.35,
+        "bb_weight": 0.25,
+        "ema_weight": 0.2
+      },
+      "score": -92.37666356143066,
+      "time": "12:09:50"
+    }
+  ]
+}

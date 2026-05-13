@@ -1,0 +1,38 @@
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+G16 v2.0 持续运行模式 (每5分钟)
+======================================================================
+G16 v2.0 智能调仓系统
+现货 ↔ 全仓 自主转移
+======================================================================
+
+📊 账户概览
+  现货: $569.27
+  全仓: $0.00
+  合约: $29.99
+
+🔍 信号分析
+  🟡 BTC    RSI: 52.7 MOM:  +0.5% BB:   64% 评分: +10 NEUTRAL
+  🔴 ETH    RSI: 65.1 MOM:  +0.8% BB:   71% 评分: -30 SELL
+  🟡 SOL    RSI: 63.2 MOM:  +0.7% BB:   32% 评分:  -5 NEUTRAL
+  🟡 XRP    RSI: 60.3 MOM:  -0.3% BB:   39% 评分:  -5 NEUTRAL
+  🟢 ADA    RSI: 53.5 MOM:  -1.7% BB:   19% 评分: +20 BUY
+  🟢 DOGE   RSI: 44.4 MOM:  -0.7% BB:   17% 评分: +35 BUY
+  🟡 LINK   RSI: 61.9 MOM:  -0.6% BB:   26% 评分: -15 NEUTRAL
+
+⚖️ 调仓决策
+  📈→ ADA: SPOT→TO→MARGIN 30.495282
+      原因: BUY RSI:53.5 MOM:-1.7%
+  📈→ DOGE: SPOT→TO→MARGIN 2.349918
+      原因: BUY RSI:44.4 MOM:-0.7%
+
+🚀 执行转移
+  ❌ ADA: 现货→全仓 30.495282
+      错误: Illegal characters found in a parameter.
+  ❌ DOGE: 现货→全仓 2.349918
+      错误: Illegal characters found in a parameter.
+
+📈 合约信号
+  ⏸️ 无合约持仓
+
+等待5分钟...

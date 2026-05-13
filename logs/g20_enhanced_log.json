@@ -1,0 +1,61 @@
+{
+  "timestamp": "2026-05-10T23:29:36.670109",
+  "actions": [
+    "\u68c0\u6d4b\u5230ADA: 541.2360",
+    "\u68c0\u6d4b\u5230XRP: 220.4330",
+    "\u68c0\u6d4b\u5230DOGE: 1301.0630",
+    "\u5356\u51faADA\u5931\u8d25",
+    "\u5356\u51faXRP\u5931\u8d25",
+    "\u5356\u51faDOGE\u5931\u8d25"
+  ],
+  "signals": [
+    {
+      "coin": "BTC",
+      "rsi": 73.64384888602132,
+      "signal": "HOLD",
+      "params": {
+        "rsi_buy": 45,
+        "rsi_sell": 79,
+        "tp": 0.092,
+        "sl": 0.034
+      }
+    },
+    {
+      "coin": "ETH",
+      "rsi": 66.72908863920094,
+      "signal": "HOLD",
+      "params": {
+        "rsi_buy": 29,
+        "rsi_sell": 79,
+        "tp": 0.054,
+        "sl": 0.042
+      }
+    },
+    {
+      "coin": "DOGE",
+      "rsi": 55.84415584415579,
+      "signal": "HOLD",
+      "params": {
+        "rsi_buy": 45,
+        "rsi_sell": 80,
+        "tp": 0.07,
+        "sl": 0.03
+      }
+    },
+    {
+      "coin": "LINK",
+      "rsi": 76.59574468085113,
+      "signal": "HOLD",
+      "params": {
+        "rsi_buy": 44,
+        "rsi_sell": 77,
+        "tp": 0.06,
+        "sl": 0.045
+      }
+    }
+  ],
+  "balance": {
+    "spot": 19.20566358,
+    "futures": 59.68250062
+  }
+}

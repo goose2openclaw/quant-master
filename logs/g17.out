@@ -1,0 +1,21 @@
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+======================================================================
+G17 v1.0 - Lean EMA Cross + G16 融合策略
+======================================================================
+
+📊 账户概览
+  现货: $0.00
+  全仓: $0.00
+
+🔍 G17信号分析 (Lean EMA + G16 RSI/BB)
+  🔴 BTC    EMA:UP     RSI: 69.6 BB: 94.8% Score: -45 → SELL
+  🔴 ETH    EMA:UP     RSI: 65.6 BB: 94.8% Score: -45 → SELL
+  🟡 SOL    EMA:UP     RSI: 49.1 BB: 78.7% Score: -15 → NEUTRAL
+  🟡 XRP    EMA:UP     RSI: 46.5 BB: 14.8% Score:  15 → NEUTRAL
+  🟢 ADA    EMA:DOWN   RSI: 36.0 BB:-11.6% Score:  30 → BUY
+  🟢 DOGE   EMA:DOWN   RSI: 41.5 BB: -6.5% Score:  30 → BUY
+  🟡 LINK   EMA:UP     RSI: 46.3 BB: 24.1% Score:  15 → NEUTRAL
+
+⚖️ 调仓决策
+  ⏸️ 无需调仓

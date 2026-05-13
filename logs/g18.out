@@ -1,0 +1,14 @@
+/usr/lib/python3/dist-packages/requests/__init__.py:87: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (4.0.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+======================================================================
+G18 v1.0 - Lean Framework + G16 Core
+======================================================================
+
+📊 Portfolio Value: $0.00
+
+🔍 Alpha Insights (Lean Framework):
+  🟢 XRP: UP Score:65 RSI:47
+  🟢 LINK: UP Score:65 RSI:46
+
+⚖️ Portfolio Rebalance:
+  ⏸️ 无需调仓

@@ -1,0 +1,262 @@
+{
+  "timestamp": "2026-05-10T21:46:55.821160",
+  "market_regimes": {
+    "BTC": {
+      "regime": "low_volatility",
+      "trend": 0.398912157970891,
+      "vol": 0.0007655411385499215
+    },
+    "ETH": {
+      "regime": "low_volatility",
+      "trend": 0.47687311096089996,
+      "vol": 0.0010739306556046765
+    },
+    "SOL": {
+      "regime": "low_volatility",
+      "trend": 0.7066357156559356,
+      "vol": 0.0027987112584327966
+    },
+    "DOGE": {
+      "regime": "low_volatility",
+      "trend": -0.27780122349968817,
+      "vol": 0.0021627469423704604
+    },
+    "LINK": {
+      "regime": "low_volatility",
+      "trend": 0.39389036557647467,
+      "vol": 0.0029303852396645107
+    }
+  },
+  "strategy_results": {
+    "BTC": {
+      "G20": {
+        "return": 19.777597228619072,
+        "capital": 119.77759722861907,
+        "trades": 8,
+        "wins": 6
+      },
+      "QMT": {
+        "return": 16.810413877205363,
+        "capital": 116.81041387720536,
+        "trades": 12,
+        "wins": 8
+      },
+      "QuantDinger": {
+        "return": 16.808282527753008,
+        "capital": 116.80828252775301,
+        "trades": 11,
+        "wins": 7
+      },
+      "HyperAlpha": {
+        "return": 16.808282527753008,
+        "capital": 116.80828252775301,
+        "trades": 11,
+        "wins": 7
+      },
+      "TradingAgents": {
+        "return": 19.777597228619072,
+        "capital": 119.77759722861907,
+        "trades": 8,
+        "wins": 6
+      }
+    },
+    "ETH": {
+      "G20": {
+        "return": 18.79928521343011,
+        "capital": 118.79928521343011,
+        "trades": 7,
+        "wins": 6
+      },
+      "QMT": {
+        "return": 5.817663777827775,
+        "capital": 105.81766377782778,
+        "trades": 11,
+        "wins": 5
+      },
+      "QuantDinger": {
+        "return": 8.680143513993073,
+        "capital": 108.68014351399307,
+        "trades": 9,
+        "wins": 6
+      },
+      "HyperAlpha": {
+        "return": 8.60547041911127,
+        "capital": 108.60547041911127,
+        "trades": 9,
+        "wins": 6
+      },
+      "TradingAgents": {
+        "return": 18.79928521343011,
+        "capital": 118.79928521343011,
+        "trades": 7,
+        "wins": 6
+      }
+    },
+    "SOL": {
+      "G20": {
+        "return": 16.130856939459136,
+        "capital": 116.13085693945914,
+        "trades": 10,
+        "wins": 8
+      },
+      "QMT": {
+        "return": 13.620508750176114,
+        "capital": 113.62050875017611,
+        "trades": 18,
+        "wins": 10
+      },
+      "QuantDinger": {
+        "return": 12.97953705481504,
+        "capital": 112.97953705481504,
+        "trades": 12,
+        "wins": 9
+      },
+      "HyperAlpha": {
+        "return": 12.97953705481504,
+        "capital": 112.97953705481504,
+        "trades": 12,
+        "wins": 9
+      },
+      "TradingAgents": {
+        "return": 16.130856939459136,
+        "capital": 116.13085693945914,
+        "trades": 10,
+        "wins": 8
+      }
+    },
+    "DOGE": {
+      "G20": {
+        "return": 36.98668817984398,
+        "capital": 136.98668817984398,
+        "trades": 10,
+        "wins": 8
+      },
+      "QMT": {
+        "return": 29.02236782043468,
+        "capital": 129.02236782043468,
+        "trades": 19,
+        "wins": 13
+      },
+      "QuantDinger": {
+        "return": 28.402326248168066,
+        "capital": 128.40232624816807,
+        "trades": 16,
+        "wins": 10
+      },
+      "HyperAlpha": {
+        "return": 28.402326248168066,
+        "capital": 128.40232624816807,
+        "trades": 16,
+        "wins": 10
+      },
+      "TradingAgents": {
+        "return": 36.98668817984398,
+        "capital": 136.98668817984398,
+        "trades": 10,
+        "wins": 8
+      }
+    },
+    "LINK": {
+      "G20": {
+        "return": 28.41827343474415,
+        "capital": 128.41827343474415,
+        "trades": 12,
+        "wins": 10
+      },
+      "QMT": {
+        "return": 26.188636553050756,
+        "capital": 126.18863655305076,
+        "trades": 19,
+        "wins": 13
+      },
+      "QuantDinger": {
+        "return": 27.103694457906244,
+        "capital": 127.10369445790624,
+        "trades": 16,
+        "wins": 13
+      },
+      "HyperAlpha": {
+        "return": 27.103694457906244,
+        "capital": 127.10369445790624,
+        "trades": 16,
+        "wins": 13
+      },
+      "TradingAgents": {
+        "return": 28.41827343474415,
+        "capital": 128.41827343474415,
+        "trades": 12,
+        "wins": 10
+      }
+    }
+  },
+  "optimal_weights": {
+    "BTC": {
+      "G20": 0.21979461579473378,
+      "QMT": 0.18681938037165688,
+      "QuantDinger": 0.18679569401943777,
+      "HyperAlpha": 0.18679569401943777,
+      "TradingAgents": 0.21979461579473378
+    },
+    "ETH": {
+      "G20": 0.30969872895395206,
+      "QMT": 0.09583997779806902,
+      "QuantDinger": 0.14299636304794658,
+      "HyperAlpha": 0.14176620124608025,
+      "TradingAgents": 0.30969872895395206
+    },
+    "SOL": {
+      "G20": 0.22453460156940838,
+      "QMT": 0.18959163278624785,
+      "QuantDinger": 0.1806695820374677,
+      "HyperAlpha": 0.1806695820374677,
+      "TradingAgents": 0.22453460156940838
+    },
+    "DOGE": {
+      "G20": 0.23145554672639138,
+      "QMT": 0.18161636907069176,
+      "QuantDinger": 0.17773626873826276,
+      "HyperAlpha": 0.17773626873826276,
+      "TradingAgents": 0.23145554672639138
+    },
+    "LINK": {
+      "G20": 0.20708111019501946,
+      "QMT": 0.19083396971151856,
+      "QuantDinger": 0.19750190494922132,
+      "HyperAlpha": 0.19750190494922132,
+      "TradingAgents": 0.20708111019501946
+    }
+  },
+  "mirofish_results": {
+    "BTC": {
+      "best_params": {
+        "rsi_buy": 45,
+        "rsi_sell": 79,
+        "tp": 0.05,
+        "sl": 0.06
+      },
+      "best_score": 19.380400124719216,
+      "n_agents": 100
+    },
+    "ETH": {
+      "best_params": {
+        "rsi_buy": 30,
+        "rsi_sell": 79,
+        "tp": 0.12,
+        "sl": 0.05
+      },
+      "best_score": 17.273986699008773,
+      "n_agents": 100
+    },
+    "SOL": {
+      "best_params": {
+        "rsi_buy": 35,
+        "rsi_sell": 85,
+        "tp": 0.09,
+        "sl": 0.06
+      },
+      "best_score": 22.839174119392794,
+      "n_agents": 100
+    }
+  },
+  "conclusion": "g20_original"
+}

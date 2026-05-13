@@ -1,0 +1,10 @@
+{
+  "_comment": "Channel cache from Discord. Update by running: message channel-list --guildId YOUR_GUILD_ID",
+  "channels": [
+    {"id": "123456789012345678", "type": 4, "name": "category-name", "parent_id": null},
+    {"id": "234567890123456789", "type": 0, "name": "channel-name", "parent_id": "123456789012345678"}
+  ],
+  "_categories": {
+    "123456789012345678": "category-name"
+  }
+}

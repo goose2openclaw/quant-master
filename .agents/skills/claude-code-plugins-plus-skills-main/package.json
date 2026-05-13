@@ -1,0 +1,58 @@
+{
+  "name": "claude-code-plugins-monorepo",
+  "version": "4.30.0",
+  "private": true,
+  "packageManager": "pnpm@9.15.9+sha512.68046141893c66fad01c079231128e9afb89ef87e2691d69e4d40eee228988295fd4682181bae55b58418c3a253bde65a505ec7c5f9403ece5cc3cd37dcf2531",
+  "description": "Claude Code plugins workspace - simple plugins + MCP servers",
+  "scripts": {
+    "dev": "pnpm --filter '*' dev --parallel",
+    "build": "pnpm --filter '*' build",
+    "test": "pnpm --filter '*' test",
+    "lint": "pnpm --filter '*' lint",
+    "typecheck": "pnpm --filter '*' typecheck",
+    "sync-marketplace": "node scripts/sync-marketplace.cjs && node scripts/generate-plugin-package-jsons.mjs && node scripts/generate-readme-toc.mjs",
+    "sync-marketplace:json-only": "node scripts/sync-marketplace.cjs",
+    "build-cowork": "node scripts/build-cowork-zips.mjs",
+    "update-metrics": "node scripts/update-metrics.mjs",
+    "verify": "node scripts/run-verification-pipeline.mjs",
+    "lint:root": "eslint .",
+    "format:check": "prettier --check 'scripts/**/*.{js,mjs,cjs,ts}' '*.{js,mjs,cjs,ts,json,md,yml,yaml}' 'packages/cli/src/**/*.{ts,json}'",
+    "prepare": "husky"
+  },
+  "keywords": [
+    "claude-code",
+    "plugins",
+    "mcp",
+    "monorepo"
+  ],
+  "author": "Intent Solutions IO",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeremylongshore/claude-code-plugins-plus-skills.git"
+  },
+  "homepage": "https://tonsofskills.com",
+  "bugs": {
+    "url": "https://github.com/jeremylongshore/claude-code-plugins-plus-skills/issues"
+  },
+  "engines": {
+    "node": ">=20.0.0",
+    "pnpm": ">=9.0.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^20.5.2",
+    "@commitlint/config-conventional": "^20.5.0",
+    "@eslint/js": "^9.39.2",
+    "@intentsolutions/audit-harness": "^0.1.0",
+    "@types/node": "^20.19.27",
+    "archiver": "^7.0.1",
+    "eslint": "^9.39.2",
+    "husky": "^9.1.7",
+    "js-yaml": "^4.1.1",
+    "lint-staged": "^16.4.0",
+    "prettier": "^3.7.4",
+    "typescript": "^5.5.0",
+    "typescript-eslint": "^8.59.1",
+    "vitest": "^2.0.0"
+  }
+}

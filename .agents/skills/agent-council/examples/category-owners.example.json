@@ -1,0 +1,6 @@
+{
+  "_comment": "Maps Discord category IDs to agent IDs. Copy to data/category-owners.json",
+  "categories": {
+    "123456789012345678": "agent-id"
+  }
+}

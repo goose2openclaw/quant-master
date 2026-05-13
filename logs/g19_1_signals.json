@@ -1,0 +1,133 @@
+{
+  "timestamp": "2026-05-11T08:38:38.470890",
+  "rankings": [
+    {
+      "coin": "LINK",
+      "total_score": 76.52945619335348,
+      "momentum": 8.629441624365478,
+      "trend": 1.0196374622356548,
+      "is_high_momentum": true
+    },
+    {
+      "coin": "AVAX",
+      "total_score": 76.47044755753826,
+      "momentum": 7.684210526315793,
+      "trend": 1.042026766753924,
+      "is_high_momentum": true
+    },
+    {
+      "coin": "XRP",
+      "total_score": 76.19611173521977,
+      "momentum": 5.831829664381089,
+      "trend": 1.240040322023817,
+      "is_high_momentum": true
+    },
+    {
+      "coin": "ATOM",
+      "total_score": 75.73735362109424,
+      "momentum": 7.679914070891503,
+      "trend": 1.3932084249917807,
+      "is_high_momentum": true
+    },
+    {
+      "coin": "ADA",
+      "total_score": 74.84097740873794,
+      "momentum": 7.442748091603038,
+      "trend": 1.3610831052859016,
+      "is_high_momentum": true
+    },
+    {
+      "coin": "SOL",
+      "total_score": 74.48928986271079,
+      "momentum": 9.221706128922625,
+      "trend": 1.7815197022882632,
+      "is_high_momentum": true
+    },
+    {
+      "coin": "DOGE",
+      "total_score": 72.8128910469985,
+      "momentum": 3.870967741935475,
+      "trend": 1.5526800528377356,
+      "is_high_momentum": true
+    }
+  ],
+  "signals": [
+    {
+      "coin": "LINK",
+      "rsi": 59.595959595959535,
+      "signal": "HOLD",
+      "score": 76.52945619335348,
+      "momentum": 8.629441624365478,
+      "is_high_momentum": true,
+      "tp": 0.08399999999999999,
+      "sl": 0.036,
+      "tp_adjusted": true
+    },
+    {
+      "coin": "AVAX",
+      "rsi": 60.18518518518525,
+      "signal": "HOLD",
+      "score": 76.47044755753826,
+      "momentum": 7.684210526315793,
+      "is_high_momentum": true,
+      "tp": 0.11199999999999999,
+      "sl": 0.028000000000000004,
+      "tp_adjusted": true
+    },
+    {
+      "coin": "XRP",
+      "rsi": 61.29220023282886,
+      "signal": "HOLD",
+      "score": 76.19611173521977,
+      "momentum": 5.831829664381089,
+      "is_high_momentum": true,
+      "tp": 0.238,
+      "sl": 0.038400000000000004,
+      "tp_adjusted": true
+    },
+    {
+      "coin": "ATOM",
+      "rsi": 62.704918032786864,
+      "signal": "HOLD",
+      "score": 75.73735362109424,
+      "momentum": 7.679914070891503,
+      "is_high_momentum": true,
+      "tp": 0.11199999999999999,
+      "sl": 0.028000000000000004,
+      "tp_adjusted": true
+    },
+    {
+      "coin": "ADA",
+      "rsi": 64.40129449838182,
+      "signal": "SELL",
+      "score": 74.84097740873794,
+      "momentum": 7.442748091603038,
+      "is_high_momentum": true,
+      "tp": 0.11059999999999999,
+      "sl": 0.020000000000000004,
+      "tp_adjusted": true
+    },
+    {
+      "coin": "SOL",
+      "rsi": 66.3659793814432,
+      "signal": "HOLD",
+      "score": 74.48928986271079,
+      "momentum": 9.221706128922625,
+      "is_high_momentum": true,
+      "tp": 0.1148,
+      "sl": 0.0432,
+      "tp_adjusted": true
+    },
+    {
+      "coin": "DOGE",
+      "rsi": 59.31800158604278,
+      "signal": "HOLD",
+      "score": 72.8128910469985,
+      "momentum": 3.870967741935475,
+      "is_high_momentum": true,
+      "tp": 0.0805,
+      "sl": 0.027,
+      "tp_adjusted": true
+    }
+  ]
+}

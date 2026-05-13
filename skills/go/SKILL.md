@@ -1,239 +1,320 @@
-# go - Crypto Quantitative Simulation & Prediction Engine
+# go - 加密量化预测技能集
 
-## Overview
-**go** is a comprehensive cryptocurrency quantitative analysis and prediction system that combines multi-agent simulation, historical backtesting, factor analysis, and self-iterating optimization. It serves as the "brain" for crypto quantitative trading decisions.
+## 概述
+go 是加密货币量化预测的完整技能集，蒸馏Mirofish 1000智能体仿真引擎，整合13+专业子技能，形成统一预测输出。
 
-## Core Components
+## 🎯 集成架构
 
-### 1. Mirofish 1000-Agent Simulation
-- **1000 intelligent agents** running parallel simulations
-- Multiple strategy types: aggressive, conservative, momentum, high-confidence,均值回归, 突破, 套利
-- Real-time voting and consensus mechanism
-- Bayesian probability updates
+```
+┌─────────────────────────────────────────────────────────────────────────┐
+│                              go - 主控台                                 │
+├─────────────────────────────────────────────────────────────────────────┤
+│                                                                         │
+│  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐                 │
+│  │ go-quantum   │  │ go-thermo   │  │ go-contrarian│                 │
+│  │ 量子力学    │  │ 热力学      │  │ 反人性      │                 │
+│  │ 转折点      │  │ 温度/熵    │  │ 人性比例    │                 │
+│  └──────┬───────┘  └──────┬───────┘  └──────┬───────┘                 │
+│         └─────────────────┼─────────────────┼─────────────────┘         │
+│                           ▼                                       │
+│  ┌──────────────────────────────────────────────────────────┐        │
+│  │              go-ensemble 加权组合矫正                     │        │
+│  │         factor_weights × strategy_weights                │        │
+│  │              遗传算法 | 梯度下降 | 贝叶斯                │        │
+│  └──────────────────────────┬───────────────────────────────┘        │
+│                             ▼                                        │
+│  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐                 │
+│  │ go-detect    │  │ go-reverse   │  │ go-meta      │                 │
+│  │ 机构侦测    │  │ 逆向仿真    │  │ 自主迭代    │                 │
+│  │ 做市商占比  │  │ 参数优化    │  │ 策略发现    │                 │
+│  └──────┬───────┘  └──────┬───────┘  └──────┬───────┘                 │
+│         └─────────────────┼─────────────────┼─────────────────┘         │
+│                           ▼                                        │
+│  ┌──────────────────────────────────────────────────────────┐        │
+│  │           go-mirofish 1000智能体共识层                    │        │
+│  │              贝叶斯更新 | 投票共识                       │        │
+│  └──────────────────────────┬───────────────────────────────┘        │
+│                             ▼                                        │
+│  ┌──────────────────────────────────────────────────────────┐        │
+│  │                   最终预测输出                           │        │
+│  │  signal: BUY/SELL/HOLD                                   │        │
+│  │  confidence: 0.00-1.00                                   │        │
+│  │  reasoning: 多维度分析推理                                │        │
+│  └──────────────────────────────────────────────────────────┘        │
+└─────────────────────────────────────────────────────────────────────────┘
+```
 
-### 2. Strategy Library
+## 📦 子技能目录
 
-#### Trend Following Strategies
-- **RSI Momentum**: RSI < 30 BUY, RSI > 70 SELL
-- **MACD Crossover**: Signal line crossover detection
-- **Moving Average**: MA50/MA200 Golden Cross
-- **Bollinger Bands**: Breakout and mean reversion
-- **Supertrend**: Dynamic stop-loss following
+| 技能 | 功能 | 输入 | 输出 |
+|------|------|------|------|
+| **go-mirofish** | Mirofish 1000智能体 | 价格数据 | 共识信号 |
+| **go-quantum** | 量子力学分析 | K线数据 | 量子态, 隧穿概率 |
+| **go-thermo** | 热力学分析 | K线数据 | 温度, 熵, 相变 |
+| **go-contrarian** | 反人性分析 | K线数据 | 人性比, 转折点 |
+| **go-detect** | 机构侦测 | K线+交易数据 | 机构占比, 吸筹派发 |
+| **go-reverse** | 逆向仿真 | 历史数据 | 最优参数 |
+| **go-ensemble** | 加权组合 | 多信号 | 综合信号 |
+| **go-meta** | 自主迭代 | 性能数据 | 策略/因子更新 |
+| **go-fit** | 趋势拟合 | 多模型 | 拟合信号 |
+| **go-noise** | 噪音分析 | 原始信号 | 降噪信号 |
+| **go-hotspot** | 热点分析 | 多币种 | 热点排名 |
+| **go-fastlane** | 快车道 | 实时数据 | 闪电信号 |
 
-#### Mean Reversion Strategies
-- **RSI Mean Reversion**: Extreme RSI returns to mean
-- **Bollinger Band Reversion**: Price returns to bands
-- **ATR Channel**: Average True Range channels
-- **VWAP Reversion**: Price deviation from VWAP
+## 🔄 预测流程
 
-#### Volatility Strategies
-- **Volatility Breakout**: High volatility expansion
-- **ATR Trailing Stop**: Volatility-based exits
-- **Keltner Channel**: Channel breakouts
+```
+输入: coin, interval, period
+    │
+    ▼
+┌─────────────────────────────────────────────────────────┐
+│ Phase 1: 并行数据采集                                    │
+│ • K线数据 (1m/5m/15m/1h/4h/1d)                        │
+│ • 订单簿快照                                             │
+│ • 交易所流向                                             │
+└───────────────────────────┬─────────────────────────────┘
+                            │
+                            ▼
+┌─────────────────────────────────────────────────────────┐
+│ Phase 2: 多维度分析 (并行)                               │
+│                                                           │
+│ ┌─────────┐ ┌─────────┐ ┌─────────┐ ┌─────────┐        │
+│ │ go-     │ │ go-     │ │ go-     │ │ go-     │        │
+│ │ quantum │ │ thermo  │ │contra   │ │ detect  │        │
+│ │ 量子态  │ │ 温度   │ │ 人性比  │ │ 机构占比 │        │
+│ │ 隧穿    │ │ 熵     │ │ FOMO    │ │ 吸筹派发 │        │
+│ └────┬────┘ └────┬────┘ └────┬────┘ └────┬────┘        │
+│      └───────────┴───────────┴───────────┘              │
+│                          │                               │
+└──────────────────────────┼───────────────────────────────┘
+                           │
+                           ▼
+┌─────────────────────────────────────────────────────────┐
+│ Phase 3: go-ensemble 加权组合                            │
+│                                                           │
+│ • 因子权重: technical(15%), quantum(10%), thermo(10%)     │
+│ • 策略权重: mirofish(20%), oracle(25%)                   │
+│ • 优化方法: 遗传算法 / 梯度下降 / 贝叶斯                 │
+│                                                           │
+│ 输出: 综合评分, 信号方向, 置信度                          │
+└──────────────────────────┬───────────────────────────────┘
+                           │
+                           ▼
+┌─────────────────────────────────────────────────────────┐
+│ Phase 4: Mirofish 1000智能体共识                        │
+│                                                           │
+│ • 1000个智能体并行仿真                                    │
+│ • 投票共识 (BUY/SELL/HOLD)                               │
+│ • 贝叶斯更新                                              │
+│ • 淘汰 + 繁殖 + 突变                                      │
+│                                                           │
+│ 输出: 共识信号, 置信度, 理由                              │
+└──────────────────────────┬───────────────────────────────┘
+                           │
+                           ▼
+┌─────────────────────────────────────────────────────────┐
+│ Phase 5: go-meta 自主迭代                               │
+│                                                           │
+│ • 评估预测准确性                                          │
+│ • 发现新策略/因子                                         │
+│ • 权重更新                                                │
+│ • 漂移检测                                                │
+└──────────────────────────┬───────────────────────────────┘
+                           │
+                           ▼
+┌─────────────────────────────────────────────────────────┐
+│ 最终输出                                                  │
+│                                                           │
+│ {                                                         │
+│   "coin": "BTC",                                         │
+│   "signal": "BUY",                                       │
+│   "confidence": 0.78,                                   │
+│   "reasoning": [                                         │
+│     "量子态|2⟩ 相干性75%",                              │
+│     "热力学温度1.2 液态",                                │
+│     "人性比35% 买入机会",                                │
+│     "机构吸筹中",                                        │
+│     "Mirofish共识 BUY 72%"                               │
+│   ],                                                      │
+│   "components": {                                        │
+│     "quantum": {...},                                     │
+│     "thermo": {...},                                     │
+│     "contrarian": {...},                                 │
+│     "detect": {...}                                      │
+│   }                                                      │
+│ }                                                         │
+└─────────────────────────────────────────────────────────┘
+```
 
-#### Arbitrage Strategies
-- **Cross-Exchange**: Price differences across exchanges
-- **Funding Rate**: Futures-spot differential
-- **Triangular**: USDT→BTC→ETH→USDT
+## 📊 因子权重 (可调)
 
-### 3. Factor Analysis Engine
+```
+技术因子: 35%
+├── RSI: 8%
+├── MACD: 7%
+├── 布林带: 5%
+├── 均线交叉: 5%
+├── ATR: 5%
+└── 成交量: 5%
 
-#### Technical Factors
-| Factor | Description | Weight |
-|--------|-------------|--------|
-| RSI | Relative Strength Index | 0.15 |
-| MACD | Moving Average Convergence | 0.12 |
-| Bollinger | Bollinger Band Position | 0.10 |
-| Volume | Volume Ratio vs Average | 0.13 |
-| Momentum | 24h Price Change | 0.15 |
-| Trend | MA Direction | 0.10 |
-| Volatility | ATR Percentile | 0.12 |
-| Support | Support/Resistance | 0.08 |
-| Funding | Funding Rate Deviation | 0.05 |
+量子因子: 10%
+├── 波函数: 4%
+├── 隧穿概率: 3%
+└── 相干性: 3%
 
-#### On-Chain Factors
-- Active Addresses
-- Transaction Volume
-- Gas Price
-- DEX Volume
-- Whale Transactions
-- Exchange Flows
-- Staking Ratio
+热力学因子: 10%
+├── 温度: 4%
+├── 熵: 3%
+└── 动能: 3%
 
-#### Sentiment Factors
-- Social Media Volume
-- Google Trends
-- News Sentiment
-- Fear & Greed Index
-- Options Open Interest
-- Short Interest
+人性因子: 10%
+├── FOMO: 3%
+├── Fear: 3%
+└── Herd: 4%
 
-#### Macro Factors
-- BTC Dominance
-- Altcoin Season Index
-- USDT Market Cap
-- Correlation with S&P 500
-- Bond Yields
-- Dollar Index (DXY)
+机构因子: 15%
+├── 做市商: 5%
+├── 趋势跟踪: 5%
+└── 高频交易: 5%
 
-#### "Mystical" Factors (玄学)
-- **Moon Phase**: Lunar cycle correlation
-- **Day of Week**: Weekday seasonality
-- **Hour of Day**: Hourly volatility patterns
-- **Chinese Zodiac**: CNY cycle effects
-- **Market Cycle**: 4-year BTC halving cycle
-- **Golden Ratio**: Fibonacci retracements
-- **Pi Cycle**: Pi cycle indicators
-- **Planetary**: Rare astronomical alignments
+反人性因子: 10%
+├── 人性比: 5%
+└── 处置效应: 5%
 
-### 4. Backtesting Engine
+Mirofish因子: 10%
+└── 智能体共识: 10%
+```
 
-```python
-# Example backtest configuration
+## 🎛️ 可配置参数
+
+```json
 {
-    'period': '2020-2026',
-    'initial_capital': 10000,
-    'commission': 0.001,
-    'slippage': 0.0005,
-    'positions': ['BTC', 'ETH', 'BNB', 'SOL', 'ADA', 'XRP', 'DOGE', 'AVAX', 'LINK', 'UNI', 
-                  'BOME', 'PEPE', 'FLOKI', 'SHIB', 'WIF', 'BONK', 'TURBO', 'PUMP', 'NEIRO'],
-    'timeframes': ['1h', '4h', '1d'],
-    'strategies': ['rsil_momentum', 'macd_cross', 'bollinger_reversion', 'supertrend']
+  "go_config": {
+    "num_agents": 1000,
+    "consensus_threshold": 0.6,
+    "confidence_threshold": 0.65,
+    "weights": {
+      "technical": 0.35,
+      "quantum": 0.10,
+      "thermo": 0.10,
+      "human": 0.10,
+      "institutional": 0.15,
+      "contrarian": 0.10,
+      "mirofish": 0.10
+    },
+    "optimization": {
+      "method": "genetic",
+      "iterations": 100,
+      "learning_rate": 0.01
+    }
+  }
 }
 ```
 
-### 5. Coin Classification
+## 🚀 统一 API
 
-#### Tier 1: Major (30 coins)
-BTC, ETH, BNB, SOL, XRP, ADA, DOGE, DOT, LINK, UNI, AVAX, MATIC, ATOM, LTC, ETC, AAVE, APT, NEAR, FIL, ICP, INJ, TIA, SEI, SUI, OP, ARB, LDO, CRV, RDNT, ENS
-
-#### Tier 2: Meme (25 coins)
-PEPE, SHIB, FLOKI, WIF, BABYDOGE, COOKIE, AI, NEIRO, BOME, TURBO, PUMP, BONK, MEME, AIDOGE, ELON, BABYPEPE, POG, CHEEL, YOKO, WHALE, JENNER, BEBE, CHRO, MOODENG, FRED
-
-#### Tier 3: Polymarket/Real World (20)
-Polymarket events, Real-world assets, Prediction markets, Sports, Elections
-
-#### Tier 4: DeFi/CG
-AAVE, CRV, LD0, UNI, SUSHI, CAKE, Venus, Alpaca
-
-### 6. Oracle Decision System
-
-| RSI | Momentum | Volume | Funding | Score | Action |
-|-----|----------|--------|---------|-------|--------|
-| <25 | < -5% | High | Negative | ≥80 | STRONG_BUY |
-| <30 | < -3% | >avg | Negative | ≥60 | BUY |
-| <35 | < 0% | >avg | Neutral | ≥40 | ADD |
-| 30-50 | 0% | avg | Neutral | 20-40 | HOLD |
-| >65 | > 3% | <avg | Positive | <20 | REDUCE |
-| >70 | > 5% | Low | Positive | <0 | SELL |
-
-## API Usage
-
-### Python API
+### Python
 ```python
 from skills.go import GoEngine
 
-go = GoEngine(api_key='your_key', secret='your_secret')
+# 初始化
+go = GoEngine(num_agents=1000)
 
-# Get prediction for a coin
-prediction = go.predict('BTC', timeframe='1h')
-print(f"BTC signal: {prediction['signal']}")
-print(f"Confidence: {prediction['confidence']}%")
-print(f"Price target: ${prediction['target']}")
+# 单币预测
+result = go.predict('BTC', interval='1h', period='90d')
+print(f"信号: {result.signal}")
+print(f"置信度: {result.confidence:.0%}")
+print(f"理由: {result.reasoning}")
 
-# Run simulation
-result = go.simulate(coin='ETH', agents=1000, iterations=100)
-print(f"Win rate: {result['win_rate']}%")
-print(f"Expected return: {result['expected_return']}%")
+# 多币扫描
+results = go.scan(
+    coins=['BTC', 'ETH', 'PEPE', 'FLOKI'],
+    tier='meme',  # meme | main
+    min_score=60
+)
 
-# Backtest strategy
-bt = go.backtest(strategy='rsil_momentum', 
-                 coins=['BTC', 'ETH', 'SOL'],
-                 period='2024-2026')
-print(f"Sharpe: {bt['sharpe']}")
-print(f"Max drawdown: {bt['max_dd']}%")
+# 批量分析
+batch = go.batch_analyze(['BTC', 'ETH', 'SOL'])
+
+# 实时信号 (go-fastlane)
+signal = go.flash_signal('PEPE')
+
+# 热点分析
+hotspots = go.hotspot_ranking(limit=10)
+
+# 机构侦测
+institutions = go.detect_institutions('BTC')
+print(f"做市商: {institutions.market_makers:.0%}")
+print(f"趋势跟踪: {institutions.trend_followers:.0%}")
+
+# 参数优化
+optimal_params = go.optimize('PEPE', period='90d')
+
+# 训练权重
+go.train(period='90d', method='genetic')
+
+# 保存/加载配置
+go.save_config('go_config.json')
+go.load_config('go_config.json')
 ```
 
-### Command Line
+### 命令行
 ```bash
-# Predict
-go predict BTC --timeframe 1h --agents 1000
+# 预测
+go predict BTC --interval 1h --period 90d
 
-# Simulate
-go simulate ETH --agents 1000 --iterations 100
+# 扫描
+go scan --coins BTC,ETH,PEPE --tier meme --min-score 60
 
-# Backtest
-go backtest --strategy rsil_momentum --coins BTC,ETH,SOL --period 2024-2026
+# 热点
+go hotspots --limit 10
 
-# Scan market
-go scan --tier meme --min-score 60
+# 机构侦测
+go detect BTC
 
-# Analyze
-go analyze BTC --factors all
+# 参数优化
+go optimize PEPE --period 90d --method genetic
+
+# 训练
+go train --period 90d --method genetic
+
+# 配置
+go config show
+go config set weights.technical 0.30
 ```
 
-## Output Examples
+## 📁 文件结构
 
-### Prediction Output
-```
-🔮 GO Prediction: BTC (1h)
-==========================
-Signal:    🟢 STRONG_BUY
-Score:     85/100
-Confidence: 78%
-Price:     $67,450
-Target:    $72,000 (+6.7%)
-Stop:      $64,000 (-5.1%)
-Time:      2026-05-12 23:50
-
-📊 Factor Breakdown:
-  RSI:        24 (-30) ⭐
-  Momentum:   -4.2% (+25)
-  Volume:    1.8x avg (+20)
-  Trend:     Bullish (+15)
-  Funding:   -0.02% (+10)
-  
-🗳️ Agent Vote: 823/1000 BUY (82.3%)
-```
-
-## Self-Iteration Mechanism
-
-### 1. Performance Tracking
-- Daily P&L per strategy
-- Win rate by market condition
-- Factor weight optimization
-- Hyperparameter tuning
-
-### 2. Pattern Learning
-- Market regime detection
-- Seasonal patterns
-- Cross-coin correlation
-- Volatility clustering
-
-### 3. Model Evolution
--淘汰 underperforming agents
-- Breed successful strategies
-- Mutate parameters
-- Ensemble optimization
-
-## Files
 ```
 skills/go/
-├── SKILL.md           # This file
-├── go_engine.py       # Core engine
-├── agents.py          # Mirofish agents
-├── strategies.py      # Strategy library
-├── factors.py         # Factor analysis
-├── backtest.py       # Backtesting engine
-├── oracle.py         # Decision system
-└── data/             # Historical data
+├── SKILL.md                    # 本文档
+├── go_engine.py                # 主引擎
+├── mirofish.py                 # Mirofish 1000智能体
+├── integration.py              # 子技能集成
+├── config.json                 # 默认配置
+├── FACTORS.md                  # 因子库 (200+因子)
+└── STRATEGIES.md               # 策略库 (50+策略)
 ```
 
-## Risk Warning
-⚠️ This tool is for simulation and prediction only. Not financial advice. Cryptocurrency trading involves substantial risk of loss.
+## 子技能关联
+
+```
+go-quantum      →  转折点预测, 边界条件
+go-thermo       →  温度/熵, 热循环
+go-contrarian   →  人性比例, 反人性信号
+go-detect       →  机构占比, 吸筹派发
+go-reverse      →  个性化参数
+go-ensemble     →  加权组合
+go-meta         →  自主迭代
+go-fit          →  趋势拟合
+go-noise        →  信号降噪
+go-hotspot      →  热点排名
+go-fastlane     →  闪电信号
+```
 
 ---
 
-**Version**: 1.0.0
-**Created**: 2026-05-12
-**Author**: OpenClaw AI Assistant
+**版本**: 2.0.0 (集成版)
+**创建**: 2026-05-13
+**作者**: OpenClaw AI Assistant
+**GitHub**: github.com/goose2openclaw/go2se-genius (g12branch)
