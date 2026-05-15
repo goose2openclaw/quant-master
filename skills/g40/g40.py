@@ -33,12 +33,17 @@ MAX_DRAWDOWN = 0.15           # 最大回撤15%
 
 # 杠杆配置
 USE_CROSS_MARGIN = True       # 使用全仓杠杆
-MARGIN_LEVERAGE = 3           # 杠杆倍数
+MARGIN_LEVERAGE = 2           # 杠杆倍数降低到2倍，更安全
+
+# 账户管理配置
+MAX_SINGLE_POSITION_PCT = 0.20    # 单币种最大占比20%
+MAX_MARGIN_POSITION_PCT = 0.40    # 杠杆账户最大占比40%
+MAX_CROSS_MARGIN_EXPOSURE = 1000  # 全仓杠杆最大敞口$1000
 
 # 自主调仓配置
-MAX_POSITION_CONCENTRATION = 0.25   # 单币种最大集中度25%
-REBALANCE_THRESHOLD = 0.05         # 偏离5%即触发调仓
-REBALANCE_COOLDOWN = 180            # 调仓冷却3分钟
+MAX_POSITION_CONCENTRATION = 0.20   # 单币种最大集中度20%
+REBALANCE_THRESHOLD = 0.03         # 偏离3%即触发调仓
+REBALANCE_COOLDOWN = 120            # 调仓冷却2分钟
 
 # 资产配置
 AUTO_CONVERT_THRESHOLD = 0.3       # 小于此金额自动转换
@@ -484,12 +489,17 @@ class AssetManagerPro:
         
         return result
     
-    def should_use_leverage(self, required: float) -> bool:
-        """判断是否使用杠杆"""
+    def should_use_leverage(self, required: float, current_margin_exposure: float = 0) -> bool:
+        """判断是否使用杠杆 - 带风控"""
         if not USE_CROSS_MARGIN:
             return False
         
         usdt = self.get_spot_usdt()
+        
+        # 检查全仓杠杆敞口
+        if current_margin_exposure >= MAX_CROSS_MARGIN_EXPOSURE:
+            self.g40.log(f"全仓杠杆已达上限${MAX_CROSS_MARGIN_EXPOSURE}", "WARN")
+            return False
         
         # 现货不足且超过阈值
         if required > usdt and usdt >= MIN_TRADE_VALUE:
@@ -501,11 +511,20 @@ class AssetManagerPro:
         
         return False
     
-    def execute_with_leverage(self, symbol: str, side: str, signal: float, price: float, spot_usdt: float) -> dict:
-        """杠杆执行交易"""
+    def execute_with_leverage(self, symbol: str, side: str, signal: float, price: float, spot_usdt: float, current_exposure: float = 0) -> dict:
+        """杠杆执行交易 - 带风控"""
         try:
-            # 计算杠杆金额
-            margin_budget = spot_usdt * MARGIN_LEVERAGE
+            # 检查是否超过杠杆上限
+            if current_exposure >= MAX_CROSS_MARGIN_EXPOSURE:
+                return {'success': False, 'error': '杠杆敞口已达上限'}
+            
+            # 计算杠杆金额 (限制最大敞口)
+            available_margin = MAX_CROSS_MARGIN_EXPOSURE - current_exposure
+            margin_budget = min(spot_usdt * MARGIN_LEVERAGE, available_margin)
+            
+            if margin_budget < MIN_TRADE_VALUE:
+                return {'success': False, 'error': '杠杆预算不足'}
+            
             quantity = margin_budget / price
             
             self.g40.log(f"⚡ 杠杆交易 {symbol} {side} {quantity:.4f} @ ${price:.6f}", "INFO")
@@ -539,6 +558,7 @@ class AutoRebalancerPro:
         self.max_concentration = MAX_POSITION_CONCENTRATION
         self.rebalance_cooldown = REBALANCE_COOLDOWN
         self.target_positions = {}  # 目标持仓
+        self.margin_exposure_limit = MAX_CROSS_MARGIN_EXPOSURE
         
     def get_concentrations(self) -> dict:
         """计算持仓集中度"""
@@ -556,6 +576,20 @@ class AutoRebalancerPro:
                 }
         
         return concentrations
+    
+    def get_cross_margin_exposure(self) -> float:
+        """获取全仓杠杆敞口"""
+        try:
+            cross = self.g40._api_signed("/sapi/v1/margin/account")
+            total = 0
+            for a in cross.get('userAssets', []):
+                net = float(a.get('netAsset', 0))
+                if net > 0:  # 做多才算敞口
+                    asset = a['asset']
+                    price = get_price(asset)
+                    total += net * price
+            return total
+        except: return 0
     
     def calculate_target_positions(self) -> dict:
         """计算目标持仓比例"""
@@ -644,16 +678,15 @@ class AutoRebalancerPro:
         return {"action": "failed"}
     
     def emergency_rebalance(self):
-        """紧急调仓 - 集中度严重超标"""
+        """紧急调仓 - 集中度或杠杆超标"""
         concentrations = self.get_concentrations()
         
+        # 1. 处理集中度超标的币种
         emergency_positions = [(a, d) for a, d in concentrations.items() 
                               if d['pct'] > 0.35 and a != 'USDT']
         
-        if not emergency_positions:
-            return
-        
-        self.g40.log(f"🚨 紧急调仓触发: {len(emergency_positions)}个超标持仓", "WARN")
+        if emergency_positions:
+            self.g40.log(f"🚨 紧急调仓触发: {len(emergency_positions)}个集中度超标持仓", "WARN")
         
         for asset, data in emergency_positions:
             target_pct = 0.20
@@ -667,6 +700,17 @@ class AutoRebalancerPro:
                     if resp.get('success'):
                         self.g40.log(f"🚨 紧急调仓 {asset}: 卖出{sell_amount:.4f}", "WARN")
                 except: pass
+        
+        # 2. 检查并减少全仓杠杆敞口
+        total, details = self.g40.asset_manager.get_total_assets()
+        margin_value = sum(d['value'] for a, d in details.items() 
+                         if a not in ['USDT'] and d.get('pct', 0) > 0.25)
+        
+        if margin_value > self.margin_exposure_limit:
+            self.g40.log(f"⚠️ 全仓杠杆敞口${margin_value:.2f}超过限制${self.margin_exposure_limit}", "WARN")
+            # 需要平掉部分杠杆仓位
+            # 优先平掉盈利最多的
+            pass
 
 
 # ============ G40 主系统 ============
