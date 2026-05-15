@@ -1,0 +1,1 @@
+{"positions": {}, "history": [], "weights": {"go-core": 0.2, "go-fit": 0.1, "go-noise": 0.08, "go-thermo": 0.08, "go-detect": 0.12, "go-pool": 0.15, "go-rotate": 0.12, "go-long-short": 0.15, "go-etf": 0.1, "go-ensemble": 0.05, "go-meta": 0.05}, "timestamp": 1778804840.0309305}

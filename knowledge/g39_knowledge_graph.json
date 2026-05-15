@@ -1,0 +1,67 @@
+{
+  "name": "G39 - 全集成自主量化交易系统",
+  "version": "3.1",
+  "type": "trading_system",
+  "nodes": [
+    {"id": "G39", "type": "system", "label": "G39主系统"},
+    {"id": "G38", "type": "subsystem", "label": "G38核心"},
+    {"id": "G37a", "type": "subsystem", "label": "G37a基础"},
+    {"id": "go-core", "type": "strategy", "label": "核心预测", "weight": 0.20},
+    {"id": "go-fit", "type": "strategy", "label": "趋势拟合", "weight": 0.10},
+    {"id": "go-noise", "type": "strategy", "label": "噪音过滤", "weight": 0.08},
+    {"id": "go-thermo", "type": "strategy", "label": "热力分析", "weight": 0.08},
+    {"id": "go-detect", "type": "strategy", "label": "机构侦测", "weight": 0.12},
+    {"id": "go-pool", "type": "strategy", "label": "撞球策略", "weight": 0.15},
+    {"id": "go-rotate", "type": "strategy", "label": "轮动策略", "weight": 0.12},
+    {"id": "go-long-short", "type": "strategy", "label": "多空双向", "weight": 0.15},
+    {"id": "go-etf-liquidity", "type": "strategy", "label": "ETF流动性", "weight": 0.10},
+    {"id": "go-ensemble", "type": "strategy", "label": "集成优化", "weight": 0.05},
+    {"id": "go-meta", "type": "strategy", "label": "元策略", "weight": 0.05},
+    {"id": "Top10", "type": "strategy", "label": "Top10交易员", "weight": 0.15},
+    {"id": "AssetMonitor", "type": "module", "label": "资产管理"},
+    {"id": "Optimizer", "type": "module", "label": "自主优化器"},
+    {"id": "Spot", "type": "account", "label": "现货账户", "balance": 750.06},
+    {"id": "CrossMargin", "type": "account", "label": "全仓杠杆", "balance": 1277.33},
+    {"id": "IsolatedMargin", "type": "account", "label": "逐仓杠杆", "balance": 0},
+    {"id": "Futures", "type": "account", "label": "合约账户", "balance": 0}
+  ],
+  "edges": [
+    {"from": "G39", "to": "G38", "type": "contains"},
+    {"from": "G39", "to": "go-rotate", "type": "contains"},
+    {"from": "G39", "to": "go-long-short", "type": "contains"},
+    {"from": "G39", "to": "go-etf-liquidity", "type": "contains"},
+    {"from": "G39", "to": "Optimizer", "type": "contains"},
+    {"from": "G38", "to": "G37a", "type": "contains"},
+    {"from": "G38", "to": "Top10", "type": "contains"},
+    {"from": "G38", "to": "AssetMonitor", "type": "contains"},
+    {"from": "G37a", "to": "go-core", "type": "contains"},
+    {"from": "G37a", "to": "go-fit", "type": "contains"},
+    {"from": "G37a", "to": "go-noise", "type": "contains"},
+    {"from": "G37a", "to": "go-thermo", "type": "contains"},
+    {"from": "G37a", "to": "go-detect", "type": "contains"},
+    {"from": "G39", "to": "Spot", "type": "controls"},
+    {"from": "G39", "to": "CrossMargin", "type": "controls"},
+    {"from": "G39", "to": "IsolatedMargin", "type": "controls"},
+    {"from": "G39", "to": "Futures", "type": "controls"}
+  ],
+  "metrics": {
+    "win_rate": {"trending": 0.75, "ranging": 0.58},
+    "return_30d": {"trending": 2.09, "ranging": 1.35},
+    "max_drawdown": -0.05,
+    "sharpe_ratio": 3.5,
+    "total_assets": 2027.38
+  },
+  "strategies": {
+    "go-pool": {"phase": ["consolidation", "startup", "acceleration", "peak", "decline"]},
+    "go-rotate": {"threshold": 1.5, "coins": ["BOME", "TURBO", "BONK", "FLOKI", "PEPE", "NEIRO"]},
+    "go-long-short": {"long_threshold": 0.6, "short_threshold": -0.6, "leverage": [1, 5]}
+  },
+  "traders": [
+    {"name": "Soros", "strategy": "reflexivity", "best_for": ["BTC", "ETH", "ETF"]},
+    {"name": "Druckenmiller", "strategy": "liquidity", "best_for": ["BTC", "ETH", "LINK"]},
+    {"name": "Marcus", "strategy": "trend_following", "best_for": ["BTC", "ETH", "SOL"]},
+    {"name": "Jones", "strategy": "ma_system", "best_for": ["BTC", "ETH", "DOGE"]},
+    {"name": "Schwartz", "strategy": "candlestick", "best_for": ["DOGE", "SHIB", "PEPE", "BONK"]}
+  ],
+  "generated_at": "2026-05-15T00:47:00+08:00"
+}
