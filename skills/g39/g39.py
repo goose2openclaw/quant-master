@@ -16,6 +16,219 @@ from collections import deque
 
 # ============ 配置 ============
 
+
+# ============ 智能资产管理配置 ============
+MIN_USDT_RESERVE = 5.0        # 最低USDT储备
+AUTO_CONVERT_THRESHOLD = 1.0  # 小于此金额自动转换
+CONVERT_COOLDOWN = 300         # 转换冷却时间(秒)
+USE_CROSS_MARGIN = True        # USDT不足时使用全仓杠杆
+MIN_TRADE_VALUE = 1.0          # 最小交易价值$
+
+# 币种流动性评分 (用于决策)
+LIQUIDITY_SCORE = {
+    'BTC': 100, 'ETH': 95, 'BNB': 90, 'SOL': 85, 
+    'XRP': 80, 'ADA': 75, 'DOT': 70, 'LINK': 65,
+    'DOGE': 60, 'SHIB': 30, 'PEPE': 25, 'BONK': 25,
+    'FLOKI': 20, 'NEIRO': 15, 'BOME': 20, 'TURBO': 15
+}
+
+# ============ 智能资产管理类 ============
+class AssetManager:
+    """智能资产管理 - 自动转换、调配、预警"""
+    
+    def __init__(self, g39):
+        self.g39 = g39
+        self.last_convert_time = 0
+        self.convert_history = []
+        self.min_usdt = MIN_USDT_RESERVE
+    
+    def get_spot_usdt(self) -> float:
+        """获取现货USDT余额"""
+        try:
+            account = self.g39._api_signed("/api/v3/account")
+            for b in account.get('balances', []):
+                if b['asset'] == 'USDT':
+                    return float(b.get('free', 0))
+        except:
+            pass
+        return 0
+    
+    def get_all_holdings(self) -> dict:
+        """获取所有持仓"""
+        holdings = {}
+        try:
+            account = self.g39._api_signed("/api/v3/account")
+            for b in account.get('balances', []):
+                free = float(b.get('free', 0))
+                locked = float(b.get('locked', 0))
+                total = free + locked
+                if total > 0.0001:
+                    holdings[b['asset']] = {
+                        'free': free, 'locked': locked, 'total': total
+                    }
+        except:
+            pass
+        return holdings
+    
+    def get_price_dict(self) -> dict:
+        """获取所有相关币种价格"""
+        prices = {}
+        for sym in ['BTC', 'ETH', 'BNB', 'XRP', 'ADA', 'SOL', 'DOT', 'LINK', 
+                    'DOGE', 'SHIB', 'PEPE', 'BONK', 'FLOKI', 'NEIRO', 'BOME', 'TURBO', 'LTC', 'ETC']:
+            try:
+                d = api_pub(f'https://api.binance.com/api/v3/ticker/price?symbol={sym}USDT')
+                prices[sym] = float(d['price']) if d else 0
+            except:
+                prices[sym] = 0
+        return prices
+    
+    def auto_convert_small_holdings(self) -> dict:
+        """自动转换小额持仓为USDT"""
+        result = {'converted': [], 'total': 0, 'success': True}
+        
+        # 检查冷却时间
+        if time.time() - self.last_convert_time < CONVERT_COOLDOWN:
+            return result
+        
+        usdt = self.get_spot_usdt()
+        if usdt >= self.min_usdt:
+            return result
+        
+        holdings = self.get_all_holdings()
+        prices = self.get_price_dict()
+        
+        for asset, data in holdings.items():
+            if asset == 'USDT':
+                continue
+            
+            if asset in prices and prices[asset] > 0:
+                value = data['total'] * prices[asset]
+                
+                # 小额持仓才转换 (避免大额转换损失)
+                if value < 10 and value > AUTO_CONVERT_THRESHOLD:
+                    try:
+                        # 市价卖出入USDT
+                        order = place_order(asset, "SELL", data['total'])
+                        if order.get('success'):
+                            result['converted'].append({
+                                'asset': asset, 'amount': data['total'], 'value': value
+                            })
+                            result['total'] += value
+                            self.g39.log(f"自动转换 {asset}: {data['total']:.4f} = ${value:.2f}", "INFO")
+                    except Exception as e:
+                        self.g39.log(f"转换失败 {asset}: {e}", "ERROR")
+        
+        if result['converted']:
+            self.last_convert_time = time.time()
+            self.convert_history.append(result)
+        
+        return result
+    
+    def get_trade_budget(self, confidence: float, signal_strength: float) -> float:
+        """根据信号强度和信心度计算交易预算"""
+        usdt = self.get_spot_usdt()
+        
+        # 基础预算
+        budget = usdt * KELLY_BASE * confidence
+        
+        # 信号强度加成
+        if signal_strength > 0.2:
+            budget *= 1.2
+        elif signal_strength > 0.15:
+            budget *= 1.1
+        
+        # 确保最低交易额
+        if budget < MIN_TRADE_VALUE:
+            return 0
+        
+        return min(budget, usdt * 0.5)  # 最多用50%的USDT
+    
+    def should_use_margin(self, required: float) -> bool:
+        """判断是否应该使用全仓杠杆"""
+        if not USE_CROSS_MARGIN:
+            return False
+        
+        usdt = self.get_spot_usdt()
+        
+        # USDT不足且需要使用杠杆
+        if required > usdt and usdt >= MIN_TRADE_VALUE:
+            # 检查全仓杠杆是否有多余USDT
+            try:
+                cross_data = self.g39._api_signed("/sapi/v1/margin/account")
+                for a in cross_data.get('userAssets', []):
+                    if a['asset'] == 'USDT':
+                        net = float(a.get('netAsset', 0))
+                        if net > required * 2:  # 杠杆有足够USDT
+                            return True
+            except:
+                pass
+        
+        return False
+    
+    def execute_with_smarter_logic(self, signal) -> dict:
+        """智能执行交易 - 考虑所有因素"""
+        symbol = signal.symbol
+        price = get_price(symbol)
+        
+        if price <= 0:
+            return {"action": "error", "reason": "获取价格失败"}
+        
+        # 计算所需金额
+        usdt = self.get_spot_usdt()
+        min_order = max(MIN_TRADE_VALUE, price * 100)  # 至少价值$1
+        
+        if usdt < min_order:
+            # 尝试自动转换
+            self.auto_convert_small_holdings()
+            usdt = self.get_spot_usdt()
+        
+        if usdt < min_order and self.should_use_margin(min_order):
+            # 使用全仓杠杆
+            self.g39.log(f"使用全仓杠杆交易 {symbol}", "INFO")
+            return self._execute_via_margin(signal, price, usdt)
+        
+        if usdt < min_order:
+            return {"action": "skip", "reason": f"资金不足(需要${min_order:.2f}, 只有${usdt:.2f})"}
+        
+        # 正常现货交易
+        budget = self.get_trade_budget(signal.confidence, abs(signal.signal))
+        quantity = budget / price
+        
+        if quantity <= 0:
+            return {"action": "skip", "reason": "计算数量为0"}
+        
+        quantity = format_quantity(symbol, quantity)
+        order_value = quantity * price
+        
+        if order_value < MIN_TRADE_VALUE:
+            return {"action": "skip", "reason": f"订单价值${order_value:.2f}低于最低${MIN_TRADE_VALUE}"}
+        
+        result = place_order(symbol, "BUY", quantity)
+        if result.get('success'):
+            self.g39.log(f"✅ 智能买入 {symbol}: {quantity} @ {price}", "INFO")
+        
+        return result
+    
+    def _execute_via_margin(self, signal, price, spot_usdt) -> dict:
+        """通过全仓杠杆执行"""
+        symbol = signal.symbol
+        
+        # 从全仓借USDT
+        try:
+            # 计算杠杆交易数量
+            margin_budget = spot_usdt * 3  # 3倍杠杆
+            quantity = margin_budget / price
+            quantity = format_quantity(symbol, quantity)
+            
+            # 执行市价单
+            result = place_order(symbol, "BUY", quantity)
+            if result.get('success'):
+                self.g39.log(f"✅ 杠杆买入 {symbol}: {quantity} @ {price} (3x)", "INFO")
+            return result
+        except Exception as e:
+            return {"action": "error", "reason": f"杠杆交易失败: {e}"}
+
+
 API_KEY = 'QPM55JoNnHSV7C7PllgNbTAxpzy9RaBjoKprgHuIE9GJUeQoVIGu69ICPnmBXp61'
 API_SECRET = 'BSOTWqsVsncRk13DMDJ2YDRQks8XvrajArQDPW2jY8sDwNtcgb5da8H3x6qF3hJk'
 PROXY = "http://172.29.144.1:7897"
@@ -271,42 +484,8 @@ class AutoTrader:
         if signal.direction == 'neutral' or signal.confidence < 0.5:
             return {"action": "skip", "reason": "信号不足"}
         
-        symbol = signal.symbol
-        self.g39.log(f"调试: 获取{symbol}价格...", "INFO")
-        price = get_price(symbol)
-        self.g39.log(f"调试: {symbol}价格={price}", "INFO")
-        if price <= 0:
-            return {"action": "error", "reason": "获取价格失败"}
-        
-        # 计算仓位 (确保最小订单价值$1)
-        account = self.g39.get_account_status()
-        usdt = account.spot_usdt
-        min_order_value = 1  # 最小订单价值$1
-        
-        # 计算理论仓位
-        position_value = usdt * KELLY_BASE * signal.confidence
-        
-        # 确保最小订单价值
-        if position_value < min_order_value:
-            return {"action": "skip", "reason": f"资金不足(需要${min_order_value})"}
-        
-        quantity = position_value / price
-        
-        # 格式化数量
-        quantity = format_quantity(symbol, quantity)
-        
-        # 确保最小数量
-        if quantity <= 0:
-            return {"action": "skip", "reason": "数量为0"}
-        
-        # 确保订单价值满足最小要求
-        order_value = quantity * price
-        if order_value < min_order_value:
-            quantity = min_order_value / price
-            quantity = format_quantity(symbol, quantity)
-        
-        if quantity <= 0:
-            return {"action": "skip", "reason": "数量不足"}
+        # 使用智能资产管理器
+        return self.g39.asset_manager.execute_with_smarter_logic(signal)
         
         # 执行交易
         if signal.direction == "long":
@@ -386,6 +565,9 @@ class G39:
         
         # 初始化自动交易器
         self.trader = AutoTrader(self)
+        
+        # 初始化智能资产管理器
+        self.asset_manager = AssetManager(self)
     
     def _init_weights(self) -> Dict:
         """初始化策略权重"""
@@ -833,10 +1015,14 @@ class G39:
                 # 检查持仓止损止盈
                 self.trader.check_positions()
                 
-                # 执行最佳信号
+                # 执行最佳信号 (前先检查资产)
                 if valid:
                     best = valid[0]
                     self.log(f"最佳信号: {best.symbol} {best.direction} {best.confidence:.0%} signal={best.signal:.3f}", "INFO")
+                    
+                    # 自动转换小额持仓
+                    self.asset_manager.auto_convert_small_holdings()
+                    
                     if best.direction != "neutral" and best.confidence > 0.5:
                         result = self.trader.execute_signal(best)
                         if result.get("action") == "skip":
