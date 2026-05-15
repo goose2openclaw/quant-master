@@ -812,7 +812,11 @@ class G39:
     # ============ 综合分析 ============
     
     def analyze(self, symbol: str) -> G39Signal:
-        """完整分析"""
+        """完整分析 - v3.4 自主策略优化版"""
+        # 使用策略优化器进行自适应分析
+        market_type = self.optimizer.detect_market_type()
+        adaptive_result = self.optimizer.select_best_strategy(symbol, market_type)
+        
         # 获取各模块信号
         signals = {
             'go-core': self._get_go_core_signal(symbol),
@@ -830,8 +834,8 @@ class G39:
         trader_signal, top_traders = self._get_top10_trader_signal(symbol)
         signals['top10'] = {'signal': trader_signal, 'confidence': 0.7}
         
-        # 综合评分
-        weights = {**self.strategy_weights, 'top10': 0.15}
+        # 使用自适应权重
+        weights = adaptive_result['weights']
         
         combined_signal = 0
         combined_confidence = 0
@@ -1053,6 +1057,247 @@ def main():
         g.run()
     except KeyboardInterrupt:
         g.stop()
+
+
+
+# ============ 自主策略优化器 ============
+
+class StrategyOptimizer:
+    """
+    G39 v3.4 自主策略优化器
+    - 自动选择最佳策略
+    - 动态调整权重
+    - 自我学习迭代
+    - 收益最大化
+    """
+    
+    def __init__(self, g39):
+        self.g39 = g39
+        self.strategy_performance = {}  # 策略表现记录
+        self.market_performance = {'trending': {}, 'ranging': {}}  # 市场类型表现
+        self.weight_history = []  # 权重调整历史
+        self.learning_rate = 0.1  # 学习率
+        self.epsilon = 0.1  # 探索率
+        
+        # 初始化策略表现
+        self._init_strategy_performance()
+    
+    def _init_strategy_performance(self):
+        """初始化策略表现跟踪"""
+        strategies = [
+            'go-core', 'go-pool', 'go-long-short', 'go-detect',
+            'go-rotate', 'go-fit', 'go-etf', 'go-noise',
+            'go-thermo', 'top10'
+        ]
+        for s in strategies:
+            self.strategy_performance[s] = {
+                'wins': 0, 'losses': 0, 'total_pnl': 0,
+                'trades': 0, 'last_update': time.time()
+            }
+    
+    def detect_market_type(self) -> str:
+        """检测当前市场类型"""
+        try:
+            # 获取BTC作为市场指标
+            klines = get_klines('BTC', '1h', 168)
+            if len(klines) < 100:
+                return 'ranging'
+            
+            closes = [k['close'] for k in klines]
+            ma_short = sum(closes[-24:]) / 24
+            ma_long = sum(closes[-168:]) / 168
+            current = closes[-1]
+            
+            deviation = abs(current - ma_long) / ma_long
+            
+            # 趋势强度
+            changes = [abs(closes[i] - closes[i-24]) / closes[i-24] for i in range(len(closes)-24, len(closes))]
+            trend_strength = sum(changes) / len(changes)
+            
+            if deviation > 0.05 and trend_strength > 0.03:
+                return 'trending'
+            elif deviation < 0.03 and trend_strength < 0.015:
+                return 'ranging'
+            else:
+                return 'mixed'
+        except:
+            return 'ranging'
+    
+    def get_strategy_signal(self, symbol: str, strategy_name: str) -> dict:
+        """获取单个策略的信号"""
+        try:
+            if strategy_name == 'go-core':
+                return self.g39._get_go_core_signal(symbol)
+            elif strategy_name == 'go-pool':
+                return self.g39._get_go_pool_signal(symbol)
+            elif strategy_name == 'go-long-short':
+                return self.g39._get_go_long_short_signal(symbol)
+            elif strategy_name == 'go-detect':
+                return self.g39._get_go_detect_signal(symbol)
+            elif strategy_name == 'go-rotate':
+                return self.g39._get_go_rotate_signal(symbol)
+            elif strategy_name == 'go-fit':
+                return self.g39._get_go_fit_signal(symbol)
+            elif strategy_name == 'go-etf':
+                return self.g39._get_go_etf_signal(symbol)
+            elif strategy_name == 'go-noise':
+                return self.g39._get_go_noise_signal(symbol)
+            elif strategy_name == 'go-thermo':
+                return self.g39._get_go_thermo_signal(symbol)
+            elif strategy_name == 'top10':
+                signal, _ = self.g39._get_top10_trader_signal(symbol)
+                return {'signal': signal, 'confidence': 0.7}
+            return {'signal': 0, 'confidence': 0}
+        except:
+            return {'signal': 0, 'confidence': 0}
+    
+    def calculate_adaptive_weights(self, market_type: str) -> dict:
+        """根据市场类型和历史表现计算自适应权重"""
+        base_weights = {
+            'go-core': 0.20,
+            'go-pool': 0.15,
+            'go-long-short': 0.15,
+            'go-detect': 0.12,
+            'go-rotate': 0.12,
+            'go-fit': 0.08,
+            'go-etf': 0.08,
+            'go-noise': 0.05,
+            'go-thermo': 0.03,
+            'top10': 0.02
+        }
+        
+        # 根据市场类型调整权重
+        if market_type == 'trending':
+            # 趋势市场: 强调撞球、检测、Top10
+            adjusted = {
+                'go-core': 0.15,
+                'go-pool': 0.25,  # 撞球策略在趋势市场最强
+                'go-long-short': 0.15,
+                'go-detect': 0.15,  # 机构侦测在趋势市场重要
+                'go-rotate': 0.05,
+                'go-fit': 0.05,
+                'go-etf': 0.05,
+                'go-noise': 0.03,
+                'go-thermo': 0.02,
+                'top10': 0.10  # Top10交易员在趋势市场有效
+            }
+        elif market_type == 'ranging':
+            # 震荡市场: 强调轮动、多空、ETF流动性
+            adjusted = {
+                'go-core': 0.15,
+                'go-pool': 0.05,
+                'go-long-short': 0.20,  # 多空在震荡市场有效
+                'go-detect': 0.08,
+                'go-rotate': 0.20,  # 轮动策略在震荡市场有效
+                'go-fit': 0.10,
+                'go-etf': 0.12,  # ETF流动性在震荡市场有效
+                'go-noise': 0.05,
+                'go-thermo': 0.02,
+                'top10': 0.03
+            }
+        else:  # mixed
+            # 混合市场: 平衡权重
+            adjusted = base_weights.copy()
+        
+        # 根据历史表现调整 (学习)
+        for s in self.strategy_performance:
+            perf = self.strategy_performance[s]
+            if perf['trades'] >= 5:
+                win_rate = perf['wins'] / perf['trades']
+                # 表现好的策略加权
+                if win_rate > 0.6:
+                    adjusted[s] = adjusted.get(s, 0.1) * (1 + self.learning_rate)
+                elif win_rate < 0.4:
+                    adjusted[s] = adjusted.get(s, 0.1) * (1 - self.learning_rate)
+        
+        # 归一化权重
+        total = sum(adjusted.values())
+        if total > 0:
+            adjusted = {k: v/total for k, v in adjusted.items()}
+        
+        return adjusted
+    
+    def select_best_strategy(self, symbol: str, market_type: str) -> dict:
+        """选择最佳策略组合"""
+        signals = {}
+        confidences = {}
+        
+        for strategy in self.strategy_performance:
+            result = self.get_strategy_signal(symbol, strategy)
+            signals[strategy] = result.get('signal', 0)
+            confidences[strategy] = result.get('confidence', 0.5)
+        
+        # 获取自适应权重
+        weights = self.calculate_adaptive_weights(market_type)
+        
+        # 计算加权信号
+        combined_signal = 0
+        total_weight = 0
+        for s, w in weights.items():
+            if s in signals:
+                combined_signal += signals[s] * w
+                total_weight += w
+        
+        if total_weight > 0:
+            combined_signal /= total_weight
+        
+        # 探索: 有一定概率选择不同的策略
+        if self.epsilon > 0 and random.random() < self.epsilon:
+            # 随机选择一个策略增强
+            strategies = list(self.strategy_performance.keys())
+            random_strategy = random.choice(strategies)
+            combined_signal = signals.get(random_strategy, 0)
+        
+        return {
+            'signal': combined_signal,
+            'weights': weights,
+            'signals': signals,
+            'market_type': market_type
+        }
+    
+    def record_trade_result(self, strategy: str, pnl: float, won: bool):
+        """记录交易结果用于学习"""
+        if strategy in self.strategy_performance:
+            self.strategy_performance[strategy]['trades'] += 1
+            self.strategy_performance[strategy]['total_pnl'] += pnl
+            if won:
+                self.strategy_performance[strategy]['wins'] += 1
+            else:
+                self.strategy_performance[strategy]['losses'] += 1
+            self.strategy_performance[strategy]['last_update'] = time.time()
+    
+    def get_performance_report(self) -> str:
+        """生成性能报告"""
+        report = []
+        report.append("\n策略表现排名:")
+        sorted_perf = sorted(
+            self.strategy_performance.items(),
+            key=lambda x: x[1]['total_pnl'],
+            reverse=True
+        )
+        for s, p in sorted_perf:
+            if p['trades'] > 0:
+                wr = p['wins'] / p['trades'] * 100
+                report.append(f"  {s}: 交易{p['trades']}次, 胜率{wr:.1f}%, 总收益{p['total_pnl']:+.2f}%")
+        return "\n".join(report)
+    
+    def evolve(self):
+        """自我进化 - 根据表现调整"""
+        # 降低探索率
+        self.epsilon = max(0.01, self.epsilon * 0.99)
+        
+        # 淘汰表现差的策略
+        for s in list(self.strategy_performance.keys()):
+            p = self.strategy_performance[s]
+            if p['trades'] >= 10:
+                win_rate = p['wins'] / p['trades']
+                if win_rate < 0.3 and p['total_pnl'] < -10:
+                    self.g39.log(f"淘汰低效策略: {s}", "WARNING")
+                    # 降低该策略权重
+                    self.strategy_performance[s]['weight'] = 0.01
+
+import random
+
 
 if __name__ == "__main__":
     main()
