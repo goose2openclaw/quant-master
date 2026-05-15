@@ -394,6 +394,90 @@ TRADERS = {
 
 # ============ 交易执行模块 ============
 
+# ============ 自主调仓器 ============
+
+class AutoRebalancer:
+    """自主调仓 - 自动减持集中度超限币种"""
+    
+    def __init__(self, g39):
+        self.g39 = g39
+        self.max_concentration = 0.30  # 30%集中度上限
+        self.rebalance_cooldown = 3600  # 1小时调仓冷却
+        self.last_rebalance = 0
+    
+    def get_portfolio_concentration(self) -> dict:
+        """计算持仓集中度"""
+        usdt = self.g39.asset_manager.get_spot_usdt()
+        holdings = self.g39.asset_manager.get_all_holdings()
+        prices = self.g39.asset_manager.get_price_dict()
+        
+        total = usdt
+        for asset, data in holdings.items():
+            if asset in prices and prices[asset] > 0:
+                total += data['total'] * prices[asset]
+        
+        concentrations = {}
+        for asset, data in holdings.items():
+            if asset in prices and prices[asset] > 0:
+                value = data['total'] * prices[asset]
+                concentrations[asset] = {
+                    'amount': data['total'],
+                    'value': value,
+                    'concentration': value / total if total > 0 else 0
+                }
+        
+        return concentrations
+    
+    def rebalance_if_needed(self) -> dict:
+        """检查并执行调仓"""
+        now = time.time()
+        if now - self.last_rebalance < self.rebalance_cooldown:
+            return {"action": "skip", "reason": "冷却中"}
+        
+        concentrations = self.get_portfolio_concentration()
+        
+        # 找出超限币种
+        over_concentrated = []
+        for asset, data in concentrations.items():
+            if data['concentration'] > self.max_concentration:
+                over_concentrated.append({
+                    'asset': asset,
+                    'data': data
+                })
+        
+        if not over_concentrated:
+            return {"action": "skip", "reason": "无需调仓"}
+        
+        results = []
+        for item in over_concentrated:
+            asset = item['asset']
+            data = item['data']
+            excess_ratio = data['concentration'] - self.max_concentration
+            excess_value = data['value'] * (excess_ratio / data['concentration'])
+            
+            # 计算卖出数量 (减到30%)
+            target_value = data['value'] * (self.max_concentration / data['concentration'])
+            target_amount = target_value / data['value'] * data['amount']
+            sell_amount = data['amount'] - target_amount
+            
+            if sell_amount > 0:
+                self.g39.log(f"🔄 调仓: 减持 {asset} {sell_amount:.2f} (集中度{data['concentration']:.1%}→{self.max_concentration:.1%})", "INFO")
+                result = place_order(asset, "SELL", sell_amount)
+                if result.get('success'):
+                    results.append({
+                        'asset': asset,
+                        'amount': sell_amount,
+                        'value': excess_value
+                    })
+                    self.g39.log(f"✅ 调仓成功: 卖出 {asset} {sell_amount:.2f}", "INFO")
+        
+        if results:
+            self.last_rebalance = now
+            return {"action": "rebalanced", "results": results}
+        
+        return {"action": "failed"}
+
+
 def place_order(symbol: str, side: str, quantity: float, order_type: str = "MARKET") -> dict:
     """在 Binance 执行真实下单"""
     import hmac, hashlib, urllib.request
@@ -585,6 +669,9 @@ class G39:
         
         # 初始化自动交易器
         self.trader = AutoTrader(self)
+        
+        # 启动自主调仓器
+        self.rebalancer = AutoRebalancer(self)
         
         # 初始化智能资产管理器
         self.asset_manager = AssetManager(self)
