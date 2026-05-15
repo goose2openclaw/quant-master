@@ -430,18 +430,21 @@ class AssetManagerPro:
         prices = self.get_price_dict()
         
         total = usdt
-        details = {'USDT': {'value': usdt, 'pct': 0}}
+        details = {'USDT': {'value': usdt, 'pct': 0, 'amount': usdt, 'price': 1}}
         
         for asset, data in holdings.items():
             if asset == 'USDT': continue
             price = prices.get(asset, 0)
+            if price <= 0:
+                price = get_price(asset)
             value = data['total'] * price
             total += value
             details[asset] = {'value': value, 'amount': data['total'], 'price': price}
         
         # 计算百分比
         for asset in details:
-            details[asset]['pct'] = details[asset]['value'] / total if total > 0 else 0
+            if 'pct' not in details[asset]:
+                details[asset]['pct'] = details[asset]['value'] / total if total > 0 else 0
         
         return total, details
     
@@ -548,7 +551,8 @@ class AutoRebalancerPro:
                 concentrations[asset] = {
                     'value': data['value'],
                     'pct': data['pct'],
-                    'amount': data.get('amount', 0)
+                    'amount': data.get('amount', 0),
+                    'price': data.get('price', get_price(asset))
                 }
         
         return concentrations
@@ -704,9 +708,10 @@ class G40:
         try:
             with open(self.log_file, 'a') as f:
                 f.write(log_line)
+                f.flush()
         except: pass
         
-        print(log_line.strip())
+        print(log_line.strip(), flush=True)
     
     def _api_signed(self, endpoint: str, params: dict = None, method: str = "GET") -> dict:
         """签名API请求"""
@@ -846,7 +851,8 @@ class G40:
                 self.scan_and_trade()
                 
             except Exception as e:
-                self.log(f"运行异常: {e}", "ERROR")
+                import traceback
+                self.log(f"运行异常: {e}: {traceback.format_exc()[:200]}", "ERROR")
             
             time.sleep(SCAN_INTERVAL)
     
