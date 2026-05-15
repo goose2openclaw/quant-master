@@ -54,20 +54,42 @@ def api_signed(endpoint: str, params: dict = None, method: str = "GET") -> dict:
     return {}
 
 def api_pub(url: str) -> dict:
+    import urllib.request
+    import sys
     try:
-        import urllib.request
         proxy_handler = urllib.request.ProxyHandler({"http": PROXY, "https": PROXY})
         opener = urllib.request.build_opener(proxy_handler)
-        return json.loads(opener.open(urllib.request.Request(url), timeout=10).read().decode())
-    except: return {}
+        http_resp = opener.open(urllib.request.Request(url), timeout=10)
+        resp = http_resp.read().decode()
+        result = json.loads(resp)
+        return result
+    except urllib.error.HTTPError as e:
+        print(f"api_pub HTTPError for {url}: {e.code} {e.reason}", file=sys.stderr)
+        try:
+            err_body = e.read().decode()
+            print(f"Error body: {err_body}", file=sys.stderr)
+        except: pass
+        return {}
+    except Exception as e:
+        print(f"api_pub exception for {url}: {type(e).__name__}: {e}", file=sys.stderr)
+        return {}
 
 import urllib.request
 
 def get_price(symbol: str) -> float:
     try:
-        data = api_pub(f'https://api.binance.com/api/v3/ticker/price?symbol={symbol}USDT')
-        return float(data['price']) if data else 0
-    except: return 0
+        url = f'https://api.binance.com/api/v3/ticker/price?symbol={symbol}USDT'
+        data = api_pub(url)
+        if not data:
+            print(f"get_price: no data for {symbol}")
+            return 0
+        if 'price' not in data:
+            print(f"get_price: no price key in data for {symbol}: {data}")
+            return 0
+        return float(data['price'])
+    except Exception as e:
+        print(f"get_price error for {symbol}: {e}")
+        return 0
 
 def get_klines(symbol: str, interval: str = '1h', limit: int = 100) -> List[dict]:
     try:
@@ -148,6 +170,207 @@ TRADERS = {
 
 # ============ G39 主系统 ============
 
+
+# ============ 交易执行模块 ============
+
+def place_order(symbol: str, side: str, quantity: float, order_type: str = "MARKET") -> dict:
+    """在 Binance 执行真实下单"""
+    import hmac, hashlib, urllib.request
+    for i in range(3):
+        try:
+            ts = int(time.time() * 1000)
+            # 获取精度信息
+            try:
+                info = api_pub(f'https://api.binance.com/api/v3/exchangeInfo?symbol={symbol}USDT')
+                if info and 'symbols' in info:
+                    filters = {f['filterType']: f for f in info['symbols'][0]['filters']}
+                    step = float(filters.get('LOT_SIZE', {}).get('stepSize', 1))
+                    if step >= 1:
+                        qty_str = f"{int(quantity)}"
+                    else:
+                        prec = len(str(step).split('.')[-1].rstrip('0'))
+                        qty_str = f"{quantity:.{prec}f}"
+                else:
+                    qty_str = f"{quantity:.6f}"
+            except:
+                qty_str = f"{quantity:.6f}"
+            
+            params = {
+                "symbol": f"{symbol}USDT",
+                "side": side,  # BUY or SELL
+                "type": order_type,
+                "quantity": qty_str,
+                "timestamp": ts,
+                "recvWindow": 5000
+            }
+            q = "&".join(f"{k}={v}" for k, v in sorted(params.items()))
+            sig = hmac.new(API_SECRET.encode(), q.encode(), hashlib.sha256).hexdigest()
+            url = f"https://api.binance.com/api/v3/order?{q}&signature={sig}"
+            req = urllib.request.Request(url, method="POST")
+            req.add_header('X-MBX-APIKEY', API_KEY)
+            proxy_handler = urllib.request.ProxyHandler({"http": PROXY, "https": PROXY})
+            opener = urllib.request.build_opener(proxy_handler)
+            resp = json.loads(opener.open(req, timeout=10).read().decode())
+            
+            # 检查 Binance 错误响应
+            if "code" in resp:
+                return {"success": False, "error": f"Binance Error {resp['code']}: {resp['msg']}"}
+            
+            return {"success": True, "order_id": resp.get("orderId"), "status": resp.get("status")}
+        except urllib.error.HTTPError as e:
+            try:
+                err_resp = json.loads(e.read().decode())
+                return {"success": False, "error": f"HTTP {e.code}: {err_resp.get('msg', str(e))}"}
+            except:
+                return {"success": False, "error": f"HTTP {e.code}: {str(e)}"}
+        except Exception as e:
+            error_msg = str(e)
+            if i < 2: time.sleep(0.5)
+            if i == 2:  # Last retry
+                return {"success": False, "error": error_msg}
+    return {"success": False, "error": "Max retries exceeded"}
+
+def format_quantity(symbol: str, qty: float) -> float:
+    """格式化下单数量"""
+    try:
+        info = api_pub(f'https://api.binance.com/api/v3/exchangeInfo?symbol={symbol}USDT')
+        if info and 'symbols' in info:
+            filters = {f['filterType']: f for f in info['symbols'][0]['filters']}
+            step = float(filters.get('LOT_SIZE', {}).get('stepSize', 1))
+            min_q = float(filters.get('LOT_SIZE', {}).get('minQty', 0))
+            
+            # 计算精度
+            if step >= 1:
+                # 整数步长，直接取整
+                formatted = int(qty // step)
+            else:
+                prec = len(str(step).split('.')[-1].rstrip('0'))
+                formatted = math.floor(qty / step) * step
+                formatted = round(formatted, prec)
+            
+            # 确保不低于最小数量
+            if formatted < min_q:
+                formatted = min_q
+            
+            return float(formatted)
+        return float(int(qty))
+    except Exception as e:
+        print(f"format_quantity error: {e}")
+        return float(int(qty))
+    return math.floor(qty)
+
+class AutoTrader:
+    """自动交易执行器"""
+    
+    def __init__(self, g39):
+        self.g39 = g39
+        self.active_trades = {}  # symbol -> {entry, quantity, side}
+    
+    def execute_signal(self, signal) -> dict:
+        """执行信号"""
+        if signal.direction == 'neutral' or signal.confidence < 0.5:
+            return {"action": "skip", "reason": "信号不足"}
+        
+        symbol = signal.symbol
+        self.g39.log(f"调试: 获取{symbol}价格...", "INFO")
+        price = get_price(symbol)
+        self.g39.log(f"调试: {symbol}价格={price}", "INFO")
+        if price <= 0:
+            return {"action": "error", "reason": "获取价格失败"}
+        
+        # 计算仓位 (确保最小订单价值$1)
+        account = self.g39.get_account_status()
+        usdt = account.spot_usdt
+        min_order_value = 1  # 最小订单价值$1
+        
+        # 计算理论仓位
+        position_value = usdt * KELLY_BASE * signal.confidence
+        
+        # 确保最小订单价值
+        if position_value < min_order_value:
+            return {"action": "skip", "reason": f"资金不足(需要${min_order_value})"}
+        
+        quantity = position_value / price
+        
+        # 格式化数量
+        quantity = format_quantity(symbol, quantity)
+        
+        # 确保最小数量
+        if quantity <= 0:
+            return {"action": "skip", "reason": "数量为0"}
+        
+        # 确保订单价值满足最小要求
+        order_value = quantity * price
+        if order_value < min_order_value:
+            quantity = min_order_value / price
+            quantity = format_quantity(symbol, quantity)
+        
+        if quantity <= 0:
+            return {"action": "skip", "reason": "数量不足"}
+        
+        # 执行交易
+        if signal.direction == "long":
+            result = place_order(symbol, "BUY", quantity)
+            if result.get("success"):
+                self.active_trades[symbol] = {
+                    "entry": price,
+                    "quantity": quantity,
+                    "side": "long",
+                    "stop_loss": price * (1 - STOP_LOSS),
+                    "take_profit": price * (1 + TAKE_PROFIT),
+                    "time": time.time()
+                }
+                self.g39.log(f"✅ 买入 {symbol}: {quantity} @ {price}", "INFO")
+        elif signal.direction == "short":
+            result = place_order(symbol, "SELL", quantity)
+            if result.get("success"):
+                self.active_trades[symbol] = {
+                    "entry": price,
+                    "quantity": quantity,
+                    "side": "short",
+                    "stop_loss": price * (1 + STOP_LOSS),
+                    "take_profit": price * (1 - TAKE_PROFIT),
+                    "time": time.time()
+                }
+                self.g39.log(f"✅ 做空 {symbol}: {quantity} @ {price}", "INFO")
+        
+        return result
+    
+    def check_positions(self):
+        """检查持仓并执行止损止盈"""
+        to_close = []
+        
+        for symbol, pos in self.active_trades.items():
+            current_price = get_price(symbol)
+            if current_price <= 0: continue
+            
+            entry = pos["entry"]
+            side = pos["side"]
+            
+            if side == "long":
+                pnl_pct = (current_price - entry) / entry
+            else:
+                pnl_pct = (entry - current_price) / entry
+            
+            # 检查止损止盈
+            if pnl_pct <= -STOP_LOSS or pnl_pct >= TAKE_PROFIT:
+                to_close.append(symbol)
+        
+        # 平仓
+        for symbol in to_close:
+            pos = self.active_trades[symbol]
+            side = "SELL" if pos["side"] == "long" else "BUY"
+            result = place_order(symbol, side, pos["quantity"])
+            if result.get("success"):
+                current_price = get_price(symbol)
+                if pos["side"] == "long":
+                    pnl_pct = (current_price - pos["entry"]) / pos["entry"]
+                else:
+                    pnl_pct = (pos["entry"] - current_price) / pos["entry"]
+                self.g39.log(f"平仓 {symbol}: {pos['quantity']} @ {current_price} (PnL: {pnl_pct:+.2%})", "INFO")
+                del self.active_trades[symbol]
+
+
 class G39:
     """G39 全集成自主量化交易系统"""
     
@@ -160,6 +383,9 @@ class G39:
         self.strategy_weights = self._init_weights()
         
         self.load_state()
+        
+        # 初始化自动交易器
+        self.trader = AutoTrader(self)
     
     def _init_weights(self) -> Dict:
         """初始化策略权重"""
@@ -453,8 +679,8 @@ class G39:
             strategy = 'rotate' if signals['go-rotate']['action'] != 'hold' else 'neutral'
         
         # 方向判断
-        if combined_signal > 0.15: direction = 'long'
-        elif combined_signal < -0.15: direction = 'short'
+        if combined_signal > 0.08: direction = 'long'
+        elif combined_signal < -0.08: direction = 'short'
         else: direction = 'neutral'
         
         # 仓位
@@ -603,6 +829,26 @@ class G39:
                 self.log(f"\n📈 Top信号:", "INFO")
                 for r in valid[:5]:
                     self.log(f"  {r.symbol}: {r.direction} {r.confidence:.0%} [{r.strategy}] ({', '.join(r.top_traders[:2])})", "INFO")
+                
+                # 检查持仓止损止盈
+                self.trader.check_positions()
+                
+                # 执行最佳信号
+                if valid:
+                    best = valid[0]
+                    self.log(f"最佳信号: {best.symbol} {best.direction} {best.confidence:.0%} signal={best.signal:.3f}", "INFO")
+                    if best.direction != "neutral" and best.confidence > 0.5:
+                        result = self.trader.execute_signal(best)
+                        if result.get("action") == "skip":
+                            self.log(f"跳过 {best.symbol}: {result.get('reason')}", "INFO")
+                        elif result.get("action") == "error":
+                            self.log(f"错误 {best.symbol}: {result.get('reason')}", "ERROR")
+                        elif result.get("success") == True:
+                            self.log(f"✅ 交易成功 {best.symbol}", "INFO")
+                        elif result.get("success") == False:
+                            self.log(f"❌ 交易失败 {best.symbol}: {result.get('error', 'Unknown')}", "ERROR")
+                        if result.get("action") == "skip":
+                            self.log(f"跳过 {best.symbol}: {result.get('reason')}", "INFO")
                 
                 self.save_state()
                 time.sleep(SCAN_INTERVAL)
