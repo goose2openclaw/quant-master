@@ -19,10 +19,10 @@ from collections import deque
 
 # ============ 智能资产管理配置 ============
 MIN_USDT_RESERVE = 5.0        # 最低USDT储备
-AUTO_CONVERT_THRESHOLD = 1.0  # 小于此金额自动转换
+AUTO_CONVERT_THRESHOLD = 0.5  # 小于此金额自动转换 (降低阈值)
 CONVERT_COOLDOWN = 300         # 转换冷却时间(秒)
 USE_CROSS_MARGIN = True        # USDT不足时使用全仓杠杆
-MIN_TRADE_VALUE = 1.0          # 最小交易价值$
+MIN_TRADE_VALUE = 0.5          # 最小交易价值$ (降低以激活交易)
 
 # 币种流动性评分 (用于决策)
 LIQUIDITY_SCORE = {
@@ -137,6 +137,12 @@ class AssetManager:
         elif signal_strength > 0.15:
             budget *= 1.1
         
+        # 如果现货不足，检查是否使用杠杆
+        if budget < MIN_TRADE_VALUE and self.should_use_margin(MIN_TRADE_VALUE):
+            # 使用全仓杠杆，预算放大3倍
+            budget = MIN_TRADE_VALUE * 3
+            return budget
+        
         # 确保最低交易额
         if budget < MIN_TRADE_VALUE:
             return 0
@@ -182,9 +188,9 @@ class AssetManager:
             self.auto_convert_small_holdings()
             usdt = self.get_spot_usdt()
         
-        if usdt < min_order and self.should_use_margin(min_order):
-            # 使用全仓杠杆
-            self.g39.log(f"使用全仓杠杆交易 {symbol}", "INFO")
+        if usdt < min_order and USE_CROSS_MARGIN:
+            # 使用全仓杠杆交易
+            self.g39.log(f"⚡ 使用全仓杠杆交易 {symbol} (USD不足:{usdt:.2f})", "INFO")
             return self._execute_via_margin(signal, price, usdt)
         
         if usdt < min_order:
@@ -241,6 +247,8 @@ STOP_LOSS = 0.05
 TAKE_PROFIT = 0.20
 KELLY_BASE = 0.30
 MAX_POSITIONS = 3
+MAX_POSITION_CONCENTRATION = 0.30  # 单币种最大仓位占比30%
+MIN_LEVERAGE_AMOUNT = 0.30        # 低于此金额使用杠杆
 
 MAINSTREAM = ['BTC', 'ETH', 'SOL', 'XRP', 'ADA', 'DOT']
 MEME = ['PEPE', 'BONK', 'DOGE', 'SHIB', 'FLOKI', 'BOME', 'TURBO', 'NEIRO']
@@ -519,6 +527,18 @@ class AutoTrader:
         """检查持仓并执行止损止盈"""
         to_close = []
         
+        # 获取所有持仓
+        all_positions = {}
+        try:
+            account = self.g39._api_signed("/api/v3/account")
+            for b in account.get('balances', []):
+                free = float(b.get('free', 0))
+                locked = float(b.get('locked', 0))
+                total = free + locked
+                if total > 0.0001:
+                    all_positions[b['asset']] = total
+        except: pass
+        
         for symbol, pos in self.active_trades.items():
             current_price = get_price(symbol)
             if current_price <= 0: continue
@@ -568,6 +588,9 @@ class G39:
         
         # 初始化智能资产管理器
         self.asset_manager = AssetManager(self)
+        
+        # 初始化自主策略优化器 (v3.4)
+        self.optimizer = StrategyOptimizer(self)
     
     def _init_weights(self) -> Dict:
         """初始化策略权重"""
