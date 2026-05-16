@@ -27,18 +27,18 @@ import statistics
 MIN_USDT_RESERVE = 3.0        # 最低USDT储备
 MIN_TRADE_VALUE = 0.3         # 最小交易价值
 SCAN_INTERVAL = 25             # 扫描间隔(秒)
-STOP_LOSS = 0.05              # 止损5%
-TAKE_PROFIT = 0.25            # 止盈25%
+STOP_LOSS = 0.03              # 止损3% (优化:更严格的止损)
+TAKE_PROFIT = 0.15            # 止盈15% (优化:更频繁止盈)
 MAX_DRAWDOWN = 0.15           # 最大回撤15%
 
 # 杠杆配置
 USE_CROSS_MARGIN = True       # 使用全仓杠杆
-MARGIN_LEVERAGE = 2           # 杠杆倍数降低到2倍，更安全
+MARGIN_LEVERAGE = 1.5           # 杠杆倍数降低到1.5倍，更安全
 
 # 账户管理配置
 MAX_SINGLE_POSITION_PCT = 0.20    # 单币种最大占比20%
 MAX_MARGIN_POSITION_PCT = 0.40    # 杠杆账户最大占比40%
-MAX_CROSS_MARGIN_EXPOSURE = 1000  # 全仓杠杆最大敞口$1000
+MAX_CROSS_MARGIN_EXPOSURE = 800   # 全仓杠杆最大敞口$800
 
 # 自主调仓配置
 MAX_POSITION_CONCENTRATION = 0.20   # 单币种最大集中度20%
@@ -50,7 +50,7 @@ AUTO_CONVERT_THRESHOLD = 0.3       # 小于此金额自动转换
 CONVERT_COOLDOWN = 120              # 转换冷却2分钟
 
 # 策略权重配置
-KELLY_BASE = 0.25                  # Kelly基础比例
+KELLY_BASE = 0.15                  # Kelly基础比例 (优化:更保守的仓位)
 MAX_POSITIONS = 5                  # 最大持仓数
 
 # 流动性评分
@@ -141,19 +141,22 @@ class G40Optimizer:
         regime = self.detect_market_regime()
         
         if regime == 'trending':
+            # 趋势市场: 追涨杀跌
             weights = {
-                'go-core': 0.25, 'go-pool': 0.20, 'go-rotate': 0.15,
-                'go-long-short': 0.10, 'go-detect': 0.10, 'go-etf': 0.10, 'top10': 0.10
+                'go-core': 0.30, 'go-pool': 0.25, 'go-rotate': 0.10,
+                'go-long-short': 0.05, 'go-detect': 0.10, 'go-etf': 0.10, 'top10': 0.10
             }
         elif regime == 'ranging':
+            # 震荡市场: 高抛低吸
             weights = {
-                'go-core': 0.15, 'go-pool': 0.10, 'go-rotate': 0.20,
-                'go-long-short': 0.20, 'go-detect': 0.10, 'go-etf': 0.15, 'top10': 0.10
+                'go-core': 0.10, 'go-pool': 0.10, 'go-rotate': 0.25,
+                'go-long-short': 0.25, 'go-detect': 0.15, 'go-etf': 0.10, 'top10': 0.05
             }
         else:  # volatile
+            # 波动市场: 保守观望
             weights = {
-                'go-core': 0.20, 'go-pool': 0.15, 'go-rotate': 0.15,
-                'go-long-short': 0.20, 'go-detect': 0.15, 'go-etf': 0.10, 'top10': 0.05
+                'go-core': 0.15, 'go-pool': 0.10, 'go-rotate': 0.15,
+                'go-long-short': 0.30, 'go-detect': 0.20, 'go-etf': 0.05, 'top10': 0.05
             }
         
         self.strategy_weights = weights
@@ -814,12 +817,20 @@ class G40:
         """分析单个币种"""
         signal_data = self.optimizer.calculate_signal(symbol)
         
+        # 获取总资产用于计算仓位
+        try:
+            status = self.get_account_status()
+            total = status['total']
+        except:
+            total = 700  # 默认值
+        
         return {
             'symbol': symbol,
             'signal': signal_data['signal'],
             'confidence': signal_data['confidence'],
             'regime': signal_data['regime'],
             'price': get_price(symbol),
+            'total': total,
             'action': 'skip'
         }
     
@@ -834,6 +845,11 @@ class G40:
         
         usdt = self.asset_manager.get_spot_usdt()
         budget = usdt * KELLY_BASE * confidence
+        
+        # 每笔交易最大仓位限制 (不超过总资产5%)
+        max_position = total * 0.05
+        if budget > max_position:
+            budget = max_position
         
         if budget < MIN_TRADE_VALUE:
             # 尝试杠杆
