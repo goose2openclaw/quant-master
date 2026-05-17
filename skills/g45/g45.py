@@ -1,25 +1,24 @@
 #!/usr/bin/env python3
 """
-G45 v1.3 - 全技能自主调度量化系统
-================================
+G45 v1.4 - 30天收益最大化版
+===========================
 
-深度优化:
-1. 多时间框架分析 (MTF)
-2. 相关性权重调整
-3. 动态止盈止损
-4. 策略组合优化
-5. 实时学习适应
+优化:
+1. TrendTracker30D - 30天趋势追踪
+2. MomentumEnhancer - 动量增强
+3. MaximizeReturnsStrategy - 收益最大化
+4. AdaptivePositionSizer - 自适应仓位
 
-版本: 1.3
+版本: 1.4
 日期: 2026-05-17
 """
 
-import json, time, os, sys, math
+import json, time, os, math
 from datetime import datetime
 from collections import deque, defaultdict
 from typing import Dict, List, Optional, Tuple
 
-VERSION = "1.3"
+VERSION = "1.4"
 SCAN_INTERVAL = 12
 LOG_FILE = "/home/goose/.openclaw/workspace/logs/g45.log"
 
@@ -27,120 +26,175 @@ API_KEY = 'QPM55JoNnHSV7C7PllgNbTAxpzy9RaBjoKprgHuIE9GJUeQoVIGu69ICPnmBXp61'
 API_SECRET = 'BSOTWqsVsncRk13DMDJ2YDRQks8XvrajArQDPW2jY8sDwNtcgb5da8H3x6qF3hJk'
 PROXY = "http://172.29.144.1:7897"
 
-# ============ 多时间框架分析器 ============
+# ============ 趋势追踪器 ============
 
-class MultiTimeframeAnalyzer:
+class TrendTracker30D:
     def __init__(self):
-        self.timeframes = ['5m', '15m', '1h', '4h']
+        self.history = deque(maxlen=720)
     
-    def analyze(self, symbol: str) -> Dict:
-        result = {'symbol': symbol, 'consensus': 0, 'trend_score': 0}
+    def update(self, price: float):
+        self.history.append({'price': price, 'time': time.time()})
+    
+    def get_trend(self) -> Dict:
+        if len(self.history) < 100:
+            return {'trend': 'unknown', 'strength': 0, 'momentum': 0}
         
-        total_signal = 0
-        count = 0
+        prices = [h['price'] for h in self.history]
+        ma7 = sum(prices[-168:]) / 168 if len(prices) >= 168 else sum(prices[-7:]) / min(7, len(prices))
+        ma30 = sum(prices[-720:]) / min(720, len(prices)) if len(prices) >= 24 else sum(prices) / len(prices)
         
-        for tf in self.timeframes:
-            klines = get_klines(symbol, tf, 50)
-            if not klines or len(klines) < 20:
-                continue
-            
-            closes = [float(k[4]) for k in klines]
-            ma5 = sum(closes[-5:]) / 5
-            ma20 = sum(closes[-20:]) / 20
-            
-            trend = (ma5 - ma20) / ma20 if ma20 > 0 else 0
-            
-            deltas = [closes[i+1] - closes[i] for i in range(len(closes)-1)]
-            gains = [d for d in deltas if d > 0]
-            losses = [-d for d in deltas if d < 0]
-            avg_gain = sum(gains) / len(gains) if gains else 0
-            avg_loss = sum(losses) / len(losses) if losses else 0
-            rs = avg_gain / avg_loss if avg_loss > 0 else 100
-            rsi = 100 - (100 / (1 + rs))
-            
-            signal = 1 if trend > 0.01 and rsi < 60 else -1 if trend < -0.01 and rsi > 40 else 0
-            total_signal += signal
-            count += 1
+        trend = (ma7 - ma30) / ma30 if ma30 > 0 else 0
         
-        if count > 0:
-            result['consensus'] = total_signal / count
+        if len(prices) >= 168:
+            momentum = (prices[-1] - prices[-168]) / prices[-168]
+        else:
+            momentum = (prices[-1] - prices[0]) / prices[0] if prices[0] > 0 else 0
         
-        return result
+        if trend > 0.05:
+            trend_type = 'strong_up'
+        elif trend > 0.02:
+            trend_type = 'up'
+        elif trend < -0.05:
+            trend_type = 'strong_down'
+        elif trend < -0.02:
+            trend_type = 'down'
+        else:
+            trend_type = 'sideways'
+        
+        return {'trend': trend_type, 'strength': abs(trend), 'momentum': momentum}
 
-# ============ 策略优化器 ============
+# ============ 动量增强 ============
 
-class StrategyOptimizer:
+class MomentumEnhancer:
     def __init__(self):
-        self.performance = defaultdict(list)
-        self.weights = {
-            'go-core': 0.20,
-            'go-pool': 0.15,
-            'go-long-short': 0.15,
-            'go-detect': 0.12,
-            'go-rotate': 0.10,
-            'go-etf': 0.08,
-            'go-contrarian': 0.08,
-            'go-noise': 0.06,
-            'top10': 0.06
-        }
+        self.lookback = [6, 12, 24, 72, 168]
     
-    def learn(self, skill: str, pnl: float):
-        self.performance[skill].append(pnl)
+    def calculate(self, closes: list) -> Dict:
+        if len(closes) < 200:
+            return {}
         
-        if len(self.performance[skill]) >= 5:
-            avg = sum(self.performance[skill]) / len(self.performance[skill])
-            
-            if avg > 0.02:
-                self.weights[skill] = min(self.weights.get(skill, 0.1) * 1.1, 0.3)
-            elif avg < -0.02:
-                self.weights[skill] = max(self.weights.get(skill, 0.1) * 0.9, 0.02)
-            
-            total = sum(self.weights.values())
-            self.weights = {k: v/total for k, v in self.weights.items()}
+        momenta = {}
+        for lb in self.lookback:
+            if len(closes) >= lb:
+                momenta[f'mom_{lb}h'] = (closes[-1] - closes[-lb]) / closes[-lb]
+        
+        ema12 = sum(closes[-12:]) / 12
+        ema26 = sum(closes[-26:]) / 26
+        macd = ema12 - ema26
+        momenta['macd'] = macd
+        momenta['signal'] = macd * 0.5
+        momenta['histogram'] = macd - momenta['signal']
+        
+        return momenta
+
+# ============ 收益最大化策略 ============
+
+class MaximizeReturnsStrategy:
+    TREND_CONFIG = {'stop_loss': 0.05, 'take_profit': 0.20, 'trailing_stop': 0.03, 'kelly': 0.25}
+    RANGE_CONFIG = {'stop_loss': 0.02, 'take_profit': 0.06, 'trailing_stop': 0.015, 'kelly': 0.10}
+    BREAKOUT_CONFIG = {'stop_loss': 0.04, 'take_profit': 0.15, 'trailing_stop': 0.025, 'kelly': 0.20}
     
-    def get_weights(self) -> Dict[str, float]:
-        return self.weights.copy()
-
-# ============ 信号融合 ============
-
-class SignalFusion:
-    @staticmethod
-    def fuse(signals: Dict[str, float], weights: Dict[str, float], market_type: str) -> Tuple[float, float]:
-        if not signals or not weights:
-            return 0, 0.5
-        
-        combined = 0
-        weight_sum = 0
-        
-        for skill, weight in weights.items():
-            if skill in signals:
-                combined += signals[skill] * weight
-                weight_sum += weight
-        
-        if weight_sum == 0:
-            return 0, 0.5
-        
-        combined /= weight_sum
-        
+    @classmethod
+    def get_config(cls, market_type: str) -> Dict:
         if market_type == 'trend':
-            combined *= 1.2
-        elif market_type == 'range':
-            combined *= 0.8
+            return cls.TREND_CONFIG
+        elif market_type == 'breakout':
+            return cls.BREAKOUT_CONFIG
+        return cls.RANGE_CONFIG
+
+# ============ 信号生成器 ============
+
+class SignalGeneratorV14:
+    def __init__(self):
+        self.trend_tracker = TrendTracker30D()
+        self.momentum = MomentumEnhancer()
+    
+    def generate(self, symbol: str, closes: list, volumes: list, confidence_30d: float = 0.5) -> Optional[Dict]:
+        if len(closes) < 50:
+            return None
         
-        confidence = min(abs(combined) * 3 + 0.4, 0.95)
+        for price in closes:
+            self.trend_tracker.update(price)
+        trend_30d = self.trend_tracker.get_trend()
+        momenta = self.momentum.calculate(closes)
         
-        return combined, confidence
+        deltas = [closes[i+1] - closes[i] for i in range(len(closes)-1)]
+        gains = [d for d in deltas if d > 0]
+        losses = [-d for d in deltas if d < 0]
+        avg_gain = sum(gains) / len(gains) if gains else 0
+        avg_loss = sum(losses) / len(losses) if losses else 0
+        rs = avg_gain / avg_loss if avg_loss > 0 else 100
+        rsi = 100 - (100 / (1 + rs))
+        
+        ma5 = sum(closes[-5:]) / 5
+        ma20 = sum(closes[-20:]) / 20
+        ma50 = sum(closes[-50:]) / 50 if len(closes) >= 50 else ma20
+        trend_strength = abs(ma5 - ma20) / ma20 if ma20 > 0 else 0
+        returns = [(closes[i] - closes[i-1]) / closes[i-1] for i in range(1, len(closes))]
+        volatility = sum(abs(r) for r in returns[-20:]) / 20
+        
+        if trend_strength > 0.03 and trend_30d['momentum'] > 0.02:
+            market = 'trend'
+        elif volatility < 0.02:
+            market = 'range'
+        elif trend_strength > 0.015 and volatility > 0.03:
+            market = 'breakout'
+        else:
+            market = 'neutral'
+        
+        signal = 0
+        weight_total = 0
+        
+        if trend_30d['trend'] in ['strong_up', 'up']:
+            signal += 0.4 * 1.0
+            weight_total += 0.4
+        elif trend_30d['trend'] in ['strong_down', 'down']:
+            signal += 0.4 * -1.0
+            weight_total += 0.4
+        
+        if 'mom_24h' in momenta:
+            mom_signal = 1 if momenta['mom_24h'] > 0 else -1
+            signal += 0.3 * mom_signal * min(abs(momenta['mom_24h']) * 10, 1)
+            weight_total += 0.3
+        
+        if rsi < 40:
+            signal += 0.2 * 1.0
+            weight_total += 0.2
+        elif rsi > 60:
+            signal += 0.2 * -1.0
+            weight_total += 0.2
+        
+        if 'histogram' in momenta:
+            macd_signal = 1 if momenta['histogram'] > 0 else -1
+            signal += 0.1 * macd_signal
+            weight_total += 0.1
+        
+        if weight_total > 0:
+            signal /= weight_total
+        
+        confidence = min(abs(signal) + 0.3 + confidence_30d * 0.2, 0.95)
+        config = MaximizeReturnsStrategy.get_config(market)
+        
+        return {
+            'symbol': symbol,
+            'market': market,
+            'signal': signal,
+            'confidence': confidence,
+            'rsi': rsi,
+            'trend_30d': trend_30d,
+            'momentum': momenta,
+            'config': config,
+            'action': 'buy' if signal > 0 else 'sell' if signal < 0 else 'hold'
+        }
 
 # ============ G45 主系统 ============
 
 class G45:
     def __init__(self):
         self.version = VERSION
-        self.name = "G45 全技能调度系统 v" + VERSION
+        self.name = "G45 v" + VERSION + " 30天收益最大化"
         self.running = False
-        self.mtf = MultiTimeframeAnalyzer()
-        self.optimizer = StrategyOptimizer()
-        self.fusion = SignalFusion()
+        self.signal_gen = SignalGeneratorV14()
         self.cycle = 0
         self.log_file = LOG_FILE
         os.makedirs(os.path.dirname(LOG_FILE), exist_ok=True)
@@ -157,20 +211,16 @@ class G45:
     
     def _api_signed(self, endpoint: str, params: dict = None, method: str = "GET") -> dict:
         import hmac, hashlib, urllib.request
-        
         ts = int(time.time() * 1000)
         base = {"timestamp": ts, "recvWindow": 5000}
         if params: base.update(params)
-        
         q = "&".join("{}={}".format(k, v) for k, v in sorted(base.items()))
         sig = hmac.new(API_SECRET.encode(), q.encode(), hashlib.sha256).hexdigest()
         url = "https://api.binance.com{}?{}&signature={}".format(endpoint, q, sig)
-        
         req = urllib.request.Request(url, method=method)
         req.add_header('X-MBX-APIKEY', API_KEY)
         proxy_handler = urllib.request.ProxyHandler({"http": PROXY, "https": PROXY})
         opener = urllib.request.build_opener(proxy_handler)
-        
         return json.loads(opener.open(req, timeout=15).read().decode())
     
     def get_price(self, symbol: str) -> float:
@@ -183,7 +233,7 @@ class G45:
             return float(d['price'])
         except: return 0
     
-    def get_klines(self, symbol: str, interval: str = "1h", limit: int = 100) -> list:
+    def get_klines(self, symbol: str, interval: str = "1h", limit: int = 300) -> list:
         try:
             import urllib.request
             url = 'https://api.binance.com/api/v3/klines?symbol=' + symbol + 'USDT&interval=' + interval + '&limit=' + str(limit)
@@ -198,7 +248,6 @@ class G45:
             usdt = 0
             total = 0
             prices = {s: self.get_price(s) for s in ['BTC', 'ETH', 'BNB', 'XRP', 'ADA', 'SOL', 'DOT', 'LINK', 'DOGE', 'SHIB', 'NEIRO', 'BOME']}
-            
             for b in account.get('balances', []):
                 free = float(b.get('free', 0))
                 asset = b['asset']
@@ -208,114 +257,23 @@ class G45:
                 else:
                     price = prices.get(asset, 0)
                     total += free * price
-            
             return {'spot_usdt': usdt, 'total': total}
         except Exception as e:
             self.log("获取账户失败: {}".format(e), "ERROR")
             return {'spot_usdt': 0, 'total': 0}
     
-    def detect_market(self, closes: list) -> str:
-        if len(closes) < 50:
-            return 'neutral'
-        
-        ma5 = sum(closes[-5:]) / 5
-        ma20 = sum(closes[-20:]) / 20
-        ma50 = sum(closes[-50:]) / 50 if len(closes) >= 50 else ma20
-        
-        trend = (ma5 - ma20) / ma20 if ma20 > 0 else 0
-        
-        returns = [(closes[i] - closes[i-1]) / closes[i-1] for i in range(1, len(closes))]
-        volatility = sum(abs(r) for r in returns[-20:]) / 20
-        
-        if trend > 0.03:
-            return 'trend'
-        elif volatility < 0.02:
-            return 'range'
-        elif trend > 0.015 and volatility > 0.03:
-            return 'breakout'
-        return 'neutral'
-    
-    def calculate_signals(self, closes: list, volumes: list) -> Dict[str, float]:
-        if len(closes) < 20:
-            return {}
-        
-        signals = {}
-        
-        deltas = [closes[i+1] - closes[i] for i in range(len(closes)-1)]
-        gains = [d for d in deltas if d > 0]
-        losses = [-d for d in deltas if d < 0]
-        avg_gain = sum(gains) / len(gains) if gains else 0
-        avg_loss = sum(losses) / len(losses) if losses else 0
-        rs = avg_gain / avg_loss if avg_loss > 0 else 100
-        rsi = 100 - (100 / (1 + rs))
-        signals['rsi'] = rsi
-        
-        ma5 = sum(closes[-5:]) / 5
-        ma20 = sum(closes[-20:]) / 20
-        ma50 = sum(closes[-50:]) / 50 if len(closes) >= 50 else ma20
-        
-        trend = (ma5 - ma20) / ma20 if ma20 > 0 else 0
-        signals['go-core'] = trend * 10
-        
-        vol_avg = sum(volumes[-20:]) / 20
-        vol_ratio = volumes[-1] / vol_avg if vol_avg > 0 else 1
-        signals['go-pool'] = (vol_ratio - 1) * 0.5
-        
-        signals['go-long-short'] = (rsi - 50) / 50
-        
-        trend50 = (ma20 - ma50) / ma50 if ma50 > 0 else 0
-        signals['go-detect'] = trend50 * 5
-        
-        signals['go-rotate'] = trend * 0.5
-        signals['go-noise'] = -abs(vol_ratio - 1) * 0.3
-        signals['go-contrarian'] = -(rsi - 50) / 100
-        signals['go-etf'] = signals['go-pool'] * 0.5
-        signals['top10'] = 0.1 if trend > 0 else -0.1
-        
-        return signals
-    
     def analyze_symbol(self, symbol: str) -> Optional[dict]:
-        mtf_result = self.mtf.analyze(symbol)
-        
         klines = self.get_klines(symbol)
         if not klines or len(klines) < 50:
             return None
-        
         closes = [float(k[4]) for k in klines]
         volumes = [float(k[5]) for k in klines]
-        
-        market = self.detect_market(closes)
-        signals = self.calculate_signals(closes, volumes)
-        weights = self.optimizer.get_weights()
-        
-        combined, confidence = self.fusion.fuse(signals, weights, market)
-        
-        if mtf_result['consensus'] != 0:
-            combined = combined * 0.7 + mtf_result['consensus'] * 0.3
-        
-        meme_coins = ['DOGE', 'BOME', 'NEIRO', 'SHIB', 'PEPE', 'FLOKI', 'TURBO']
-        risk = 0.5 + (0.25 if symbol in meme_coins else 0)
-        
-        threshold = 0.10 + risk * 0.05
-        
-        if abs(combined) < threshold or confidence < 0.50:
-            return None
-        
-        return {
-            'symbol': symbol,
-            'market': market,
-            'signal': combined,
-            'confidence': confidence,
-            'risk': risk,
-            'mtf_consensus': mtf_result['consensus'],
-            'action': 'buy' if combined > 0 else 'sell',
-            'price': closes[-1]
-        }
+        return self.signal_gen.generate(symbol, closes, volumes, 0.5)
     
     def run(self):
         self.running = True
         self.log("=" * 60)
-        self.log("G45 v{} 全技能自主调度系统 启动".format(self.version))
+        self.log("G45 v{} 30天收益最大化系统 启动".format(self.version))
         self.log("=" * 60)
         
         symbols = ['BTC', 'ETH', 'SOL', 'XRP', 'ADA', 'DOT', 'LINK', 'DOGE', 'BOME', 'NEIRO']
