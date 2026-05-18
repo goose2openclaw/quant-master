@@ -1,13 +1,16 @@
 #!/usr/bin/env python3
 """
-G44 v4.0 - 优化版本能化自主决策
-================================
-优化自G43 Auto:
-1. 提高买入阈值(0.02→0.05)减少无效交易
-2. LOT_SIZE自动修复
-3. 优化止损逻辑
-4. 增加突破市场检测
-5. 动态仓位管理
+G44 v4.1 - 回归G43配置 + LOT_SIZE修复
+=====================================
+回归配置:
+- 买入阈值: 0.03 (G43原始)
+- 卖出阈值: -0.03
+- Polymarket权重: 35%
+- 信号融合: 65%/35%
+
+优化:
+- LOT_SIZE自动修复
+- 止损逻辑优化
 """
 
 import json, time, urllib.request, hmac, hashlib, signal as sig_module
@@ -21,13 +24,13 @@ LOG_FILE = '/home/goose/.openclaw/workspace/logs/g44.log'
 
 POLYMARKET = {'BTC':0.42,'ETH':0.35,'SOL':0.28,'DOGE':0.22,'XRP':0.15,'ADA':0.12,'DOT':0.10,'LINK':0.08}
 COINS_ALL = ['BTC','ETH','SOL','XRP','ADA','DOT','LINK','BNB','DOGE','SHIB','PEPE','BONK','NEIRO','BOME','FTM','MATIC','AVAX']
-SKIP = ['FTM','NEIRO','BOME','SHIB','PEPE','BONK']  # 高风险跳过
+SKIP = ['FTM','NEIRO','BOME','SHIB','PEPE','BONK']
 
-# G44优化配置
-BUY_THRESHOLD = 0.05  # 提高到0.05减少无效交易
+# 回归G43原始配置
+BUY_THRESHOLD = 0.03  # G43原始
 SELL_THRESHOLD = -0.03
-MIN_ORDER = 5  # 最小订单$5
-MAX_POSITION = 0.3  # 最大仓位30%
+MIN_ORDER = 5
+MAX_POSITION = 0.35
 
 running = True
 
@@ -69,8 +72,8 @@ def get_klines(sym, interval='15m', limit=100):
         return json.loads(opener.open(urllib.request.Request(url), timeout=10).read().decode())
     except: return []
 
-def place_order(sym, side, qty, retry=3):
-    for attempt in range(retry):
+def place_order(sym, side, qty):
+    for attempt in range(3):
         try:
             ts = int(time.time() * 1000)
             qty_str = '{:.6f}'.format(round(qty, 6))
@@ -89,14 +92,13 @@ def place_order(sym, side, qty, retry=3):
                 try: err_json = json.loads(err_body); err_msg = err_json.get('msg', err_body)
                 except: err_msg = err_body
                 log('  错误[{}]: {}'.format(attempt+1, err_msg[:40]))
-                # G44优化: LOT_SIZE自动修复
                 if 'LOT_SIZE' in err_msg or 'MIN_NOTIONAL' in err_msg:
-                    qty *= 1.5  # 增加50%数量
-                    log('  自动修复: 调整数量x1.5')
+                    qty *= 1.5
+                    log('  LOT_SIZE修复: 数量x1.5')
                     time.sleep(0.3); continue
                 elif 'INSUFFICIENT' in err_msg:
-                    return {'success': False, 'error': '余额不足'}
-                time.sleep(0.5 * (attempt + 1)); continue
+                    return {'success': False}
+                time.sleep(0.5); continue
             if 'code' in resp:
                 log('  失败: {}'.format(resp.get('msg', '')[:40]))
                 time.sleep(0.5); continue
@@ -104,7 +106,7 @@ def place_order(sym, side, qty, retry=3):
             return {'success': True}
         except Exception as e:
             log('  异常: {}'.format(str(e)[:30])); time.sleep(0.5)
-    return {'success': False, 'error': 'MAX_RETRIES'}
+    return {'success': False}
 
 def get_account():
     try:
@@ -120,25 +122,19 @@ def get_account():
         return json.loads(opener.open(req, timeout=15).read().decode())
     except: return {}
 
-def detect_market(closes, volumes):
+def detect_market(closes):
     if len(closes) < 50: return 'range'
     ma5, ma20 = sum(closes[-5:])/5, sum(closes[-20:])/20
     returns = [(closes[i]-closes[i-1])/closes[i-1] for i in range(1, len(closes))]
     vol = sum(abs(r) for r in returns[-20:])/20
     trend = (ma5 - ma20)/ma20 if ma20 > 0 else 0
-    # G44优化: 增加突破市场检测
     if trend > 0.03: return 'trend'
     elif vol < 0.015: return 'range'
     elif trend > 0.015 and vol > 0.025: return 'breakout'
-    elif len(closes) >= 20:
-        # 额外突破检测
-        high_20 = max(closes[-20:-1])
-        if closes[-1] > high_20 * 1.02: return 'breakout'
-        low_20 = min(closes[-20:-1])
-        if closes[-1] < low_20 * 0.98: return 'breakout'
     return 'range'
 
 def calc_signal(closes, volumes, market, polymarket=0):
+    """G43原始信号计算"""
     if len(closes) < 50: return 0
     ma5, ma20 = sum(closes[-5:])/5, sum(closes[-20:])/20
     ma50 = sum(closes[-50:])/50 if len(closes) >= 50 else ma20
@@ -156,33 +152,30 @@ def calc_signal(closes, volumes, market, polymarket=0):
     returns = [(closes[i]-closes[i-1])/closes[i-1] for i in range(1, len(closes))]
     momentum = sum(returns[-10:])/10 if len(returns) >= 10 else 0
     
-    # G44优化: 根据市场类型调整信号
+    # G43原始信号权重
     if market == 'range':
-        go_pool = (vol_ratio - 1) * 1.0  # 增加权重
-        mean_rev = -((closes[-1] - ma20)/ma20 * 18) if ma20 > 0 else 0  # 增加权重
-        go_rotate = trend * 1.5
-    elif market == 'breakout':
-        go_pool = (vol_ratio - 1) * 0.6
-        mean_rev = -((closes[-1] - ma20)/ma20 * 5) if ma20 > 0 else 0
-        go_rotate = trend * 0.8
-    else:  # trend
+        go_pool = (vol_ratio - 1) * 0.8
+        mean_rev = -((closes[-1] - ma20)/ma20 * 15) if ma20 > 0 else 0
+        go_rotate = trend * 1.2
+    else:
         go_pool = (vol_ratio - 1) * 0.5
         mean_rev = -((closes[-1] - ma20)/ma20 * 8) if ma20 > 0 else 0
         go_rotate = trend * 0.5
     
-    go_core = trend * 15  # 增加核心权重
+    go_core = trend * 12
     go_ls = (rsi - 50) / 50
-    go_detect = trend50 * 8  # 增加检测权重
-    momentum_sig = momentum * 150  # 增加动量权重
-    breakout = 2.0 if closes[-1] > max(closes[-20:-1]) else -1.0 if closes[-1] < min(closes[-20:-1]) else 0
-    vol_profile = 1.5 if vol_ratio > 1.5 and closes[-1] > ma20 else 0
-    sentiment = trend * 30 + polymarket * 2.0
+    go_detect = trend50 * 6
+    momentum_sig = momentum * 120
+    breakout = 1.5 if closes[-1] > max(closes[-20:-1]) else -0.5 if closes[-1] < min(closes[-20:-1]) else 0
+    vol_profile = 1.2 if vol_ratio > 1.5 and closes[-1] > ma20 else 0
+    sentiment = trend * 25 + polymarket * 1.5
     
+    # G43原始融合
     go_signal = (go_core*0.15 + go_pool*0.15 + go_rotate*0.12 + go_ls*0.10 +
                  go_detect*0.08 + momentum_sig*0.08 + mean_rev*0.10 +
                  breakout*0.07 + vol_profile*0.08 + sentiment*0.07)
     
-    return go_signal * 0.60 + polymarket * 0.40  # 增加PM权重
+    return go_signal * 0.65 + polymarket * 0.35  # G43原始权重
 
 def main():
     global running
@@ -196,8 +189,8 @@ def main():
     cycle = 0; trades = 0; errors = 0
     
     log('=' * 70)
-    log('G44 v4.0 优化版本能化启动')
-    log('优化: 阈值0.05 LOT_SIZE自动修复 突破检测')
+    log('G44 v4.1 启动 - 回归G43配置 + LOT_SIZE修复')
+    log('配置: 阈值0.03 PM权重35% 信号融合65%/35%')
     log('=' * 70)
     
     while running:
@@ -214,14 +207,12 @@ def main():
                     price = prices.get(asset, 0)
                     value = free * price
                     if value > 0.1:
-                        # G44优化: 记录entry价格用于PnL计算
                         holdings[asset] = {'amount': free, 'price': price, 'entry': price, 'value': value}
             
             total = sum(h['value'] for h in holdings.values())
             usdt = float([b for b in account.get('balances', []) if b['asset'] == 'USDT'][0]['free'])
             total += usdt
             
-            # 计算信号
             sig_data = {}
             market_counts = defaultdict(int)
             
@@ -231,56 +222,46 @@ def main():
                 if not klines or len(klines) < 50: continue
                 closes = [float(k[4]) for k in klines]
                 volumes = [float(k[5]) for k in klines]
-                market = detect_market(closes, volumes)
+                market = detect_market(closes)
                 market_counts[market] += 1
                 pm = POLYMARKET.get(sym, 0)
                 combined = calc_signal(closes, volumes, market, pm)
                 sig_data[sym] = {'combined': combined, 'market': market, 'pm': pm}
             
-            # 本能决策
             buys = []; sells = []
             
-            # G44优化: 止损逻辑 - 使用实际持仓计算PnL
             for sym, h in holdings.items():
                 if sym not in sig_data: continue
                 c = sig_data[sym]['combined']
-                # 使用实际持仓的entry price
-                entry = h.get('entry', h['price'])
-                pnl = (h['price'] - entry)/entry*100 if entry > 0 else 0
-                # 止损条件: 信号<阈值 或 亏损>3%
-                if c < SELL_THRESHOLD or pnl < -3:
+                pnl = (h['price'] - h['entry'])/h['entry']*100 if h.get('entry', 0) > 0 else 0
+                if c < SELL_THRESHOLD or pnl < -5:
                     val = h['amount'] * h['price']
-                    if val >= MIN_ORDER:
+                    if val >= 3:
                         sells.append({'sym': sym, 'amt': h['amount']*0.8, 'c': c, 'pnl': pnl})
             
-            # G44优化: 买入 - 提高阈值到0.05
             for sym in COINS_ALL:
                 if sym in SKIP or sym in holdings or sym not in sig_data: continue
                 c = sig_data[sym]['combined']
                 p = prices.get(sym, 0)
                 if p <= 0: continue
-                # G44优化: 阈值提高到0.05
-                if c > BUY_THRESHOLD and usdt > 10:
+                if c > BUY_THRESHOLD and usdt > 5:
                     budget = min(usdt * MAX_POSITION, 100)
                     qty = budget / p
-                    notional = qty * p
-                    if notional >= MIN_ORDER:
-                        buys.append({'sym': sym, 'budget': budget, 'qty': qty, 'c': c})
+                    if qty * p >= MIN_ORDER:
+                        buys.append({'sym': sym, 'qty': qty, 'c': c})
             
             buys.sort(key=lambda x: -x['c'])
             sells.sort(key=lambda x: x['c'])
             
             log('')
             log('=== G44周期{} | 总资产:${:.2f} | USDT:${:.2f} ==='.format(cycle, total, usdt))
-            log('市场:{} | 持仓:{} | 信号:买{}/卖{}'.format(dict(market_counts), len(holdings), len(buys), len(sells)))
+            log('市场:{} | 持仓:{} | 买:{} | 卖:{}'.format(dict(market_counts), len(holdings), len(buys), len(sells)))
             
-            # 执行卖出
             for d in sells[:2]:
                 log('卖出: {} 信号:{:.2f} PnL:{:.1f}%'.format(d['sym'], d['c'], d['pnl']))
                 if place_order(d['sym'], 'SELL', d['amt']).get('success'): trades += 1
                 else: errors += 1
             
-            # 执行买入
             for d in buys[:2]:
                 log('买入: {} 信号:{:.2f}'.format(d['sym'], d['c']))
                 if place_order(d['sym'], 'BUY', d['qty']).get('success'): trades += 1
@@ -294,7 +275,9 @@ def main():
                 time.sleep(1)
                 
         except Exception as e:
-            log('异常: ' + str(e)[:50]); errors += 1; time.sleep(5)
+            log('异常: ' + str(e)[:50])
+            errors += 1
+            time.sleep(5)
     
     log('G44停止 - 周期{} 交易{} 错误{}'.format(cycle, trades, errors))
 
