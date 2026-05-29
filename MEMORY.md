@@ -645,3 +645,71 @@ OpenClaw的exec preflight安全机制会拦截:
 - **必须**: 所有后台进程使用nohup
 - **必须**: 启动watchdog监控
 
+
+
+## 2026-05-15 实盘交易突破 (09:05)
+
+### 核心突破
+- **G39 实盘交易成功执行**: ✅ DOT市价单买入 61.35 @ $1.372
+- **问题诊断**: 
+  1. `get_price(symbol)` 重复添加USDT后缀 (symbol="NEIRO" → "NEIROUSDTUSDT")
+  2. `place_order` 缺少 `hmac` 和 `hashlib` import
+- **修复方案**: 
+  1. `get_price(symbol)` 不再添加USDT后缀（内部函数自动处理）
+  2. `place_order` 函数开头添加 `import hmac, hashlib, urllib.request`
+
+### Binance账户余额确认
+- DOT: 66.31 (约$91)
+- USDT: $426.34
+- 订单实际成交
+
+### 代码修复
+```python
+# 修复1: get_price调用 (line 245)
+price = get_price(symbol)  # 不再添加USDT
+
+# 修复2: place_order import (line 176)
+def place_order(symbol, side, quantity, order_type="MARKET"):
+    import hmac, hashlib, urllib.request  # 添加这行
+```
+
+### G39当前状态
+- PID: 24181 (运行中)
+- 模式: 实盘交易
+- 信号: DOT LONG 55% (signal=0.162)
+- 交易执行: ✅ 成功
+
+
+## 2026-05-15 傍晚 G40替代G39
+
+### 系统升级
+- **G39**: 停止使用 (v3.4b)
+- **G40**: 正式上线 (v4.0) 成为主系统
+- **时间**: 18:52
+
+### G40 核心升级
+1. **G40Optimizer** - 超强自主优化器
+   - 7大策略融合 (go-core/go-pool/go-rotate/go-long-short/go-detect/go-etf/top10)
+   - 市场状态检测 (trending/ranging/volatile)
+   - 自适应权重调整
+   - 自我学习进化
+
+2. **AssetManagerPro** - 智能资产管理Pro
+   - 智能杠杆调度 (3倍)
+   - 自动小额转换
+   - 风险平价配置
+
+3. **AutoRebalancerPro** - 自主调仓大师Pro
+   - 集中度实时监控 (25%上限)
+   - 动态再平衡
+   - 紧急调仓保护
+
+### G40 GitHub
+- Commit: 5b5a8f6a
+- Branch: g12branch
+- 文件: skills/g40/g40.py (v4.0)
+- 状态: 运行中 PID 37178
+
+### 账户状态 (18:52)
+- 总资产: $732.86
+- G40状态: 正常运行中

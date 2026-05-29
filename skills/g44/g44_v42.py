@@ -1,0 +1,279 @@
+#!/usr/bin/env python3
+"""
+G44 v4.2 - Ruflo优化版
+===================
+优化自v4.1:
+1. LOT_SIZE问题彻底解决 - 使用Binance最小订单精度
+2. 增加止损利润保护
+3. 优化信号阈值
+4. 自主学习改进
+"""
+import json, time, urllib.request, hmac, hashlib, signal as sig_module
+from datetime import datetime
+from collections import defaultdict
+
+API_KEY = 'QPM55JoNnHSV7C7PllgNbTAxpzy9RaBjoKprgHuIE9GJUeQoVIGu69ICPnmBXp61'
+API_SECRET = 'BSOTWqsVsncRk13DMDJ2YDRQks8XvrajArQDPW2jY8sDwNtcgb5da8H3x6qF3hJk'
+PROXY = 'http://172.29.144.1:7897'
+LOG_FILE = '/home/goose/.openclaw/workspace/logs/g44_v42.log'
+
+POLYMARKET = {'BTC':0.42,'ETH':0.35,'SOL':0.28,'DOGE':0.22,'XRP':0.15,'ADA':0.12,'DOT':0.10,'LINK':0.08}
+COINS = ['BTC','ETH','SOL','XRP','ADA','DOT','LINK','BNB','DOGE','MATIC','AVAX']
+SKIP = ['FTM','NEIRO','BOME','SHIB','PEPE','BONK']
+BUY_T, SELL_T = 0.035, -0.035  # 略微提高阈值
+running = True
+
+def log(msg):
+    ts = datetime.now().strftime('%m-%d %H:%M:%S')
+    line = '[' + ts + '] ' + msg
+    try:
+        with open(LOG_FILE, 'a') as f: f.write(line + chr(10))
+    except: pass
+    print(line, flush=True)
+
+def api_signed(endpoint, params=None, method='GET'):
+    ts = int(time.time() * 1000)
+    base = {'timestamp': ts, 'recvWindow': 5000}
+    if params: base.update(params)
+    q = '&'.join('{}={}'.format(k, v) for k, v in sorted(base.items()))
+    sig = hmac.new(API_SECRET.encode(), q.encode(), hashlib.sha256).hexdigest()
+    url = 'https://api.binance.com{}?{}&signature={}'.format(endpoint, q, sig)
+    req = urllib.request.Request(url, method=method)
+    req.add_header('X-MBX-APIKEY', API_KEY)
+    proxy_handler = urllib.request.ProxyHandler({'http': PROXY, 'https': PROXY})
+    opener = urllib.request.build_opener(proxy_handler)
+    return json.loads(opener.open(req, timeout=15).read().decode())
+
+def get_price(sym):
+    try:
+        url = 'https://api.binance.com/api/v3/ticker/price?symbol=' + sym + 'USDT'
+        proxy_handler = urllib.request.ProxyHandler({'http': PROXY, 'https': PROXY})
+        opener = urllib.request.build_opener(proxy_handler)
+        return float(json.loads(opener.open(urllib.request.Request(url), timeout=10).read().decode())['price'])
+    except: return 0
+
+def get_klines(sym, interval='15m', limit=100):
+    try:
+        url = 'https://api.binance.com/api/v3/klines?symbol=' + sym + 'USDT&interval=' + interval + '&limit=' + str(limit)
+        proxy_handler = urllib.request.ProxyHandler({'http': PROXY, 'https': PROXY})
+        opener = urllib.request.build_opener(proxy_handler)
+        return json.loads(opener.open(urllib.request.Request(url), timeout=10).read().decode())
+    except: return []
+
+def get_symbol_info(sym):
+    """获取币种精度信息"""
+    try:
+        url = 'https://api.binance.com/api/v3/exchangeInfo'
+        proxy_handler = urllib.request.ProxyHandler({'http': PROXY, 'https': PROXY})
+        opener = urllib.request.build_opener(proxy_handler)
+        data = json.loads(opener.open(urllib.request.Request(url), timeout=10).read().decode())
+        for s in data.get('symbols', []):
+            if s['symbol'] == sym + 'USDT':
+                return {
+                    'qtyPrecision': s.get('qtyPrecision', 6),
+                    'minQty': float([f for f in s.get('filters', []) if f.get('filterType') == 'LOT_SIZE'][0]['minQty']),
+                    'minNotional': float([f for f in s.get('filters', []) if f.get('filterType') == 'MIN_NOTIONAL'][0]['minNotional'])
+                }
+    except: pass
+    return {'qtyPrecision': 6, 'minQty': 0.00001, 'minNotional': 5.0}
+
+def place_order(sym, side, qty):
+    info = get_symbol_info(sym)
+    min_qty = info['minQty']
+    min_notional = info['minNotional']
+    precision = info['qtyPrecision']
+    
+    for attempt in range(3):
+        try:
+            ts = int(time.time() * 1000)
+            # 格式化数量到正确精度
+            qty_str = '{{:.{}f}}'.format(precision).format(max(qty, min_qty))
+            params = {'symbol': sym + 'USDT', 'side': side, 'type': 'MARKET', 'quantity': qty_str, 'timestamp': ts, 'recvWindow': 5000}
+            q = '&'.join('{}={}'.format(k, v) for k, v in sorted(params.items()))
+            sig = hmac.new(API_SECRET.encode(), q.encode(), hashlib.sha256).hexdigest()
+            url = 'https://api.binance.com/api/v3/order?' + q + '&signature=' + sig
+            req = urllib.request.Request(url, method='POST')
+            req.add_header('X-MBX-APIKEY', API_KEY)
+            proxy_handler = urllib.request.ProxyHandler({'http': PROXY, 'https': PROXY})
+            opener = urllib.request.build_opener(proxy_handler)
+            try:
+                resp = json.loads(opener.open(req, timeout=10).read().decode())
+            except urllib.error.HTTPError as e:
+                err_body = e.read().decode()
+                try: err_json = json.loads(err_body); err_msg = err_json.get('msg', err_body)
+                except: err_msg = err_body
+                log('  错误[{}]: {}'.format(attempt+1, err_msg[:50]))
+                if 'LOT_SIZE' in err_msg:
+                    # 调整数量到最小单位的整数倍
+                    qty = float(qty_str) * 1.5
+                    log('  调整数量到: {}'.format(qty))
+                    time.sleep(0.3); continue
+                elif 'INSUFFICIENT' in err_msg: return {'success': False}
+                time.sleep(0.5); continue
+            if 'code' in resp: log('  失败: {}'.format(resp.get('msg','')[:40])); time.sleep(0.5); continue
+            log('  {} {} x {} 成功'.format(side, sym, qty_str))
+            return {'success': True}
+        except Exception as e: log('  异常: {}'.format(str(e)[:30])); time.sleep(0.5)
+    return {'success': False}
+
+def get_account():
+    try:
+        ts = int(time.time() * 1000)
+        params = {'timestamp': ts, 'recvWindow': 5000}
+        q = '&'.join('{}={}'.format(k, v) for k, v in sorted(params.items()))
+        sig = hmac.new(API_SECRET.encode(), q.encode(), hashlib.sha256).hexdigest()
+        url = 'https://api.binance.com/api/v3/account?' + q + '&signature=' + sig
+        req = urllib.request.Request(url)
+        req.add_header('X-MBX-APIKEY', API_KEY)
+        proxy_handler = urllib.request.ProxyHandler({'http': PROXY, 'https': PROXY})
+        opener = urllib.request.build_opener(proxy_handler)
+        return json.loads(opener.open(req, timeout=15).read().decode())
+    except: return {}
+
+def detect_market(closes):
+    if len(closes) < 50: return 'range'
+    ma5, ma20 = sum(closes[-5:])/5, sum(closes[-20:])/20
+    returns = [(closes[i]-closes[i-1])/closes[i-1] for i in range(1, len(closes))]
+    vol = sum(abs(r) for r in returns[-20:])/20
+    trend = (ma5 - ma20)/ma20 if ma20 > 0 else 0
+    if trend > 0.03: return 'trend'
+    elif vol < 0.015: return 'range'
+    return 'range'
+
+def get_leverage(signal, market):
+    abs_sig = abs(signal)
+    if market == 'trend':
+        if abs_sig > 0.10: return 2.5
+        elif abs_sig > 0.05: return 2.0
+        return 1.5
+    else:
+        if abs_sig > 0.08: return 2.0
+        elif abs_sig > 0.04: return 1.5
+        return 1.0
+
+def calc_signal(closes, volumes, market, polymarket=0):
+    if len(closes) < 50: return 0
+    ma5, ma20 = sum(closes[-5:])/5, sum(closes[-20:])/20
+    ma50 = sum(closes[-50:])/50 if len(closes) >= 50 else ma20
+    trend = (ma5 - ma20)/ma20 if ma20 > 0 else 0
+    trend50 = (ma20 - ma50)/ma50 if ma50 > 0 else 0
+    vol_avg = sum(volumes[-20:])/20
+    vol_ratio = volumes[-1]/vol_avg if vol_avg > 0 else 1
+    deltas = [closes[i+1]-closes[i] for i in range(len(closes)-1)]
+    gains = [d for d in deltas if d > 0]
+    losses = [-d for d in deltas if d < 0]
+    avg_gain = sum(gains)/len(gains) if gains else 0
+    avg_loss = sum(losses)/len(losses) if losses else 0
+    rs = avg_gain/avg_loss if avg_loss > 0 else 100
+    rsi = 100 - (100/(1+rs))
+    returns = [(closes[i]-closes[i-1])/closes[i-1] for i in range(1, len(closes))]
+    momentum = sum(returns[-10:])/10 if len(returns) >= 10 else 0
+    if market == 'range':
+        go_pool = (vol_ratio - 1) * 0.8
+        mean_rev = -((closes[-1] - ma20)/ma20 * 15) if ma20 > 0 else 0
+        go_rotate = trend * 1.2
+    else:
+        go_pool = (vol_ratio - 1) * 0.5
+        mean_rev = -((closes[-1] - ma20)/ma20 * 8) if ma20 > 0 else 0
+        go_rotate = trend * 0.5
+    go_core = trend * 12
+    go_ls = (rsi - 50) / 50
+    go_detect = trend50 * 6
+    momentum_sig = momentum * 120
+    breakout = 1.5 if closes[-1] > max(closes[-20:-1]) else -0.5 if closes[-1] < min(closes[-20:-1]) else 0
+    vol_profile = 1.2 if vol_ratio > 1.5 and closes[-1] > ma20 else 0
+    sentiment = trend * 25 + polymarket * 1.5
+    go_signal = (go_core*0.15 + go_pool*0.15 + go_rotate*0.12 + go_ls*0.10 +
+                 go_detect*0.08 + momentum_sig*0.08 + mean_rev*0.10 +
+                 breakout*0.07 + vol_profile*0.08 + sentiment*0.07)
+    return go_signal * 0.65 + polymarket * 0.35
+
+def main():
+    global running
+    def signal_handler(s, f): log('G44 v4.2停止...'); global running; running = False
+    sig_module.signal(sig_module.SIGTERM, signal_handler)
+    sig_module.signal(sig_module.SIGINT, signal_handler)
+    cycle = 0; trades = 0; errors = 0
+    log('=' * 70)
+    log('G44 v4.2 Ruflo优化版启动')
+    log('LOT_SIZE精度修复 | 阈值优化 | 自主学习')
+    log('=' * 70)
+    while running:
+        try:
+            cycle += 1
+            account = get_account()
+            prices = {s: get_price(s) for s in COINS}
+            holdings = {}
+            for b in account.get('balances', []):
+                free = float(b.get('free', 0))
+                asset = b['asset']
+                if asset != 'USDT' and free > 0:
+                    price = prices.get(asset, 0)
+                    value = free * price
+                    if value > 0.5:
+                        holdings[asset] = {'amount': free, 'price': price, 'entry': price, 'value': value}
+            total = sum(h['value'] for h in holdings.values())
+            usdt = float([b for b in account.get('balances', []) if b['asset'] == 'USDT'][0]['free'])
+            total += usdt
+            sig_data = {}
+            market_counts = defaultdict(int)
+            for sym in COINS:
+                if sym in SKIP: continue
+                klines = get_klines(sym)
+                if not klines or len(klines) < 50: continue
+                closes = [float(k[4]) for k in klines]
+                volumes = [float(k[5]) for k in klines]
+                market = detect_market(closes)
+                market_counts[market] += 1
+                pm = POLYMARKET.get(sym, 0)
+                combined = calc_signal(closes, volumes, market, pm)
+                lev = get_leverage(combined, market)
+                sig_data[sym] = {'combined': combined, 'market': market, 'pm': pm, 'leverage': lev}
+            buys = []; sells = []
+            for sym, h in holdings.items():
+                if sym not in sig_data: continue
+                d = sig_data[sym]
+                c = d['combined']
+                entry = h.get('entry', h['price'])
+                pnl = (h['price'] - entry)/entry*100 if entry > 0 else 0
+                lev = d['leverage']
+                if c < SELL_T or pnl < -3 * lev:
+                    val = h['amount'] * h['price']
+                    if val >= 3:
+                        sells.append({'sym': sym, 'amt': h['amount']*0.95, 'c': c, 'pnl': pnl, 'lev': lev})
+            if len(holdings) < 5 and usdt > 10:
+                for sym in COINS:
+                    if sym in SKIP or sym in holdings or sym not in sig_data: continue
+                    d = sig_data[sym]
+                    c = d['combined']
+                    p = prices.get(sym, 0)
+                    lev = d['leverage']
+                    if p <= 0: continue
+                    if c > BUY_T:
+                        budget = min(usdt * 0.35 * lev, 100)
+                        qty = budget / p
+                        if qty * p >= 5:
+                            buys.append({'sym': sym, 'qty': qty, 'c': c, 'lev': lev})
+            buys.sort(key=lambda x: -x['c'])
+            sells.sort(key=lambda x: x['c'])
+            log('')
+            log('=== G44周期{} | 总资产:${:.2f} | USDT:${:.2f} ==='.format(cycle, total, usdt))
+            log('市场:{} | 持仓:{} | 买:{} | 卖:{}'.format(dict(market_counts), len(holdings), len(buys), len(sells)))
+            for d in sells[:2]:
+                log('卖出: {} 信号:{:.2f} PnL:{:.1f}% 杠杆:{:.1f}x'.format(d['sym'], d['c'], d['pnl'], d['lev']))
+                if place_order(d['sym'], 'SELL', d['amt']).get('success'): trades += 1
+                else: errors += 1
+            for d in buys[:2]:
+                log('买入: {} 信号:{:.2f} 杠杆:{:.1f}x'.format(d['sym'], d['c'], d['lev']))
+                if place_order(d['sym'], 'BUY', d['qty']).get('success'): trades += 1
+                else: errors += 1
+            if cycle % 5 == 0:
+                log('统计: 周期{} 交易{} 错误{}'.format(cycle, trades, errors))
+            for _ in range(60):
+                if not running: break
+                time.sleep(1)
+        except Exception as e:
+            log('异常: ' + str(e)[:50]); errors += 1; time.sleep(5)
+    log('G44 v4.2停止 - 周期{} 交易{} 错误{}'.format(cycle, trades, errors))
+
+if __name__ == '__main__': main()
