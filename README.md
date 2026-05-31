@@ -1,9 +1,9 @@
-# QuantMaster - QMT + vnpy 融合量化平台 v5.0
+# QuantMaster - QMT + vnpy 融合量化平台 v6.0
 
 ## 概述
-完全自主可控的加密货币量化交易平台，融合QMT快捷交易与vnpy量化框架。
+完全自主可控的加密货币量化交易平台,融合QMT快捷交易与vnpy量化框架。
 
-## 完整模块矩阵 (47个)
+## 完整模块矩阵 (63个)
 
 | # | 模块 | 功能 | 状态 |
 |---|------|------|------|
@@ -39,152 +39,182 @@
 | 30 | live_signals/ | 实时信号推送 | ✅ |
 | 31 | automation/ | 信号自动执行 | ✅ |
 | 32 | chart/ | TradingView图表 | ✅ |
-| 33 | **copy_trading/** | **跟单交易系统** | ✅ v5.0 |
-| 34 | **strategy_market/** | **策略市场** | ✅ v5.0 |
-| 35 | **options/** | **期权交易引擎** | ✅ v5.0 |
-| 36 | **defi_yield/** | **DeFi收益聚合** | ✅ v5.0 |
-| 37 | **tax_report/** | **税务报告生成器** | ✅ v5.0 |
-| 38 | **monte_carlo/** | **蒙特卡洛回测** | ✅ v5.0 |
-| 39 | **mobile_app/** | **移动端App** | ✅ v5.0 |
-| 40 | **sentiment_realtime/** | **实时情绪监控** | ✅ v5.0 |
-| 41 | **dex_aggregator/** | **DEX聚合器** | ✅ v5.0 |
-| 42 | **api_docs/** | **API文档生成器** | ✅ v5.0 |
-| 43 | **portfolio_optimizer/** | **组合优化器** | ✅ v5.0 |
-| 44 | **liquidity/** | **流动性检测** | ✅ v5.0 |
+| 33 | copy_trading/ | 跟单交易 | ✅ |
+| 34 | strategy_market/ | 策略市场 | ✅ |
+| 35 | options/ | 期权交易 | ✅ |
+| 36 | defi_yield/ | DeFi收益聚合 | ✅ |
+| 37 | tax_report/ | 税务报告 | ✅ |
+| 38 | monte_carlo/ | 蒙特卡洛回测 | ✅ |
+| 39 | mobile_app/ | 移动端App | ✅ |
+| 40 | sentiment_realtime/ | 实时情绪监控 | ✅ |
+| 41 | dex_aggregator/ | DEX聚合器 | ✅ |
+| 42 | api_docs/ | API文档生成 | ✅ |
+| 43 | portfolio_optimizer/ | 组合优化器 | ✅ |
+| 44 | liquidity/ | 流动性检测 | ✅ |
+| 45 | **smart_routing/** | **SOR智能路由** | ✅ v6.0 |
+| 46 | **twap_vwap/** | **TWAP/VWAP算法** | ✅ v6.0 |
+| 47 | **pretrade_risk/** | **下单前风控** | ✅ v6.0 |
+| 48 | **margin_management/** | **保证金管理** | ✅ v6.0 |
+| 49 | **performance_attribution/** | **收益归因** | ✅ v6.0 |
+| 50 | **strategy_git/** | **策略Git版本控制** | ✅ v6.0 |
+| 51 | **ab_testing/** | **A/B测试框架** | ✅ v6.0 |
+| 52 | **factor_exposure/** | **因子敞口分析** | ✅ v6.0 |
+| 53 | **strategy_correlation/** | **策略相关性** | ✅ v6.0 |
+| 54 | **scenario_stress/** | **情景压测** | ✅ v6.0 |
+| 55 | **multi_leg_orders/** | **组合单** | ✅ v6.0 |
+| 56 | **docker_k8s/** | **容器化部署** | ✅ v6.0 |
+| 57 | **api_rate_limit/** | **API限流** | ✅ v6.0 |
+| 58 | **webhook_events/** | **Webhook事件** | ✅ v6.0 |
+| 59 | **backup_restore/** | **备份恢复** | ✅ v6.0 |
+| 60 | **options_greeks_stream/** | **期权希腊值实时** | ✅ v6.0 |
 
-## v5.0 新增12个模块
+## v6.0 新增16个模块
 
-### copy_trading/ - 跟单交易
+### smart_routing/ - SOR智能订单路由
 ```python
-from copy_trading import CopyTradingSystem
-ct = CopyTradingSystem()
-provider_id = ct.register_provider('Trader1', 'momentum')
-follower_id = ct.register_follower('User1', 1000, provider_id)
-ct.execute_signal(provider_id, 'BTCUSDT', 'BUY', 0.1, 100000)
+from smart_routing import SmartOrderRouter
+router = SmartOrderRouter()
+best = router.get_best_route('BTCUSDT', 'BUY', 1)
+fills = router.get_split_route('BTCUSDT', 'BUY', 10)
 ```
 
-### strategy_market/ - 策略市场
+### twap_vwap/ - TWAP/VWAP算法
 ```python
-from strategy_market import StrategyMarketplace
-market = StrategyMarketplace()
-strategy_id = market.publish_strategy(author, 'RSI Bot', 'rsi', 29.99, desc, code)
-market.purchase_strategy(user_id, strategy_id)
+from twap_vwap import TWAPExecutor, VWAPExecutor
+twap = TWAPExecutor(order_manager)
+twap.create_order('BTCUSDT', 'BUY', 10, duration_min=30)
 ```
 
-### options/ - 期权交易
+### pretrade_risk/ - 下单前风控
 ```python
-from options import OptionsTrading
-opt = OptionsTrading(api_key, api_secret, proxy)
-opt.buy_option('BTCUSDT', OptionType.CALL, 100000, expiry, qty)
-opt.calculate_greeks(S, K, T, r, sigma)
+from pretrade_risk import PreTradeRiskChecker
+checker = PreTradeRiskChecker()
+result = checker.check_order(order, account, positions, current_price)
 ```
 
-### defi_yield/ - DeFi收益聚合
+### margin_management/ - 保证金管理
 ```python
-from defi_yield import DefiYieldAggregator
-agg = DefiYieldAggregator()
-agg.add_pool('PancakeSwap', addr, 'BTC', 'USDT', apy=45.5, tvl=1000000)
-agg.deposit(pool_id, amount)
+from margin_management import MarginManager
+mm = MarginManager()
+mm.open_position('BTCUSDT', qty=1, leverage=10)
 ```
 
-### tax_report/ - 税务报告
+### performance_attribution/ - 收益归因
 ```python
-from tax_report import TaxReportGenerator
-tax = TaxReportGenerator('US')
-tax.add_transaction(date, 'SELL', 'BTC', 0.5, 50000)
-report = tax.generate_tax_report()
-tax.export_csv('tax_report.csv')
+from performance_attribution import PerformanceAttribution
+attr = PerformanceAttribution()
+attr.add_return(date, port_return, bench_return)
+attr.get_brinson_attribution(positions, benchmarks)
 ```
 
-### monte_carlo/ - 蒙特卡洛回测
+### strategy_git/ - 策略版本控制
 ```python
-from monte_carlo import MonteCarloSimulator
-mc = MonteCarloSimulator(initial_capital=10000, num_simulations=1000)
-stats = mc.run_simulation(initial_price=100000, mu=0.0002, sigma=0.03, days=30)
+from strategy_git import StrategyRepository
+repo = StrategyRepository()
+repo.commit('RSIStrategy', code, 'v1.0', 'author')
+repo.get_history('RSIStrategy')
 ```
 
-### mobile_app/ - 移动端App
+### ab_testing/ - A/B测试框架
 ```python
-from mobile_app import MobileAppGenerator
-gen = MobileAppGenerator('QuantMaster')
-code = gen.generate_react_native()  # React Native
-code = gen.generate_flutter()       # Flutter
-pwa = gen.generate_pwa()           # PWA
+from ab_testing import ABTestingFramework
+fw = ABTestingFramework()
+test_id = fw.create_test('RSI vs MACD', config_a, config_b)
+fw.analyze(test_id, 'sharpe_ratio')
 ```
 
-### sentiment_realtime/ - 实时情绪
+### factor_exposure/ - 因子敞口
 ```python
-from sentiment_realtime import RealtimeSentimentMonitor
-mon = RealtimeSentimentMonitor()
-mon.start()
-score = mon.get_sentiment_score()
-trends = mon.get_trending_topics()
+from factor_exposure import FactorExposureAnalyzer
+analyzer = FactorExposureAnalyzer()
+exposure = analyzer.calculate_portfolio_exposure(holdings, factor_values)
 ```
 
-### dex_aggregator/ - DEX聚合器
+### strategy_correlation/ - 策略相关性
 ```python
-from dex_aggregator import DEXAggregator, LiquidityChecker
-agg = DEXAggregator('ethereum')
-best = agg.get_best_quote('USDT', 'BTC', 10000)
-agg.execute_swap('uniswap_v3', 'USDT', 'BTC', 10000, recipient)
+from strategy_correlation import StrategyCorrelationAnalyzer
+corr = StrategyCorrelationAnalyzer()
+corr.add_strategy_returns('RSI', returns1)
+corr.get_highly_correlated('RSI', threshold=0.7)
 ```
 
-### api_docs/ - API文档
+### scenario_stress/ - 情景压测
 ```python
-from api_docs import get_default_docs
-docs = get_default_docs()
-docs.save_openapi('openapi.json')
-docs.save_markdown('api.md')
+from scenario_stress import ScenarioStressTester
+tester = ScenarioStressTester()
+tester.run_stress_test(portfolio, positions)
 ```
 
-### portfolio_optimizer/ - 组合优化器
+### multi_leg_orders/ - 组合单
 ```python
-from portfolio_optimizer import PortfolioOptimizer
-opt = PortfolioOptimizer(returns, cov_matrix)
-result = opt.max_sharpe()
-frontier = opt.efficient_frontier(50)
+from multi_leg_orders import SpreadOrderManager
+spread = SpreadOrderManager(om)
+spread.create_straddle('BTCUSDT', qty=1)
+spread.create_butterfly('BTCUSDT', qty=1)
 ```
 
-### liquidity/ - 流动性检测
+### docker_k8s/ - 容器化部署
 ```python
-from liquidity import LiquidityChecker
-lc = LiquidityChecker()
-lc.fetch_order_book('BTCUSDT')
-slip = lc.estimate_slippage('BTCUSDT', 'BUY', 1)
-score = lc.get_liquidity_score('BTCUSDT')
+from docker_k8s import DockerGenerator, KubernetesGenerator
+dg = DockerGenerator()
+dg.generate_dockerfile()
+```
+
+### api_rate_limit/ - API限流
+```python
+from api_rate_limit import RateLimiter
+limiter = RateLimiter()
+limiter.add_rule('/api/order', 100, 60)
+limiter.check_rate_limit('/api/order', client_id)
+```
+
+### webhook_events/ - Webhook事件
+```python
+from webhook_events import WebhookDispatcher
+dispatcher = WebhookDispatcher()
+dispatcher.add_endpoint('myhook', 'https://...', ['trade', 'signal'])
+dispatcher.emit('trade', trade_data)
+```
+
+### backup_restore/ - 备份恢复
+```python
+from backup_restore import BackupManager
+bm = BackupManager()
+bm.create_backup('full')
+bm.restore_backup('backup_full_20260101.tar.gz')
+```
+
+### options_greeks_stream/ - 期权希腊值
+```python
+from options_greeks_stream import GreeksCalculator, GreeksStreamMonitor
+calc = GreeksCalculator()
+greeks = calc.calculate_greeks(S, K, T, r, sigma)
 ```
 
 ## 功能对照
 
-| 类别 | 功能 | 状态 |
-|------|------|------|
-| 现货交易 | 快捷/篮子/市价/限价 | ✅ |
-| 合约交易 | 永续/杠杆/止损止盈 | ✅ |
-| 期权交易 | 币权/期权/希腊字母 | ✅ |
-| DeFi收益 | 流动性挖矿/借贷/质押 | ✅ |
-| 跟单交易 | 信号提供者/跟单者/盈亏分摊 | ✅ |
-| 策略市场 | 上架/购买/评分/下载 | ✅ |
-| 数据 | HTTP+WS+链上+新闻+情绪 | ✅ |
-| 策略 | 18种策略+自定义 | ✅ |
-| 回测 | 事件驱动+蒙特卡洛 | ✅ |
-| 参数优化 | 网格+遗传+组合优化 | ✅ |
-| 风控 | VAR/止损/风险敞口 | ✅ |
-| 图表 | TradingView实时图表 | ✅ |
-| 通知 | TG/邮件/Webhook/信号 | ✅ |
-| 多账号 | 跨交易所管理 | ✅ |
-| 套利 | 跨交易所价差监控 | ✅ |
-| 调度 | Cron定时任务 | ✅ |
-| Paper交易 | 模拟盘 | ✅ |
-| 税务 | 自动报税报告 | ✅ |
-| 移动端 | React Native/Flutter/PWA | ✅ |
-| DEX聚合 | 多DEX比价/最佳路径 | ✅ |
-| API文档 | OpenAPI/Markdown/Postman | ✅ |
-| 流动性 | 订单簿深度/滑点/冲击 | ✅ |
+| 功能 | 3Commas | Pionex | Deribit | QuantMaster |
+|------|----------|---------|----------|-------------|
+| SOR | ✅ | ✅ | ✅ | ✅ |
+| TWAP/VWAP | ✅ | ✅ | ✅ | ✅ |
+| Pre-trade Risk | ✅ | ✅ | ✅ | ✅ |
+| Margin Mgmt | ✅ | ✅ | ✅ | ✅ |
+| Strategy Git | ❌ | ❌ | ❌ | ✅ |
+| A/B Testing | ❌ | ❌ | ❌ | ✅ |
+| Performance Attribution | ❌ | ❌ | ❌ | ✅ |
+| Factor Exposure | ❌ | ❌ | ❌ | ✅ |
+| Strategy Correlation | ❌ | ❌ | ❌ | ✅ |
+| Scenario Stress | ❌ | ❌ | ❌ | ✅ |
+| Multi-leg Orders | ❌ | ✅ | ✅ | ✅ |
+| Docker/K8s | ❌ | ❌ | ❌ | ✅ |
+| Rate Limiting | ❌ | ❌ | ❌ | ✅ |
+| Webhook Events | ❌ | ❌ | ❌ | ✅ |
+| Backup/Restore | ❌ | ❌ | ❌ | ✅ |
+| Options Greeks | ❌ | ✅ | ✅ | ✅ |
 
 ## 代码规模
-- **200+ Python文件**
-- **30000+ 行代码**
-- **47个模块**
+- **60+ 模块**
+- **35,000+ 行代码**
 - **完整专业量化平台**
 
 ## 许可证
