@@ -1,4 +1,4 @@
-# QuantMaster - QMT + vnpy 融合量化平台 v3.1
+# QuantMaster - QMT + vnpy 融合量化平台 v3.2
 
 ## 概述
 完全自主可控的加密货币量化交易平台，融合QMT快捷交易与vnpy量化框架。
@@ -8,92 +8,90 @@
 | # | 模块 | 功能 | 状态 |
 |---|------|------|------|
 | 1 | core/ | 核心引擎 (事件/交易/网关/风控) | ✅ |
-| 2 | data/ | 数据源 (HTTP+**WebSocket实时行情**) | ✅ |
+| 2 | data/ | 数据源 (HTTP+WebSocket) | ✅ |
 | 3 | portfolio/ | 持仓同步+资金管理 | ✅ |
 | 4 | order/ | 订单管理 (生命周期+撤单+重试) | ✅ |
-| 5 | monitor/ | 监控面板 (实时Dashboard) | ✅ |
-| 6 | notification/ | 报警通知 (TG/邮件/Webhook) | ✅ |
-| 7 | log_system/ | 日志系统 (交易记录+审计) | ✅ |
-| 8 | permission/ | 权限管理 (多用户+角色) | ✅ |
-| 9 | strategy_ide/ | 策略IDE (在线编辑) | ✅ |
-| 10 | performance/ | 绩效分析 (归因+风险) | ✅ |
-| 11 | **strategies/** | **策略实现 (RSI/MACD/Bollinger/Momentum)** | ✅ 新 |
-| 12 | **backtest/** | **回测引擎 (事件驱动)** | ✅ 新 |
-| 13 | **api_server/** | **REST+WebSocket API** | ✅ 新 |
-| 14 | **factors/** | **技术因子库 (RSI/MACD/ATR/ADX等)** | ✅ 新 |
-| 15 | alpha/ | Alpha策略 (vnpy) | ✅ |
-| 16 | trader/ | 交易核心 (vnpy) | ✅ |
-| 17 | chart/ | 图表 (vnpy) | ✅ |
-| 18 | event/ | 事件驱动 (vnpy) | ✅ |
-| 19 | rpc/ | 远程调用 (vnpy) | ✅ |
+| 5 | monitor/ | 监控面板 | ✅ |
+| 6 | notification/ | 报警通知 | ✅ |
+| 7 | log_system/ | 日志系统 | ✅ |
+| 8 | permission/ | 权限管理 | ✅ |
+| 9 | strategy_ide/ | 策略IDE | ✅ |
+| 10 | performance/ | 绩效分析 | ✅ |
+| 11 | strategies/ | 4种策略 (RSI/MACD/Bollinger/Momentum) | ✅ |
+| 12 | backtest/ | 事件驱动回测 | ✅ |
+| 13 | api_server/ | REST + WebSocket API | ✅ |
+| 14 | factors/ | 10+技术因子 | ✅ |
+| 15 | **db/** | **SQLite数据库持久化** | ✅ v3.2 |
+| 16 | **exchanges/** | **多交易所 (Binance/OKX/Bybit)** | ✅ v3.2 |
+| 17 | **optimizer/** | **网格+遗传算法优化器** | ✅ v3.2 |
+| 18 | **ml_factors/** | **机器学习因子+预测模型** | ✅ v3.2 |
+| 19 | alpha/ | Alpha策略 (vnpy) | ✅ |
+| 20 | trader/ | 交易核心 (vnpy) | ✅ |
 
-## v3.1 新增模块
+## v3.2 新增模块
 
-### strategies/implementations/
-- `rsi_strategy.py` - RSI均值回归策略
-- `macd_strategy.py` - MACD趋势策略
-- `bollinger_strategy.py` - 布林带策略
-- `momentum_strategy.py` - 动量策略
-
-### backtest/engine.py
-- 事件驱动回测引擎
-- 支持多策略
-- 绩效统计 (胜率/回撤/夏普)
-
-### api_server/
-- `rest_api.py` - REST API (端口8091)
-- `websocket_api.py` - WebSocket API (端口8092)
-
-### factors/technical.py
-- RSI, MACD, Bollinger Bands, EMA
-- ATR, ADX, Stochastic, OBV, VWAP
-
-### data/websocket_data.py
-- Binance WebSocket实时行情
-- Ticker/K线/深度订阅
-
-## 架构图
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│                     QuantMaster v3.1                        │
-├─────────────────────────────────────────────────────────────┤
-│  ┌──────────┐  ┌──────────┐  ┌──────────┐  ┌──────────┐    │
-│  │ Web UI   │  │ REST API │  │   WS API │  │StrategyIDE│   │
-│  └────┬─────┘  └────┬─────┘  └────┬─────┘  └────┬─────┘    │
-│       │              │             │              │          │
-│  ┌────┴──────────────┴─────────────┴──────────────┴────┐   │
-│  │              QuantMaster 统一系统                      │   │
-│  │  trading_engine │ order_manager │ portfolio │ risk     │   │
-│  └────────────────────────┬──────────────────────────────┘   │
-│                           │                                  │
-│  ┌────────────────────────┴──────────────────────────────┐ │
-│  │  数据层                                                  │ │
-│  │  data_source │ ws_client │ history_data │ factors       │ │
-│  └──────────────────────────────────────────────────────────┘│
-└─────────────────────────────────────────────────────────────┘
-```
-
-## 快速开始
-
+### db/database.py
 ```python
-from quant_master import QuantMaster, RSIStrategy, BacktestEngine
+from db import Database
+db = Database('/tmp/qm.db')
+db.save_order(order)
+db.save_trade(trade)
+db.get_positions()
+db.save_equity(equity, position_value, cash)
+db.get_klines('BTCUSDT', '1m', 1000)
+```
 
-# 初始化
-qm = QuantMaster()
-qm.initialize(API_KEY, API_SECRET, PROXY)
-qm.start()
+### exchanges/
+```python
+from exchanges import BinanceExchange, OKXExchange, BybitExchange
+from exchanges import ExchangeManager
 
-# 交易
-order = qm.send_order('BTCUSDT', 'BUY', 0.01)
+binance = BinanceExchange(api_key, api_secret, proxy)
+okx = OKXExchange(api_key, api_secret, passphrase, proxy)
+bybit = BybitExchange(api_key, api_secret, proxy)
 
-# 回测
-engine = BacktestEngine()
-strategy = RSIStrategy('BTCUSDT')
-qm.run_backtest(strategy, 'BTCUSDT', '2024-01-01', '2024-12-31')
+manager = ExchangeManager()
+manager.add_exchange(binance, primary=True)
+manager.add_exchange(okx)
+manager.connect_all()
+```
 
-# API服务
-qm.run_api(8091)
+### optimizer/
+```python
+from optimizer import GridOptimizer, GeneticOptimizer
+
+# 网格优化
+optimizer = GridOptimizer(RSIStrategy, data)
+optimizer.add_param('rsi_period', [10, 14, 20])
+optimizer.add_param('buy_threshold', [25, 30, 35])
+results = optimizer.run(n_workers=4)
+
+# 遗传优化
+ga = GeneticOptimizer(RSIStrategy, param_space)
+ga.run()
+```
+
+### ml_factors/
+```python
+from ml_factors import MomentumFactor, MeanReversionFactor, VolatilityFactor
+from ml_factors import PricePredictor, EnsemblePredictor
+
+# 因子
+momentum = MomentumFactor('mom', periods=[5, 10, 20])
+momentum.update(price)
+print(momentum.all_momentums())
+
+# 价格预测
+predictor = PricePredictor(lookback=20)
+predictor.update(price, volume)
+predictor.train()
+direction = predictor.predict_direction()
+
+# 集成预测
+ensemble = EnsemblePredictor()
+ensemble.add_predictor(momentum_predictor, weight=1.0)
+ensemble.add_predictor(meanrev_predictor, weight=0.8)
+signal = ensemble.predict()
 ```
 
 ## REST API
@@ -103,19 +101,34 @@ qm.run_api(8091)
 | `/api/v1/status` | GET | 系统状态 |
 | `/api/v1/positions` | GET | 持仓 |
 | `/api/v1/orders` | GET/POST | 订单 |
-| `/api/v1/orders/<id>` | DELETE | 取消订单 |
 | `/api/v1/backtest` | POST | 回测 |
-| `/api/v1/performance` | GET | 绩效 |
-| `/api/v1/risk/status` | GET | 风控 |
+| `/api/v1/optimizer` | POST | 参数优化 |
+| `/api/v1/predict` | GET | 价格预测 |
 
-## 策略列表
+## 快速开始
 
-| 策略 | 原理 |
-|------|------|
-| RSI | RSI超卖买入, 超买卖出 |
-| MACD | MACD金叉买入, 死叉卖出 |
-| Bollinger | 价格触及下轨买入, 上轨卖出 |
-| Momentum | 24h涨幅超阈值+RSI强势买入 |
+```python
+from quant_master import QuantMaster
+
+qm = QuantMaster()
+qm.initialize(API_KEY, API_SECRET, PROXY)
+qm.start()
+
+# 交易
+order = qm.send_order('BTCUSDT', 'BUY', 0.01)
+
+# 数据库持久化
+qm.db.save_order(order)
+
+# 多交易所
+qm.exchanges.add_exchange(okx_exchange)
+
+# 优化策略
+results = qm.optimizer.optimize(strategy, param_grid)
+
+# ML预测
+signal = qm.predictor.predict_direction()
+```
 
 ## 自主升级
 ```bash
