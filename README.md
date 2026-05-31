@@ -212,3 +212,27 @@ opps = arb.get_arb_opportunities(min_spread_pct=0.1)
 - **93个模块**
 - **~45,000+行代码**
 - 覆盖: 交易/风控/数据/机构级/Bloomberg级/加密货币专业
+
+## v7.6 加密货币专业模块 (第二批15个)
+
+| # | 模块 | 功能 |
+|---|------|------|
+| 94 | **signal_aggregation/** | 多源信号聚合 (技术/链上/情绪/资金费率) |
+| 95 | **smart_money/** | 聪明钱追踪、机构地址监控 |
+| 96 | **altcoin_momentum/** | 山寨币动量扫描、动量轮换检测 |
+| 97 | **cross_exchange_liquidations/** | 跨交易所强平聚合、全网强平监控 |
+| 98 | **volatility_surface/** | 波动率曲面、IV微笑、期限结构 |
+| 99 | **funding_rate_heatmap/** | 资金费率热力图、全市场费率分布 |
+| 100 | **liquidations_heatmap/** | 强平热力图、强平墙可视化 |
+| 101 | **options_skew/** | 期权Skew分析 (25d RR/BF/SR) |
+| 102 | **oracle/** | 预言机操纵检测、DEX价格异常 |
+| 103 | **depeg_insurance/** | 稳定币脱锚保险、脱锚概率 |
+| 104 | **mev_protection/** | MEV保护、三明治攻击防护 |
+| 105 | **token_velocity/** | 代币周转率分析、健康持币 |
+| 106 | **holder_distribution/** | 持币分布分析、巨鲸/散户比例 |
+| 107 | **market_maker_activity/** | 做市商活动监控、流动性评分 |
+| 108 | **liquidation_cluster_analysis/** | 强平集群分析、密集区域识别 |
+
+### QuantMaster v7.6 最终规模
+- **108个模块**
+- **~50,000+行代码**
