@@ -309,3 +309,27 @@ opps = arb.get_arb_opportunities(min_spread_pct=0.1)
 ### QuantMaster v7.9 最终规模
 - **154个模块**
 - **~60,000+行代码**
+
+## v8.0 加密货币专业模块 (第六批15个)
+
+| # | 模块 | 功能 |
+|---|------|------|
+| 155 | **funding_rate_premium/** | 资金费率溢价分析、公平价值检测 |
+| 156 | **volatility_clustering/** | 波动率聚集、GARCH风格预测 |
+| 157 | **perp_oi_gradient/** | 永续OI梯度、OI变化率分析 |
+| 158 | **liquidation_wave_predictor/** | 强平波预测、连锁事件预测 |
+| 159 | **exchange_balance_sheet/** | 交易所资产负债表、偿付能力 |
+| 160 | **social_sentiment_momentum/** | 社交情绪动量、变化速率 |
+| 161 | **onchain_volume_profile/** | 链上成交量分布、POC分析 |
+| 162 | **dex_liquidity_routing/** | DEX流动性智能路由 |
+| 163 | **cross_margin_optimizer/** | 跨保证金优化器 |
+| 164 | **vol_term_premium/** | 波动率期限溢价、期限结构交易 |
+| 165 | **skew_regime_tracker/** | Skew状态追踪、偏度变化检测 |
+| 166 | **funding_rate_ceiling_floor/** | 资金费率极值分析、天花板地板 |
+| 167 | **spot_derivative_basis/** | 现货衍生品基差分析 |
+| 168 | **options_intensity/** | 期权市场强度分析 |
+| 169 | **whale_concentration_index/** | 鲸鱼集中度指数、砸盘风险 |
+
+### QuantMaster v8.0 最终规模
+- **169个模块**
+- **~62,000+行代码**
