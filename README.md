@@ -1,80 +1,91 @@
 # QuantMaster - QMT + vnpy 融合系统
 
 ## 概述
-QuantMaster是基于vnpy量化框架，融合QMT快捷交易功能的完全自主可控量化交易平台。
+完全自主可控的加密货币量化投资平台，融合QMT快捷交易与vnpy量化框架。
 
-## 融合架构
+## 完整模块矩阵
+
+| 模块 | 功能 | 状态 |
+|------|------|------|
+| core/ | 核心引擎 (事件/交易/网关/风控) | ✅ |
+| data/ | 数据源 (实时行情+历史K线) | ✅ |
+| portfolio/ | 持仓同步+资金管理 | ✅ |
+| order/ | 订单管理 (生命周期+撤单+重试) | ✅ |
+| monitor/ | 监控面板 (实时Dashboard) | ✅ |
+| notification/ | 报警通知 (TG/邮件/Webhook) | ✅ |
+| log_system/ | 日志系统 (交易记录+审计) | ✅ |
+| permission/ | 权限管理 (多用户+角色) | ✅ |
+| strategy_ide/ | 策略IDE (在线编辑) | ✅ |
+| performance/ | 绩效分析 (归因+风险) | ✅ |
+| alpha/ | Alpha策略 (vnpy) | ✅ |
+| trader/ | 交易核心 (vnpy) | ✅ |
+| chart/ | 图表 (vnpy) | ✅ |
+| event/ | 事件驱动 (vnpy) | ✅ |
+| rpc/ | 远程调用 (vnpy) | ✅ |
+
+## 架构图
 
 ```
-QuantMaster/
-├── core/              # 核心引擎
-│   ├── event.py      # 事件引擎 (vnpy)
-│   ├── engine.py     # 交易引擎 (QMT)
-│   ├── gateway.py    # 网关管理
-│   └── risk.py       # 风控 (QMT)
-│
-├── alpha/            # Alpha策略 (vnpy)
-│   ├── dataset/      # 数据集
-│   ├── model/        # 模型
-│   └── strategy/     # 策略
-│
-├── chart/            # 图表 (vnpy)
-├── event/            # 事件 (vnpy)
-├── rpc/              # 远程调用 (vnpy)
-├── trader/           # 交易核心 (vnpy)
-│   ├── gateway/      # 交易所接口
-│   ├── ui/          # 界面
-│   ├── engine.py    # 引擎
-│   └── ...
-│
-├── strategies/        # 策略库
-├── backtest/         # 回测引擎
-├── data/             # 数据管理
-├── examples/         # 示例 (vnpy)
-└── web_ui/          # Web界面 (QMT风格)
+┌─────────────────────────────────────────────────────┐
+│                  QuantMaster                        │
+├─────────────────────────────────────────────────────┤
+│  Web UI (Flask)  │  Dashboard  │  Strategy IDE     │
+├─────────────────────────────────────────────────────┤
+│  通知系统  │  日志系统  │  权限系统  │  绩效分析  │
+├─────────────────────────────────────────────────────┤
+│  订单管理  │  持仓管理  │  资金管理  │  风控      │
+├─────────────────────────────────────────────────────┤
+│  数据源 (实时+历史)  │  网关 (Binance等)           │
+├─────────────────────────────────────────────────────┤
+│  core: EventEngine │ TradingEngine │ RiskEngine     │
+└─────────────────────────────────────────────────────┘
 ```
 
-## 融合对照
+## 功能对照
 
-| QMT功能 | vnpy实现 | QuantMaster |
-|---------|----------|-------------|
-| 快捷交易 | - | ✅ core/engine.py |
-| 篮子交易 | - | ✅ core/engine.py |
-| 风控规则 | - | ✅ core/risk.py |
-| 事件驱动 | ✅ event/ | ✅ 完整融合 |
-| Alpha研究 | ✅ alpha/ | ✅ 完整融合 |
-| CTA策略 | ✅ trader/ | ✅ 完整融合 |
-| 图表 | ✅ chart/ | ✅ 完整融合 |
-| RPC调用 | ✅ rpc/ | ✅ 完整融合 |
+| 功能 | QMT | vnpy | QuantMaster |
+|------|-----|------|-------------|
+| 快捷交易 | ✅ | - | ✅ |
+| 篮子交易 | ✅ | - | ✅ |
+| 风控规则 | ✅ | - | ✅ |
+| 事件驱动 | - | ✅ | ✅ |
+| Alpha研究 | - | ✅ | ✅ |
+| CTA回测 | - | ✅ | ✅ |
+| 图表 | - | ✅ | ✅ |
+| 实时行情 | - | - | ✅ |
+| 持仓同步 | - | - | ✅ |
+| 订单管理 | - | - | ✅ |
+| 多账号 | - | - | ✅ |
+| Dashboard | - | - | ✅ |
+| 报警通知 | ✅ | - | ✅ |
+| 策略IDE | ✅ | - | ✅ |
+| 绩效分析 | 部分 | - | ✅ |
+| 权限管理 | ✅ | - | ✅ |
+
+## 快速开始
+
+```python
+from core import TradingEngine, EventEngine
+from data import DataSource
+from portfolio import PortfolioManager
+
+# 初始化
+ds = DataSource(proxy)
+ds.start()
+
+pm = PortfolioManager()
+pm.add_account('main', api_key, api_secret)
+pm.set_data_source(ds)
+pm.start_sync()
+
+engine = TradingEngine(event_engine)
+engine.set_gateway(binance_gateway)
+```
 
 ## 自主升级
 ```bash
-cd quant_master
 git remote add upstream https://github.com/vnpy/vnpy.git
-git fetch upstream
-git merge upstream/master
-git push origin master
-```
-
-## 使用
-
-### 快捷交易
-```python
-from core import TradingEngine, EventEngine
-engine = TradingEngine(event_engine)
-order = engine.send_order('BTCUSDT', 'BUY', 0.01)
-```
-
-### 风控
-```python
-from core import RiskManager
-risk = RiskManager()
-allowed, reason = risk.check_order(order, account, positions)
-```
-
-### Alpha研究
-```python
-from alpha.strategy import AlphaStrategy
+git fetch upstream && git merge upstream/master
 ```
 
 ## 许可证
