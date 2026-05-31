@@ -159,3 +159,56 @@ state, reward, done = env.step(action, price)
 
 ## 许可证
 MIT
+
+## v7.5 加密货币专业模块 (新增15个) 🆕
+
+| # | 模块 | 功能 |
+|---|------|------|
+| 79 | **funding_rate_tracking/** | 永续合约资金费率追踪、套利机会发现 |
+| 80 | **open_interest/** | 未平仓合约追踪、资金流入/流出检测 |
+| 81 | **liquidations/** | 强平事件追踪、多空挤压检测、强平墙 |
+| 82 | **whale_tracker/** | 巨鲸地址监控、大额转账追踪、聪明钱 |
+| 83 | **stablecoin_flow/** | USDT/USDC流向分析、储备金监测 |
+| 84 | **crypto_fear_greed/** | 加密恐惧贪婪指数、综合情绪分析 |
+| 85 | **onchain_metrics_pool/** | 链上指标池 (TVL/活跃地址/Gas/NVT/MVRV) |
+| 86 | **liquidation_squeezes/** | 多空挤压检测、杠杆清洗预警 |
+| 87 | **dex_cex_arb/** | DEX-CEX价格差异套利机会发现 |
+| 88 | **mempool_analyzer/** | 待确认交易池分析、Gas优化 |
+| 89 | **crypto_correlations/** | 跨资产相关性矩阵、配对交易信号 |
+| 90 | **perpetual_funding_arb/** | 永续-现货资金费率套利策略 |
+| 91 | **dust_detection/** | Dust UTXO检测与整合优化 |
+| 92 | **exchange_reserves/** | 交易所储备金分析、净流量监测 |
+| 93 | **crypto_gamma_squeeze/** | 期权Gamma挤压检测、价格影响分析 |
+
+### 核心功能示例
+
+```python
+# 资金费率追踪
+from funding_rate_tracking import FundingRateTracker
+tracker = FundingRateTracker()
+opps = tracker.find_arbitrage_opportunities(threshold=0.0005)
+
+# 巨鲸追踪
+from whale_tracker import WhaleTracker
+tracker.record_transaction(whale_tx)
+sentiment = tracker.get_whale_sentiment('BTC')
+
+# 恐惧贪婪指数
+from crypto_fear_greed import FearGreedIndex
+fg = FearGreedIndex()
+signal = fg.generate_trade_signal()
+
+# 强平追踪
+from liquidations import LiquidationTracker
+squeeze = tracker.detect_squeeze('BTC', window_minutes=60)
+
+# DEX-CEX套利
+from dex_cex_arb import DEXCEXArbitrage
+arb = DEXCEXArbitrage()
+opps = arb.get_arb_opportunities(min_spread_pct=0.1)
+```
+
+### QuantMaster v7.5 最终规模
+- **93个模块**
+- **~45,000+行代码**
+- 覆盖: 交易/风控/数据/机构级/Bloomberg级/加密货币专业
