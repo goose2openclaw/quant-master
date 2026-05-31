@@ -333,3 +333,26 @@ opps = arb.get_arb_opportunities(min_spread_pct=0.1)
 ### QuantMaster v8.0 最终规模
 - **169个模块**
 - **~62,000+行代码**
+
+## v8.1 预测市场/PolyMarket模块 (新增14个)
+
+| # | 模块 | 功能 |
+|---|------|------|
+| 170 | **polimarket_integration/** | Polymarket CLOB连接、预测永续交易 |
+| 171 | **prediction_market_analytics/** | 预测市场分析、概率计算 |
+| 172 | **odds_converter/** | 赔率转换 (Decimal/American/Fractional) |
+| 173 | **conditional_market_options/** | 条件市场期权、事件收益结构 |
+| 174 | **range_options/** | 区间期权、价格区间预测 |
+| 175 | **binary_betting/** | 二元投注、Kelly公式优化 |
+| 176 | **augur_bridge/** | Augur去中心化预测市场连接 |
+| 177 | **polymarket_pool/** | Polymarket AMM池、流动性提供 |
+| 178 | **evm_betting_oracle/** | EVM链上预言机、事件验证 |
+| 179 | **betting_liquidity/** | 投注流动性分析、市场深度 |
+| 180 | **prediction_market_maker/** | 预测市场做市、赔率报价 |
+| 181 | **sports_betting_arb/** | 体育投注套利、跨平台套利 |
+| 182 | **political_betting/** | 政治投注、选举/民调预测 |
+| 183 | **quant_prediction_bridge/** | 量化策略转预测市场头寸 |
+
+### QuantMaster v8.1 最终规模
+- **183个模块**
+- **~65,000+行代码**
