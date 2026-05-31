@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>QuantMaster - 量化交易平台</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Arial, sans-serif; background: #1a1a2e; color: #eee; }
+        .header { background: #16213e; padding: 15px; display: flex; justify-content: space-between; }
+        .header h1 { color: #e94560; }
+        .header .status { display: flex; gap: 20px; }
+        .status-item { padding: 5px 15px; background: #0f3460; border-radius: 4px; }
+        .main { display: flex; height: calc(100vh - 60px); }
+        .sidebar { width: 200px; background: #16213e; padding: 10px; }
+        .sidebar button { width: 100%; padding: 10px; margin: 5px 0; background: #0f3460; border: none; color: #fff; cursor: pointer; }
+        .sidebar button:hover { background: #e94560; }
+        .content { flex: 1; padding: 20px; overflow-y: auto; }
+        .panel { background: #16213e; border-radius: 8px; padding: 15px; margin-bottom: 15px; }
+        .panel h3 { color: #e94560; margin-bottom: 10px; }
+        table { width: 100%; border-collapse: collapse; }
+        th, td { padding: 10px; text-align: left; border-bottom: 1px solid #0f3460; }
+        th { color: #e94560; }
+        .trade-form { display: flex; gap: 10px; margin: 10px 0; }
+        .trade-form input { padding: 10px; background: #0f3460; border: none; color: #fff; }
+        .trade-form button { padding: 10px 20px; background: #e94560; border: none; color: #fff; cursor: pointer; }
+        .buy { color: #26de81 !important; }
+        .sell { color: #e94560 !important; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>QuantMaster</h1>
+        <div class="status">
+            <div class="status-item">账户: $0</div>
+            <div class="status-item" id="risk-status">风控: 正常</div>
+        </div>
+    </div>
+    
+    <div class="main">
+        <div class="sidebar">
+            <button onclick="showPanel('trade')">快捷交易</button>
+            <button onclick="showPanel('positions')">持仓</button>
+            <button onclick="showPanel('orders')">订单</button>
+            <button onclick="showPanel('risk')">风控</button>
+            <button onclick="showPanel('backtest')">回测</button>
+        </div>
+        
+        <div class="content">
+            <div id="trade-panel" class="panel">
+                <h3>快捷交易</h3>
+                <div class="trade-form">
+                    <input type="text" id="symbol" placeholder="代码" value="BTCUSDT">
+                    <input type="number" id="qty" placeholder="数量">
+                    <select id="side">
+                        <option value="BUY">买入</option>
+                        <option value="SELL">卖出</option>
+                    </select>
+                    <button onclick="sendOrder()">下单</button>
+                </div>
+            </div>
+            
+            <div id="positions-panel" class="panel">
+                <h3>持仓</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>代码</th>
+                            <th>数量</th>
+                            <th>均价</th>
+                            <th>现价</th>
+                            <th>盈亏</th>
+                            <th>操作</th>
+                        </tr>
+                    </thead>
+                    <tbody id="positions-body">
+                        <tr><td colspan="6">暂无持仓</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div id="orders-panel" class="panel">
+                <h3>订单</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>时间</th>
+                            <th>代码</th>
+                            <th>方向</th>
+                            <th>数量</th>
+                            <th>价格</th>
+                            <th>状态</th>
+                        </tr>
+                    </thead>
+                    <tbody id="orders-body">
+                        <tr><td colspan="6">暂无订单</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div id="risk-panel" class="panel">
+                <h3>风控设置</h3>
+                <p>日交易次数限制: <input type="number" value="100"></p>
+                <p>单持仓比例: <input type="number" value="10">%</p>
+                <p>日最大亏损: <input type="number" value="5">%</p>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        function sendOrder() {
+            const symbol = document.getElementById('symbol').value;
+            const qty = document.getElementById('qty').value;
+            const side = document.getElementById('side').value;
+            
+            fetch('/api/orders', {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify({symbol, qty, side})
+            }).then(r => r.json())
+              .then(d => alert(d.success ? '下单成功' : '下单失败'));
+        }
+        
+        function loadPositions() {
+            fetch('/api/positions')
+                .then(r => r.json())
+                .then(d => {
+                    const tbody = document.getElementById('positions-body');
+                    tbody.innerHTML = Object.keys(d).map(k => 
+                        `<tr><td>${k}</td><td>${d[k].qty}</td><td>${d[k].avg_price}</td></tr>`
+                    ).join('') || '<tr><td colspan="6">暂无持仓</td></tr>';
+                });
+        }
+        
+        setInterval(loadPositions, 5000);
+    </script>
+</body>
+</html>
