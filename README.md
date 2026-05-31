@@ -285,3 +285,27 @@ opps = arb.get_arb_opportunities(min_spread_pct=0.1)
 ### QuantMaster v7.8 最终规模
 - **139个模块**
 - **~58,000+行代码**
+
+## v7.9 加密货币专业模块 (第五批15个)
+
+| # | 模块 | 功能 |
+|---|------|------|
+| 140 | **whale_trade_heatmap/** | 巨鲸交易热力图、买卖集群 |
+| 141 | **realized_vs_implied_vol/** | 已实现vs隐含波动率、IV偏差 |
+| 142 | **cex_borrow_rate/** | 交易所借贷利率、逐币种追踪 |
+| 143 | **margin_interest_rate/** | 保证金利率分析、做空成本 |
+| 144 | **onchain_tx_tracer/** | 链上交易追踪、CoinJoin检测 |
+| 145 | **perp_liquidation_zones/** | 永续强平区域、最大痛点 |
+| 146 | **options_expiry_harness/** | 期权到期管理、Gamma对冲 |
+| 147 | **interest_rate_swap/** | 利率互换、固浮交换 |
+| 148 | **funding_rate_arbitrage_engine/** | 资金费率套利引擎 |
+| 149 | **deleveraging_detector/** | 去杠杆化检测、市场去杠杆 |
+| 150 | **stablecoin_capital_flow/** | 稳定币资金流向、脱锚预警 |
+| 151 | **dark_pool_analytics/** | 暗池分析、价格发现 |
+| 152 | **market_microstructure/** | 市场微观结构、价差/深度 |
+| 153 | **latency_arbitrage/** | 延迟套利、跨交易所延迟 |
+| 154 | **orderbook_imbalance/** | 订单簿不平衡、买卖压力 |
+
+### QuantMaster v7.9 最终规模
+- **154个模块**
+- **~60,000+行代码**
