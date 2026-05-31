@@ -261,3 +261,27 @@ opps = arb.get_arb_opportunities(min_spread_pct=0.1)
 ### QuantMaster v7.7 最终规模
 - **124个模块**
 - **~55,000+行代码**
+
+## v7.8 加密货币专业模块 (第四批15个)
+
+| # | 模块 | 功能 |
+|---|------|------|
+| 125 | **futures_curve_analysis/** | 期货曲线分析、contango/backwardation |
+| 126 | **perp_funding_forecast/** | 永续资金费率预测、OI驱动 |
+| 127 | **short_squeeze_tracker/** | 做空挤压追踪、借币余额/覆盖率 |
+| 128 | **dexs_volume_share/** | DEX交易量份额、Uniswap/Curve对比 |
+| 129 | **protocol_revenue_tracker/** | 协议收入追踪、费用/TVL |
+| 130 | **social_volume_alerts/** | 社交音量警报、病毒式传播检测 |
+| 131 | **derivative_open_interest/** | 衍生品OI综合分析 |
+| 132 | **flow_ratio/** | 流量比率分析、多空流量 |
+| 133 | **volatility_atlas/** | 全市场波动率地图 |
+| 134 | **cex_reserve_audit/** | 交易所储备审计、准备金证明 |
+| 135 | **miner_position_index/** | 矿工仓位指数、抛压分析 |
+| 136 | **nvt_signal/** | NVT信号、链上估值指标 |
+| 137 | **put_call_ratio_heatmap/** | Put-Call比率热力图 |
+| 138 | **implied_volatility_term/** | IV期限结构、IV crush预测 |
+| 139 | **funding_rate_swap/** | 资金费率互换、费率锁定 |
+
+### QuantMaster v7.8 最终规模
+- **139个模块**
+- **~58,000+行代码**
