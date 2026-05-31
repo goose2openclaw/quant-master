@@ -236,3 +236,28 @@ opps = arb.get_arb_opportunities(min_spread_pct=0.1)
 ### QuantMaster v7.6 最终规模
 - **108个模块**
 - **~50,000+行代码**
+
+## v7.7 加密货币专业模块 (第三批16个)
+
+| # | 模块 | 功能 |
+|---|------|------|
+| 109 | **liquidity_adoption_curve/** | DEX TVL增长轨迹、采纳阶段分析 |
+| 110 | **cex_flows_analysis/** | CEX资金流向深度分析、净流量预测 |
+| 111 | **onchain_settlement_ratio/** | 链上结算比率、活跃地址/交易量 |
+| 112 | **realized_volatility/** | 已实现波动率、RV vs IV分析 |
+| 113 | **correlation_regime/** | 相关性状态检测、RISK_ON/OFF识别 |
+| 114 | **perpetual_basis_trading/** | 永续基差统计套利 |
+| 115 | **funding_rate_deviation/** | 资金费率偏离分析、Z-score检测 |
+| 116 | **liquidations_by_exchange/** | 交易所强平分布、浓度分析 |
+| 117 | **whale_wallet_age/** | 鲸鱼持币年龄、休眠钱包移动 |
+| 118 | **gas_fee_optimizer/** | Gas费优化、时机选择 |
+| 119 | **toxic_flow_detection/** | 有害流量检测、逆向选择识别 |
+| 120 | **cex_listing_alerts/** | 交易所上市警报、Binance/Coinbase预期 |
+| 121 | **volatility_regime_detection/** | 波动率状态检测、LOW/HIGH/CRISIS |
+| 122 | **cross_margined_liquidations/** | 交叉保证金强平分析、级联风险 |
+| 123 | **spot_future_basis/** | 现货期货基差分析、cash-and-carry |
+| 124 | **options_flow/** | 期权流向分析、Call/Put比率、Max Pain |
+
+### QuantMaster v7.7 最终规模
+- **124个模块**
+- **~55,000+行代码**
