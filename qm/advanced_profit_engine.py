@@ -66,6 +66,7 @@ class AdvancedProfitEngine:
             'MEGADROP': {'max_alloc': 0.10, 'leverage': 1.0, 'risk': 'very_high'},
             'LEVERAGE': {'max_alloc': 0.05, 'leverage': 5.0, 'risk': 'extreme'},
             'GRID': {'max_alloc': 0.15, 'leverage': 2.0, 'risk': 'medium'},
+            'OPTIONS': {'max_alloc': 0.10, 'leverage': 2.0, 'risk': 'high'},
         }
     
     def get_opportunities(self) -> List[Opportunity]:
