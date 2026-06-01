@@ -27,7 +27,7 @@ class QuantMasterHub:
     
     def __init__(self):
         self.name = "QuantMaster Hub v8.5"
-        self.version = "8.5.0"
+        self.version = "16.6.0"
         self.running = False
         self.start_time = time.time()
         
