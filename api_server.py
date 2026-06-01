@@ -1,16 +1,16 @@
 #!/usr/bin/env python3
-"""
-QuantMaster Flask API Server
-Frontend-Backend Integration
-"""
+"""QuantMaster API Server v8.3 - Autonomous Mode"""
 import sys
 sys.path.insert(0, '/home/goose/.openclaw/workspace/quant_master')
 
+from dataclasses import asdict
 from flask import Flask, jsonify, request
 from quant_master_hub import QuantMasterHub
+from autonomous_scanner.scanner import AutonomousScanner
 
 app = Flask(__name__, static_folder='../public', static_url_path='')
 hub = QuantMasterHub()
+scanner = AutonomousScanner()
 
 @app.route('/')
 def index():
@@ -18,45 +18,61 @@ def index():
 
 @app.route('/api/status')
 def status():
-    return jsonify({'status': 'running', 'modules': len(hub.modules)})
+    return jsonify({
+        'status': 'running',
+        'modules': len(hub.modules),
+        'scanner_targets': len(scanner.targets),
+        'mode': 'autonomous'
+    })
+
+@app.route('/api/scan')
+def scan():
+    results = scanner.scan_all()
+    return jsonify({
+        'timestamp': results[0].timestamp if results else None,
+        'count': len(results),
+        'results': [asdict(r) for r in results]
+    })
+
+@app.route('/api/scan/top')
+def scan_top():
+    results = scanner.scan_all()
+    return jsonify({
+        'timestamp': results[0].timestamp if results else None,
+        'results': [asdict(r) for r in results[:10]]
+    })
+
+@app.route('/api/scan/buy')
+def scan_buys():
+    results = scanner.scan_all()
+    buys = [r for r in results if r.action == 'LONG']
+    return jsonify({'count': len(buys), 'results': [asdict(r) for r in buys]})
+
+@app.route('/api/scan/sell')
+def scan_sells():
+    results = scanner.scan_all()
+    sells = [r for r in results if r.action == 'SHORT']
+    return jsonify({'count': len(sells), 'results': [asdict(r) for r in sells]})
+
+@app.route('/api/analyze/<symbol>')
+def analyze_symbol(symbol):
+    analysis = scanner.analyze_symbol(symbol.upper())
+    return jsonify(asdict(analysis))
 
 @app.route('/api/market/snapshot')
 def market_snapshot():
-    symbol = request.args.get('symbol', 'BTC')
-    return jsonify(hub.get_market_snapshot(symbol))
-
-@app.route('/api/market/all')
-def market_all():
-    return jsonify(hub.get_all_market_data())
+    return jsonify(hub.get_market_snapshot(request.args.get('symbol', 'BTC')))
 
 @app.route('/api/signal/generate')
 def signal():
-    symbol = request.args.get('symbol', 'BTC')
-    return jsonify(hub.generate_trading_signal(symbol))
-
-@app.route('/api/order/place', methods=['POST'])
-def order():
-    data = request.json
-    return jsonify(hub.place_order(
-        data.get('symbol'), data.get('side'), data.get('amount')
-    ))
-
-@app.route('/api/dex/quote')
-def dex_quote():
-    return jsonify(hub.get_dex_quote(
-        request.args.get('token_in', 'ETH'),
-        request.args.get('token_out', 'USDT'),
-        float(request.args.get('amount', 1000))
-    ))
-
-@app.route('/api/polymarket/markets')
-def polymarket():
-    return jsonify(hub.get_polymarket_markets())
+    return jsonify(hub.generate_trading_signal(request.args.get('symbol', 'BTC')))
 
 @app.route('/api/portfolio/health')
-def health():
+def portfolio_health():
     return jsonify(hub.get_portfolio_health())
 
 if __name__ == '__main__':
     hub.start()
-    app.run(host='0.0.0.0', port=8088, debug=False)
+    scanner.running = True
+    print("QuantMaster API v8.3 - Autonomous Mode")
+    app.run(host='0.0.0.0', port=8088, debug=False, threaded=True)
