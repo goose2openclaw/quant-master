@@ -48,7 +48,8 @@ class BinanceFullScanner:
         self.categories = [
             'SPOT', 'FUTURES_USDT', 'FUTURES_COIN', 'LEVERAGE',
             'EARN_FLEX', 'EARN_LOCKED', 'LAUNCHPAD', 'MEGADROP',
-            'HODLER', 'MINING', 'NFT', 'GRID', 'STAKING', 'BNB_VAULT'
+            'HODLER', 'MINING', 'NFT', 'GRID', 'STAKING', 'BNB_VAULT',
+            'OPTIONS'
         ]
         
         # 现货交易对 (模拟)
@@ -162,6 +163,8 @@ class BinanceFullScanner:
             return self._scan_staking()
         elif category == 'BNB_VAULT':
             return [self._scan_bnb_vault()]
+        elif category == 'OPTIONS':
+            return self._scan_options()
         return []
     
     def _scan_spot(self) -> List[BinanceOpportunity]:
@@ -451,6 +454,43 @@ class BinanceFullScanner:
             risk='低',
             reason="BNB金库收益"
         )
+
+    def _scan_options(self) -> List[BinanceOpportunity]:
+        """扫描期权"""
+        options = [
+            # BTC期权
+            {'symbol': 'BTC-OP-70000-0627', 'name': 'BTC Call 70000 Jun27', 'type': 'CALL', 'strike': 70000, 'expiry': '2026-06-27', 'iv': 65},
+            {'symbol': 'BTC-OP-75000-0627', 'name': 'BTC Call 75000 Jun27', 'type': 'CALL', 'strike': 75000, 'expiry': '2026-06-27', 'iv': 72},
+            {'symbol': 'BTC-OP-68000-0627', 'name': 'BTC Put 68000 Jun27', 'type': 'PUT', 'strike': 68000, 'expiry': '2026-06-27', 'iv': 68},
+            {'symbol': 'BTC-OP-65000-0627', 'name': 'BTC Put 65000 Jun27', 'type': 'PUT', 'strike': 65000, 'expiry': '2026-06-27', 'iv': 75},
+            # ETH期权
+            {'symbol': 'ETH-OP-2000-0627', 'name': 'ETH Call 2000 Jun27', 'type': 'CALL', 'strike': 2000, 'expiry': '2026-06-27', 'iv': 70},
+            {'symbol': 'ETH-OP-2200-0627', 'name': 'ETH Call 2200 Jun27', 'type': 'CALL', 'strike': 2200, 'expiry': '2026-06-27', 'iv': 78},
+            {'symbol': 'ETH-OP-1800-0627', 'name': 'ETH Put 1800 Jun27', 'type': 'PUT', 'strike': 1800, 'expiry': '2026-06-27', 'iv': 72},
+            {'symbol': 'ETH-OP-1600-0627', 'name': 'ETH Put 1600 Jun27', 'type': 'PUT', 'strike': 1600, 'expiry': '2026-06-27', 'iv': 80},
+            # SOL期权
+            {'symbol': 'SOL-OP-100-0627', 'name': 'SOL Call 100 Jun27', 'type': 'CALL', 'strike': 100, 'expiry': '2026-06-27', 'iv': 85},
+            {'symbol': 'SOL-OP-80-0627', 'name': 'SOL Put 80 Jun27', 'type': 'PUT', 'strike': 80, 'expiry': '2026-06-27', 'iv': 82},
+        ]
+        
+        opportunities = []
+        for opt in options:
+            score = min(100, opt['iv'] * 1.2)
+            days_to_expiry = 26
+            potential = opt['iv'] * days_to_expiry / 365
+            
+            opportunities.append(BinanceOpportunity(
+                category='OPTIONS',
+                symbol=opt['symbol'],
+                name=opt['name'],
+                score=score,
+                action='BUY_CALL' if opt['type'] == 'CALL' else 'BUY_PUT',
+                potential=f"+{potential:.0f}%",
+                risk='高',
+                reason=f"IV {opt['iv']}% | 到期 {days_to_expiry}天 | Strike ${opt['strike']}"
+            ))
+        
+        return opportunities
     
     def get_top_opportunities(self, limit: int = 20) -> List[BinanceOpportunity]:
         """获取最佳机会"""
@@ -507,3 +547,45 @@ if __name__ == '__main__':
         print(f"{i:2}. {emoji} {opp.category:12} {opp.symbol:12} {opp.score:5.1f} | {opp.action:12} | {opp.potential:10}")
     
     print("\n" + "=" * 70)
+
+    def _scan_options(self) -> List[BinanceOpportunity]:
+        """扫描期权"""
+        options = [
+            # BTC期权
+            {'symbol': 'BTC-OP-70000-0627', 'name': 'BTC Call 70000 Jun27', 'type': 'CALL', 'strike': 70000, 'expiry': '2026-06-27', 'iv': 65},
+            {'symbol': 'BTC-OP-75000-0627', 'name': 'BTC Call 75000 Jun27', 'type': 'CALL', 'strike': 75000, 'expiry': '2026-06-27', 'iv': 72},
+            {'symbol': 'BTC-OP-68000-0627', 'name': 'BTC Put 68000 Jun27', 'type': 'PUT', 'strike': 68000, 'expiry': '2026-06-27', 'iv': 68},
+            {'symbol': 'BTC-OP-65000-0627', 'name': 'BTC Put 65000 Jun27', 'type': 'PUT', 'strike': 65000, 'expiry': '2026-06-27', 'iv': 75},
+            # ETH期权
+            {'symbol': 'ETH-OP-2000-0627', 'name': 'ETH Call 2000 Jun27', 'type': 'CALL', 'strike': 2000, 'expiry': '2026-06-27', 'iv': 70},
+            {'symbol': 'ETH-OP-2200-0627', 'name': 'ETH Call 2200 Jun27', 'type': 'CALL', 'strike': 2200, 'expiry': '2026-06-27', 'iv': 78},
+            {'symbol': 'ETH-OP-1800-0627', 'name': 'ETH Put 1800 Jun27', 'type': 'PUT', 'strike': 1800, 'expiry': '2026-06-27', 'iv': 72},
+            {'symbol': 'ETH-OP-1600-0627', 'name': 'ETH Put 1600 Jun27', 'type': 'PUT', 'strike': 1600, 'expiry': '2026-06-27', 'iv': 80},
+            # SOL期权
+            {'symbol': 'SOL-OP-100-0627', 'name': 'SOL Call 100 Jun27', 'type': 'CALL', 'strike': 100, 'expiry': '2026-06-27', 'iv': 85},
+            {'symbol': 'SOL-OP-80-0627', 'name': 'SOL Put 80 Jun27', 'type': 'PUT', 'strike': 80, 'expiry': '2026-06-27', 'iv': 82},
+        ]
+        
+        opportunities = []
+        for opt in options:
+            # IV评分
+            score = min(100, opt['iv'] * 1.2)
+            
+            # 到期日计算
+            days_to_expiry = 26  # 模拟
+            
+            # 隐含波动率收益
+            potential = opt['iv'] * days_to_expiry / 365
+            
+            opportunities.append(BinanceOpportunity(
+                category='OPTIONS',
+                symbol=opt['symbol'],
+                name=opt['name'],
+                score=score,
+                action='BUY_CALL' if opt['type'] == 'CALL' else 'BUY_PUT',
+                potential=f"+{potential:.0f}%",
+                risk='高',
+                reason=f"IV {opt['iv']}% | 到期 {days_to_expiry}天 | Strike ${opt['strike']}"
+            ))
+        
+        return opportunities
