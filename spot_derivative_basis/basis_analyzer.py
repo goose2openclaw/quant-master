@@ -1,7 +1,7 @@
 """
 Spot Derivative Basis - 现货与衍生品基差分析
 """
-from typing import Dict
+from typing import List, Tuple,  Dict
 
 class SpotDerivativeBasis:
     """

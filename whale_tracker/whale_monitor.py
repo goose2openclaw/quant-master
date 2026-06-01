@@ -1,4 +1,5 @@
 """
+import time
 Whale Tracker - 加密货币巨鲸追踪
 """
 from typing import Dict, List
@@ -84,7 +85,7 @@ class WhaleTracker:
                         'BEARISH' if to_exchange > from_exchange * 1.5 else 'NEUTRAL'
         }
     
-    def find_ accumulation_zones(self, token: str) -> List[Dict]:
+    def find_accumulation_zones(self, token: str) -> List[Dict]:
         """寻找积累区间"""
         # 简化: 基于最近成交价格分布
         recent = [t for t in self.transactions if t.token == token]

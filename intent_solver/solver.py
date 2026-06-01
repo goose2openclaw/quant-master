@@ -1,7 +1,7 @@
 """
 Intent Solver - Intent求解器
 """
-from typing import Dict
+from typing import Dict, List, Tuple
 
 class IntentSolver:
     """

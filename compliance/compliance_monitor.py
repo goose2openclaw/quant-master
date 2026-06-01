@@ -4,7 +4,7 @@ MiFID/Dodd-Frank标准
 """
 import time
 from enum import Enum
-from typing import Dict, List, Optional
+from typing import Dict, List, Tuple, Optional
 from dataclasses import dataclass
 
 class ComplianceRuleType(Enum):

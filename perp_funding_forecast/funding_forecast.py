@@ -1,7 +1,7 @@
 """
 Perp Funding Forecast - 永续资金费率预测
 """
-from typing import Dict
+from typing import Dict, List
 
 class PerpFundingForecaster:
     """
