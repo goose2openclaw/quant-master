@@ -12,7 +12,7 @@ class SocialSentiment:
         self.proxy = proxy
         self.twitter_token = None
         self.sentiment_cache = {}
-        self FearGreedIndex = 50
+        self.FearGreedIndex = 50
     
     def get_fear_greed_index(self):
         """获取贪婪恐惧指数"""
