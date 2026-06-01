@@ -71,4 +71,4 @@ class EventEngine:
     
     def log(self, msg):
         """记录日志事件"""
-        self.put(Event(self.EVENT_LOG, {'msg': msg}) if hasattr(self, 'EVENT_LOG') else None
+        self.put(Event(self.EVENT_LOG, {"msg": msg}))
