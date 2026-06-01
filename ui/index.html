@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuantMaster v16.6.0 - Binance Trading Platform</title>
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo">
+                <span class="logo-icon">📊</span>
+                <h1>QuantMaster <span class="version">v16.6.0</span></h1>
+            </div>
+            <div class="status-bar">
+                <span class="status-dot active"></span>
+                <span id="connectionStatus">Connected</span>
+                <span class="divider">|</span>
+                <span id="serverTime">--:--:--</span>
+            </div>
+        </header>
+
+        <!-- Navigation Tabs -->
+        <nav class="tabs">
+            <button class="tab active" data-tab="dashboard">📈 Dashboard</button>
+            <button class="tab" data-tab="scanner">🔍 Binance Scanner</button>
+            <button class="tab" data-tab="watchdog">🧙 Watchdog</button>
+            <button class="tab" data-tab="mirofish">🐟 MiroFish</button>
+            <button class="tab" data-tab="optimizer">🧬 Optimizer</button>
+            <button class="tab" data-tab="positions">💰 Positions</button>
+            <button class="tab" data-tab="settings">⚙️ Settings</button>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="content">
+            <!-- Dashboard Tab -->
+            <section id="dashboard" class="tab-content active">
+                <div class="grid-3">
+                    <!-- Portfolio Card -->
+                    <div class="card portfolio-card">
+                        <h3>💼 Portfolio</h3>
+                        <div class="stat-large" id="portfolioValue">$10,000.00</div>
+                        <div class="stat-row">
+                            <span class="label">P&L:</span>
+                            <span class="value positive" id="pnl">+$0.00</span>
+                        </div>
+                        <div class="stat-row">
+                            <span class="label">Return:</span>
+                            <span class="value" id="returnPct">0.00%</span>
+                        </div>
+                    </div>
+
+                    <!-- Mode Card -->
+                    <div class="card mode-card">
+                        <h3>🧙 Watchdog Mode</h3>
+                        <div class="mode-display" id="watchdogMode">NORMAL</div>
+                        <div class="stat-row">
+                            <span class="label">Risk:</span>
+                            <span class="value" id="riskLevel">SAFE</span>
+                        </div>
+                        <div class="stat-row">
+                            <span class="label">Streak:</span>
+                            <span class="value" id="winStreak">0W / 0L</span>
+                        </div>
+                    </div>
+
+                    <!-- Market Card -->
+                    <div class="card market-card">
+                        <h3>🌐 Market</h3>
+                        <div class="market-state" id="marketState">BULL</div>
+                        <div class="stat-row">
+                            <span class="label">Volatility:</span>
+                            <span class="value" id="volatility">--</span>
+                        </div>
+                        <div class="stat-row">
+                            <span class="label">Sentiment:</span>
+                            <span class="value" id="sentiment">--</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Charts Row -->
+                <div class="grid-2">
+                    <div class="card chart-card">
+                        <h3>📈 Equity Curve</h3>
+                        <canvas id="equityChart" width="400" height="200"></canvas>
+                    </div>
+                    <div class="card chart-card">
+                        <h3>🎯 Signal Strength</h3>
+                        <canvas id="signalChart" width="400" height="200"></canvas>
+                    </div>
+                </div>
+
+                <!-- Top Opportunities -->
+                <div class="card">
+                    <h3>🏆 Top Opportunities</h3>
+                    <table class="opportunities-table" id="opportunitiesTable">
+                        <thead>
+                            <tr>
+                                <th>Rank</th>
+                                <th>Category</th>
+                                <th>Symbol</th>
+                                <th>Score</th>
+                                <th>Action</th>
+                                <th>Potential</th>
+                                <th>Risk</th>
+                            </tr>
+                        </thead>
+                        <tbody id="opportunitiesBody">
+                            <tr><td colspan="7">Loading...</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Scanner Tab -->
+            <section id="scanner" class="tab-content">
+                <div class="card">
+                    <h3>🔍 Binance Deep Scanner</h3>
+                    <div class="scanner-controls">
+                        <button class="btn primary" onclick="runScanner()">🔄 Scan Now</button>
+                        <select id="scanCategory">
+                            <option value="ALL">All Categories</option>
+                            <option value="SPOT">Spot</option>
+                            <option value="FUTURES">Futures</option>
+                            <option value="EARN">Earn</option>
+                            <option value="LAUNCH">LaunchPool</option>
+                            <option value="FUNDING">Funding</option>
+                            <option value="OPTIONS">Options</option>
+                        </select>
+                    </div>
+                    <div id="scannerResults" class="scanner-results">
+                        <p>Click "Scan Now" to run Binance deep scan...</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Watchdog Tab -->
+            <section id="watchdog" class="tab-content">
+                <div class="grid-2">
+                    <div class="card">
+                        <h3>🧙 Watchdog v2.0</h3>
+                        <div class="stat-row">
+                            <span class="label">Mode:</span>
+                            <span class="value" id="wdMode">NORMAL</span>
+                        </div>
+                        <div class="stat-row">
+                            <span class="label">Decisions:</span>
+                            <span class="value" id="wdDecisions">0</span>
+                        </div>
+                        <div class="stat-row">
+                            <span class="label">Capital:</span>
+                            <span class="value" id="wdCapital">$10,000</span>
+                        </div>
+                        <button class="btn primary" onclick="runWatchdog()">▶️ Run Decision Cycle</button>
+                    </div>
+                    <div class="card">
+                        <h3>📊 Decision History</h3>
+                        <div id="decisionHistory" class="history-list">
+                            <p>No decisions yet</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- MiroFish Tab -->
+            <section id="mirofish" class="tab-content">
+                <div class="card">
+                    <h3>🐟 MiroFish Core v16.6.0</h3>
+                    <div class="mirofish-grid">
+                        <div class="stat-box">
+                            <span class="label">Strategies</span>
+                            <span class="value">8</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="label">Factors</span>
+                            <span class="value">20</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="label">Last Score</span>
+                            <span class="value" id="mfScore">--</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="label">Decision</span>
+                            <span class="value" id="mfDecision">--</span>
+                        </div>
+                    </div>
+                    <button class="btn primary" onclick="runMiroFish()">🐟 Run MiroFish Analysis</button>
+                </div>
+            </section>
+
+            <!-- Optimizer Tab -->
+            <section id="optimizer" class="tab-content">
+                <div class="card">
+                    <h3>🧬 Binance Optimizer - 30 Day Backtest</h3>
+                    <div class="optimizer-controls">
+                        <label>
+                            Initial Capital: 
+                            <input type="number" id="initCapital" value="10000">
+                        </label>
+                        <label>
+                            Iterations:
+                            <input type="number" id="iterations" value="10">
+                        </label>
+                        <button class="btn primary" onclick="runOptimizer()">🧬 Optimize</button>
+                    </div>
+                    <div id="optimizerResults" class="optimizer-results">
+                        <p>Click "Optimize" to run 30-day backtest...</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Positions Tab -->
+            <section id="positions" class="tab-content">
+                <div class="card">
+                    <h3>💰 Current Positions</h3>
+                    <table class="positions-table" id="positionsTable">
+                        <thead>
+                            <tr>
+                                <th>Symbol</th>
+                                <th>Amount</th>
+                                <th>Entry</th>
+                                <th>Current</th>
+                                <th>P&L</th>
+                                <th>Weight</th>
+                            </tr>
+                        </thead>
+                        <tbody id="positionsBody">
+                            <tr><td colspan="6">No open positions</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Settings Tab -->
+            <section id="settings" class="tab-content">
+                <div class="card">
+                    <h3>⚙️ Configuration</h3>
+                    <div class="settings-grid">
+                        <div class="setting-group">
+                            <h4>Trading Parameters</h4>
+                            <label>Position Size: <input type="range" id="posSize" min="5" max="30" value="10"> <span id="posSizeVal">10%</span></label>
+                            <label>Stop Loss: <input type="range" id="stopLoss" min="1" max="10" value="5"> <span id="stopLossVal">5%</span></label>
+                            <label>Take Profit: <input type="range" id="takeProfit" min="5" max="30" value="15"> <span id="takeProfitVal">15%</span></label>
+                        </div>
+                        <div class="setting-group">
+                            <h4>API Configuration</h4>
+                            <label>Binance API Key: <input type="password" id="apiKey" placeholder="API Key"></label>
+                            <label>API Secret: <input type="password" id="apiSecret" placeholder="API Secret"></label>
+                            <label>Proxy: <input type="text" id="proxy" value="http://172.29.144.1:7897"></label>
+                        </div>
+                    </div>
+                    <button class="btn primary" onclick="saveSettings()">💾 Save Settings</button>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <span>QuantMaster v16.6.0</span>
+            <span>|</span>
+            <span>OPC Integration</span>
+            <span>|</span>
+            <span>Binance API</span>
+        </footer>
+    </div>
+
+    <script src="js/dashboard.js"></script>
+</body>
+</html>
