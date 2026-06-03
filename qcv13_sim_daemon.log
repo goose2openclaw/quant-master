@@ -1,0 +1,654 @@
+==================================================
+Q@C v13.0.0 Daemon - Harness重构版
+==================================================
+======================================================================
+🚀 QuantMaster Q@C v13.0.0 - Harness Engineering重构版
+======================================================================
+   [API] 🟢 实盘账户: USDT=10000.00
+   [MODE] 🟢 LIVE 实盘
+   [MIRO] ✅ 独立运行 (不依赖OpenClaw/Hermes)
+   [WEIGHT] V8 50% + G12 30% + Miro 20%
+   [RISK] ✅ 外部风控 + 自我纠正 + Watchdog
+======================================================================
+[16:36:58] 📦 启动 v13.0.0
+
+======================================================================
+📊 #1 [16:36:58] SIM
+💰 USDT: $10000.00
+
+[1] 🔍 探测市场...
+   探测 15 币种, 4 机会
+
+[2] 📊 技术分析...
+   ⏸️ ➡️ BTCUSDT: 综合=66 RSI=26 V8=65 G12=80 Miro=50 → HOLD RSI超卖(26)禁止BUY
+   ⏸️ ➡️ ETHUSDT: 综合=49 RSI=47 V8=50 G12=50 Miro=43 → HOLD 综合=49 RSI=47
+   ⏸️ ➡️ BNBUSDT: 综合=49 RSI=42 V8=50 G12=50 Miro=43 → HOLD 综合=49 RSI=42
+   ⏸️ ➡️ XRPUSDT: 综合=49 RSI=30 V8=50 G12=50 Miro=43 → HOLD 综合=49 RSI=30
+   ⏸️ ➡️ SOLUSDT: 综合=49 RSI=39 V8=50 G12=50 Miro=43 → HOLD 综合=49 RSI=39
+   ⏸️ ➡️ ADAUSDT: 综合=66 RSI=27 V8=65 G12=80 Miro=50 → HOLD RSI超卖(27)禁止BUY
+   ⏸️ ➡️ DOGEUSDT: 综合=49 RSI=46 V8=50 G12=50 Miro=43 → HOLD 综合=49 RSI=46
+   ⏸️ ➡️ DOTUSDT: 综合=49 RSI=39 V8=50 G12=50 Miro=43 → HOLD 综合=49 RSI=39
+   ✅ 📈 MATICUSDT: 综合=65 RSI=56 V8=80 G12=50 Miro=50 → BUY 综合=65 RSI=56
+   ⏸️ ➡️ LTCUSDT: 综合=66 RSI=25 V8=65 G12=80 Miro=50 → HOLD RSI超卖(25)禁止BUY
+   ⏸️ ➡️ AVAXUSDT: 综合=49 RSI=38 V8=50 G12=50 Miro=43 → HOLD 综合=49 RSI=38
+   ⏸️ ➡️ LINKUSDT: 综合=49 RSI=36 V8=50 G12=50 Miro=43 → HOLD 综合=49 RSI=36
+   ⏸️ ➡️ UNIUSDT: 综合=49 RSI=36 V8=50 G12=50 Miro=43 → HOLD 综合=49 RSI=36
+   ⏸️ ➡️ ATOMUSDT: 综合=66 RSI=24 V8=65 G12=80 Miro=50 → HOLD RSI超卖(24)禁止BUY
+   ✅ 📈 NEARUSDT: 综合=55 RSI=54 V8=60 G12=50 Miro=50 → BUY 综合=55 RSI=54
+
+[3] 🛡️ 外部风控检查...
+   🛡️ NEARUSDT: 风控干预 BUY→HOLD
+      - 下跌趋势禁止买入: BLOCK_BUY
+
+[4] 💰 交易执行...
+   [SIM] 模拟模式跳过
+
+[5] 🔧 自我纠正检查...
+
+[6] 💓 Watchdog...
+   健康: HEALTHY | 响应: 100% | 主动: 0 | 责任: 0
+
+[7] 📈 性能分析...
+   评分: 50 | 胜率: 0.0% | 策略: NO_DATA
+[16:37:09] ✅ 周期 #1 完成
+======================================================================
+🚀 QuantMaster Q@C v13.0.0 - Harness Engineering重构版
+======================================================================
+   [API] 🟢 实盘账户: USDT=10000.00
+   [MODE] 🟢 LIVE 实盘
+   [MIRO] ✅ 独立运行 (不依赖OpenClaw/Hermes)
+   [WEIGHT] V8 50% + G12 30% + Miro 20%
+   [RISK] ✅ 外部风控 + 自我纠正 + Watchdog
+======================================================================
+[16:38:09] 📦 启动 v13.0.0
+
+======================================================================
+📊 #1 [16:38:09] SIM
+💰 USDT: $10000.00
+
+[1] 🔍 探测市场...
+   探测 15 币种, 3 机会
+
+[2] 📊 技术分析...
+   ⏸️ ➡️ BTCUSDT: 综合=66 RSI=26 V8=65 G12=80 Miro=50 → HOLD RSI超卖(26)禁止BUY
+   ⏸️ ➡️ ETHUSDT: 综合=49 RSI=47 V8=50 G12=50 Miro=43 → HOLD 综合=49 RSI=47
+   ⏸️ ➡️ BNBUSDT: 综合=49 RSI=42 V8=50 G12=50 Miro=43 → HOLD 综合=49 RSI=42
+   ⏸️ ➡️ XRPUSDT: 综合=49 RSI=30 V8=50 G12=50 Miro=43 → HOLD 综合=49 RSI=30
+   ⏸️ ➡️ SOLUSDT: 综合=49 RSI=39 V8=50 G12=50 Miro=43 → HOLD 综合=49 RSI=39
+   ⏸️ ➡️ ADAUSDT: 综合=66 RSI=27 V8=65 G12=80 Miro=50 → HOLD RSI超卖(27)禁止BUY
+   ⏸️ ➡️ DOGEUSDT: 综合=49 RSI=46 V8=50 G12=50 Miro=43 → HOLD 综合=49 RSI=46
+   ⏸️ ➡️ DOTUSDT: 综合=49 RSI=38 V8=50 G12=50 Miro=43 → HOLD 综合=49 RSI=38
+   ✅ 📈 MATICUSDT: 综合=65 RSI=56 V8=80 G12=50 Miro=50 → BUY 综合=65 RSI=56
+   ⏸️ ➡️ LTCUSDT: 综合=66 RSI=24 V8=65 G12=80 Miro=50 → HOLD RSI超卖(24)禁止BUY
+   ⏸️ ➡️ AVAXUSDT: 综合=49 RSI=37 V8=50 G12=50 Miro=43 → HOLD 综合=49 RSI=37
+   ⏸️ ➡️ LINKUSDT: 综合=49 RSI=36 V8=50 G12=50 Miro=43 → HOLD 综合=49 RSI=36
+   ⏸️ ➡️ UNIUSDT: 综合=49 RSI=35 V8=50 G12=50 Miro=43 → HOLD 综合=49 RSI=35
+   ⏸️ ➡️ ATOMUSDT: 综合=66 RSI=25 V8=65 G12=80 Miro=50 → HOLD RSI超卖(25)禁止BUY
+   ✅ 📈 NEARUSDT: 综合=55 RSI=54 V8=60 G12=50 Miro=50 → BUY 综合=55 RSI=54
+
+[3] 🛡️ 外部风控检查...
+   🛡️ NEARUSDT: 风控干预 BUY→HOLD
+      - 下跌趋势禁止买入: BLOCK_BUY
+
+[4] 💰 交易执行...
+   [SIM] 模拟模式跳过
+
+[5] 🔧 自我纠正检查...
+
+[6] 💓 Watchdog...
+   健康: HEALTHY | 响应: 100% | 主动: 0 | 责任: 0
+
+[7] 📈 性能分析...
+   评分: 50 | 胜率: 0.0% | 策略: NO_DATA
+[16:38:22] ✅ 周期 #1 完成
+======================================================================
+🚀 QuantMaster Q@C v13.0.0 - Harness Engineering重构版
+======================================================================
+   [API] 🟢 实盘账户: USDT=10000.00
+   [MODE] 🟢 LIVE 实盘
+   [MIRO] ✅ 独立运行 (不依赖OpenClaw/Hermes)
+   [WEIGHT] V8 50% + G12 30% + Miro 20%
+   [RISK] ✅ 外部风控 + 自我纠正 + Watchdog
+======================================================================
+[16:39:22] 📦 启动 v13.0.0
+
+======================================================================
+📊 #1 [16:39:22] SIM
+💰 USDT: $10000.00
+
+[1] 🔍 探测市场...
+   探测 15 币种, 4 机会
+
+[2] 📊 技术分析...
+   ⏸️ ➡️ BTCUSDT: 综合=66 RSI=25 V8=65 G12=80 Miro=50 → HOLD RSI超卖(25)禁止BUY
+   ⏸️ ➡️ ETHUSDT: 综合=49 RSI=46 V8=50 G12=50 Miro=43 → HOLD 综合=49 RSI=46
+   ⏸️ ➡️ BNBUSDT: 综合=49 RSI=41 V8=50 G12=50 Miro=43 → HOLD 综合=49 RSI=41
+   ⏸️ ➡️ XRPUSDT: 综合=66 RSI=30 V8=65 G12=80 Miro=50 → HOLD RSI超卖(30)禁止BUY
+   ⏸️ ➡️ SOLUSDT: 综合=49 RSI=38 V8=50 G12=50 Miro=43 → HOLD 综合=49 RSI=38
+   ⏸️ ➡️ ADAUSDT: 综合=66 RSI=26 V8=65 G12=80 Miro=50 → HOLD RSI超卖(26)禁止BUY
+   ⏸️ ➡️ DOGEUSDT: 综合=49 RSI=45 V8=50 G12=50 Miro=43 → HOLD 综合=49 RSI=45
+   ⏸️ ➡️ DOTUSDT: 综合=49 RSI=38 V8=50 G12=50 Miro=43 → HOLD 综合=49 RSI=38
+   ✅ 📈 MATICUSDT: 综合=65 RSI=56 V8=80 G12=50 Miro=50 → BUY 综合=65 RSI=56
+   ⏸️ ➡️ LTCUSDT: 综合=66 RSI=23 V8=65 G12=80 Miro=50 → HOLD RSI超卖(23)禁止BUY
+   ⏸️ ➡️ AVAXUSDT: 综合=49 RSI=37 V8=50 G12=50 Miro=43 → HOLD 综合=49 RSI=37
+   ⏸️ ➡️ LINKUSDT: 综合=49 RSI=36 V8=50 G12=50 Miro=43 → HOLD 综合=49 RSI=36
+   ⏸️ ➡️ UNIUSDT: 综合=49 RSI=34 V8=50 G12=50 Miro=43 → HOLD 综合=49 RSI=34
+   ⏸️ ➡️ ATOMUSDT: 综合=66 RSI=25 V8=65 G12=80 Miro=50 → HOLD RSI超卖(25)禁止BUY
+   ✅ 📈 NEARUSDT: 综合=55 RSI=54 V8=60 G12=50 Miro=50 → BUY 综合=55 RSI=54
+
+[3] 🛡️ 外部风控检查...
+   🛡️ NEARUSDT: 风控干预 BUY→HOLD
+      - 下跌趋势禁止买入: BLOCK_BUY
+
+[4] 💰 交易执行...
+   [SIM] 模拟模式跳过
+
+[5] 🔧 自我纠正检查...
+
+[6] 💓 Watchdog...
+   健康: HEALTHY | 响应: 100% | 主动: 0 | 责任: 0
+
+[7] 📈 性能分析...
+   评分: 50 | 胜率: 0.0% | 策略: NO_DATA
+[16:39:34] ✅ 周期 #1 完成
+======================================================================
+🚀 QuantMaster Q@C v13.0.0 - Harness Engineering重构版
+======================================================================
+   [API] 🟢 实盘账户: USDT=10000.00
+   [MODE] 🟢 LIVE 实盘
+   [MIRO] ✅ 独立运行 (不依赖OpenClaw/Hermes)
+   [WEIGHT] V8 50% + G12 30% + Miro 20%
+   [RISK] ✅ 外部风控 + 自我纠正 + Watchdog
+======================================================================
+[16:40:34] 📦 启动 v13.0.0
+
+======================================================================
+📊 #1 [16:40:34] SIM
+💰 USDT: $10000.00
+
+[1] 🔍 探测市场...
+   探测 15 币种, 4 机会
+
+[2] 📊 技术分析...
+   ⏸️ ➡️ BTCUSDT: 综合=66 RSI=25 V8=65 G12=80 Miro=50 → HOLD RSI超卖(25)禁止BUY
+   ⏸️ ➡️ ETHUSDT: 综合=49 RSI=46 V8=50 G12=50 Miro=43 → HOLD 综合=49 RSI=46
+   ⏸️ ➡️ BNBUSDT: 综合=49 RSI=41 V8=50 G12=50 Miro=43 → HOLD 综合=49 RSI=41
+   ⏸️ ➡️ XRPUSDT: 综合=66 RSI=30 V8=65 G12=80 Miro=50 → HOLD RSI超卖(30)禁止BUY
+   ⏸️ ➡️ SOLUSDT: 综合=49 RSI=38 V8=50 G12=50 Miro=43 → HOLD 综合=49 RSI=38
+   ⏸️ ➡️ ADAUSDT: 综合=66 RSI=27 V8=65 G12=80 Miro=50 → HOLD RSI超卖(27)禁止BUY
+   ⏸️ ➡️ DOGEUSDT: 综合=49 RSI=45 V8=50 G12=50 Miro=43 → HOLD 综合=49 RSI=45
+   ⏸️ ➡️ DOTUSDT: 综合=49 RSI=38 V8=50 G12=50 Miro=43 → HOLD 综合=49 RSI=38
+   ✅ 📈 MATICUSDT: 综合=65 RSI=56 V8=80 G12=50 Miro=50 → BUY 综合=65 RSI=56
+   ⏸️ ➡️ LTCUSDT: 综合=66 RSI=24 V8=65 G12=80 Miro=50 → HOLD RSI超卖(24)禁止BUY
+   ⏸️ ➡️ AVAXUSDT: 综合=49 RSI=37 V8=50 G12=50 Miro=43 → HOLD 综合=49 RSI=37
+   ⏸️ ➡️ LINKUSDT: 综合=49 RSI=36 V8=50 G12=50 Miro=43 → HOLD 综合=49 RSI=36
+   ⏸️ ➡️ UNIUSDT: 综合=49 RSI=35 V8=50 G12=50 Miro=43 → HOLD 综合=49 RSI=35
+   ⏸️ ➡️ ATOMUSDT: 综合=66 RSI=25 V8=65 G12=80 Miro=50 → HOLD RSI超卖(25)禁止BUY
+   ✅ 📈 NEARUSDT: 综合=55 RSI=54 V8=60 G12=50 Miro=50 → BUY 综合=55 RSI=54
+
+[3] 🛡️ 外部风控检查...
+   🛡️ NEARUSDT: 风控干预 BUY→HOLD
+      - 下跌趋势禁止买入: BLOCK_BUY
+
+[4] 💰 交易执行...
+   [SIM] 模拟模式跳过
+
+[5] 🔧 自我纠正检查...
+
+[6] 💓 Watchdog...
+   健康: HEALTHY | 响应: 100% | 主动: 0 | 责任: 0
+
+[7] 📈 性能分析...
+   评分: 50 | 胜率: 0.0% | 策略: NO_DATA
+[16:40:49] ✅ 周期 #1 完成
+======================================================================
+🚀 QuantMaster Q@C v13.0.0 - Harness Engineering重构版
+======================================================================
+   [API] 🟢 实盘账户: USDT=10000.00
+   [MODE] 🟢 LIVE 实盘
+   [MIRO] ✅ 独立运行 (不依赖OpenClaw/Hermes)
+   [WEIGHT] V8 50% + G12 30% + Miro 20%
+   [RISK] ✅ 外部风控 + 自我纠正 + Watchdog
+======================================================================
+[16:41:49] 📦 启动 v13.0.0
+
+======================================================================
+📊 #1 [16:41:49] SIM
+💰 USDT: $10000.00
+
+[1] 🔍 探测市场...
+   探测 15 币种, 5 机会
+
+[2] 📊 技术分析...
+   ⏸️ ➡️ BTCUSDT: 综合=66 RSI=25 V8=65 G12=80 Miro=50 → HOLD RSI超卖(25)禁止BUY
+   ⏸️ ➡️ ETHUSDT: 综合=49 RSI=45 V8=50 G12=50 Miro=43 → HOLD 综合=49 RSI=45
+   ⏸️ ➡️ BNBUSDT: 综合=49 RSI=40 V8=50 G12=50 Miro=43 → HOLD 综合=49 RSI=40
+   ⏸️ ➡️ XRPUSDT: 综合=66 RSI=29 V8=65 G12=80 Miro=50 → HOLD RSI超卖(29)禁止BUY
+   ⏸️ ➡️ SOLUSDT: 综合=49 RSI=38 V8=50 G12=50 Miro=43 → HOLD 综合=49 RSI=38
+   ⏸️ ➡️ ADAUSDT: 综合=66 RSI=26 V8=65 G12=80 Miro=50 → HOLD RSI超卖(26)禁止BUY
+   ⏸️ ➡️ DOGEUSDT: 综合=49 RSI=44 V8=50 G12=50 Miro=43 → HOLD 综合=49 RSI=44
+   ⏸️ ➡️ DOTUSDT: 综合=49 RSI=38 V8=50 G12=50 Miro=43 → HOLD 综合=49 RSI=38
+   ✅ 📈 MATICUSDT: 综合=65 RSI=56 V8=80 G12=50 Miro=50 → BUY 综合=65 RSI=56
+   ⏸️ ➡️ LTCUSDT: 综合=66 RSI=23 V8=65 G12=80 Miro=50 → HOLD RSI超卖(23)禁止BUY
+   ⏸️ ➡️ AVAXUSDT: 综合=49 RSI=36 V8=50 G12=50 Miro=43 → HOLD 综合=49 RSI=36
+   ⏸️ ➡️ LINKUSDT: 综合=49 RSI=36 V8=50 G12=50 Miro=43 → HOLD 综合=49 RSI=36
+   ⏸️ ➡️ UNIUSDT: 综合=49 RSI=34 V8=50 G12=50 Miro=43 → HOLD 综合=49 RSI=34
+   ⏸️ ➡️ ATOMUSDT: 综合=66 RSI=24 V8=65 G12=80 Miro=50 → HOLD RSI超卖(24)禁止BUY
+   ✅ 📈 NEARUSDT: 综合=55 RSI=54 V8=60 G12=50 Miro=50 → BUY 综合=55 RSI=54
+
+[3] 🛡️ 外部风控检查...
+   🛡️ NEARUSDT: 风控干预 BUY→HOLD
+      - 下跌趋势禁止买入: BLOCK_BUY
+
+[4] 💰 交易执行...
+   [SIM] 模拟模式跳过
+
+[5] 🔧 自我纠正检查...
+
+[6] 💓 Watchdog...
+   健康: HEALTHY | 响应: 100% | 主动: 0 | 责任: 0
+
+[7] 📈 性能分析...
+   评分: 50 | 胜率: 0.0% | 策略: NO_DATA
+[16:41:58] ✅ 周期 #1 完成
+======================================================================
+🚀 QuantMaster Q@C v13.0.0 - Harness Engineering重构版
+======================================================================
+   [API] 🟢 实盘账户: USDT=10000.00
+   [MODE] 🟢 LIVE 实盘
+   [MIRO] ✅ 独立运行 (不依赖OpenClaw/Hermes)
+   [WEIGHT] V8 50% + G12 30% + Miro 20%
+   [RISK] ✅ 外部风控 + 自我纠正 + Watchdog
+======================================================================
+[16:42:58] 📦 启动 v13.0.0
+
+======================================================================
+📊 #1 [16:42:58] SIM
+💰 USDT: $10000.00
+
+[1] 🔍 探测市场...
+   探测 15 币种, 5 机会
+
+[2] 📊 技术分析...
+   ⏸️ ➡️ BTCUSDT: 综合=66 RSI=25 V8=65 G12=80 Miro=50 → HOLD RSI超卖(25)禁止BUY
+   ⏸️ ➡️ ETHUSDT: 综合=49 RSI=45 V8=50 G12=50 Miro=43 → HOLD 综合=49 RSI=45
+   ⏸️ ➡️ BNBUSDT: 综合=49 RSI=41 V8=50 G12=50 Miro=43 → HOLD 综合=49 RSI=41
+   ⏸️ ➡️ XRPUSDT: 综合=66 RSI=29 V8=65 G12=80 Miro=50 → HOLD RSI超卖(29)禁止BUY
+   ⏸️ ➡️ SOLUSDT: 综合=49 RSI=38 V8=50 G12=50 Miro=43 → HOLD 综合=49 RSI=38
+   ⏸️ ➡️ ADAUSDT: 综合=66 RSI=27 V8=65 G12=80 Miro=50 → HOLD RSI超卖(27)禁止BUY
+   ⏸️ ➡️ DOGEUSDT: 综合=49 RSI=45 V8=50 G12=50 Miro=43 → HOLD 综合=49 RSI=45
+   ⏸️ ➡️ DOTUSDT: 综合=49 RSI=38 V8=50 G12=50 Miro=43 → HOLD 综合=49 RSI=38
+   ✅ 📈 MATICUSDT: 综合=65 RSI=56 V8=80 G12=50 Miro=50 → BUY 综合=65 RSI=56
+   ⏸️ ➡️ LTCUSDT: 综合=66 RSI=23 V8=65 G12=80 Miro=50 → HOLD RSI超卖(23)禁止BUY
+   ⏸️ ➡️ AVAXUSDT: 综合=49 RSI=37 V8=50 G12=50 Miro=43 → HOLD 综合=49 RSI=37
+   ⏸️ ➡️ LINKUSDT: 综合=49 RSI=36 V8=50 G12=50 Miro=43 → HOLD 综合=49 RSI=36
+   ⏸️ ➡️ UNIUSDT: 综合=49 RSI=35 V8=50 G12=50 Miro=43 → HOLD 综合=49 RSI=35
+   ⏸️ ➡️ ATOMUSDT: 综合=66 RSI=24 V8=65 G12=80 Miro=50 → HOLD RSI超卖(24)禁止BUY
+   ✅ 📈 NEARUSDT: 综合=55 RSI=54 V8=60 G12=50 Miro=50 → BUY 综合=55 RSI=54
+
+[3] 🛡️ 外部风控检查...
+   🛡️ NEARUSDT: 风控干预 BUY→HOLD
+      - 下跌趋势禁止买入: BLOCK_BUY
+
+[4] 💰 交易执行...
+   [SIM] 模拟模式跳过
+
+[5] 🔧 自我纠正检查...
+
+[6] 💓 Watchdog...
+   健康: HEALTHY | 响应: 100% | 主动: 0 | 责任: 0
+
+[7] 📈 性能分析...
+   评分: 50 | 胜率: 0.0% | 策略: NO_DATA
+[16:43:12] ✅ 周期 #1 完成
+======================================================================
+🚀 QuantMaster Q@C v13.0.0 - Harness Engineering重构版
+======================================================================
+   [API] 🟢 实盘账户: USDT=10000.00
+   [MODE] 🟢 LIVE 实盘
+   [MIRO] ✅ 独立运行 (不依赖OpenClaw/Hermes)
+   [WEIGHT] V8 50% + G12 30% + Miro 20%
+   [RISK] ✅ 外部风控 + 自我纠正 + Watchdog
+======================================================================
+[16:44:12] 📦 启动 v13.0.0
+
+======================================================================
+📊 #1 [16:44:12] SIM
+💰 USDT: $10000.00
+
+[1] 🔍 探测市场...
+   探测 15 币种, 4 机会
+
+[2] 📊 技术分析...
+   ⏸️ ➡️ BTCUSDT: 综合=66 RSI=25 V8=65 G12=80 Miro=50 → HOLD RSI超卖(25)禁止BUY
+   ⏸️ ➡️ ETHUSDT: 综合=49 RSI=45 V8=50 G12=50 Miro=43 → HOLD 综合=49 RSI=45
+   ⏸️ ➡️ BNBUSDT: 综合=49 RSI=41 V8=50 G12=50 Miro=43 → HOLD 综合=49 RSI=41
+   ⏸️ ➡️ XRPUSDT: 综合=66 RSI=29 V8=65 G12=80 Miro=50 → HOLD RSI超卖(29)禁止BUY
+   ⏸️ ➡️ SOLUSDT: 综合=49 RSI=38 V8=50 G12=50 Miro=43 → HOLD 综合=49 RSI=38
+   ⏸️ ➡️ ADAUSDT: 综合=66 RSI=27 V8=65 G12=80 Miro=50 → HOLD RSI超卖(27)禁止BUY
+   ⏸️ ➡️ DOGEUSDT: 综合=49 RSI=45 V8=50 G12=50 Miro=43 → HOLD 综合=49 RSI=45
+   ⏸️ ➡️ DOTUSDT: 综合=49 RSI=38 V8=50 G12=50 Miro=43 → HOLD 综合=49 RSI=38
+   ✅ 📈 MATICUSDT: 综合=65 RSI=56 V8=80 G12=50 Miro=50 → BUY 综合=65 RSI=56
+   ⏸️ ➡️ LTCUSDT: 综合=66 RSI=23 V8=65 G12=80 Miro=50 → HOLD RSI超卖(23)禁止BUY
+   ⏸️ ➡️ AVAXUSDT: 综合=49 RSI=37 V8=50 G12=50 Miro=43 → HOLD 综合=49 RSI=37
+   ⏸️ ➡️ LINKUSDT: 综合=49 RSI=36 V8=50 G12=50 Miro=43 → HOLD 综合=49 RSI=36
+   ⏸️ ➡️ UNIUSDT: 综合=49 RSI=35 V8=50 G12=50 Miro=43 → HOLD 综合=49 RSI=35
+   ⏸️ ➡️ ATOMUSDT: 综合=66 RSI=25 V8=65 G12=80 Miro=50 → HOLD RSI超卖(25)禁止BUY
+   ✅ 📈 NEARUSDT: 综合=55 RSI=54 V8=60 G12=50 Miro=50 → BUY 综合=55 RSI=54
+
+[3] 🛡️ 外部风控检查...
+   🛡️ NEARUSDT: 风控干预 BUY→HOLD
+      - 下跌趋势禁止买入: BLOCK_BUY
+
+[4] 💰 交易执行...
+   [SIM] 模拟模式跳过
+
+[5] 🔧 自我纠正检查...
+
+[6] 💓 Watchdog...
+   健康: HEALTHY | 响应: 100% | 主动: 0 | 责任: 0
+
+[7] 📈 性能分析...
+   评分: 50 | 胜率: 0.0% | 策略: NO_DATA
+[16:44:24] ✅ 周期 #1 完成
+======================================================================
+🚀 QuantMaster Q@C v13.0.0 - Harness Engineering重构版
+======================================================================
+   [API] 🟢 实盘账户: USDT=10000.00
+   [MODE] 🟢 LIVE 实盘
+   [MIRO] ✅ 独立运行 (不依赖OpenClaw/Hermes)
+   [WEIGHT] V8 50% + G12 30% + Miro 20%
+   [RISK] ✅ 外部风控 + 自我纠正 + Watchdog
+======================================================================
+[16:45:24] 📦 启动 v13.0.0
+
+======================================================================
+📊 #1 [16:45:24] SIM
+💰 USDT: $10000.00
+
+[1] 🔍 探测市场...
+   探测 15 币种, 5 机会
+
+[2] 📊 技术分析...
+   ⏸️ ➡️ BTCUSDT: 综合=66 RSI=25 V8=65 G12=80 Miro=50 → HOLD RSI超卖(25)禁止BUY
+   ⏸️ ➡️ ETHUSDT: 综合=49 RSI=45 V8=50 G12=50 Miro=43 → HOLD 综合=49 RSI=45
+   ⏸️ ➡️ BNBUSDT: 综合=49 RSI=39 V8=50 G12=50 Miro=43 → HOLD 综合=49 RSI=39
+   ⏸️ ➡️ XRPUSDT: 综合=66 RSI=29 V8=65 G12=80 Miro=50 → HOLD RSI超卖(29)禁止BUY
+   ⏸️ ➡️ SOLUSDT: 综合=49 RSI=38 V8=50 G12=50 Miro=43 → HOLD 综合=49 RSI=38
+   ⏸️ ➡️ ADAUSDT: 综合=66 RSI=26 V8=65 G12=80 Miro=50 → HOLD RSI超卖(26)禁止BUY
+   ⏸️ ➡️ DOGEUSDT: 综合=49 RSI=44 V8=50 G12=50 Miro=43 → HOLD 综合=49 RSI=44
+   ⏸️ ➡️ DOTUSDT: 综合=49 RSI=38 V8=50 G12=50 Miro=43 → HOLD 综合=49 RSI=38
+   ✅ 📈 MATICUSDT: 综合=65 RSI=56 V8=80 G12=50 Miro=50 → BUY 综合=65 RSI=56
+   ⏸️ ➡️ LTCUSDT: 综合=66 RSI=22 V8=65 G12=80 Miro=50 → HOLD RSI超卖(22)禁止BUY
+   ⏸️ ➡️ AVAXUSDT: 综合=49 RSI=36 V8=50 G12=50 Miro=43 → HOLD 综合=49 RSI=36
+   ✅ 📉 LINKUSDT: 综合=44 RSI=35 V8=40 G12=50 Miro=43 → SELL 综合=44 RSI=35
+   ⏸️ ➡️ UNIUSDT: 综合=49 RSI=34 V8=50 G12=50 Miro=43 → HOLD 综合=49 RSI=34
+   ⏸️ ➡️ ATOMUSDT: 综合=66 RSI=23 V8=65 G12=80 Miro=50 → HOLD RSI超卖(23)禁止BUY
+   ✅ 📈 NEARUSDT: 综合=55 RSI=53 V8=60 G12=50 Miro=50 → BUY 综合=55 RSI=53
+
+[3] 🛡️ 外部风控检查...
+   🛡️ NEARUSDT: 风控干预 BUY→HOLD
+      - 下跌趋势禁止买入: BLOCK_BUY
+
+[4] 💰 交易执行...
+   [SIM] 模拟模式跳过
+
+[5] 🔧 自我纠正检查...
+
+[6] 💓 Watchdog...
+   健康: HEALTHY | 响应: 100% | 主动: 0 | 责任: 0
+
+[7] 📈 性能分析...
+   评分: 50 | 胜率: 0.0% | 策略: NO_DATA
+[16:45:35] ✅ 周期 #1 完成
+======================================================================
+🚀 QuantMaster Q@C v13.0.0 - Harness Engineering重构版
+======================================================================
+   [API] 🟢 实盘账户: USDT=10000.00
+   [MODE] 🟢 LIVE 实盘
+   [MIRO] ✅ 独立运行 (不依赖OpenClaw/Hermes)
+   [WEIGHT] V8 50% + G12 30% + Miro 20%
+   [RISK] ✅ 外部风控 + 自我纠正 + Watchdog
+======================================================================
+[16:46:35] 📦 启动 v13.0.0
+
+======================================================================
+📊 #1 [16:46:35] SIM
+💰 USDT: $10000.00
+
+[1] 🔍 探测市场...
+   探测 15 币种, 5 机会
+
+[2] 📊 技术分析...
+   ⏸️ ➡️ BTCUSDT: 综合=66 RSI=25 V8=65 G12=80 Miro=50 → HOLD RSI超卖(25)禁止BUY
+   ⏸️ ➡️ ETHUSDT: 综合=49 RSI=45 V8=50 G12=50 Miro=43 → HOLD 综合=49 RSI=45
+   ⏸️ ➡️ BNBUSDT: 综合=49 RSI=40 V8=50 G12=50 Miro=43 → HOLD 综合=49 RSI=40
+   ⏸️ ➡️ XRPUSDT: 综合=66 RSI=30 V8=65 G12=80 Miro=50 → HOLD RSI超卖(30)禁止BUY
+   ⏸️ ➡️ SOLUSDT: 综合=49 RSI=38 V8=50 G12=50 Miro=43 → HOLD 综合=49 RSI=38
+   ⏸️ ➡️ ADAUSDT: 综合=66 RSI=27 V8=65 G12=80 Miro=50 → HOLD RSI超卖(27)禁止BUY
+   ⏸️ ➡️ DOGEUSDT: 综合=49 RSI=45 V8=50 G12=50 Miro=43 → HOLD 综合=49 RSI=45
+   ⏸️ ➡️ DOTUSDT: 综合=49 RSI=38 V8=50 G12=50 Miro=43 → HOLD 综合=49 RSI=38
+   ✅ 📈 MATICUSDT: 综合=65 RSI=56 V8=80 G12=50 Miro=50 → BUY 综合=65 RSI=56
+   ⏸️ ➡️ LTCUSDT: 综合=66 RSI=22 V8=65 G12=80 Miro=50 → HOLD RSI超卖(22)禁止BUY
+   ⏸️ ➡️ AVAXUSDT: 综合=49 RSI=37 V8=50 G12=50 Miro=43 → HOLD 综合=49 RSI=37
+   ⏸️ ➡️ LINKUSDT: 综合=49 RSI=36 V8=50 G12=50 Miro=43 → HOLD 综合=49 RSI=36
+   ⏸️ ➡️ UNIUSDT: 综合=49 RSI=35 V8=50 G12=50 Miro=43 → HOLD 综合=49 RSI=35
+   ⏸️ ➡️ ATOMUSDT: 综合=66 RSI=23 V8=65 G12=80 Miro=50 → HOLD RSI超卖(23)禁止BUY
+   ✅ 📈 NEARUSDT: 综合=55 RSI=54 V8=60 G12=50 Miro=50 → BUY 综合=55 RSI=54
+
+[3] 🛡️ 外部风控检查...
+   🛡️ NEARUSDT: 风控干预 BUY→HOLD
+      - 下跌趋势禁止买入: BLOCK_BUY
+
+[4] 💰 交易执行...
+   [SIM] 模拟模式跳过
+
+[5] 🔧 自我纠正检查...
+
+[6] 💓 Watchdog...
+   健康: HEALTHY | 响应: 100% | 主动: 0 | 责任: 0
+
+[7] 📈 性能分析...
+   评分: 50 | 胜率: 0.0% | 策略: NO_DATA
+[16:46:47] ✅ 周期 #1 完成
+======================================================================
+🚀 QuantMaster Q@C v13.0.0 - Harness Engineering重构版
+======================================================================
+   [API] 🟢 实盘账户: USDT=10000.00
+   [MODE] 🟢 LIVE 实盘
+   [MIRO] ✅ 独立运行 (不依赖OpenClaw/Hermes)
+   [WEIGHT] V8 50% + G12 30% + Miro 20%
+   [RISK] ✅ 外部风控 + 自我纠正 + Watchdog
+======================================================================
+[16:47:47] 📦 启动 v13.0.0
+
+======================================================================
+📊 #1 [16:47:47] SIM
+💰 USDT: $10000.00
+
+[1] 🔍 探测市场...
+   探测 15 币种, 5 机会
+
+[2] 📊 技术分析...
+   ⏸️ ➡️ BTCUSDT: 综合=66 RSI=25 V8=65 G12=80 Miro=50 → HOLD RSI超卖(25)禁止BUY
+   ⏸️ ➡️ ETHUSDT: 综合=49 RSI=45 V8=50 G12=50 Miro=43 → HOLD 综合=49 RSI=45
+   ⏸️ ➡️ BNBUSDT: 综合=49 RSI=40 V8=50 G12=50 Miro=43 → HOLD 综合=49 RSI=40
+   ⏸️ ➡️ XRPUSDT: 综合=66 RSI=29 V8=65 G12=80 Miro=50 → HOLD RSI超卖(29)禁止BUY
+   ⏸️ ➡️ SOLUSDT: 综合=49 RSI=38 V8=50 G12=50 Miro=43 → HOLD 综合=49 RSI=38
+   ⏸️ ➡️ ADAUSDT: 综合=66 RSI=26 V8=65 G12=80 Miro=50 → HOLD RSI超卖(26)禁止BUY
+   ⏸️ ➡️ DOGEUSDT: 综合=49 RSI=44 V8=50 G12=50 Miro=43 → HOLD 综合=49 RSI=44
+   ⏸️ ➡️ DOTUSDT: 综合=49 RSI=37 V8=50 G12=50 Miro=43 → HOLD 综合=49 RSI=37
+   ✅ 📈 MATICUSDT: 综合=65 RSI=56 V8=80 G12=50 Miro=50 → BUY 综合=65 RSI=56
+   ⏸️ ➡️ LTCUSDT: 综合=66 RSI=21 V8=65 G12=80 Miro=50 → HOLD RSI超卖(21)禁止BUY
+   ⏸️ ➡️ AVAXUSDT: 综合=49 RSI=36 V8=50 G12=50 Miro=43 → HOLD 综合=49 RSI=36
+   ✅ 📉 LINKUSDT: 综合=44 RSI=35 V8=40 G12=50 Miro=43 → SELL 综合=44 RSI=35
+   ⏸️ ➡️ UNIUSDT: 综合=49 RSI=34 V8=50 G12=50 Miro=43 → HOLD 综合=49 RSI=34
+   ⏸️ ➡️ ATOMUSDT: 综合=66 RSI=24 V8=65 G12=80 Miro=50 → HOLD RSI超卖(24)禁止BUY
+   ✅ 📈 NEARUSDT: 综合=55 RSI=54 V8=60 G12=50 Miro=50 → BUY 综合=55 RSI=54
+
+[3] 🛡️ 外部风控检查...
+   🛡️ NEARUSDT: 风控干预 BUY→HOLD
+      - 下跌趋势禁止买入: BLOCK_BUY
+
+[4] 💰 交易执行...
+   [SIM] 模拟模式跳过
+
+[5] 🔧 自我纠正检查...
+
+[6] 💓 Watchdog...
+   健康: HEALTHY | 响应: 100% | 主动: 0 | 责任: 0
+
+[7] 📈 性能分析...
+   评分: 50 | 胜率: 0.0% | 策略: NO_DATA
+[16:48:02] ✅ 周期 #1 完成
+======================================================================
+🚀 QuantMaster Q@C v13.0.0 - Harness Engineering重构版
+======================================================================
+   [API] 🟢 实盘账户: USDT=10000.00
+   [MODE] 🟢 LIVE 实盘
+   [MIRO] ✅ 独立运行 (不依赖OpenClaw/Hermes)
+   [WEIGHT] V8 50% + G12 30% + Miro 20%
+   [RISK] ✅ 外部风控 + 自我纠正 + Watchdog
+======================================================================
+[16:49:02] 📦 启动 v13.0.0
+
+======================================================================
+📊 #1 [16:49:02] SIM
+💰 USDT: $10000.00
+
+[1] 🔍 探测市场...
+   探测 15 币种, 5 机会
+
+[2] 📊 技术分析...
+   ⏸️ ➡️ BTCUSDT: 综合=66 RSI=24 V8=65 G12=80 Miro=50 → HOLD RSI超卖(24)禁止BUY
+   ⏸️ ➡️ ETHUSDT: 综合=49 RSI=44 V8=50 G12=50 Miro=43 → HOLD 综合=49 RSI=44
+   ⏸️ ➡️ BNBUSDT: 综合=49 RSI=39 V8=50 G12=50 Miro=43 → HOLD 综合=49 RSI=39
+   ⏸️ ➡️ XRPUSDT: 综合=66 RSI=29 V8=65 G12=80 Miro=50 → HOLD RSI超卖(29)禁止BUY
+   ⏸️ ➡️ SOLUSDT: 综合=49 RSI=37 V8=50 G12=50 Miro=43 → HOLD 综合=49 RSI=37
+   ⏸️ ➡️ ADAUSDT: 综合=66 RSI=25 V8=65 G12=80 Miro=50 → HOLD RSI超卖(25)禁止BUY
+   ⏸️ ➡️ DOGEUSDT: 综合=49 RSI=44 V8=50 G12=50 Miro=43 → HOLD 综合=49 RSI=44
+   ⏸️ ➡️ DOTUSDT: 综合=49 RSI=36 V8=50 G12=50 Miro=43 → HOLD 综合=49 RSI=36
+   ✅ 📈 MATICUSDT: 综合=65 RSI=56 V8=80 G12=50 Miro=50 → BUY 综合=65 RSI=56
+   ⏸️ ➡️ LTCUSDT: 综合=66 RSI=20 V8=65 G12=80 Miro=50 → HOLD RSI超卖(20)禁止BUY
+   ✅ 📉 AVAXUSDT: 综合=44 RSI=35 V8=40 G12=50 Miro=43 → SELL 综合=44 RSI=35
+   ✅ 📉 LINKUSDT: 综合=44 RSI=35 V8=40 G12=50 Miro=43 → SELL 综合=44 RSI=35
+   ✅ 📉 UNIUSDT: 综合=44 RSI=33 V8=40 G12=50 Miro=43 → SELL 综合=44 RSI=33
+   ⏸️ ➡️ ATOMUSDT: 综合=66 RSI=23 V8=65 G12=80 Miro=50 → HOLD RSI超卖(23)禁止BUY
+   ✅ 📈 NEARUSDT: 综合=55 RSI=54 V8=60 G12=50 Miro=50 → BUY 综合=55 RSI=54
+
+[3] 🛡️ 外部风控检查...
+   🛡️ NEARUSDT: 风控干预 BUY→HOLD
+      - 下跌趋势禁止买入: BLOCK_BUY
+
+[4] 💰 交易执行...
+   [SIM] 模拟模式跳过
+
+[5] 🔧 自我纠正检查...
+
+[6] 💓 Watchdog...
+   健康: HEALTHY | 响应: 100% | 主动: 0 | 责任: 0
+
+[7] 📈 性能分析...
+   评分: 50 | 胜率: 0.0% | 策略: NO_DATA
+[16:49:20] ✅ 周期 #1 完成
+======================================================================
+🚀 QuantMaster Q@C v13.0.0 - Harness Engineering重构版
+======================================================================
+   [API] 🟢 实盘账户: USDT=10000.00
+   [MODE] 🟢 LIVE 实盘
+   [MIRO] ✅ 独立运行 (不依赖OpenClaw/Hermes)
+   [WEIGHT] V8 50% + G12 30% + Miro 20%
+   [RISK] ✅ 外部风控 + 自我纠正 + Watchdog
+======================================================================
+[16:50:20] 📦 启动 v13.0.0
+
+======================================================================
+📊 #1 [16:50:20] SIM
+💰 USDT: $10000.00
+
+[1] 🔍 探测市场...
+   探测 15 币种, 5 机会
+
+[2] 📊 技术分析...
+   ⏸️ ➡️ BTCUSDT: 综合=66 RSI=24 V8=65 G12=80 Miro=50 → HOLD RSI超卖(24)禁止BUY
+   ⏸️ ➡️ ETHUSDT: 综合=49 RSI=44 V8=50 G12=50 Miro=43 → HOLD 综合=49 RSI=44
+   ⏸️ ➡️ BNBUSDT: 综合=49 RSI=39 V8=50 G12=50 Miro=43 → HOLD 综合=49 RSI=39
+   ⏸️ ➡️ XRPUSDT: 综合=66 RSI=29 V8=65 G12=80 Miro=50 → HOLD RSI超卖(29)禁止BUY
+   ⏸️ ➡️ SOLUSDT: 综合=49 RSI=37 V8=50 G12=50 Miro=43 → HOLD 综合=49 RSI=37
+   ⏸️ ➡️ ADAUSDT: 综合=66 RSI=25 V8=65 G12=80 Miro=50 → HOLD RSI超卖(25)禁止BUY
+   ⏸️ ➡️ DOGEUSDT: 综合=49 RSI=44 V8=50 G12=50 Miro=43 → HOLD 综合=49 RSI=44
+   ⏸️ ➡️ DOTUSDT: 综合=49 RSI=36 V8=50 G12=50 Miro=43 → HOLD 综合=49 RSI=36
+   ✅ 📈 MATICUSDT: 综合=65 RSI=56 V8=80 G12=50 Miro=50 → BUY 综合=65 RSI=56
+   ⏸️ ➡️ LTCUSDT: 综合=66 RSI=20 V8=65 G12=80 Miro=50 → HOLD RSI超卖(20)禁止BUY
+   ✅ 📉 AVAXUSDT: 综合=44 RSI=35 V8=40 G12=50 Miro=43 → SELL 综合=44 RSI=35
+   ✅ 📉 LINKUSDT: 综合=44 RSI=35 V8=40 G12=50 Miro=43 → SELL 综合=44 RSI=35
+   ⏸️ ➡️ UNIUSDT: 综合=49 RSI=34 V8=50 G12=50 Miro=43 → HOLD 综合=49 RSI=34
+   ⏸️ ➡️ ATOMUSDT: 综合=66 RSI=23 V8=65 G12=80 Miro=50 → HOLD RSI超卖(23)禁止BUY
+   ✅ 📈 NEARUSDT: 综合=55 RSI=53 V8=60 G12=50 Miro=50 → BUY 综合=55 RSI=53
+
+[3] 🛡️ 外部风控检查...
+   🛡️ NEARUSDT: 风控干预 BUY→HOLD
+      - 下跌趋势禁止买入: BLOCK_BUY
+
+[4] 💰 交易执行...
+   [SIM] 模拟模式跳过
+
+[5] 🔧 自我纠正检查...
+
+[6] 💓 Watchdog...
+   健康: HEALTHY | 响应: 100% | 主动: 0 | 责任: 0
+
+[7] 📈 性能分析...
+   评分: 50 | 胜率: 0.0% | 策略: NO_DATA
+[16:50:32] ✅ 周期 #1 完成
+======================================================================
+🚀 QuantMaster Q@C v13.0.0 - Harness Engineering重构版
+======================================================================
+   [API] 🟢 实盘账户: USDT=10000.00
+   [MODE] 🟢 LIVE 实盘
+   [MIRO] ✅ 独立运行 (不依赖OpenClaw/Hermes)
+   [WEIGHT] V8 50% + G12 30% + Miro 20%
+   [RISK] ✅ 外部风控 + 自我纠正 + Watchdog
+======================================================================
+[16:51:32] 📦 启动 v13.0.0
+
+======================================================================
+📊 #1 [16:51:32] SIM
+💰 USDT: $10000.00
+
+[1] 🔍 探测市场...
+   探测 15 币种, 5 机会
+
+[2] 📊 技术分析...
+   ⏸️ ➡️ BTCUSDT: 综合=66 RSI=24 V8=65 G12=80 Miro=50 → HOLD RSI超卖(24)禁止BUY
+   ⏸️ ➡️ ETHUSDT: 综合=49 RSI=44 V8=50 G12=50 Miro=43 → HOLD 综合=49 RSI=44
+   ⏸️ ➡️ BNBUSDT: 综合=49 RSI=39 V8=50 G12=50 Miro=43 → HOLD 综合=49 RSI=39
+   ⏸️ ➡️ XRPUSDT: 综合=66 RSI=29 V8=65 G12=80 Miro=50 → HOLD RSI超卖(29)禁止BUY
+   ⏸️ ➡️ SOLUSDT: 综合=49 RSI=37 V8=50 G12=50 Miro=43 → HOLD 综合=49 RSI=37
+   ⏸️ ➡️ ADAUSDT: 综合=66 RSI=25 V8=65 G12=80 Miro=50 → HOLD RSI超卖(25)禁止BUY
+   ⏸️ ➡️ DOGEUSDT: 综合=49 RSI=44 V8=50 G12=50 Miro=43 → HOLD 综合=49 RSI=44
+   ⏸️ ➡️ DOTUSDT: 综合=49 RSI=37 V8=50 G12=50 Miro=43 → HOLD 综合=49 RSI=37
+   ✅ 📈 MATICUSDT: 综合=65 RSI=56 V8=80 G12=50 Miro=50 → BUY 综合=65 RSI=56
+   ⏸️ ➡️ LTCUSDT: 综合=66 RSI=20 V8=65 G12=80 Miro=50 → HOLD RSI超卖(20)禁止BUY
+   ✅ 📉 AVAXUSDT: 综合=44 RSI=35 V8=40 G12=50 Miro=43 → SELL 综合=44 RSI=35
+   ✅ 📉 LINKUSDT: 综合=44 RSI=35 V8=40 G12=50 Miro=43 → SELL 综合=44 RSI=35
+   ⏸️ ➡️ UNIUSDT: 综合=49 RSI=34 V8=50 G12=50 Miro=43 → HOLD 综合=49 RSI=34
+   ⏸️ ➡️ ATOMUSDT: 综合=66 RSI=23 V8=65 G12=80 Miro=50 → HOLD RSI超卖(23)禁止BUY
+   ✅ 📈 NEARUSDT: 综合=55 RSI=54 V8=60 G12=50 Miro=50 → BUY 综合=55 RSI=54
+
+[3] 🛡️ 外部风控检查...
+   🛡️ NEARUSDT: 风控干预 BUY→HOLD
+      - 下跌趋势禁止买入: BLOCK_BUY
+
+[4] 💰 交易执行...
+   [SIM] 模拟模式跳过
+
+[5] 🔧 自我纠正检查...
+
+[6] 💓 Watchdog...
+   健康: HEALTHY | 响应: 100% | 主动: 0 | 责任: 0
+
+[7] 📈 性能分析...
+   评分: 50 | 胜率: 0.0% | 策略: NO_DATA
+[16:51:43] ✅ 周期 #1 完成
+[16:52:15] ✅ 已关闭

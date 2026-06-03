@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q@C v12 Dashboard</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #0a0a0f; color: #fff; min-height: 100vh; }
+        .container { max-width: 1400px; margin: 0 auto; padding: 20px; }
+        h1 { text-align: center; padding: 20px; color: #00ff88; }
+        h2 { color: #00d4ff; margin: 20px 0 10px; }
+        .status-bar { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 15px; background: #1a1a2e; padding: 20px; border-radius: 10px; margin-bottom: 20px; }
+        .status-item { text-align: center; padding: 10px; background: #16213e; border-radius: 8px; }
+        .status-value { font-size: 24px; font-weight: bold; color: #00ff88; }
+        .status-label { color: #888; font-size: 12px; margin-top: 5px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 20px; }
+        .card { background: #1a1a2e; border-radius: 10px; padding: 20px; }
+        .card h3 { color: #00d4ff; margin-bottom: 15px; border-bottom: 1px solid #2a2a4e; padding-bottom: 10px; }
+        table { width: 100%; border-collapse: collapse; }
+        th, td { padding: 8px; text-align: left; border-bottom: 1px solid #2a2a4e; }
+        th { color: #888; font-size: 12px; }
+        .buy { color: #00ff88; }
+        .sell { color: #ff4444; }
+        .hold { color: #ffaa00; }
+        .protect { color: #ff00ff; }
+        .log { background: #000; padding: 15px; border-radius: 5px; max-height: 200px; overflow-y: auto; font-family: monospace; font-size: 12px; line-height: 1.6; }
+        .weights { display: flex; gap: 10px; margin-top: 10px; }
+        .weight-bar { flex: 1; height: 20px; background: #2a2a4e; border-radius: 3px; overflow: hidden; }
+        .weight-fill { height: 100%; }
+        .v8 { background: #00d4ff; }
+        .g12 { background: #ff00ff; }
+        .miro { background: #00ff88; }
+        .btn { background: #00d4ff; color: #000; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; margin: 5px; }
+        .btn:hover { background: #00a8cc; }
+        .health-good { color: #00ff88; }
+        .health-warn { color: #ffaa00; }
+        .health-bad { color: #ff4444; }
+        .pnl-positive { color: #00ff88; }
+        .pnl-negative { color: #ff4444; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 Q@C v12 Dashboard - RSI保护版</h1>
+        
+        <div class="status-bar">
+            <div class="status-item">
+                <div class="status-value" id="version">12.0.0</div>
+                <div class="status-label">版本</div>
+            </div>
+            <div class="status-item">
+                <div class="status-value" id="mode">LIVE</div>
+                <div class="status-label">模式</div>
+            </div>
+            <div class="status-item">
+                <div class="status-value" id="health">HEALTHY</div>
+                <div class="status-label">健康状态</div>
+            </div>
+            <div class="status-item">
+                <div class="status-value" id="responsiveness">100%</div>
+                <div class="status-label">响应度</div>
+            </div>
+            <div class="status-item">
+                <div class="status-value" id="cycle">0</div>
+                <div class="status-label">周期</div>
+            </div>
+            <div class="status-item">
+                <div class="status-value" id="total-value">$0</div>
+                <div class="status-label">总价值</div>
+            </div>
+            <div class="status-item">
+                <div class="status-value" id="pnl">$0</div>
+                <div class="status-label">盈亏</div>
+            </div>
+        </div>
+
+        <div class="grid">
+            <div class="card">
+                <h3>📊 三重权重架构</h3>
+                <div style="display:flex;gap:10px;margin-bottom:10px;">
+                    <div style="flex:1;text-align:center;"><span style="color:#00d4ff">V8</span><br><small>SignalEngine</small></div>
+                    <div style="flex:1;text-align:center;"><span style="color:#ff00ff">G12</span><br><small>Strategy</small></div>
+                    <div style="flex:1;text-align:center;"><span style="color:#00ff88">Miro</span><br><small>Simulation</small></div>
+                </div>
+                <div class="weights">
+                    <div class="weight-bar"><div class="weight-fill v8" style="width:50%"></div></div>
+                    <div class="weight-bar"><div class="weight-fill g12" style="width:30%"></div></div>
+                    <div class="weight-bar"><div class="weight-fill miro" style="width:20%"></div></div>
+                </div>
+                <div style="display:flex;gap:10px;margin-top:5px;font-size:11px;color:#888;">
+                    <span style="flex:1;text-align:center;">50%</span>
+                    <span style="flex:1;text-align:center;">30%</span>
+                    <span style="flex:1;text-align:center;">20%</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>🛡️ RSI风控保护</h3>
+                <table>
+                    <tr><th>条件</th><th>动作</th><th>状态</th></tr>
+                    <tr><td>RSI &lt; 30</td><td>禁止BUY</td><td class="protect">⛔ 超卖保护</td></tr>
+                    <tr><td>RSI &gt; 75</td><td>禁止SELL</td><td class="protect">⛔ 超买保护</td></tr>
+                    <tr><td>RSI 30-75</td><td>正常决策</td><td class="buy">✅ 生效中</td></tr>
+                </table>
+            </div>
+
+            <div class="card">
+                <h3>📈 信号分析</h3>
+                <table id="signals-table">
+                    <tr><th>币种</th><th>综合</th><th>RSI</th><th>V8</th><th>G12</th><th>Miro</th><th>决策</th></tr>
+                    <tr><td>BTCUSDT</td><td>65</td><td>30</td><td>55</td><td>80</td><td>66</td><td class="hold">HOLD</td></tr>
+                    <tr><td>ETHUSDT</td><td>39</td><td>52</td><td>30</td><td>50</td><td>46</td><td class="sell">SELL</td></tr>
+                    <tr><td>ADAUSDT</td><td>76</td><td>29</td><td>80</td><td>80</td><td>59</td><td class="protect">⛔ HOLD</td></tr>
+                </table>
+            </div>
+
+            <div class="card">
+                <h3>💼 持仓情况</h3>
+                <table id="holdings-table">
+                    <tr><th>币种</th><th>数量</th><th>价格</th><th>价值</th><th>占比</th></tr>
+                    <tr><td>XRP</td><td>963.36</td><td>$1.27</td><td class="sell">$1,225</td><td>79.5%</td></tr>
+                    <tr><td>BTC</td><td>0.0017</td><td>$70,323</td><td>$123</td><td>8.0%</td></tr>
+                    <tr><td>ADA</td><td>205.99</td><td>$0.22</td><td>$46</td><td>3.0%</td></tr>
+                </table>
+            </div>
+
+            <div class="card">
+                <h3>📋 实时日志</h3>
+                <div class="log" id="log">
+[14:42] 📊 周期 #15 开始
+[14:42] 💰 USDT: $14.98 | ADA: 205.99
+[14:42] 🔍 探测: 15币种, 0机会
+[14:42] ⚠️ [风控] ADAUSDT RSI=29 超卖, 禁止BUY
+[14:42] ⏸️ ADAUSDT: 综合=76 RSI=29 → HOLD
+[14:42] ✅ 周期完成, 响应度: 100%
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>📊 系统状态</h3>
+                <table>
+                    <tr><td>运行时间</td><td id="uptime">--</td></tr>
+                    <tr><td>最后心跳</td><td id="last-heartbeat">--</td></tr>
+                    <tr><td>决策次数</td><td id="decisions">5</td></tr>
+                    <tr><td>批准交易</td><td id="approved">0</td></tr>
+                    <tr><td>API延迟</td><td id="api-latency">--</td></tr>
+                </table>
+            </div>
+        </div>
+
+        <div style="text-align:center;margin-top:20px;">
+            <button class="btn" onclick="refresh()">🔄 刷新</button>
+            <button class="btn" onclick="toggleMode()">🔀 切换模式</button>
+            <button class="btn" onclick="exportLog()">📥 导出日志</button>
+        </div>
+    </div>
+
+    <script>
+        let statusInterval;
+        
+        function refresh() {
+            fetch('/home/goose/.openclaw/workspace/qcv11_status.json')
+                .then(r => r.json())
+                .then(data => {
+                    document.getElementById('mode').textContent = data.mode || 'LIVE';
+                    document.getElementById('health').textContent = data.health || 'HEALTHY';
+                    document.getElementById('responsiveness').textContent = (data.responsiveness || 0) + '%';
+                    document.getElementById('cycle').textContent = data.cycles || 0;
+                    
+                    const balance = data.balance || {};
+                    const total = Object.entries(balance)
+                        .filter(([k, v]) => v > 0.001)
+                        .reduce((sum, [k, v]) => sum + (k === 'USDT' ? v : 0), 0);
+                    document.getElementById('total-value').textContent = '$' + total.toFixed(2);
+                })
+                .catch(() => {});
+        }
+        
+        function toggleMode() {
+            alert('切换模式功能开发中...');
+        }
+        
+        function exportLog() {
+            const log = document.getElementById('log').textContent;
+            const blob = new Blob([log], {type: 'text/plain'});
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'qcv12_log_' + new Date().toISOString().slice(0,10) + '.txt';
+            a.click();
+        }
+        
+        // Auto refresh every 5 seconds
+        refresh();
+        statusInterval = setInterval(refresh, 5000);
+    </script>
+</body>
+</html>

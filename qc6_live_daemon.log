@@ -1,0 +1,729 @@
+============================================================
+🚀 QuantMaster Q@C v6 LIVE Daemon
+============================================================
+模式: LIVE (实盘)
+重启延迟: 5秒
+每小时最大重启: 10次
+============================================================
+[2026-06-02 09:22:57] 🚀 Q@C v6 LIVE Daemon 启动
+[2026-06-02 09:22:57] 📦 启动LIVE周期...
+
+======================================================================
+🚀 QuantMaster Q@C v6.0.0 - 全模块集成版
+======================================================================
+✅ 组件初始化完成
+   - DataBus/EventBus
+   - TechnicalIndicators (100+ 指标)
+   - MultiExchange (4 交易所)
+   - AlertSystem (TradingView风格)
+   - AIDecision (Kronos风格)
+   - BacktestEngine (Lean专业)
+   - WatchdogClient
+[2026-06-02 09:22:57] 📊 开始运行周期...
+
+======================================================================
+📊 周期 #1 - 09:22:57
+======================================================================
+   📡 信号: BTCUSDT MACD_BULLISH
+   📡 信号: BTCUSDT COMPOSITE_SELL
+
+   BTCUSDT:
+      价格: $71333.9900
+      RSI: 32.1
+      综合建议: HOLD
+      AI决策: BUY (置信32%)
+      信号数: 2
+      警报数: 0
+   📡 信号: ETHUSDT MACD_BULLISH
+   📡 信号: ETHUSDT COMPOSITE_SELL
+
+   ETHUSDT:
+      价格: $1997.8300
+      RSI: 58.1
+      综合建议: HOLD
+      AI决策: SELL (置信34%)
+      信号数: 2
+      警报数: 0
+   📡 信号: XRPUSDT MACD_BULLISH
+   📡 信号: XRPUSDT COMPOSITE_SELL
+
+   XRPUSDT:
+      价格: $1.2895
+      RSI: 40.8
+      综合建议: HOLD
+      AI决策: HOLD (置信53%)
+      信号数: 2
+      警报数: 0
+   📡 信号: SOLUSDT MACD_BULLISH
+   📡 信号: SOLUSDT COMPOSITE_SELL
+
+   SOLUSDT:
+      价格: $80.9400
+      RSI: 51.4
+      综合建议: HOLD
+      AI决策: SELL (置信34%)
+      信号数: 2
+      警报数: 0
+
+📈 周期汇总:
+   总信号: 8
+   总警报: 0
+   持仓: 0
+[2026-06-02 09:22:58] ✅ 周期 #1 完成: 8 信号
+[2026-06-02 09:22:58] ⏳ 等待60秒...
+[2026-06-02 09:23:58] 📦 启动LIVE周期...
+
+======================================================================
+🚀 QuantMaster Q@C v6.0.0 - 全模块集成版
+======================================================================
+✅ 组件初始化完成
+   - DataBus/EventBus
+   - TechnicalIndicators (100+ 指标)
+   - MultiExchange (4 交易所)
+   - AlertSystem (TradingView风格)
+   - AIDecision (Kronos风格)
+   - BacktestEngine (Lean专业)
+   - WatchdogClient
+[2026-06-02 09:23:58] 📊 开始运行周期...
+
+======================================================================
+📊 周期 #1 - 09:23:58
+======================================================================
+   📡 信号: BTCUSDT MACD_BULLISH
+   📡 信号: BTCUSDT COMPOSITE_SELL
+
+   BTCUSDT:
+      价格: $71293.0000
+      RSI: 31.2
+      综合建议: HOLD
+      AI决策: HOLD (置信53%)
+      信号数: 2
+      警报数: 0
+   📡 信号: ETHUSDT MACD_BULLISH
+   📡 信号: ETHUSDT COMPOSITE_SELL
+
+   ETHUSDT:
+      价格: $1996.4400
+      RSI: 57.5
+      综合建议: HOLD
+      AI决策: SELL (置信36%)
+      信号数: 2
+      警报数: 0
+   📡 信号: XRPUSDT MACD_BULLISH
+   📡 信号: XRPUSDT COMPOSITE_SELL
+
+   XRPUSDT:
+      价格: $1.2889
+      RSI: 40.3
+      综合建议: HOLD
+      AI决策: BUY (置信55%)
+      信号数: 2
+      警报数: 0
+   📡 信号: SOLUSDT MACD_BULLISH
+   📡 信号: SOLUSDT COMPOSITE_SELL
+
+   SOLUSDT:
+      价格: $80.9100
+      RSI: 51.1
+      综合建议: HOLD
+      AI决策: BUY (置信32%)
+      信号数: 2
+      警报数: 0
+
+📈 周期汇总:
+   总信号: 8
+   总警报: 0
+   持仓: 0
+[2026-06-02 09:23:59] ✅ 周期 #2 完成: 8 信号
+[2026-06-02 09:23:59] ⏳ 等待60秒...
+[2026-06-02 09:24:59] 📦 启动LIVE周期...
+
+======================================================================
+🚀 QuantMaster Q@C v6.0.0 - 全模块集成版
+======================================================================
+✅ 组件初始化完成
+   - DataBus/EventBus
+   - TechnicalIndicators (100+ 指标)
+   - MultiExchange (4 交易所)
+   - AlertSystem (TradingView风格)
+   - AIDecision (Kronos风格)
+   - BacktestEngine (Lean专业)
+   - WatchdogClient
+[2026-06-02 09:24:59] 📊 开始运行周期...
+
+======================================================================
+📊 周期 #1 - 09:24:59
+======================================================================
+   📡 信号: BTCUSDT MACD_BULLISH
+   📡 信号: BTCUSDT COMPOSITE_SELL
+
+   BTCUSDT:
+      价格: $71290.0000
+      RSI: 31.2
+      综合建议: HOLD
+      AI决策: HOLD (置信53%)
+      信号数: 2
+      警报数: 0
+   📡 信号: ETHUSDT MACD_BULLISH
+   📡 信号: ETHUSDT COMPOSITE_SELL
+
+   ETHUSDT:
+      价格: $1997.3100
+      RSI: 57.9
+      综合建议: HOLD
+      AI决策: HOLD (置信53%)
+      信号数: 2
+      警报数: 0
+   📡 信号: XRPUSDT MACD_BULLISH
+   📡 信号: XRPUSDT COMPOSITE_SELL
+
+   XRPUSDT:
+      价格: $1.2892
+      RSI: 40.5
+      综合建议: HOLD
+      AI决策: SELL (置信36%)
+      信号数: 2
+      警报数: 0
+   📡 信号: SOLUSDT MACD_BULLISH
+   📡 信号: SOLUSDT COMPOSITE_SELL
+
+   SOLUSDT:
+      价格: $80.9100
+      RSI: 51.1
+      综合建议: HOLD
+      AI决策: SELL (置信36%)
+      信号数: 2
+      警报数: 0
+
+📈 周期汇总:
+   总信号: 8
+   总警报: 0
+   持仓: 0
+[2026-06-02 09:25:00] ✅ 周期 #3 完成: 8 信号
+[2026-06-02 09:25:00] ⏳ 等待60秒...
+[2026-06-02 09:26:00] 📦 启动LIVE周期...
+
+======================================================================
+🚀 QuantMaster Q@C v6.0.0 - 全模块集成版
+======================================================================
+✅ 组件初始化完成
+   - DataBus/EventBus
+   - TechnicalIndicators (100+ 指标)
+   - MultiExchange (4 交易所)
+   - AlertSystem (TradingView风格)
+   - AIDecision (Kronos风格)
+   - BacktestEngine (Lean专业)
+   - WatchdogClient
+[2026-06-02 09:26:00] 📊 开始运行周期...
+
+======================================================================
+📊 周期 #1 - 09:26:00
+======================================================================
+   📡 信号: BTCUSDT MACD_BULLISH
+   📡 信号: BTCUSDT COMPOSITE_SELL
+
+   BTCUSDT:
+      价格: $71295.2500
+      RSI: 31.3
+      综合建议: HOLD
+      AI决策: SELL (置信36%)
+      信号数: 2
+      警报数: 0
+   📡 信号: ETHUSDT MACD_BULLISH
+   📡 信号: ETHUSDT COMPOSITE_SELL
+
+   ETHUSDT:
+      价格: $1997.1500
+      RSI: 57.8
+      综合建议: HOLD
+      AI决策: HOLD (置信53%)
+      信号数: 2
+      警报数: 0
+   📡 信号: XRPUSDT MACD_BULLISH
+   📡 信号: XRPUSDT COMPOSITE_SELL
+
+   XRPUSDT:
+      价格: $1.2886
+      RSI: 40.2
+      综合建议: HOLD
+      AI决策: HOLD (置信53%)
+      信号数: 2
+      警报数: 0
+   📡 信号: SOLUSDT MACD_BULLISH
+   📡 信号: SOLUSDT COMPOSITE_SELL
+
+   SOLUSDT:
+      价格: $80.9000
+      RSI: 51.0
+      综合建议: HOLD
+      AI决策: SELL (置信36%)
+      信号数: 2
+      警报数: 0
+
+📈 周期汇总:
+   总信号: 8
+   总警报: 0
+   持仓: 0
+[2026-06-02 09:26:01] ✅ 周期 #4 完成: 8 信号
+[2026-06-02 09:26:01] ⏳ 等待60秒...
+[2026-06-02 09:27:01] 📦 启动LIVE周期...
+
+======================================================================
+🚀 QuantMaster Q@C v6.0.0 - 全模块集成版
+======================================================================
+✅ 组件初始化完成
+   - DataBus/EventBus
+   - TechnicalIndicators (100+ 指标)
+   - MultiExchange (4 交易所)
+   - AlertSystem (TradingView风格)
+   - AIDecision (Kronos风格)
+   - BacktestEngine (Lean专业)
+   - WatchdogClient
+[2026-06-02 09:27:01] 📊 开始运行周期...
+
+======================================================================
+📊 周期 #1 - 09:27:01
+======================================================================
+   📡 信号: BTCUSDT MACD_BULLISH
+   📡 信号: BTCUSDT COMPOSITE_SELL
+
+   BTCUSDT:
+      价格: $71271.4700
+      RSI: 31.0
+      综合建议: HOLD
+      AI决策: HOLD (置信53%)
+      信号数: 2
+      警报数: 0
+   📡 信号: ETHUSDT MACD_BULLISH
+   📡 信号: ETHUSDT COMPOSITE_SELL
+
+   ETHUSDT:
+      价格: $1996.7800
+      RSI: 57.7
+      综合建议: HOLD
+      AI决策: HOLD (置信53%)
+      信号数: 2
+      警报数: 0
+   📡 信号: XRPUSDT MACD_BULLISH
+   📡 信号: XRPUSDT COMPOSITE_SELL
+
+   XRPUSDT:
+      价格: $1.2884
+      RSI: 40.1
+      综合建议: HOLD
+      AI决策: BUY (置信32%)
+      信号数: 2
+      警报数: 0
+   📡 信号: SOLUSDT MACD_BULLISH
+   📡 信号: SOLUSDT COMPOSITE_SELL
+
+   SOLUSDT:
+      价格: $80.8800
+      RSI: 50.7
+      综合建议: HOLD
+      AI决策: BUY (置信32%)
+      信号数: 2
+      警报数: 0
+
+📈 周期汇总:
+   总信号: 8
+   总警报: 0
+   持仓: 0
+[2026-06-02 09:27:02] ✅ 周期 #5 完成: 8 信号
+[2026-06-02 09:27:02] ⏳ 等待60秒...
+[2026-06-02 09:28:02] 📦 启动LIVE周期...
+
+======================================================================
+🚀 QuantMaster Q@C v6.0.0 - 全模块集成版
+======================================================================
+✅ 组件初始化完成
+   - DataBus/EventBus
+   - TechnicalIndicators (100+ 指标)
+   - MultiExchange (4 交易所)
+   - AlertSystem (TradingView风格)
+   - AIDecision (Kronos风格)
+   - BacktestEngine (Lean专业)
+   - WatchdogClient
+[2026-06-02 09:28:02] 📊 开始运行周期...
+
+======================================================================
+📊 周期 #1 - 09:28:02
+======================================================================
+   📡 信号: BTCUSDT MACD_BULLISH
+   📡 信号: BTCUSDT COMPOSITE_SELL
+
+   BTCUSDT:
+      价格: $71293.8300
+      RSI: 31.3
+      综合建议: HOLD
+      AI决策: SELL (置信36%)
+      信号数: 2
+      警报数: 0
+   📡 信号: ETHUSDT MACD_BULLISH
+   📡 信号: ETHUSDT COMPOSITE_SELL
+
+   ETHUSDT:
+      价格: $1996.8700
+      RSI: 57.7
+      综合建议: HOLD
+      AI决策: SELL (置信36%)
+      信号数: 2
+      警报数: 0
+   📡 信号: XRPUSDT MACD_BULLISH
+   📡 信号: XRPUSDT COMPOSITE_SELL
+
+   XRPUSDT:
+      价格: $1.2886
+      RSI: 40.2
+      综合建议: HOLD
+      AI决策: HOLD (置信53%)
+      信号数: 2
+      警报数: 0
+   📡 信号: SOLUSDT MACD_BULLISH
+   📡 信号: SOLUSDT COMPOSITE_SELL
+
+   SOLUSDT:
+      价格: $80.8900
+      RSI: 50.8
+      综合建议: HOLD
+      AI决策: BUY (置信32%)
+      信号数: 2
+      警报数: 0
+
+📈 周期汇总:
+   总信号: 8
+   总警报: 0
+   持仓: 0
+[2026-06-02 09:28:03] ✅ 周期 #6 完成: 8 信号
+[2026-06-02 09:28:03] ⏳ 等待60秒...
+[2026-06-02 09:29:03] 📦 启动LIVE周期...
+
+======================================================================
+🚀 QuantMaster Q@C v6.0.0 - 全模块集成版
+======================================================================
+✅ 组件初始化完成
+   - DataBus/EventBus
+   - TechnicalIndicators (100+ 指标)
+   - MultiExchange (4 交易所)
+   - AlertSystem (TradingView风格)
+   - AIDecision (Kronos风格)
+   - BacktestEngine (Lean专业)
+   - WatchdogClient
+[2026-06-02 09:29:03] 📊 开始运行周期...
+
+======================================================================
+📊 周期 #1 - 09:29:03
+======================================================================
+   📡 信号: BTCUSDT MACD_BULLISH
+   📡 信号: BTCUSDT COMPOSITE_SELL
+
+   BTCUSDT:
+      价格: $71264.6400
+      RSI: 30.9
+      综合建议: HOLD
+      AI决策: HOLD (置信53%)
+      信号数: 2
+      警报数: 0
+   📡 信号: ETHUSDT MACD_BULLISH
+   📡 信号: ETHUSDT COMPOSITE_SELL
+
+   ETHUSDT:
+      价格: $1995.1900
+      RSI: 56.8
+      综合建议: HOLD
+      AI决策: BUY (置信52%)
+      信号数: 2
+      警报数: 0
+   📡 信号: XRPUSDT MACD_BULLISH
+   📡 信号: XRPUSDT COMPOSITE_SELL
+
+   XRPUSDT:
+      价格: $1.2869
+      RSI: 39.3
+      综合建议: HOLD
+      AI决策: HOLD (置信53%)
+      信号数: 2
+      警报数: 0
+   📡 信号: SOLUSDT MACD_BULLISH
+   📡 信号: SOLUSDT COMPOSITE_SELL
+
+   SOLUSDT:
+      价格: $80.7800
+      RSI: 49.7
+      综合建议: HOLD
+      AI决策: HOLD (置信53%)
+      信号数: 2
+      警报数: 0
+
+📈 周期汇总:
+   总信号: 8
+   总警报: 0
+   持仓: 0
+[2026-06-02 09:29:04] ✅ 周期 #7 完成: 8 信号
+[2026-06-02 09:29:04] ⏳ 等待60秒...
+[2026-06-02 09:30:04] 📦 启动LIVE周期...
+
+======================================================================
+🚀 QuantMaster Q@C v6.0.0 - 全模块集成版
+======================================================================
+✅ 组件初始化完成
+   - DataBus/EventBus
+   - TechnicalIndicators (100+ 指标)
+   - MultiExchange (4 交易所)
+   - AlertSystem (TradingView风格)
+   - AIDecision (Kronos风格)
+   - BacktestEngine (Lean专业)
+   - WatchdogClient
+[2026-06-02 09:30:04] 📊 开始运行周期...
+
+======================================================================
+📊 周期 #1 - 09:30:04
+======================================================================
+   📡 信号: BTCUSDT MACD_BEARISH
+   📡 信号: BTCUSDT COMPOSITE_SELL
+
+   BTCUSDT:
+      价格: $71213.7200
+      RSI: 30.4
+      综合建议: SELL
+      AI决策: SELL (置信55%)
+      信号数: 2
+      警报数: 0
+   📡 信号: ETHUSDT MACD_BULLISH
+   📡 信号: ETHUSDT COMPOSITE_SELL
+
+   ETHUSDT:
+      价格: $1993.0500
+      RSI: 55.6
+      综合建议: HOLD
+      AI决策: BUY (置信52%)
+      信号数: 2
+      警报数: 0
+   📡 信号: XRPUSDT MACD_BULLISH
+   📡 信号: XRPUSDT COMPOSITE_SELL
+
+   XRPUSDT:
+      价格: $1.2852
+      RSI: 38.5
+      综合建议: HOLD
+      AI决策: HOLD (置信53%)
+      信号数: 2
+      警报数: 0
+   📡 信号: SOLUSDT MACD_BULLISH
+   📡 信号: SOLUSDT COMPOSITE_SELL
+
+   SOLUSDT:
+      价格: $80.6600
+      RSI: 48.5
+      综合建议: HOLD
+      AI决策: BUY (置信55%)
+      信号数: 2
+      警报数: 0
+
+📈 周期汇总:
+   总信号: 8
+   总警报: 0
+   持仓: 0
+[2026-06-02 09:30:05] ✅ 周期 #8 完成: 8 信号
+[2026-06-02 09:30:05] ⏳ 等待60秒...
+[2026-06-02 09:31:05] 📦 启动LIVE周期...
+
+======================================================================
+🚀 QuantMaster Q@C v6.0.0 - 全模块集成版
+======================================================================
+✅ 组件初始化完成
+   - DataBus/EventBus
+   - TechnicalIndicators (100+ 指标)
+   - MultiExchange (4 交易所)
+   - AlertSystem (TradingView风格)
+   - AIDecision (Kronos风格)
+   - BacktestEngine (Lean专业)
+   - WatchdogClient
+[2026-06-02 09:31:05] 📊 开始运行周期...
+
+======================================================================
+📊 周期 #1 - 09:31:06
+======================================================================
+   🔔 警报: BTC RSI超卖 被触发!
+   📡 信号: BTCUSDT RSI_OVERSOLD
+   📡 信号: BTCUSDT MACD_BEARISH
+   📡 信号: BTCUSDT COMPOSITE_SELL
+
+   BTCUSDT:
+      价格: $71156.0000
+      RSI: 29.9
+      综合建议: SELL
+      AI决策: BUY (置信35%)
+      信号数: 3
+      警报数: 1
+   📡 信号: ETHUSDT MACD_BULLISH
+   📡 信号: ETHUSDT COMPOSITE_SELL
+
+   ETHUSDT:
+      价格: $1991.1400
+      RSI: 54.6
+      综合建议: HOLD
+      AI决策: SELL (置信34%)
+      信号数: 2
+      警报数: 0
+   📡 信号: XRPUSDT MACD_BULLISH
+   📡 信号: XRPUSDT COMPOSITE_SELL
+
+   XRPUSDT:
+      价格: $1.2846
+      RSI: 38.2
+      综合建议: HOLD
+      AI决策: BUY (置信55%)
+      信号数: 2
+      警报数: 0
+   📡 信号: SOLUSDT MACD_BULLISH
+   📡 信号: SOLUSDT COMPOSITE_SELL
+
+   SOLUSDT:
+      价格: $80.6000
+      RSI: 47.9
+      综合建议: HOLD
+      AI决策: SELL (置信36%)
+      信号数: 2
+      警报数: 0
+
+📈 周期汇总:
+   总信号: 9
+   总警报: 1
+   持仓: 0
+[2026-06-02 09:31:07] ✅ 周期 #9 完成: 9 信号
+[2026-06-02 09:31:07] ⏳ 等待60秒...
+[2026-06-02 09:32:07] 📦 启动LIVE周期...
+
+======================================================================
+🚀 QuantMaster Q@C v6.0.0 - 全模块集成版
+======================================================================
+✅ 组件初始化完成
+   - DataBus/EventBus
+   - TechnicalIndicators (100+ 指标)
+   - MultiExchange (4 交易所)
+   - AlertSystem (TradingView风格)
+   - AIDecision (Kronos风格)
+   - BacktestEngine (Lean专业)
+   - WatchdogClient
+[2026-06-02 09:32:07] 📊 开始运行周期...
+
+======================================================================
+📊 周期 #1 - 09:32:07
+======================================================================
+   🔔 警报: BTC RSI超卖 被触发!
+   📡 信号: BTCUSDT RSI_OVERSOLD
+   📡 信号: BTCUSDT MACD_BEARISH
+   📡 信号: BTCUSDT COMPOSITE_SELL
+
+   BTCUSDT:
+      价格: $71094.6400
+      RSI: 29.3
+      综合建议: SELL
+      AI决策: HOLD (置信50%)
+      信号数: 3
+      警报数: 1
+   📡 信号: ETHUSDT MACD_BULLISH
+   📡 信号: ETHUSDT COMPOSITE_SELL
+
+   ETHUSDT:
+      价格: $1989.9300
+      RSI: 54.0
+      综合建议: HOLD
+      AI决策: BUY (置信52%)
+      信号数: 2
+      警报数: 0
+   📡 信号: XRPUSDT MACD_BULLISH
+   📡 信号: XRPUSDT COMPOSITE_SELL
+
+   XRPUSDT:
+      价格: $1.2831
+      RSI: 37.5
+      综合建议: HOLD
+      AI决策: HOLD (置信53%)
+      信号数: 2
+      警报数: 0
+   📡 信号: SOLUSDT MACD_BULLISH
+   📡 信号: SOLUSDT COMPOSITE_SELL
+
+   SOLUSDT:
+      价格: $80.5500
+      RSI: 47.4
+      综合建议: HOLD
+      AI决策: BUY (置信32%)
+      信号数: 2
+      警报数: 0
+
+📈 周期汇总:
+   总信号: 9
+   总警报: 1
+   持仓: 0
+[2026-06-02 09:32:08] ✅ 周期 #10 完成: 9 信号
+[2026-06-02 09:32:08] ⏳ 等待60秒...
+[2026-06-02 09:33:08] 📦 启动LIVE周期...
+
+======================================================================
+🚀 QuantMaster Q@C v6.0.0 - 全模块集成版
+======================================================================
+✅ 组件初始化完成
+   - DataBus/EventBus
+   - TechnicalIndicators (100+ 指标)
+   - MultiExchange (4 交易所)
+   - AlertSystem (TradingView风格)
+   - AIDecision (Kronos风格)
+   - BacktestEngine (Lean专业)
+   - WatchdogClient
+[2026-06-02 09:33:08] 📊 开始运行周期...
+
+======================================================================
+📊 周期 #1 - 09:33:08
+======================================================================
+   🔔 警报: BTC RSI超卖 被触发!
+   📡 信号: BTCUSDT RSI_OVERSOLD
+   📡 信号: BTCUSDT MACD_BEARISH
+   📡 信号: BTCUSDT COMPOSITE_SELL
+
+   BTCUSDT:
+      价格: $71063.5900
+      RSI: 29.1
+      综合建议: SELL
+      AI决策: BUY (置信54%)
+      信号数: 3
+      警报数: 1
+   📡 信号: ETHUSDT MACD_BULLISH
+   📡 信号: ETHUSDT COMPOSITE_SELL
+
+   ETHUSDT:
+      价格: $1988.9600
+      RSI: 53.5
+      综合建议: HOLD
+      AI决策: SELL (置信34%)
+      信号数: 2
+      警报数: 0
+   📡 信号: XRPUSDT MACD_BULLISH
+   📡 信号: XRPUSDT COMPOSITE_SELL
+
+   XRPUSDT:
+      价格: $1.2831
+      RSI: 37.5
+      综合建议: HOLD
+      AI决策: SELL (置信34%)
+      信号数: 2
+      警报数: 0
+   📡 信号: SOLUSDT MACD_BULLISH
+   📡 信号: SOLUSDT COMPOSITE_SELL
+
+   SOLUSDT:
+      价格: $80.5400
+      RSI: 47.3
+      综合建议: HOLD
+      AI决策: SELL (置信36%)
+      信号数: 2
+      警报数: 0
+
+📈 周期汇总:
+   总信号: 9
+   总警报: 1
+   持仓: 0
+[2026-06-02 09:33:10] ✅ 周期 #11 完成: 9 信号
+[2026-06-02 09:33:10] ⏳ 等待60秒...

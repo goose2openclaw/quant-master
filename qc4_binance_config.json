@@ -1,0 +1,16 @@
+{
+  "binance": {
+    "api_key": "QPM55JoNnHSV7C7PllgNbTAxpzy9RaBjoKprgHuIE9GJUeQoVIGu69ICPnmBXp61",
+    "api_secret": "BSOTWqsVsncRk13DMDJ2YDRQks8XvrajArQDPW2jY8sDwNtcgb5da8H3x6qF3hJk",
+    "mode": "LIVE",
+    "proxy": "http://172.29.144.1:7897"
+  },
+  "trading": {
+    "max_positions": 10,
+    "max_position_size": 0.3,
+    "stop_loss_pct": 0.015,
+    "take_profit_pct": 0.08,
+    "aggressive_mode": true,
+    "auto_rebalance": true
+  }
+}
